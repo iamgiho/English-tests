@@ -472,12 +472,12 @@
     </header>
 
     <nav class="tabs" aria-label="기능 선택">
-      <button class="tab-btn active" data-tab="passageTab">지문 순서 찾기</button>
+      <button class="tab-btn active" data-tab="adminTab">관리자</button>
       <button class="tab-btn" data-tab="wordTab">단어 시험</button>
-      <button class="tab-btn" data-tab="adminTab">관리자</button>
+      <button class="tab-btn" data-tab="passageTab">지문 순서 찾기</button>
     </nav>
 
-    <div class="tab-panel active" id="passageTab">
+    <div class="tab-panel" id="passageTab">
       <div class="grid">
         <section>
           <div class="section-head">
@@ -551,19 +551,26 @@
                 <input id="studentName" placeholder="예: 김민준">
               </div>
               <div class="field">
-                <label for="questionCount">문항 수</label>
-                <select id="questionCount">
-                  <option value="5">5문항</option>
-                  <option value="10" selected>10문항</option>
-                  <option value="15">15문항</option>
-                </select>
+                <label for="wordBookSelect">단어장</label>
+                <select id="wordBookSelect"></select>
+              </div>
+            </div>
+            <div class="notice" id="wordBookPath">GitHub / English-tests / 영어 단어</div>
+            <div class="field-row" style="margin-top: 12px;">
+              <div class="field">
+                <label for="wordStart">시작 단어 번호 (포함)</label>
+                <input id="wordStart" type="number" min="1" step="1" placeholder="예: 1">
+              </div>
+              <div class="field">
+                <label for="wordEnd">끝 단어 번호 (포함)</label>
+                <input id="wordEnd" type="number" min="1" step="1" placeholder="예: 50">
               </div>
             </div>
             <div class="toolbar">
               <button id="startWordBtn">단어 시험 시작</button>
               <button class="secondary" id="resetWordBtn">처음으로</button>
             </div>
-            <div class="notice" id="wordNotice">시험을 마치면 점수와 닉네임이 관리자 데이터베이스에 저장됩니다.</div>
+            <div class="notice" id="wordNotice">단어장을 선택하면 사용할 수 있는 번호 범위를 알려드립니다.</div>
           </div>
         </section>
 
@@ -576,7 +583,7 @@
             <div class="question" id="wordQuestion">
               <h3>단어 시험을 시작하세요.</h3>
               <p class="question-main">Ready</p>
-              <p class="question-sub">영어 뜻, 한글 뜻, 예문 빈칸 문제가 섞여 나옵니다.</p>
+              <p class="question-sub">영어→한글은 범위 전체, 한글→영어와 예문 빈칸은 각각 범위의 50%가 출제됩니다.</p>
             </div>
             <div class="choice-list" id="choiceList"></div>
             <div class="toolbar" id="shortAnswerBox">
@@ -589,7 +596,7 @@
       </div>
     </div>
 
-    <div class="tab-panel" id="adminTab">
+    <div class="tab-panel active" id="adminTab">
       <div class="admin-stack">
         <section>
           <div class="section-head">
@@ -684,6 +691,11 @@
       { school: "서울고", title: "지문 4", path: "영어 지문/서울고/지문 4.txt" }
     ];
 
+    const fallbackWordBooks = [
+      { category: "영어 단어", title: "0단계 단어", path: "영어 단어/0단계 단어.txt" },
+      { category: "영어 단어", title: "1단계 단어", path: "영어 단어/1단계 단어.txt" }
+    ];
+
     const seedWords = [
       { en: "analyze", ko: "분석하다", example: "Students analyze the passage carefully." },
       { en: "evidence", ko: "증거", example: "The writer uses evidence to support the claim." },
@@ -710,6 +722,8 @@
     let currentPassageMeta = null;
     let adminUnlocked = false;
     let wordSession = null;
+    let wordBookManifest = [];
+    let currentBookWords = [];
 
     function readJson(key, fallback) {
       try {
@@ -918,6 +932,74 @@
       return value.trim().toLowerCase().replace(/\s+/g, " ");
     }
 
+    function parseWordBook(text) {
+      const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
+      const words = [];
+      for (let index = 0; index + 2 < lines.length; index += 3) {
+        const number = Number(lines[index]);
+        if (Number.isInteger(number)) words.push({ number, en: lines[index + 1], ko: lines[index + 2] });
+      }
+      return words.sort((a, b) => a.number - b.number);
+    }
+
+    function headword(value) {
+      return value.replace(/\s*\([^)]*\)\s*/g, " ").trim();
+    }
+
+    function buildHighSchoolExample(word) {
+      const target = headword(word.en);
+      const templates = [
+        `The teacher asked the class to explain how “${target}” was used in the passage.`,
+        `The meaning of “${target}” became clear after we read the whole paragraph.`,
+        `Students discussed why the writer chose “${target}” in this context.`,
+        `Understanding “${target}” helped the students follow the writer's main idea.`
+      ];
+      return templates[word.number % templates.length].replace(target, "_____");
+    }
+
+    async function loadWordBookManifest() {
+      try {
+        const response = await fetch("words.json", { cache: "no-store" });
+        if (!response.ok) throw new Error("manifest not found");
+        wordBookManifest = await response.json();
+      } catch {
+        wordBookManifest = fallbackWordBooks;
+      }
+      const grouped = wordBookManifest.reduce((groups, book, index) => {
+        const category = book.category || "영어 단어";
+        (groups[category] ||= []).push({ book, index });
+        return groups;
+      }, {});
+      $("#wordBookSelect").innerHTML = Object.entries(grouped).map(([category, entries]) =>
+        `<optgroup label="${escapeHtml(category)}">${entries.map(({ book, index }) => `<option value="${index}">${escapeHtml(book.title)}</option>`).join("")}</optgroup>`
+      ).join("");
+      await loadSelectedWordBook();
+    }
+
+    async function loadSelectedWordBook() {
+      const book = wordBookManifest[Number($("#wordBookSelect").value)];
+      if (!book) return;
+      $("#wordBookPath").textContent = ["GitHub", "English-tests", ...book.path.split("/")].join("  /  ");
+      try {
+        const response = await fetch(encodeURI(book.path), { cache: "no-store" });
+        if (!response.ok) throw new Error("word book not found");
+        currentBookWords = parseWordBook(await response.text());
+        if (!currentBookWords.length) throw new Error("empty word book");
+        const min = currentBookWords[0].number;
+        const max = currentBookWords[currentBookWords.length - 1].number;
+        for (const id of ["#wordStart", "#wordEnd"]) {
+          $(id).min = min;
+          $(id).max = max;
+        }
+        $("#wordStart").value = min;
+        $("#wordEnd").value = max;
+        setMessage($("#wordNotice"), `${book.title}: ${currentBookWords.length}개 단어, 선택 가능 번호 ${min}~${max}`, "good");
+      } catch {
+        currentBookWords = [];
+        setMessage($("#wordNotice"), "단어장 파일을 불러오지 못했습니다. 로컬 서버로 실행 중인지 경로를 확인하세요.", "bad");
+      }
+    }
+
     function buildWordQuestion(word, type, allWords) {
       if (type === "en-to-ko") {
         return {
@@ -926,6 +1008,7 @@
           main: word.en,
           sub: "",
           answer: word.ko,
+          answers: [word.ko, ...word.ko.split(/[,，/]/).map((item) => item.trim()).filter(Boolean)],
           mode: "short"
         };
       }
@@ -941,12 +1024,11 @@
           mode: "choice"
         };
       }
-      const blank = word.example.replace(new RegExp(`\\b${word.en}\\b`, "i"), "_____");
       const choices = shuffle([word.en, ...shuffle(allWords.filter((item) => item.en !== word.en)).slice(0, 3).map((item) => item.en)]);
       return {
         typeLabel: "예문 빈칸",
         prompt: "예문에 들어갈 단어를 고르세요.",
-        main: blank,
+        main: buildHighSchoolExample(word),
         sub: word.ko,
         answer: word.en,
         choices,
@@ -956,27 +1038,41 @@
 
     function startWordQuiz() {
       const name = $("#studentName").value.trim();
-      const words = getWords();
-      const count = Math.min(Number($("#questionCount").value), words.length);
+      const start = Number($("#wordStart").value);
+      const end = Number($("#wordEnd").value);
+      const book = wordBookManifest[Number($("#wordBookSelect").value)];
       if (!name) {
         setMessage($("#wordNotice"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
         return;
       }
-      if (words.length < 4) {
-        setMessage($("#wordNotice"), "객관식 문제를 만들려면 단어가 4개 이상 필요합니다.", "bad");
+      if (!Number.isInteger(start) || !Number.isInteger(end) || start > end) {
+        setMessage($("#wordNotice"), "시작 번호와 끝 번호를 올바르게 입력하세요.", "bad");
+        return;
+      }
+      const rangeWords = currentBookWords.filter((word) => word.number >= start && word.number <= end);
+      if (!rangeWords.length) {
+        setMessage($("#wordNotice"), "입력한 번호 범위에 해당하는 단어가 없습니다.", "bad");
+        return;
+      }
+      if (currentBookWords.length < 4) {
+        setMessage($("#wordNotice"), "객관식 문제를 만들려면 단어장에 단어가 4개 이상 필요합니다.", "bad");
         return;
       }
 
-      const types = ["en-to-ko", "ko-to-en", "example"];
-      const selectedWords = shuffle(words).slice(0, count);
+      const halfCount = Math.ceil(rangeWords.length / 2);
+      const englishToKorean = shuffle(rangeWords).map((word) => buildWordQuestion(word, "en-to-ko", currentBookWords));
+      const koreanToEnglish = shuffle(rangeWords).slice(0, halfCount).map((word) => buildWordQuestion(word, "ko-to-en", currentBookWords));
+      const examples = shuffle(rangeWords).slice(0, halfCount).map((word) => buildWordQuestion(word, "example", currentBookWords));
       wordSession = {
         name,
+        book: book?.title || "단어장",
+        range: `${start}~${end}`,
         index: 0,
         correct: 0,
-        questions: selectedWords.map((word, index) => buildWordQuestion(word, types[index % types.length], words)),
+        questions: shuffle([...englishToKorean, ...koreanToEnglish, ...examples]),
         answers: []
       };
-      setMessage($("#wordNotice"), "시험을 시작했습니다.", "good");
+      setMessage($("#wordNotice"), `${wordSession.book} ${wordSession.range}번: 총 ${wordSession.questions.length}문항을 시작했습니다.`, "good");
       renderWordQuestion();
     }
 
@@ -1014,7 +1110,8 @@
     function answerWord(value) {
       if (!wordSession) return;
       const question = wordSession.questions[wordSession.index];
-      const isCorrect = normalizeAnswer(value) === normalizeAnswer(question.answer);
+      const accepted = question.answers || [question.answer];
+      const isCorrect = accepted.some((answer) => normalizeAnswer(value) === normalizeAnswer(answer));
       if (isCorrect) wordSession.correct += 1;
       wordSession.answers.push({ type: question.typeLabel, question: question.main, userAnswer: value, answer: question.answer, correct: isCorrect });
       setMessage($("#wordFeedback"), isCorrect ? "정답입니다." : `오답입니다. 정답: ${question.answer}`, isCorrect ? "good" : "bad");
@@ -1036,6 +1133,8 @@
         score,
         correct: wordSession.correct,
         total,
+        book: wordSession.book,
+        range: wordSession.range,
         takenAt: new Date().toLocaleString("ko-KR")
       });
       writeJson(STORAGE.results, results);
@@ -1051,7 +1150,7 @@
 
     function resetWordQuiz() {
       wordSession = null;
-      $("#wordQuestion").innerHTML = `<h3>단어 시험을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">영어 뜻, 한글 뜻, 예문 빈칸 문제가 섞여 나옵니다.</p>`;
+      $("#wordQuestion").innerHTML = `<h3>단어 시험을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">영어→한글은 범위 전체, 한글→영어와 예문 빈칸은 각각 범위의 50%가 출제됩니다.</p>`;
       $("#choiceList").innerHTML = "";
       $("#shortAnswerBox").classList.remove("hidden");
       $("#wordProgress").textContent = "0 / 0";
@@ -1081,7 +1180,7 @@
       const results = readJson(STORAGE.results, []);
       $("#dataStat").textContent = `${words.length}단어 / ${results.length}결과`;
       $("#wordTable").innerHTML = table(["영어", "뜻", "예문"], words.map((word) => [word.en, word.ko, word.example]));
-      $("#resultTable").innerHTML = table(["일시", "닉네임", "점수", "정답"], results.map((result) => [result.takenAt, result.name, `${result.score}점`, `${result.correct}/${result.total}`]));
+      $("#resultTable").innerHTML = table(["일시", "닉네임", "단어장", "범위", "점수", "정답"], results.map((result) => [result.takenAt, result.name, result.book || "-", result.range || "-", `${result.score}점`, `${result.correct}/${result.total}`]));
     }
 
     function table(headers, rows) {
@@ -1131,6 +1230,7 @@
     updatePasswordDue();
     renderPassageQuiz();
     loadManifest();
+    loadWordBookManifest();
     resetWordQuiz();
 
     $("#loginBtn").addEventListener("click", login);
@@ -1156,6 +1256,7 @@
     });
     $("#passageAnswerBtn").addEventListener("click", showPassageAnswer);
     $("#startWordBtn").addEventListener("click", startWordQuiz);
+    $("#wordBookSelect").addEventListener("change", loadSelectedWordBook);
     $("#resetWordBtn").addEventListener("click", resetWordQuiz);
     $("#submitShortBtn").addEventListener("click", () => answerWord($("#shortAnswer").value));
     $("#shortAnswer").addEventListener("keydown", (event) => {
