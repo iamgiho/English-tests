@@ -583,12 +583,14 @@
             <div class="question" id="wordQuestion">
               <h3>단어 시험을 시작하세요.</h3>
               <p class="question-main">Ready</p>
-              <p class="question-sub">영어→한글은 범위 전체, 한글→영어와 예문 빈칸은 각각 범위의 50%가 출제됩니다.</p>
+              <p class="question-sub">영어→한글은 범위 전체, 한글→영어는 범위의 50%가 출제됩니다.</p>
             </div>
             <div class="choice-list" id="choiceList"></div>
             <div class="toolbar" id="shortAnswerBox">
               <input id="shortAnswer" placeholder="정답 입력">
-              <button id="submitShortBtn">제출</button>
+            </div>
+            <div class="toolbar" id="wordNextBox">
+              <button id="nextWordBtn" disabled>다음</button>
             </div>
             <div class="feedback" id="wordFeedback">아직 진행 중인 시험이 없습니다.</div>
           </div>
@@ -667,6 +669,8 @@
             <div id="wordTable"></div>
             <h3 style="margin-top: 18px;">시험 결과</h3>
             <div id="resultTable"></div>
+            <h3 style="margin-top: 18px;">오답 기록</h3>
+            <div id="wrongAnswerTable"></div>
           </div>
         </section>
       </div>
@@ -942,21 +946,6 @@
       return words.sort((a, b) => a.number - b.number);
     }
 
-    function headword(value) {
-      return value.replace(/\s*\([^)]*\)\s*/g, " ").trim();
-    }
-
-    function buildHighSchoolExample(word) {
-      const target = headword(word.en);
-      const templates = [
-        `The teacher asked the class to explain how “${target}” was used in the passage.`,
-        `The meaning of “${target}” became clear after we read the whole paragraph.`,
-        `Students discussed why the writer chose “${target}” in this context.`,
-        `Understanding “${target}” helped the students follow the writer's main idea.`
-      ];
-      return templates[word.number % templates.length].replace(target, "_____");
-    }
-
     async function loadWordBookManifest() {
       try {
         const response = await fetch("words.json", { cache: "no-store" });
@@ -1012,24 +1001,12 @@
           mode: "short"
         };
       }
-      if (type === "ko-to-en") {
-        const choices = shuffle([word.en, ...shuffle(allWords.filter((item) => item.en !== word.en)).slice(0, 3).map((item) => item.en)]);
-        return {
-          typeLabel: "한글 → 영어",
-          prompt: "뜻에 맞는 영어 단어를 고르세요.",
-          main: word.ko,
-          sub: "",
-          answer: word.en,
-          choices,
-          mode: "choice"
-        };
-      }
       const choices = shuffle([word.en, ...shuffle(allWords.filter((item) => item.en !== word.en)).slice(0, 3).map((item) => item.en)]);
       return {
-        typeLabel: "예문 빈칸",
-        prompt: "예문에 들어갈 단어를 고르세요.",
-        main: buildHighSchoolExample(word),
-        sub: word.ko,
+        typeLabel: "한글 → 영어",
+        prompt: "뜻에 맞는 영어 단어를 고르세요.",
+        main: word.ko,
+        sub: "",
         answer: word.en,
         choices,
         mode: "choice"
@@ -1062,15 +1039,15 @@
       const halfCount = Math.ceil(rangeWords.length / 2);
       const englishToKorean = shuffle(rangeWords).map((word) => buildWordQuestion(word, "en-to-ko", currentBookWords));
       const koreanToEnglish = shuffle(rangeWords).slice(0, halfCount).map((word) => buildWordQuestion(word, "ko-to-en", currentBookWords));
-      const examples = shuffle(rangeWords).slice(0, halfCount).map((word) => buildWordQuestion(word, "example", currentBookWords));
       wordSession = {
         name,
         book: book?.title || "단어장",
         range: `${start}~${end}`,
         index: 0,
         correct: 0,
-        questions: shuffle([...englishToKorean, ...koreanToEnglish, ...examples]),
-        answers: []
+        questions: shuffle([...englishToKorean, ...koreanToEnglish]),
+        answers: [],
+        answered: false
       };
       setMessage($("#wordNotice"), `${wordSession.book} ${wordSession.range}번: 총 ${wordSession.questions.length}문항을 시작했습니다.`, "good");
       renderWordQuestion();
@@ -1079,15 +1056,20 @@
     function renderWordQuestion() {
       $("#choiceList").innerHTML = "";
       $("#shortAnswer").value = "";
+      $("#shortAnswer").disabled = false;
       if (!wordSession) {
         $("#wordProgress").textContent = "0 / 0";
         $("#wordType").textContent = "대기";
         $("#shortAnswerBox").classList.remove("hidden");
+        $("#nextWordBtn").disabled = true;
         return;
       }
       const question = wordSession.questions[wordSession.index];
+      wordSession.answered = false;
       $("#wordProgress").textContent = `${wordSession.index + 1} / ${wordSession.questions.length}`;
       $("#wordType").textContent = question.typeLabel;
+      $("#wordNextBox").classList.remove("hidden");
+      $("#nextWordBtn").disabled = question.mode === "choice";
       $("#wordQuestion").innerHTML = `
         <h3>${escapeHtml(question.prompt)}</h3>
         <p class="question-main">${escapeHtml(question.main)}</p>
@@ -1108,19 +1090,44 @@
     }
 
     function answerWord(value) {
-      if (!wordSession) return;
+      if (!wordSession || wordSession.answered) return;
       const question = wordSession.questions[wordSession.index];
       const accepted = question.answers || [question.answer];
       const isCorrect = accepted.some((answer) => normalizeAnswer(value) === normalizeAnswer(answer));
       if (isCorrect) wordSession.correct += 1;
       wordSession.answers.push({ type: question.typeLabel, question: question.main, userAnswer: value, answer: question.answer, correct: isCorrect });
-      setMessage($("#wordFeedback"), isCorrect ? "정답입니다." : `오답입니다. 정답: ${question.answer}`, isCorrect ? "good" : "bad");
+      wordSession.answered = true;
+      $("#shortAnswer").disabled = true;
+      $("#nextWordBtn").disabled = false;
+      $$("#choiceList .choice").forEach((button) => {
+        button.disabled = true;
+        if (normalizeAnswer(button.textContent) === normalizeAnswer(question.answer)) button.classList.add("correct");
+        if (!isCorrect && normalizeAnswer(button.textContent) === normalizeAnswer(value)) button.classList.add("wrong");
+      });
+      setMessage($("#wordFeedback"), isCorrect ? `정답입니다. 정답: ${question.answer}` : `오답입니다. 정답: ${question.answer}`, isCorrect ? "good" : "bad");
+    }
 
+    function nextWordQuestion() {
+      if (!wordSession) return;
+      const question = wordSession.questions[wordSession.index];
+      if (!wordSession.answered) {
+        if (question.mode === "short") {
+          const value = $("#shortAnswer").value.trim();
+          if (!value) {
+            setMessage($("#wordFeedback"), "답을 입력한 뒤 다음 버튼을 누르세요.", "bad");
+            return;
+          }
+          answerWord(value);
+        } else {
+          setMessage($("#wordFeedback"), "보기를 먼저 선택하세요.", "bad");
+        }
+        return;
+      }
       wordSession.index += 1;
       if (wordSession.index >= wordSession.questions.length) {
-        setTimeout(finishWordQuiz, 450);
+        finishWordQuiz();
       } else {
-        setTimeout(renderWordQuestion, 450);
+        renderWordQuestion();
       }
     }
 
@@ -1135,12 +1142,14 @@
         total,
         book: wordSession.book,
         range: wordSession.range,
+        wrongAnswers: wordSession.answers.filter((answer) => !answer.correct),
         takenAt: new Date().toLocaleString("ko-KR")
       });
       writeJson(STORAGE.results, results);
       $("#wordQuestion").innerHTML = `<h3>시험 완료</h3><p class="question-main">${score}점</p><p class="question-sub">${escapeHtml(wordSession.name)}: ${wordSession.correct} / ${total}</p>`;
       $("#choiceList").innerHTML = "";
       $("#shortAnswerBox").classList.add("hidden");
+      $("#wordNextBox").classList.add("hidden");
       $("#wordProgress").textContent = `${total} / ${total}`;
       $("#wordType").textContent = "완료";
       setMessage($("#wordFeedback"), "점수와 닉네임을 관리자 데이터베이스에 저장했습니다.", "good");
@@ -1150,9 +1159,11 @@
 
     function resetWordQuiz() {
       wordSession = null;
-      $("#wordQuestion").innerHTML = `<h3>단어 시험을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">영어→한글은 범위 전체, 한글→영어와 예문 빈칸은 각각 범위의 50%가 출제됩니다.</p>`;
+      $("#wordQuestion").innerHTML = `<h3>단어 시험을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">영어→한글은 범위 전체, 한글→영어는 범위의 50%가 출제됩니다.</p>`;
       $("#choiceList").innerHTML = "";
       $("#shortAnswerBox").classList.remove("hidden");
+      $("#wordNextBox").classList.remove("hidden");
+      $("#nextWordBtn").disabled = true;
       $("#wordProgress").textContent = "0 / 0";
       $("#wordType").textContent = "대기";
       setMessage($("#wordFeedback"), "아직 진행 중인 시험이 없습니다.");
@@ -1178,9 +1189,14 @@
       if (!adminUnlocked) return;
       const words = getWords();
       const results = readJson(STORAGE.results, []);
+      const wrongAnswers = results.flatMap((result) => (result.wrongAnswers || []).map((answer) => ({ result, answer })));
       $("#dataStat").textContent = `${words.length}단어 / ${results.length}결과`;
       $("#wordTable").innerHTML = table(["영어", "뜻", "예문"], words.map((word) => [word.en, word.ko, word.example]));
       $("#resultTable").innerHTML = table(["일시", "닉네임", "단어장", "범위", "점수", "정답"], results.map((result) => [result.takenAt, result.name, result.book || "-", result.range || "-", `${result.score}점`, `${result.correct}/${result.total}`]));
+      $("#wrongAnswerTable").innerHTML = table(
+        ["일시", "닉네임", "유형", "문항", "제출한 답", "정답"],
+        wrongAnswers.map(({ result, answer }) => [result.takenAt, result.name, answer.type, answer.question, answer.userAnswer, answer.answer])
+      );
     }
 
     function table(headers, rows) {
@@ -1258,9 +1274,9 @@
     $("#startWordBtn").addEventListener("click", startWordQuiz);
     $("#wordBookSelect").addEventListener("change", loadSelectedWordBook);
     $("#resetWordBtn").addEventListener("click", resetWordQuiz);
-    $("#submitShortBtn").addEventListener("click", () => answerWord($("#shortAnswer").value));
+    $("#nextWordBtn").addEventListener("click", nextWordQuestion);
     $("#shortAnswer").addEventListener("keydown", (event) => {
-      if (event.key === "Enter") answerWord($("#shortAnswer").value);
+      if (event.key === "Enter") nextWordQuestion();
     });
     $("#adminLoginBtn").addEventListener("click", adminLogin);
     $("#savePasswordsBtn").addEventListener("click", savePasswords);
