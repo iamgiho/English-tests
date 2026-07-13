@@ -1,0 +1,1180 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>내신 대비 영어 퀴즈</title>
+  <style>
+    :root {
+      --bg: #f4f6f1;
+      --panel: #ffffff;
+      --ink: #20241f;
+      --muted: #687168;
+      --line: #d7ddd1;
+      --soft: #eef3ed;
+      --accent: #256f5f;
+      --accent-dark: #174f44;
+      --gold: #a86718;
+      --good: #247447;
+      --bad: #a33d35;
+      --shadow: 0 18px 44px rgba(32, 36, 31, 0.12);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background:
+        linear-gradient(140deg, rgba(37, 111, 95, 0.13), transparent 36%),
+        linear-gradient(315deg, rgba(168, 103, 24, 0.11), transparent 32%),
+        var(--bg);
+      color: var(--ink);
+      font-family: Arial, "Noto Sans KR", sans-serif;
+    }
+
+    main {
+      width: min(1220px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0;
+    }
+
+    header {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(28px, 4vw, 44px);
+      line-height: 1.08;
+      letter-spacing: 0;
+    }
+
+    h2, h3 {
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h2 {
+      font-size: 18px;
+    }
+
+    h3 {
+      font-size: 15px;
+    }
+
+    .sub {
+      margin: 8px 0 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .top-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border: 1px solid var(--line);
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.7);
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 16px;
+      overflow-x: auto;
+    }
+
+    .tab-btn {
+      color: var(--ink);
+      background: rgba(255, 255, 255, 0.72);
+      border: 1px solid var(--line);
+      white-space: nowrap;
+    }
+
+    .tab-btn.active {
+      color: #ffffff;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: minmax(290px, 0.85fr) minmax(390px, 1.15fr);
+      gap: 16px;
+      align-items: start;
+    }
+
+    .quiz-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+    }
+
+    section,
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .card {
+      padding: 16px;
+    }
+
+    .section-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 15px 17px;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .body {
+      padding: 17px;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      min-height: 40px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 10px 12px;
+      color: var(--ink);
+      background: #fbfcfa;
+      font: 15px/1.45 Arial, "Noto Sans KR", sans-serif;
+      outline: none;
+    }
+
+    textarea {
+      min-height: 160px;
+      resize: vertical;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(37, 111, 95, 0.16);
+    }
+
+    button {
+      min-height: 40px;
+      border: 1px solid transparent;
+      border-radius: 8px;
+      padding: 0 14px;
+      color: #ffffff;
+      background: var(--accent);
+      font-weight: 700;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: var(--accent-dark);
+    }
+
+    button.secondary {
+      color: var(--ink);
+      background: #f4f6f1;
+      border-color: var(--line);
+    }
+
+    button.secondary:hover {
+      background: #e8eee4;
+    }
+
+    button.gold {
+      background: var(--gold);
+    }
+
+    button:disabled {
+      cursor: not-allowed;
+      opacity: 0.45;
+    }
+
+    .toolbar,
+    .field-row {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: end;
+    }
+
+    .toolbar {
+      margin-top: 12px;
+    }
+
+    .field {
+      flex: 1 1 180px;
+      min-width: 0;
+    }
+
+    .zone {
+      min-height: 370px;
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+      padding: 12px;
+    }
+
+    .zone-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      margin-bottom: 10px;
+      color: var(--muted);
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .sentence-list,
+    .choice-list,
+    .list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .sentence,
+    .choice {
+      width: 100%;
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 10px;
+      align-items: start;
+      padding: 11px 12px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--soft);
+      color: var(--ink);
+      text-align: left;
+      font-weight: 500;
+      line-height: 1.45;
+    }
+
+    .choice {
+      grid-template-columns: 1fr;
+      font-size: 15px;
+    }
+
+    .sentence:hover,
+    .choice:hover {
+      border-color: var(--accent);
+      background: #e4efe8;
+    }
+
+    .num {
+      display: inline-grid;
+      place-items: center;
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: #ffffff;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .correct {
+      border-color: rgba(36, 116, 71, 0.55);
+      background: rgba(36, 116, 71, 0.12);
+    }
+
+    .wrong {
+      border-color: rgba(163, 61, 53, 0.52);
+      background: rgba(163, 61, 53, 0.10);
+    }
+
+    .feedback,
+    .notice {
+      min-height: 44px;
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 8px;
+      background: #f4f6f1;
+      color: var(--muted);
+      line-height: 1.45;
+    }
+
+    .feedback.good,
+    .notice.good {
+      color: var(--good);
+      background: rgba(36, 116, 71, 0.10);
+    }
+
+    .feedback.bad,
+    .notice.bad {
+      color: var(--bad);
+      background: rgba(163, 61, 53, 0.10);
+    }
+
+    .empty {
+      display: grid;
+      place-items: center;
+      min-height: 250px;
+      color: var(--muted);
+      text-align: center;
+      line-height: 1.55;
+      padding: 16px;
+    }
+
+    .question {
+      padding: 18px;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: #fbfcfa;
+    }
+
+    .question-main {
+      margin: 8px 0 0;
+      font-size: clamp(22px, 4vw, 34px);
+      font-weight: 800;
+      line-height: 1.2;
+    }
+
+    .question-sub {
+      margin: 6px 0 0;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+
+    .admin-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid var(--line);
+      padding: 9px 8px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .lock-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 20;
+      display: grid;
+      place-items: center;
+      padding: 20px;
+      background:
+        linear-gradient(140deg, rgba(37, 111, 95, 0.24), transparent 40%),
+        linear-gradient(315deg, rgba(168, 103, 24, 0.20), transparent 38%),
+        #edf1ea;
+    }
+
+    .login-box {
+      width: min(440px, 100%);
+      background: #ffffff;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: var(--shadow);
+      padding: 22px;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    @media (max-width: 920px) {
+      header,
+      .grid,
+      .quiz-grid {
+        display: block;
+      }
+
+      .top-actions {
+        justify-content: flex-start;
+        margin-top: 14px;
+      }
+
+      section,
+      .card {
+        margin-bottom: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="lock-screen" id="lockScreen">
+    <div class="login-box">
+      <h1>내신 대비 영어 퀴즈</h1>
+      <p class="sub">전체 비밀번호를 입력하면 이용자 화면으로 들어갑니다.</p>
+      <div class="toolbar">
+        <input id="loginPassword" type="password" placeholder="비밀번호">
+        <button id="loginBtn">입장</button>
+      </div>
+      <div class="notice" id="loginNotice">초기 이용자 비밀번호는 english2026 입니다.</div>
+    </div>
+  </div>
+
+  <main>
+    <header>
+      <div>
+        <h1>내신 대비 영어 퀴즈</h1>
+        <p class="sub">학교별 지문 순서 찾기와 단어 시험을 한곳에서 관리합니다.</p>
+      </div>
+      <div class="top-actions">
+        <span class="pill" id="passwordDue">비밀번호 확인 중</span>
+        <button class="secondary" id="logoutBtn">잠금</button>
+      </div>
+    </header>
+
+    <nav class="tabs" aria-label="기능 선택">
+      <button class="tab-btn active" data-tab="passageTab">지문 순서 찾기</button>
+      <button class="tab-btn" data-tab="wordTab">단어 시험</button>
+      <button class="tab-btn" data-tab="adminTab">관리자</button>
+    </nav>
+
+    <div class="tab-panel active" id="passageTab">
+      <div class="grid">
+        <section>
+          <div class="section-head">
+            <h2>학교와 지문 선택</h2>
+            <button class="secondary" id="reloadPassagesBtn">목록 새로고침</button>
+          </div>
+          <div class="body">
+            <div class="field-row">
+              <div class="field">
+                <label for="schoolSelect">학교</label>
+                <select id="schoolSelect"></select>
+              </div>
+              <div class="field">
+                <label for="passageSelect">지문</label>
+                <select id="passageSelect"></select>
+              </div>
+            </div>
+            <div class="toolbar">
+              <button id="loadPassageBtn">이 지문으로 시작</button>
+              <button class="secondary" id="passageAnswerBtn" disabled>정답 보기</button>
+            </div>
+            <div class="notice" id="passageNotice">지문은 화면에 원문을 띄우지 않고, 선택한 파일에서 바로 퀴즈로 변환됩니다.</div>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2>문장 순서 맞추기</h2>
+            <span class="pill" id="sentenceStat">0문장</span>
+          </div>
+          <div class="body">
+            <div class="quiz-grid">
+              <div class="zone">
+                <div class="zone-title">
+                  <span>섞인 문장</span>
+                  <span id="poolCount">0개 남음</span>
+                </div>
+                <div class="sentence-list" id="poolList"></div>
+              </div>
+              <div class="zone">
+                <div class="zone-title">
+                  <span>내가 고른 순서</span>
+                  <span id="selectedCount">0개 선택</span>
+                </div>
+                <div class="sentence-list" id="selectedList"></div>
+              </div>
+            </div>
+            <div class="toolbar">
+              <button id="checkPassageBtn" disabled>채점하기</button>
+              <button class="secondary" id="undoPassageBtn" disabled>하나 되돌리기</button>
+              <button class="gold" id="reshufflePassageBtn" disabled>다시 섞기</button>
+            </div>
+            <div class="feedback" id="passageFeedback">학교와 지문을 선택해 시작하세요.</div>
+            <div class="notice hidden" id="passageAnswer"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="wordTab">
+      <div class="grid">
+        <section>
+          <div class="section-head">
+            <h2>응시 정보</h2>
+            <span class="pill" id="wordProgress">0 / 0</span>
+          </div>
+          <div class="body">
+            <div class="field-row">
+              <div class="field">
+                <label for="studentName">이름 또는 닉네임</label>
+                <input id="studentName" placeholder="예: 김민준">
+              </div>
+              <div class="field">
+                <label for="questionCount">문항 수</label>
+                <select id="questionCount">
+                  <option value="5">5문항</option>
+                  <option value="10" selected>10문항</option>
+                  <option value="15">15문항</option>
+                </select>
+              </div>
+            </div>
+            <div class="toolbar">
+              <button id="startWordBtn">단어 시험 시작</button>
+              <button class="secondary" id="resetWordBtn">처음으로</button>
+            </div>
+            <div class="notice" id="wordNotice">시험을 마치면 점수와 닉네임이 관리자 데이터베이스에 저장됩니다.</div>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2>문제</h2>
+            <span class="pill" id="wordType">대기</span>
+          </div>
+          <div class="body">
+            <div class="question" id="wordQuestion">
+              <h3>단어 시험을 시작하세요.</h3>
+              <p class="question-main">Ready</p>
+              <p class="question-sub">영어 뜻, 한글 뜻, 예문 빈칸 문제가 섞여 나옵니다.</p>
+            </div>
+            <div class="choice-list" id="choiceList"></div>
+            <div class="toolbar" id="shortAnswerBox">
+              <input id="shortAnswer" placeholder="정답 입력">
+              <button id="submitShortBtn">제출</button>
+            </div>
+            <div class="feedback" id="wordFeedback">아직 진행 중인 시험이 없습니다.</div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <div class="tab-panel" id="adminTab">
+      <div class="admin-stack">
+        <section>
+          <div class="section-head">
+            <h2>관리자 로그인</h2>
+            <span class="pill" id="adminState">잠김</span>
+          </div>
+          <div class="body">
+            <div class="toolbar">
+              <input id="adminPassword" type="password" placeholder="관리자 비밀번호">
+              <button id="adminLoginBtn">관리자 열기</button>
+            </div>
+            <div class="notice" id="adminNotice">초기 관리자 비밀번호는 admin2026 입니다.</div>
+          </div>
+        </section>
+
+        <section class="hidden" id="adminPanel">
+          <div class="section-head">
+            <h2>비밀번호와 단어풀 관리</h2>
+            <button class="secondary" id="exportResultsBtn">결과 CSV 만들기</button>
+          </div>
+          <div class="body">
+            <div class="field-row">
+              <div class="field">
+                <label for="studentPasswordInput">이용자 전체 비밀번호</label>
+                <input id="studentPasswordInput">
+              </div>
+              <div class="field">
+                <label for="adminPasswordInput">관리자 비밀번호</label>
+                <input id="adminPasswordInput">
+              </div>
+              <div class="field">
+                <label for="passwordChangedAt">변경일</label>
+                <input id="passwordChangedAt" type="date">
+              </div>
+            </div>
+            <div class="toolbar">
+              <button id="savePasswordsBtn">비밀번호 저장</button>
+            </div>
+
+            <div class="field-row" style="margin-top: 16px;">
+              <div class="field">
+                <label for="wordEnglish">영어 단어</label>
+                <input id="wordEnglish" placeholder="e.g. analyze">
+              </div>
+              <div class="field">
+                <label for="wordKorean">한글 뜻</label>
+                <input id="wordKorean" placeholder="분석하다">
+              </div>
+            </div>
+            <label for="wordExample" style="margin-top: 10px;">예문</label>
+            <textarea id="wordExample" placeholder="Students analyze the passage carefully."></textarea>
+            <div class="toolbar">
+              <button id="addWordBtn">단어 추가</button>
+              <button class="secondary" id="seedWordsBtn">샘플 단어 다시 채우기</button>
+              <button class="secondary" id="clearResultsBtn">결과 초기화</button>
+            </div>
+            <div class="notice" id="adminWorkNotice">단어와 결과는 이 브라우저의 로컬 데이터베이스에 저장됩니다.</div>
+          </div>
+        </section>
+
+        <section class="hidden" id="adminDataPanel">
+          <div class="section-head">
+            <h2>저장된 단어와 시험 결과</h2>
+            <span class="pill" id="dataStat">0개</span>
+          </div>
+          <div class="body">
+            <h3>단어풀</h3>
+            <div id="wordTable"></div>
+            <h3 style="margin-top: 18px;">시험 결과</h3>
+            <div id="resultTable"></div>
+          </div>
+        </section>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    const STORAGE = {
+      studentPassword: "exam.studentPassword",
+      adminPassword: "exam.adminPassword",
+      passwordChangedAt: "exam.passwordChangedAt",
+      words: "exam.words",
+      results: "exam.results"
+    };
+
+    const fallbackManifest = [
+      { school: "렛츠고", title: "지문 1", path: "영어 지문/렛츠고/지문 1.txt" },
+      { school: "렛츠고", title: "지문 2", path: "영어 지문/렛츠고/지문 2.txt" },
+      { school: "부산고", title: "pecial counsel Cho Eun-suk had soug", path: "영어 지문/부산고/pecial counsel Cho Eun-suk had soug.txt" },
+      { school: "부산고", title: "Yoon and the special counsel appeal", path: "영어 지문/부산고/Yoon and the special counsel appeal.txt" },
+      { school: "서울고", title: "지문 3", path: "영어 지문/서울고/지문 3.txt" },
+      { school: "서울고", title: "지문 4", path: "영어 지문/서울고/지문 4.txt" }
+    ];
+
+    const seedWords = [
+      { en: "analyze", ko: "분석하다", example: "Students analyze the passage carefully." },
+      { en: "evidence", ko: "증거", example: "The writer uses evidence to support the claim." },
+      { en: "perspective", ko: "관점", example: "A new perspective can change how we understand a problem." },
+      { en: "consequence", ko: "결과", example: "Every decision has a consequence." },
+      { en: "essential", ko: "필수적인", example: "Sleep is essential for memory and concentration." },
+      { en: "interpret", ko: "해석하다", example: "Readers interpret symbols in different ways." },
+      { en: "efficient", ko: "효율적인", example: "An efficient plan saves both time and energy." },
+      { en: "contrast", ko: "대조하다", example: "The paragraph contrasts city life with country life." },
+      { en: "predict", ko: "예측하다", example: "Scientists predict changes by studying data." },
+      { en: "benefit", ko: "이익", example: "Regular reading has a long-term benefit." },
+      { en: "attempt", ko: "시도하다", example: "The team will attempt to solve the issue." },
+      { en: "accurate", ko: "정확한", example: "Accurate information helps people make better choices." }
+    ];
+
+    const $ = (selector) => document.querySelector(selector);
+    const $$ = (selector) => [...document.querySelectorAll(selector)];
+
+    let passageManifest = [];
+    let originalSentences = [];
+    let pool = [];
+    let selected = [];
+    let nextSentenceId = 1;
+    let currentPassageMeta = null;
+    let adminUnlocked = false;
+    let wordSession = null;
+
+    function readJson(key, fallback) {
+      try {
+        return JSON.parse(localStorage.getItem(key)) ?? fallback;
+      } catch {
+        return fallback;
+      }
+    }
+
+    function writeJson(key, value) {
+      localStorage.setItem(key, JSON.stringify(value));
+    }
+
+    function initStorage() {
+      if (!localStorage.getItem(STORAGE.studentPassword)) localStorage.setItem(STORAGE.studentPassword, "english2026");
+      if (!localStorage.getItem(STORAGE.adminPassword)) localStorage.setItem(STORAGE.adminPassword, "admin2026");
+      if (!localStorage.getItem(STORAGE.passwordChangedAt)) localStorage.setItem(STORAGE.passwordChangedAt, new Date().toISOString().slice(0, 10));
+      if (!localStorage.getItem(STORAGE.words)) writeJson(STORAGE.words, seedWords);
+      if (!localStorage.getItem(STORAGE.results)) writeJson(STORAGE.results, []);
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#039;"
+      })[char]);
+    }
+
+    function shuffle(items) {
+      const copy = [...items];
+      for (let i = copy.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copy[i], copy[j]] = [copy[j], copy[i]];
+      }
+      return copy;
+    }
+
+    function parseSentences(text) {
+      return text
+        .replace(/\s+/g, " ")
+        .trim()
+        .match(/[^.!?]+[.!?]+(?:["')\]]+)?|[^.!?]+$/g)
+        ?.map((sentence) => sentence.trim())
+        .filter(Boolean) || [];
+    }
+
+    function setMessage(element, message, type = "") {
+      element.textContent = message;
+      element.className = element.className.replace(/\s?(good|bad)/g, "");
+      if (type) element.classList.add(type);
+    }
+
+    function updatePasswordDue() {
+      const changed = new Date(localStorage.getItem(STORAGE.passwordChangedAt));
+      const due = new Date(changed);
+      due.setDate(due.getDate() + 7);
+      const today = new Date();
+      const diff = Math.ceil((due - today) / 86400000);
+      $("#passwordDue").textContent = diff >= 0 ? `비밀번호 변경까지 ${diff}일` : `비밀번호 변경 필요 ${Math.abs(diff)}일 지남`;
+    }
+
+    function login() {
+      const password = $("#loginPassword").value.trim();
+      if (password === localStorage.getItem(STORAGE.studentPassword)) {
+        $("#lockScreen").classList.add("hidden");
+        $("#loginPassword").value = "";
+        setMessage($("#loginNotice"), "입장했습니다.", "good");
+      } else {
+        setMessage($("#loginNotice"), "비밀번호가 맞지 않습니다.", "bad");
+      }
+    }
+
+    function switchTab(tabId) {
+      $$(".tab-btn").forEach((button) => button.classList.toggle("active", button.dataset.tab === tabId));
+      $$(".tab-panel").forEach((panel) => panel.classList.toggle("active", panel.id === tabId));
+    }
+
+    async function loadManifest() {
+      try {
+        const response = await fetch("passages.json", { cache: "no-store" });
+        if (!response.ok) throw new Error("manifest not found");
+        passageManifest = await response.json();
+        setMessage($("#passageNotice"), "지문 목록을 passages.json에서 불러왔습니다.", "good");
+      } catch {
+        passageManifest = fallbackManifest;
+        setMessage($("#passageNotice"), "passages.json을 읽지 못해 내장된 상대 경로 목록을 사용합니다.");
+      }
+      renderPassageSelectors();
+    }
+
+    function renderPassageSelectors() {
+      const schools = [...new Set(passageManifest.map((item) => item.school))].sort((a, b) => a.localeCompare(b, "ko"));
+      $("#schoolSelect").innerHTML = schools.map((school) => `<option value="${escapeHtml(school)}">${escapeHtml(school)}</option>`).join("");
+      renderPassageOptions();
+    }
+
+    function renderPassageOptions() {
+      const school = $("#schoolSelect").value;
+      const passages = passageManifest.filter((item) => item.school === school);
+      $("#passageSelect").innerHTML = passages.map((item, index) => `<option value="${index}">${escapeHtml(item.title)}</option>`).join("");
+    }
+
+    async function startPassageQuiz() {
+      const school = $("#schoolSelect").value;
+      const options = passageManifest.filter((item) => item.school === school);
+      const meta = options[Number($("#passageSelect").value)];
+      if (!meta) return;
+
+      try {
+        const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
+        if (!response.ok) throw new Error("passage not found");
+        const text = await response.text();
+        const sentences = parseSentences(text);
+        if (sentences.length < 2) {
+          setMessage($("#passageFeedback"), "이 지문은 두 문장 이상이어야 퀴즈로 만들 수 있습니다.", "bad");
+          return;
+        }
+        currentPassageMeta = meta;
+        originalSentences = sentences.map((sentence, index) => ({ id: `sentence-${nextSentenceId++}`, text: sentence, order: index }));
+        pool = shuffle(originalSentences);
+        selected = [];
+        $("#passageAnswer").classList.add("hidden");
+        setMessage($("#passageFeedback"), `${meta.school} - ${meta.title} 지문을 섞었습니다.`);
+        renderPassageQuiz();
+      } catch {
+        setMessage($("#passageFeedback"), "지문 파일을 불러오지 못했습니다. 로컬 서버로 실행 중인지, passages.json 경로가 맞는지 확인하세요.", "bad");
+      }
+    }
+
+    function renderPassageQuiz() {
+      $("#poolList").innerHTML = "";
+      $("#selectedList").innerHTML = "";
+
+      if (!originalSentences.length) {
+        $("#poolList").innerHTML = `<div class="empty">지문을 시작하면 섞인 문장이 표시됩니다.</div>`;
+        $("#selectedList").innerHTML = `<div class="empty">왼쪽 문장을 원래 순서대로 누르세요.</div>`;
+      } else {
+        pool.forEach((item, index) => $("#poolList").append(createSentenceButton(item, index, "pool")));
+        if (selected.length) {
+          selected.forEach((item, index) => $("#selectedList").append(createSentenceButton(item, index, "selected")));
+        } else {
+          $("#selectedList").innerHTML = `<div class="empty">아직 선택한 문장이 없습니다.</div>`;
+        }
+      }
+
+      $("#sentenceStat").textContent = `${originalSentences.length}문장`;
+      $("#poolCount").textContent = `${pool.length}개 남음`;
+      $("#selectedCount").textContent = `${selected.length}개 선택`;
+      $("#checkPassageBtn").disabled = !originalSentences.length || selected.length !== originalSentences.length;
+      $("#undoPassageBtn").disabled = selected.length === 0;
+      $("#reshufflePassageBtn").disabled = !originalSentences.length;
+      $("#passageAnswerBtn").disabled = !originalSentences.length;
+    }
+
+    function createSentenceButton(item, index, listName) {
+      const button = document.createElement("button");
+      button.className = "sentence";
+      button.type = "button";
+      button.dataset.id = item.id;
+      button.innerHTML = `<span class="num">${index + 1}</span><span>${escapeHtml(item.text)}</span>`;
+      button.addEventListener("click", () => {
+        if (listName === "pool") {
+          const found = pool.findIndex((candidate) => candidate.id === item.id);
+          selected.push(pool[found]);
+          pool.splice(found, 1);
+        } else {
+          const found = selected.findIndex((candidate) => candidate.id === item.id);
+          pool.push(selected[found]);
+          selected.splice(found, 1);
+        }
+        setMessage($("#passageFeedback"), "순서를 조정했습니다.");
+        renderPassageQuiz();
+      });
+      return button;
+    }
+
+    function checkPassage() {
+      let correct = 0;
+      selected.forEach((item, index) => {
+        if (item.order === index) correct += 1;
+      });
+      [...$("#selectedList").querySelectorAll(".sentence")].forEach((button, index) => {
+        button.classList.add(selected[index].order === index ? "correct" : "wrong");
+      });
+      const score = Math.round((correct / originalSentences.length) * 100);
+      setMessage($("#passageFeedback"), `${currentPassageMeta.title}: ${originalSentences.length}문장 중 ${correct}문장 정답 (${score}점)`, correct === originalSentences.length ? "good" : "bad");
+    }
+
+    function showPassageAnswer() {
+      $("#passageAnswer").innerHTML = `<strong>정답 순서</strong><ol>${originalSentences.map((item) => `<li>${escapeHtml(item.text)}</li>`).join("")}</ol>`;
+      $("#passageAnswer").classList.toggle("hidden");
+    }
+
+    function getWords() {
+      return readJson(STORAGE.words, seedWords);
+    }
+
+    function saveWords(words) {
+      writeJson(STORAGE.words, words);
+    }
+
+    function normalizeAnswer(value) {
+      return value.trim().toLowerCase().replace(/\s+/g, " ");
+    }
+
+    function buildWordQuestion(word, type, allWords) {
+      if (type === "en-to-ko") {
+        return {
+          typeLabel: "영어 → 한글",
+          prompt: "뜻을 한글로 입력하세요.",
+          main: word.en,
+          sub: "",
+          answer: word.ko,
+          mode: "short"
+        };
+      }
+      if (type === "ko-to-en") {
+        const choices = shuffle([word.en, ...shuffle(allWords.filter((item) => item.en !== word.en)).slice(0, 3).map((item) => item.en)]);
+        return {
+          typeLabel: "한글 → 영어",
+          prompt: "뜻에 맞는 영어 단어를 고르세요.",
+          main: word.ko,
+          sub: "",
+          answer: word.en,
+          choices,
+          mode: "choice"
+        };
+      }
+      const blank = word.example.replace(new RegExp(`\\b${word.en}\\b`, "i"), "_____");
+      const choices = shuffle([word.en, ...shuffle(allWords.filter((item) => item.en !== word.en)).slice(0, 3).map((item) => item.en)]);
+      return {
+        typeLabel: "예문 빈칸",
+        prompt: "예문에 들어갈 단어를 고르세요.",
+        main: blank,
+        sub: word.ko,
+        answer: word.en,
+        choices,
+        mode: "choice"
+      };
+    }
+
+    function startWordQuiz() {
+      const name = $("#studentName").value.trim();
+      const words = getWords();
+      const count = Math.min(Number($("#questionCount").value), words.length);
+      if (!name) {
+        setMessage($("#wordNotice"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        return;
+      }
+      if (words.length < 4) {
+        setMessage($("#wordNotice"), "객관식 문제를 만들려면 단어가 4개 이상 필요합니다.", "bad");
+        return;
+      }
+
+      const types = ["en-to-ko", "ko-to-en", "example"];
+      const selectedWords = shuffle(words).slice(0, count);
+      wordSession = {
+        name,
+        index: 0,
+        correct: 0,
+        questions: selectedWords.map((word, index) => buildWordQuestion(word, types[index % types.length], words)),
+        answers: []
+      };
+      setMessage($("#wordNotice"), "시험을 시작했습니다.", "good");
+      renderWordQuestion();
+    }
+
+    function renderWordQuestion() {
+      $("#choiceList").innerHTML = "";
+      $("#shortAnswer").value = "";
+      if (!wordSession) {
+        $("#wordProgress").textContent = "0 / 0";
+        $("#wordType").textContent = "대기";
+        $("#shortAnswerBox").classList.remove("hidden");
+        return;
+      }
+      const question = wordSession.questions[wordSession.index];
+      $("#wordProgress").textContent = `${wordSession.index + 1} / ${wordSession.questions.length}`;
+      $("#wordType").textContent = question.typeLabel;
+      $("#wordQuestion").innerHTML = `
+        <h3>${escapeHtml(question.prompt)}</h3>
+        <p class="question-main">${escapeHtml(question.main)}</p>
+        <p class="question-sub">${escapeHtml(question.sub)}</p>
+      `;
+      $("#shortAnswerBox").classList.toggle("hidden", question.mode !== "short");
+      if (question.mode === "choice") {
+        question.choices.forEach((choice) => {
+          const button = document.createElement("button");
+          button.className = "choice";
+          button.type = "button";
+          button.textContent = choice;
+          button.addEventListener("click", () => answerWord(choice));
+          $("#choiceList").append(button);
+        });
+      }
+      setMessage($("#wordFeedback"), "정답을 입력하거나 선택하세요.");
+    }
+
+    function answerWord(value) {
+      if (!wordSession) return;
+      const question = wordSession.questions[wordSession.index];
+      const isCorrect = normalizeAnswer(value) === normalizeAnswer(question.answer);
+      if (isCorrect) wordSession.correct += 1;
+      wordSession.answers.push({ type: question.typeLabel, question: question.main, userAnswer: value, answer: question.answer, correct: isCorrect });
+      setMessage($("#wordFeedback"), isCorrect ? "정답입니다." : `오답입니다. 정답: ${question.answer}`, isCorrect ? "good" : "bad");
+
+      wordSession.index += 1;
+      if (wordSession.index >= wordSession.questions.length) {
+        setTimeout(finishWordQuiz, 450);
+      } else {
+        setTimeout(renderWordQuestion, 450);
+      }
+    }
+
+    function finishWordQuiz() {
+      const total = wordSession.questions.length;
+      const score = Math.round((wordSession.correct / total) * 100);
+      const results = readJson(STORAGE.results, []);
+      results.unshift({
+        name: wordSession.name,
+        score,
+        correct: wordSession.correct,
+        total,
+        takenAt: new Date().toLocaleString("ko-KR")
+      });
+      writeJson(STORAGE.results, results);
+      $("#wordQuestion").innerHTML = `<h3>시험 완료</h3><p class="question-main">${score}점</p><p class="question-sub">${escapeHtml(wordSession.name)}: ${wordSession.correct} / ${total}</p>`;
+      $("#choiceList").innerHTML = "";
+      $("#shortAnswerBox").classList.add("hidden");
+      $("#wordProgress").textContent = `${total} / ${total}`;
+      $("#wordType").textContent = "완료";
+      setMessage($("#wordFeedback"), "점수와 닉네임을 관리자 데이터베이스에 저장했습니다.", "good");
+      wordSession = null;
+      renderAdminData();
+    }
+
+    function resetWordQuiz() {
+      wordSession = null;
+      $("#wordQuestion").innerHTML = `<h3>단어 시험을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">영어 뜻, 한글 뜻, 예문 빈칸 문제가 섞여 나옵니다.</p>`;
+      $("#choiceList").innerHTML = "";
+      $("#shortAnswerBox").classList.remove("hidden");
+      $("#wordProgress").textContent = "0 / 0";
+      $("#wordType").textContent = "대기";
+      setMessage($("#wordFeedback"), "아직 진행 중인 시험이 없습니다.");
+    }
+
+    function adminLogin() {
+      if ($("#adminPassword").value.trim() !== localStorage.getItem(STORAGE.adminPassword)) {
+        setMessage($("#adminNotice"), "관리자 비밀번호가 맞지 않습니다.", "bad");
+        return;
+      }
+      adminUnlocked = true;
+      $("#adminPanel").classList.remove("hidden");
+      $("#adminDataPanel").classList.remove("hidden");
+      $("#adminState").textContent = "열림";
+      $("#studentPasswordInput").value = localStorage.getItem(STORAGE.studentPassword);
+      $("#adminPasswordInput").value = localStorage.getItem(STORAGE.adminPassword);
+      $("#passwordChangedAt").value = localStorage.getItem(STORAGE.passwordChangedAt);
+      setMessage($("#adminNotice"), "관리자 화면을 열었습니다.", "good");
+      renderAdminData();
+    }
+
+    function renderAdminData() {
+      if (!adminUnlocked) return;
+      const words = getWords();
+      const results = readJson(STORAGE.results, []);
+      $("#dataStat").textContent = `${words.length}단어 / ${results.length}결과`;
+      $("#wordTable").innerHTML = table(["영어", "뜻", "예문"], words.map((word) => [word.en, word.ko, word.example]));
+      $("#resultTable").innerHTML = table(["일시", "닉네임", "점수", "정답"], results.map((result) => [result.takenAt, result.name, `${result.score}점`, `${result.correct}/${result.total}`]));
+    }
+
+    function table(headers, rows) {
+      if (!rows.length) return `<div class="notice">저장된 데이터가 없습니다.</div>`;
+      return `<table><thead><tr>${headers.map((head) => `<th>${escapeHtml(head)}</th>`).join("")}</tr></thead><tbody>${rows.map((row) => `<tr>${row.map((cell) => `<td>${escapeHtml(cell)}</td>`).join("")}</tr>`).join("")}</tbody></table>`;
+    }
+
+    function savePasswords() {
+      localStorage.setItem(STORAGE.studentPassword, $("#studentPasswordInput").value.trim() || "english2026");
+      localStorage.setItem(STORAGE.adminPassword, $("#adminPasswordInput").value.trim() || "admin2026");
+      localStorage.setItem(STORAGE.passwordChangedAt, $("#passwordChangedAt").value || new Date().toISOString().slice(0, 10));
+      updatePasswordDue();
+      setMessage($("#adminWorkNotice"), "비밀번호를 저장했습니다. 변경일 기준 7일 뒤 다시 바꾸면 됩니다.", "good");
+    }
+
+    function addWord() {
+      const en = $("#wordEnglish").value.trim();
+      const ko = $("#wordKorean").value.trim();
+      const example = $("#wordExample").value.trim();
+      if (!en || !ko || !example) {
+        setMessage($("#adminWorkNotice"), "영어 단어, 한글 뜻, 예문을 모두 입력하세요.", "bad");
+        return;
+      }
+      const words = getWords();
+      words.unshift({ en, ko, example });
+      saveWords(words);
+      $("#wordEnglish").value = "";
+      $("#wordKorean").value = "";
+      $("#wordExample").value = "";
+      setMessage($("#adminWorkNotice"), "단어를 추가했습니다.", "good");
+      renderAdminData();
+    }
+
+    function exportResults() {
+      const results = readJson(STORAGE.results, []);
+      const csv = ["takenAt,name,score,correct,total", ...results.map((r) => `"${r.takenAt}","${r.name}",${r.score},${r.correct},${r.total}`)].join("\n");
+      const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement("a");
+      link.href = url;
+      link.download = "word-results.csv";
+      link.click();
+      URL.revokeObjectURL(url);
+    }
+
+    initStorage();
+    updatePasswordDue();
+    renderPassageQuiz();
+    loadManifest();
+    resetWordQuiz();
+
+    $("#loginBtn").addEventListener("click", login);
+    $("#loginPassword").addEventListener("keydown", (event) => {
+      if (event.key === "Enter") login();
+    });
+    $("#logoutBtn").addEventListener("click", () => $("#lockScreen").classList.remove("hidden"));
+    $$(".tab-btn").forEach((button) => button.addEventListener("click", () => switchTab(button.dataset.tab)));
+    $("#reloadPassagesBtn").addEventListener("click", loadManifest);
+    $("#schoolSelect").addEventListener("change", renderPassageOptions);
+    $("#loadPassageBtn").addEventListener("click", startPassageQuiz);
+    $("#checkPassageBtn").addEventListener("click", checkPassage);
+    $("#undoPassageBtn").addEventListener("click", () => {
+      const item = selected.pop();
+      if (item) pool.push(item);
+      renderPassageQuiz();
+    });
+    $("#reshufflePassageBtn").addEventListener("click", () => {
+      pool = shuffle(originalSentences);
+      selected = [];
+      setMessage($("#passageFeedback"), "문장을 다시 섞었습니다.");
+      renderPassageQuiz();
+    });
+    $("#passageAnswerBtn").addEventListener("click", showPassageAnswer);
+    $("#startWordBtn").addEventListener("click", startWordQuiz);
+    $("#resetWordBtn").addEventListener("click", resetWordQuiz);
+    $("#submitShortBtn").addEventListener("click", () => answerWord($("#shortAnswer").value));
+    $("#shortAnswer").addEventListener("keydown", (event) => {
+      if (event.key === "Enter") answerWord($("#shortAnswer").value);
+    });
+    $("#adminLoginBtn").addEventListener("click", adminLogin);
+    $("#savePasswordsBtn").addEventListener("click", savePasswords);
+    $("#addWordBtn").addEventListener("click", addWord);
+    $("#seedWordsBtn").addEventListener("click", () => {
+      saveWords(seedWords);
+      setMessage($("#adminWorkNotice"), "샘플 단어풀을 다시 채웠습니다.", "good");
+      renderAdminData();
+    });
+    $("#clearResultsBtn").addEventListener("click", () => {
+      writeJson(STORAGE.results, []);
+      setMessage($("#adminWorkNotice"), "시험 결과를 초기화했습니다.", "good");
+      renderAdminData();
+    });
+    $("#exportResultsBtn").addEventListener("click", exportResults);
+  </script>
+</body>
+</html>

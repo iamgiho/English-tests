@@ -1,0 +1,1652 @@
+
+1
+able
+~할 수 있는
+56
+buy (-bought- )
+사다
+2
+abroad
+외국에(으로)
+57
+call
+부르다, 전화하다
+3
+act
+행동하다, 연기하다
+58
+candle
+양초
+4
+add
+더하다
+59
+care
+돌봄, 주의, 신경 쓰다
+5
+advantage
+유리한 점, 장점
+60
+careful
+조심하는, 주의 깊은
+6
+advice
+조언, 충고
+61
+catch (-caught- )
+잡다, (병에) 걸리다
+7
+afraid
+두려워하는, 걱정하는
+62
+century
+세기, 100년
+8
+afternoon
+오후
+63
+change
+변화(하다), 바꾸다
+9
+again
+다시
+64
+check
+점검(확인)하다
+10
+age
+나이, 시대
+65
+cheer
+환호(응원)하다
+11
+ago
+~전에
+66
+chew
+씹다
+12
+ahead
+앞에, 앞으로
+67
+child
+어린이, 자식
+13
+aid
+도움, 돕다
+68
+choose (-chose-chosen)
+선택하다
+14
+almost
+거의
+69
+circle
+원, 동그라미
+15
+alone
+혼자의, 외로운
+70
+class
+학급, 수업
+16
+already
+이미, 벌써
+71
+classmate
+반 친구
+17
+also
+~도 또한
+72
+clean
+깨끗한, 청소하다
+18
+although, though
+비록 - 라도
+73
+clear
+명확한, 치우다
+19
+always
+늘, 언제나
+74
+climb
+오르다, 등반하다
+20
+among
+- 사이에, - 중에서
+75
+clock
+시계
+21
+angry
+화난
+76
+close
+닫다, 가까운, 가까이
+22
+another
+또 하나의
+77
+clothing
+의류
+23
+area
+지역, 구역
+78
+cloud
+구름
+24
+arm
+팔, (~s)무기
+79
+cold
+추운, 차가운, 감기
+25
+art
+예술, 기술
+80
+collect
+모으다, 수집하다
+26
+ask
+묻다, 부탁하다
+81
+come (-came-come)
+오다
+27
+asleep
+자고 있는
+82
+comedy
+희극
+28
+aunt
+아주머니, 이모, 고모
+83
+contest
+경쟁, 경연
+29
+away
+떨어져, 떠나서
+84
+control
+통제(하다)
+30
+back
+뒤, 뒤로, 등
+85
+cook
+요리하다, 요리사
+31
+battle
+전투, 싸움
+86
+cool
+시원한, 멋진
+32
+bear (-bore-born)
+낳다, 참다
+87
+count
+세다
+33
+beautiful
+아름다운
+88
+course
+강좌, 과정, 진로
+34
+beauty
+아름다움
+89
+cousin
+사촌
+35
+become (-became-become)
+~이 되다
+90
+cover
+덮다, 덮개
+36
+believe
+믿다
+91
+cross
+건너다, 십자가
+37
+bike(bicycle)
+자전거
+92
+crowded
+꽉 찬, 붐비는
+38
+bird
+새
+93
+cry
+울다, 외치다
+39
+birthday
+생일
+94
+cut (-cut- )
+베다, 자르다
+40
+bite (-bit-bitten)
+물다
+95
+dangerous
+위험한
+41
+blind
+눈 먼
+96
+dark
+어두운
+42
+both
+양쪽(의), 둘 다(의)
+97
+date
+날짜, 데이트
+43
+bottle
+병
+98
+daughter
+딸
+44
+bow
+절하다, 활
+99
+dead
+죽은
+45
+brain
+뇌, 두뇌
+100
+deaf
+귀가 먼
+46
+brave
+용감한
+101
+dear
+사랑하는, 소중한
+47
+break (-broke-broken)
+깨뜨리다, 휴식
+102
+deep
+깊은, 깊게
+48
+breakfast
+아침 식사
+103
+delicious
+맛있는
+49
+bridge
+다리
+104
+depth
+깊이
+50
+bring (-brought- )
+가져(데려)오다
+105
+desert
+사막
+51
+brother
+형제
+106
+design
+설계(기획)하다
+52
+build (-built- )
+짓다, 건축(건설)하다
+107
+dialog(ue)
+대화
+53
+building
+빌딩, 건물
+108
+die
+죽다
+54
+business
+일, 사업
+109
+differ
+다르다
+55
+busy
+바쁜
+110
+different
+다른, 여러 가지
+
+111
+difficult
+어려운
+166
+follow
+따르다
+112
+dinner
+정찬, 만찬(주로 저녁 식사)
+167
+foot
+발
+113
+dirty
+더러운
+168
+foreign
+외국의
+114
+disappoint
+실망시키다
+169
+form
+모양, 형태, 형성하다
+115
+dish
+접시, 요리
+170
+frame
+틀, 뼈대
+116
+drop
+떨어뜨리다
+171
+free
+자유로운, 한가한, 무료의
+117
+drugstore
+약국
+172
+friendly
+친절한, 친한
+118
+each
+각각(의)
+173
+front
+앞, 앞쪽의
+119
+ear
+귀
+174
+fruit
+열매, 과일
+120
+early
+초기의, 이른, 일찍
+175
+full
+가득 찬, 배부른
+121
+east
+동쪽(의)
+176
+fun
+재미(있는)
+122
+easy
+쉬운, 편안한
+177
+funny
+웃기는
+123
+eat (-ate-eaten)
+먹다
+178
+future
+미래
+124
+either
+어느 한 쪽
+179
+garage
+차고
+125
+else
+그 밖에
+180
+get (-got-gotten)
+받다, 얻다
+126
+end
+끝, 끝나다, 끝내다
+181
+ghost
+유령
+127
+engineer
+기사, 기술자
+182
+gift
+선물, 타고난 재능
+128
+enjoy
+즐기다
+183
+give (-gave-given)
+주다
+129
+enough
+충분한
+184
+glad
+기쁜
+130
+enter
+들어가다
+185
+glass
+유리
+131
+even
+~조차
+186
+grandfather
+할아버지
+132
+evening
+저녁
+187
+grandmother
+할머니
+133
+every
+모든, ~마다
+188
+grass
+풀, 잔디
+134
+everywhere
+어디에나, 어디든지
+189
+great
+큰, 위대한, 멋진
+135
+evil
+악, 사악한
+190
+ground
+땅, 운동장
+136
+exam
+시험
+191
+grow (-grew-grown)
+자라다, 기르다
+137
+example
+예, 모범
+192
+guess
+추측하다
+138
+excited
+흥분한
+193
+habit
+습관
+139
+exciting
+흥분시키는
+194
+half
+반(의), 반쯤
+140
+face
+얼굴
+195
+hall
+현관, 복도, 넓은 방
+141
+fact
+사실
+196
+happen
+일어나다, 우연히~하다
+142
+factory
+공장
+197
+hard
+단단한, 어려운, 열심히
+143
+fail
+실패하다
+198
+hate
+싫어하다
+144
+fall (-fell-fallen)
+떨어지다, 넘어지다, 가을
+199
+head
+머리, 향해 가다
+145
+famous
+유명한
+200
+health
+건강
+146
+far
+멀리, 훨씬, 먼
+201
+healthy
+건강한, 건강에 좋은
+147
+farm
+농장
+202
+hear (-heard- )
+듣다
+148
+fast
+빠른, 빨리
+203
+heart
+심장, 마음
+149
+fat
+살찐, 지방
+204
+heat
+열, 더위, 가열하다
+150
+favorite
+가장 좋아하는
+205
+heavy
+무거운, 심한
+151
+fear
+두려움, 두려워하다
+206
+heel
+발뒤꿈치
+152
+feel (-felt- )
+느끼다
+207
+here
+여기에
+153
+few
+소수(의), 조금(의)
+208
+hide (-hid-hidden)
+숨기다, 숨다
+154
+fight
+싸우다, 싸움
+209
+high
+높은, 높게
+155
+fill
+가득 채우다(차다)
+210
+history
+역사
+156
+finally
+마침내, 마지막으로
+211
+hit (-hit- )
+치다, 때리다
+157
+find (-found- )
+찾아내다
+212
+hobby
+취미
+158
+fine
+괜찮은, 벌금(매기다)
+213
+hold (-held- )
+잡고 있다, 유지하다
+159
+finger
+손가락
+214
+hole
+구멍
+160
+finish
+끝내다, 끝나다
+215
+honest
+정직한
+161
+firefighter
+소방관
+216
+hope
+희망(하다)
+162
+first
+첫째의, 첫째로
+217
+hospital
+병원
+163
+floor
+바닥, 층
+218
+hour
+시간
+164
+flower
+꽃
+219
+however
+그러나
+165
+fly (-flew-flown)
+날다, 파리
+220
+hug
+포옹(하다)
+221
+human
+인간(의)
+276
+master
+달인, 주인
+222
+hundred
+백
+277
+matter
+문제, 물질, 중요하다
+223
+hungry
+배고픈
+278
+maybe
+아마
+224
+hurry
+서두르다, 서두름
+279
+memory
+기억(력)
+225
+husband
+남편
+280
+message
+메시지
+226
+idea
+생각, 아이디어
+281
+middle
+한가운데(의)
+227
+imagine
+상상하다
+282
+mild
+순한, 온화한
+228
+important
+중요한
+283
+million
+백만(의)
+229
+information
+정보
+284
+mind
+마음(지성), 꺼리다
+230
+interest
+관심, 흥미(를 끌다)
+285
+minute
+분, 잠깐
+231
+interested
+관심(흥미) 있는
+286
+mistake
+실수(하다)
+232
+interesting
+흥미를 끄는
+287
+mix
+혼합하다, 혼합되다
+233
+invite
+초대하다
+288
+modern
+현대의, 현대적인
+234
+island
+섬
+289
+monitor
+모니터, 감시하다
+235
+job
+일, 직업
+290
+month
+달, 한 달
+236
+just
+꼭, 단지
+291
+morning
+아침, 오전
+237
+keep (-kept- )
+유지하다, 계속하다
+292
+mountain
+산
+238
+kid
+아이, 농담하다
+293
+mouth
+입
+239
+kind
+친절한, 종류
+294
+move
+움직이다, 이사하다
+240
+knock
+두드리다
+295
+nail
+손톱, 발톱, 못
+241
+know (-knew-known)
+알다
+296
+narrow
+좁은, 좁히다
+242
+lake
+호수
+297
+nation
+국가, 민족
+243
+large
+큰, 대형의
+298
+neck
+목
+244
+last
+지난, 마지막의, 지속되다
+299
+need
+필요하다, 필요, 욕구
+245
+late
+늦은, 늦게
+300
+neighbor
+이웃
+246
+later
+나중에, 후에
+301
+nest
+둥지, 보금자리
+247
+laugh
+웃다, 비웃다, 웃음
+302
+never
+결코~않다
+248
+law
+법(률)
+303
+noise
+시끄러운 소리, 소음
+249
+leaf
+(나뭇)잎
+304
+noon
+정오
+250
+learn
+배우다
+305
+north
+북쪽(의), 북쪽으로
+251
+leave (-left- )
+떠나다
+306
+nose
+코
+252
+left
+왼쪽(의), 왼쪽으로
+307
+office
+사무실
+253
+leg
+다리
+308
+often
+자주
+254
+let (-let- )
+~하게 허락하다
+309
+once
+한 번, 이전에, 일단~하면
+255
+letter
+편지, 글자
+310
+only
+단지, 오직, 유일한
+256
+library
+도서관
+311
+open
+열다, 열린
+257
+life
+인생, 생명
+312
+other
+다른, 그 밖의
+258
+light
+빛, 밝은, 가벼운
+313
+own
+자신의, 소유하다
+259
+lightning
+번개
+314
+pain
+고통, 아픔
+260
+listen
+듣다
+315
+pair
+한 쌍
+261
+live
+살다, 살아 있는
+316
+palm
+손바닥
+262
+long
+긴, 길게, 오래
+317
+parent(s)
+부모
+263
+look
+보다
+318
+park
+공원, 주차하다
+264
+lose (-lost- )
+잃다, 지다
+319
+part
+부분
+265
+loud
+큰 소리의, 시끄러운
+320
+past
+과거, 지나간
+266
+low
+낮은, 낮게
+321
+pause
+잠시 멈추다, 멈춤
+267
+lower
+더 낮은, 낮추다
+322
+peace
+평화
+268
+luck
+(행)운
+323
+peak
+산꼭대기, 봉우리
+269
+machine
+기계
+324
+people
+사람들, 민족
+270
+magazine
+잡지
+325
+perfect
+완전한, 완벽한
+271
+mail
+메일, 우편(물)
+326
+person
+사람, 인물
+272
+main
+주요한
+327
+picture
+그림, 사진
+273
+male
+남성(의), 수컷(의)
+328
+piece
+조각
+274
+man
+남자, 사람
+329
+pilot
+조종사
+275
+mark
+표시(하다), 자국
+330
+place
+장소, 두다, 놓다
+331
+plane
+비행기
+386
+sale
+판매, 할인 판매
+332
+plant
+식물, 심다
+387
+salt
+소금
+333
+plate
+접시
+388
+same
+같은
+334
+pleasant
+쾌적한, 유쾌한
+389
+save
+구하다, 저축하다
+335
+poem
+(한 편의) 시
+390
+scare
+무섭게 하다
+336
+poetry
+(여러 편의) 시
+391
+scary
+무서운, 겁나는
+337
+point
+점, 요점, 점수, 가리키다
+392
+science
+과학
+338
+pole
+막대기, 극
+393
+scientist
+과학자
+339
+poor
+가난한, 불쌍한, 서투른
+394
+script
+대본
+340
+possible
+가능한
+395
+season
+계절, 철
+341
+power
+힘, 권력
+396
+seat
+좌석, 자리, 앉히다
+342
+practice
+실행(하다), 연습, 관행
+397
+second
+제2의, 두 번째, 초, 잠깐
+343
+press
+누르다, 언론
+398
+secret
+비밀(의)
+344
+pretty
+예쁜, 귀여운, 꽤
+399
+section
+부분, 구역
+345
+problem
+문제
+400
+see (-saw-seen)
+보다
+346
+promise
+약속(하다)
+401
+seem
+~처럼 보이다,
+347
+protein
+단백질
+402
+sell (-sold- )
+팔다
+348
+proud
+자랑스러운
+403
+send (-sent- )
+보내다
+349
+pull
+당기다
+404
+sense
+감각, 분별력
+350
+purse
+지갑, 핸드백
+405
+serve
+시중들다, 봉사하다
+351
+push
+밀다
+406
+set (-set- )
+놓다, 세우다
+352
+put (-put- )
+놓다, 두다
+407
+setting
+배경
+353
+question
+질문, 의문, 문제
+408
+several
+몇몇(의)
+354
+quick
+빠른
+409
+ship
+배
+355
+quiet
+조용한
+410
+short
+짧은, 키가 작은
+356
+race
+경주, 인종, 경주하다
+411
+shut (-shut- )
+닫다, 닫히다
+357
+read (-read- )
+읽다
+412
+sick
+병든, 아픈
+358
+ready
+준비된
+413
+side
+측, 쪽, 측면
+359
+real
+진짜의, 현실의
+414
+sign
+신호, 서명하다
+360
+really
+정말로
+415
+simple
+간단한, 단순한
+361
+recycle
+재활용하다
+416
+sister
+자매
+362
+refrigerator
+냉장고
+417
+site
+장소, 현장
+363
+remember
+기억하다
+418
+sleepy
+졸리는
+364
+report
+보고(하다), 보고서
+419
+sleeve
+소매
+365
+research
+연구(하다), 조사(하다)
+420
+slice
+얇은 조각, 얇게 썰다
+366
+rest
+휴식(하다), 나머지
+421
+small
+작은
+367
+restaurant
+음식점
+422
+smart
+영리한
+368
+return
+되돌아가다,반환
+423
+smell
+냄새(맡다), 냄새 나다
+369
+rice
+쌀, 밥
+424
+smoke
+(담배) 피우다, 연기
+370
+rich
+부유한, 풍부한
+425
+soldier
+군인
+371
+ride (-rode-ridden)
+타다, 타기
+426
+some
+약간의, 어떤
+372
+right
+옳은, 오른쪽
+427
+sometimes
+때때로
+373
+river
+강
+428
+soon
+곧, 일찍
+374
+road
+도로, 길
+429
+sore
+아픈, 쑤시는
+375
+rock
+바위
+430
+soul
+영혼, 정신
+376
+role
+역할
+431
+sound
+소리, ~처럼 들리다
+377
+roll
+구르다, 굴리다
+432
+sour
+(맛이) 신
+378
+roof
+지붕
+433
+south
+남쪽(의)
+379
+room
+방, 공간, 여지
+434
+space
+공간, 우주
+380
+rope
+밧줄
+435
+spaceship
+우주선
+381
+rotten
+썩은
+436
+speak (-spoke-spoken)
+말하다
+382
+round
+둥근, 둥글게
+437
+spend (-spent- )
+(시간, 돈을) 쓰다
+383
+rubber
+고무
+438
+spin
+회전하다, 회전시키다
+384
+safe
+안전한
+439
+spring
+봄, 스프링, 샘
+385
+sail
+항해하다, 돛
+440
+square
+정사각형, 광장
+441
+station
+역, 정거장
+496
+turn
+돌(리)다, 바뀌다
+442
+step
+걸음, 단계, 계단
+497
+twice
+두 번, 두 배
+443
+still
+여전히, 조용한
+498
+type
+유형
+444
+store
+가게, 상점, 저장하다
+499
+uncle
+삼촌
+445
+strange
+이상한, 낯선
+500
+understand (-understood- )
+이해하다
+446
+street
+거리
+501
+unit
+단위, 단원
+447
+stress
+압박, 스트레스, 강조(하다)
+502
+use
+사용하다, 사용
+448
+strong
+강한
+503
+useful
+유용한, 쓸모 있는
+449
+student
+학생
+504
+usually
+보통, 대개
+450
+stupid
+어리석은, 멍청한
+505
+vacation
+방학, 휴가
+451
+subject
+과목, 주제
+506
+vegetable
+채소, 야채
+452
+such
+그러한
+507
+very
+매우
+453
+suddenly
+갑자기
+508
+view
+전망, 경치, 견해
+454
+summer
+여름
+509
+visit
+방문(하다)
+455
+sure
+확실한
+510
+waist
+허리
+456
+surprise
+놀라게 하다, 놀람
+511
+wait
+기다리다
+457
+take (-took-taken)
+잡다, 가지고 가다
+512
+wake (-woke-woken)
+잠에서 깨다(깨우다)
+458
+talk
+말하다, 대화하다
+513
+walk
+걷다, 산책
+459
+tall
+키가 큰
+514
+wall
+벽, 담
+460
+taste
+맛, 취향
+515
+want
+원하다
+461
+teach (-taught- )
+가르치다
+516
+war
+전쟁
+462
+teenage
+십대의
+517
+warm
+따뜻한, 데우다
+463
+tell (-told- )
+말하다
+518
+wash
+씻다
+464
+terrible
+끔찍한, 지독한, 무서운
+519
+watch
+지켜보다, 손목시계
+465
+thank
+감사하다, 감사
+520
+way
+방법, 길
+466
+then
+그때, 그러고 나서
+521
+weak
+약한
+467
+there
+거기에
+522
+wear (-wore-worn)
+입고 있다
+468
+thick
+두꺼운
+523
+week
+주, 1주일
+469
+thin
+얇은, 마른
+524
+weekend
+주말
+470
+thing
+것, 일, 물건
+525
+weigh
+무게가 나가다
+471
+think (-thought- )
+생각하다
+526
+welcome
+환영하다
+472
+third
+세 번째의, 세 번째로
+527
+well
+잘, 건강한
+473
+thirsty
+목마른
+528
+west
+서쪽(의)
+474
+thought
+생각, 사고
+529
+wet
+젖은, 적시다
+475
+thousand
+천
+530
+wheel
+바퀴
+476
+throw
+던지다
+531
+wide
+넓은, 넓게, 널리
+477
+thumb
+엄지손가락
+532
+win (-won- )
+이기다, 얻다
+478
+thunder
+천둥
+533
+wind
+바람
+479
+tie
+매다
+534
+winter
+겨울
+480
+tiny
+아주 작은
+535
+wipe
+닦다, 닦아내다
+481
+tired
+피곤한, 싫증난
+536
+wire
+전선, 철사
+482
+together
+함께, 같이
+537
+wise
+슬기로운, 현명한
+483
+tomorrow
+내일
+538
+wish
+바라다, 빌다, 소원
+484
+toothache
+치통
+539
+within
+이내에
+485
+topic
+화제, 주제
+540
+wonderful
+훌륭한, 멋진
+486
+total
+총, 전체의
+541
+word
+단어, 말
+487
+tourist
+관광객
+542
+work
+일(하다), 공부(하다), 작품
+488
+toward(s)
+-쪽으로, 향하여
+543
+world
+세계, 세상
+489
+trade
+거래(하다), 무역(하다)
+544
+worried
+걱정하는
+490
+train
+열차, 훈련하다
+545
+write (-wrote-written)
+쓰다
+491
+travel
+여행하다, 여행
+546
+wrong
+잘못된, 틀린
+492
+trip
+여행
+547
+yard
+마당, 뜰
+493
+trouble
+곤란(곤경), 골칫거리
+548
+year
+해, 1년
+494
+true
+진짜의, 참된
+549
+yesterday
+어제
+495
+try
+시도하다, 노력하다
+550
+yet
+아직

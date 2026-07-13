@@ -1,0 +1,3907 @@
+1
+ability
+능력
+56
+cheap
+싼, 싸구려의
+2
+above
+-위에
+57
+chief
+우두머리, 주요한
+3
+absent
+결석한, 부재의
+58
+clerk
+점원,직원
+4
+accept
+받아들이다, 수락하다
+59
+climate
+기후
+5
+accident
+사고, 우연
+60
+cloth
+천, 헝겊
+6
+activity
+활동
+61
+clothes
+옷
+7
+admire
+감탄하다, 존경하다
+62
+clue
+실마리, 단서
+8
+admit
+인정하다, 허가하다
+63
+coast
+해안
+9
+adult
+어른(의)
+64
+college
+대학(교)
+10
+advise
+충고하다
+65
+comfortable
+편안한
+11
+agree
+동의하다
+66
+comment
+논평(하다)
+12
+allow
+허락하다
+67
+common
+공통의, 흔한, 평범한
+13
+amount
+양
+68
+community
+공동체
+14
+angle
+각도, 각, 모서리
+69
+compare
+비교하다, 비유하다
+15
+ankle
+발목
+70
+connect
+연결하다, 관련시키다
+16
+answer
+대답(하다)
+71
+contain
+포함하다, 들어있다
+17
+apart
+떨어져서, 따로
+72
+copy
+복사(하다)
+18
+appointment
+(만나려는)약속
+73
+correct
+올바른, 교정하다
+19
+argue
+언쟁하다, 논쟁하다
+74
+cost
+비용(들다)
+20
+army
+군대
+75
+country
+나라, 시골
+21
+arrive
+도착하다
+76
+courage
+용기
+22
+ashamed
+부끄러워하는
+77
+create
+창조하다
+23
+attack
+공격하다
+78
+crime
+범죄
+24
+attend
+출석하다
+79
+crowd
+군중, 인파
+25
+attention
+주의, 주목
+80
+cruel
+잔인한
+26
+avoid
+피하다
+81
+culture
+문화,문명
+27
+bark
+짖다
+82
+cure
+치료(법), 치료하다
+28
+bear(-bore-born)
+곰, 참다, 낳다
+83
+custom
+풍습, 관습
+29
+begin
+시작하다
+84
+damage
+손해(입히다), 피해(끼치다)
+30
+beside
+-옆에
+85
+decide
+결심하다, 결정하다
+31
+besides
+게다가
+86
+develop
+개발하다, 발전하다[시키다]
+32
+bet
+내기하다, 장담하다
+87
+diet
+식사,음식물,식이요법
+33
+bill
+계산서, 청구서, 지폐
+88
+dig(-dug-)
+파다
+34
+bind(-bound-bound)
+묶다
+89
+discover
+발견하다
+35
+bite(-bit-bitten)
+물다
+90
+discuss
+토론하다, 의논하다
+36
+blank
+빈, 공백(의)
+91
+disease
+질병
+37
+blow
+불다
+92
+dislike
+싫어하다
+38
+boil
+끓다, 끓이다
+93
+distance
+거리
+39
+borrow
+빌리다
+94
+dozen
+1다스, 12개
+40
+branch
+나뭇가지, 지사
+95
+draw
+그리다, 당기다
+41
+breath
+호흡
+96
+dull
+무딘, 우둔한
+42
+breathe
+호흡하다
+97
+dumb
+벙어리의, 우둔한
+43
+bright
+밝은, 영리한
+98
+duty
+의무
+44
+bring(-brought-)
+가져오다, 데려오다
+99
+earn
+(돈)벌다, (자격이 되어) 얻다
+45
+burn
+타다, 태우다
+100
+earth
+지구, 땅
+46
+bury
+묻다
+101
+elect
+선거하다, 선출하다
+47
+calm
+고요한, 침착한
+102
+emotion
+감정
+48
+capital
+수도, 자본
+103
+employ
+고용하다
+49
+career
+직업, 경력
+104
+empty
+비어 있는
+50
+carry
+나르다, 가지고 다니다
+105
+escape
+탈출(하다)
+51
+case
+경우, 사건
+106
+examine
+조사하다, 검사하다
+52
+cash
+현금
+107
+exchange
+교환하다
+53
+certain
+확실한, 어떤
+108
+excuse
+용서하다, 변명(하다)
+54
+chance
+기회, 가능성
+109
+exercise
+운동(하다), 연습
+55
+character
+특징, 성격, 등장인물
+110
+expect
+기대하다, 예상하다
+
+111
+expensive
+비싼
+166
+lend
+빌려주다
+112
+experience
+경험(하다)
+167
+lift
+들어 올리다
+113
+explain
+설명하다
+168
+limit
+제한, 한계, 제한하다
+114
+express
+표현하다
+169
+lock
+잠그다, 자물쇠
+115
+extra
+추가의, 여분의
+170
+loudly
+큰소리로
+116
+fair
+공평한
+171
+manner
+방식, 태도
+117
+faith
+믿음, 신념
+172
+meal
+식사
+118
+false
+거짓의
+173
+mean
+의미하다, 의도하다, 치사한
+119
+favor
+호의, 친절
+174
+medicine
+약, 의학
+120
+feed
+먹이다
+175
+melt
+녹다, 녹이다
+121
+female
+여성(의), 암컷(의)
+176
+mess
+엉망
+122
+fever
+열
+177
+metal
+금속
+123
+field
+들판, 분야
+178
+moment
+순간, 찰나
+124
+fit
+꼭 맞다, 적합하다, 적합한
+179
+myth
+신화, 거짓
+125
+fix
+수리하다, 고정시키다
+180
+native
+태생의, 태생인 사람
+126
+flood
+홍수, 물에 잠기(게 하)다
+181
+natural
+자연의, 당연한
+127
+focus
+초점, 집중하다[시키다]
+182
+nature
+자연, 본성
+128
+forest
+숲
+183
+neat
+깔끔한, 단정한
+129
+forget
+잊다
+184
+nervous
+긴장한, 신경(계)의
+130
+forgive
+용서하다
+185
+notice
+주목, 알아차리다
+131
+fortune
+운, 큰 재산
+186
+novel
+소설, 새로운, 진기한
+132
+fountain
+분수, 샘
+187
+obey
+복종하다
+133
+freedom
+자유
+188
+offer
+제공(하다), 제안(하다)
+134
+gain
+얻다
+189
+opinion
+의견
+135
+gate
+대문
+190
+order
+주문(하다), 명령(하다), 순서
+136
+gather
+모으다, 모이다
+191
+pace
+속도, 보폭, 다니다
+137
+general
+일반적인, 전체적인
+192
+path
+작은 길, 통로, 경로
+138
+generous
+관대한
+193
+patient
+인내하는, 환자
+139
+global
+지구의, 세계적인
+194
+pay
+지불하다
+140
+glory
+영광
+195
+perhaps
+아마도
+141
+goal
+목표, 골
+196
+pick
+따다,뜯다,골라잡다
+142
+grace
+은혜
+197
+pity
+동정
+143
+guard
+지키다, 보초(서다)
+198
+please
+기쁘게 하다, 제발
+144
+gym
+체육관
+199
+pleasure
+즐거움, 기쁨
+145
+headache
+두통
+200
+poet
+시인
+146
+height
+높이,고도,신장
+201
+poison
+독(을 넣다)
+147
+hide(-hid-hidden)
+숨기다, 숨다
+202
+polite
+예의 바른
+148
+honesty
+정직
+203
+popular
+인기 있는, 대중적인,대중의
+149
+honor
+명예, 영광
+204
+population
+인구, 개체군
+150
+host
+주최자, 진행자, 주최하다
+205
+pour
+붓다, 따르다
+151
+hurt
+다치게 하다, 상처 주다, 아프다
+206
+praise
+칭찬(하다), 찬양(하다)
+152
+improve
+개선하다[되다], 향상시키다
+207
+prepare
+준비하다
+153
+income
+소득, 수입
+208
+president
+회장, 의장, 대통령
+154
+instance
+예
+209
+pressure
+압력, 압박
+155
+instead
+그 대신에
+210
+price
+가격
+156
+international
+국제적인
+211
+pride
+자존심, 자만
+157
+introduce
+소개하다, 도입하다
+212
+prison
+감옥
+158
+invent
+발명하다
+213
+private
+사적인, 개인적인
+159
+iron
+철,쇠, 다리미
+214
+prize
+상, 경품
+160
+join
+참여하다, 가입하다
+215
+produce
+생산하다
+161
+judge
+판사, 심사위원, 판단하다
+216
+protect
+보호하다
+162
+labor
+노동
+217
+quarrel
+싸우다, 싸움
+163
+ladder
+사다리
+218
+quite
+꽤, 아주
+164
+language
+언어
+219
+raise
+올리다, 기르다
+165
+lead
+이끌다
+220
+rate
+비율, 속도, 요금
+
+221
+reach
+도착하다, 닿다
+276
+task
+직무, 과제
+222
+react
+반응하다
+277
+tax
+세금
+223
+receive
+받다
+278
+theater
+극장
+224
+recipe
+조리법, 비법
+279
+thief
+도둑
+225
+recover
+회복하다
+280
+throat
+목구멍
+226
+regret
+후회(하다)
+281
+tight
+꽉 조이는
+227
+rent
+임차하다, 임대하다
+282
+tongue
+혀, 말
+228
+repeat
+반복하다, 따라 하다
+283
+tough
+힘든, 강인한, 질긴
+229
+riddle
+수수께끼
+284
+tour
+관광(하다)
+230
+ride(-rode-ridden)
+타다
+285
+traditional
+전통적인
+231
+rise(-rose-risen)
+오르다, 올라가다
+286
+traffic
+교통, 교통량
+232
+route
+길, 노정
+287
+trash
+쓰레기
+233
+row
+줄, 열
+288
+tray
+쟁반
+234
+rude
+무례한
+289
+treat
+다루다, 대하다, 치료하다
+235
+ruin
+망치다, 파괴
+290
+trick
+속임수, 장난, 속이다
+236
+rule
+규칙, 지배하다
+291
+universe
+우주, 세계
+237
+salary
+봉급
+292
+university
+종합대학
+238
+scared
+겁에 질린, 두려운
+293
+unusual
+이상한, 보통이 아닌
+239
+scene
+장면, 경치
+294
+valley
+계곡
+240
+schedule
+일정, 예정
+295
+value
+가치
+241
+scold
+꾸짖다
+296
+village
+마을,촌락
+242
+search
+검색(하다)
+297
+voice
+목소리
+243
+seed
+씨, 종자
+298
+vote
+투표(하다)
+244
+senior
+손위의, 연장자
+299
+warn
+경고하다
+245
+serious
+진지한, 중대한, 심각한
+300
+waste
+낭비(하다), 폐기물
+246
+servant
+하인
+301
+wave
+파도, (손) 흔들다
+247
+shade
+그늘, 색조
+302
+wealth
+부, 재산
+248
+shadow
+그림자
+303
+weather
+날씨
+249
+shape
+모양
+304
+weight
+무게, 체중
+250
+share
+공유하다, 몫
+305
+whether
+-인지 아닌지
+251
+shore
+바닷가, 해안
+306
+whole
+전체의, 온전한
+252
+shout
+소리지르다
+307
+wonder
+궁금히 여기다, 놀라움
+253
+sigh
+한숨(쉬다)
+308
+worry
+걱정(하다, 시키다)
+254
+sight
+시력, 시야
+309
+worth
+가치, - 가치가 있는
+255
+signal
+신호(보내다)
+310
+wrap
+싸다
+256
+sin
+죄
+
+311
+abuse
+남용하다,학대하다
+257
+sink(-sank-sunk)
+가라앉다
+312
+access
+접근(하다)
+258
+situation
+상황
+313
+accomplish
+성취하다
+259
+skill
+기술
+314
+account
+계좌, 설명
+260
+slip
+미끄러지다
+315
+achieve
+성취하다
+261
+social
+사회의, 사교의
+316
+acid
+산성(의)
+262
+soil
+흙, 토양
+317
+actual
+실제의, 사실상의
+263
+source
+원천, 근원, 출처
+318
+address
+주소, 연설, (문제를) 다루다
+264
+speech
+말, 연설
+319
+advertise
+광고하다
+265
+spirit
+정신,영혼,사기
+320
+affect
+영향 주다
+266
+stair
+계단,층계
+321
+aim
+목표(로 삼다), 겨누다
+267
+stand
+서다, 참다
+322
+alarm
+경보, 놀라게 하다
+268
+stay
+머물다, 남다
+323
+amazing
+놀라운
+269
+steel
+강철
+324
+amusing
+즐거운, 재미있는
+270
+stream
+흐름, 시냇물, 계속흐르다
+325
+announce
+발표하다
+271
+suffer
+(고통)겪다
+326
+annoy
+짜증나게 하다, 귀찮게 하다
+272
+support
+지지(하다), 부양(하다)
+327
+anxious
+걱정하는, 갈망하는
+273
+surface
+표면
+328
+apologize
+사과하다
+274
+survive
+살아남다
+329
+appear
+나타나다, -인 듯하다
+275
+talent
+재능
+330
+arrange
+정리하다, 배열하다
+331
+arrest
+체포(하다)
+386
+crop
+농작물
+332
+article
+기사, 품목
+387
+curse
+욕(하다), 저주(하다)
+333
+assemble
+조립하다
+388
+customer
+손님
+334
+assistant
+조수, 보조자
+389
+dawn
+새벽, 동이 틀 무렵
+335
+athlete
+운동선수
+390
+debate
+토론(하다)
+336
+attitude
+태도, 자세
+391
+debt
+빚, 부채
+337
+attract
+끌다, 유인하다
+392
+decade
+10년
+338
+audience
+청중, 관객
+393
+decay
+부패(시키다), 썩(게 하)다
+339
+author
+작가
+394
+decrease
+감소(하다/시키다)
+340
+available
+이용 가능한
+395
+degree
+정도, 도, 학위
+341
+average
+평균
+396
+delay
+지연(하다), 연기(하다)
+342
+aware
+인식하는
+397
+delight
+기쁨, 기쁘게 하다
+343
+baggage
+(여행)짐, 수하물
+398
+deliver
+배달하다
+344
+bankrupt
+파산한, 부도난
+399
+demand
+요구(하다), 수요
+345
+beat
+때리다, 이기다
+400
+dense
+밀집한, 빽빽한
+346
+beg
+구걸하다, 간청하다
+401
+deny
+부정하다, 부인하다
+347
+behavior
+행동
+402
+department
+부문, 부서
+348
+belong to
+속하다, 소유다
+403
+depend on
+의지하다, 좌우되다
+349
+bend
+구부리다
+404
+depressed
+우울한
+350
+benefit
+이익(되다)
+405
+describe
+묘사하다
+351
+beverage
+음료
+406
+desire
+욕망, 욕망하다
+352
+biology
+생물학
+407
+destroy
+파괴하다
+353
+blame
+비난하다
+408
+detail
+세부사항
+354
+bless
+축복하다
+409
+device
+장치
+355
+bloom
+꽃(피다)
+410
+differ
+다르다
+356
+board
+판자, 게시판, 위원회
+411
+diligent
+부지런한
+357
+bother
+괴롭히다
+412
+disappear
+사라지다
+358
+bottom
+바닥
+413
+disappointed
+실망스러운
+359
+bully
+괴롭히다, 괴롭히는 가해자
+414
+disaster
+재해, 재난, 큰 불행
+360
+burden
+짐, 부담
+415
+disorder
+무질서, 장애
+361
+cancel
+취소하다
+416
+divide
+나누다
+362
+cause
+원인, 이유, 유발하다
+417
+donate
+기부하다, 기증하다
+363
+cave
+동굴
+418
+doubt
+의심(하다)
+364
+celebrate
+축하하다, 기념하다
+419
+drag
+질질 끌다
+365
+ceremony
+의식
+420
+dump
+버리다
+366
+charge
+책임, 요금
+421
+earthquake
+지진
+367
+chase
+추적(하다), 추격(하다)
+422
+economy
+경제
+368
+cheat
+속이다, 사기 치다
+423
+edit
+편집하다
+369
+claim
+주장(하다)
+424
+education
+교육
+370
+communicate
+의사소통하다
+425
+effect
+효과, 영향, 결과
+371
+company
+회사,동행
+426
+electric
+전기의
+372
+complain
+불평하다
+427
+embarrassed
+당황한, 창피한
+373
+complete
+완전한, 완성하다
+428
+emperor
+황제
+374
+concept
+개념
+429
+enable
+가능하게 하다
+375
+confidence
+자신감, 확신
+430
+encourage
+격려하다, 용기주다
+376
+consume
+소비하다
+431
+enemy
+적, 경쟁상대
+377
+consumer
+소비자
+432
+enlarge
+확대하다
+378
+contact
+접촉, 연락(하다)
+433
+entertainment
+오락, 연예
+379
+continue
+계속하다
+434
+entire
+전체의
+380
+convenient
+편리한
+435
+environment
+환경
+381
+cough
+기침하다
+436
+envy
+질투, 부러워하다
+382
+coward
+겁쟁이
+437
+equal
+같은, 평등한
+383
+creative
+창조적인, 창의적인
+438
+erase
+지우다
+384
+credit
+신용, 신뢰
+439
+especially
+특히
+385
+crisis
+위기
+440
+exact
+정확한
+441
+excellent
+훌륭한
+496
+individual
+개인(의)
+442
+except
+제외하고
+497
+industry
+산업
+443
+exhaust
+지치게 하다, 고갈시키다
+498
+inform
+알리다
+444
+exist
+존재하다
+499
+injured
+부상당한
+445
+expense
+지출
+500
+innocent
+무죄의, 순수한
+446
+experiment
+실험
+501
+insight
+통찰력
+447
+expert
+전문가
+502
+insist
+주장하다, 고집하다
+448
+explore
+탐험하다
+503
+inspire
+영감 주다, 감동시키다
+449
+export
+수출(하다)
+504
+instruct
+가르치다, 지시하다
+450
+expose
+노출시키다, 전시하다
+505
+insult
+모욕(하다)
+451
+fable
+우화
+506
+intend
+의도하다
+452
+factor
+요인, 요소
+507
+janitor
+관리인, 잡역부
+453
+failure
+실패
+508
+jealous
+질투하는
+454
+familiar
+친숙한, 잘아는
+509
+journey
+여행, 여정
+455
+fare
+운임, 요금
+510
+justice
+정의, 공정성
+456
+fault
+결점, 잘못
+511
+knowledge
+지식
+457
+feather
+깃털
+512
+laboratory
+실험실
+458
+flame
+불꽃, 화염
+513
+laundry
+세탁, 세탁물
+459
+flat
+평평한
+514
+lay(-laid-laid)
+놓다, 눕히다
+460
+flatter
+아부하다, 아첨하다
+515
+legal
+법률의, 합법적인
+461
+flavor
+맛,향
+516
+legend
+전설
+462
+flight
+비행, 항공편
+517
+length
+길이, 기간
+463
+float
+(물위에)뜨다, 떠다니다
+518
+lie(-lay-lain)
+놓이다, 눕다
+464
+flour
+밀가루
+519
+load
+짐, 짐 싣다
+465
+fold
+접다
+520
+local
+지역의, 지방의
+466
+forbid
+금지하다
+521
+locate
+위치시키다, 위치 찾다
+467
+force
+힘, 강제로 시키다
+522
+location
+위치, 장소
+468
+forward
+앞으로
+523
+loose
+느슨한
+469
+freeze
+얼다, 얼리다
+524
+lump
+덩어리
+470
+frequent
+빈번한, 자주 일어나는
+525
+luxury
+사치
+471
+frighten
+겁먹게 하다
+526
+major
+주요한,전공,전공하다
+472
+fuel
+연료
+527
+manage
+관리하다
+473
+function
+기능(하다), 역할(하다)
+528
+manufacture
+제조(하다)
+474
+fund
+자금, 자본
+529
+mass
+대중, 덩어리
+475
+garbage
+쓰레기
+530
+material
+재료,자료, 물질적인
+476
+gene
+유전자
+531
+measure
+측정(하다), 조치, 정책
+477
+genius
+천재
+532
+medical
+의학의, 의료의
+478
+government
+정부
+533
+mental
+마음의, 정신의
+479
+grab
+확 움켜쥐다, 잡아채다
+534
+mention
+언급(하다)
+480
+grade
+등급, 계급, 성적
+535
+mercy
+자비
+481
+graduate from
+졸업하다, 졸업생
+536
+method
+방법
+482
+greet
+인사하다
+537
+miserable
+비참한
+483
+harbor
+항구
+538
+mock
+놀리다, 조롱하다
+484
+harm
+해, 해치다
+539
+movement
+운동, 움직임
+485
+harvest
+수확, 추수
+540
+multiply
+증가하다, 곱하다
+486
+hesitate
+망설이다
+541
+murder
+살해(하다)
+487
+horizon
+지평선, 수평선
+542
+muscle
+근육
+488
+huge
+거대한
+543
+needle
+바늘
+489
+ideal
+이상적인, 이상
+544
+negative
+부정적인
+490
+ignore
+무시하다
+545
+nod
+끄덕이다
+491
+immediate
+즉시의, 직접적인
+546
+normal
+보통의, 정상의
+492
+import
+수입(하다)
+547
+occupation
+직업
+493
+impress
+인상을 주다
+548
+occur
+발생하다, (생각)떠오르다
+494
+increase
+증가(하다/시키다)
+549
+operate
+작동하다, 수술하다
+495
+indicate
+가리키다, 나타내다
+550
+opportunity
+기회
+
+551
+opposite
+반대편의, 정반대의
+606
+reform
+개선(하다), 개혁(하다)
+552
+ordinary
+보통의, 평범한
+607
+refund
+환불(하다)
+553
+origin
+기원, 유래
+608
+refuse
+거절하다
+554
+otherwise
+그렇지 않으면
+609
+region
+지역
+555
+outcome
+결과, 결론
+610
+register
+등록하다
+556
+output
+생산(량)
+611
+regular
+정기적인, 규칙적인
+557
+overcome
+극복하다
+612
+reject
+거절하다, 거부하다
+558
+owe
+빚지다, 은혜 입다
+613
+related
+관계 있는
+559
+painful
+고통스러운
+614
+relative
+친척, 상대적인
+560
+palace
+궁전, 궁궐
+615
+relax
+긴장 풀다
+561
+pardon
+용서(하다), 사면(하다)
+616
+relieve
+덜다, 안도하게 하다
+562
+particular
+특정한, 특별한
+617
+remain
+남아 있다, 여전히 -이다
+563
+passion
+열정, 열망
+618
+remind
+생각나게 하다, 상기시키다
+564
+peer
+또래
+619
+remove
+제거하다, 치우다
+565
+perform
+수행하다, 공연하다
+620
+renew
+갱신하다, 다시 시작하다
+566
+perfume
+향수, 향기
+621
+repair
+수리하다
+567
+period
+기간, 시대
+622
+replace
+교체하다
+568
+permit
+허락하다, 허가증
+623
+reply
+대답(하다), 답장(하다)
+569
+physical
+신체의, 물리적인
+624
+request
+요청(하다)
+570
+plain
+평범한, 평원
+625
+rescue
+구조(하다)
+571
+planet
+행성
+626
+reserve
+예약하다, 남겨두다
+572
+policy
+정책
+627
+resign
+사임하다
+573
+pollute
+오염시키다
+628
+resource
+자원, 원천
+574
+pollution
+오염
+629
+respect
+존경(하다), 존중(하다)
+575
+positive
+긍정적인
+630
+response
+응답, 반응
+576
+possess
+소유하다
+631
+restore
+회복하다, 복구하다
+577
+poverty
+가난
+632
+result
+결과
+578
+pray
+기도하다
+633
+retire
+은퇴하다
+579
+prefer
+더 좋아하다
+634
+review
+복습, 재검토(하다)
+580
+present
+선물,현재,출석한, 제공하다
+635
+rough
+(표면이)거친, 대략적인
+581
+prevent
+막다, 방해하다
+636
+royal
+왕의, 왕실의
+582
+previous
+이전의
+637
+safety
+안전
+583
+prime
+주요한, 최상의
+638
+scientific
+과학적인
+584
+probably
+아마도
+639
+secretary
+비서
+585
+process
+과정, 처리, 처리하다
+640
+secure
+안전한, 보안되는, 확보하다
+586
+professor
+교수
+641
+seldom
+좀처럼 -않다
+587
+profit
+이익
+642
+select
+선택하다
+588
+proper
+적당한, 적절한
+643
+selfish
+이기적인
+589
+propose
+제안하다, 청혼하다
+644
+semester
+학기
+590
+prove
+증명하다
+645
+sensitive
+민감한, 예민한, 세심한
+591
+provide
+제공하다
+646
+sentence
+문장, 선고(하다)
+592
+public
+공공의, 대중의
+647
+settle
+정착하다, 해결하다
+593
+punish
+처벌하다
+648
+slight
+약간의
+594
+purpose
+목적
+649
+slope
+경사면, 비탈
+595
+pursue
+추구하다, 뒤쫓다
+650
+sneeze
+재채기하다
+596
+quarter
+4분의 1
+651
+society
+사회, 모임
+597
+random
+무작위의
+652
+solve
+풀다, 해결하다
+598
+range
+범위
+653
+spill
+엎지르다, 쏟다
+599
+raw
+날것의, 가공되지 않은
+654
+spoil
+망치다, 버릇없게 만들다
+600
+realize
+깨닫다, 실현하다
+655
+spread
+퍼지다, 펴다
+601
+reason
+이유, 이성
+656
+standard
+표준, 기준
+602
+recall
+기억해내다, 회수하다
+657
+stare
+응시하다
+603
+recent
+최근의
+658
+state
+상태, 진술하다
+604
+recognize
+알아보다, 인정하다
+659
+stem
+줄기
+605
+reduce
+줄이다, 감소시키다
+660
+stick
+붙이다, 막대기
+661
+straight
+곧은, 일직선의, 똑바로, 곧바로
+716
+afford
+-할 여유가 있다
+662
+strength
+힘
+717
+alien
+외국인, 외계인, 이질적인
+663
+succeed
+성공하다, 계승하다
+718
+analysis
+분석
+664
+suggest
+제안하다, 시사하다
+719
+analyze
+분석하다
+665
+suit
+적합하다,어울리다
+720
+ancestor
+조상
+666
+sum
+합계, (- up) 요약하다
+721
+ancient
+고대의
+667
+supply
+공급(하다)
+722
+anniversary
+기념일
+668
+suppose
+가정하다, 추측하다
+723
+annual
+1년의, 해마다의
+669
+survey
+조사(하다), 측량(하다)
+724
+apparent
+명백한, 분명해 보이는
+670
+swallow
+삼키다
+725
+appetite
+식욕
+671
+swear
+맹세하다, 욕하다
+726
+apply
+바르다, 적용하다,지원하다
+672
+tame
+길들이다
+727
+appreciate
+가치 인정하다, 감사하다
+673
+tease
+놀리다
+728
+appropriate
+적절한
+674
+temperature
+온도, 기온, 체온
+729
+approve
+승인하다, (- of)찬성하다
+675
+tend to do
+하는 경향이 있다
+730
+architect
+건축가
+676
+tense
+긴장한, 긴박한, 팽팽한
+731
+architecture
+건축술, 건축학
+677
+term
+기간, 학기, 용어
+732
+arise
+발생하다
+678
+threat
+협박, 위협
+733
+artificial
+인공적인
+679
+tidy
+잘 정돈된, 단정한
+734
+aspect
+부분, 측면, 양상
+680
+timid
+소심한, 용기와 확신이 없는
+735
+assign
+(책임, 임무를) 배정하다
+681
+tool
+도구, 연장
+736
+associate
+연상하다, 관련시키다
+682
+tragedy
+비극
+737
+assume
+추정하다
+683
+trail
+작은 길, 길게 난 흔적, 끌다
+738
+astronomy
+천문학
+684
+transfer
+이동(하다)
+739
+atmosphere
+분위기, 대기
+685
+transport
+수송(하다), 운송(하다)
+740
+attach
+붙이다, 첨부하다
+686
+treasure
+보물
+741
+attain
+달성하다, 이루다
+687
+treatment
+처리, 치료
+742
+attempt
+시도(하다)
+688
+tribe
+부족, 종족
+743
+award
+상(주다)
+689
+uneasy
+불안한, 불편한
+744
+ban
+금지(하다)
+690
+unique
+독특한, 유일한
+745
+be apt to do
+경향이 있다
+691
+unite
+결합하다, 연합하다
+746
+betray
+배신[배반]하다, 기밀누설하다
+692
+unless
+-하지 않으면
+747
+biography
+전기
+693
+upset
+속상하게 하다, 속상한
+748
+block
+덩어리, 막다
+694
+valuable
+가치 있는
+749
+bond
+유대, 결속, 채권
+695
+vehicle
+탈 것, 차량
+750
+burst
+터지다, 갑자기-하다
+696
+vet
+수의사
+751
+candidate
+후보자
+697
+violent
+폭력적인
+752
+capable
+할 수 있는, 유능한
+698
+vital
+필수적인, 생명의
+753
+chemical
+화학의, 화학물질
+699
+volunteer
+자원자, 자원하다
+754
+chore
+허드렛일, 지루한 일
+700
+wage
+임금, 보수
+755
+circular
+원형의, 순환하는
+701
+wallet
+지갑
+756
+circumstance
+환경, 분위기, 대기
+702
+wander
+헤매다, 방황하다
+757
+civilize
+문명화하다, 교화하다
+703
+weapon
+무기
+758
+client
+고객
+704
+whisper
+속삭이다, 속삭임
+759
+clone
+복제(하다)
+
+705
+abandon
+버리다, 떠나다, 유기하다
+760
+colleague
+직장동료
+706
+accurate
+정확한
+761
+commercial
+상업적인, 광고
+707
+accuse
+비난하다, 고발하다
+762
+companion
+동반자, (마음맞는) 친구
+708
+accustomed
+익숙한
+763
+compassion
+연민, 동정심
+709
+acquire
+얻다, 획득하다
+764
+compete
+경쟁하다
+710
+adapt
+적응하다, 조정하다
+765
+competition
+경쟁, 대회
+711
+addicted
+중독된
+766
+complex
+복잡한, 신경증
+712
+adjust
+적응하다, (약간) 조정하다
+767
+complicated
+복잡한
+713
+adopt
+채택하다, 입양하다
+768
+compose
+구성하다, 작곡하다, 작문하다
+714
+advance
+진보(하다), 전진(하다)
+769
+concentrate
+집중하다
+715
+affair
+일, 사건
+770
+concern
+걱정, 관심
+771
+conclude
+결론 내리다
+826
+effort
+노력
+772
+concrete
+구체적인
+827
+element
+요소, 성분
+773
+conduct
+지휘하다, 이끌다
+828
+elementary
+초등의, 기초적인
+774
+confess
+고백하다
+829
+emergency
+비상(사태)
+775
+confident
+자신 있는, 확신하는
+830
+emphasize
+강조하다
+776
+confirm
+확인하다, 확증하다
+831
+endure
+참다, 견디다
+777
+conflict
+갈등, 충돌
+832
+enormous
+거대한, 엄청난
+778
+confront
+직면하다, 맞서다
+833
+equipment
+장비, 설비
+779
+confused
+혼란스러운, 혼동되는
+834
+essential
+필수적인
+780
+conscious
+알고 있는, 의식 있는
+835
+establish
+설립하다, 확립하다
+781
+conserve
+보존하다
+836
+esteem
+존중(하다)
+782
+consider
+고려하다, 여기다
+837
+estimate
+견적(하다), 추정(하다)
+783
+consist of
+구성되다
+838
+ethical
+윤리적인
+784
+constant
+끊임없는
+839
+evaluate
+평가하다
+785
+construct
+건설하다, 구성하다
+840
+evidence
+증거
+786
+contemporary
+동시대의, 현대의
+841
+exclaim
+외치다, 소리치다
+787
+content
+내용, 만족하는
+842
+exclude
+제외하다
+788
+continent
+대륙
+843
+exotic
+이국적인
+789
+contract
+계약(하다), 수축하다
+844
+extraordinary
+비상한, 색다른
+790
+contrary
+반대(의)
+845
+extreme
+극도의, 극단적인
+791
+contrast
+대조(하다)
+846
+fade
+차츰 사라지다, 희미해지다
+792
+convey
+운반하다, 전달하다
+847
+fake
+가짜의, 위조의
+793
+cooperate
+협력하다
+848
+faucet
+수도꼭지
+794
+criminal
+범죄의, 범죄자
+849
+figure
+모양, 수치, 인물
+795
+cultivate
+경작하다, 재배하다
+850
+fluent
+유창한
+796
+current
+현재의, 흐름
+851
+fossil
+화석
+797
+customs
+세관, 관세
+852
+found
+설립하다, 기반을 만들다
+798
+deal with
+다루다, 처리하다
+853
+fragile
+잘 깨지는
+799
+declare
+선언하다
+854
+fulfill
+성취하다, 완수하다
+800
+decline
+감소(하다), 거절(하다)
+855
+funeral
+장례(식)
+801
+defeat
+패배(시키다)
+856
+gender
+성, 성별
+802
+defect
+결점, 약점
+857
+genuine
+진짜의
+803
+defense
+방어
+858
+geography
+지리(학)
+804
+define
+정의하다
+859
+glance
+흘끗 보다
+805
+democracy
+민주주의
+860
+grain
+곡물, 낟알
+806
+depart
+출발하다
+861
+grasp
+꽉 쥐다, 완전 이해하다
+807
+descend
+내려가다
+862
+grave
+무덤, 중대한
+808
+deserve
+가치가 있다, 그럴만하다
+863
+greedy
+탐욕스러운
+809
+despair
+절망
+864
+grind(-ground-)
+빻다, 갈다
+810
+detect
+찾아내다, 탐지하다
+865
+groan
+신음하다
+811
+determine
+결정하다, 결심하다
+866
+guarantee
+보증(하다)
+812
+devote
+바치다, 헌신하다, 전념하다
+867
+guilty
+유죄의
+813
+digest
+소화하다
+868
+handicapped
+장애가 있는
+814
+direct
+직접적인, 지시하다
+869
+harsh
+가혹한
+815
+direction
+방향
+870
+hasty
+서두르는, 성급한
+816
+display
+전시하다, 보여주다
+871
+hostile
+적대적인
+817
+dispute
+논쟁하다
+872
+identical
+똑같은
+818
+disturb
+방해하다, 폐 끼치다
+873
+ignorant
+무식한, 무지한
+819
+diversity
+다양성
+874
+illegal
+불법의
+820
+divorce
+이혼(하다)
+875
+illusion
+환상, 착각
+821
+drain
+배수하다
+876
+imaginary
+상상의
+822
+drought
+가뭄
+877
+imitate
+흉내 내다
+823
+eager
+갈망하는
+878
+imply
+내포하다, 암시하다
+824
+effective
+효과적인
+879
+include
+포함하다
+825
+efficient
+효율적인
+880
+incredible
+믿을 수 없는
+881
+independent (of)
+(-로부터) 독립한
+936
+outstanding
+뛰어난, 우수한
+882
+indifferent
+무관심한
+937
+overlook
+간과하다, 눈감아주다
+883
+infant
+유아
+938
+oxygen
+산소
+884
+infect
+감염시키다
+939
+participate in
+참가하다
+885
+influence
+영향(주다)
+940
+performance
+실행,연주,공연
+886
+inject
+주사하다, 주입하다
+941
+perish
+소멸하다, 죽다
+887
+inspect
+조사하다
+942
+permanent
+영구적인, 지속적인
+888
+instinct
+본능
+943
+persuade
+설득하다
+889
+instrument
+도구, 악기
+944
+phase
+단계, 국면
+890
+intelligent
+지능이 있는, 총명한
+945
+phenomenon
+현상
+891
+intense
+강렬한
+946
+philosophy
+철학
+892
+intention
+의도
+947
+political
+정치적인
+893
+interact
+상호작용하다
+948
+portable
+휴대용의
+894
+interfere
+간섭하다, 개입하다
+949
+portray
+묘사하다, 그리다
+895
+interrupt
+방해하다, 중단시키다
+950
+postpone
+연기하다, 미루다
+896
+invade
+침입하다
+951
+potential
+잠재성(있는)
+897
+invest
+투자하다
+952
+predator
+포식자
+898
+involved
+관련된, 포함된
+953
+predict
+예언하다, 예측하다
+899
+irritated
+짜증난
+954
+prejudice
+선입견, 편견
+900
+journal
+전문잡지, 일기
+955
+prescription
+처방, 처방전
+901
+justify
+정당화하다
+956
+preserve
+보존하다
+902
+lack
+부족(하다)
+957
+pretend
+-인 체하다, 가장하다
+903
+launch
+시작하다, 착수하다, 진수하다
+958
+prey
+먹이
+904
+layer
+층, 겹
+959
+productive
+생산성 있는
+905
+license
+면허,허가
+960
+progress
+진보(하다), 전진(하다)
+906
+liquid
+액체
+961
+prohibit
+금지하다
+907
+literature
+문학, 문헌
+962
+proof
+증거
+908
+logic
+논리
+963
+property
+재산, 특성
+909
+loyal
+충성스러운
+964
+prospect
+전망, 기대
+910
+maintain
+유지하다, 주장하다
+965
+prosper
+번영하다
+911
+mature
+성숙한
+966
+protest
+항의(하다)
+912
+mend
+수선하다, 개선하다
+967
+psychology
+심리학
+913
+merchant
+상인
+968
+publish
+출판하다
+914
+merely
+단지, 그저
+969
+purchase
+구입(하다)
+915
+military
+군대의
+970
+purify
+정화하다, 순화하다
+916
+minister
+장관, 목사
+971
+rational
+합리적인, 이성적인
+917
+moderate
+적당한
+972
+realism
+현실주의
+918
+monotonous
+단조로운, 지루한
+973
+reasonable
+합리적인
+919
+moral
+도덕적인
+974
+receipt
+영수증
+920
+motivate
+동기 유발하다
+975
+recommend
+추천하다
+921
+necessary
+필요한
+976
+refer to
+언급하다, 참고하다
+922
+neglect
+무시하다, 태만하다
+977
+refine
+정제하다, 다듬다
+923
+noble
+고상한, 귀족의
+978
+reflect
+반사하다, 반영하다
+924
+notion
+개념, 관념
+979
+refuge
+피난처
+925
+nuclear
+핵의, 핵무기
+980
+regard A as B
+여기다, 간주하다
+926
+object
+물체,목표, 반대하다
+981
+release
+풀어주다
+927
+observe
+관찰하다
+982
+religion
+종교
+928
+obtain
+얻다, 획득하다
+983
+religious
+종교의, 신앙심 깊은
+929
+obvious
+명백한
+984
+remote
+원격의, 먼
+930
+occasional
+가끔의
+985
+represent
+나타내다, 대표하다
+931
+occupy
+차지하다
+986
+require
+요구하다, 필요로하다
+932
+offend
+불쾌하게하다
+987
+resemble
+닮다
+933
+omit
+생략하다
+988
+resident
+거주자
+934
+oppose
+반대하다
+989
+responsible
+책임 있는
+935
+organization
+단체, 기관
+990
+resume
+다시 시작하다, 이력서
+991
+revenge
+복수(하다)
+1046
+transform
+변형시키다
+992
+reverse
+뒤집다, 거꾸로 된
+1047
+transmit
+전송하다
+993
+reward
+보상(하다), 보답(하다)
+1048
+tremble
+떨다, 떨리다
+994
+robbery
+강도질
+1049
+trivial
+사소한
+995
+routine
+일과, 일상
+1050
+undergo
+겪다, 경험하다
+996
+rural
+시골의
+1051
+urban
+도시의
+997
+sacrifice
+희생(하다)
+1052
+urge
+충동, 강하게 권하다
+998
+satisfied
+만족하는
+1053
+vacant
+빈, 공석의
+999
+scale
+규모, 저울, 비늘
+1054
+vanish
+사라지다
+1000
+sculpture
+조각(품)
+1055
+victim
+희생자
+1001
+seize
+꽉 잡다, 쥐다
+1056
+vivid
+생생한, 선명한
+1002
+sentiment
+감정,정서
+1057
+vow
+서약(하다), 맹세(하다)
+1003
+separate
+분리하다, 분리된
+1058
+welfare
+복지, 수당, 개인행복
+1004
+shelter
+피난처, 은신처
+1059
+wreck
+난파(선),잔해, 난파시키다
+1005
+shift
+변경, 교대, 옮기다
+1060
+yearn
+갈망하다
+1006
+shortage
+부족, 결핍
+
+1061
+absolute
+절대적인
+1007
+similar
+유사한, 비슷한
+1062
+absorb
+흡수하다, 몰입시키다
+1008
+slavery
+노예제도, 노예신분
+1063
+abstract
+추상적인
+1009
+soak
+(액체에) 담그다, 담기다, 적시다
+1064
+accompany
+동반하다
+1010
+solar
+태양의
+1065
+acknowledge
+인정하다
+1011
+solid
+고체
+1066
+adequate
+적당한
+1012
+solution
+해결(책), 답
+1067
+adolescent
+청소년
+1013
+sow
+씨를 뿌리다
+1068
+adversity
+역경, 고난
+1014
+species
+(생물)종
+1069
+aggressive
+공격적인, 난폭한
+1015
+specific
+구체적인
+1070
+alter
+바꾸다, 변경하다
+1016
+sphere
+구형, 구체
+1071
+alternative
+대안(의)
+1017
+spiritual
+영적인, 정신의, 종교적인
+1072
+anticipate
+예상하다, 기대하다
+1018
+spit
+침(뱉다)
+1073
+antique
+골동품
+1019
+split
+쪼개다
+1074
+approach
+다가가다
+1020
+spouse
+배우자
+1075
+ascend
+올라가다
+1021
+stable
+안정된
+1076
+assess
+평가하다
+1022
+starve
+굶주리다, 굶어 죽다
+1077
+asset
+자산, 재산
+1023
+status
+지위, 신분
+1078
+assure
+보장하다, 확실하게 하다
+1024
+steady
+꾸준한, 안정된
+1079
+astonish
+깜짝 놀라게 하다
+1025
+stomach
+위, 배
+1080
+authority
+권위, 권력
+1026
+strict
+엄격한
+1081
+beneficial
+유익한, 유리한
+1027
+string
+끈, 줄
+1082
+budget
+예산
+1028
+structure
+구조, 조직
+1083
+caution
+조심, 경고
+1029
+substance
+물질, 본질
+1084
+cease
+중단되다, 중단시키다
+1030
+subtle
+미묘한
+1085
+censor
+검열관, 검열하다
+1031
+suburb
+교외,도시주변
+1086
+charity
+자선(단체)
+1032
+sue
+소송하다, 고소하다
+1087
+clarify
+명확하게 하다
+1033
+summarize
+요약하다
+1088
+classify
+분류하다
+1034
+superstition
+미신
+1089
+collapse
+붕괴(하다), 기절(하다)
+1035
+suspect
+의심하다, 용의자
+1090
+collide
+충돌하다
+1036
+sympathy
+동정, 공감
+1091
+colony
+식민지, 집단 거주지
+1037
+symptom
+증상
+1092
+committee
+위원회
+1038
+tear(-tore-torn)
+찢다
+1093
+compress
+압축하다
+1039
+temper
+(화 잘내는)성질, 기질
+1094
+compromise
+타협(하다), 절충(하다)
+1040
+temporary
+일시적인, 임시의
+1095
+conceal
+숨기다
+1041
+temptation
+유혹
+1096
+conceive
+상상하다, 임신하다
+1042
+thread
+실, 실꿰다
+1097
+conquer
+정복하다
+1043
+threaten
+협박하다, 위협하다
+1098
+conscience
+양심
+1044
+tolerate
+참다, 관용하다
+1099
+consent
+동의(하다)
+1045
+trace
+흔적, 추적하다
+1100
+consequence
+결과
+1101
+consistent
+일관된
+1156
+hazard
+위험, 위험요소
+1102
+contaminate
+오염시키다
+1157
+heritage
+(국가,사회의) 유산, 전통문화
+1103
+contribute
+공헌하다, 기여하다, 기부하다
+1158
+humble
+겸손한, 비천한
+1104
+convention
+관습,인습, 집회
+1159
+illiterate
+문맹의
+1105
+convince
+확신시키다, 설득하다
+1160
+illustrate
+설명하다, 예증하다
+1106
+corrupt
+부패한, 타락시키다
+1161
+immigrate
+이민 오다
+1107
+criticize
+비판하다
+1162
+immune
+면역의
+1108
+crucial
+결정적인, 중대한
+1163
+ingredient
+요리재료, 구성성분
+1109
+cynical
+냉소적인
+1164
+inherit
+상속받다
+1110
+deceive
+속이다
+1165
+initial
+초기의, 시작의, 이니셜
+1111
+definition
+정의, 규정
+1166
+innovate
+혁신하다
+1112
+delicate
+섬세한, 미묘한
+1167
+inquire
+문의하다
+1113
+demonstrate
+보여주다, 입증하다
+1168
+institute
+기관, 협회
+1114
+depict
+묘사하다
+1169
+intellectual
+지적인, 지식인
+1115
+desirable
+바람직한, 가치있는
+1170
+interpret
+해석하다
+1116
+despise
+경멸하다
+1171
+intuition
+직관, 직감
+1117
+dignity
+위엄, 존엄성, 품위
+1172
+investigate
+조사하다
+1118
+discipline
+훈육(하다), 절제(하다)
+1173
+isolate
+격리시키다, 고립시키다
+1119
+dismiss
+묵살하다, 해고하다
+1174
+lean
+기대다, 기울이다
+1120
+dispose of
+버리다, 처리하다
+1175
+liberty
+자유
+1121
+distinguish
+구별하다
+1176
+magnify
+확대하다
+1122
+distract
+주의를 흐트러뜨리다
+1177
+manual
+손의,수동의, 설명서
+1123
+domestic
+국내의, 가정내의
+1178
+mechanic
+기계공, 수리공
+1124
+dominate
+지배하다
+1179
+modify
+수정하다
+1125
+due
+할 때가 된, -할 예정인
+1180
+mutual
+상호간의
+1126
+ecology
+생태학
+1181
+negotiate
+협상하다
+1127
+embrace
+포옹하다, 받아들이다
+1182
+neutral
+중립의
+1128
+emerge
+나오다, 나타나다
+1183
+nevertheless
+그럼에도 불구하고
+1129
+enclose
+동봉하다, 둘러싸다
+1184
+notable
+주목할만한
+1130
+encounter
+우연히 마주치다
+1185
+nourish
+영양분을 주다, 육성하다
+1131
+engage
+종사하다, 고용하다
+1186
+nutrition
+영양
+1132
+enroll
+등록하다
+1187
+objective
+객관적인, 목표
+1133
+entitle
+자격이나 권리를 주다
+1188
+obligation
+의무
+1134
+exaggerate
+과장하다
+1189
+obstacle
+장애, 방해물
+1135
+excessive
+과도한
+1190
+opponent
+적수, 반대자
+1136
+exhibition
+전시, 전시회
+1191
+optimistic
+낙관적인
+1137
+expand
+확장하다, 팽창하다
+1192
+partial
+부분적인, 편파적인
+1138
+explode
+폭발하다
+1193
+perceive
+지각하다, 인지하다
+1139
+extend
+확장하다, 연장하다
+1194
+persist
+고집하다, 지속하다
+1140
+extent
+범위, 정도
+1195
+pessimistic
+비관적인
+1141
+extinct
+멸종된
+1196
+preface
+서문
+1142
+famine
+기근
+1197
+principal
+주요한, 장, 교장
+1143
+fate
+운명
+1198
+principle
+원리, 원칙
+1144
+fatigue
+피로감
+1199
+privilege
+특혜, 특권
+1145
+feature
+특징
+1200
+proclaim
+선언하다, 공포하다
+1146
+fertile
+비옥한
+1201
+prolong
+연장하다
+1147
+finance
+금융, 재정
+1202
+prominent
+저명한, 눈에 잘 띄는
+1148
+flexible
+융통성 있는, 구부리기 쉬운
+1203
+promote
+촉진하다, 승진시키다
+1149
+fluid
+액체, 유동체
+1204
+punctual
+시간을 잘 지키는
+1150
+generate
+발생시키다
+1205
+quality
+질
+1151
+get rid of
+제거하다
+1206
+quantity
+양
+1152
+gradual
+점차적인
+1207
+radical
+근본적인, 급진적인, 과격한
+1153
+gravity
+중력
+1208
+rebel
+반항하다, 반역자
+1154
+grieve
+애도하다
+1209
+regulation
+규제
+1155
+hardship
+고난,고생
+1210
+reign
+(국왕이) 통치하다
+1211
+relevant
+관련 있는
+1266
+controversial
+논란의 여지가 있는
+1212
+reliable
+믿을 수 있는
+1267
+convert
+변화[전환]시키다
+1213
+remark
+말, 논평(하다)
+1268
+dedicate
+헌신하다
+1214
+reputation
+명성, 평판
+1269
+deposit
+퇴적시키다, 예금하다
+1215
+resent
+분개하다, 노하다
+1270
+deprive
+빼앗다, 박탈하다
+1216
+resist
+저항하다
+1271
+diminish
+줄이다, 줄다
+1217
+resolve
+해결하다, 결심하다
+1272
+discharge
+해임하다,내보내다,방출하다
+1218
+restrict
+제한하다
+1273
+discriminate
+차별하다, 식별하다
+1219
+reveal
+누설하다, 밝히다
+1274
+distort
+왜곡하다
+1220
+revise
+수정하다, 개정하다
+1275
+distress
+고민, 곤란
+1221
+ritual
+의식, 의례
+1276
+distribute
+분배하다, 배분하다
+1222
+sacred
+신성한
+1277
+eliminate
+제거하다, 탈락시키다
+1223
+satisfactory
+만족스러운
+1278
+enhance
+향상시키다
+1224
+scatter
+흩뿌리다, 흩어지다
+1279
+enthusiasm
+열정,열광
+1225
+seal
+봉인(하다)
+1280
+evolution
+진화, 발전
+1226
+sensible
+분별 있는, 현명한
+1281
+expire
+만료되다, 끝나다
+1227
+shrink
+줄(이)다, 오그라들다
+1282
+exploit
+착취하다
+1228
+simultaneous
+동시의
+1283
+fundamental
+근본적인
+1229
+skeptical
+회의적인
+1284
+hospitable
+환대하는, 친절한
+1230
+statistics
+통계, 통계치, 통계학
+1285
+impose
+(세금,의무 등)부과하다
+1231
+stimulate
+자극하다
+1286
+inclined
+하고 싶어하는, 경향있는
+1232
+stir
+휘젓다
+1287
+induce
+유발하다, 유도하다
+1233
+strategy
+전략
+1288
+infer
+추론하다
+1234
+struggle
+애쓰다, 싸우다, 투쟁, 애씀
+1289
+infinite
+무한한
+1235
+stubborn
+완고한
+1290
+inhabit
+살다, 서식하다
+1236
+submit
+제출하다, 굴복하다
+1291
+literal
+문자 그대로의
+1237
+subscribe
+구독하다
+1292
+monarch
+군주
+1238
+substitute
+대신하다
+1293
+overwhelm
+압도하다
+1239
+sufficient
+충분한
+1294
+real estate
+부동산
+1240
+suicide
+자살
+1295
+reinforce
+강화하다, 보강하다
+1241
+superficial
+피상적인, 표면적인
+1296
+render
+(어떤 상황이 되게) 만들다
+1242
+supervise
+감독하다, 관리하다
+1297
+retain
+보유하다, 기억하다
+1243
+suppress
+진압하다, 억누르다
+1298
+revolution
+혁명
+1244
+surgery
+외과수술
+1299
+sustain
+지속시키다, 지탱하게하다
+1245
+surpass
+능가하다
+1300
+transparent
+명백한, 투명한
+1246
+translate
+번역하다
+1247
+trigger
+방아쇠, 촉발하다
+1248
+undertake
+떠맡다, 책임지다
+1249
+utilize
+활용하다, 이용하다
+1250
+vague
+애매한, 막연한
+1251
+valid
+유효한, 타당한
+1252
+vertical
+수직의
+1253
+virtue
+미덕, 장점
+1254
+weird
+이상한, 수상한
+1255
+withdraw
+물러나다, 인출하다
+1256
+wound
+상처(입히다)
+1257
+yield
+산출(하다), 항복(하다)
+
+1258
+abolish
+폐지하다
+1259
+aptitude
+적성
+1260
+awkward
+어색한
+1261
+barrier
+장벽, 장애물
+1262
+bias
+편견, 편향
+1263
+confine
+한정하다, 가두다
+1264
+context
+문맥, 상황
+1265
+contradict
+반박하다,모순되다
