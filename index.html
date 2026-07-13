@@ -475,6 +475,7 @@
       <button class="tab-btn active" data-tab="adminTab">관리자</button>
       <button class="tab-btn" data-tab="wordTab">단어 시험</button>
       <button class="tab-btn" data-tab="passageTab">지문 순서 찾기</button>
+      <button class="tab-btn" data-tab="scoreboardTab">점수판</button>
     </nav>
 
     <div class="tab-panel" id="passageTab">
@@ -487,8 +488,20 @@
           <div class="body">
             <div class="field-row">
               <div class="field">
+                <label for="passageNickname">이름 또는 닉네임</label>
+                <input id="passageNickname" placeholder="예: 김민준">
+              </div>
+              <div class="field">
                 <label for="schoolSelect">학교</label>
                 <select id="schoolSelect"></select>
+              </div>
+              <div class="field">
+                <label for="gradeSelect">학년</label>
+                <select id="gradeSelect"></select>
+              </div>
+              <div class="field">
+                <label for="sourceSelect">Source</label>
+                <select id="sourceSelect"></select>
               </div>
               <div class="field">
                 <label for="passageSelect">지문</label>
@@ -535,6 +548,19 @@
           </div>
         </section>
       </div>
+    </div>
+
+    <div class="tab-panel" id="scoreboardTab">
+      <section>
+        <div class="section-head">
+          <h2>단어 시험 점수판</h2>
+          <button class="secondary" id="reloadScoreboardBtn">점수판 새로고침</button>
+        </div>
+        <div class="body">
+          <div id="scoreboardTable"></div>
+          <div class="notice" id="scoreboardNotice">점수 기록을 불러오는 중입니다.</div>
+        </div>
+      </section>
     </div>
 
     <div class="tab-panel" id="wordTab">
@@ -677,22 +703,24 @@
     </div>
   </main>
 
+  <script src="google-config.js"></script>
   <script>
     const STORAGE = {
       studentPassword: "exam.studentPassword",
       adminPassword: "exam.adminPassword",
       passwordChangedAt: "exam.passwordChangedAt",
       words: "exam.words",
-      results: "exam.results"
+      results: "exam.results",
+      passageResults: "exam.passageResults"
     };
 
     const fallbackManifest = [
-      { school: "렛츠고", title: "지문 1", path: "영어 지문/렛츠고/지문 1.txt" },
-      { school: "렛츠고", title: "지문 2", path: "영어 지문/렛츠고/지문 2.txt" },
-      { school: "부산고", title: "pecial counsel Cho Eun-suk had soug", path: "영어 지문/부산고/pecial counsel Cho Eun-suk had soug.txt" },
-      { school: "부산고", title: "Yoon and the special counsel appeal", path: "영어 지문/부산고/Yoon and the special counsel appeal.txt" },
-      { school: "서울고", title: "지문 3", path: "영어 지문/서울고/지문 3.txt" },
-      { school: "서울고", title: "지문 4", path: "영어 지문/서울고/지문 4.txt" }
+      { school: "렛츠고", grade: "미분류", source: "미분류", title: "지문 1", path: "영어 지문/렛츠고/지문 1.txt" },
+      { school: "렛츠고", grade: "미분류", source: "미분류", title: "지문 2", path: "영어 지문/렛츠고/지문 2.txt" },
+      { school: "부산고", grade: "미분류", source: "미분류", title: "pecial counsel Cho Eun-suk had soug", path: "영어 지문/부산고/pecial counsel Cho Eun-suk had soug.txt" },
+      { school: "부산고", grade: "미분류", source: "미분류", title: "Yoon and the special counsel appeal", path: "영어 지문/부산고/Yoon and the special counsel appeal.txt" },
+      { school: "서울고", grade: "미분류", source: "미분류", title: "지문 3", path: "영어 지문/서울고/지문 3.txt" },
+      { school: "서울고", grade: "미분류", source: "미분류", title: "지문 4", path: "영어 지문/서울고/지문 4.txt" }
     ];
 
     const fallbackWordBooks = [
@@ -728,6 +756,8 @@
     let wordSession = null;
     let wordBookManifest = [];
     let currentBookWords = [];
+    let passageResultSubmitted = false;
+    const googleIntegration = window.GOOGLE_INTEGRATION || { passage: {}, word: {}, sheetCsvUrl: "" };
 
     function readJson(key, fallback) {
       try {
@@ -747,6 +777,7 @@
       if (!localStorage.getItem(STORAGE.passwordChangedAt)) localStorage.setItem(STORAGE.passwordChangedAt, new Date().toISOString().slice(0, 10));
       if (!localStorage.getItem(STORAGE.words)) writeJson(STORAGE.words, seedWords);
       if (!localStorage.getItem(STORAGE.results)) writeJson(STORAGE.results, []);
+      if (!localStorage.getItem(STORAGE.passageResults)) writeJson(STORAGE.passageResults, []);
     }
 
     function escapeHtml(value) {
@@ -806,6 +837,7 @@
     function switchTab(tabId) {
       $$(".tab-btn").forEach((button) => button.classList.toggle("active", button.dataset.tab === tabId));
       $$(".tab-panel").forEach((panel) => panel.classList.toggle("active", panel.id === tabId));
+      if (tabId === "scoreboardTab") loadScoreboard();
     }
 
     async function loadManifest() {
@@ -824,18 +856,42 @@
     function renderPassageSelectors() {
       const schools = [...new Set(passageManifest.map((item) => item.school))].sort((a, b) => a.localeCompare(b, "ko"));
       $("#schoolSelect").innerHTML = schools.map((school) => `<option value="${escapeHtml(school)}">${escapeHtml(school)}</option>`).join("");
+      renderGradeOptions();
+    }
+
+    function renderGradeOptions() {
+      const school = $("#schoolSelect").value;
+      const grades = [...new Set(passageManifest.filter((item) => item.school === school).map((item) => item.grade || "미분류"))];
+      $("#gradeSelect").innerHTML = grades.map((grade) => `<option value="${escapeHtml(grade)}">${escapeHtml(grade)}</option>`).join("");
+      renderSourceOptions();
+    }
+
+    function renderSourceOptions() {
+      const school = $("#schoolSelect").value;
+      const grade = $("#gradeSelect").value;
+      const sources = [...new Set(passageManifest.filter((item) => item.school === school && (item.grade || "미분류") === grade).map((item) => item.source || "미분류"))];
+      $("#sourceSelect").innerHTML = sources.map((source) => `<option value="${escapeHtml(source)}">${escapeHtml(source)}</option>`).join("");
       renderPassageOptions();
     }
 
     function renderPassageOptions() {
       const school = $("#schoolSelect").value;
-      const passages = passageManifest.filter((item) => item.school === school);
+      const grade = $("#gradeSelect").value;
+      const source = $("#sourceSelect").value;
+      const passages = passageManifest.filter((item) => item.school === school && (item.grade || "미분류") === grade && (item.source || "미분류") === source);
       $("#passageSelect").innerHTML = passages.map((item, index) => `<option value="${index}">${escapeHtml(item.title)}</option>`).join("");
     }
 
     async function startPassageQuiz() {
       const school = $("#schoolSelect").value;
-      const options = passageManifest.filter((item) => item.school === school);
+      const grade = $("#gradeSelect").value;
+      const source = $("#sourceSelect").value;
+      const nickname = $("#passageNickname").value.trim();
+      if (!nickname) {
+        setMessage($("#passageNotice"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        return;
+      }
+      const options = passageManifest.filter((item) => item.school === school && (item.grade || "미분류") === grade && (item.source || "미분류") === source);
       const meta = options[Number($("#passageSelect").value)];
       if (!meta) return;
 
@@ -849,6 +905,7 @@
           return;
         }
         currentPassageMeta = meta;
+        passageResultSubmitted = false;
         originalSentences = sentences.map((sentence, index) => ({ id: `sentence-${nextSentenceId++}`, text: sentence, order: index }));
         pool = shuffle(originalSentences);
         selected = [];
@@ -907,6 +964,35 @@
       return button;
     }
 
+    async function submitPassageResult(result) {
+      const localResults = readJson(STORAGE.passageResults, []);
+      localResults.unshift(result);
+      writeJson(STORAGE.passageResults, localResults);
+
+      const passageIntegration = googleIntegration.passage || {};
+      const fields = passageIntegration.fields || {};
+      const ready = passageIntegration.formAction && [fields.nickname, fields.score, fields.school, fields.grade, fields.source].every(Boolean);
+      if (!ready) return "로컬 점수판에 기록했습니다. Google 설정을 입력하면 설문지에도 전송됩니다.";
+
+      const body = new URLSearchParams();
+      body.set(fields.nickname, result.nickname);
+      body.set(fields.score, String(result.score));
+      body.set(fields.school, result.school);
+      body.set(fields.grade, result.grade);
+      body.set(fields.source, result.source);
+      try {
+        await fetch(passageIntegration.formAction, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body
+        });
+        return "Google 설문지로 전송했습니다. 점수판 새로고침으로 시트 기록을 확인할 수 있습니다.";
+      } catch {
+        return "로컬에는 기록했지만 Google 설문지 전송에 실패했습니다.";
+      }
+    }
+
     function checkPassage() {
       let correct = 0;
       selected.forEach((item, index) => {
@@ -916,7 +1002,93 @@
         button.classList.add(selected[index].order === index ? "correct" : "wrong");
       });
       const score = Math.round((correct / originalSentences.length) * 100);
-      setMessage($("#passageFeedback"), `${currentPassageMeta.title}: ${originalSentences.length}문장 중 ${correct}문장 정답 (${score}점)`, correct === originalSentences.length ? "good" : "bad");
+      const scoreMessage = `${currentPassageMeta.title}: ${originalSentences.length}문장 중 ${correct}문장 정답 (${score}점)`;
+      setMessage($("#passageFeedback"), scoreMessage, correct === originalSentences.length ? "good" : "bad");
+      if (!passageResultSubmitted) {
+        passageResultSubmitted = true;
+        const result = {
+          takenAt: new Date().toLocaleString("ko-KR"),
+          nickname: $("#passageNickname").value.trim(),
+          score,
+          school: currentPassageMeta.school,
+          grade: currentPassageMeta.grade || "미분류",
+          source: currentPassageMeta.source || "미분류"
+        };
+        submitPassageResult(result).then((status) => {
+          setMessage($("#passageFeedback"), `${scoreMessage} · ${status}`, correct === originalSentences.length ? "good" : "bad");
+        });
+      }
+    }
+
+    function parseCsv(text) {
+      const rows = [];
+      let row = [];
+      let cell = "";
+      let quoted = false;
+      for (let index = 0; index < text.length; index += 1) {
+        const char = text[index];
+        if (char === '"') {
+          if (quoted && text[index + 1] === '"') {
+            cell += '"';
+            index += 1;
+          } else {
+            quoted = !quoted;
+          }
+        } else if (char === "," && !quoted) {
+          row.push(cell);
+          cell = "";
+        } else if ((char === "\n" || char === "\r") && !quoted) {
+          if (char === "\r" && text[index + 1] === "\n") index += 1;
+          row.push(cell);
+          if (row.some((value) => value !== "")) rows.push(row);
+          row = [];
+          cell = "";
+        } else {
+          cell += char;
+        }
+      }
+      row.push(cell);
+      if (row.some((value) => value !== "")) rows.push(row);
+      return rows;
+    }
+
+    function renderScoreboardRows(results) {
+      const ranked = [...results].sort((a, b) => Number(b.score) - Number(a.score));
+      $("#scoreboardTable").innerHTML = table(
+        ["순위", "닉네임", "단어장", "범위", "점수", "정답", "응시 일시"],
+        ranked.map((result, index) => [index + 1, result.nickname || result.name, result.book, result.range, `${result.score}점`, result.correctText || `${result.correct}/${result.total}`, result.takenAt])
+      );
+    }
+
+    async function loadScoreboard() {
+      if (!googleIntegration.sheetCsvUrl) {
+        renderScoreboardRows(readJson(STORAGE.results, []));
+        setMessage($("#scoreboardNotice"), "현재 로컬 기록을 표시하고 있습니다. google-config.js에 공개 CSV 주소를 입력하면 Google 시트 기록을 표시합니다.");
+        return;
+      }
+      try {
+        const response = await fetch(googleIntegration.sheetCsvUrl, { cache: "no-store" });
+        if (!response.ok) throw new Error("sheet not found");
+        const rows = parseCsv(await response.text());
+        const headers = (rows.shift() || []).map((header) => header.trim().toLowerCase());
+        const value = (row, names) => {
+          const index = names.map((name) => headers.indexOf(name.toLowerCase())).find((candidate) => candidate >= 0);
+          return index === undefined ? "" : row[index];
+        };
+        const results = rows.map((row) => ({
+          takenAt: value(row, ["일시", "타임스탬프", "timestamp", "응시 일시"]),
+          nickname: value(row, ["닉네임", "이름 또는 닉네임", "nickname"]),
+          book: value(row, ["단어장", "word book", "wordbook"]),
+          range: value(row, ["범위", "range"]),
+          score: Number(value(row, ["점수", "score"])) || 0,
+          correctText: value(row, ["정답", "correct"])
+        })).filter((result) => result.nickname);
+        renderScoreboardRows(results);
+        setMessage($("#scoreboardNotice"), `Google 스프레드시트에서 ${results.length}개의 기록을 불러왔습니다.`, "good");
+      } catch {
+        renderScoreboardRows(readJson(STORAGE.results, []));
+        setMessage($("#scoreboardNotice"), "Google 스프레드시트를 읽지 못해 로컬 기록을 표시합니다. 공개 CSV 주소와 공유 설정을 확인하세요.", "bad");
+      }
     }
 
     function showPassageAnswer() {
@@ -1131,11 +1303,45 @@
       }
     }
 
+    async function submitWordResult(result) {
+      const wordIntegration = googleIntegration.word || {};
+      const fields = wordIntegration.fields || {};
+      const requiredFields = [fields.takenAt, fields.nickname, fields.book, fields.range, fields.score, fields.correct, fields.type, fields.question, fields.userAnswer, fields.answer];
+      if (!wordIntegration.formAction || !requiredFields.every(Boolean)) return "Google 설문 설정이 완성되지 않아 로컬에만 저장했습니다.";
+
+      const wrongAnswers = result.wrongAnswers || [];
+      const wrongText = (key) => wrongAnswers.length
+        ? wrongAnswers.map((answer, index) => `${index + 1}. ${answer[key]}`).join("\n")
+        : "오답 없음";
+      const body = new URLSearchParams();
+      body.set(fields.takenAt, result.takenAt);
+      body.set(fields.nickname, result.name);
+      body.set(fields.book, result.book);
+      body.set(fields.range, result.range);
+      body.set(fields.score, String(result.score));
+      body.set(fields.correct, `${result.correct}/${result.total}`);
+      body.set(fields.type, wrongText("type"));
+      body.set(fields.question, wrongText("question"));
+      body.set(fields.userAnswer, wrongText("userAnswer"));
+      body.set(fields.answer, wrongText("answer"));
+      try {
+        await fetch(wordIntegration.formAction, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body
+        });
+        return "Google 설문지로 전송했습니다.";
+      } catch {
+        return "로컬에는 저장했지만 Google 설문지 전송에 실패했습니다.";
+      }
+    }
+
     function finishWordQuiz() {
       const total = wordSession.questions.length;
       const score = Math.round((wordSession.correct / total) * 100);
       const results = readJson(STORAGE.results, []);
-      results.unshift({
+      const result = {
         name: wordSession.name,
         score,
         correct: wordSession.correct,
@@ -1144,17 +1350,20 @@
         range: wordSession.range,
         wrongAnswers: wordSession.answers.filter((answer) => !answer.correct),
         takenAt: new Date().toLocaleString("ko-KR")
-      });
+      };
+      results.unshift(result);
       writeJson(STORAGE.results, results);
+      renderScoreboardRows(results);
       $("#wordQuestion").innerHTML = `<h3>시험 완료</h3><p class="question-main">${score}점</p><p class="question-sub">${escapeHtml(wordSession.name)}: ${wordSession.correct} / ${total}</p>`;
       $("#choiceList").innerHTML = "";
       $("#shortAnswerBox").classList.add("hidden");
       $("#wordNextBox").classList.add("hidden");
       $("#wordProgress").textContent = `${total} / ${total}`;
       $("#wordType").textContent = "완료";
-      setMessage($("#wordFeedback"), "점수와 닉네임을 관리자 데이터베이스에 저장했습니다.", "good");
+      setMessage($("#wordFeedback"), "결과를 저장하고 Google 설문지로 전송 중입니다.", "good");
       wordSession = null;
       renderAdminData();
+      submitWordResult(result).then((status) => setMessage($("#wordFeedback"), `시험 결과를 저장했습니다. ${status}`, "good"));
     }
 
     function resetWordQuiz() {
@@ -1247,6 +1456,7 @@
     renderPassageQuiz();
     loadManifest();
     loadWordBookManifest();
+    loadScoreboard();
     resetWordQuiz();
 
     $("#loginBtn").addEventListener("click", login);
@@ -1256,7 +1466,9 @@
     $("#logoutBtn").addEventListener("click", () => $("#lockScreen").classList.remove("hidden"));
     $$(".tab-btn").forEach((button) => button.addEventListener("click", () => switchTab(button.dataset.tab)));
     $("#reloadPassagesBtn").addEventListener("click", loadManifest);
-    $("#schoolSelect").addEventListener("change", renderPassageOptions);
+    $("#schoolSelect").addEventListener("change", renderGradeOptions);
+    $("#gradeSelect").addEventListener("change", renderSourceOptions);
+    $("#sourceSelect").addEventListener("change", renderPassageOptions);
     $("#loadPassageBtn").addEventListener("click", startPassageQuiz);
     $("#checkPassageBtn").addEventListener("click", checkPassage);
     $("#undoPassageBtn").addEventListener("click", () => {
@@ -1267,10 +1479,12 @@
     $("#reshufflePassageBtn").addEventListener("click", () => {
       pool = shuffle(originalSentences);
       selected = [];
+      passageResultSubmitted = false;
       setMessage($("#passageFeedback"), "문장을 다시 섞었습니다.");
       renderPassageQuiz();
     });
     $("#passageAnswerBtn").addEventListener("click", showPassageAnswer);
+    $("#reloadScoreboardBtn").addEventListener("click", loadScoreboard);
     $("#startWordBtn").addEventListener("click", startWordQuiz);
     $("#wordBookSelect").addEventListener("change", loadSelectedWordBook);
     $("#resetWordBtn").addEventListener("click", resetWordQuiz);

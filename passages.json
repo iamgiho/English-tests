@@ -1,31 +1,43 @@
 [
   {
     "school": "렛츠고",
+    "grade": "미분류",
+    "source": "미분류",
     "title": "지문 1",
     "path": "영어 지문/렛츠고/지문 1.txt"
   },
   {
     "school": "렛츠고",
+    "grade": "미분류",
+    "source": "미분류",
     "title": "지문 2",
     "path": "영어 지문/렛츠고/지문 2.txt"
   },
   {
     "school": "부산고",
+    "grade": "미분류",
+    "source": "미분류",
     "title": "pecial counsel Cho Eun-suk had soug",
     "path": "영어 지문/부산고/pecial counsel Cho Eun-suk had soug.txt"
   },
   {
     "school": "부산고",
+    "grade": "미분류",
+    "source": "미분류",
     "title": "Yoon and the special counsel appeal",
     "path": "영어 지문/부산고/Yoon and the special counsel appeal.txt"
   },
   {
     "school": "서울고",
+    "grade": "미분류",
+    "source": "미분류",
     "title": "지문 3",
     "path": "영어 지문/서울고/지문 3.txt"
   },
   {
     "school": "서울고",
+    "grade": "미분류",
+    "source": "미분류",
     "title": "지문 4",
     "path": "영어 지문/서울고/지문 4.txt"
   }
