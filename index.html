@@ -643,7 +643,6 @@
         <section class="hidden" id="adminPanel">
           <div class="section-head">
             <h2>비밀번호와 단어풀 관리</h2>
-            <button class="secondary" id="exportResultsBtn">결과 CSV 만들기</button>
           </div>
           <div class="body">
             <div class="field-row">
@@ -679,16 +678,18 @@
             <div class="toolbar">
               <button id="addWordBtn">단어 추가</button>
               <button class="secondary" id="seedWordsBtn">샘플 단어 다시 채우기</button>
-              <button class="secondary" id="clearResultsBtn">결과 초기화</button>
             </div>
-            <div class="notice" id="adminWorkNotice">단어와 결과는 이 브라우저의 로컬 데이터베이스에 저장됩니다.</div>
+            <div class="notice" id="adminWorkNotice">단어풀은 이 브라우저에 저장되고 시험 결과는 Google 스프레드시트에서 불러옵니다.</div>
           </div>
         </section>
 
         <section class="hidden" id="adminDataPanel">
           <div class="section-head">
             <h2>저장된 단어와 시험 결과</h2>
-            <span class="pill" id="dataStat">0개</span>
+            <div class="top-actions">
+              <span class="pill" id="dataStat">0개</span>
+              <button class="secondary" id="refreshAdminSheetBtn">시트 새로고침</button>
+            </div>
           </div>
           <div class="body">
             <h3>단어풀</h3>
@@ -697,6 +698,7 @@
             <div id="resultTable"></div>
             <h3 style="margin-top: 18px;">오답 기록</h3>
             <div id="wrongAnswerTable"></div>
+            <div class="notice" id="adminSheetNotice">Google 스프레드시트 데이터를 불러오는 중입니다.</div>
           </div>
         </section>
       </div>
@@ -1060,34 +1062,62 @@
       );
     }
 
-    async function loadScoreboard() {
-      if (!googleIntegration.sheetCsvUrl) {
-        renderScoreboardRows(readJson(STORAGE.results, []));
-        setMessage($("#scoreboardNotice"), "현재 로컬 기록을 표시하고 있습니다. google-config.js에 공개 CSV 주소를 입력하면 Google 시트 기록을 표시합니다.");
-        return;
-      }
-      try {
-        const response = await fetch(googleIntegration.sheetCsvUrl, { cache: "no-store" });
-        if (!response.ok) throw new Error("sheet not found");
-        const rows = parseCsv(await response.text());
-        const headers = (rows.shift() || []).map((header) => header.trim().toLowerCase());
-        const value = (row, names) => {
-          const index = names.map((name) => headers.indexOf(name.toLowerCase())).find((candidate) => candidate >= 0);
-          return index === undefined ? "" : row[index];
-        };
-        const results = rows.map((row) => ({
+    function splitSheetAnswers(value) {
+      const text = String(value || "").trim();
+      if (!text || text === "오답 없음") return [];
+      return text.split(/\r?\n/).map((item) => item.replace(/^\d+\.\s*/, "").trim());
+    }
+
+    async function fetchWordSheetData() {
+      if (!googleIntegration.sheetCsvUrl) throw new Error("sheet URL is missing");
+      const response = await fetch(googleIntegration.sheetCsvUrl, { cache: "no-store" });
+      if (!response.ok) throw new Error("sheet not found");
+      const rows = parseCsv(await response.text());
+      const headers = (rows.shift() || []).map((header) => header.trim().toLowerCase());
+      const value = (row, names) => {
+        const index = names.map((name) => headers.indexOf(name.toLowerCase())).find((candidate) => candidate >= 0);
+        return index === undefined ? "" : row[index];
+      };
+      const wrongAnswers = [];
+      const results = rows.map((row) => {
+        const result = {
           takenAt: value(row, ["일시", "타임스탬프", "timestamp", "응시 일시"]),
           nickname: value(row, ["닉네임", "이름 또는 닉네임", "nickname"]),
           book: value(row, ["단어장", "word book", "wordbook"]),
           range: value(row, ["범위", "range"]),
           score: Number(value(row, ["점수", "score"])) || 0,
           correctText: value(row, ["정답", "correct"])
-        })).filter((result) => result.nickname);
+        };
+        const columns = {
+          type: splitSheetAnswers(value(row, ["유형", "type"])),
+          question: splitSheetAnswers(value(row, ["문항", "question"])),
+          userAnswer: splitSheetAnswers(value(row, ["제출한 답", "제출 답", "user answer"])),
+          answer: splitSheetAnswers(value(row, ["실제 정답", "정답 답안", "actual answer"]))
+        };
+        const count = Math.max(columns.type.length, columns.question.length, columns.userAnswer.length, columns.answer.length);
+        for (let index = 0; index < count; index += 1) {
+          wrongAnswers.push({
+            takenAt: result.takenAt,
+            nickname: result.nickname,
+            type: columns.type[index] || "-",
+            question: columns.question[index] || "-",
+            userAnswer: columns.userAnswer[index] || "-",
+            answer: columns.answer[index] || "-"
+          });
+        }
+        return result;
+      }).filter((result) => result.nickname);
+      return { results, wrongAnswers };
+    }
+
+    async function loadScoreboard() {
+      try {
+        const { results } = await fetchWordSheetData();
         renderScoreboardRows(results);
         setMessage($("#scoreboardNotice"), `Google 스프레드시트에서 ${results.length}개의 기록을 불러왔습니다.`, "good");
       } catch {
-        renderScoreboardRows(readJson(STORAGE.results, []));
-        setMessage($("#scoreboardNotice"), "Google 스프레드시트를 읽지 못해 로컬 기록을 표시합니다. 공개 CSV 주소와 공유 설정을 확인하세요.", "bad");
+        $("#scoreboardTable").innerHTML = table([], []);
+        setMessage($("#scoreboardNotice"), "Google 스프레드시트를 읽지 못했습니다. 공개 CSV 주소와 공유 설정을 확인하세요.", "bad");
       }
     }
 
@@ -1397,15 +1427,35 @@
     function renderAdminData() {
       if (!adminUnlocked) return;
       const words = getWords();
-      const results = readJson(STORAGE.results, []);
-      const wrongAnswers = results.flatMap((result) => (result.wrongAnswers || []).map((answer) => ({ result, answer })));
-      $("#dataStat").textContent = `${words.length}단어 / ${results.length}결과`;
+      $("#dataStat").textContent = `${words.length}단어 / 시트 확인 중`;
       $("#wordTable").innerHTML = table(["영어", "뜻", "예문"], words.map((word) => [word.en, word.ko, word.example]));
-      $("#resultTable").innerHTML = table(["일시", "닉네임", "단어장", "범위", "점수", "정답"], results.map((result) => [result.takenAt, result.name, result.book || "-", result.range || "-", `${result.score}점`, `${result.correct}/${result.total}`]));
-      $("#wrongAnswerTable").innerHTML = table(
-        ["일시", "닉네임", "유형", "문항", "제출한 답", "정답"],
-        wrongAnswers.map(({ result, answer }) => [result.takenAt, result.name, answer.type, answer.question, answer.userAnswer, answer.answer])
-      );
+      loadAdminSheetData();
+    }
+
+    async function loadAdminSheetData() {
+      if (!adminUnlocked) return;
+      $("#refreshAdminSheetBtn").disabled = true;
+      setMessage($("#adminSheetNotice"), "Google 스프레드시트 데이터를 불러오는 중입니다.");
+      try {
+        const { results, wrongAnswers } = await fetchWordSheetData();
+        $("#dataStat").textContent = `${getWords().length}단어 / ${results.length}결과`;
+        $("#resultTable").innerHTML = table(
+          ["일시", "닉네임", "단어장", "범위", "점수", "정답"],
+          results.map((result) => [result.takenAt, result.nickname, result.book || "-", result.range || "-", `${result.score}점`, result.correctText || "-"])
+        );
+        $("#wrongAnswerTable").innerHTML = table(
+          ["일시", "닉네임", "유형", "문항", "제출한 답", "실제 정답"],
+          wrongAnswers.map((answer) => [answer.takenAt, answer.nickname, answer.type, answer.question, answer.userAnswer, answer.answer])
+        );
+        setMessage($("#adminSheetNotice"), `Google 스프레드시트에서 시험 결과 ${results.length}개와 오답 ${wrongAnswers.length}개를 불러왔습니다.`, "good");
+      } catch {
+        $("#dataStat").textContent = `${getWords().length}단어 / 시트 오류`;
+        $("#resultTable").innerHTML = `<div class="notice bad">Google 스프레드시트 시험 결과를 불러오지 못했습니다.</div>`;
+        $("#wrongAnswerTable").innerHTML = `<div class="notice bad">Google 스프레드시트 오답 기록을 불러오지 못했습니다.</div>`;
+        setMessage($("#adminSheetNotice"), "로컬 결과로 대체하지 않았습니다. 스프레드시트의 공개 설정과 CSV 주소를 확인하세요.", "bad");
+      } finally {
+        $("#refreshAdminSheetBtn").disabled = false;
+      }
     }
 
     function table(headers, rows) {
@@ -1493,6 +1543,7 @@
       if (event.key === "Enter") nextWordQuestion();
     });
     $("#adminLoginBtn").addEventListener("click", adminLogin);
+    $("#refreshAdminSheetBtn").addEventListener("click", loadAdminSheetData);
     $("#savePasswordsBtn").addEventListener("click", savePasswords);
     $("#addWordBtn").addEventListener("click", addWord);
     $("#seedWordsBtn").addEventListener("click", () => {
@@ -1500,12 +1551,6 @@
       setMessage($("#adminWorkNotice"), "샘플 단어풀을 다시 채웠습니다.", "good");
       renderAdminData();
     });
-    $("#clearResultsBtn").addEventListener("click", () => {
-      writeJson(STORAGE.results, []);
-      setMessage($("#adminWorkNotice"), "시험 결과를 초기화했습니다.", "good");
-      renderAdminData();
-    });
-    $("#exportResultsBtn").addEventListener("click", exportResults);
   </script>
 </body>
 </html>
