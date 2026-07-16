@@ -1135,7 +1135,33 @@
     }
 
     function normalizeAnswer(value) {
-      return value.trim().toLowerCase().replace(/\s+/g, " ");
+      return String(value || "")
+        .normalize("NFKC")
+        .trim()
+        .toLowerCase()
+        .replace(/\s+/g, " ")
+        .replace(/\s*([,，/])\s*/g, ",");
+    }
+
+    function acceptedAnswerVariants(answer) {
+      const normalized = normalizeAnswer(answer);
+      const variants = new Set([normalized]);
+      if (!/[가-힣]/.test(normalized)) return variants;
+
+      // Parenthesized Korean particles are optional: 바람(을) -> 바람 / 바람을.
+      variants.add(normalized.replace(/\((을|를|이|가|은|는|와|과|의|에|에서|로|으로|도|만)\)/g, ""));
+      variants.add(normalized.replace(/\((을|를|이|가|은|는|와|과|의|에|에서|로|으로|도|만)\)/g, "$1"));
+
+      // Also accept an answer with its final grammatical particle omitted: 성적의 -> 성적.
+      for (const variant of [...variants]) {
+        variants.add(variant.replace(/(에서|으로|에게|께서|부터|까지|처럼|보다|을|를|이|가|은|는|와|과|의|에|로|도|만)$/u, ""));
+      }
+      variants.delete("");
+      return variants;
+    }
+
+    function answersMatch(value, answer) {
+      return acceptedAnswerVariants(answer).has(normalizeAnswer(value));
     }
 
     function parseWordBook(text) {
@@ -1295,7 +1321,7 @@
       if (!wordSession || wordSession.answered) return;
       const question = wordSession.questions[wordSession.index];
       const accepted = question.answers || [question.answer];
-      const isCorrect = accepted.some((answer) => normalizeAnswer(value) === normalizeAnswer(answer));
+      const isCorrect = accepted.some((answer) => answersMatch(value, answer));
       if (isCorrect) wordSession.correct += 1;
       wordSession.answers.push({ type: question.typeLabel, question: question.main, userAnswer: value, answer: question.answer, correct: isCorrect });
       wordSession.answered = true;
