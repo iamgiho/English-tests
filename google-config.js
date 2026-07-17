@@ -22,5 +22,5 @@ window.GOOGLE_INTEGRATION = {
     }
   },
   // Google 스프레드시트에서 파일 > 공유 > 웹에 게시 > CSV로 게시한 주소
-  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/1738gDr9B7b-2YYXioH6SYXH1GxjG5Kdl1M4PS0DcpZM/gviz/tq?tqx=out:csv&gid=0"
+  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR2F1RL3B02z_ZzHeCoEUY-bGSDL-pMtFxMCRhUV-tOf6AcdcloSfEcz8NXvFNIPOnRrmRbacJRgCNn/pub?gid=806658825&single=true&output=csv"
 };
