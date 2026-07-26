@@ -1148,9 +1148,10 @@
       const variants = new Set([normalized]);
       if (!/[가-힣]/.test(normalized)) return variants;
 
-      // Parenthesized Korean particles are optional: 바람(을) -> 바람 / 바람을.
-      variants.add(normalized.replace(/\((을|를|이|가|은|는|와|과|의|에|에서|로|으로|도|만)\)/g, ""));
-      variants.add(normalized.replace(/\((을|를|이|가|은|는|와|과|의|에|에서|로|으로|도|만)\)/g, "$1"));
+      // Parenthesized Korean explanations are optional:
+      // 바람(을) -> 바람 / 바람을, 독(을 넣다) -> 독 / 독을 넣다.
+      variants.add(normalized.replace(/\(([^()]*)\)/g, ""));
+      variants.add(normalized.replace(/\(([^()]*)\)/g, "$1"));
 
       // Also accept an answer with its final grammatical particle omitted: 성적의 -> 성적.
       for (const variant of [...variants]) {
@@ -1161,7 +1162,18 @@
     }
 
     function answersMatch(value, answer) {
-      return acceptedAnswerVariants(answer).has(normalizeAnswer(value));
+      const normalizedValue = normalizeAnswer(value);
+      const variants = acceptedAnswerVariants(answer);
+      if (variants.has(normalizedValue)) return true;
+
+      // Korean short answers accept spacing differences: 다치게 하다 -> 다치게하다.
+      if (/[가-힣]/.test(normalizedValue)) {
+        const compactValue = normalizedValue.replace(/\s+/g, "");
+        return [...variants].some((variant) =>
+          /[가-힣]/.test(variant) && variant.replace(/\s+/g, "") === compactValue
+        );
+      }
+      return false;
     }
 
     function parseWordBook(text) {
