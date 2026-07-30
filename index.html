@@ -577,6 +577,10 @@
         <div class="body">
           <div class="field-row">
             <div class="field">
+              <label for="listeningNickname">이름 또는 닉네임</label>
+              <input id="listeningNickname" placeholder="예: 김민준">
+            </div>
+            <div class="field">
               <label for="gradeSelect">학년</label>
               <select id="gradeSelect"></select>
             </div>
@@ -653,7 +657,10 @@
             <button class="secondary" id="nextWritingBtn" disabled>다음</button>
           </div>
           <div class="feedback" id="writingFeedback">틀리면 영어 정답을 확인한 뒤 같은 문장을 다시 입력합니다.</div>
-          <div class="notice hidden" id="writingCorrectAnswer"></div>
+          <div class="answer-comparison hidden" id="writingComparison">
+            <div><strong>내 답안</strong><div id="writingUserAnswer" style="margin-top: 7px;"></div></div>
+            <div><strong>정답</strong><div id="writingCorrectAnswer" style="margin-top: 7px;"></div></div>
+          </div>
         </div>
       </section>
     </div>
@@ -845,6 +852,8 @@
             <div id="wrongAnswerTable"></div>
             <h3 style="margin-top: 18px;">Writing 오답 기록</h3>
             <div id="writingWrongAnswerTable"></div>
+            <h3 style="margin-top: 18px;">Listening 오답 기록</h3>
+            <div id="listeningWrongAnswerTable"></div>
             <div class="notice" id="adminSheetNotice">Google 스프레드시트 데이터를 불러오는 중입니다.</div>
           </div>
         </section>
@@ -861,7 +870,8 @@
       words: "exam.words",
       results: "exam.results",
       passageResults: "exam.passageResults",
-      writingResults: "exam.writingResults"
+      writingResults: "exam.writingResults",
+      listeningResults: "exam.listeningResults"
     };
 
     const fallbackManifest = [
@@ -928,6 +938,7 @@
       if (!localStorage.getItem(STORAGE.results)) writeJson(STORAGE.results, []);
       if (!localStorage.getItem(STORAGE.passageResults)) writeJson(STORAGE.passageResults, []);
       if (!localStorage.getItem(STORAGE.writingResults)) writeJson(STORAGE.writingResults, []);
+      if (!localStorage.getItem(STORAGE.listeningResults)) writeJson(STORAGE.listeningResults, []);
     }
 
     function escapeHtml(value) {
@@ -1235,7 +1246,7 @@
       $("#writingAnswer").disabled = false;
       $("#submitWritingBtn").disabled = false;
       $("#nextWritingBtn").disabled = true;
-      $("#writingCorrectAnswer").classList.add("hidden");
+      $("#writingComparison").classList.add("hidden");
       writingSession.currentWrong = false;
       writingSession.awaitingNext = false;
       setMessage($("#writingFeedback"), "영어 문장을 입력하고 답안을 확인하세요.");
@@ -1256,7 +1267,7 @@
         $("#writingAnswer").disabled = true;
         $("#submitWritingBtn").disabled = true;
         $("#nextWritingBtn").disabled = false;
-        $("#writingCorrectAnswer").classList.add("hidden");
+        if (!writingSession.currentWrong) $("#writingComparison").classList.add("hidden");
         setMessage(
           $("#writingFeedback"),
           writingSession.currentWrong ? "다시 입력한 답이 맞았습니다. 다음 버튼을 눌러 진행하세요." : "정답입니다. 다음 버튼을 눌러 진행하세요.",
@@ -1265,16 +1276,15 @@
         return;
       }
 
-      if (!writingSession.currentWrong) {
-        writingSession.wrongAnswers.push({
-          korean: question.korean,
-          userAnswer,
-          answer: question.answer
-        });
-      }
+      writingSession.wrongAnswers.push({
+        korean: question.korean,
+        userAnswer,
+        answer: question.answer
+      });
       writingSession.currentWrong = true;
-      $("#writingCorrectAnswer").innerHTML = `<strong>영어 정답</strong><div style="margin-top: 7px;">${escapeHtml(question.answer)}</div>`;
-      $("#writingCorrectAnswer").classList.remove("hidden");
+      $("#writingUserAnswer").textContent = userAnswer;
+      $("#writingCorrectAnswer").textContent = question.answer;
+      $("#writingComparison").classList.remove("hidden");
       $("#writingAnswer").value = "";
       setMessage($("#writingFeedback"), "틀렸습니다. 정답을 확인한 뒤 같은 문장을 한 번 더 입력하세요.", "bad");
       $("#writingAnswer").focus();
@@ -1300,6 +1310,7 @@
         lesson: `Lesson ${finished.meta.lesson}`,
         part: finished.meta.partLabel,
         total: finished.questions.length,
+        wrongQuestionCount: new Set(finished.wrongAnswers.map((answer) => answer.korean)).size,
         wrongAnswers: finished.wrongAnswers
       };
       const localResults = readJson(STORAGE.writingResults, []);
@@ -1311,8 +1322,8 @@
       $("#writingAnswer").disabled = true;
       $("#submitWritingBtn").disabled = true;
       $("#nextWritingBtn").disabled = true;
-      $("#writingCorrectAnswer").classList.add("hidden");
-      setMessage($("#writingFeedback"), `총 ${finished.questions.length}문장 중 ${finished.wrongAnswers.length}문장을 다시 연습했습니다. 결과를 저장하는 중입니다.`, "good");
+      $("#writingComparison").classList.add("hidden");
+      setMessage($("#writingFeedback"), `총 ${finished.questions.length}문장을 완료했고 오답 제출 ${finished.wrongAnswers.length}회를 저장하는 중입니다.`, "good");
       writingSession = null;
       renderWritingWrongAnswers(getLocalWritingWrongAnswers());
       submitWritingResult(result).then((status) => setMessage($("#writingFeedback"), status, "good"));
@@ -1337,8 +1348,8 @@
         fallbackBody.set(wordFields.nickname, result.nickname);
         fallbackBody.set(wordFields.book, `${result.grade} | ${result.textbook}`);
         fallbackBody.set(wordFields.range, `${result.lesson} | ${result.part}`);
-        fallbackBody.set(wordFields.score, String(Math.round(((result.total - result.wrongAnswers.length) / result.total) * 100)));
-        fallbackBody.set(wordFields.correct, `${result.total - result.wrongAnswers.length}/${result.total}`);
+        fallbackBody.set(wordFields.score, String(Math.round(((result.total - result.wrongQuestionCount) / result.total) * 100)));
+        fallbackBody.set(wordFields.correct, `${result.total - result.wrongQuestionCount}/${result.total}`);
         fallbackBody.set(wordFields.type, result.wrongAnswers.length ? result.wrongAnswers.map((_, index) => `${index + 1}. Writing`).join("\n") : "1. Writing");
         fallbackBody.set(wordFields.question, lines("korean"));
         fallbackBody.set(wordFields.userAnswer, lines("userAnswer"));
@@ -1383,7 +1394,12 @@
     }
 
     async function startListeningQuiz() {
+      const nickname = $("#listeningNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#listeningPartSelect").value);
+      if (!nickname) {
+        setMessage($("#listeningFeedback"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        return;
+      }
       if (!meta) return;
       try {
         const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
@@ -1397,9 +1413,11 @@
           return;
         }
         listeningSession = {
+          nickname,
           meta,
           sentences,
           index: 0,
+          wrongAnswers: [],
           awaitingNext: false
         };
         renderListeningQuestion();
@@ -1462,6 +1480,11 @@
       $("#listeningUserAnswer").textContent = userAnswer;
       $("#listeningCorrectAnswer").textContent = correctAnswer;
       $("#listeningComparison").classList.remove("hidden");
+      listeningSession.wrongAnswers.push({
+        questionNumber: listeningSession.index + 1,
+        userAnswer,
+        answer: correctAnswer
+      });
       setMessage($("#listeningFeedback"), "틀렸습니다. 내 답안과 정답을 비교한 뒤 다음 버튼을 눌러 진행하세요.", "bad");
     }
 
@@ -1472,7 +1495,21 @@
         renderListeningQuestion();
         return;
       }
-      const total = listeningSession.sentences.length;
+      const finished = listeningSession;
+      const total = finished.sentences.length;
+      const result = {
+        takenAt: new Date().toLocaleString("ko-KR"),
+        nickname: finished.nickname,
+        grade: finished.meta.grade,
+        textbook: finished.meta.textbook,
+        lesson: `Lesson ${finished.meta.lesson}`,
+        part: finished.meta.partLabel,
+        total,
+        wrongAnswers: finished.wrongAnswers
+      };
+      const localResults = readJson(STORAGE.listeningResults, []);
+      localResults.unshift(result);
+      writeJson(STORAGE.listeningResults, localResults);
       window.speechSynthesis?.cancel();
       listeningSession = null;
       $("#listeningProgress").textContent = `${total} / ${total}`;
@@ -1483,7 +1520,43 @@
       $("#submitListeningBtn").disabled = true;
       $("#nextListeningBtn").disabled = true;
       $("#listeningComparison").classList.add("hidden");
-      setMessage($("#listeningFeedback"), `Listening ${total}문장을 모두 완료했습니다.`, "good");
+      renderListeningWrongAnswers(getLocalListeningWrongAnswers());
+      setMessage($("#listeningFeedback"), `Listening ${total}문장을 모두 완료했습니다. 결과를 저장하는 중입니다.`, "good");
+      submitListeningResult(result).then((status) => setMessage($("#listeningFeedback"), status, "good"));
+    }
+
+    async function submitListeningResult(result) {
+      const wordIntegration = googleIntegration.word || {};
+      const fields = wordIntegration.fields || {};
+      const required = [fields.takenAt, fields.nickname, fields.book, fields.range, fields.score, fields.correct, fields.type, fields.question, fields.userAnswer, fields.answer];
+      if (!wordIntegration.formAction || !required.every(Boolean)) {
+        return "Listening 결과를 이 브라우저에 저장했습니다. Google 설문 설정이 필요합니다.";
+      }
+      const lines = (key) => result.wrongAnswers.length
+        ? result.wrongAnswers.map((item, index) => `${index + 1}. ${item[key]}`).join("\n")
+        : "오답 없음";
+      const body = new URLSearchParams();
+      body.set(fields.takenAt, result.takenAt);
+      body.set(fields.nickname, result.nickname);
+      body.set(fields.book, `${result.grade} | ${result.textbook}`);
+      body.set(fields.range, `${result.lesson} | ${result.part}`);
+      body.set(fields.score, String(Math.round(((result.total - result.wrongAnswers.length) / result.total) * 100)));
+      body.set(fields.correct, `${result.total - result.wrongAnswers.length}/${result.total}`);
+      body.set(fields.type, result.wrongAnswers.length ? result.wrongAnswers.map((_, index) => `${index + 1}. Listening`).join("\n") : "1. Listening");
+      body.set(fields.question, lines("questionNumber"));
+      body.set(fields.userAnswer, lines("userAnswer"));
+      body.set(fields.answer, lines("answer"));
+      try {
+        await fetch(wordIntegration.formAction, {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body
+        });
+        return "Listening 결과를 Google 설문지로 전송했습니다.";
+      } catch {
+        return "Listening 결과는 로컬에 저장했지만 Google 설문지 전송에 실패했습니다.";
+      }
     }
 
     function parseCsv(text) {
@@ -1536,6 +1609,7 @@
       };
       const wrongAnswers = [];
       const writingWrongAnswers = [];
+      const listeningWrongAnswers = [];
       const results = rows.map((row) => {
         const result = {
           takenAt: value(row, ["일시", "타임스탬프", "timestamp", "응시 일시"]),
@@ -1553,22 +1627,33 @@
         };
         const count = Math.max(columns.type.length, columns.question.length, columns.userAnswer.length, columns.answer.length);
         const isWriting = columns.type.some((type) => type.toLowerCase() === "writing");
-        if (isWriting) {
+        const isListening = columns.type.some((type) => type.toLowerCase() === "listening");
+        if (isWriting || isListening) {
           const [grade = "-", textbook = "-"] = result.book.split("|").map((item) => item.trim());
           const [lesson = "-", part = "-"] = result.range.split("|").map((item) => item.trim());
-          const writingCount = Math.max(columns.question.length, columns.userAnswer.length, columns.answer.length);
-          for (let index = 0; index < writingCount; index += 1) {
-            writingWrongAnswers.push({
+          const specialCount = Math.max(columns.question.length, columns.userAnswer.length, columns.answer.length);
+          for (let index = 0; index < specialCount; index += 1) {
+            const common = {
               takenAt: result.takenAt,
               nickname: result.nickname,
               grade,
               textbook,
               lesson,
               part,
-              korean: columns.question[index] || "-",
               userAnswer: columns.userAnswer[index] || "-",
               answer: columns.answer[index] || "-"
-            });
+            };
+            if (isWriting) {
+              writingWrongAnswers.push({
+                ...common,
+                korean: columns.question[index] || "-"
+              });
+            } else {
+              listeningWrongAnswers.push({
+                ...common,
+                questionNumber: columns.question[index] || "-"
+              });
+            }
           }
           return null;
         }
@@ -1584,7 +1669,7 @@
         }
         return result;
       }).filter((result) => result?.nickname);
-      return { results, wrongAnswers, writingWrongAnswers };
+      return { results, wrongAnswers, writingWrongAnswers, listeningWrongAnswers };
     }
 
     function getLocalWritingWrongAnswers() {
@@ -1614,6 +1699,39 @@
           answer.lesson,
           answer.part,
           answer.korean,
+          answer.userAnswer,
+          answer.answer
+        ])
+      );
+    }
+
+    function getLocalListeningWrongAnswers() {
+      return readJson(STORAGE.listeningResults, []).flatMap((result) =>
+        (result.wrongAnswers || []).map((answer) => ({
+          takenAt: result.takenAt,
+          nickname: result.nickname,
+          grade: result.grade,
+          textbook: result.textbook,
+          lesson: result.lesson,
+          part: result.part,
+          questionNumber: answer.questionNumber,
+          userAnswer: answer.userAnswer,
+          answer: answer.answer
+        }))
+      );
+    }
+
+    function renderListeningWrongAnswers(wrongAnswers) {
+      $("#listeningWrongAnswerTable").innerHTML = table(
+        ["일시", "닉네임", "학년", "교과서", "단원", "파트", "문장 번호", "제출한 답", "영어 정답"],
+        wrongAnswers.map((answer) => [
+          answer.takenAt,
+          answer.nickname,
+          answer.grade,
+          answer.textbook,
+          answer.lesson,
+          answer.part,
+          answer.questionNumber,
           answer.userAnswer,
           answer.answer
         ])
@@ -2004,9 +2122,11 @@
       $("#refreshAdminSheetBtn").disabled = true;
       setMessage($("#adminSheetNotice"), "Google 스프레드시트 데이터를 불러오는 중입니다.");
       try {
-        const { results, wrongAnswers, writingWrongAnswers: sharedWritingWrongAnswers } = await fetchWordSheetData();
+        const { results, wrongAnswers, writingWrongAnswers: sharedWritingWrongAnswers, listeningWrongAnswers: sharedListeningWrongAnswers } = await fetchWordSheetData();
         let writingWrongAnswers = sharedWritingWrongAnswers.length ? sharedWritingWrongAnswers : getLocalWritingWrongAnswers();
         let writingSource = sharedWritingWrongAnswers.length ? "Google 스프레드시트의 Writing 기록" : "브라우저";
+        const listeningWrongAnswers = sharedListeningWrongAnswers.length ? sharedListeningWrongAnswers : getLocalListeningWrongAnswers();
+        const listeningSource = sharedListeningWrongAnswers.length ? "Google 스프레드시트" : "브라우저";
         try {
           writingWrongAnswers = await fetchWritingSheetData();
           writingSource = "Writing 스프레드시트";
@@ -2023,14 +2143,17 @@
           wrongAnswers.map((answer) => [answer.takenAt, answer.nickname, answer.type, answer.question, answer.userAnswer, answer.answer])
         );
         renderWritingWrongAnswers(writingWrongAnswers);
-        setMessage($("#adminSheetNotice"), `단어 스프레드시트에서 결과 ${results.length}개와 오답 ${wrongAnswers.length}개, ${writingSource}에서 Writing 오답 ${writingWrongAnswers.length}개를 불러왔습니다.`, "good");
+        renderListeningWrongAnswers(listeningWrongAnswers);
+        setMessage($("#adminSheetNotice"), `단어 결과 ${results.length}개와 오답 ${wrongAnswers.length}개, ${writingSource} Writing 오답 ${writingWrongAnswers.length}개, ${listeningSource} Listening 오답 ${listeningWrongAnswers.length}개를 불러왔습니다.`, "good");
       } catch {
         $("#dataStat").textContent = `${getWords().length}단어 / 시트 오류`;
         $("#resultTable").innerHTML = `<div class="notice bad">Google 스프레드시트 시험 결과를 불러오지 못했습니다.</div>`;
         $("#wrongAnswerTable").innerHTML = `<div class="notice bad">Google 스프레드시트 오답 기록을 불러오지 못했습니다.</div>`;
         const localWriting = getLocalWritingWrongAnswers();
+        const localListening = getLocalListeningWrongAnswers();
         renderWritingWrongAnswers(localWriting);
-        setMessage($("#adminSheetNotice"), `단어 스프레드시트를 불러오지 못했습니다. Writing 로컬 오답 ${localWriting.length}개는 별도로 표시했습니다.`, "bad");
+        renderListeningWrongAnswers(localListening);
+        setMessage($("#adminSheetNotice"), `단어 스프레드시트를 불러오지 못했습니다. Writing 로컬 오답 ${localWriting.length}개와 Listening 로컬 오답 ${localListening.length}개를 표시했습니다.`, "bad");
       } finally {
         $("#refreshAdminSheetBtn").disabled = false;
       }
@@ -2114,9 +2237,6 @@
     $("#startWritingBtn").addEventListener("click", startWritingQuiz);
     $("#submitWritingBtn").addEventListener("click", submitWritingAnswer);
     $("#nextWritingBtn").addEventListener("click", nextWritingQuestion);
-    $("#writingAnswer").addEventListener("keydown", (event) => {
-      if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) submitWritingAnswer();
-    });
     $("#listeningGradeSelect").addEventListener("change", renderListeningTextbookOptions);
     $("#listeningTextbookSelect").addEventListener("change", renderListeningLessonOptions);
     $("#listeningLessonSelect").addEventListener("change", renderListeningPartOptions);
@@ -2124,9 +2244,6 @@
     $("#playListeningBtn").addEventListener("click", playListeningSentence);
     $("#submitListeningBtn").addEventListener("click", submitListeningAnswer);
     $("#nextListeningBtn").addEventListener("click", nextListeningQuestion);
-    $("#listeningAnswer").addEventListener("keydown", (event) => {
-      if (event.key === "Enter" && (event.ctrlKey || event.metaKey)) submitListeningAnswer();
-    });
     $("#startWordBtn").addEventListener("click", startWordQuiz);
     $("#wordBookSelect").addEventListener("change", loadSelectedWordBook);
     $("#resetWordBtn").addEventListener("click", resetWordQuiz);
