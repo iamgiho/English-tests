@@ -1,0 +1,177 @@
+{
+  "publisher": "능률(김)",
+  "book": "영어2",
+  "lesson": 1,
+  "part": 3,
+  "passages": [
+    {
+      "id": "neungyul-kim-english2-l01-p03-001",
+      "text": [
+        "Today, we did something special for Ben and Lily.",
+        "These two baby bears were rescued after they had been raised illegally in a tiny cage on a farm for many years.",
+        "To help the bears restore their natural instincts, we carried out some special activities known as “behavioral enrichment.”",
+        "For example, we made honey-log feeders for the bears.",
+        "First, we made several holes in a log and filled them with honey.",
+        "Then, we hung the honey-log feeders on trees near the bears’ habitat.",
+        "As bears are intelligent and curious creatures, they can become bored and stressed when lacking mental and physical stimulation.",
+        "The honey-log feeders stimulate their natural curiosity and keep them as active as they would be in the wild.",
+        "After a while, Ben and Lily approached the feeders and started eating the honey inside. They are so cute!"
+      ],
+      "koreanText": [
+        "오늘 우리는 Ben과 Lily를 위해 특별한 일을 했다.",
+        "이 두 마리 아기 곰은 수년간 농장의 작은 우리 안에서 불법으로 사육된 후에 구조되었다.",
+        "곰들이 타고난 본능을 회복하는 것을 도와주기 위해, 우리는 '행동 풍부화'로 알려진 특별한 활동들을 시행했다.",
+        "예를 들어, 우리는 곰을 위해 꿀이 든 통나무 먹이통을 만들었다.",
+        "먼저, 통나무에 구멍을 몇 개 내고 그 안에 꿀을 채워 넣었다.",
+        "그러고 나서 꿀이 든 통나무 먹이통을 곰들의 서식지 가까이 있는 나무에 걸어 두었다.",
+        "곰은 똑똑하고 호기심 많은 동물이라서 정신적 자극과 신체적 자극이 없으면 지루해하고 스트레스를 받을 수 있다.",
+        "꿀이 든 통나무 먹이통은 그들의 본능적인 호기심을 자극하고 그들을 야생에 있을 때만큼 활발함을 유지하도록 해준다.",
+        "잠시 후 Ben과 Lily는 먹이통으로 다가가서 그 안에 있는 꿀을 먹기 시작했다. 정말 귀여웠다!"
+      ],
+      "keyExpressions": [
+        "special",
+        "raised",
+        "illegally",
+        "tiny",
+        "cage",
+        "restore",
+        "instincts",
+        "carried out",
+        "known as",
+        "enrichment",
+        "honey-log",
+        "holes",
+        "log",
+        "filled",
+        "with",
+        "hung",
+        "feeders",
+        "intelligent",
+        "creatures",
+        "bored",
+        "mental",
+        "physical",
+        "stimulation",
+        "stimulate",
+        "natural",
+        "wild",
+        "approached",
+        "inside"
+      ],
+      "keyExpressionTranslations": [
+        {
+          "expression": "special",
+          "translation": "특별한"
+        },
+        {
+          "expression": "raised",
+          "translation": "사육된"
+        },
+        {
+          "expression": "illegally",
+          "translation": "불법으로"
+        },
+        {
+          "expression": "tiny",
+          "translation": "작은"
+        },
+        {
+          "expression": "cage",
+          "translation": "우리"
+        },
+        {
+          "expression": "restore",
+          "translation": "회복하"
+        },
+        {
+          "expression": "instincts",
+          "translation": "본능"
+        },
+        {
+          "expression": "carried out",
+          "translation": "을 시행했다"
+        },
+        {
+          "expression": "known as",
+          "translation": "로 알려진"
+        },
+        {
+          "expression": "enrichment",
+          "translation": "풍부화"
+        },
+        {
+          "expression": "honey-log",
+          "translation": "꿀이 든 통나무"
+        },
+        {
+          "expression": "holes",
+          "translation": "구멍"
+        },
+        {
+          "expression": "log",
+          "translation": "통나무"
+        },
+        {
+          "expression": "filled",
+          "translation": "을 채워 넣었다"
+        },
+        {
+          "expression": "with",
+          "translation": "에"
+        },
+        {
+          "expression": "hung",
+          "translation": "걸어 두었다"
+        },
+        {
+          "expression": "feeders",
+          "translation": "먹이통"
+        },
+        {
+          "expression": "intelligent",
+          "translation": "똑똑하"
+        },
+        {
+          "expression": "creatures",
+          "translation": "동물"
+        },
+        {
+          "expression": "bored",
+          "translation": "지루해"
+        },
+        {
+          "expression": "mental",
+          "translation": "정신적"
+        },
+        {
+          "expression": "physical",
+          "translation": "신체적"
+        },
+        {
+          "expression": "stimulation",
+          "translation": "자극"
+        },
+        {
+          "expression": "stimulate",
+          "translation": "자극하"
+        },
+        {
+          "expression": "natural",
+          "translation": "본능적인"
+        },
+        {
+          "expression": "wild",
+          "translation": "야생"
+        },
+        {
+          "expression": "approached",
+          "translation": "다가가"
+        },
+        {
+          "expression": "inside",
+          "translation": "안에 있는"
+        }
+      ]
+    }
+  ]
+}

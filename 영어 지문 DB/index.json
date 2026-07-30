@@ -1,0 +1,50 @@
+[
+  {
+    "grade": "고2",
+    "publisher": "능률(김)",
+    "book": "영어2",
+    "lesson": 1,
+    "part": 1,
+    "path": "영어 지문 DB/능률(김)/영어2/lesson-01/part-01.json"
+  },
+  {
+    "grade": "고2",
+    "publisher": "능률(김)",
+    "book": "영어2",
+    "lesson": 1,
+    "part": 2,
+    "path": "영어 지문 DB/능률(김)/영어2/lesson-01/part-02.json"
+  },
+  {
+    "grade": "고2",
+    "publisher": "능률(김)",
+    "book": "영어2",
+    "lesson": 1,
+    "part": 3,
+    "path": "영어 지문 DB/능률(김)/영어2/lesson-01/part-03.json"
+  },
+  {
+    "grade": "고2",
+    "publisher": "능률(김)",
+    "book": "영어2",
+    "lesson": 1,
+    "part": 4,
+    "path": "영어 지문 DB/능률(김)/영어2/lesson-01/part-04.json"
+  },
+  {
+    "grade": "고2",
+    "publisher": "능률(김)",
+    "book": "영어2",
+    "lesson": 1,
+    "part": 5,
+    "path": "영어 지문 DB/능률(김)/영어2/lesson-01/part-05.json"
+  },
+  {
+    "grade": "고2",
+    "publisher": "능률(김)",
+    "book": "영어2",
+    "lesson": 1,
+    "section": "딥러닝",
+    "path": "영어 지문 DB/능률(김)/영어2/lesson-01/deep-learning.json"
+  }
+]

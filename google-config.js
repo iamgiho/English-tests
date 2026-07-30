@@ -21,6 +21,23 @@ window.GOOGLE_INTEGRATION = {
       answer: "entry.365270637"
     }
   },
+  // Writing 전용 Google Form. 단어 시험 Form과 분리해서 설정합니다.
+  writing: {
+    formAction: "",
+    fields: {
+      takenAt: "",
+      nickname: "",
+      grade: "",
+      textbook: "",
+      lesson: "",
+      part: "",
+      korean: "",
+      userAnswer: "",
+      answer: ""
+    }
+  },
   // Google 스프레드시트에서 파일 > 공유 > 웹에 게시 > CSV로 게시한 주소
-  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR2F1RL3B02z_ZzHeCoEUY-bGSDL-pMtFxMCRhUV-tOf6AcdcloSfEcz8NXvFNIPOnRrmRbacJRgCNn/pub?gid=806658825&single=true&output=csv"
+  sheetCsvUrl: "https://docs.google.com/spreadsheets/d/e/2PACX-1vR2F1RL3B02z_ZzHeCoEUY-bGSDL-pMtFxMCRhUV-tOf6AcdcloSfEcz8NXvFNIPOnRrmRbacJRgCNn/pub?gid=806658825&single=true&output=csv",
+  // Writing 전용 스프레드시트의 공개 CSV 주소
+  writingSheetCsvUrl: ""
 };

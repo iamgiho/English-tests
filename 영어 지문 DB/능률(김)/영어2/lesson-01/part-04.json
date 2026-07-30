@@ -1,0 +1,168 @@
+{
+  "publisher": "능률(김)",
+  "book": "영어2",
+  "lesson": 1,
+  "part": 4,
+  "passages": [
+    {
+      "id": "neungyul-kim-english2-l01-p04-001",
+      "text": [
+        "This morning, we had the opportunity to learn about animal treatment thanks to Molly, an elderly elephant.",
+        "After spending 25 years carrying tourists along rough roads, she developed a twisted spine and foot pain.",
+        "In order to support Jane in taking care of Molly’s foot, we took part in positive reinforcement training, which involves using rewards to encourage desirable behaviors.",
+        "When I gently touched her foot with a pole and called out, “foot,” she lifted it.",
+        "We then rewarded her with a sweet piece of watermelon, her favorite fruit.",
+        "This training helps reduce the stress that animals experience during controlled situations, such as treatment or a health examination.",
+        "The good news is Molly seems to be adapting well, and I expect her to get better soon."
+      ],
+      "koreanText": [
+        "오늘 아침 우리는 나이 든 코끼리, Molly 덕분에 동물의 치료에 대해 배울 기회가 있었다.",
+        "거친 길에서 25년간 관광객들을 실어 나른 후 Molly는 척추가 뒤틀리고 발에 통증이 생겼다.",
+        "Molly의 발을 치료하는 Jane을 돕기 위해 우리는 긍정 행동 강화 훈련에 참여했는데, 그것은 바람직한 행동을 강화하는 데 보상을 이용하는 것을 포함한다.",
+        "내가 막대기로 Molly의 발을 부드럽게 건드리면서 “발”이라고 말하면 Molly가 발을 들어 올렸다.",
+        "그러면 우리는 Molly가 가장 좋아하는 과일인 달콤한 수박 한 조각을 보상으로 줬다.",
+        "이 훈련은 동물이 치료나 건강 검진과 같이 통제된 상황 속에서 겪는 스트레스를 줄이는 데 도움을 준다.",
+        "좋은 소식은 Molly가 잘 적응하고 있는 것처럼 보인다는 것이고 나는 Molly가 곧 더 나아질 것이라고 기대한다."
+      ],
+      "keyExpressions": [
+        "opportunity",
+        "treatment",
+        "thanks to",
+        "elderly",
+        "rough",
+        "twisted",
+        "spine",
+        "taking care of",
+        "took part in",
+        "reinforcement",
+        "involves",
+        "rewards",
+        "desirable",
+        "behaviors",
+        "gently",
+        "pole",
+        "called out",
+        "lifted",
+        "rewarded",
+        "watermelon",
+        "training",
+        "reduce",
+        "controlled",
+        "health examination",
+        "adapting",
+        "expect",
+        "get better"
+      ],
+      "keyExpressionTranslations": [
+        {
+          "expression": "opportunity",
+          "translation": "기회"
+        },
+        {
+          "expression": "treatment",
+          "translation": "치료"
+        },
+        {
+          "expression": "thanks to",
+          "translation": "덕분에"
+        },
+        {
+          "expression": "elderly",
+          "translation": "나이 든"
+        },
+        {
+          "expression": "rough",
+          "translation": "거친"
+        },
+        {
+          "expression": "twisted",
+          "translation": "뒤틀리"
+        },
+        {
+          "expression": "spine",
+          "translation": "척추"
+        },
+        {
+          "expression": "taking care of",
+          "translation": "을 치료하"
+        },
+        {
+          "expression": "took part in",
+          "translation": "참여했"
+        },
+        {
+          "expression": "reinforcement",
+          "translation": "강화"
+        },
+        {
+          "expression": "involves",
+          "translation": "포함한다"
+        },
+        {
+          "expression": "rewards",
+          "translation": "보상"
+        },
+        {
+          "expression": "desirable",
+          "translation": "바람직한"
+        },
+        {
+          "expression": "behaviors",
+          "translation": "행동"
+        },
+        {
+          "expression": "gently",
+          "translation": "부드럽게"
+        },
+        {
+          "expression": "pole",
+          "translation": "막대기"
+        },
+        {
+          "expression": "called out",
+          "translation": "이라고 말하"
+        },
+        {
+          "expression": "lifted",
+          "translation": "들어 올렸다"
+        },
+        {
+          "expression": "rewarded",
+          "translation": "보상으로 줬다"
+        },
+        {
+          "expression": "watermelon",
+          "translation": "수박"
+        },
+        {
+          "expression": "training",
+          "translation": "훈련"
+        },
+        {
+          "expression": "reduce",
+          "translation": "줄이"
+        },
+        {
+          "expression": "controlled",
+          "translation": "통제된"
+        },
+        {
+          "expression": "health examination",
+          "translation": "건강 검진"
+        },
+        {
+          "expression": "adapting",
+          "translation": "적응하"
+        },
+        {
+          "expression": "expect",
+          "translation": "기대한다"
+        },
+        {
+          "expression": "get better",
+          "translation": "더 나아질"
+        }
+      ]
+    }
+  ]
+}

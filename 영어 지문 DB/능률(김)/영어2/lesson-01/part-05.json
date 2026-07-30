@@ -1,0 +1,199 @@
+{
+  "publisher": "능률(김)",
+  "book": "영어2",
+  "lesson": 1,
+  "part": 5,
+  "passages": [
+    {
+      "id": "neungyul-kim-english2-l01-p05-001",
+      "text": [
+        "On the last day, we were called to the rescue center due to a sudden emergency.",
+        "Some dehydrated birds had fallen out of the sky in the city and were brought to the center.",
+        "Following the veterinarian’s guidance, we provided water to the birds while the vets treated their broken wings and legs and injected them with vitamins for a speedy recovery.",
+        "It was shocking that this type of accident happens every year since the high temperatures dry up water sources in the city.",
+        "Caring for the birds, I couldn’t help but reflect on the impact of human activities on climate change and how it harms animals.",
+        "Saying goodbye to the animals and staff, I felt grateful for the opportunity to volunteer.",
+        "From this experience, I learned the importance of treating animals with respect and care.",
+        "I also came to realize that humans are just another kind of animal and share the Earth with all other living creatures.",
+        "To improve animal welfare, I’ll work hard with Care for Animals members.",
+        "Hopefully, I’ll have the chance to volunteer at another sanctuary next summer."
+      ],
+      "koreanText": [
+        "마지막 날에 우리는 갑작스러운 응급 상황 때문에 구조 센터로 불려 가게 되었다.",
+        "탈수 상태의 몇몇 새들이 도시의 하늘에서 떨어져서 센터로 이송되었다.",
+        "수의사가 새들의 부러진 날개와 다리를 치료하고 빠른 회복을 위해 그들에게 비타민을 주입하는 동안 우리는 수의사의 안내에 따르며 새들에게 물을 주었다.",
+        "높은 기온이 도시의 수자원을 말려 버리기 때문에 이런 종류의 사건이 매해 일어나고 있다는 것은 충격이었다.",
+        "새들을 돌보면서 나는 인간의 활동이 기후 변화에 미치는 영향과 그것이 동물들에게 어떤 해를 끼치는지에 대해 깊이 생각해 볼 수밖에 없었다.",
+        "동물들과 직원들에게 작별 인사를 하면서 나는 봉사 활동을 할 수 있었던 기회에 감사했다.",
+        "이번 경험을 통해 나는 동물들을 존중하면서 조심히 대하는 것의 중요성을 알게 되었다.",
+        "또한 인간은 동물의 또 다른 종일 뿐이며 다른 모든 생명체와 지구를 공유하고 있다는 것을 깨달았다.",
+        "동물의 복지를 향상시키기 위해 나는 Care for Animals 회원들과 열심히 노력할 것이다.",
+        "바라건대 내년 여름에 또 다른 생크추어리에서 봉사 활동을 할 기회가 있다면 좋겠다."
+      ],
+      "keyExpressions": [
+        "last",
+        "called to",
+        "due to",
+        "emergency",
+        "dehydrated",
+        "fallen out of",
+        "veterinarian",
+        "guidance",
+        "provided",
+        "vets",
+        "treated",
+        "injected",
+        "recovery",
+        "accident",
+        "happens",
+        "temperatures",
+        "dry up",
+        "sources",
+        "Caring for",
+        "couldn’t help but",
+        "impact",
+        "climate change",
+        "felt grateful for",
+        "importance",
+        "respect",
+        "realize",
+        "share",
+        "living creatures",
+        "improve",
+        "welfare",
+        "Hopefully",
+        "volunteer"
+      ],
+      "keyExpressionTranslations": [
+        {
+          "expression": "last",
+          "translation": "마지막"
+        },
+        {
+          "expression": "called to",
+          "translation": "로 불려 가게 되"
+        },
+        {
+          "expression": "due to",
+          "translation": "때문에"
+        },
+        {
+          "expression": "emergency",
+          "translation": "응급 상황"
+        },
+        {
+          "expression": "dehydrated",
+          "translation": "탈수 상태의"
+        },
+        {
+          "expression": "fallen out of",
+          "translation": "에서 떨어져"
+        },
+        {
+          "expression": "veterinarian",
+          "translation": "수의사"
+        },
+        {
+          "expression": "guidance",
+          "translation": "안내"
+        },
+        {
+          "expression": "provided",
+          "translation": "주었다"
+        },
+        {
+          "expression": "vets",
+          "translation": "수의사"
+        },
+        {
+          "expression": "treated",
+          "translation": "치료하"
+        },
+        {
+          "expression": "injected",
+          "translation": "주입하"
+        },
+        {
+          "expression": "recovery",
+          "translation": "회복"
+        },
+        {
+          "expression": "accident",
+          "translation": "사건"
+        },
+        {
+          "expression": "happens",
+          "translation": "일어나"
+        },
+        {
+          "expression": "temperatures",
+          "translation": "기온"
+        },
+        {
+          "expression": "dry up",
+          "translation": "말려 버리"
+        },
+        {
+          "expression": "sources",
+          "translation": "자원"
+        },
+        {
+          "expression": "Caring for",
+          "translation": "을 돌보"
+        },
+        {
+          "expression": "couldn’t help but",
+          "translation": "해 볼 수밖에 없었다"
+        },
+        {
+          "expression": "impact",
+          "translation": "영향"
+        },
+        {
+          "expression": "climate change",
+          "translation": "기후 변화"
+        },
+        {
+          "expression": "felt grateful for",
+          "translation": "에 감사했다"
+        },
+        {
+          "expression": "importance",
+          "translation": "중요성"
+        },
+        {
+          "expression": "respect",
+          "translation": "존중"
+        },
+        {
+          "expression": "realize",
+          "translation": "깨달았다"
+        },
+        {
+          "expression": "share",
+          "translation": "공유하"
+        },
+        {
+          "expression": "living creatures",
+          "translation": "생명체"
+        },
+        {
+          "expression": "improve",
+          "translation": "향상시키"
+        },
+        {
+          "expression": "welfare",
+          "translation": "복지"
+        },
+        {
+          "expression": "Hopefully",
+          "translation": "바라건대"
+        },
+        {
+          "expression": "volunteer",
+          "translation": "봉사 활동을 할"
+        }
+      ]
+    }
+  ]
+}

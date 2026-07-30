@@ -1,0 +1,213 @@
+{
+  "publisher": "능률(김)",
+  "book": "영어2",
+  "lesson": 1,
+  "section": "딥러닝",
+  "passages": [
+    {
+      "id": "neungyul-kim-english2-l01-deep-learning-001",
+      "title": "Bears and Bile Farming",
+      "text": [
+        "Bears are a fascinating group of animals with eight species, all living in very different habitats around the world.",
+        "Polar bears, for example, live in the Arctic, whereas Andean bears live in South America.",
+        "These bears should have the freedom to live, but they are often killed when they come into contact with humans.",
+        "One of the worst examples of this is bear bile farming.",
+        "Brown bears in Eurasia and North America, Sun bears in Southeast Asia, and Asiatic black bears in Asia are often hunted and kept illegally for their bile, which is sold at a high price for traditional Asian medicine.",
+        "Although bile farming is prohibited in many countries, it continues due to the constant demand.",
+        "Governments and animal welfare organizations make persistent attempts to find these farms and rescue the bears, allowing them to live in bear sanctuaries or other safe places.",
+        "Since UNESCO stated in 1978 that animals are born with the right to be respected, progress has been made in animal rights.",
+        "However, some animals are still not fully protected outside the law, and need more of our attention and care."
+      ],
+      "koreanText": [
+        "곰은 총 여덟 종이 있는 매력적인 동물 집단으로 그들은 모두 전 세계적으로 매우 다른 서식지에서 살고 있다.",
+        "예를 들어, 북극곰은 북극에서 사는 반면 안데스 곰은 남아메리카에 산다.",
+        "이 곰들은 살아갈 자유가 있어야 하지만 인간과 만나면 종종 죽임을 당한다.",
+        "이 중 최악의 사례 하나는 곰 쓸개즙 농장이다.",
+        "유라시아와 북아메리카의 갈색곰, 동남아시아의 태양곰, 그리고 아시아의 반달가슴곰은 종종 쓸개즙을 얻기 위해 불법적으로 사냥 당하고 사육되는데, 쓸개즙은 아시아 전통 약재로 고가에 팔린다.",
+        "비록 여러 나라에서 쓸개 농장이 금지되어 있지만, 지속적인 수요 때문에 그것은 계속되고 있다.",
+        "정부와 동물 복지 단체는 이러한 농장을 찾아 곰을 구조하려는 시도를 지속적으로 하며, 그들이 곰 보호 구역이나 다른 안전한 장소에서 살 수 있게 한다.",
+        "유네스코가 1978년에 동물도 존중받을 권리를 가지고 태어난다고 공표한 이후 동물권에 대한 진전이 이루어졌다.",
+        "그러나 일부 동물들은 여전히 법의 테두리 밖에서 완전히 보호받지 못하고 있으며 우리의 더 많은 관심과 보살핌을 필요로 한다."
+      ],
+      "keyExpressions": [
+        "fascinating",
+        "species",
+        "habitats",
+        "Polar bears",
+        "Arctic",
+        "Andean",
+        "South America",
+        "freedom",
+        "come into contact with",
+        "worst",
+        "bile",
+        "Eurasia",
+        "North America",
+        "Southeast Asia",
+        "Asiatic black bears",
+        "illegally",
+        "traditional",
+        "medicine",
+        "prohibited",
+        "due to",
+        "constant",
+        "demand",
+        "Governments",
+        "welfare",
+        "persistent",
+        "attempts",
+        "rescue",
+        "sanctuaries",
+        "stated",
+        "respected",
+        "progress",
+        "protected",
+        "law",
+        "attention",
+        "care"
+      ],
+      "keyExpressionTranslations": [
+        {
+          "expression": "fascinating",
+          "translation": "매력적인"
+        },
+        {
+          "expression": "species",
+          "translation": "종"
+        },
+        {
+          "expression": "habitats",
+          "translation": "서식지"
+        },
+        {
+          "expression": "Polar bears",
+          "translation": "북극곰"
+        },
+        {
+          "expression": "Arctic",
+          "translation": "북극"
+        },
+        {
+          "expression": "Andean",
+          "translation": "안데스"
+        },
+        {
+          "expression": "South America",
+          "translation": "남아메리카"
+        },
+        {
+          "expression": "freedom",
+          "translation": "자유"
+        },
+        {
+          "expression": "come into contact with",
+          "translation": "과 만나"
+        },
+        {
+          "expression": "worst",
+          "translation": "최악의"
+        },
+        {
+          "expression": "bile",
+          "translation": "쓸개즙"
+        },
+        {
+          "expression": "Eurasia",
+          "translation": "유라시아"
+        },
+        {
+          "expression": "North America",
+          "translation": "북아메리카"
+        },
+        {
+          "expression": "Southeast Asia",
+          "translation": "동남아시아"
+        },
+        {
+          "expression": "Asiatic black bears",
+          "translation": "반달가슴곰"
+        },
+        {
+          "expression": "illegally",
+          "translation": "불법적으로"
+        },
+        {
+          "expression": "traditional",
+          "translation": "전통"
+        },
+        {
+          "expression": "medicine",
+          "translation": "약재"
+        },
+        {
+          "expression": "prohibited",
+          "translation": "금지되"
+        },
+        {
+          "expression": "due to",
+          "translation": "때문에"
+        },
+        {
+          "expression": "constant",
+          "translation": "지속적인"
+        },
+        {
+          "expression": "demand",
+          "translation": "수요"
+        },
+        {
+          "expression": "Governments",
+          "translation": "정부"
+        },
+        {
+          "expression": "welfare",
+          "translation": "복지"
+        },
+        {
+          "expression": "persistent",
+          "translation": "지속적"
+        },
+        {
+          "expression": "attempts",
+          "translation": "시도"
+        },
+        {
+          "expression": "rescue",
+          "translation": "구조하"
+        },
+        {
+          "expression": "sanctuaries",
+          "translation": "보호 구역"
+        },
+        {
+          "expression": "stated",
+          "translation": "공표한"
+        },
+        {
+          "expression": "respected",
+          "translation": "존중받"
+        },
+        {
+          "expression": "progress",
+          "translation": "진전"
+        },
+        {
+          "expression": "protected",
+          "translation": "보호받"
+        },
+        {
+          "expression": "law",
+          "translation": "법"
+        },
+        {
+          "expression": "attention",
+          "translation": "관심"
+        },
+        {
+          "expression": "care",
+          "translation": "보살핌"
+        }
+      ]
+    }
+  ]
+}

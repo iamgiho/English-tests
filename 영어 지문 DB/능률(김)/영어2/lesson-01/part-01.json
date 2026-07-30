@@ -1,0 +1,98 @@
+{
+  "publisher": "능률(김)",
+  "book": "영어2",
+  "lesson": 1,
+  "part": 1,
+  "passages": [
+    {
+      "id": "neungyul-kim-english2-l01-p01-001",
+      "title": "Care for Animals Club Volunteer Trip",
+      "text": [
+        "As the leader of our school club Care for Animals, I organized a volunteer trip to an animal sanctuary for my club members.",
+        "An animal sanctuary is a special place where rescued, injured, or abused animals can live in a safe and caring environment.",
+        "All the club members and I agreed that the sanctuary would be the perfect place to learn about animal care.",
+        "Excited for a new experience, we set out to volunteer."
+      ],
+      "koreanText": [
+        "우리 학교 동아리 Care for Animals의 회장으로서, 나는 우리 동아리 회원들을 위해 동물 생크추어리로 떠나는 자원봉사 여행을 준비했다.",
+        "동물 생크추어리는 구조되거나 부상을 입었거나 학대를 당한 동물들이 안전하고 보살핌을 받을 수 있는 환경에서 살 수 있는 특별한 장소이다.",
+        "동아리 회원 모두와 나는 생크추어리가 동물 보호에 대해 배울 수 있는 완벽한 장소가 될 것이라는 데 동의했다.",
+        "새로운 경험에 들떠서 우리는 봉사 활동을 떠났다."
+      ],
+      "keyExpressions": [
+        "organized",
+        "volunteer",
+        "trip",
+        "club",
+        "sanctuary",
+        "rescued",
+        "injured",
+        "abused",
+        "caring",
+        "members",
+        "agreed",
+        "care",
+        "excited",
+        "set out"
+      ],
+      "keyExpressionTranslations": [
+        {
+          "expression": "organized",
+          "translation": "준비했다"
+        },
+        {
+          "expression": "volunteer",
+          "translation": "자원봉사"
+        },
+        {
+          "expression": "trip",
+          "translation": "여행"
+        },
+        {
+          "expression": "club",
+          "translation": "동아리"
+        },
+        {
+          "expression": "sanctuary",
+          "translation": "생크추어리"
+        },
+        {
+          "expression": "rescued",
+          "translation": "구조되"
+        },
+        {
+          "expression": "injured",
+          "translation": "부상을 입었"
+        },
+        {
+          "expression": "abused",
+          "translation": "학대를 당한"
+        },
+        {
+          "expression": "caring",
+          "translation": "보살핌을 받을 수 있는"
+        },
+        {
+          "expression": "members",
+          "translation": "회원"
+        },
+        {
+          "expression": "agreed",
+          "translation": "동의했다"
+        },
+        {
+          "expression": "care",
+          "translation": "보호"
+        },
+        {
+          "expression": "excited",
+          "translation": "들떠서"
+        },
+        {
+          "expression": "set out",
+          "translation": "떠났다"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "publisher": "능률(김)",
+  "book": "영어2",
+  "lesson": 1,
+  "part": 2,
+  "passages": [
+    {
+      "id": "neungyul-kim-english2-l01-p02-001",
+      "text": [
+        "Our club arrived at the Free Animals sanctuary.",
+        "Jane, the staff member in charge of animal care, welcomed us with a big smile and gave us a tour of the facility.",
+        "It was amazing to see bears and elephants moving freely in a large field.",
+        "Our tasks for the day included cleaning the shelter and preparing food for the animals.",
+        "While cleaning the habitats, we checked if there were any hazards that could harm the animals.",
+        "Then, we helped prepare the food by cutting up fruits and vegetables and dividing them into several large baskets.",
+        "For old elephants with weak teeth, we chopped bananas instead of the sugarcane that they usually eat.",
+        "Spending the whole day helping out with the animals was an incredible experience for me.",
+        "It was a rewarding experience, and I was impressed with the attention the staff members gave to all the animals."
+      ],
+      "koreanText": [
+        "우리 동아리는 Free Animals 생크추어리에 도착했다.",
+        "동물들을 보살피는 일을 담당하는 직원인 Jane은 우리를 환한 웃음으로 맞아 주었고 우리에게 시설을 안내해 주었다.",
+        "넓은 벌판을 자유롭게 돌아다니는 곰과 코끼리를 보는 것은 정말 멋진 일이었다.",
+        "오늘 우리의 임무에는 보호소를 청소하는 것과 동물들의 먹이를 준비하는 것이 포함되어 있었다.",
+        "동물들의 서식지를 청소하는 동안 우리는 동물들에게 해를 입힐 만한 위험 요소가 있는지 확인했다.",
+        "그러고 나서 과일과 채소를 자르고 그것들을 몇 개의 큰 바구니에 나눠 담으면서 먹이 준비하는 것을 도왔다.",
+        "이가 약한 나이 든 코끼리를 위해서는 코끼리가 보통 먹는 사탕수수 대신에 바나나를 잘라 두었다.",
+        "동물들을 도우면서 하루를 보낸 것은 내게 멋진 경험이었다.",
+        "그것은 보람 있는 경험이었고, 나는 직원들이 모든 동물에게 쏟는 애정에 감명받았다."
+      ],
+      "keyExpressions": [
+        "arrived",
+        "in charge of",
+        "welcomed",
+        "facility",
+        "amazing",
+        "freely",
+        "field",
+        "tasks",
+        "included",
+        "shelter",
+        "habitats",
+        "checked",
+        "hazards",
+        "harm",
+        "prepare",
+        "cutting up",
+        "dividing",
+        "weak",
+        "chopped",
+        "sugarcane",
+        "helping out",
+        "incredible",
+        "rewarding",
+        "impressed",
+        "attention"
+      ],
+      "keyExpressionTranslations": [
+        {
+          "expression": "arrived",
+          "translation": "도착했다"
+        },
+        {
+          "expression": "in charge of",
+          "translation": "을 담당하는"
+        },
+        {
+          "expression": "welcomed",
+          "translation": "맞아 주"
+        },
+        {
+          "expression": "facility",
+          "translation": "시설"
+        },
+        {
+          "expression": "amazing",
+          "translation": "정말 멋진 일이"
+        },
+        {
+          "expression": "freely",
+          "translation": "자유롭게"
+        },
+        {
+          "expression": "field",
+          "translation": "벌판"
+        },
+        {
+          "expression": "tasks",
+          "translation": "임무"
+        },
+        {
+          "expression": "included",
+          "translation": "포함되어 있었다"
+        },
+        {
+          "expression": "shelter",
+          "translation": "보호소"
+        },
+        {
+          "expression": "habitats",
+          "translation": "서식지"
+        },
+        {
+          "expression": "checked",
+          "translation": "확인했다"
+        },
+        {
+          "expression": "hazards",
+          "translation": "위험 요소"
+        },
+        {
+          "expression": "harm",
+          "translation": "해를 입힐"
+        },
+        {
+          "expression": "prepare",
+          "translation": "준비하"
+        },
+        {
+          "expression": "cutting up",
+          "translation": "를 자르"
+        },
+        {
+          "expression": "dividing",
+          "translation": "나눠 담"
+        },
+        {
+          "expression": "weak",
+          "translation": "약한"
+        },
+        {
+          "expression": "chopped",
+          "translation": "잘라 두었다"
+        },
+        {
+          "expression": "sugarcane",
+          "translation": "사탕수수"
+        },
+        {
+          "expression": "helping out",
+          "translation": "도우"
+        },
+        {
+          "expression": "incredible",
+          "translation": "멋진"
+        },
+        {
+          "expression": "rewarding",
+          "translation": "보람 있는"
+        },
+        {
+          "expression": "impressed",
+          "translation": "감명받"
+        },
+        {
+          "expression": "attention",
+          "translation": "애정"
+        }
+      ]
+    }
+  ]
+}
