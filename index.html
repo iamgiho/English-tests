@@ -1452,7 +1452,7 @@
       window.speechSynthesis.cancel();
       const utterance = new SpeechSynthesisUtterance(sentence);
       utterance.lang = "en-US";
-      utterance.rate = 0.9;
+      utterance.rate = 0.85;
       utterance.onerror = () => setMessage($("#listeningFeedback"), "문장 음성을 재생하지 못했습니다. 다시 눌러 보세요.", "bad");
       window.speechSynthesis.speak(utterance);
     }
