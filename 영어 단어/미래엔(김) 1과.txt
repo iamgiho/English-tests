@@ -1,0 +1,345 @@
+1
+leader
+n. 리더, 지도자
+2
+organize
+v. 준비하다
+3
+sanctuary
+n. 보호구역
+4
+rescue
+v. ~을 구조하다
+5
+injured
+a. 다친, 부상을 당한
+6
+abuse
+v. ~을 학대하다
+7
+safe
+a. 안전한
+8
+caring
+a. 보살피는
+9
+agree
+v. 동의하다
+10
+excited
+a. 흥분한, 들뜬, 신난
+11
+set out to
+~할 계획을 세우다
+12
+in charge of ~
+~을 책임지는[담당하는]
+13
+tour
+n. 관광, 견학
+14
+facility
+n. 시설, 기관
+15
+amazing
+굉장한
+16
+task
+n. 임무
+17
+shelter
+n. 보호 시설, 쉼터
+18
+habitat
+n. 서식지
+19
+check
+v. 확인하다
+20
+hazard
+n. 위험 요소
+21
+harm
+v. 해를 끼치다
+22
+cut ~ up
+~을 조각내다
+23
+divide A into B
+A를 B로 나누다
+24
+weak
+a. 약한
+25
+chop
+v. 썰다
+26
+instead of ~
+~ 대신에
+27
+sugarcane
+n. 사탕수수
+28
+the whole day
+하루 종일
+29
+help out with ~
+~을 도와주다
+30
+incredible
+a. 대단한, 엄청난
+31
+rewarding
+a. 보람 있는
+32
+impressed
+a. 감명을 받은
+33
+attention
+n. 관심, 보살핌
+34
+staff member
+직원
+35
+raise
+v. 키우다, 사육하다
+36
+illegally
+adv. 불법적으로
+37
+restore
+v. 회복하다
+38
+natural
+a. 선천적인, 타고난
+39
+instinct
+n. 본능
+40
+carry ~ out
+~을 실행하다
+41
+behavioral
+a. 행동의
+42
+enrichment
+n. 강화
+43
+feeder
+n. (동물의) 먹이통
+44
+hole
+n. 구멍
+45
+log
+n. 통나무
+46
+fill A with B
+A를 B로 채우다
+47
+hang
+v. 걸다, 매달다
+48
+intelligent
+a. 지능을 가진
+49
+curious
+a. 호기심이 많은
+50
+bored
+a. 지루해하는
+51
+stressed
+a. 스트레스를 받은
+52
+lack
+v. ~이 없다, ~가 부족하다
+53
+mental
+a. 정신의, 마음의
+54
+physical
+a. 신체[육체]적인
+55
+stimulation
+n. 자극
+56
+stimulate
+v. 자극하다, 촉진하다
+57
+curiosity
+n. 호기심
+58
+active
+a. 활동적인
+59
+the wild
+야생
+60
+approach
+v. ~에 다가가다
+61
+treatment
+n. 치료, 처치
+62
+elderly
+a. 연로한
+63
+rough
+a. 거친
+64
+develop
+v. (질병)에 걸리다
+65
+twisted
+a. 뒤틀린, 비틀어진
+66
+spine
+n. 척추
+67
+pain
+n. 고통, 통증
+68
+support
+v. 지원하다, 돕다
+69
+take care of ~
+~을 돌보다
+70
+take part in ~
+~에 참여하다
+71
+reinforcement
+n. 강화
+72
+training
+n. 훈련
+73
+involve
+v. 포함[수반]하다
+74
+reward
+n. 보상; v. 보상하다
+75
+encourage
+v. (행동 등을) 촉진[장려]하다
+76
+desirable
+a. 바람직한
+77
+behavior
+n. 행동
+78
+gently
+adv. 부드럽게
+79
+call ~ out
+~을 크게 말하다[외치다]
+80
+lift
+v. 들어 올리다
+81
+reduce
+v. 줄이다
+82
+controlled
+a. 통제된
+83
+situation
+n. 상황
+84
+health examination
+건강검진
+85
+adapt
+v. 적응하다
+86
+get better
+나아지다
+87
+call
+v. 부르다[호출하다]
+88
+sudden
+a. 갑작스러운
+89
+emergency
+n. 응급 상황
+90
+dehydrate
+v. 탈수 상태가 되게 하다
+91
+veterinarian (=vet)
+n. 수의사
+92
+guidance
+n. 지도, 안내
+93
+treat
+v. 치료하다; (사람·사물 등을) 대하다
+94
+inject
+v. (약물 등을) 주사하다
+95
+speedy
+a. 빠른, 신속한
+96
+recovery
+n. 회복
+97
+shocking
+a. 충격적인
+98
+accident
+n. 사건
+99
+happen
+v. 일어나다, 발생하다
+100
+high
+a. 높은
+101
+temperature
+n. 온도, 기온
+102
+dry ~ up
+~을 마르게 하다
+103
+resource
+n. 자원
+104
+care for ~
+~을 보살피다[돌보다]
+105
+reflect on ~
+~에 대해 생각하다
+106
+impact
+n. 영향
+107
+say goodbye to ~
+~에게 작별 인사를 하다
+108
+grateful
+a. 감사하는
+109
+respect
+n. 존중
+110
+realize
+v. 깨닫다
+111
+share
+v. 공유하다
+112
+creature
+n. 생명체
+113
+improve
+v. ~을 개선하다[향상시키다]
+114
+welfare
+n. 복지
+115
+chance
+n. 기회

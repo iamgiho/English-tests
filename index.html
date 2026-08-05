@@ -577,8 +577,8 @@
         <div class="body">
           <div class="field-row">
             <div class="field">
-              <label for="listeningNickname">이름 또는 닉네임</label>
-              <input id="listeningNickname" placeholder="예: 김민준">
+              <label for="passageNickname">이름 또는 닉네임</label>
+              <input id="passageNickname" placeholder="예: 김민준">
             </div>
             <div class="field">
               <label for="gradeSelect">학년</label>
@@ -602,13 +602,13 @@
           <div class="order-quiz-list" id="orderQuizList" style="margin-top: 12px;"></div>
           <div class="order-answer-row">
             <div class="field">
-              <label for="passageOrderAnswer">정답 번호 순서</label>
-              <input id="passageOrderAnswer" inputmode="numeric" autocomplete="off" placeholder="예: 3 1 4 2">
+              <label for="passageOrderAnswer">정답 알파벳 순서</label>
+              <input id="passageOrderAnswer" autocomplete="off" placeholder="예: C A D B 또는 CADB">
             </div>
             <button id="checkPassageBtn" disabled>정답 확인</button>
             <button class="gold" id="reshufflePassageBtn" disabled>다시 섞기</button>
           </div>
-          <div class="feedback" id="passageFeedback">문제를 만들면 번호가 붙은 문장들이 여기에 표시됩니다.</div>
+          <div class="feedback" id="passageFeedback">문제를 만들면 알파벳이 붙은 문장들이 여기에 표시됩니다.</div>
           <div class="notice hidden" id="passageAnswer"></div>
         </div>
       </section>
@@ -673,6 +673,10 @@
         </div>
         <div class="body">
           <div class="field-row">
+            <div class="field">
+              <label for="listeningNickname">이름 또는 닉네임</label>
+              <input id="listeningNickname" placeholder="예: 김민준">
+            </div>
             <div class="field">
               <label for="listeningGradeSelect">학년</label>
               <select id="listeningGradeSelect"></select>
@@ -885,7 +889,8 @@
 
     const fallbackWordBooks = [
       { category: "영어 단어", title: "0단계 단어", path: "영어 단어/0단계 단어.txt" },
-      { category: "영어 단어", title: "1단계 단어", path: "영어 단어/1단계 단어.txt" }
+      { category: "영어 단어", title: "1단계 단어", path: "영어 단어/1단계 단어.txt" },
+      { category: "교과서 단어", title: "미래엔(김) 1과", path: "영어 단어/미래엔(김) 1과.txt" }
     ];
 
     const seedWords = [
@@ -1110,7 +1115,12 @@
     }
 
     async function startPassageQuiz() {
+      const nickname = $("#passageNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#partSelect").value);
+      if (!nickname) {
+        setMessage($("#passageNotice"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        return;
+      }
       if (!meta) return;
 
       try {
@@ -1124,9 +1134,9 @@
           setMessage($("#passageFeedback"), "선택한 파트에는 순서 문제를 만들 문장이 부족합니다.", "bad");
           return;
         }
-        currentPassageMeta = meta;
+        currentPassageMeta = { ...meta, nickname };
         originalSentences = sentences.map((sentence, index) => ({ text: sentence, order: index }));
-        shuffledSentences = shuffle(originalSentences).map((sentence, index) => ({ ...sentence, number: index + 1 }));
+        shuffledSentences = shuffle(originalSentences).map((sentence, index) => ({ ...sentence, label: String.fromCharCode(65 + index) }));
         $("#passageOrderAnswer").value = "";
         $("#passageAnswer").classList.add("hidden");
         setMessage($("#passageFeedback"), `${meta.textbook} · Lesson ${meta.lesson} · ${meta.partLabel}의 ${sentences.length}문장을 섞었습니다.`);
@@ -1142,7 +1152,7 @@
       } else {
         $("#orderQuizList").innerHTML = shuffledSentences.map((item) => `
           <div class="order-sentence">
-            <span class="num">${item.number}</span>
+            <span class="num">${item.label}</span>
             <span>${escapeHtml(item.text)}</span>
           </div>
         `).join("");
@@ -1156,22 +1166,21 @@
     function getPassageCorrectOrder() {
       return [...shuffledSentences]
         .sort((a, b) => a.order - b.order)
-        .map((item) => item.number);
+        .map((item) => item.label);
     }
 
     function checkPassage() {
       const answer = $("#passageOrderAnswer").value
         .trim()
-        .split(/[^0-9]+/)
-        .filter(Boolean)
-        .map(Number);
+        .toUpperCase()
+        .match(/[A-Z]/g) || [];
       const expected = getPassageCorrectOrder();
       const validNumbers = answer.length === expected.length
         && new Set(answer).size === expected.length
-        && answer.every((number) => number >= 1 && number <= expected.length);
+        && answer.every((label) => expected.includes(label));
 
       if (!validNumbers) {
-        setMessage($("#passageFeedback"), `1부터 ${expected.length}까지의 번호를 빠짐없이 한 번씩 입력하세요.`, "bad");
+        setMessage($("#passageFeedback"), `A부터 ${String.fromCharCode(64 + expected.length)}까지의 알파벳을 빠짐없이 한 번씩 입력하세요.`, "bad");
         return;
       }
 
@@ -1183,7 +1192,7 @@
       }
 
       setMessage($("#passageFeedback"), "틀렸습니다. 아래 정답 순서를 확인하세요.", "bad");
-      $("#passageAnswer").innerHTML = `<strong>정답 번호</strong><div style="margin-top: 7px; font-size: 18px; font-weight: 800;">${expected.join(" → ")}</div>`;
+      $("#passageAnswer").innerHTML = `<strong>정답 순서</strong><div style="margin-top: 7px; font-size: 18px; font-weight: 800;">${expected.join(" → ")}</div>`;
       $("#passageAnswer").classList.remove("hidden");
     }
 
@@ -1796,10 +1805,35 @@
       const variants = new Set([normalized]);
       if (!/[가-힣]/.test(normalized)) return variants;
 
-      // Parenthesized Korean explanations are optional:
-      // 바람(을) -> 바람 / 바람을, 독(을 넣다) -> 독 / 독을 넣다.
-      variants.add(normalized.replace(/\(([^()]*)\)/g, ""));
-      variants.add(normalized.replace(/\(([^()]*)\)/g, "$1"));
+      // 품사 표시는 답안에서 생략할 수 있습니다.
+      const stripPartOfSpeech = (value) => value
+        .replace(/^(?:(?:n|v|a|adj|adv)\.\s*)+/i, "")
+        .trim();
+
+      // 세미콜론으로 나뉜 품사별 뜻은 각각 독립된 정답으로 인정합니다.
+      for (const variant of [...variants]) {
+        variants.add(stripPartOfSpeech(variant));
+        variant.split(";").forEach((part) => variants.add(stripPartOfSpeech(part)));
+        variant.split(/[,/]/).forEach((part) => variants.add(stripPartOfSpeech(part)));
+      }
+
+      // 소괄호와 대괄호는 괄호째 생략하거나 괄호 기호만 생략할 수 있습니다.
+      for (const variant of [...variants]) {
+        variants.add(variant.replace(/\(([^()]*)\)/g, ""));
+        variants.add(variant.replace(/\(([^()]*)\)/g, "$1"));
+        variants.add(variant.replace(/\[([^\[\]]*)\]/g, ""));
+        variants.add(variant.replace(/\[([^\[\]]*)\]/g, "$1"));
+        for (const match of variant.matchAll(/[\[(]([^\])]+)[\])]/g)) {
+          variants.add(stripPartOfSpeech(match[1]));
+        }
+        for (const match of variant.matchAll(/([가-힣]+)\[([가-힣]+)\]([가-힣]*)/g)) {
+          variants.add(stripPartOfSpeech(`${match[1]}${match[3]}`));
+          variants.add(stripPartOfSpeech(`${match[2]}${match[3]}`));
+        }
+      }
+
+      // 괄호 변형 뒤에도 품사 표시를 다시 제거합니다.
+      for (const variant of [...variants]) variants.add(stripPartOfSpeech(variant));
 
       // Also accept an answer with its final grammatical particle omitted: 성적의 -> 성적.
       for (const variant of [...variants]) {
@@ -1861,7 +1895,12 @@
         const response = await fetch(encodeURI(book.path), { cache: "no-store" });
         if (!response.ok) throw new Error("word book not found");
         currentBookWords = parseWordBook(await response.text());
-        if (!currentBookWords.length) throw new Error("empty word book");
+        if (!currentBookWords.length) {
+          $("#wordStart").value = "";
+          $("#wordEnd").value = "";
+          setMessage($("#wordNotice"), `${book.title}: 단어 목록을 준비 중입니다.`);
+          return;
+        }
         const min = currentBookWords[0].number;
         const max = currentBookWords[currentBookWords.length - 1].number;
         for (const id of ["#wordStart", "#wordEnd"]) {
@@ -2225,7 +2264,7 @@
       if (event.key === "Enter" && !$("#checkPassageBtn").disabled) checkPassage();
     });
     $("#reshufflePassageBtn").addEventListener("click", () => {
-      shuffledSentences = shuffle(originalSentences).map((sentence, index) => ({ ...sentence, number: index + 1 }));
+      shuffledSentences = shuffle(originalSentences).map((sentence, index) => ({ ...sentence, label: String.fromCharCode(65 + index) }));
       $("#passageOrderAnswer").value = "";
       $("#passageAnswer").classList.add("hidden");
       setMessage($("#passageFeedback"), "문장을 다시 섞었습니다.");
