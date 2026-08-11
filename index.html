@@ -372,6 +372,29 @@
       line-height: 1.4;
     }
 
+    button.order-sentence {
+      width: 100%;
+      font: inherit;
+      text-align: left;
+      cursor: pointer;
+    }
+
+    button.order-sentence:disabled {
+      opacity: 0.48;
+      cursor: default;
+    }
+
+    .selected-order-list {
+      display: grid;
+      gap: 7px;
+      min-height: 46px;
+      margin-top: 6px;
+    }
+
+    .selected-order-list .order-sentence {
+      background: #ffffff;
+    }
+
     .order-sentence .num {
       width: 26px;
       height: 26px;
@@ -381,7 +404,7 @@
 
     .order-answer-row {
       display: grid;
-      grid-template-columns: minmax(220px, 1fr) auto auto;
+      grid-template-columns: minmax(220px, 1fr) repeat(4, auto);
       gap: 10px;
       align-items: end;
       margin-top: 12px;
@@ -602,9 +625,11 @@
           <div class="order-quiz-list" id="orderQuizList" style="margin-top: 12px;"></div>
           <div class="order-answer-row">
             <div class="field">
-              <label for="passageOrderAnswer">정답 알파벳 순서</label>
-              <input id="passageOrderAnswer" autocomplete="off" placeholder="예: C A D B 또는 CADB">
+              <label>선택한 문장 순서</label>
+              <div class="selected-order-list" id="passageSelectedOrder"></div>
             </div>
+            <button class="secondary" id="undoPassageBtn" disabled>되돌리기</button>
+            <button class="secondary" id="resetPassageOrderBtn" disabled>초기화</button>
             <button id="checkPassageBtn" disabled>정답 확인</button>
             <button class="gold" id="reshufflePassageBtn" disabled>다시 섞기</button>
           </div>
@@ -765,7 +790,7 @@
             <div class="question" id="wordQuestion">
               <h3>단어 시험을 시작하세요.</h3>
               <p class="question-main">Ready</p>
-              <p class="question-sub">영어→한글은 범위 전체, 한글→영어는 범위의 50%가 출제됩니다.</p>
+              <p class="question-sub">범위 전체를 영어→한글 주관식으로 먼저 응시합니다. 한글→영어는 일반 단어장은 객관식, 교과서 단어는 주관식입니다.</p>
             </div>
             <div class="choice-list" id="choiceList"></div>
             <div class="toolbar" id="shortAnswerBox">
@@ -798,7 +823,7 @@
 
         <section class="hidden" id="adminPanel">
           <div class="section-head">
-            <h2>비밀번호와 단어풀 관리</h2>
+            <h2>비밀번호 관리</h2>
           </div>
           <div class="body">
             <div class="field-row">
@@ -818,39 +843,20 @@
             <div class="toolbar">
               <button id="savePasswordsBtn">비밀번호 저장</button>
             </div>
-
-            <div class="field-row" style="margin-top: 16px;">
-              <div class="field">
-                <label for="wordEnglish">영어 단어</label>
-                <input id="wordEnglish" placeholder="e.g. analyze">
-              </div>
-              <div class="field">
-                <label for="wordKorean">한글 뜻</label>
-                <input id="wordKorean" placeholder="분석하다">
-              </div>
-            </div>
-            <label for="wordExample" style="margin-top: 10px;">예문</label>
-            <textarea id="wordExample" placeholder="Students analyze the passage carefully."></textarea>
-            <div class="toolbar">
-              <button id="addWordBtn">단어 추가</button>
-              <button class="secondary" id="seedWordsBtn">샘플 단어 다시 채우기</button>
-            </div>
-            <div class="notice" id="adminWorkNotice">단어풀은 이 브라우저에 저장되고 시험 결과는 Google 스프레드시트에서 불러옵니다.</div>
+            <div class="notice" id="adminWorkNotice">시험 결과는 Google 스프레드시트에서 불러옵니다.</div>
           </div>
         </section>
 
         <section class="hidden" id="adminDataPanel">
           <div class="section-head">
-            <h2>저장된 단어와 시험 결과</h2>
+            <h2>시험 결과</h2>
             <div class="top-actions">
               <span class="pill" id="dataStat">0개</span>
               <button class="secondary" id="refreshAdminSheetBtn">시트 새로고침</button>
             </div>
           </div>
           <div class="body">
-            <h3>단어풀</h3>
-            <div id="wordTable"></div>
-            <h3 style="margin-top: 18px;">시험 결과</h3>
+            <h3>시험 결과</h3>
             <div id="resultTable"></div>
             <h3 style="margin-top: 18px;">오답 기록</h3>
             <div id="wrongAnswerTable"></div>
@@ -871,7 +877,6 @@
       studentPassword: "exam.studentPassword",
       adminPassword: "exam.adminPassword",
       passwordChangedAt: "exam.passwordChangedAt",
-      words: "exam.words",
       results: "exam.results",
       passageResults: "exam.passageResults",
       writingResults: "exam.writingResults",
@@ -893,27 +898,13 @@
       { category: "교과서 단어", title: "미래엔(김) 1과", path: "영어 단어/미래엔(김) 1과.txt" }
     ];
 
-    const seedWords = [
-      { en: "analyze", ko: "분석하다", example: "Students analyze the passage carefully." },
-      { en: "evidence", ko: "증거", example: "The writer uses evidence to support the claim." },
-      { en: "perspective", ko: "관점", example: "A new perspective can change how we understand a problem." },
-      { en: "consequence", ko: "결과", example: "Every decision has a consequence." },
-      { en: "essential", ko: "필수적인", example: "Sleep is essential for memory and concentration." },
-      { en: "interpret", ko: "해석하다", example: "Readers interpret symbols in different ways." },
-      { en: "efficient", ko: "효율적인", example: "An efficient plan saves both time and energy." },
-      { en: "contrast", ko: "대조하다", example: "The paragraph contrasts city life with country life." },
-      { en: "predict", ko: "예측하다", example: "Scientists predict changes by studying data." },
-      { en: "benefit", ko: "이익", example: "Regular reading has a long-term benefit." },
-      { en: "attempt", ko: "시도하다", example: "The team will attempt to solve the issue." },
-      { en: "accurate", ko: "정확한", example: "Accurate information helps people make better choices." }
-    ];
-
     const $ = (selector) => document.querySelector(selector);
     const $$ = (selector) => [...document.querySelectorAll(selector)];
 
     let passageManifest = [];
     let originalSentences = [];
     let shuffledSentences = [];
+    let selectedPassageLabels = [];
     let currentPassageMeta = null;
     let adminUnlocked = false;
     let wordSession = null;
@@ -939,7 +930,7 @@
       if (!localStorage.getItem(STORAGE.studentPassword)) localStorage.setItem(STORAGE.studentPassword, "english2026");
       if (!localStorage.getItem(STORAGE.adminPassword)) localStorage.setItem(STORAGE.adminPassword, "admin2026");
       if (!localStorage.getItem(STORAGE.passwordChangedAt)) localStorage.setItem(STORAGE.passwordChangedAt, new Date().toISOString().slice(0, 10));
-      if (!localStorage.getItem(STORAGE.words)) writeJson(STORAGE.words, seedWords);
+      localStorage.removeItem("exam.words");
       if (!localStorage.getItem(STORAGE.results)) writeJson(STORAGE.results, []);
       if (!localStorage.getItem(STORAGE.passageResults)) writeJson(STORAGE.passageResults, []);
       if (!localStorage.getItem(STORAGE.writingResults)) writeJson(STORAGE.writingResults, []);
@@ -1137,7 +1128,7 @@
         currentPassageMeta = { ...meta, nickname };
         originalSentences = sentences.map((sentence, index) => ({ text: sentence, order: index }));
         shuffledSentences = shuffle(originalSentences).map((sentence, index) => ({ ...sentence, label: String.fromCharCode(65 + index) }));
-        $("#passageOrderAnswer").value = "";
+        selectedPassageLabels = [];
         $("#passageAnswer").classList.add("hidden");
         setMessage($("#passageFeedback"), `${meta.textbook} · Lesson ${meta.lesson} · ${meta.partLabel}의 ${sentences.length}문장을 섞었습니다.`);
         renderPassageQuiz();
@@ -1151,16 +1142,55 @@
         $("#orderQuizList").innerHTML = `<div class="empty">파트를 선택하고 문제 만들기를 누르세요.</div>`;
       } else {
         $("#orderQuizList").innerHTML = shuffledSentences.map((item) => `
-          <div class="order-sentence">
+          <button class="order-sentence" type="button" data-passage-label="${item.label}" ${selectedPassageLabels.includes(item.label) ? "disabled" : ""}>
             <span class="num">${item.label}</span>
             <span>${escapeHtml(item.text)}</span>
-          </div>
+          </button>
         `).join("");
       }
 
+      const selectedItems = selectedPassageLabels.map((label) => shuffledSentences.find((item) => item.label === label)).filter(Boolean);
+      $("#passageSelectedOrder").innerHTML = selectedItems.length
+        ? selectedItems.map((item, index) => `
+          <div class="order-sentence">
+            <span class="num">${index + 1}</span>
+            <span><strong>${item.label}</strong> · ${escapeHtml(item.text)}</span>
+          </div>
+        `).join("")
+        : `<div class="notice" style="margin-top: 0;">위 문장 조각을 올바른 순서대로 클릭하세요.</div>`;
+
+      $$('[data-passage-label]').forEach((button) => {
+        button.addEventListener("click", () => selectPassageSentence(button.dataset.passageLabel));
+      });
+
       $("#sentenceStat").textContent = `${originalSentences.length}문장`;
-      $("#checkPassageBtn").disabled = !originalSentences.length;
+      $("#checkPassageBtn").disabled = !originalSentences.length || selectedPassageLabels.length !== originalSentences.length;
+      $("#undoPassageBtn").disabled = !selectedPassageLabels.length;
+      $("#resetPassageOrderBtn").disabled = !selectedPassageLabels.length;
       $("#reshufflePassageBtn").disabled = !originalSentences.length;
+    }
+
+    function selectPassageSentence(label) {
+      if (!shuffledSentences.some((item) => item.label === label) || selectedPassageLabels.includes(label)) return;
+      selectedPassageLabels.push(label);
+      $("#passageAnswer").classList.add("hidden");
+      setMessage($("#passageFeedback"), `${selectedPassageLabels.length} / ${originalSentences.length}문장을 선택했습니다.`);
+      renderPassageQuiz();
+    }
+
+    function undoPassageSelection() {
+      if (!selectedPassageLabels.length) return;
+      selectedPassageLabels.pop();
+      $("#passageAnswer").classList.add("hidden");
+      setMessage($("#passageFeedback"), "마지막 선택을 되돌렸습니다.");
+      renderPassageQuiz();
+    }
+
+    function resetPassageSelection() {
+      selectedPassageLabels = [];
+      $("#passageAnswer").classList.add("hidden");
+      setMessage($("#passageFeedback"), "선택한 문장 순서를 모두 초기화했습니다.");
+      renderPassageQuiz();
     }
 
     function getPassageCorrectOrder() {
@@ -1170,17 +1200,14 @@
     }
 
     function checkPassage() {
-      const answer = $("#passageOrderAnswer").value
-        .trim()
-        .toUpperCase()
-        .match(/[A-Z]/g) || [];
+      const answer = [...selectedPassageLabels];
       const expected = getPassageCorrectOrder();
       const validNumbers = answer.length === expected.length
         && new Set(answer).size === expected.length
         && answer.every((label) => expected.includes(label));
 
       if (!validNumbers) {
-        setMessage($("#passageFeedback"), `A부터 ${String.fromCharCode(64 + expected.length)}까지의 알파벳을 빠짐없이 한 번씩 입력하세요.`, "bad");
+        setMessage($("#passageFeedback"), "모든 문장 조각을 빠짐없이 한 번씩 선택하세요.", "bad");
         return;
       }
 
@@ -1783,14 +1810,6 @@
       return wrongAnswers.filter((answer) => answer.nickname);
     }
 
-    function getWords() {
-      return readJson(STORAGE.words, seedWords);
-    }
-
-    function saveWords(words) {
-      writeJson(STORAGE.words, words);
-    }
-
     function normalizeAnswer(value) {
       return String(value || "")
         .normalize("NFKC")
@@ -1928,6 +1947,16 @@
           mode: "short"
         };
       }
+      if (type === "ko-to-en-short") {
+        return {
+          typeLabel: "한글 → 영어 (주관식)",
+          prompt: "뜻에 맞는 영어 단어를 입력하세요.",
+          main: word.ko,
+          sub: "",
+          answer: word.en,
+          mode: "short"
+        };
+      }
       const choices = shuffle([word.en, ...shuffle(allWords.filter((item) => item.en !== word.en)).slice(0, 3).map((item) => item.en)]);
       return {
         typeLabel: "한글 → 영어",
@@ -1963,16 +1992,16 @@
         return;
       }
 
-      const halfCount = Math.ceil(rangeWords.length / 2);
       const englishToKorean = shuffle(rangeWords).map((word) => buildWordQuestion(word, "en-to-ko", currentBookWords));
-      const koreanToEnglish = shuffle(rangeWords).slice(0, halfCount).map((word) => buildWordQuestion(word, "ko-to-en", currentBookWords));
+      const koreanToEnglishType = book?.category === "교과서 단어" ? "ko-to-en-short" : "ko-to-en";
+      const koreanToEnglish = shuffle(rangeWords).map((word) => buildWordQuestion(word, koreanToEnglishType, currentBookWords));
       wordSession = {
         name,
         book: book?.title || "단어장",
         range: `${start}~${end}`,
         index: 0,
         correct: 0,
-        questions: shuffle([...englishToKorean, ...koreanToEnglish]),
+        questions: [...englishToKorean, ...koreanToEnglish],
         answers: [],
         answered: false
       };
@@ -2122,7 +2151,7 @@
 
     function resetWordQuiz() {
       wordSession = null;
-      $("#wordQuestion").innerHTML = `<h3>단어 시험을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">영어→한글은 범위 전체, 한글→영어는 범위의 50%가 출제됩니다.</p>`;
+      $("#wordQuestion").innerHTML = `<h3>단어 시험을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">범위 전체를 영어→한글 주관식으로 먼저 응시합니다. 한글→영어는 일반 단어장은 객관식, 교과서 단어는 주관식입니다.</p>`;
       $("#choiceList").innerHTML = "";
       $("#shortAnswerBox").classList.remove("hidden");
       $("#wordNextBox").classList.remove("hidden");
@@ -2150,9 +2179,7 @@
 
     function renderAdminData() {
       if (!adminUnlocked) return;
-      const words = getWords();
-      $("#dataStat").textContent = `${words.length}단어 / 시트 확인 중`;
-      $("#wordTable").innerHTML = table(["영어", "뜻", "예문"], words.map((word) => [word.en, word.ko, word.example]));
+      $("#dataStat").textContent = "시트 확인 중";
       loadAdminSheetData();
     }
 
@@ -2172,7 +2199,7 @@
         } catch {
           // Writing Google 설정 전에는 별도 로컬 기록을 관리자 화면에 표시합니다.
         }
-        $("#dataStat").textContent = `${getWords().length}단어 / ${results.length}결과`;
+        $("#dataStat").textContent = `${results.length}결과`;
         $("#resultTable").innerHTML = table(
           ["일시", "닉네임", "단어장", "범위", "점수", "정답"],
           results.map((result) => [result.takenAt, result.nickname, result.book || "-", result.range || "-", `${result.score}점`, result.correctText || "-"])
@@ -2185,7 +2212,7 @@
         renderListeningWrongAnswers(listeningWrongAnswers);
         setMessage($("#adminSheetNotice"), `단어 결과 ${results.length}개와 오답 ${wrongAnswers.length}개, ${writingSource} Writing 오답 ${writingWrongAnswers.length}개, ${listeningSource} Listening 오답 ${listeningWrongAnswers.length}개를 불러왔습니다.`, "good");
       } catch {
-        $("#dataStat").textContent = `${getWords().length}단어 / 시트 오류`;
+        $("#dataStat").textContent = "시트 오류";
         $("#resultTable").innerHTML = `<div class="notice bad">Google 스프레드시트 시험 결과를 불러오지 못했습니다.</div>`;
         $("#wrongAnswerTable").innerHTML = `<div class="notice bad">Google 스프레드시트 오답 기록을 불러오지 못했습니다.</div>`;
         const localWriting = getLocalWritingWrongAnswers();
@@ -2209,24 +2236,6 @@
       localStorage.setItem(STORAGE.passwordChangedAt, $("#passwordChangedAt").value || new Date().toISOString().slice(0, 10));
       updatePasswordDue();
       setMessage($("#adminWorkNotice"), "비밀번호를 저장했습니다. 변경일 기준 7일 뒤 다시 바꾸면 됩니다.", "good");
-    }
-
-    function addWord() {
-      const en = $("#wordEnglish").value.trim();
-      const ko = $("#wordKorean").value.trim();
-      const example = $("#wordExample").value.trim();
-      if (!en || !ko || !example) {
-        setMessage($("#adminWorkNotice"), "영어 단어, 한글 뜻, 예문을 모두 입력하세요.", "bad");
-        return;
-      }
-      const words = getWords();
-      words.unshift({ en, ko, example });
-      saveWords(words);
-      $("#wordEnglish").value = "";
-      $("#wordKorean").value = "";
-      $("#wordExample").value = "";
-      setMessage($("#adminWorkNotice"), "단어를 추가했습니다.", "good");
-      renderAdminData();
     }
 
     function exportResults() {
@@ -2260,12 +2269,11 @@
     $("#lessonSelect").addEventListener("change", renderPartOptions);
     $("#loadPassageBtn").addEventListener("click", startPassageQuiz);
     $("#checkPassageBtn").addEventListener("click", checkPassage);
-    $("#passageOrderAnswer").addEventListener("keydown", (event) => {
-      if (event.key === "Enter" && !$("#checkPassageBtn").disabled) checkPassage();
-    });
+    $("#undoPassageBtn").addEventListener("click", undoPassageSelection);
+    $("#resetPassageOrderBtn").addEventListener("click", resetPassageSelection);
     $("#reshufflePassageBtn").addEventListener("click", () => {
       shuffledSentences = shuffle(originalSentences).map((sentence, index) => ({ ...sentence, label: String.fromCharCode(65 + index) }));
-      $("#passageOrderAnswer").value = "";
+      selectedPassageLabels = [];
       $("#passageAnswer").classList.add("hidden");
       setMessage($("#passageFeedback"), "문장을 다시 섞었습니다.");
       renderPassageQuiz();
@@ -2293,12 +2301,6 @@
     $("#adminLoginBtn").addEventListener("click", adminLogin);
     $("#refreshAdminSheetBtn").addEventListener("click", loadAdminSheetData);
     $("#savePasswordsBtn").addEventListener("click", savePasswords);
-    $("#addWordBtn").addEventListener("click", addWord);
-    $("#seedWordsBtn").addEventListener("click", () => {
-      saveWords(seedWords);
-      setMessage($("#adminWorkNotice"), "샘플 단어풀을 다시 채웠습니다.", "good");
-      renderAdminData();
-    });
   </script>
 </body>
 </html>
