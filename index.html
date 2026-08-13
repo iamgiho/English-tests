@@ -212,6 +212,45 @@
       font-size: 28px;
     }
 
+    .word-bank,
+    .word-answer-zone {
+      display: flex;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      gap: 9px;
+      min-height: 82px;
+      padding: 12px;
+      border: 2px dashed var(--line);
+      border-radius: 10px;
+      background: #fbfcfa;
+    }
+
+    .word-answer-zone {
+      min-height: 105px;
+      border-style: solid;
+      background: #fff;
+    }
+
+    .word-chip {
+      width: auto;
+      min-height: 38px;
+      padding: 7px 11px;
+      border-radius: 999px;
+      cursor: grab;
+      touch-action: manipulation;
+      user-select: none;
+    }
+
+    .word-chip:active { cursor: grabbing; }
+    .drop-active { outline: 3px solid rgba(45, 109, 72, .25); }
+
+    .meaning-line {
+      margin: 10px 0 0;
+      color: var(--ink);
+      font-size: 16px;
+      line-height: 1.55;
+    }
+
     .answer-comparison {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -584,8 +623,10 @@
       <button class="tab-btn active" data-tab="adminTab">관리자</button>
       <button class="tab-btn" data-tab="wordTab">단어 시험</button>
       <button class="tab-btn" data-tab="passageTab">순서 맞추기</button>
-      <button class="tab-btn" data-tab="writingTab">Writing</button>
-      <button class="tab-btn" data-tab="listeningTab">Listening</button>
+      <button class="tab-btn" data-tab="writingTab">Writing Test</button>
+      <button class="tab-btn" data-tab="writingPracticeTab">Writing Practice</button>
+      <button class="tab-btn" data-tab="listeningTab">Listening Test</button>
+      <button class="tab-btn" data-tab="listeningPracticeTab">Listening Practice</button>
     </nav>
 
     <div class="tab-panel" id="passageTab">
@@ -642,7 +683,7 @@
     <div class="tab-panel" id="writingTab">
       <section>
         <div class="section-head">
-          <h2>Writing</h2>
+          <h2>Writing Test</h2>
           <span class="pill" id="writingProgress">0 / 0</span>
         </div>
         <div class="body">
@@ -667,7 +708,7 @@
               <label for="writingPartSelect">파트</label>
               <select id="writingPartSelect"></select>
             </div>
-            <button id="startWritingBtn">Writing 시작</button>
+            <button id="startWritingBtn">Writing Test 시작</button>
           </div>
           <div class="question" style="margin-top: 12px;">
             <h3>다음 문장을 영어로 쓰세요.</h3>
@@ -690,10 +731,31 @@
       </section>
     </div>
 
+    <div class="tab-panel" id="writingPracticeTab">
+      <section>
+        <div class="section-head"><h2>Writing Practice</h2><span class="pill" id="writingPracticeProgress">0 / 0</span></div>
+        <div class="body">
+          <div class="field-row">
+            <div class="field"><label for="writingPracticeNickname">이름 또는 닉네임</label><input id="writingPracticeNickname" placeholder="예: 김민준"></div>
+            <div class="field"><label for="writingPracticeGradeSelect">학년</label><select id="writingPracticeGradeSelect"></select></div>
+            <div class="field"><label for="writingPracticeTextbookSelect">교과서</label><select id="writingPracticeTextbookSelect"></select></div>
+            <div class="field"><label for="writingPracticeLessonSelect">단원</label><select id="writingPracticeLessonSelect"></select></div>
+            <div class="field"><label for="writingPracticePartSelect">파트</label><select id="writingPracticePartSelect"></select></div>
+            <button id="startWritingPracticeBtn">Writing Practice 시작</button>
+          </div>
+          <div class="question" style="margin-top: 12px;"><h3>뜻에 맞게 단어를 배열하세요.</h3><p class="question-sub" id="writingPracticePrompt">학습 범위를 선택하고 연습을 시작하세요.</p></div>
+          <div class="field" style="margin-top: 12px;"><label>섞인 단어 — 터치하거나 드래그하세요</label><div class="word-bank" id="writingPracticeBank"></div></div>
+          <div class="field" style="margin-top: 12px;"><label>답안 — 단어를 터치하면 다시 빠집니다</label><div class="word-answer-zone" id="writingPracticeAnswer"></div></div>
+          <div class="toolbar"><button id="submitWritingPracticeBtn" disabled>답안 확인</button><button class="secondary" id="nextWritingPracticeBtn" disabled>다음</button></div>
+          <div class="feedback" id="writingPracticeFeedback">단어를 원하는 자리로 자유롭게 옮길 수 있습니다.</div>
+        </div>
+      </section>
+    </div>
+
     <div class="tab-panel" id="listeningTab">
       <section>
         <div class="section-head">
-          <h2>Listening</h2>
+          <h2>Listening Test</h2>
           <span class="pill" id="listeningProgress">0 / 0</span>
         </div>
         <div class="body">
@@ -718,7 +780,7 @@
               <label for="listeningPartSelect">파트</label>
               <select id="listeningPartSelect"></select>
             </div>
-            <button id="startListeningBtn">Listening 시작</button>
+            <button id="startListeningBtn">Listening Test 시작</button>
           </div>
           <div class="question listening-prompt" style="margin-top: 12px;">
             <button class="sound-button" id="playListeningBtn" type="button" disabled aria-label="영어 문장 듣기" title="영어 문장 듣기">🔊</button>
@@ -740,6 +802,30 @@
             <div><strong>내 답안</strong><div id="listeningUserAnswer" style="margin-top: 7px;"></div></div>
             <div><strong>정답</strong><div id="listeningCorrectAnswer" style="margin-top: 7px;"></div></div>
           </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-panel" id="listeningPracticeTab">
+      <section>
+        <div class="section-head"><h2>Listening Practice</h2><span class="pill" id="listeningPracticeProgress">0 / 0</span></div>
+        <div class="body">
+          <div class="field-row">
+            <div class="field"><label for="listeningPracticeNickname">이름 또는 닉네임</label><input id="listeningPracticeNickname" placeholder="예: 김민준"></div>
+            <div class="field"><label for="listeningPracticeGradeSelect">학년</label><select id="listeningPracticeGradeSelect"></select></div>
+            <div class="field"><label for="listeningPracticeTextbookSelect">교과서</label><select id="listeningPracticeTextbookSelect"></select></div>
+            <div class="field"><label for="listeningPracticeLessonSelect">단원</label><select id="listeningPracticeLessonSelect"></select></div>
+            <div class="field"><label for="listeningPracticePartSelect">파트</label><select id="listeningPracticePartSelect"></select></div>
+            <button id="startListeningPracticeBtn">Listening Practice 시작</button>
+          </div>
+          <div class="question listening-prompt" style="margin-top: 12px; flex-direction: column;">
+            <div style="display:flex; align-items:center; gap:14px;"><button class="sound-button" id="playListeningPracticeBtn" type="button" disabled aria-label="영어 문장 듣기">🔊</button><div><h3>아이콘을 눌러 문장을 들으세요.</h3><p class="question-sub" id="listeningPracticeWordCount">(0단어)</p></div></div>
+            <p class="meaning-line" id="listeningPracticeMeaning">문장의 뜻이 여기에 표시됩니다.</p>
+          </div>
+          <div class="field" style="margin-top: 12px;"><label for="listeningPracticeAnswer">받아쓰기 답안</label><textarea class="listening-answer" id="listeningPracticeAnswer" placeholder="들은 영어 문장을 입력하세요." disabled></textarea></div>
+          <div class="toolbar"><button id="submitListeningPracticeBtn" disabled>답안 확인</button><button class="secondary" id="nextListeningPracticeBtn" disabled>다음</button></div>
+          <div class="feedback" id="listeningPracticeFeedback">학습 범위를 선택하고 Listening Practice를 시작하세요.</div>
+          <div class="answer-comparison hidden" id="listeningPracticeComparison"><div><strong>내 답안</strong><div id="listeningPracticeUserAnswer" style="margin-top:7px;"></div></div><div><strong>정답</strong><div id="listeningPracticeCorrectAnswer" style="margin-top:7px;"></div></div></div>
         </div>
       </section>
     </div>
@@ -862,6 +948,8 @@
             <div id="wrongAnswerTable"></div>
             <h3 style="margin-top: 18px;">Writing 오답 기록</h3>
             <div id="writingWrongAnswerTable"></div>
+            <h3 style="margin-top: 18px;">Writing Practice 정답 여부</h3>
+            <div id="writingPracticeResultTable"></div>
             <h3 style="margin-top: 18px;">Listening 오답 기록</h3>
             <div id="listeningWrongAnswerTable"></div>
             <div class="notice" id="adminSheetNotice">Google 스프레드시트 데이터를 불러오는 중입니다.</div>
@@ -880,6 +968,7 @@
       results: "exam.results",
       passageResults: "exam.passageResults",
       writingResults: "exam.writingResults",
+      writingPracticeResults: "exam.writingPracticeResults",
       listeningResults: "exam.listeningResults"
     };
 
@@ -911,7 +1000,9 @@
     let wordBookManifest = [];
     let currentBookWords = [];
     let writingSession = null;
+    let writingPracticeSession = null;
     let listeningSession = null;
+    let listeningPracticeSession = null;
     const googleIntegration = window.GOOGLE_INTEGRATION || { passage: {}, word: {}, sheetCsvUrl: "" };
 
     function readJson(key, fallback) {
@@ -934,6 +1025,7 @@
       if (!localStorage.getItem(STORAGE.results)) writeJson(STORAGE.results, []);
       if (!localStorage.getItem(STORAGE.passageResults)) writeJson(STORAGE.passageResults, []);
       if (!localStorage.getItem(STORAGE.writingResults)) writeJson(STORAGE.writingResults, []);
+      if (!localStorage.getItem(STORAGE.writingPracticeResults)) writeJson(STORAGE.writingPracticeResults, []);
       if (!localStorage.getItem(STORAGE.listeningResults)) writeJson(STORAGE.listeningResults, []);
     }
 
@@ -992,7 +1084,7 @@
     }
 
     function switchTab(tabId) {
-      if (tabId !== "listeningTab") window.speechSynthesis?.cancel();
+      if (!["listeningTab", "listeningPracticeTab"].includes(tabId)) window.speechSynthesis?.cancel();
       $$(".tab-btn").forEach((button) => button.classList.toggle("active", button.dataset.tab === tabId));
       $$(".tab-panel").forEach((panel) => panel.classList.toggle("active", panel.id === tabId));
     }
@@ -1015,7 +1107,38 @@
       }));
       renderPassageSelectors();
       renderWritingSelectors();
+      renderPracticeSelectors("writingPractice");
       renderListeningSelectors();
+      renderPracticeSelectors("listeningPractice");
+    }
+
+    function renderPracticeSelectors(prefix) {
+      const grades = [...new Set(passageManifest.map((item) => item.grade))].sort((a, b) => a.localeCompare(b, "ko"));
+      $(`#${prefix}GradeSelect`).innerHTML = grades.map((grade) => `<option value="${escapeHtml(grade)}">${escapeHtml(grade)}</option>`).join("");
+      renderPracticeTextbookOptions(prefix);
+    }
+
+    function renderPracticeTextbookOptions(prefix) {
+      const grade = $(`#${prefix}GradeSelect`).value;
+      const textbooks = [...new Set(passageManifest.filter((item) => item.grade === grade).map((item) => item.textbook))];
+      $(`#${prefix}TextbookSelect`).innerHTML = textbooks.map((item) => `<option value="${escapeHtml(item)}">${escapeHtml(item)}</option>`).join("");
+      renderPracticeLessonOptions(prefix);
+    }
+
+    function renderPracticeLessonOptions(prefix) {
+      const grade = $(`#${prefix}GradeSelect`).value;
+      const textbook = $(`#${prefix}TextbookSelect`).value;
+      const lessons = [...new Set(passageManifest.filter((item) => item.grade === grade && item.textbook === textbook).map((item) => item.lesson))].sort((a, b) => Number(a) - Number(b));
+      $(`#${prefix}LessonSelect`).innerHTML = lessons.map((item) => `<option value="${escapeHtml(item)}">Lesson ${escapeHtml(item)}</option>`).join("");
+      renderPracticePartOptions(prefix);
+    }
+
+    function renderPracticePartOptions(prefix) {
+      const grade = $(`#${prefix}GradeSelect`).value;
+      const textbook = $(`#${prefix}TextbookSelect`).value;
+      const lesson = $(`#${prefix}LessonSelect`).value;
+      const parts = passageManifest.filter((item) => item.grade === grade && item.textbook === textbook && String(item.lesson) === lesson);
+      $(`#${prefix}PartSelect`).innerHTML = parts.map((item) => `<option value="${escapeHtml(item.path)}">${escapeHtml(item.partLabel)}</option>`).join("");
     }
 
     function renderPassageSelectors() {
@@ -1429,6 +1552,135 @@
       return (String(text).match(/[A-Za-z]+(?:['’][A-Za-z]+)*/g) || []).length;
     }
 
+    function sentenceTokens(sentence) {
+      return String(sentence).trim().split(/\s+/).filter(Boolean).map((text, index) => ({ id: `${Date.now()}-${index}-${Math.random()}`, text }));
+    }
+
+    async function startWritingPractice() {
+      const nickname = $("#writingPracticeNickname").value.trim();
+      const meta = passageManifest.find((item) => item.path === $("#writingPracticePartSelect").value);
+      if (!nickname) return setMessage($("#writingPracticeFeedback"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+      if (!meta) return;
+      try {
+        const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
+        if (!response.ok) throw new Error("passage not found");
+        const data = await response.json();
+        const questions = (data.passages || []).flatMap((passage) => {
+          const english = Array.isArray(passage.text) ? passage.text : [];
+          const korean = Array.isArray(passage.koreanText) ? passage.koreanText : [];
+          return english.slice(0, Math.min(english.length, korean.length)).map((answer, index) => ({ answer, korean: korean[index] }));
+        });
+        if (!questions.length) return setMessage($("#writingPracticeFeedback"), "영어와 한글이 연결된 문장이 없습니다.", "bad");
+        writingPracticeSession = { nickname, meta, questions: shuffle(questions), index: 0, results: [], bank: [], answer: [], awaitingNext: false };
+        renderWritingPracticeQuestion();
+      } catch {
+        setMessage($("#writingPracticeFeedback"), "선택한 지문 DB를 불러오지 못했습니다.", "bad");
+      }
+    }
+
+    function renderWritingPracticeQuestion() {
+      const session = writingPracticeSession;
+      if (!session) return;
+      const question = session.questions[session.index];
+      session.bank = shuffle(sentenceTokens(question.answer));
+      session.answer = [];
+      session.awaitingNext = false;
+      $("#writingPracticeProgress").textContent = `${session.index + 1} / ${session.questions.length}`;
+      $("#writingPracticePrompt").textContent = question.korean;
+      $("#submitWritingPracticeBtn").disabled = false;
+      $("#nextWritingPracticeBtn").disabled = true;
+      renderWritingPracticeWords();
+      setMessage($("#writingPracticeFeedback"), "단어를 터치하거나 드래그해서 문장을 완성하세요.");
+    }
+
+    function renderWritingPracticeWords() {
+      const session = writingPracticeSession;
+      if (!session) return;
+      const draw = (element, items, zone) => {
+        element.innerHTML = "";
+        items.forEach((token) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "word-chip secondary";
+          button.textContent = token.text;
+          button.draggable = !session.awaitingNext;
+          button.dataset.tokenId = token.id;
+          button.addEventListener("click", () => moveWritingPracticeToken(token.id, zone === "bank" ? "answer" : "bank"));
+          button.addEventListener("dragstart", (event) => event.dataTransfer.setData("text/plain", token.id));
+          element.appendChild(button);
+        });
+      };
+      draw($("#writingPracticeBank"), session.bank, "bank");
+      draw($("#writingPracticeAnswer"), session.answer, "answer");
+    }
+
+    function moveWritingPracticeToken(id, target, targetIndex = null) {
+      const session = writingPracticeSession;
+      if (!session || session.awaitingNext) return;
+      const source = session.bank.some((token) => token.id === id) ? session.bank : session.answer;
+      const index = source.findIndex((token) => token.id === id);
+      if (index < 0) return;
+      const [token] = source.splice(index, 1);
+      const destination = target === "answer" ? session.answer : session.bank;
+      destination.splice(targetIndex === null ? destination.length : targetIndex, 0, token);
+      renderWritingPracticeWords();
+    }
+
+    function setupWritingPracticeDropZone(element, zone) {
+      element.addEventListener("dragover", (event) => { event.preventDefault(); element.classList.add("drop-active"); });
+      element.addEventListener("dragleave", () => element.classList.remove("drop-active"));
+      element.addEventListener("drop", (event) => {
+        event.preventDefault();
+        element.classList.remove("drop-active");
+        const id = event.dataTransfer.getData("text/plain");
+        const chips = [...element.querySelectorAll(".word-chip")];
+        const targetIndex = chips.findIndex((chip) => event.clientX < chip.getBoundingClientRect().left + chip.offsetWidth / 2);
+        moveWritingPracticeToken(id, zone, targetIndex < 0 ? chips.length : targetIndex);
+      });
+    }
+
+    function submitWritingPracticeAnswer() {
+      const session = writingPracticeSession;
+      if (!session || session.awaitingNext) return;
+      if (!session.answer.length) return setMessage($("#writingPracticeFeedback"), "단어를 선택해 답안을 만드세요.", "bad");
+      const correct = normalizeWritingAnswer(session.answer.map((token) => token.text).join(" ")) === normalizeWritingAnswer(session.questions[session.index].answer);
+      session.results.push({ questionNumber: session.index + 1, correct });
+      session.awaitingNext = true;
+      $("#submitWritingPracticeBtn").disabled = true;
+      $("#nextWritingPracticeBtn").disabled = false;
+      renderWritingPracticeWords();
+      setMessage($("#writingPracticeFeedback"), correct ? "정답입니다. 다음 버튼을 눌러 진행하세요." : "틀렸습니다. 다음 문제에서 다시 연습해 보세요.", correct ? "good" : "bad");
+    }
+
+    function nextWritingPracticeQuestion() {
+      const session = writingPracticeSession;
+      if (!session || !session.awaitingNext) return;
+      if (session.index < session.questions.length - 1) { session.index += 1; return renderWritingPracticeQuestion(); }
+      const result = { takenAt: new Date().toLocaleString("ko-KR"), nickname: session.nickname, grade: session.meta.grade, textbook: session.meta.textbook, lesson: `Lesson ${session.meta.lesson}`, part: session.meta.partLabel, total: session.questions.length, results: session.results };
+      const stored = readJson(STORAGE.writingPracticeResults, []); stored.unshift(result); writeJson(STORAGE.writingPracticeResults, stored);
+      writingPracticeSession = null;
+      $("#writingPracticeProgress").textContent = `${result.total} / ${result.total}`;
+      $("#writingPracticeBank").innerHTML = ""; $("#writingPracticeAnswer").innerHTML = "";
+      $("#submitWritingPracticeBtn").disabled = true; $("#nextWritingPracticeBtn").disabled = true;
+      renderWritingPracticeResults();
+      setMessage($("#writingPracticeFeedback"), `Writing Practice ${result.total}문장을 완료했습니다. 정답 여부만 저장했습니다.`, "good");
+      submitWritingPracticeResult(result);
+    }
+
+    async function submitWritingPracticeResult(result) {
+      const integration = googleIntegration.word || {}; const fields = integration.fields || {};
+      const required = [fields.takenAt, fields.nickname, fields.book, fields.range, fields.score, fields.correct, fields.type, fields.question, fields.userAnswer, fields.answer];
+      if (!integration.formAction || !required.every(Boolean)) return;
+      const body = new URLSearchParams(); const correctCount = result.results.filter((item) => item.correct).length;
+      body.set(fields.takenAt, result.takenAt); body.set(fields.nickname, result.nickname); body.set(fields.book, `${result.grade} | ${result.textbook}`); body.set(fields.range, `${result.lesson} | ${result.part}`);
+      body.set(fields.score, String(Math.round(correctCount / result.total * 100))); body.set(fields.correct, `${correctCount}/${result.total}`);
+      body.set(fields.type, result.results.map((_, index) => `${index + 1}. Writing Practice`).join("\n"));
+      body.set(fields.question, result.results.map((item, index) => `${index + 1}. ${item.questionNumber}`).join("\n"));
+      body.set(fields.userAnswer, result.results.map((item, index) => `${index + 1}. ${item.correct ? "정답" : "오답"}`).join("\n"));
+      body.set(fields.answer, result.results.map((_, index) => `${index + 1}. -`).join("\n"));
+      try { await fetch(integration.formAction, { method: "POST", mode: "no-cors", headers: { "Content-Type": "application/x-www-form-urlencoded" }, body }); } catch { /* 로컬 기록 유지 */ }
+    }
+
     async function startListeningQuiz() {
       const nickname = $("#listeningNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#listeningPartSelect").value);
@@ -1578,7 +1830,8 @@
       body.set(fields.range, `${result.lesson} | ${result.part}`);
       body.set(fields.score, String(Math.round(((result.total - result.wrongAnswers.length) / result.total) * 100)));
       body.set(fields.correct, `${result.total - result.wrongAnswers.length}/${result.total}`);
-      body.set(fields.type, result.wrongAnswers.length ? result.wrongAnswers.map((_, index) => `${index + 1}. Listening`).join("\n") : "1. Listening");
+      const listeningType = result.mode || "Listening";
+      body.set(fields.type, result.wrongAnswers.length ? result.wrongAnswers.map((_, index) => `${index + 1}. ${listeningType}`).join("\n") : `1. ${listeningType}`);
       body.set(fields.question, lines("questionNumber"));
       body.set(fields.userAnswer, lines("userAnswer"));
       body.set(fields.answer, lines("answer"));
@@ -1593,6 +1846,69 @@
       } catch {
         return "Listening 결과는 로컬에 저장했지만 Google 설문지 전송에 실패했습니다.";
       }
+    }
+
+    async function startListeningPractice() {
+      const nickname = $("#listeningPracticeNickname").value.trim();
+      const meta = passageManifest.find((item) => item.path === $("#listeningPracticePartSelect").value);
+      if (!nickname) return setMessage($("#listeningPracticeFeedback"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+      if (!meta) return;
+      try {
+        const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
+        if (!response.ok) throw new Error("passage not found");
+        const data = await response.json();
+        const questions = (data.passages || []).flatMap((passage) => {
+          const english = Array.isArray(passage.text) ? passage.text : [];
+          const korean = Array.isArray(passage.koreanText) ? passage.koreanText : [];
+          return english.map((answer, index) => ({ answer: answer.trim(), korean: korean[index] || "뜻 정보가 없습니다." })).filter((item) => item.answer);
+        });
+        if (!questions.length) return setMessage($("#listeningPracticeFeedback"), "선택한 파트에는 영어 문장이 없습니다.", "bad");
+        listeningPracticeSession = { nickname, meta, questions, index: 0, wrongAnswers: [], awaitingNext: false };
+        renderListeningPracticeQuestion();
+      } catch { setMessage($("#listeningPracticeFeedback"), "선택한 지문 DB를 불러오지 못했습니다.", "bad"); }
+    }
+
+    function renderListeningPracticeQuestion() {
+      const session = listeningPracticeSession; if (!session) return;
+      const question = session.questions[session.index]; window.speechSynthesis?.cancel();
+      $("#listeningPracticeProgress").textContent = `${session.index + 1} / ${session.questions.length}`;
+      $("#listeningPracticeWordCount").textContent = `(${countEnglishWords(question.answer)}단어)`;
+      $("#listeningPracticeMeaning").textContent = question.korean;
+      $("#listeningPracticeAnswer").value = ""; $("#listeningPracticeAnswer").disabled = false;
+      $("#playListeningPracticeBtn").disabled = false; $("#submitListeningPracticeBtn").disabled = false; $("#nextListeningPracticeBtn").disabled = true;
+      $("#listeningPracticeComparison").classList.add("hidden"); session.awaitingNext = false;
+      setMessage($("#listeningPracticeFeedback"), "뜻을 참고해 문장을 듣고 영어 문장을 입력하세요.");
+    }
+
+    function playListeningPracticeSentence() {
+      if (!listeningPracticeSession || !("speechSynthesis" in window)) return setMessage($("#listeningPracticeFeedback"), "이 브라우저에서는 음성 재생을 지원하지 않습니다.", "bad");
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(listeningPracticeSession.questions[listeningPracticeSession.index].answer);
+      utterance.lang = "en-US"; utterance.rate = .85; window.speechSynthesis.speak(utterance);
+    }
+
+    function submitListeningPracticeAnswer() {
+      const session = listeningPracticeSession; if (!session || session.awaitingNext) return;
+      const userAnswer = $("#listeningPracticeAnswer").value.trim();
+      if (!userAnswer) return setMessage($("#listeningPracticeFeedback"), "들은 문장을 먼저 입력하세요.", "bad");
+      const correctAnswer = session.questions[session.index].answer;
+      const correct = normalizeWritingAnswer(userAnswer) === normalizeWritingAnswer(correctAnswer);
+      session.awaitingNext = true; $("#listeningPracticeAnswer").disabled = true; $("#submitListeningPracticeBtn").disabled = true; $("#nextListeningPracticeBtn").disabled = false;
+      if (correct) { $("#listeningPracticeComparison").classList.add("hidden"); return setMessage($("#listeningPracticeFeedback"), "정답입니다. 다음 버튼을 눌러 진행하세요.", "good"); }
+      session.wrongAnswers.push({ questionNumber: session.index + 1, userAnswer, answer: correctAnswer });
+      $("#listeningPracticeUserAnswer").textContent = userAnswer; $("#listeningPracticeCorrectAnswer").textContent = correctAnswer; $("#listeningPracticeComparison").classList.remove("hidden");
+      setMessage($("#listeningPracticeFeedback"), "틀렸습니다. 답안을 비교한 뒤 다음 버튼을 눌러 진행하세요.", "bad");
+    }
+
+    function nextListeningPracticeQuestion() {
+      const session = listeningPracticeSession; if (!session || !session.awaitingNext) return;
+      if (session.index < session.questions.length - 1) { session.index += 1; return renderListeningPracticeQuestion(); }
+      const result = { takenAt: new Date().toLocaleString("ko-KR"), nickname: session.nickname, grade: session.meta.grade, textbook: session.meta.textbook, lesson: `Lesson ${session.meta.lesson}`, part: session.meta.partLabel, total: session.questions.length, wrongAnswers: session.wrongAnswers, mode: "Listening Practice" };
+      const stored = readJson(STORAGE.listeningResults, []); stored.unshift(result); writeJson(STORAGE.listeningResults, stored);
+      listeningPracticeSession = null; window.speechSynthesis?.cancel();
+      $("#listeningPracticeProgress").textContent = `${result.total} / ${result.total}`; $("#listeningPracticeWordCount").textContent = "(완료)"; $("#listeningPracticeMeaning").textContent = "학습을 완료했습니다.";
+      $("#listeningPracticeAnswer").value = ""; $("#listeningPracticeAnswer").disabled = true; $("#playListeningPracticeBtn").disabled = true; $("#submitListeningPracticeBtn").disabled = true; $("#nextListeningPracticeBtn").disabled = true; $("#listeningPracticeComparison").classList.add("hidden");
+      renderListeningWrongAnswers(getLocalListeningWrongAnswers()); setMessage($("#listeningPracticeFeedback"), `Listening Practice ${result.total}문장을 완료했습니다. 결과를 저장했습니다.`, "good"); submitListeningResult(result);
     }
 
     function parseCsv(text) {
@@ -1645,6 +1961,7 @@
       };
       const wrongAnswers = [];
       const writingWrongAnswers = [];
+      const writingPracticeResults = [];
       const listeningWrongAnswers = [];
       const results = rows.map((row) => {
         const result = {
@@ -1663,7 +1980,16 @@
         };
         const count = Math.max(columns.type.length, columns.question.length, columns.userAnswer.length, columns.answer.length);
         const isWriting = columns.type.some((type) => type.toLowerCase() === "writing");
-        const isListening = columns.type.some((type) => type.toLowerCase() === "listening");
+        const isWritingPractice = columns.type.some((type) => type.toLowerCase() === "writing practice");
+        const isListening = columns.type.some((type) => type.toLowerCase().startsWith("listening"));
+        if (isWritingPractice) {
+          const [grade = "-", textbook = "-"] = result.book.split("|").map((item) => item.trim());
+          const [lesson = "-", part = "-"] = result.range.split("|").map((item) => item.trim());
+          for (let index = 0; index < columns.userAnswer.length; index += 1) {
+            writingPracticeResults.push({ takenAt: result.takenAt, nickname: result.nickname, grade, textbook, lesson, part, questionNumber: columns.question[index] || index + 1, correct: columns.userAnswer[index] === "정답" });
+          }
+          return null;
+        }
         if (isWriting || isListening) {
           const [grade = "-", textbook = "-"] = result.book.split("|").map((item) => item.trim());
           const [lesson = "-", part = "-"] = result.range.split("|").map((item) => item.trim());
@@ -1705,7 +2031,7 @@
         }
         return result;
       }).filter((result) => result?.nickname);
-      return { results, wrongAnswers, writingWrongAnswers, listeningWrongAnswers };
+      return { results, wrongAnswers, writingWrongAnswers, writingPracticeResults, listeningWrongAnswers };
     }
 
     function getLocalWritingWrongAnswers() {
@@ -1738,6 +2064,22 @@
           answer.userAnswer,
           answer.answer
         ])
+      );
+    }
+
+    function getLocalWritingPracticeResults() {
+      return readJson(STORAGE.writingPracticeResults, []).flatMap((result) =>
+        (result.results || []).map((item) => ({
+          takenAt: result.takenAt, nickname: result.nickname, grade: result.grade, textbook: result.textbook,
+          lesson: result.lesson, part: result.part, questionNumber: item.questionNumber, correct: item.correct
+        }))
+      );
+    }
+
+    function renderWritingPracticeResults(results = getLocalWritingPracticeResults()) {
+      $("#writingPracticeResultTable").innerHTML = table(
+        ["일시", "닉네임", "학년", "교과서", "단원", "파트", "문장 번호", "정답 여부"],
+        results.map((item) => [item.takenAt, item.nickname, item.grade, item.textbook, item.lesson, item.part, item.questionNumber, item.correct ? "정답" : "오답"])
       );
     }
 
@@ -2188,7 +2530,7 @@
       $("#refreshAdminSheetBtn").disabled = true;
       setMessage($("#adminSheetNotice"), "Google 스프레드시트 데이터를 불러오는 중입니다.");
       try {
-        const { results, wrongAnswers, writingWrongAnswers: sharedWritingWrongAnswers, listeningWrongAnswers: sharedListeningWrongAnswers } = await fetchWordSheetData();
+        const { results, wrongAnswers, writingWrongAnswers: sharedWritingWrongAnswers, writingPracticeResults: sharedWritingPracticeResults, listeningWrongAnswers: sharedListeningWrongAnswers } = await fetchWordSheetData();
         let writingWrongAnswers = sharedWritingWrongAnswers.length ? sharedWritingWrongAnswers : getLocalWritingWrongAnswers();
         let writingSource = sharedWritingWrongAnswers.length ? "Google 스프레드시트의 Writing 기록" : "브라우저";
         const listeningWrongAnswers = sharedListeningWrongAnswers.length ? sharedListeningWrongAnswers : getLocalListeningWrongAnswers();
@@ -2209,6 +2551,7 @@
           wrongAnswers.map((answer) => [answer.takenAt, answer.nickname, answer.type, answer.question, answer.userAnswer, answer.answer])
         );
         renderWritingWrongAnswers(writingWrongAnswers);
+        renderWritingPracticeResults(sharedWritingPracticeResults.length ? sharedWritingPracticeResults : getLocalWritingPracticeResults());
         renderListeningWrongAnswers(listeningWrongAnswers);
         setMessage($("#adminSheetNotice"), `단어 결과 ${results.length}개와 오답 ${wrongAnswers.length}개, ${writingSource} Writing 오답 ${writingWrongAnswers.length}개, ${listeningSource} Listening 오답 ${listeningWrongAnswers.length}개를 불러왔습니다.`, "good");
       } catch {
@@ -2218,6 +2561,7 @@
         const localWriting = getLocalWritingWrongAnswers();
         const localListening = getLocalListeningWrongAnswers();
         renderWritingWrongAnswers(localWriting);
+        renderWritingPracticeResults();
         renderListeningWrongAnswers(localListening);
         setMessage($("#adminSheetNotice"), `단어 스프레드시트를 불러오지 못했습니다. Writing 로컬 오답 ${localWriting.length}개와 Listening 로컬 오답 ${localListening.length}개를 표시했습니다.`, "bad");
       } finally {
@@ -2284,6 +2628,14 @@
     $("#startWritingBtn").addEventListener("click", startWritingQuiz);
     $("#submitWritingBtn").addEventListener("click", submitWritingAnswer);
     $("#nextWritingBtn").addEventListener("click", nextWritingQuestion);
+    $("#writingPracticeGradeSelect").addEventListener("change", () => renderPracticeTextbookOptions("writingPractice"));
+    $("#writingPracticeTextbookSelect").addEventListener("change", () => renderPracticeLessonOptions("writingPractice"));
+    $("#writingPracticeLessonSelect").addEventListener("change", () => renderPracticePartOptions("writingPractice"));
+    $("#startWritingPracticeBtn").addEventListener("click", startWritingPractice);
+    $("#submitWritingPracticeBtn").addEventListener("click", submitWritingPracticeAnswer);
+    $("#nextWritingPracticeBtn").addEventListener("click", nextWritingPracticeQuestion);
+    setupWritingPracticeDropZone($("#writingPracticeBank"), "bank");
+    setupWritingPracticeDropZone($("#writingPracticeAnswer"), "answer");
     $("#listeningGradeSelect").addEventListener("change", renderListeningTextbookOptions);
     $("#listeningTextbookSelect").addEventListener("change", renderListeningLessonOptions);
     $("#listeningLessonSelect").addEventListener("change", renderListeningPartOptions);
@@ -2291,6 +2643,13 @@
     $("#playListeningBtn").addEventListener("click", playListeningSentence);
     $("#submitListeningBtn").addEventListener("click", submitListeningAnswer);
     $("#nextListeningBtn").addEventListener("click", nextListeningQuestion);
+    $("#listeningPracticeGradeSelect").addEventListener("change", () => renderPracticeTextbookOptions("listeningPractice"));
+    $("#listeningPracticeTextbookSelect").addEventListener("change", () => renderPracticeLessonOptions("listeningPractice"));
+    $("#listeningPracticeLessonSelect").addEventListener("change", () => renderPracticePartOptions("listeningPractice"));
+    $("#startListeningPracticeBtn").addEventListener("click", startListeningPractice);
+    $("#playListeningPracticeBtn").addEventListener("click", playListeningPracticeSentence);
+    $("#submitListeningPracticeBtn").addEventListener("click", submitListeningPracticeAnswer);
+    $("#nextListeningPracticeBtn").addEventListener("click", nextListeningPracticeQuestion);
     $("#startWordBtn").addEventListener("click", startWordQuiz);
     $("#wordBookSelect").addEventListener("change", loadSelectedWordBook);
     $("#resetWordBtn").addEventListener("click", resetWordQuiz);
