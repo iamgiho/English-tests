@@ -1,0 +1,36 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 4,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l02-p04-001",
+      "title": "Combating Dark Patterns",
+      "text": [
+        "Dark patterns, in contrast, not only manipulate customers to act against their intentions, but they can also lead to financial losses and personal data leaks.",
+        "To tackle this problem, extensive research across various websites and applications is being conducted to document the prevalence of dark patterns and come up with solutions.",
+        "In addition to research, governments are actively discussing how to regulate these deceptive design patterns.",
+        "The EU’s Digital Service Act, which banned dark patterns on online platforms in 2022, is a good example of such regulation in this area.",
+        "Such regulations are expected to increase, limiting companies’ deceptive marketing practices in the digital market.",
+        "However, regulations alone may not be sufficient.",
+        "As individuals, we should take steps to combat dark patterns and be responsible for our online shopping behavior.",
+        "This includes being cautious while making purchases, reading terms and conditions carefully, and recognizing that companies’ interests may not be the same as our own.",
+        "Developing an awareness of dark patterns is also essential to avoid potential harm and economic loss.",
+        "Ultimately, our attention and efforts will protect us from manipulation and enable us to make wise decisions in this digital age."
+      ],
+      "koreanText": [
+        "반면, 다크 패턴은 고객들이 그들의 의도에 반하여 행동하도록 조종할 뿐만 아니라, 경제적 손실과 개인 정보 유출로 이어질 수도 있다.",
+        "이 문제를 다루기 위해, 다양한 웹사이트와 애플리케이션에서의 광범위한 연구가 다크 패턴의 확산을 기록하고 해결책을 고안하기 위해 진행되고 있다.",
+        "연구뿐만 아니라, 정부들은 이러한 기만적인 디자인 패턴을 규제하는 방법에 대해 적극적으로 논의하고 있다.",
+        "2022년에 온라인 플랫폼에서 다크 패턴을 금지한 EU의 Digital Service Act(디지털 서비스법)는 이 분야에서의 그러한 규제의 좋은 예이다.",
+        "이러한 규제는 디지털 시장에서 기업들의 기만적인 마케팅 관행을 제한하며 증가할 것으로 기대된다.",
+        "그러나 규제만으로는 충분하지 않을 수 있다.",
+        "개인으로서, 우리는 다크 패턴과 싸우기 위해 조치를 취하고 우리의 온라인 쇼핑 행동에 책임을 져야 한다.",
+        "이는 구매 시 주의를 기울이고, 약관을 주의 깊게 읽으며, 기업의 이익이 우리의 이익과 같지 않을 수 있다는 사실을 인식하는 것을 포함한다.",
+        "다크 패턴에 대한 인식을 발달시키는 것도 잠재적인 피해와 경제적 손실을 피하기 위해 필수적이다.",
+        "궁극적으로, 우리의 주의와 노력은 우리를 조작으로부터 보호하고 이 디지털 시대에 우리가 현명한 결정을 내릴 수 있게 할 것이다."
+      ]
+    }
+  ]
+}

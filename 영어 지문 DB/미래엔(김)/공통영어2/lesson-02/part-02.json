@@ -1,0 +1,32 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 2,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l02-p02-001",
+      "title": "Hidden Fees and Confirm-Shaming",
+      "text": [
+        "Another common type of dark pattern is known as “hidden fees.”",
+        "This design suddenly adds extra fees at the last step of the ordering process.",
+        "On the final page, consumers are surprised to discover additional charges, such as shipping or processing fees, which the seller has added to increase the final cost of the order.",
+        "“Confirm-shaming” is another online trick that users should be aware of.",
+        "This technique manipulates users into feeling ashamed for cancelling their membership or requesting a refund for an order.",
+        "Companies use this to keep their members subscribed, even if it goes against the members’ intentions.",
+        "For example, when users want to cancel their subscription, they are offered two options: “I want to keep my benefits” and “I want to give up my benefits.”",
+        "The first option is presented in an appealing way, while the second option seems like a bad choice."
+      ],
+      "koreanText": [
+        "또 다른 흔한 다크 패턴 유형은 ‘숨겨진 비용’으로 알려져 있다.",
+        "이 디자인은 주문 과정의 마지막 단계에서 갑자기 추가 요금을 부과한다.",
+        "최종 페이지에서, 소비자들은 배송료나 처리 비용과 같이 판매자가 주문의 최종 금액을 증가시키기 위해 추가한 추가 요금을 발견하여 놀라게 된다.",
+        "‘수치심 유발 선택 강요’는 사용자가 알아야 할 또 다른 온라인 속임수이다.",
+        "이 기법은 사용자가 회원권을 취소하거나 주문에 대한 환불을 요청하는 것을 부끄럽다고 느끼도록 조종한다.",
+        "기업들은 회원들의 의도와 다를지라도 회원들을 구독된 상태로 유지시키기 위해 이를 사용한다.",
+        "예를 들어, 사용자가 구독을 취소하고 싶을 때 “나는 내 혜택을 유지하고 싶다”와 “나는 내 혜택을 포기하고 싶다”라는 두 가지 옵션이 제공된다.",
+        "첫 번째 옵션은 매력적인 방식으로 제시되지만, 두 번째 옵션은 나쁜 선택처럼 보인다."
+      ]
+    }
+  ]
+}

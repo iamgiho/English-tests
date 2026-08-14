@@ -1,0 +1,28 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 3,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l02-p03-001",
+      "title": "The Growth of Dark Patterns",
+      "text": [
+        "Dark patterns on digital platforms are becoming more complex and more prevalent.",
+        "So, what is driving their growth?",
+        "Over the years, online commerce has grown steadily, especially with the development of smart phones and other digital technologies.",
+        "As the competition in online markets has intensified, companies have begun to develop sneakier strategies to trick people into making purchases.",
+        "While these companies insist that they are simply using new types of marketing strategies, critics do not agree that dark patterns are valid marketing strategies.",
+        "Rather, they suggest that a real marketing strategy create value for both companies and customers, promoting positive and supportive relationships."
+      ],
+      "koreanText": [
+        "디지털 플랫폼에서의 다크 패턴이 더 복잡해지고 더 널리 퍼지고 있다.",
+        "그렇다면, 무엇이 그 성장을 추진하고 있는가?",
+        "지난 몇 년 동안, 온라인 상업은 특히 스마트폰과 다른 디지털 기술의 발전과 함께 꾸준히 성장해 왔다.",
+        "온라인 시장의 경쟁이 심해짐에 따라, 기업들은 사람들을 속여서 구매하게 하는 더 교활한 전략을 개발하기 시작했다.",
+        "이런 기업들은 그저 자신들이 새로운 유형의 마케팅 전략을 사용하고 있다고 주장하지만, 비평가들은 다크 패턴이 유효한 마케팅 전략이라는 데 동의하지 않는다.",
+        "오히려, 그들은 진정한 마케팅 전략은 기업과 고객 양측에 가치를 창출하고, 긍정적이고 지지적인 관계를 촉진해야 한다고 제안한다."
+      ]
+    }
+  ]
+}

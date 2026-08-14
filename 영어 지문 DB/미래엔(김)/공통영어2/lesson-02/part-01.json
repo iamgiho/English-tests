@@ -1,0 +1,161 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 1,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l02-p01-001",
+      "title": "Dark Patterns",
+      "text": [
+        "Have you ever bought something online after seeing a message such as “Hurry! One item left!” even though you didn’t intend to buy it?",
+        "Or have you ever felt rushed into making a purchase because of a limited-time offer?",
+        "If you have, then you may have fallen prey to a dark pattern.",
+        "Dark patterns are manipulative designs on websites and applications that trick users into making unintended decisions.",
+        "These deceptive practices often have consequences that cause financial damages to the users.",
+        "A widely used dark pattern is the practice of “forced continuity,” which requires users to pay a membership fee after a free trial ends.",
+        "Companies deliberately avoid informing users about the end of the free trial period or make the cancellation process complicated.",
+        "As a result, users have to pay membership fees even if they no longer want to use the service."
+      ],
+      "koreanText": [
+        "‘서두르세요! 마지막 한 개 남았어요!’와 같은 메시지를 본 후 사려고 의도하지 않았음에도 불구하고 온라인에서 무언가를 구매한 적이 있는가?",
+        "또는 기간 한정 특가 때문에 급하게 구매하게 되었다고 느낀 적이 있는가?",
+        "만약 그렇다면, 당신은 다크 패턴의 희생물이 되었을 수도 있다.",
+        "다크 패턴은 사용자들을 속여 의도하지 않은 결정을 하게 만드는 웹사이트와 애플리케이션상의 교묘하게 (사용자들을) 조종하는 디자인이다.",
+        "이러한 기만적인 관행은 종종 사용자들에게 재정적 손해를 초래하는 결과를 낳는다.",
+        "널리 사용되는 다크 패턴에는 ‘강제 연속 결제’라는 관행이 있고, 이것은 무료 체험이 끝난 후 사용자들에게 회원비를 지불하라고 요구한다.",
+        "기업들은 고의로 사용자들에게 무료 체험 기간의 종료에 대해 알리는 것을 피하거나 취소 절차를 복잡하게 만든다.",
+        "그 결과, 사용자들은 더 이상 서비스를 이용하고 싶지 않더라도 회원비를 지불해야 한다."
+      ],
+      "keyExpressions": [
+        "intend to",
+        "feel rushed into",
+        "make a purchase",
+        "limited-time offer",
+        "fall prey to",
+        "dark pattern",
+        "manipulative",
+        "trick users into",
+        "unintended",
+        "deceptive practices",
+        "have consequences",
+        "financial damages",
+        "widely used",
+        "forced continuity",
+        "require users to",
+        "membership fee",
+        "free trial",
+        "deliberately",
+        "avoid informing",
+        "trial period",
+        "cancellation process",
+        "complicated",
+        "as a result",
+        "even if",
+        "no longer"
+      ],
+      "keyExpressionTranslations": [
+        {
+          "expression": "intend to",
+          "translation": "~하려고 의도하다"
+        },
+        {
+          "expression": "feel rushed into",
+          "translation": "급하게 ~하게 되었다고 느끼다"
+        },
+        {
+          "expression": "make a purchase",
+          "translation": "구매하다"
+        },
+        {
+          "expression": "limited-time offer",
+          "translation": "기간 한정 특가"
+        },
+        {
+          "expression": "fall prey to",
+          "translation": "~의 희생물이 되다"
+        },
+        {
+          "expression": "dark pattern",
+          "translation": "다크 패턴"
+        },
+        {
+          "expression": "manipulative",
+          "translation": "교묘하게 조종하는"
+        },
+        {
+          "expression": "trick users into",
+          "translation": "사용자들을 속여 ~하게 하다"
+        },
+        {
+          "expression": "unintended",
+          "translation": "의도하지 않은"
+        },
+        {
+          "expression": "deceptive practices",
+          "translation": "기만적인 관행"
+        },
+        {
+          "expression": "have consequences",
+          "translation": "결과를 낳다"
+        },
+        {
+          "expression": "financial damages",
+          "translation": "재정적 손해"
+        },
+        {
+          "expression": "widely used",
+          "translation": "널리 사용되는"
+        },
+        {
+          "expression": "forced continuity",
+          "translation": "강제 연속 결제"
+        },
+        {
+          "expression": "require users to",
+          "translation": "사용자들에게 ~하라고 요구하다"
+        },
+        {
+          "expression": "membership fee",
+          "translation": "회원비"
+        },
+        {
+          "expression": "free trial",
+          "translation": "무료 체험"
+        },
+        {
+          "expression": "deliberately",
+          "translation": "고의로"
+        },
+        {
+          "expression": "avoid informing",
+          "translation": "알리는 것을 피하다"
+        },
+        {
+          "expression": "trial period",
+          "translation": "체험 기간"
+        },
+        {
+          "expression": "cancellation process",
+          "translation": "취소 절차"
+        },
+        {
+          "expression": "complicated",
+          "translation": "복잡한"
+        },
+        {
+          "expression": "as a result",
+          "translation": "그 결과"
+        },
+        {
+          "expression": "even if",
+          "translation": "비록 ~일지라도"
+        },
+        {
+          "expression": "no longer",
+          "translation": "더 이상 ~않는"
+        }
+      ]
+    }
+  ]
+}

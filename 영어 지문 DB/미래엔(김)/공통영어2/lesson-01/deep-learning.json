@@ -1,11 +1,11 @@
 {
-  "publisher": "능률(김)",
-  "book": "영어2",
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
   "lesson": 1,
   "section": "딥러닝",
   "passages": [
     {
-      "id": "neungyul-kim-english2-l01-deep-learning-001",
+      "id": "miraen-kim-common-english2-l01-deep-learning-001",
       "title": "Bears and Bile Farming",
       "text": [
         "Bears are a fascinating group of animals with eight species, all living in very different habitats around the world.",
