@@ -1,0 +1,225 @@
+1
+air conditioner
+n. 에어컨
+2
+right away
+즉시, 곧바로
+3
+single-use
+a. 일회용의
+4
+forget
+v. ~을 잊다
+5
+turn ~ off
+~을 끄다, 잠그다
+6
+forgetful
+a. 잘 잊는
+7
+carry
+v. 운반하다
+8
+else
+adv. 다른, 그 밖의
+9
+favor
+n. 부탁, 청, 호의
+10
+fix
+v. 고치다, 수선하다
+11
+plog
+v. 플로깅하다
+12
+member
+n. 회원, 구성원
+13
+mean
+v. 의미하다
+14
+pick ~ up
+~을 줍다, ~을 찾아오다
+15
+at the same time
+동시에
+16
+interested
+a. 관심이 있는, 흥미를 가진
+17
+by the way
+그런데
+18
+zero
+a. 0의, 제로의
+19
+waste
+n. 쓰레기
+20
+earth
+n. 지구
+21
+challenge
+n. 도전
+22
+produce
+v. 생산하다
+23
+lots of
+많은
+24
+sick
+a. 아픈, 병든
+25
+save
+v. 구하다
+26
+join
+v. 참여하다
+27
+share
+v. 공유하다
+28
+story
+n. 이야기
+29
+reduce
+v. 줄이다
+30
+birthday
+n. 생일
+31
+eat out
+외식하다
+32
+leftover
+n. 남은 음식
+33
+bring
+v. 가져오다
+34
+out of ~
+~로, ~를 이용해서
+35
+make A out of B
+B로 A를 만들다
+36
+find
+v. 찾다
+37
+on the Internet
+인터넷으로
+38
+FYI (For Your Information)
+참고로
+39
+reuse
+v. 재사용하다
+40
+tear
+v. 찢다
+41
+think
+v. 생각하다
+42
+learn
+v. 배우다
+43
+important
+a. 중요한
+44
+living
+n. 생활
+45
+decide
+v. 결심하다, 결정하다
+46
+be good at ~
+~을 잘하다
+47
+sew
+v. 바느질하다
+48
+look
+v. ~처럼 보이다
+49
+perfect
+a. 완벽한
+50
+guess
+v. 추측하다
+51
+right
+a. 괜찮은, 좋은
+52
+plastic
+n. 플라스틱
+53
+often
+adv. 종종
+54
+delivery
+n. 배달
+55
+instead
+adv. 대신에
+56
+favorite
+a. 가장 좋아하는
+57
+restaurant
+n. 식당, 레스토랑
+58
+reusable
+a. 재사용할 수 있는
+59
+container
+n. 용기, 그릇
+60
+hear
+v. ~라는 것을 듣다
+61
+never
+adv. 결코[한 번도] ~않다
+62
+go away
+없어지다
+63
+completely
+adv. 완전히
+64
+feel
+v. ~한 기분이 들다
+65
+recycle
+v. 재활용하다
+66
+take A to B
+A를 B로 데려가다
+67
+glass
+n. 유리
+68
+bottle
+n. 병
+69
+machine
+n. 기계
+70
+near
+prep. ~ 근처에, ~ 가까이에
+71
+put A into B
+A를 B에 넣다
+72
+one by one
+하나씩, 차례로
+73
+in return
+대가로, 답례로
+74
+like
+prep. ~처럼, ~와 같이
+75
+cool
+a. 멋있는

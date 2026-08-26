@@ -1,0 +1,56 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어2",
+  "lesson": 5,
+  "part": 2,
+  "passages": [
+    {
+      "id": "chunjae-lee-english2-l05-p02-001",
+      "title": "Ms. Jones Begins the Investigation",
+      "text": [
+        "Mom called Ms. Jones to find the person who ate the cake.",
+        "Ms. Jones was a wise old lady who lived next door.",
+        "Everyone in town came to her when they were in trouble.",
+        "Ms. Jones came with her sweet smile.",
+        "“Don’t worry! Let’s find out the big eater!”",
+        "She asked Mom, “Who was in the house this morning?”",
+        "“My children, Harry, Carol, and Tom.”"
+      ],
+      "koreanText": [
+        "엄마는 케이크를 먹은 사람을 찾기 위해 Ms. Jones에게 전화했다.",
+        "Ms. Jones는 옆집에 사는 현명한 노부인이었다.",
+        "마을에 있는 모든 사람은 그들이 곤경에 처했을 때 그녀에게 왔다.",
+        "Ms. Jones는 다정한 미소를 지으며 왔다.",
+        "“걱정 마세요! 대식가를 알아냅시다!”",
+        "그녀는 엄마에게 물었다, “누가 오늘 아침에 집에 있었죠?”",
+        "“우리 아이들, Harry, Carol, 그리고 Tom이요.”"
+      ],
+      "keyExpressions": [
+        "called",
+        "find the person",
+        "wise old lady",
+        "next door",
+        "in town",
+        "in trouble",
+        "sweet smile",
+        "Don’t worry",
+        "find out",
+        "big eater",
+        "this morning"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "called", "translation": "전화했다" },
+        { "expression": "find the person", "translation": "그 사람을 찾다" },
+        { "expression": "wise old lady", "translation": "현명한 노부인" },
+        { "expression": "next door", "translation": "옆집에" },
+        { "expression": "in town", "translation": "마을에 있는" },
+        { "expression": "in trouble", "translation": "곤경에 처한" },
+        { "expression": "sweet smile", "translation": "다정한 미소" },
+        { "expression": "Don’t worry", "translation": "걱정 마세요" },
+        { "expression": "find out", "translation": "알아내다" },
+        { "expression": "big eater", "translation": "대식가" },
+        { "expression": "this morning", "translation": "오늘 아침" }
+      ]
+    }
+  ]
+}

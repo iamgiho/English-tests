@@ -1,0 +1,68 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 8,
+  "part": 1,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l08-p01-001",
+      "title": "Goldilocks Wants More Likes",
+      "text": [
+        "There was a little girl with golden hair in a small town.",
+        "Her name was Goldilocks.",
+        "She liked to share photos on social media.",
+        "At first, she posted everyday things, but people didn’t give her many likes.",
+        "“What should I do to get more likes?” she thought.",
+        "“I know! I should post funny pictures.”",
+        "Now, her posts were getting a lot of likes, and Goldilocks was happy.",
+        "Her followers, however, soon got bored.",
+        "So, she decided to post more shocking pictures."
+      ],
+      "koreanText": [
+        "작은 마을에 금발의 어린 소녀가 있었다.",
+        "그녀의 이름은 Goldilocks였다.",
+        "그녀는 소셜 미디어에 사진을 공유하는 것을 좋아했다.",
+        "처음에, 그녀는 일상적인 것들을 올렸지만, 사람들은 그녀에게 ‘좋아요’를 많이 주지 않았다.",
+        "“어떻게 하면 더 많은 ‘좋아요’를 받을 수 있지?” 그녀는 생각했다.",
+        "“알았다! 웃긴 사진들을 올려야겠어.”",
+        "이제, 그녀의 게시물은 많은 ‘좋아요’를 받고 있었고, Goldilocks는 행복했다.",
+        "하지만, 그녀의 팔로워들은 곧 지루해졌다.",
+        "그래서, 그녀는 더 충격적인 사진들을 올리기로 결심했다."
+      ],
+      "keyExpressions": [
+        "little girl",
+        "golden hair",
+        "small town",
+        "share photos",
+        "social media",
+        "At first",
+        "posted",
+        "everyday things",
+        "likes",
+        "funny pictures",
+        "followers",
+        "however",
+        "got bored",
+        "decided to",
+        "shocking pictures"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "little girl", "translation": "어린 소녀" },
+        { "expression": "golden hair", "translation": "금발" },
+        { "expression": "small town", "translation": "작은 마을" },
+        { "expression": "share photos", "translation": "사진을 공유하다" },
+        { "expression": "social media", "translation": "소셜 미디어" },
+        { "expression": "At first", "translation": "처음에" },
+        { "expression": "posted", "translation": "올렸다" },
+        { "expression": "everyday things", "translation": "일상적인 것들" },
+        { "expression": "likes", "translation": "좋아요" },
+        { "expression": "funny pictures", "translation": "웃긴 사진들" },
+        { "expression": "followers", "translation": "팔로워들" },
+        { "expression": "however", "translation": "하지만" },
+        { "expression": "got bored", "translation": "지루해졌다" },
+        { "expression": "decided to", "translation": "~하기로 결심했다" },
+        { "expression": "shocking pictures", "translation": "충격적인 사진들" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,159 @@
+1
+think
+v. 생각하다
+2
+painting
+n. 그림
+3
+peaceful
+a. 평화로운
+4
+artist
+n. 화가, 예술가
+5
+nature
+n. 자연
+6
+cute
+a. 귀여운
+7
+scary
+a. 무서운
+8
+even
+adv. ~조차
+9
+smile
+n. 미소
+10
+friendly
+a. 상냥한, 친근한
+11
+design
+n. 디자인
+12
+unique
+a. 독특한
+13
+price
+n. 가격
+14
+expensive
+a. 비싼
+15
+exhibition
+n. 전시회
+16
+poster
+n. 포스터
+17
+beautiful
+a. 아름다운
+18
+starry
+a. 별이 많은
+19
+amazing
+a. 놀라운
+20
+museum
+n. 박물관
+21
+learn
+v. 배우다
+22
+together
+adv. 함께
+23
+end
+v. 끝나다
+24
+sound
+v. ~처럼 들리다
+25
+great
+a. 굉장한, 멋진
+26
+husband
+n. 남편
+27
+gallery
+n. 미술관
+28
+strange
+a. 이상한
+29
+color
+v. 색칠하다, 채색하다; n. 색(깔)
+30
+worry
+v. 걱정하다
+31
+actually
+adv. 실제로
+32
+express
+v. 나타내다, 표현하다
+33
+emotion
+n. 감정, 정서
+34
+bright
+a. 밝은
+35
+wild
+a. 거친, 대담한
+36
+style
+n. 스타일, 양식
+37
+beast
+n. 야수, 짐승
+38
+nickname
+n. 별명, 애칭
+39
+keep
+v. 유지하다
+40
+own
+a. 자신만의
+41
+finally
+adv. 마침내, 결국
+42
+famous
+a. 유명한
+43
+find
+v. 찾다, 발견하다
+44
+picture
+n. 그림
+45
+shape
+n. 형태, 모양
+46
+trace
+v. 따라가다
+47
+finger
+n. 손가락
+48
+snail
+n. 달팽이
+49
+shell
+n. 껍데기, 껍질
+50
+create
+v. 창조하다
+51
+way
+n. 방법
+52
+artwork
+n. 예술 작품
+53
+explore
+v. 탐험하다

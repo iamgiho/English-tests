@@ -1,0 +1,168 @@
+1
+order
+v. 주문하다; n. 주문
+2
+salad
+n. 샐러드
+3
+curry
+n. 카레
+4
+beef
+n. 소고기
+5
+carrot
+n. 당근
+6
+something
+pron. 무엇, 어떤 것
+7
+drink
+v. 마시다
+8
+decide
+v. 결정하다
+9
+dish
+n. 요리
+10
+various
+a. 다양한
+11
+vegetable
+n. 야채, 채소
+12
+barbecue
+n. 바비큐
+13
+spicy
+a. 매운
+14
+try
+v. 먹어 보다
+15
+shell
+n. 껍데기
+16
+crab
+n. 게
+17
+daisy
+n. 데이지 꽃
+18
+big
+a. 큰
+19
+olive
+n. 올리브
+20
+small
+a. 작은
+21
+avocado
+n. 아보카도
+22
+answer
+n. 해답
+23
+different
+a. 다른, 다양한
+24
+favorite
+a. 가장 좋아하는
+25
+popular
+a. 인기 있는
+26
+easily
+adv. 쉽게, 수월하게
+27
+beat
+v. (달걀, 크림 등을) 휘젓다
+28
+fry
+v. (기름에) ~을 튀기다
+29
+oil
+n. 기름
+30
+delicious
+a. 아주 맛있는
+31
+cheese
+n. 치즈
+32
+meat
+n. 고기
+33
+taste
+v. ~한 맛이 나다
+34
+interesting
+a. 재미있는, 흥미로운
+35
+army
+n. 군대
+36
+stay
+v. 머무르다, 지내다
+37
+near
+prep. ~ 근처에
+38
+town
+n. 마을, 소도시
+39
+enjoy
+v. 즐기다
+40
+giant
+a. 거대한
+41
+festival
+n. 축제
+42
+own
+a. 자신의
+43
+recipe
+n. 조리법, 레시피
+44
+Spanish
+a. 스페인의, 스페인식의; n. 스페인어
+45
+mean
+v. 의미하다, 뜻하다
+46
+potato
+n. 감자
+47
+need
+v. 필요하다
+48
+Malaysia
+n. 말레이시아
+49
+wrap
+v. 싸다, 포장하다
+50
+chicken
+n. 닭, 닭고기
+51
+thin
+a. 얇은
+52
+special
+a. 특별한
+53
+Indonesia
+n. 인도네시아
+54
+Singapore
+n. 싱가포르
+55
+feel
+v. ~하게 느끼다
+56
+hungry
+a. 배고픈, 굶주린

@@ -1,0 +1,80 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어1",
+  "lesson": 6,
+  "part": 1,
+  "passages": [
+    {
+      "id": "chunjae-lee-english1-l06-p01-001",
+      "title": "Amélie and Matisse’s Wild Style",
+      "text": [
+        "Hello, everyone.",
+        "My name is Amélie.",
+        "Welcome to my husband’s gallery.",
+        "Look at me.",
+        "Do you think that I’m strange?",
+        "My husband, Henri Matisse, colored my face in green.",
+        "Don’t worry.",
+        "My face isn’t actually green.",
+        "Why did he paint me this way then?",
+        "He wanted to express his emotions with bright and wild colors.",
+        "People didn’t like this painting style at first.",
+        "Some people thought that a beast painted me.",
+        "So, he got the nickname Wild Beast.",
+        "He kept his own style and finally became famous."
+      ],
+      "koreanText": [
+        "안녕하세요, 여러분.",
+        "제 이름은 Amélie입니다.",
+        "제 남편의 미술관에 오신 것을 환영합니다.",
+        "저를 보세요.",
+        "여러분은 제가 이상하다고 생각하세요?",
+        "제 남편, 앙리 마티스가 제 얼굴을 녹색으로 색칠했어요.",
+        "걱정하지 마세요.",
+        "제 얼굴은 실제로 녹색이 아니에요.",
+        "그러면 왜 그는 저를 이런 식으로 칠했을까요?",
+        "그는 밝고 거친 색으로 그의 감정을 표현하기를 원했거든요.",
+        "사람들은 처음에 이 그림 스타일을 좋아하지 않았어요.",
+        "어떤 사람들은 야수가 저를 그렸다고 생각했죠.",
+        "그래서 그는 ‘야수’라는 별명을 얻었어요.",
+        "그는 자신만의 스타일을 지켰고 마침내 유명해졌어요."
+      ],
+      "keyExpressions": [
+        "Welcome to",
+        "gallery",
+        "Look at",
+        "strange",
+        "colored my face in green",
+        "Don’t worry",
+        "actually",
+        "this way",
+        "express his emotions",
+        "bright and wild colors",
+        "painting style",
+        "at first",
+        "beast",
+        "nickname",
+        "kept his own style",
+        "became famous"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "Welcome to", "translation": "~에 오신 것을 환영합니다" },
+        { "expression": "gallery", "translation": "미술관" },
+        { "expression": "Look at", "translation": "~을 보다" },
+        { "expression": "strange", "translation": "이상한" },
+        { "expression": "colored my face in green", "translation": "내 얼굴을 녹색으로 색칠했다" },
+        { "expression": "Don’t worry", "translation": "걱정하지 마세요" },
+        { "expression": "actually", "translation": "실제로" },
+        { "expression": "this way", "translation": "이런 식으로" },
+        { "expression": "express his emotions", "translation": "그의 감정을 표현하다" },
+        { "expression": "bright and wild colors", "translation": "밝고 거친 색" },
+        { "expression": "painting style", "translation": "그림 스타일" },
+        { "expression": "at first", "translation": "처음에" },
+        { "expression": "beast", "translation": "야수" },
+        { "expression": "nickname", "translation": "별명" },
+        { "expression": "kept his own style", "translation": "자신만의 스타일을 지켰다" },
+        { "expression": "became famous", "translation": "유명해졌다" }
+      ]
+    }
+  ]
+}

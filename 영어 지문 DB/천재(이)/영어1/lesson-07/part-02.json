@@ -1,0 +1,72 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 2,
+  "passages": [
+    {
+      "id": "chunjae-lee-english1-l07-p02-001",
+      "title": "A Popular Egg Dish: The Omelet",
+      "text": [
+        "Do you know the answer?",
+        "Yes, it is an egg.",
+        "There are many different egg dishes around the world.",
+        "What is your favorite egg dish?",
+        "How about an omelet?",
+        "The omelet is a popular egg dish.",
+        "You can make it easily.",
+        "You beat some eggs and fry them in oil.",
+        "That is all.",
+        "Do you want a more delicious omelet?",
+        "Just add cheese, vegetables, or meat.",
+        "It will taste better!"
+      ],
+      "koreanText": [
+        "여러분은 정답을 알고 있나요?",
+        "네, 그것은 달걀입니다.",
+        "전 세계에는 많은 다양한 달걀 요리가 있습니다.",
+        "여러분이 가장 좋아하는 달걀 요리는 무엇인가요?",
+        "오믈렛은 어떤가요?",
+        "오믈렛은 인기 있는 달걀 요리입니다.",
+        "여러분은 그것을 쉽게 만들 수 있습니다.",
+        "여러분은 달걀 몇 개를 휘저어 섞고 그것들을 기름에 부칩니다.",
+        "그게 다입니다.",
+        "여러분은 더 맛있는 오믈렛을 원하나요?",
+        "그저 치즈, 채소, 또는 고기를 더해 보세요.",
+        "그것은 더 맛있을 것입니다!"
+      ],
+      "keyExpressions": [
+        "answer",
+        "egg dishes",
+        "around the world",
+        "favorite",
+        "How about",
+        "popular",
+        "easily",
+        "beat some eggs",
+        "fry them in oil",
+        "delicious",
+        "add",
+        "vegetables",
+        "meat",
+        "taste better"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "answer", "translation": "정답" },
+        { "expression": "egg dishes", "translation": "달걀 요리" },
+        { "expression": "around the world", "translation": "전 세계에" },
+        { "expression": "favorite", "translation": "가장 좋아하는" },
+        { "expression": "How about", "translation": "~은 어떤가요" },
+        { "expression": "popular", "translation": "인기 있는" },
+        { "expression": "easily", "translation": "쉽게" },
+        { "expression": "beat some eggs", "translation": "달걀 몇 개를 휘저어 섞다" },
+        { "expression": "fry them in oil", "translation": "그것들을 기름에 부치다" },
+        { "expression": "delicious", "translation": "맛있는" },
+        { "expression": "add", "translation": "더하다" },
+        { "expression": "vegetables", "translation": "채소" },
+        { "expression": "meat", "translation": "고기" },
+        { "expression": "taste better", "translation": "더 맛있다" }
+      ]
+    }
+  ]
+}

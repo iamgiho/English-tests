@@ -1,0 +1,52 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 6,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l07-p06-001",
+      "title": "Chris, the Foley Artist",
+      "text": [
+        "I’m Chris, and I’m a Foley artist.",
+        "I create sound effects in my studio when recording on location is not easy.",
+        "Listen carefully.",
+        "Do you hear the sound of waves?",
+        "I made that sound with rice and a plastic container.",
+        "Doesn’t it sound real?"
+      ],
+      "koreanText": [
+        "나는 Chris이고, 폴리 아티스트예요.",
+        "나는 야외 촬영장에서 녹음하는 게 쉽지 않을 때 내 작업실에서 음향 효과를 만들어요.",
+        "잘 들어 봐요.",
+        "파도 소리가 들리나요?",
+        "나는 쌀과 플라스틱 통으로 그 소리를 만들었어요.",
+        "진짜처럼 들리지 않나요?"
+      ],
+      "keyExpressions": [
+        "Foley artist",
+        "sound effects",
+        "studio",
+        "recording on location",
+        "not easy",
+        "Listen carefully",
+        "sound of waves",
+        "rice",
+        "plastic container",
+        "sound real"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "Foley artist", "translation": "폴리 아티스트" },
+        { "expression": "sound effects", "translation": "음향 효과" },
+        { "expression": "studio", "translation": "작업실" },
+        { "expression": "recording on location", "translation": "야외 촬영장에서 녹음하는 것" },
+        { "expression": "not easy", "translation": "쉽지 않은" },
+        { "expression": "Listen carefully", "translation": "잘 들어 보다" },
+        { "expression": "sound of waves", "translation": "파도 소리" },
+        { "expression": "rice", "translation": "쌀" },
+        { "expression": "plastic container", "translation": "플라스틱 통" },
+        { "expression": "sound real", "translation": "진짜처럼 들리다" }
+      ]
+    }
+  ]
+}

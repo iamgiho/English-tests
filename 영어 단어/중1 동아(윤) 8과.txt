@@ -1,0 +1,264 @@
+1
+agree
+v. 동의하다
+2
+boring
+a. 지루한
+3
+actor
+n. 배우
+4
+famous
+a. 유명한
+5
+pretty
+adv. 꽤, 매우
+6
+salty
+a. (음식이) 짠
+7
+work
+v. 작동하다, 일하다
+8
+light
+a. 가벼운
+9
+over there
+저쪽에
+10
+helpful
+a. 도움이 되는
+11
+perfect
+a. 완벽한
+12
+like
+prep. ~같은, ~처럼
+13
+black hole
+n. 블랙홀
+14
+difficult
+a. 어려운
+15
+interesting
+a. 흥미로운, 재미있는
+16
+be interested in ~
+~에 흥미가 있다
+17
+thick
+a. 두꺼운
+18
+heavy
+a. 무거운
+19
+cheap
+a. 싼, 저렴한
+20
+lesson
+n. 교훈
+21
+little
+a. 어린
+22
+golden
+a. 황금빛의
+23
+town
+n. 소도시, 마을
+24
+share
+v. 공유하다, 함께 쓰다
+25
+social media
+n. 소셜 미디어
+26
+at first
+처음에는
+27
+post
+v. ~을 게시하다; n. 게시물, 게시글
+28
+everyday
+a. 일상적인, 매일의
+29
+should
+aux. ~해야 한다
+30
+funny
+a. 웃긴, 재미있는
+31
+picture
+n. 사진
+32
+a lot of
+많은
+33
+follower
+n. 추종자, 팬
+34
+however
+adv. 하지만, 그러나
+35
+soon
+adv. 곧, 머지않아
+36
+bored
+a. 지루해하는
+37
+shocking
+a. 충격적인
+38
+one day
+(미래나 과거의) 언젠가, 어느 날
+39
+take a walk
+산책하다
+40
+forest
+n. 숲
+41
+find
+v. 발견하다, 찾다
+42
+cottage
+n. 오두막집
+43
+knock
+v. (문 등을) 두드리다, 노크하다
+44
+answer
+n. 답, 대답
+45
+dark
+a. 어두운
+46
+inside
+adv. 안으로, 안에
+47
+bowl
+n. 그릇
+48
+selfie
+n. 셀피(스마트폰 등으로 찍은 자신의 사진)
+49
+with a smile
+미소를 띠고, 미소를 지으며
+50
+again and again
+몇 번이고, 되풀이해서
+51
+break
+v. 고장나다, 부서지다; ~을 부수다, 깨다
+52
+care
+v. 신경 쓰다, 마음 쓰다
+53
+shout
+v. 소리 지르다, 외치다
+54
+upstairs
+adv. 2층에, 위층으로
+55
+tired
+a. 피곤한
+56
+fall asleep
+잠들다
+57
+asleep
+a. 잠이 든, 자고 있는
+58
+about
+adv. 약, 대략; prep. ~에 대하여
+59
+later
+adv. 후에, 나중에
+60
+home
+adv. 집으로; n. 집
+61
+someone
+pron. 누군가
+62
+cry
+v. 외치다
+63
+next to ~
+~ 옆에
+64
+terrible
+a. 끔찍한
+65
+angrily
+adv. 화가 나서
+66
+jump up
+벌떡 일어나다, 뛰어오르다
+67
+in surprise
+놀라서
+68
+break into ~
+~에 침입하다
+69
+permission
+n. 허락
+70
+wrong
+a. 잘못된
+71
+forgive
+v. 용서하다
+72
+every day
+매일
+73
+end
+n. 끝, 마지막
+74
+until
+prep. ~까지
+75
+hard
+adv. 열심히
+76
+last
+a. 마지막의
+77
+delete
+v. 삭제하다
+78
+worry
+v. 걱정하다
+79
+still
+adv. 아직, 여전히
+80
+understand
+v. 이해하다
+81
+other
+a. 다른
+82
+already
+adv. 이미, 벌써
+83
+live on
+계속 살다, 오래 남다
+84
+forever
+adv. 영원히
+85
+from now on
+이제부터
+86
+think twice
+다시 생각하다
+87
+before
+conj. ~하기 전에
+88
+press
+v. 누르다

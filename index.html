@@ -621,7 +621,8 @@
 
     <nav class="tabs" aria-label="기능 선택">
       <button class="tab-btn active" data-tab="adminTab">관리자</button>
-      <button class="tab-btn" data-tab="wordTab">단어 시험</button>
+      <button class="tab-btn" data-tab="wordTab">Word Test</button>
+      <button class="tab-btn" data-tab="wordPracticeTab">Word Practice</button>
       <button class="tab-btn" data-tab="passageTab">순서 맞추기</button>
       <button class="tab-btn" data-tab="writingTab">Writing Test</button>
       <button class="tab-btn" data-tab="writingPracticeTab">Writing Practice</button>
@@ -830,6 +831,71 @@
       </section>
     </div>
 
+    <div class="tab-panel" id="wordPracticeTab">
+      <div class="grid">
+        <section>
+          <div class="section-head">
+            <h2>Word Practice 설정</h2>
+            <span class="pill" id="wordPracticeProgress">0 / 0</span>
+          </div>
+          <div class="body">
+            <div class="field-row">
+              <div class="field">
+                <label for="wordPracticeName">이름 또는 닉네임</label>
+                <input id="wordPracticeName" placeholder="예: 김민준">
+              </div>
+              <div class="field">
+                <label for="wordPracticeBookSelect">단어장</label>
+                <select id="wordPracticeBookSelect"></select>
+              </div>
+            </div>
+            <div class="notice" id="wordPracticeBookPath">GitHub / English-tests / 영어 단어</div>
+            <div class="field-row" style="margin-top: 12px;">
+              <div class="field">
+                <label for="wordPracticeStart">시작 단어 번호</label>
+                <input id="wordPracticeStart" type="number" min="1" step="1">
+              </div>
+              <div class="field">
+                <label for="wordPracticeEnd">끝 단어 번호</label>
+                <input id="wordPracticeEnd" type="number" min="1" step="1">
+              </div>
+            </div>
+            <div class="toolbar">
+              <button id="startWordPracticeBtn">연습 시작</button>
+              <button class="secondary" id="resetWordPracticeBtn">처음으로</button>
+            </div>
+            <div class="notice" id="wordPracticeNotice">단어장을 선택하면 사용할 수 있는 번호 범위를 알려드립니다.</div>
+          </div>
+        </section>
+
+        <section>
+          <div class="section-head">
+            <h2 id="wordPracticeStageTitle">Word Practice</h2>
+            <span class="pill" id="wordPracticeStage">대기</span>
+          </div>
+          <div class="body">
+            <div class="question" id="wordPracticeQuestion">
+              <h3>단어 연습을 시작하세요.</h3>
+              <p class="question-main">Ready</p>
+              <p class="question-sub">세 번의 단계적 노출 후 철자와 뜻을 능동적으로 떠올립니다.</p>
+            </div>
+            <div class="toolbar hidden" id="wordPracticeSoundBox">
+              <button class="sound-button" id="playWordPracticeBtn" type="button" aria-label="단어 듣기">🔊</button>
+              <span class="pill" id="wordPracticeReplayCount">음성 0 / 3</span>
+            </div>
+            <div class="toolbar hidden" id="wordPracticeAnswerBox">
+              <input id="wordPracticeAnswer" autocomplete="off" placeholder="정답 입력">
+            </div>
+            <div class="toolbar">
+              <button class="secondary hidden" id="revealWordPracticeBtn">가린 부분 보기</button>
+              <button id="nextWordPracticeBtn" disabled>다음</button>
+            </div>
+            <div class="feedback" id="wordPracticeFeedback">아직 진행 중인 연습이 없습니다.</div>
+          </div>
+        </section>
+      </div>
+    </div>
+
     <div class="tab-panel" id="wordTab">
       <div class="grid">
         <section>
@@ -983,14 +1049,60 @@
       { grade: "고1", publisher: "미래엔(김)", book: "공통영어2", lesson: 2, part: 2, path: "영어 지문 DB/미래엔(김)/공통영어2/lesson-02/part-02.json" },
       { grade: "고1", publisher: "미래엔(김)", book: "공통영어2", lesson: 2, part: 3, path: "영어 지문 DB/미래엔(김)/공통영어2/lesson-02/part-03.json" },
       { grade: "고1", publisher: "미래엔(김)", book: "공통영어2", lesson: 2, part: 4, path: "영어 지문 DB/미래엔(김)/공통영어2/lesson-02/part-04.json" },
-      { grade: "고1", publisher: "미래엔(김)", book: "공통영어2", lesson: 2, section: "딥러닝", path: "영어 지문 DB/미래엔(김)/공통영어2/lesson-02/deep-learning.json" }
+      { grade: "고1", publisher: "미래엔(김)", book: "공통영어2", lesson: 2, section: "딥러닝", path: "영어 지문 DB/미래엔(김)/공통영어2/lesson-02/deep-learning.json" },
+      { grade: "중2", publisher: "천재(이)", book: "영어2", lesson: 5, part: 1, path: "영어 지문 DB/천재(이)/영어2/lesson-05/part-01.json" },
+      { grade: "중2", publisher: "천재(이)", book: "영어2", lesson: 5, part: 2, path: "영어 지문 DB/천재(이)/영어2/lesson-05/part-02.json" },
+      { grade: "중2", publisher: "천재(이)", book: "영어2", lesson: 5, part: 3, path: "영어 지문 DB/천재(이)/영어2/lesson-05/part-03.json" },
+      { grade: "중2", publisher: "천재(이)", book: "영어2", lesson: 5, part: 4, path: "영어 지문 DB/천재(이)/영어2/lesson-05/part-04.json" },
+      { grade: "중2", publisher: "천재(이)", book: "영어2", lesson: 5, part: 5, path: "영어 지문 DB/천재(이)/영어2/lesson-05/part-05.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 5, part: 1, path: "영어 지문 DB/천재(이)/영어1/lesson-05/part-01.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 5, part: 2, path: "영어 지문 DB/천재(이)/영어1/lesson-05/part-02.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 6, part: 1, path: "영어 지문 DB/천재(이)/영어1/lesson-06/part-01.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 6, part: 2, path: "영어 지문 DB/천재(이)/영어1/lesson-06/part-02.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 7, part: 1, path: "영어 지문 DB/천재(이)/영어1/lesson-07/part-01.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 7, part: 2, path: "영어 지문 DB/천재(이)/영어1/lesson-07/part-02.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 7, part: 3, path: "영어 지문 DB/천재(이)/영어1/lesson-07/part-03.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 7, part: 4, path: "영어 지문 DB/천재(이)/영어1/lesson-07/part-04.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 1, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-01.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 2, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-02.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 3, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-03.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 4, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-04.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 5, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-05.json" },
+      { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 6, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-06.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 5, part: 1, path: "영어 지문 DB/동아(윤)/영어1/lesson-05/part-01.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 5, part: 2, path: "영어 지문 DB/동아(윤)/영어1/lesson-05/part-02.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 5, part: 3, path: "영어 지문 DB/동아(윤)/영어1/lesson-05/part-03.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 5, part: 4, path: "영어 지문 DB/동아(윤)/영어1/lesson-05/part-04.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 5, part: 5, path: "영어 지문 DB/동아(윤)/영어1/lesson-05/part-05.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 6, part: 1, path: "영어 지문 DB/동아(윤)/영어1/lesson-06/part-01.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 6, part: 2, path: "영어 지문 DB/동아(윤)/영어1/lesson-06/part-02.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 6, part: 3, path: "영어 지문 DB/동아(윤)/영어1/lesson-06/part-03.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 6, part: 4, path: "영어 지문 DB/동아(윤)/영어1/lesson-06/part-04.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 6, part: 5, path: "영어 지문 DB/동아(윤)/영어1/lesson-06/part-05.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 7, part: 1, path: "영어 지문 DB/동아(윤)/영어1/lesson-07/part-01.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 7, part: 2, path: "영어 지문 DB/동아(윤)/영어1/lesson-07/part-02.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 7, part: 3, path: "영어 지문 DB/동아(윤)/영어1/lesson-07/part-03.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 7, part: 4, path: "영어 지문 DB/동아(윤)/영어1/lesson-07/part-04.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 7, part: 5, path: "영어 지문 DB/동아(윤)/영어1/lesson-07/part-05.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 7, part: 6, path: "영어 지문 DB/동아(윤)/영어1/lesson-07/part-06.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 8, part: 1, path: "영어 지문 DB/동아(윤)/영어1/lesson-08/part-01.json" },
+      { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 8, part: 2, path: "영어 지문 DB/동아(윤)/영어1/lesson-08/part-02.json" }
     ];
 
     const fallbackWordBooks = [
       { category: "영어 단어", title: "0단계 단어", path: "영어 단어/0단계 단어.txt" },
       { category: "영어 단어", title: "1단계 단어", path: "영어 단어/1단계 단어.txt" },
-      { category: "교과서 단어", title: "미래엔(김) 1과", path: "영어 단어/미래엔(김) 1과.txt" },
-      { category: "교과서 단어", title: "미래엔(김) 4과", path: "영어 단어/미래엔(김) 4과.txt" }
+      { category: "교과서 단어", title: "공통영어2 미래엔(김) 1과", path: "영어 단어/공통영어2 미래엔(김) 1과.txt" },
+      { category: "교과서 단어", title: "공통영어2 미래엔(김) 4과", path: "영어 단어/공통영어2 미래엔(김) 4과.txt" },
+      { category: "교과서 단어", title: "중2 천재(이) 5과", path: "영어 단어/중2 천재(이) 5과.txt" },
+      { category: "교과서 단어", title: "중1 천재(이) 5과", path: "영어 단어/중1 천재(이) 5과.txt" },
+      { category: "교과서 단어", title: "중1 천재(이) 6과", path: "영어 단어/중1 천재(이) 6과.txt" },
+      { category: "교과서 단어", title: "중1 천재(이) 7과", path: "영어 단어/중1 천재(이) 7과.txt" },
+      { category: "교과서 단어", title: "중1 천재(이) 8과", path: "영어 단어/중1 천재(이) 8과.txt" },
+      { category: "교과서 단어", title: "중1 동아(윤) 5과", path: "영어 단어/중1 동아(윤) 5과.txt" },
+      { category: "교과서 단어", title: "중1 동아(윤) 6과", path: "영어 단어/중1 동아(윤) 6과.txt" },
+      { category: "교과서 단어", title: "중1 동아(윤) 7과", path: "영어 단어/중1 동아(윤) 7과.txt" },
+      { category: "교과서 단어", title: "중1 동아(윤) 8과", path: "영어 단어/중1 동아(윤) 8과.txt" }
     ];
 
     const $ = (selector) => document.querySelector(selector);
@@ -1003,8 +1115,10 @@
     let currentPassageMeta = null;
     let adminUnlocked = false;
     let wordSession = null;
+    let wordPracticeSession = null;
     let wordBookManifest = [];
     let currentBookWords = [];
+    let currentPracticeWords = [];
     let writingSession = null;
     let writingPracticeSession = null;
     let listeningSession = null;
@@ -1090,7 +1204,7 @@
     }
 
     function switchTab(tabId) {
-      if (!["listeningTab", "listeningPracticeTab"].includes(tabId)) window.speechSynthesis?.cancel();
+      if (!["listeningTab", "listeningPracticeTab", "wordPracticeTab"].includes(tabId)) window.speechSynthesis?.cancel();
       $$(".tab-btn").forEach((button) => button.classList.toggle("active", button.dataset.tab === tabId));
       $$(".tab-panel").forEach((panel) => panel.classList.toggle("active", panel.id === tabId));
     }
@@ -1286,7 +1400,7 @@
             <span><strong>${item.label}</strong> · ${escapeHtml(item.text)}</span>
           </div>
         `).join("")
-        : `<div class="notice" style="margin-top: 0;">위 문장 조각을 올바른 순서대로 클릭하세요.</div>`;
+        : `<div class="notice" style="margin-top: 0;">문장을 순서대로 배열하세요</div>`;
 
       $$('[data-passage-label]').forEach((button) => {
         button.addEventListener("click", () => selectPassageSentence(button.dataset.passageLabel));
@@ -2167,6 +2281,21 @@
         .replace(/\s*([,，/])\s*/g, ",");
     }
 
+    function normalizeAnswerForComparison(value) {
+      return normalizeAnswer(value)
+        .replace(/[~～∼]/gu, "")
+        .replace(/[\p{P}\p{S}]/gu, "")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
+    function stripKoreanPatternMarker(value) {
+      return value.replace(
+        /^(?:\s*(?:(?:[~～∼…⋯]+|\.{2,})\s*)?(?:에\s*대(?:한|해)|을|를|에게|에게서|께|께서|에서|으로|로|에|와|과|의|부터|까지|보다|처럼)\s*)+/u,
+        ""
+      ).trim();
+    }
+
     function acceptedAnswerVariants(answer) {
       const normalized = normalizeAnswer(answer);
       const variants = new Set([normalized]);
@@ -2202,6 +2331,11 @@
       // 괄호 변형 뒤에도 품사 표시를 다시 제거합니다.
       for (const variant of [...variants]) variants.add(stripPartOfSpeech(variant));
 
+      // "~을 닫다", "~에게 알리다" 같은 문형 표지는 생략할 수 있습니다.
+      for (const variant of [...variants]) {
+        variants.add(stripKoreanPatternMarker(stripPartOfSpeech(variant)));
+      }
+
       // Also accept an answer with its final grammatical particle omitted: 성적의 -> 성적.
       for (const variant of [...variants]) {
         variants.add(variant.replace(/(에서|으로|에게|께서|부터|까지|처럼|보다|을|를|이|가|은|는|와|과|의|에|로|도|만)$/u, ""));
@@ -2211,14 +2345,15 @@
     }
 
     function answersMatch(value, answer) {
-      const normalizedValue = normalizeAnswer(value);
+      const normalizedValue = normalizeAnswerForComparison(value);
       const variants = acceptedAnswerVariants(answer);
-      if (variants.has(normalizedValue)) return true;
+      const comparisonVariants = new Set([...variants].map(normalizeAnswerForComparison).filter(Boolean));
+      if (comparisonVariants.has(normalizedValue)) return true;
 
       // Korean short answers accept spacing differences: 다치게 하다 -> 다치게하다.
       if (/[가-힣]/.test(normalizedValue)) {
         const compactValue = normalizedValue.replace(/\s+/g, "");
-        return [...variants].some((variant) =>
+        return [...comparisonVariants].some((variant) =>
           /[가-힣]/.test(variant) && variant.replace(/\s+/g, "") === compactValue
         );
       }
@@ -2248,10 +2383,13 @@
         (groups[category] ||= []).push({ book, index });
         return groups;
       }, {});
-      $("#wordBookSelect").innerHTML = Object.entries(grouped).map(([category, entries]) =>
+      const options = Object.entries(grouped).map(([category, entries]) =>
         `<optgroup label="${escapeHtml(category)}">${entries.map(({ book, index }) => `<option value="${index}">${escapeHtml(book.title)}</option>`).join("")}</optgroup>`
       ).join("");
+      $("#wordBookSelect").innerHTML = options;
+      $("#wordPracticeBookSelect").innerHTML = options;
       await loadSelectedWordBook();
+      await loadSelectedPracticeWordBook();
     }
 
     async function loadSelectedWordBook() {
@@ -2281,6 +2419,292 @@
         currentBookWords = [];
         setMessage($("#wordNotice"), "단어장 파일을 불러오지 못했습니다. 로컬 서버로 실행 중인지 경로를 확인하세요.", "bad");
       }
+    }
+
+    async function loadSelectedPracticeWordBook() {
+      const book = wordBookManifest[Number($("#wordPracticeBookSelect").value)];
+      if (!book) return;
+      $("#wordPracticeBookPath").textContent = ["GitHub", "English-tests", ...book.path.split("/")].join("  /  ");
+      try {
+        const response = await fetch(encodeURI(book.path), { cache: "no-store" });
+        if (!response.ok) throw new Error("word book not found");
+        currentPracticeWords = parseWordBook(await response.text());
+        if (!currentPracticeWords.length) throw new Error("empty word book");
+        const min = currentPracticeWords[0].number;
+        const max = currentPracticeWords[currentPracticeWords.length - 1].number;
+        for (const id of ["#wordPracticeStart", "#wordPracticeEnd"]) {
+          $(id).min = min;
+          $(id).max = max;
+        }
+        $("#wordPracticeStart").value = min;
+        $("#wordPracticeEnd").value = max;
+        setMessage($("#wordPracticeNotice"), `${book.title}: ${currentPracticeWords.length}개 단어, 선택 가능 번호 ${min}~${max}`, "good");
+      } catch {
+        currentPracticeWords = [];
+        $("#wordPracticeStart").value = "";
+        $("#wordPracticeEnd").value = "";
+        setMessage($("#wordPracticeNotice"), "단어장 파일을 불러오지 못했습니다.", "bad");
+      }
+    }
+
+    function speakPracticeWord(countReplay = true) {
+      if (!wordPracticeSession || !("speechSynthesis" in window)) {
+        setMessage($("#wordPracticeFeedback"), "이 브라우저에서는 음성 재생을 지원하지 않습니다.", "bad");
+        return;
+      }
+      const word = wordPracticeSession.queue?.[wordPracticeSession.index] || wordPracticeSession.words[wordPracticeSession.index];
+      if (!word) return;
+      if (countReplay && wordPracticeSession.replays >= wordPracticeSession.replayLimit) {
+        setMessage($("#wordPracticeFeedback"), `음성은 이 문제에서 ${wordPracticeSession.replayLimit}회까지 들을 수 있습니다.`, "bad");
+        return;
+      }
+      if (countReplay) wordPracticeSession.replays += 1;
+      $("#wordPracticeReplayCount").textContent = `음성 ${wordPracticeSession.replays} / ${wordPracticeSession.replayLimit}`;
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(word.en);
+      utterance.lang = "en-US";
+      utterance.rate = 0.82;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function startWordPractice() {
+      const name = $("#wordPracticeName").value.trim();
+      const start = Number($("#wordPracticeStart").value);
+      const end = Number($("#wordPracticeEnd").value);
+      const words = currentPracticeWords.filter((word) => word.number >= start && word.number <= end);
+      if (!name) {
+        setMessage($("#wordPracticeNotice"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        return;
+      }
+      if (!Number.isInteger(start) || !Number.isInteger(end) || start > end) {
+        setMessage($("#wordPracticeNotice"), "시작 번호와 끝 번호를 올바르게 입력하세요.", "bad");
+        return;
+      }
+      if (!words.length) {
+        setMessage($("#wordPracticeNotice"), "입력한 번호 범위에 해당하는 단어가 없습니다.", "bad");
+        return;
+      }
+      wordPracticeSession = {
+        name,
+        words,
+        queue: words,
+        stage: "learn",
+        round: 1,
+        index: 0,
+        replays: 0,
+        replayLimit: 3,
+        soundAttempt: 1,
+        answered: false,
+        correction: false,
+        correct: 0,
+        wrong: [],
+        mastered: new Set()
+      };
+      setMessage($("#wordPracticeNotice"), `${start}~${end}번, ${words.length}개 단어 연습을 시작했습니다.`, "good");
+      renderWordPractice();
+    }
+
+    function practiceMemoryLine(word) {
+      const cleanMeaning = word.ko.replace(/^[a-z]+\.\s*/i, "");
+      return `기억 문장: “${word.en}”은(는) “${cleanMeaning}”이라는 뜻입니다.`;
+    }
+
+    function renderWordPractice() {
+      const session = wordPracticeSession;
+      $("#wordPracticeAnswer").value = "";
+      $("#wordPracticeAnswer").disabled = false;
+      $("#wordPracticeAnswerBox").classList.add("hidden");
+      $("#wordPracticeSoundBox").classList.add("hidden");
+      $("#revealWordPracticeBtn").classList.add("hidden");
+      $("#nextWordPracticeBtn").disabled = false;
+      if (!session) return;
+
+      const word = session.queue[session.index];
+      const total = session.queue.length;
+      $("#wordPracticeProgress").textContent = `${session.index + 1} / ${total}`;
+      session.answered = false;
+      session.correction = false;
+      session.replays = 0;
+
+      if (session.stage === "learn" || session.stage === "relearn") {
+        const round = session.stage === "relearn" ? 1 : session.round;
+        $("#wordPracticeStage").textContent = session.stage === "relearn" ? "오답 재학습" : `1단계 · ${round}회차`;
+        $("#wordPracticeStageTitle").textContent = session.stage === "relearn" ? "틀린 단어 다시 학습" : "1단계: 3회 노출 학습";
+        const main = round === 3 ? word.ko : word.en;
+        const hidden = round === 2 ? "뜻: ▓▓▓▓▓" : round === 3 ? "철자: ▓▓▓▓▓" : word.ko;
+        const memoryLine = round === 1 ? practiceMemoryLine(word) : "가린 답을 먼저 떠올린 뒤 확인하세요.";
+        $("#wordPracticeQuestion").innerHTML = `<h3>${round === 1 ? "보고 들으며 익히세요." : "가린 내용을 먼저 떠올리세요."}</h3><p class="question-main">${escapeHtml(main)}</p><p class="question-sub" id="wordPracticeHiddenText">${escapeHtml(hidden)}</p><p class="question-sub">${escapeHtml(memoryLine)}</p>`;
+        if (round > 1) $("#revealWordPracticeBtn").classList.remove("hidden");
+        if (round === 1) {
+          $("#wordPracticeSoundBox").classList.remove("hidden");
+          session.replayLimit = 3;
+          speakPracticeWord();
+        }
+        setMessage($("#wordPracticeFeedback"), round === 1 ? "단어와 뜻을 함께 보고 소리를 들으세요." : "답을 머릿속으로 떠올린 뒤 가린 부분을 확인하세요.");
+        return;
+      }
+
+      $("#wordPracticeAnswerBox").classList.remove("hidden");
+      $("#nextWordPracticeBtn").disabled = false;
+      if (session.stage === "sound") {
+        $("#wordPracticeStage").textContent = "2단계";
+        $("#wordPracticeStageTitle").textContent = "2단계: 음성 힌트 철자 시험";
+        $("#wordPracticeSoundBox").classList.remove("hidden");
+        session.replayLimit = Math.max(1, 4 - session.soundAttempt);
+        $("#wordPracticeQuestion").innerHTML = `<h3>소리를 듣고 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">틀리면 정답을 보고 한 번 정확히 다시 입력합니다.</p>`;
+        speakPracticeWord();
+      } else if (session.stage === "spell" || session.stage === "spell-retest") {
+        $("#wordPracticeStage").textContent = session.stage === "spell" ? "3단계" : "3단계 · 재시험";
+        $("#wordPracticeStageTitle").textContent = session.stage === "spell" ? "3단계: 뜻만 보고 철자 입력" : "3단계: 오답 단어 재시험";
+        $("#wordPracticeQuestion").innerHTML = `<h3>뜻에 맞는 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">음성 힌트 없이 기억에서 꺼내세요.</p>`;
+      } else if (session.stage === "meaning") {
+        $("#wordPracticeStage").textContent = "4단계";
+        $("#wordPracticeStageTitle").textContent = "4단계: 반대 방향 확인";
+        $("#wordPracticeQuestion").innerHTML = `<h3>영어 단어의 뜻을 한글로 입력하세요.</h3><p class="question-main">${escapeHtml(word.en)}</p><p class="question-sub">주관식으로 답하세요.</p>`;
+      }
+      setMessage($("#wordPracticeFeedback"), "정답을 입력하고 Enter 또는 다음을 누르세요.");
+      setTimeout(() => $("#wordPracticeAnswer").focus(), 0);
+    }
+
+    function revealWordPractice() {
+      if (!wordPracticeSession) return;
+      const session = wordPracticeSession;
+      const word = session.queue[session.index];
+      const round = session.stage === "relearn" ? 1 : session.round;
+      const target = $("#wordPracticeHiddenText");
+      if (target) target.textContent = round === 2 ? `뜻: ${word.ko}` : `철자: ${word.en}`;
+      $("#revealWordPracticeBtn").classList.add("hidden");
+    }
+
+    function beginPracticeQuiz(stage, words) {
+      const session = wordPracticeSession;
+      session.stage = stage;
+      session.queue = shuffle(words);
+      session.index = 0;
+      session.correct = 0;
+      session.wrong = [];
+      renderWordPractice();
+    }
+
+    function submitWordPracticeAnswer() {
+      const session = wordPracticeSession;
+      if (!session || ["learn", "relearn"].includes(session.stage)) return advanceWordPractice();
+      if (session.answered) return advanceWordPractice();
+      const value = $("#wordPracticeAnswer").value.trim();
+      if (!value) return setMessage($("#wordPracticeFeedback"), "정답을 입력하세요.", "bad");
+      const word = session.queue[session.index];
+      const expected = session.stage === "meaning" ? word.ko : word.en;
+      const isCorrect = answersMatch(value, expected);
+
+      if (session.correction) {
+        if (!isCorrect) return setMessage($("#wordPracticeFeedback"), `정답 “${expected}”을 그대로 한 번 입력하세요.`, "bad");
+        session.answered = true;
+        $("#wordPracticeAnswer").disabled = true;
+        setMessage($("#wordPracticeFeedback"), "정답을 다시 정확히 입력했습니다. 다음으로 이동하세요.", "good");
+        return;
+      }
+
+      if (isCorrect) {
+        session.correct += 1;
+        if (["spell", "spell-retest"].includes(session.stage)) session.mastered.add(word.number);
+        session.answered = true;
+        $("#wordPracticeAnswer").disabled = true;
+        setMessage($("#wordPracticeFeedback"), `정답입니다. ${expected}`, "good");
+      } else {
+        session.wrong.push(word);
+        if (session.stage === "sound") {
+          session.correction = true;
+          $("#wordPracticeAnswer").value = "";
+          setMessage($("#wordPracticeFeedback"), `오답입니다. 정답은 “${expected}”입니다. 정답을 한 번 다시 입력하세요.`, "bad");
+        } else {
+          session.answered = true;
+          $("#wordPracticeAnswer").disabled = true;
+          setMessage($("#wordPracticeFeedback"), `오답입니다. 정답: ${expected}`, "bad");
+        }
+      }
+    }
+
+    function advanceWordPractice() {
+      const session = wordPracticeSession;
+      if (!session) return;
+      if (["learn", "relearn"].includes(session.stage)) {
+        session.index += 1;
+        if (session.index < session.queue.length) return renderWordPractice();
+        if (session.stage === "learn" && session.round < 3) {
+          session.round += 1;
+          session.index = 0;
+          session.queue = session.words;
+          return renderWordPractice();
+        }
+        if (session.stage === "learn") return beginPracticeQuiz("sound", session.words);
+        return beginPracticeQuiz("spell-retest", session.queue);
+      }
+      if (!session.answered) return submitWordPracticeAnswer();
+      session.index += 1;
+      if (session.index < session.queue.length) return renderWordPractice();
+      finishPracticeStage();
+    }
+
+    function finishPracticeStage() {
+      const session = wordPracticeSession;
+      if (session.stage === "sound") {
+        const score = Math.round((session.correct / session.queue.length) * 100);
+        if (score < 65) {
+          setMessage($("#wordPracticeFeedback"), `2단계 ${score}%입니다. 65% 이상이 필요해 같은 단계를 다시 연습합니다.`, "bad");
+          session.soundAttempt += 1;
+          return beginPracticeQuiz("sound", session.words);
+        }
+        setMessage($("#wordPracticeFeedback"), `2단계 ${score}%로 통과했습니다.`, "good");
+        session.mastered = new Set();
+        return beginPracticeQuiz("spell", session.words);
+      }
+      if (session.stage === "spell") {
+        const score = Math.round((session.correct / session.words.length) * 100);
+        if (score < 65) {
+          setMessage($("#wordPracticeFeedback"), `3단계 1차 ${score}%입니다. 65% 이상이 필요해 다시 시작합니다.`, "bad");
+          session.mastered = new Set();
+          return beginPracticeQuiz("spell", session.words);
+        }
+        if (!session.wrong.length) return beginPracticeQuiz("meaning", shuffle(session.words).slice(0, Math.min(5, session.words.length)));
+        session.stage = "relearn";
+        session.queue = session.wrong;
+        session.index = 0;
+        return renderWordPractice();
+      }
+      if (session.stage === "spell-retest") {
+        const finalScore = Math.round((session.mastered.size / session.words.length) * 100);
+        const remaining = session.queue.filter((word) => !session.mastered.has(word.number));
+        if (finalScore < 90 && remaining.length) {
+          setMessage($("#wordPracticeFeedback"), `현재 최종 숙달도 ${finalScore}%입니다. 남은 오답만 다시 학습합니다.`, "bad");
+          session.stage = "relearn";
+          session.queue = remaining;
+          session.index = 0;
+          return renderWordPractice();
+        }
+        return beginPracticeQuiz("meaning", shuffle(session.words).slice(0, Math.min(5, session.words.length)));
+      }
+      const score = Math.round((session.correct / session.queue.length) * 100);
+      $("#wordPracticeQuestion").innerHTML = `<h3>Word Practice 완료</h3><p class="question-main">${score}점</p><p class="question-sub">4단계 반대 방향 확인까지 마쳤습니다.</p>`;
+      $("#wordPracticeAnswerBox").classList.add("hidden");
+      $("#wordPracticeSoundBox").classList.add("hidden");
+      $("#nextWordPracticeBtn").disabled = true;
+      $("#wordPracticeProgress").textContent = `${session.queue.length} / ${session.queue.length}`;
+      $("#wordPracticeStage").textContent = "완료";
+      setMessage($("#wordPracticeFeedback"), "모든 연습 단계를 완료했습니다.", "good");
+    }
+
+    function resetWordPractice() {
+      wordPracticeSession = null;
+      window.speechSynthesis?.cancel();
+      $("#wordPracticeQuestion").innerHTML = `<h3>단어 연습을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">세 번의 단계적 노출 후 철자와 뜻을 능동적으로 떠올립니다.</p>`;
+      $("#wordPracticeAnswerBox").classList.add("hidden");
+      $("#wordPracticeSoundBox").classList.add("hidden");
+      $("#revealWordPracticeBtn").classList.add("hidden");
+      $("#nextWordPracticeBtn").disabled = true;
+      $("#wordPracticeProgress").textContent = "0 / 0";
+      $("#wordPracticeStage").textContent = "대기";
+      $("#wordPracticeStageTitle").textContent = "Word Practice";
+      setMessage($("#wordPracticeFeedback"), "아직 진행 중인 연습이 없습니다.");
     }
 
     function buildWordQuestion(word, type, allWords) {
@@ -2606,6 +3030,7 @@
     loadManifest();
     loadWordBookManifest();
     resetWordQuiz();
+    resetWordPractice();
 
     $("#loginBtn").addEventListener("click", login);
     $("#loginPassword").addEventListener("keydown", (event) => {
@@ -2662,6 +3087,15 @@
     $("#nextWordBtn").addEventListener("click", nextWordQuestion);
     $("#shortAnswer").addEventListener("keydown", (event) => {
       if (event.key === "Enter") nextWordQuestion();
+    });
+    $("#wordPracticeBookSelect").addEventListener("change", loadSelectedPracticeWordBook);
+    $("#startWordPracticeBtn").addEventListener("click", startWordPractice);
+    $("#resetWordPracticeBtn").addEventListener("click", resetWordPractice);
+    $("#playWordPracticeBtn").addEventListener("click", () => speakPracticeWord());
+    $("#revealWordPracticeBtn").addEventListener("click", revealWordPractice);
+    $("#nextWordPracticeBtn").addEventListener("click", advanceWordPractice);
+    $("#wordPracticeAnswer").addEventListener("keydown", (event) => {
+      if (event.key === "Enter") submitWordPracticeAnswer();
     });
     $("#adminLoginBtn").addEventListener("click", adminLogin);
     $("#refreshAdminSheetBtn").addEventListener("click", loadAdminSheetData);

@@ -1,0 +1,50 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 5,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l07-p05-001",
+      "title": "Emma, the Film Editor",
+      "text": [
+        "My name is Emma, and I’m a film editor.",
+        "My work begins after the shooting is over.",
+        "To create a better story, I can change the order of scenes or delete some of them.",
+        "Storytelling skills are important for my job, so I read a lot."
+      ],
+      "koreanText": [
+        "내 이름은 Emma이고, 나는 영화 편집자예요.",
+        "내 일은 촬영이 끝나고 나서 시작돼요.",
+        "더 좋은 이야기를 만들기 위해서, 나는 장면의 순서를 바꾸거나 장면 중 일부를 삭제할 수도 있어요.",
+        "내 직업상 스토리텔링 기술이 중요해서 나는 책을 많이 읽어요."
+      ],
+      "keyExpressions": [
+        "film editor",
+        "work begins",
+        "shooting is over",
+        "create a better story",
+        "change the order",
+        "scenes",
+        "delete",
+        "some of them",
+        "Storytelling skills",
+        "important for",
+        "read a lot"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "film editor", "translation": "영화 편집자" },
+        { "expression": "work begins", "translation": "일이 시작된다" },
+        { "expression": "shooting is over", "translation": "촬영이 끝나다" },
+        { "expression": "create a better story", "translation": "더 좋은 이야기를 만들다" },
+        { "expression": "change the order", "translation": "순서를 바꾸다" },
+        { "expression": "scenes", "translation": "장면들" },
+        { "expression": "delete", "translation": "삭제하다" },
+        { "expression": "some of them", "translation": "그중 일부" },
+        { "expression": "Storytelling skills", "translation": "스토리텔링 기술" },
+        { "expression": "important for", "translation": "~에 중요한" },
+        { "expression": "read a lot", "translation": "책을 많이 읽다" }
+      ]
+    }
+  ]
+}

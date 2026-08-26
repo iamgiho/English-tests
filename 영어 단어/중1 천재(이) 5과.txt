@@ -1,0 +1,210 @@
+1
+tomorrow
+adv. 내일
+2
+visit
+v. 방문하다
+3
+plan
+n. 계획(안)
+4
+holiday
+n. 휴일
+5
+swim
+v. 수영하다
+6
+beach
+n. 해변
+7
+trip
+n. 여행
+8
+weekend
+n. 주말
+9
+try
+v. 시도해 보다, 먹어보다
+10
+grandparents
+n. 조부모
+11
+live
+v. 살다
+12
+so
+adv. 매우, 아주
+13
+beautiful
+a. 아름다운
+14
+excited
+a. 신이 난
+15
+dolphin
+n. 돌고래
+16
+hike
+v. 하이킹을 가다, 도보 여행을 가다
+17
+amazing
+a. 놀라운, 멋진
+18
+August
+n. 8월
+19
+first
+a. 첫 번째의, 처음의
+20
+arrive
+v. 도착하다
+21
+market
+n. 시장
+22
+p.m.
+오후
+23
+there
+adv. 그곳에서
+24
+lunch
+n. 점심 식사
+25
+only
+adv. 오직, 단지
+26
+rice
+n. 밥, 쌀
+27
+inside
+prep. ~의 안에
+28
+roll
+n. 롤, 말아놓은 것
+29
+radish
+n. 무
+30
+squid
+n. 오징어
+31
+fisherman
+n. 어부, 어민
+32
+spicy
+a. 매운, 매콤한
+33
+tasty
+a. 맛있는
+34
+huge
+a. 거대한
+35
+statue
+n. 상(像), 조각상
+36
+admiral
+n. 해군 장성
+37
+imagine
+v. 상상하다
+38
+battle
+n. 전투, 싸움
+39
+coast
+n. 해안, 연안
+40
+enjoy
+v. 즐기다
+41
+along
+prep. ~을 따라
+42
+sunset
+n. 일몰
+43
+close
+v. 닫다, 감다
+44
+eye
+n. 눈
+45
+country
+n. 국가, 나라
+46
+everything
+n. 모든 것
+47
+really
+adv. 정말로, 매우
+48
+peaceful
+a. 평화로운
+49
+early
+adv. 일찍
+50
+painting
+n. 그림
+51
+wall
+n. 벽
+52
+best
+a. 최고의, 가장 좋은
+53
+place
+n. 장소
+54
+picture
+n. 사진
+55
+finally
+adv. 마침내, 드디어, 결국
+56
+mean
+v. 의미하다, 뜻하다
+57
+east
+n. 동쪽, 동부
+58
+cliff
+n. 절벽
+59
+next
+adv. 다음에, 다음으로
+60
+museum
+n. 박물관, 미술관
+61
+painter
+n. 화가
+62
+nickname
+n. 별명, 애칭
+63
+magician
+n. 마술사
+64
+color
+n. 색, 색채
+65
+paint
+v. 그리다, 칠하다
+66
+various
+a. 다양한, 여러 가지의
+67
+blue
+a. 푸른, 파란 색의
+68
+experience
+n. 경험
+69
+always
+adv. 항상
+70
+fun
+a. 재미있는

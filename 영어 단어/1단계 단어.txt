@@ -161,7 +161,7 @@ bark
 cure
 치료(법), 치료하다
 28
-bear(-bore-born)
+bear
 곰, 참다, 낳다
 83
 custom
@@ -194,16 +194,16 @@ diet
 bill
 계산서, 청구서, 지폐
 88
-dig(-dug-)
+dig
 파다
 34
-bind(-bound-bound)
+bind
 묶다
 89
 discover
 발견하다
 35
-bite(-bit-bitten)
+bite
 물다
 90
 discuss
@@ -257,7 +257,7 @@ bright
 duty
 의무
 44
-bring(-brought-)
+bring
 가져오다, 데려오다
 99
 earn
@@ -546,7 +546,7 @@ height
 poison
 독(을 넣다)
 147
-hide(-hid-hidden)
+hide
 숨기다, 숨다
 202
 polite
@@ -715,13 +715,13 @@ riddle
 tour
 관광(하다)
 230
-ride(-rode-ridden)
+ride
 타다
 285
 traditional
 전통적인
 231
-rise(-rose-risen)
+rise
 오르다, 올라가다
 286
 traffic
@@ -878,7 +878,7 @@ sin
 abuse
 남용하다,학대하다
 257
-sink(-sank-sunk)
+sink
 가라앉다
 312
 access
@@ -1433,7 +1433,7 @@ laundry
 flat
 평평한
 514
-lay(-laid-laid)
+lay
 놓다, 눕히다
 460
 flatter
@@ -1457,7 +1457,7 @@ length
 float
 (물위에)뜨다, 떠다니다
 518
-lie(-lay-lain)
+lie
 놓이다, 눕다
 464
 flour
@@ -2545,7 +2545,7 @@ greedy
 despair
 절망
 864
-grind(-ground-)
+grind
 빻다, 갈다
 810
 detect
@@ -3257,7 +3257,7 @@ symptom
 committee
 위원회
 1038
-tear(-tore-torn)
+tear
 찢다
 1093
 compress

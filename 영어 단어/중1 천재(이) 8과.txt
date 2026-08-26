@@ -1,0 +1,135 @@
+1
+thirsty
+a. 목이 마른, 갈증이 나는
+2
+drink
+n. 음료, 마실 것
+3
+umbrella
+n. 우산
+4
+check
+v. 확인하다
+5
+headache
+n. 두통
+6
+present
+n. 선물
+7
+glove
+n. 장갑
+8
+scarf
+n. 목도리
+9
+perfect
+a. 완벽한
+10
+hedgehog
+n. 고슴도치
+11
+excited
+a. 신이 난, 흥분한
+12
+when
+conj. ~할 때
+13
+enter
+v. ~로 들어가다
+14
+classroom
+n. 교실
+15
+spine
+n. (동·식물의) 가시
+16
+curiously
+adv. 호기심을 갖고, 궁금한 듯이
+17
+lunchtime
+n. 점심시간
+18
+classmate
+n. 반 친구, 급우
+19
+kick
+v. 차다
+20
+catch
+v. 잡다, 받다
+21
+flat
+a. 바람이 빠진, 펑크 난
+22
+inside
+adv. 안으로, 안에
+23
+leave
+v. ~을 떠나다
+24
+playground
+n. 운동장
+25
+alone
+a. 혼자인, 홀로
+26
+find
+v. 발견하다
+27
+friendly
+a. 친절한, 상냥한
+28
+wave
+v. 손을 흔들다
+29
+sit
+v. 앉다
+30
+hurt
+v. ~를 다치게 하다
+31
+again
+adv. 다시, 한 번 더
+32
+nobody
+pron. 아무도 …않다
+33
+feel
+v. ~하게 느끼다
+34
+week
+n. 주, 일주일
+35
+back
+n. 뒤, 뒤쪽
+36
+birthday
+n. 생일
+37
+without
+prep. ~ 없이
+38
+lonely
+a. 외로운, 쓸쓸한
+39
+wear
+v. 입고 있다, 몸에 걸치다
+40
+sponge
+n. 스펀지
+41
+jacket
+n. 재킷, 외투
+42
+surprised
+a. 놀라는, 놀란
+43
+gladly
+adv. 기뻐하며, 기꺼이
+44
+hug
+v. 껴안다, 포옹하다
+45
+spread
+v. 퍼지다, 번지다

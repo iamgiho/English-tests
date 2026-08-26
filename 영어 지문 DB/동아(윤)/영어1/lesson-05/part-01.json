@@ -1,0 +1,46 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 5,
+  "part": 1,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l05-p01-001",
+      "title": "The Cake Attack at the Botero Museum",
+      "text": [
+        "Last Saturday, someone threw a cake at the Monalisa in the Botero Museum in Bogota, Colombia.",
+        "There were four eyewitnesses.",
+        "What did they say?",
+        "Read the following, and find the criminal."
+      ],
+      "koreanText": [
+        "지난 토요일, 누군가 콜롬비아 보고타의 보테로 박물관에 있는 ‘모나리자’에 케이크를 던졌다.",
+        "네 명의 목격자가 있었다.",
+        "그들은 뭐라고 말했을까?",
+        "다음을 읽고, 범인을 찾아보자."
+      ],
+      "keyExpressions": [
+        "Last Saturday",
+        "someone",
+        "threw a cake at",
+        "Botero Museum",
+        "Bogota",
+        "Colombia",
+        "eyewitnesses",
+        "the following",
+        "find the criminal"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "Last Saturday", "translation": "지난 토요일" },
+        { "expression": "someone", "translation": "누군가" },
+        { "expression": "threw a cake at", "translation": "~에 케이크를 던졌다" },
+        { "expression": "Botero Museum", "translation": "보테로 박물관" },
+        { "expression": "Bogota", "translation": "보고타" },
+        { "expression": "Colombia", "translation": "콜롬비아" },
+        { "expression": "eyewitnesses", "translation": "목격자들" },
+        { "expression": "the following", "translation": "다음 내용" },
+        { "expression": "find the criminal", "translation": "범인을 찾다" }
+      ]
+    }
+  ]
+}

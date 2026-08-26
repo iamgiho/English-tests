@@ -1,0 +1,44 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 1,
+  "passages": [
+    {
+      "id": "chunjae-lee-english1-l07-p01-001",
+      "title": "What Am I?",
+      "text": [
+        "I have a shell, but I’m not a crab.",
+        "I’m yellow and white, but I’m not a daisy.",
+        "I’m bigger than an olive, but I’m smaller than an avocado.",
+        "What am I?"
+      ],
+      "koreanText": [
+        "저는 껍데기가 있지만, 게는 아니에요.",
+        "저는 노랗고 하얗지만, 데이지 꽃은 아니에요.",
+        "저는 올리브보다 더 크지만, 아보카도보다 더 작아요.",
+        "저는 무엇일까요?"
+      ],
+      "keyExpressions": [
+        "shell",
+        "crab",
+        "yellow and white",
+        "daisy",
+        "bigger than",
+        "olive",
+        "smaller than",
+        "avocado"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "shell", "translation": "껍데기" },
+        { "expression": "crab", "translation": "게" },
+        { "expression": "yellow and white", "translation": "노랗고 하얀" },
+        { "expression": "daisy", "translation": "데이지 꽃" },
+        { "expression": "bigger than", "translation": "~보다 더 큰" },
+        { "expression": "olive", "translation": "올리브" },
+        { "expression": "smaller than", "translation": "~보다 더 작은" },
+        { "expression": "avocado", "translation": "아보카도" }
+      ]
+    }
+  ]
+}

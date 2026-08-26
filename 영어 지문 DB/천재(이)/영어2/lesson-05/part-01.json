@@ -1,0 +1,56 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어2",
+  "lesson": 5,
+  "part": 1,
+  "passages": [
+    {
+      "id": "chunjae-lee-english2-l05-p01-001",
+      "title": "The Missing Birthday Cake",
+      "text": [
+        "Today was Dad’s birthday.",
+        "As a secret gift, Mom baked him a cake.",
+        "She wrapped the cake in a box and put it on the table in the kitchen.",
+        "Then she went out to buy candles at 11.",
+        "When she came back home one hour later, she found that the box was empty.",
+        "Someone ate the whole cake!"
+      ],
+      "koreanText": [
+        "오늘은 아빠의 생일이었다.",
+        "비밀 선물로, 엄마는 그에게 케이크를 구워 주셨다.",
+        "그녀는 상자에 케이크를 포장했고 그것을 부엌에 있는 식탁에 올려놓았다.",
+        "그러고 나서 그녀는 11시에 초를 사기 위해서 밖으로 나갔다.",
+        "그녀가 한 시간 후에 집에 돌아왔을 때, 그녀는 상자가 비어 있는 것을 발견했다.",
+        "누군가 케이크 전체를 먹었다!"
+      ],
+      "keyExpressions": [
+        "birthday",
+        "secret gift",
+        "baked him a cake",
+        "wrapped the cake in a box",
+        "put it on the table",
+        "went out",
+        "buy candles",
+        "came back home",
+        "one hour later",
+        "found",
+        "empty",
+        "whole cake"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "birthday", "translation": "생일" },
+        { "expression": "secret gift", "translation": "비밀 선물" },
+        { "expression": "baked him a cake", "translation": "그에게 케이크를 구워 주었다" },
+        { "expression": "wrapped the cake in a box", "translation": "상자에 케이크를 포장했다" },
+        { "expression": "put it on the table", "translation": "그것을 식탁에 올려놓았다" },
+        { "expression": "went out", "translation": "밖으로 나갔다" },
+        { "expression": "buy candles", "translation": "초를 사다" },
+        { "expression": "came back home", "translation": "집에 돌아왔다" },
+        { "expression": "one hour later", "translation": "한 시간 후에" },
+        { "expression": "found", "translation": "발견했다" },
+        { "expression": "empty", "translation": "비어 있는" },
+        { "expression": "whole cake", "translation": "케이크 전체" }
+      ]
+    }
+  ]
+}

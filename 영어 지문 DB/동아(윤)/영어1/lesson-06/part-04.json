@@ -1,0 +1,52 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 6,
+  "part": 4,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l06-p04-001",
+      "title": "Picking Up Food with a Reusable Container",
+      "text": [
+        "I often use food delivery services, but today I didn’t.",
+        "Instead, I walked to my favorite restaurant with a reusable container and picked up the food.",
+        "I heard that plastic never goes away completely.",
+        "I didn’t use any single-use plastic today.",
+        "I felt good!"
+      ],
+      "koreanText": [
+        "나는 종종 음식 배달 서비스를 이용하는데, 오늘은 이용하지 않았어.",
+        "대신, 재사용할 수 있는 용기를 가지고 내가 가장 좋아하는 식당에 걸어가서 음식을 가져왔어.",
+        "플라스틱은 절대로 완전히 없어지지 않는다고 들었어.",
+        "나는 오늘 어떤 일회용 플라스틱도 사용하지 않았어.",
+        "기분이 좋았어!"
+      ],
+      "keyExpressions": [
+        "often",
+        "food delivery services",
+        "Instead",
+        "favorite restaurant",
+        "reusable container",
+        "picked up the food",
+        "plastic",
+        "never goes away",
+        "completely",
+        "single-use plastic",
+        "felt good"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "often", "translation": "종종" },
+        { "expression": "food delivery services", "translation": "음식 배달 서비스" },
+        { "expression": "Instead", "translation": "대신" },
+        { "expression": "favorite restaurant", "translation": "가장 좋아하는 식당" },
+        { "expression": "reusable container", "translation": "재사용할 수 있는 용기" },
+        { "expression": "picked up the food", "translation": "음식을 가져왔다" },
+        { "expression": "plastic", "translation": "플라스틱" },
+        { "expression": "never goes away", "translation": "절대로 없어지지 않는다" },
+        { "expression": "completely", "translation": "완전히" },
+        { "expression": "single-use plastic", "translation": "일회용 플라스틱" },
+        { "expression": "felt good", "translation": "기분이 좋았다" }
+      ]
+    }
+  ]
+}

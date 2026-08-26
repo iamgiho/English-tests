@@ -1,0 +1,237 @@
+1
+must
+aux. ~해야 한다
+2
+may
+aux. ~해도 되다
+3
+on the phone
+전화로
+4
+terribly
+adv. 몹시, 대단히
+5
+turn ~ off
+~을 끄다
+6
+text
+v. 문자를 보내다
+7
+touch
+v. 만지다
+8
+golden
+a. 황금빛의
+9
+anything
+pron. 아무것도
+10
+run
+v. 달리다
+11
+sign
+n. 표지판
+12
+inside
+prep. ~ 안에; adv. 안으로
+13
+take
+v. 가지고 가다
+14
+bring
+v. 가져오다
+15
+only
+adv. 오직
+16
+bottled
+a. 병에 담은
+17
+sunflower
+n. 해바라기
+18
+favorite
+a. 가장 좋아하는
+19
+painting
+n. 그림
+20
+take a picture
+사진을 찍다
+21
+flash
+n. (카메라) 플래시
+22
+a little
+조금
+23
+use
+v. 사용하다
+24
+damage
+v. 훼손하다
+25
+move on to ~
+~로 옮기다
+26
+someone
+pron. 누군가
+27
+throw
+v. 던지다
+28
+eyewitness
+n. 목격자
+29
+following
+n. 다음, 아래
+30
+find
+v. 발견하다, 찾다
+31
+criminal
+n. 범인, 범죄자
+32
+visitor
+n. 방문객
+33
+turn around
+뒤돌아보다
+34
+see
+v. 보다
+35
+old
+a. 나이가 많은
+36
+stand
+v. 서 있다
+37
+in front of ~
+~ 앞에
+38
+wheelchair
+n. 휠체어
+39
+about
+adv. 대략, ~쯤; prep. ~에 대해
+40
+tall
+a. 키가 큰; 키가 ~인
+41
+than
+prep. ~보다
+42
+janitor
+n. 청소부, 관리인
+43
+gray
+a. 회색의; n. 회색
+44
+run away
+도망가다
+45
+fall off ~
+~에서 떨어지다
+46
+wig
+n. 가발
+47
+run after ~
+~을 뒤쫓다
+48
+catch
+v. (누군가를) 붙잡다
+49
+fast
+a. 빠른
+50
+in fact
+사실은
+51
+young
+a. 젊은, 어린
+52
+long
+a. (길이가) 긴
+53
+brown
+a. 갈색의; n. 갈색
+54
+guard
+n. 경비원
+55
+crime
+n. 범죄
+56
+scene
+n. (특히 좋지 못한 일이 일어난) 현장
+57
+piece
+n. 조각
+58
+all over
+곳곳에
+59
+near
+prep. ~에서 가까이
+60
+next to ~
+~ 옆에
+61
+bakery
+n. 빵집
+62
+owner
+n. 주인
+63
+come in
+들어오다
+64
+speak
+v. 말하다
+65
+Spanish
+n. 스페인어
+66
+understand
+v. 이해하다
+67
+a lot of
+많은
+68
+different
+a. 다양한
+69
+want
+v. 원하다
+70
+small
+a. (크기 등이) 작은
+71
+sell
+v. 팔다
+72
+remember
+v. 기억하다
+73
+clearly
+adv. 명확하게
+74
+information
+n. 정보
+75
+suspect
+n. 용의자
+76
+height
+n. 키
+77
+language
+n. 언어
+78
+green
+n. 초록색
+79
+short
+a. (길이·거리가) 짧은

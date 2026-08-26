@@ -1,0 +1,48 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 3,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l07-p03-001",
+      "title": "Peter, the Director of Photography",
+      "text": [
+        "I’m Peter, the director of photography for this movie.",
+        "I’m in charge of all the cameras.",
+        "Today, Tom and Max are going to play together with a ball on the beach.",
+        "To capture their happy moments, I’m going to use drones."
+      ],
+      "koreanText": [
+        "나는 이 영화의 촬영감독인 Peter예요.",
+        "나는 모든 카메라를 담당하고 있어요.",
+        "오늘, Tom과 Max는 해변에서 공을 가지고 함께 놀 예정이에요.",
+        "그들의 행복한 순간을 포착하기 위해, 나는 드론을 사용할 거예요."
+      ],
+      "keyExpressions": [
+        "director of photography",
+        "in charge of",
+        "cameras",
+        "be going to",
+        "play together",
+        "with a ball",
+        "on the beach",
+        "capture",
+        "happy moments",
+        "drones"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "director of photography", "translation": "촬영감독" },
+        { "expression": "in charge of", "translation": "~을 담당하는" },
+        { "expression": "cameras", "translation": "카메라들" },
+        { "expression": "be going to", "translation": "~할 예정이다" },
+        { "expression": "play together", "translation": "함께 놀다" },
+        { "expression": "with a ball", "translation": "공을 가지고" },
+        { "expression": "on the beach", "translation": "해변에서" },
+        { "expression": "capture", "translation": "포착하다" },
+        { "expression": "happy moments", "translation": "행복한 순간들" },
+        { "expression": "drones", "translation": "드론" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 4,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l07-p04-001",
+      "title": "Jennifer, the Animal Wrangler",
+      "text": [
+        "I’m Jennifer.",
+        "I trained and took care of Max for a long time.",
+        "Max is a great actor, but he sometimes gets too excited when a lot of people are around.",
+        "So, I use hand signals to calm him.",
+        "Who am I?",
+        "I’m an animal wrangler."
+      ],
+      "koreanText": [
+        "나는 Jennifer예요.",
+        "나는 Max를 오랫동안 훈련하고 돌봤어요.",
+        "Max는 훌륭한 배우이지만, 주변에 사람들이 많을 때 가끔 너무 흥분해요.",
+        "그래서, 나는 그를 진정시키기 위해 수신호를 사용해요.",
+        "나는 누구일까요?",
+        "나는 동물 조련사예요."
+      ],
+      "keyExpressions": [
+        "trained",
+        "took care of",
+        "for a long time",
+        "great actor",
+        "sometimes",
+        "gets too excited",
+        "a lot of people",
+        "around",
+        "hand signals",
+        "calm him",
+        "animal wrangler"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "trained", "translation": "훈련했다" },
+        { "expression": "took care of", "translation": "돌봤다" },
+        { "expression": "for a long time", "translation": "오랫동안" },
+        { "expression": "great actor", "translation": "훌륭한 배우" },
+        { "expression": "sometimes", "translation": "가끔" },
+        { "expression": "gets too excited", "translation": "너무 흥분한다" },
+        { "expression": "a lot of people", "translation": "많은 사람들" },
+        { "expression": "around", "translation": "주변에" },
+        { "expression": "hand signals", "translation": "수신호" },
+        { "expression": "calm him", "translation": "그를 진정시키다" },
+        { "expression": "animal wrangler", "translation": "동물 조련사" }
+      ]
+    }
+  ]
+}

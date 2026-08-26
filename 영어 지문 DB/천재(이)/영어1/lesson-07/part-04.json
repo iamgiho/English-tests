@@ -1,0 +1,72 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 4,
+  "passages": [
+    {
+      "id": "chunjae-lee-english1-l07-p04-001",
+      "title": "Omelets Around the World",
+      "text": [
+        "People around the world have their own omelet recipes.",
+        "Tortilla de Patata is a Spanish omelet.",
+        "In Spanish, ‘patata’ means ‘a potato.’",
+        "You need eggs and potatoes for this omelet.",
+        "In Malaysia, people wrap chicken fried rice with a thin omelet.",
+        "The name of this special omelet is Nasi Goreng Pattaya.",
+        "It is also popular in Indonesia and Singapore.",
+        "Do you feel hungry now?",
+        "How about trying an omelet?"
+      ],
+      "koreanText": [
+        "전 세계의 사람들은 그들 자신만의 오믈렛 조리법을 가지고 있습니다.",
+        "Tortilla de Patata(토르티야 데 파타타)는 스페인 오믈렛입니다.",
+        "스페인어로 patata는 ‘감자’를 의미합니다.",
+        "여러분은 이 오믈렛을 위해 달걀과 감자가 필요합니다.",
+        "말레이시아에서 사람들은 닭고기 볶음밥을 얇은 오믈렛으로 감쌉니다.",
+        "이 특별한 오믈렛의 이름은 Nasi Goreng Pattaya(나시 고렝 파타야)입니다.",
+        "그것은 인도네시아와 싱가포르에서도 인기가 있습니다.",
+        "여러분은 지금 배가 고프다고 느끼나요?",
+        "오믈렛을 먹어 보는 건 어떤가요?"
+      ],
+      "keyExpressions": [
+        "around the world",
+        "their own",
+        "omelet recipes",
+        "Spanish omelet",
+        "means",
+        "potato",
+        "need",
+        "Malaysia",
+        "wrap",
+        "chicken fried rice",
+        "thin omelet",
+        "special omelet",
+        "popular",
+        "Indonesia",
+        "Singapore",
+        "feel hungry",
+        "How about"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "around the world", "translation": "전 세계의" },
+        { "expression": "their own", "translation": "그들 자신만의" },
+        { "expression": "omelet recipes", "translation": "오믈렛 조리법" },
+        { "expression": "Spanish omelet", "translation": "스페인 오믈렛" },
+        { "expression": "means", "translation": "의미한다" },
+        { "expression": "potato", "translation": "감자" },
+        { "expression": "need", "translation": "필요하다" },
+        { "expression": "Malaysia", "translation": "말레이시아" },
+        { "expression": "wrap", "translation": "감싸다" },
+        { "expression": "chicken fried rice", "translation": "닭고기 볶음밥" },
+        { "expression": "thin omelet", "translation": "얇은 오믈렛" },
+        { "expression": "special omelet", "translation": "특별한 오믈렛" },
+        { "expression": "popular", "translation": "인기 있는" },
+        { "expression": "Indonesia", "translation": "인도네시아" },
+        { "expression": "Singapore", "translation": "싱가포르" },
+        { "expression": "feel hungry", "translation": "배가 고프다고 느끼다" },
+        { "expression": "How about", "translation": "~은 어떤가요" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 6,
+  "part": 1,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l06-p01-001",
+      "title": "Join the Zero-Waste Challenge",
+      "text": [
+        "Every day, we produce lots of waste, and the Earth is getting sicker and sicker.",
+        "Do you want to save the Earth?",
+        "Then, join the zero-waste challenge, and share your stories."
+      ],
+      "koreanText": [
+        "매일 우리는 많은 쓰레기를 만들고, 지구는 점점 더 병들고 있습니다.",
+        "여러분은 지구를 구하고 싶나요?",
+        "그렇다면 제로 웨이스트 챌린지에 동참하고 여러분의 이야기를 공유해 주세요."
+      ],
+      "keyExpressions": [
+        "Every day",
+        "produce",
+        "lots of waste",
+        "Earth",
+        "sicker and sicker",
+        "save the Earth",
+        "join",
+        "zero-waste challenge",
+        "share your stories"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "Every day", "translation": "매일" },
+        { "expression": "produce", "translation": "만들다" },
+        { "expression": "lots of waste", "translation": "많은 쓰레기" },
+        { "expression": "Earth", "translation": "지구" },
+        { "expression": "sicker and sicker", "translation": "점점 더 병든" },
+        { "expression": "save the Earth", "translation": "지구를 구하다" },
+        { "expression": "join", "translation": "동참하다" },
+        { "expression": "zero-waste challenge", "translation": "제로 웨이스트 챌린지" },
+        { "expression": "share your stories", "translation": "이야기를 공유하다" }
+      ]
+    }
+  ]
+}

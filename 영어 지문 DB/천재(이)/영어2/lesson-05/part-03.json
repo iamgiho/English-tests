@@ -1,0 +1,60 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어2",
+  "lesson": 5,
+  "part": 3,
+  "passages": [
+    {
+      "id": "chunjae-lee-english2-l05-p03-001",
+      "title": "Harry’s Story",
+      "text": [
+        "First, Ms. Jones spoke with Harry, the oldest son.",
+        "“Someone ate your mom’s cake. What did you do this morning?”",
+        "“I played soccer, and I came back home around 11. I saw the box on the table and opened it. There was a cake inside, but I didn’t eat it.”",
+        "“What did you do after that?”",
+        "“I just went to my room.”",
+        "“Hmm.... Then why do you have crumbs around your mouth?”",
+        "“Oh, I ate some chocolate cookies because I was hungry.”"
+      ],
+      "koreanText": [
+        "처음에, Ms. Jones는 큰 아들 Harry와 이야기했다.",
+        "“누군가 너희 엄마의 케이크를 먹었어. 오늘 아침에 너는 무엇을 했니?”",
+        "“저는 축구를 했고, 11시쯤 집에 돌아왔어요. 저는 식탁 위에 있는 상자를 보았고 그것을 열었어요. 안에 케이크가 있었지만, 저는 그것을 먹지 않았어요.”",
+        "“그런 다음에 너는 무엇을 했니?”",
+        "“저는 그냥 제 방에 갔어요.”",
+        "“흠…. 그러면 네 입 주변에 왜 부스러기가 있지?”",
+        "“오, 저는 배가 고파서 초콜릿 쿠키를 조금 먹었어요.”"
+      ],
+      "keyExpressions": [
+        "First",
+        "spoke with",
+        "oldest son",
+        "played soccer",
+        "came back home",
+        "around 11",
+        "opened it",
+        "inside",
+        "after that",
+        "went to my room",
+        "crumbs around your mouth",
+        "chocolate cookies",
+        "hungry"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "First", "translation": "처음에" },
+        { "expression": "spoke with", "translation": "~와 이야기했다" },
+        { "expression": "oldest son", "translation": "큰 아들" },
+        { "expression": "played soccer", "translation": "축구를 했다" },
+        { "expression": "came back home", "translation": "집에 돌아왔다" },
+        { "expression": "around 11", "translation": "11시쯤" },
+        { "expression": "opened it", "translation": "그것을 열었다" },
+        { "expression": "inside", "translation": "안에" },
+        { "expression": "after that", "translation": "그런 다음에" },
+        { "expression": "went to my room", "translation": "내 방에 갔다" },
+        { "expression": "crumbs around your mouth", "translation": "입 주변의 부스러기" },
+        { "expression": "chocolate cookies", "translation": "초콜릿 쿠키" },
+        { "expression": "hungry", "translation": "배가 고픈" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어1",
+  "lesson": 8,
+  "part": 3,
+  "passages": [
+    {
+      "id": "chunjae-lee-english1-l08-p03-001",
+      "title": "Harry Feels Alone Again",
+      "text": [
+        "On the school bus, Harry found Ruby, the friendly rabbit.",
+        "“Hi, Harry!”",
+        "Ruby waved at him.",
+        "Harry went to sit next to Ruby.",
+        "“Ouch!”",
+        "Harry’s spines hurt Ruby.",
+        "“Oh, I’m sorry, Ruby.”",
+        "Harry went to the back seat.",
+        "He was alone again.",
+        "“Nobody likes me because of these spines.”",
+        "Harry felt really sad."
+      ],
+      "koreanText": [
+        "학교 버스에서 Harry는 친절한 토끼 Ruby를 발견했습니다.",
+        "“안녕, Harry!”",
+        "Ruby가 그에게 손을 흔들었습니다.",
+        "Harry는 Ruby 옆에 앉기 위해 갔습니다.",
+        "“아야!”",
+        "Harry의 가시가 Ruby를 아프게 했습니다.",
+        "“오, 미안해, Ruby.”",
+        "Harry는 뒷자리로 갔습니다.",
+        "Harry는 다시 혼자였습니다.",
+        "“이 가시 때문에 아무도 나를 좋아하지 않아.”",
+        "Harry는 정말 슬프다고 느꼈습니다."
+      ],
+      "keyExpressions": [
+        "school bus",
+        "friendly rabbit",
+        "waved at",
+        "sit next to",
+        "spines",
+        "hurt",
+        "I’m sorry",
+        "back seat",
+        "alone again",
+        "Nobody",
+        "because of",
+        "felt really sad"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "school bus", "translation": "학교 버스" },
+        { "expression": "friendly rabbit", "translation": "친절한 토끼" },
+        { "expression": "waved at", "translation": "~에게 손을 흔들었다" },
+        { "expression": "sit next to", "translation": "~ 옆에 앉다" },
+        { "expression": "spines", "translation": "가시" },
+        { "expression": "hurt", "translation": "아프게 했다" },
+        { "expression": "I’m sorry", "translation": "미안해" },
+        { "expression": "back seat", "translation": "뒷자리" },
+        { "expression": "alone again", "translation": "다시 혼자인" },
+        { "expression": "Nobody", "translation": "아무도 ~않다" },
+        { "expression": "because of", "translation": "~ 때문에" },
+        { "expression": "felt really sad", "translation": "정말 슬프다고 느꼈다" }
+      ]
+    }
+  ]
+}

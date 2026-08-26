@@ -1,0 +1,56 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어2",
+  "lesson": 5,
+  "part": 5,
+  "passages": [
+    {
+      "id": "chunjae-lee-english2-l05-p05-001",
+      "title": "Tom’s Story and the Liar",
+      "text": [
+        "Finally, Ms. Jones met Tom, the youngest son.",
+        "“Tom, you like your mom’s cake, right?”",
+        "“Yeah, I like it. Actually, I smelled Mom baking a cake in the morning. But I had a stomachache, so I stayed in bed.”",
+        "“Did you go to the kitchen?”",
+        "“Yes, I went to the kitchen to take some medicine at about 11:30. The box was open, so I could see the cake in it. Then I closed the box.”",
+        "Ms. Jones smiled and said, “The person who lied ate the cake.”"
+      ],
+      "koreanText": [
+        "마지막으로, Ms. Jones는 막내아들 Tom을 만났다.",
+        "“Tom, 너는 엄마의 케이크를 좋아하지, 맞지?”",
+        "“네, 저는 그것을 좋아해요. 사실, 저는 엄마가 아침에 케이크를 굽는 냄새를 맡았어요. 하지만 저는 배가 아파서 침대에 누워 있었어요.”",
+        "“너는 부엌에 갔었니?”",
+        "“네, 저는 11시 30분쯤 약을 먹으러 부엌에 갔어요. 상자는 열려 있었고, 그래서 저는 그 안에 있는 케이크를 볼 수 있었어요. 그러고 나서 저는 상자를 닫았어요.”",
+        "Ms. Jones가 웃으면서 말했다. “거짓말을 한 사람이 케이크를 먹었어.”"
+      ],
+      "keyExpressions": [
+        "Finally",
+        "youngest son",
+        "Actually",
+        "smelled Mom baking a cake",
+        "in the morning",
+        "stomachache",
+        "stayed in bed",
+        "take some medicine",
+        "about 11:30",
+        "open",
+        "closed the box",
+        "lied"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "Finally", "translation": "마지막으로" },
+        { "expression": "youngest son", "translation": "막내아들" },
+        { "expression": "Actually", "translation": "사실" },
+        { "expression": "smelled Mom baking a cake", "translation": "엄마가 케이크를 굽는 냄새를 맡았다" },
+        { "expression": "in the morning", "translation": "아침에" },
+        { "expression": "stomachache", "translation": "복통" },
+        { "expression": "stayed in bed", "translation": "침대에 누워 있었다" },
+        { "expression": "take some medicine", "translation": "약을 먹다" },
+        { "expression": "about 11:30", "translation": "11시 30분쯤" },
+        { "expression": "open", "translation": "열려 있는" },
+        { "expression": "closed the box", "translation": "상자를 닫았다" },
+        { "expression": "lied", "translation": "거짓말했다" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어1",
+  "lesson": 8,
+  "part": 5,
+  "passages": [
+    {
+      "id": "chunjae-lee-english1-l08-p05-001",
+      "title": "The Sponge Jacket Surprise",
+      "text": [
+        "Soon, his classmates called Harry.",
+        "“Harry, come out!”",
+        "When Harry went outside, his classmates were waiting for him.",
+        "They were wearing sponge jackets.",
+        "“Happy birthday, Harry! This is for you!”",
+        "Ruby gave a box to him.",
+        "Harry was surprised."
+      ],
+      "koreanText": [
+        "곧, 그의 반 친구들이 Harry를 불렀습니다.",
+        "“Harry, 나와 봐!”",
+        "Harry가 밖으로 나갔을 때 그의 반 친구들이 그를 기다리고 있었습니다.",
+        "그들은 스펀지 재킷을 입고 있었습니다.",
+        "“생일 축하해, Harry! 이건 너를 위한 거야!”",
+        "Ruby가 그에게 상자를 주었습니다.",
+        "Harry는 놀랐습니다."
+      ],
+      "keyExpressions": [
+        "Soon",
+        "classmates",
+        "called",
+        "come out",
+        "went outside",
+        "waiting for",
+        "wearing",
+        "sponge jackets",
+        "Happy birthday",
+        "gave a box to him",
+        "surprised"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "Soon", "translation": "곧" },
+        { "expression": "classmates", "translation": "반 친구들" },
+        { "expression": "called", "translation": "불렀다" },
+        { "expression": "come out", "translation": "나오다" },
+        { "expression": "went outside", "translation": "밖으로 나갔다" },
+        { "expression": "waiting for", "translation": "~을 기다리는" },
+        { "expression": "wearing", "translation": "입고 있는" },
+        { "expression": "sponge jackets", "translation": "스펀지 재킷" },
+        { "expression": "Happy birthday", "translation": "생일 축하해" },
+        { "expression": "gave a box to him", "translation": "그에게 상자를 주었다" },
+        { "expression": "surprised", "translation": "놀란" }
+      ]
+    }
+  ]
+}

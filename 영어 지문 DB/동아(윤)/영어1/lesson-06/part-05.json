@@ -1,0 +1,48 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 6,
+  "part": 5,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l06-p05-001",
+      "title": "Recycling Bottles for Points",
+      "text": [
+        "Yesterday, I took some plastic and glass bottles to a recycling machine near my house.",
+        "I put them into the machine one by one, and I got some points in return.",
+        "What can I do with those points?",
+        "Well, I can use them like money.",
+        "Don’t you think that’s cool?"
+      ],
+      "koreanText": [
+        "어제 나는 플라스틱과 유리병 몇 개를 집 근처에 있는 재활용 기계에 가져갔어.",
+        "나는 그것들을 하나씩 기계에 집어넣었고, 대가로 포인트를 받았어.",
+        "그 포인트로 무엇을 할 수 있냐고?",
+        "음, 나는 그것들을 돈처럼 사용할 수 있어.",
+        "멋지다고 생각하지 않니?"
+      ],
+      "keyExpressions": [
+        "plastic and glass bottles",
+        "recycling machine",
+        "near my house",
+        "put them into",
+        "one by one",
+        "points",
+        "in return",
+        "use them like money",
+        "cool"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "plastic and glass bottles", "translation": "플라스틱과 유리병" },
+        { "expression": "recycling machine", "translation": "재활용 기계" },
+        { "expression": "near my house", "translation": "집 근처에" },
+        { "expression": "put them into", "translation": "그것들을 ~에 집어넣었다" },
+        { "expression": "one by one", "translation": "하나씩" },
+        { "expression": "points", "translation": "포인트" },
+        { "expression": "in return", "translation": "대가로" },
+        { "expression": "use them like money", "translation": "그것들을 돈처럼 사용하다" },
+        { "expression": "cool", "translation": "멋진" }
+      ]
+    }
+  ]
+}

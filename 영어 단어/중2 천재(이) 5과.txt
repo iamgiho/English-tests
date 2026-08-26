@@ -1,0 +1,198 @@
+1
+look for ~
+~을 찾다
+2
+lose
+v. ~을 잃어버리다
+3
+park
+n. 공원
+4
+look like ~
+~처럼 보이다
+5
+picture
+n. 사진
+6
+backpack
+n. 배낭
+7
+last
+adv. 마지막으로
+8
+leave
+v. ~을 두고 오다
+9
+court
+n. 경기장, (테니스 등의) 코트
+10
+pattern
+n. 무늬, 패턴
+11
+umbrella
+n. 우산
+12
+handle
+n. 손잡이
+13
+umbrella stand
+우산꽂이
+14
+put A in B
+A를 B에 넣다
+15
+call
+v. ~에게 전화하다
+16
+actually
+adv. 사실
+17
+turn ~ off
+~을 끄다
+18
+character
+n. (책·영화 등의) 등장인물
+19
+cover
+n. 커버, 덮개
+20
+before
+prep. ~ 전에
+21
+class
+n. 수업
+22
+look around ~
+~을 둘러보다
+23
+textbook
+n. 교과서
+24
+missing
+a. 사라진
+25
+secret
+a. 비밀의
+26
+bake
+v. (빵·과자 등)을 굽다
+27
+wrap
+v. ~을 싸다, 포장하다
+28
+candle
+n. 초, 양초
+29
+later
+adv. 나중에, 이후에
+30
+empty
+a. 빈, 비어 있는
+31
+someone
+pron. 누군가, 어떤 사람
+32
+whole
+a. 전체의
+33
+wise
+a. 현명한
+34
+town
+n. 마을
+35
+in trouble
+곤경에 처한
+36
+sweet
+a. 상냥한, 다정한
+37
+find ~ out
+~을 알아내다
+38
+big eater
+많이 먹는 사람, 대식가
+39
+first
+adv. 첫 번째로
+40
+come back
+돌아오다
+41
+around
+adv. 약, ~쯤, ~경; prep. ~ 주위에
+42
+open
+v. ~을 열다; a. 열려 있는
+43
+inside
+adv. 안에; prep. ~의 안에
+44
+crumb
+n. 부스러기
+45
+chocolate
+n. 초콜릿
+46
+daughter
+n. 딸
+47
+stay
+v. 머무르다
+48
+home
+adv. 집에
+49
+between A and B
+A와 B 사이에
+50
+detective
+n. 탐정
+51
+novel
+n. 소설
+52
+living room
+n. 거실
+53
+lose weight
+몸무게를 줄이다
+54
+these days
+요즘
+55
+dessert
+n. 디저트
+56
+most of all
+무엇보다도
+57
+exact
+a. 정확한
+58
+out of ~
+~밖으로
+59
+finally
+adv. 마지막으로
+60
+smell
+v. ~가 …하는 냄새를 맡다
+61
+stomachache
+n. 복통
+62
+stay in bed
+침대에 누워 있다
+63
+medicine
+n. 약, 의약품
+64
+about
+adv. 약, 대략
+65
+close
+v. ~을 닫다
+66
+lie
+v. 거짓말하다

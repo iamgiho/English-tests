@@ -1,0 +1,58 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 5,
+  "part": 5,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l05-p05-001",
+      "title": "The Fourth Eyewitness",
+      "text": [
+        "Last Friday, a young man came in.",
+        "I spoke to him in Spanish, but he didn’t understand me.",
+        "He spoke only English.",
+        "We had a lot of different cakes, but he just wanted the smallest one.",
+        "We sold only one cake that day, so I remember him clearly.",
+        "Oh, he had blue eyes."
+      ],
+      "koreanText": [
+        "지난 금요일, 한 젊은 남자가 들어왔어요.",
+        "저는 그에게 스페인어로 말했지만, 그는 제 말을 이해하지 못했어요.",
+        "그는 영어로만 말했어요.",
+        "우리 가게에는 다양한 케이크가 많이 있었지만, 그는 단지 가장 작은 것을 원했어요.",
+        "우리는 그날 케이크를 한 개만 팔아서, 저는 그를 똑똑히 기억해요.",
+        "아, 그는 파란색 눈을 가지고 있었어요."
+      ],
+      "keyExpressions": [
+        "Last Friday",
+        "young man",
+        "came in",
+        "spoke to",
+        "in Spanish",
+        "understand",
+        "only English",
+        "a lot of",
+        "different cakes",
+        "smallest one",
+        "sold",
+        "remember him clearly",
+        "blue eyes"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "Last Friday", "translation": "지난 금요일" },
+        { "expression": "young man", "translation": "젊은 남자" },
+        { "expression": "came in", "translation": "들어왔다" },
+        { "expression": "spoke to", "translation": "~에게 말했다" },
+        { "expression": "in Spanish", "translation": "스페인어로" },
+        { "expression": "understand", "translation": "이해하다" },
+        { "expression": "only English", "translation": "영어로만" },
+        { "expression": "a lot of", "translation": "많은" },
+        { "expression": "different cakes", "translation": "다양한 케이크" },
+        { "expression": "smallest one", "translation": "가장 작은 것" },
+        { "expression": "sold", "translation": "팔았다" },
+        { "expression": "remember him clearly", "translation": "그를 똑똑히 기억하다" },
+        { "expression": "blue eyes", "translation": "파란색 눈" }
+      ]
+    }
+  ]
+}

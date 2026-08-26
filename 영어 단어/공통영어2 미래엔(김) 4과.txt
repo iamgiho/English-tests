@@ -1,429 +1,375 @@
 1
-AI-powered
-a. 인공지능으로 작동되는
-2
 neural
 a. 신경(계통)의
-3
+2
 implant
 n. (수술을 통해 인체에) 주입하는[심는] 물질[장치]
-4
-super-human
-n. 초인, 슈퍼 인간
-5
+3
 neuroscience
 n. 신경과학
-6
+4
 treatment for ~
 ~에 대한 치료법
-7
+5
 disorder
 n. 장애, 질환
-8
+6
 nervous system
 n. 신경계
-9
+7
 spinal cord
 n. 척수
-10
+8
 traditionally
 adv. 전통적으로
-11
+9
 various
 a. 다양한
-12
+10
 function
 n. 기능
-13
+11
 medical
 a. 의학의, 의료의
-14
+12
 device
 n. 장치
-15
-chip
-n. 칩, 집적회로
-16
+13
 exciting
 a. 신나는
-17
+14
 rapid
 a. 빠른
-18
+15
 advancement
 n. 진보, 발전
-19
+16
 artificial intelligence
 n. 인공지능 (AI)
-20
-integrate ~ into …
-~을 …에 통합하다
-21
+17
 post
 n. 게시물
-22
+18
 examine
 v. 조사하다
-23
+19
 incredible
 a. 믿을 수 없는, 대단한
-24
+20
 benefit
 n. 혜택, 이득
-25
+21
 amazing
 a. 놀라운
-26
+22
 potential
 n. 잠재력
-27
+23
 ethical
 a. 윤리적인
-28
+24
 concern
 n. 걱정, 우려
-29
+25
 surround
 v. ~을 둘러싸다
-30
+26
 explore
 v. 탐색하다
-31
+27
 fascinating
 a. 매력적인
-32
+28
 apply
 v. 적용하다
-33
+29
 promise
 n. 가능성, 장래성
-34
+30
 application
 n. 적용
-35
-solution to ~
-~에 대한 해결책
-36
+31
 a range of ~
 다양한 ~
-37
-Parkinson’s disease
-n. 파킨슨병(근육이 떨리고 경직되는 신경계 질환)
-38
+32
 electrically
 adv. 전기적으로
-39
+33
 stimulate
 v. ~을 자극하다
-40
+34
 target
 v. 목표로 정하다
-41
+35
 region
 n. 부위
-42
+36
 normal
 a. 평범한, 보통의, 정상적인
-43
+37
 paralyze
 v. 마비시키다
-44
-at the right time
-적시에
-45
-with the help of ~
-~의 도움으로
-46
-insert ~ into …
-…에 ~을 삽입하다
-47
+38
 spine
 n. 척추, 등뼈
-48
+39
 analyze
 v. ~을 분석하다
-49
+40
 signal
 n. 신호
-50
+41
 similarly
 adv. 유사하게
-51
+42
 artificial
 a. 인공의
-52
+43
 mechanism
 n. (목적 달성을 위한) 방법, 메커니즘
-53
+44
 operate
 v. 작동하다
-54
+45
 health care
 n. 의료 (서비스), 보건 (서비스)
-55
+46
 spread
 v. 퍼지다
-56
+47
 industry
 n. 산업
-57
+48
 futurist
 n. 미래학자
-58
+49
 predict
 v. 예측하다, 예언하다
-59
+50
 commercially
 adv. 상업적으로
-60
+51
 available
 a. 이용할 수 있는
-61
+52
 significantly
 adv. 상당히
-62
+53
 advance
 n. 진보
-63
+54
 install ~ in …
 ~을 …에 설치하다
-64
-stream
-v. 스트리밍으로 재생하다
-65
-memory-enhancing
-a. 기억을 향상시키는
-66
+55
+enhance
+v. 향상시키다
+56
 similar to ~
 ~와 유사한
-67
+57
 capture
 v. 포착하다
-68
-digital cloud
-디지털 클라우드 (데이터, 소프트웨어, IT 인프라 등을 물리적 서버가 아닌 인터넷 기반의 클라우드 서버에 저장·운영하는 방식)
-69
+58
 look through ~
 ~을 살펴보다
-70
+59
 feed
 n. 공급(장치)
-71
+60
 vividly
 adv. 생생하게
-72
+61
 recall
 v. ~을 회상하다
-73
-back ~ up
-~을 백업하다
-74
+62
 valuable
 a. 소중한, 귀중한
-75
+63
 revolutionize
 v. ~에 혁신을 일으키다
-76
+64
 shift
 v. 바뀌다
-77
+65
 process
 v. 처리하다
-78
+66
 vast
 a. 방대한
-79
+67
 instead of ~
 ~ 대신에
-80
+68
 creativity
 n. 창의성
-81
+69
 interpret
 v. ~을 해석하다
-82
+70
 generate
 v. 생성하다, 발생시키다
-83
+71
 embrace
 v. ~을 포용하다, 수용하다
-84
+72
 tricky
 a. (상황·일·분야 등이) 까다로운
-85
+73
 issue
 n. 문제, 쟁점
-86
+74
 address
 v. 다루다[대처하다]
-87
+75
 integration
 n. 통합
-88
-raise
-v. 제기하다
-89
-central to ~
-~에(게) 중심인
-90
+76
 identity
 n. 정체성
-91
+77
 existence
 n. 존재, 실재
-92
+78
 value
 n. 가치; v. ~을 소중히 여기다
-93
+79
 over-reliance on ~
 ~에 대한 지나친 의존
-94
+80
 delay
 v. 지연시키다
-95
+81
 confusion
 n. 혼란
-96
+82
 whether A, B, or C
 A 또는 B 또는 C인지
-97
+83
 in between
 그 사이에 있는
-98
+84
 critical
 a. 중요한
-99
+85
 privacy
 n. 사생활, 프라이버시
-100
+86
 risk
 n. 위험, 위험 요소
-101
+87
 organization
 n. 조직, 기구, 단체
-102
+88
 hacker
 n. 해커
-103
+89
 access
 v. ~에 접근[접속]하다
-104
+90
 permission
 n. 허락, 허가
-105
-AI-connected
-a. 인공지능으로 연결된
-106
+91
 control
 v. ~을 통제하다
-107
+92
 additional
 a. 추가적인
-108
+93
 lead to ~
 ~로 이어지다
-109
+94
 inequality
 n. 불평등
-110
+95
 available to ~
 ~에게 이용 가능한
-111
+96
 due to ~
 ~ 때문에
-112
+97
 unequal
 a. 불평등한
-113
+98
 intensify
 v. ~을 강화하다
-114
+99
 division
 n. 분열
-115
+100
 afford
 v. ~의 여유가 있다
-116
+101
 overcome
 v. ~을 극복하다, 이겨내다
-117
+102
 challenge
 n. 도전, 난제
-118
+103
 careful
 a. 신중한, 조심하는
-119
+104
 consideration
 n. 고려, 고찰
-120
-neuroethics
-n. 신경 윤리
-121
+105
 highlight
 v. ~을 강조하다
-122
+106
 aspect
 n. 측면
-123
-answer to ~
-~에 대한 대답
-124
+107
 legal
 a. 합법적인
-125
+108
 establish
 v. ~을 설립하다
-126
+109
 prior
 a. 사전의
-127
+110
 review
 n. 검토
-128
+111
 thoroughly
 adv. 철저하게
-129
+112
 assess
 v. ~을 평가하다
-130
+113
 conduct
 v. 수행하다
-131
+114
 ensure
 v. ~을 보장하다
-132
+115
 in accordance with ~
 ~에 따라서
-133
+116
 principle
 n. 원칙, 원리
-134
+117
 opinion
 n. 의견
-135
-comment(s) section
-댓글 창[란]
-136
+118
 below
 adv. 아래에
-137
+119
 the disabled
 n. 장애인들
-138
+120
 according to ~
 ~에 따라서
-139
+121
 sound
 v. ~하게 들리다
-140
+122
 worried
 a. 걱정된
-141
+123
 strictly
 adv. 엄격하게
-142
+124
 protect
 v. ~을 보호하다
-143
+125
 enforce
 v. (법률 등)을 집행하다

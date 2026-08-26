@@ -1,0 +1,50 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어1",
+  "lesson": 8,
+  "part": 4,
+  "passages": [
+    {
+      "id": "chunjae-lee-english1-l08-p04-001",
+      "title": "Harry’s Lonely Birthday",
+      "text": [
+        "A few weeks later, Harry was sitting in the back of the classroom.",
+        "It was his birthday.",
+        "His classmates were talking about something.",
+        "Then they left the classroom without Harry.",
+        "Harry felt so lonely."
+      ],
+      "koreanText": [
+        "몇 주 뒤, Harry는 교실 뒤에 앉아 있었습니다.",
+        "그의 생일이었습니다.",
+        "그의 반 친구들은 무언가에 대해 이야기하고 있었습니다.",
+        "그러더니 그들은 Harry 없이 교실을 떠났습니다.",
+        "Harry는 너무 외롭다고 느꼈습니다."
+      ],
+      "keyExpressions": [
+        "A few weeks later",
+        "sitting",
+        "in the back of",
+        "classroom",
+        "birthday",
+        "classmates",
+        "talking about",
+        "something",
+        "without",
+        "felt so lonely"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "A few weeks later", "translation": "몇 주 뒤" },
+        { "expression": "sitting", "translation": "앉아 있는" },
+        { "expression": "in the back of", "translation": "~의 뒤에" },
+        { "expression": "classroom", "translation": "교실" },
+        { "expression": "birthday", "translation": "생일" },
+        { "expression": "classmates", "translation": "반 친구들" },
+        { "expression": "talking about", "translation": "~에 대해 이야기하는" },
+        { "expression": "something", "translation": "무언가" },
+        { "expression": "without", "translation": "~ 없이" },
+        { "expression": "felt so lonely", "translation": "너무 외롭다고 느꼈다" }
+      ]
+    }
+  ]
+}

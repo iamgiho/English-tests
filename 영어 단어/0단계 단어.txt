@@ -3,7 +3,7 @@
 able
 ~할 수 있는
 56
-buy (-bought- )
+buy
 사다
 2
 abroad
@@ -33,7 +33,7 @@ careful
 advice
 조언, 충고
 61
-catch (-caught- )
+catch
 잡다, (병에) 걸리다
 7
 afraid
@@ -75,7 +75,7 @@ child
 aid
 도움, 돕다
 68
-choose (-chose-chosen)
+choose
 선택하다
 14
 almost
@@ -153,7 +153,7 @@ collect
 ask
 묻다, 부탁하다
 81
-come (-came-come)
+come
 오다
 27
 asleep
@@ -186,7 +186,7 @@ battle
 cool
 시원한, 멋진
 32
-bear (-bore-born)
+bear
 낳다, 참다
 87
 count
@@ -204,7 +204,7 @@ beauty
 cousin
 사촌
 35
-become (-became-become)
+become
 ~이 되다
 90
 cover
@@ -231,10 +231,10 @@ cry
 birthday
 생일
 94
-cut (-cut- )
+cut
 베다, 자르다
 40
-bite (-bit-bitten)
+bite
 물다
 95
 dangerous
@@ -276,7 +276,7 @@ brave
 dear
 사랑하는, 소중한
 47
-break (-broke-broken)
+break
 깨뜨리다, 휴식
 102
 deep
@@ -294,7 +294,7 @@ bridge
 depth
 깊이
 50
-bring (-brought- )
+bring
 가져(데려)오다
 105
 desert
@@ -306,7 +306,7 @@ brother
 design
 설계(기획)하다
 52
-build (-built- )
+build
 짓다, 건축(건설)하다
 107
 dialog(ue)
@@ -403,7 +403,7 @@ easy
 funny
 웃기는
 123
-eat (-ate-eaten)
+eat
 먹다
 178
 future
@@ -418,7 +418,7 @@ garage
 else
 그 밖에
 180
-get (-got-gotten)
+get
 받다, 얻다
 126
 end
@@ -436,7 +436,7 @@ gift
 enjoy
 즐기다
 183
-give (-gave-given)
+give
 주다
 129
 enough
@@ -484,7 +484,7 @@ ground
 exam
 시험
 191
-grow (-grew-grown)
+grow
 자라다, 기르다
 137
 example
@@ -529,7 +529,7 @@ fail
 hate
 싫어하다
 144
-fall (-fell-fallen)
+fall
 떨어지다, 넘어지다, 가을
 199
 head
@@ -550,7 +550,7 @@ healthy
 farm
 농장
 202
-hear (-heard- )
+hear
 듣다
 148
 fast
@@ -577,7 +577,7 @@ fear
 heel
 발뒤꿈치
 152
-feel (-felt- )
+feel
 느끼다
 207
 here
@@ -586,7 +586,7 @@ here
 few
 소수(의), 조금(의)
 208
-hide (-hid-hidden)
+hide
 숨기다, 숨다
 154
 fight
@@ -604,10 +604,10 @@ history
 finally
 마침내, 마지막으로
 211
-hit (-hit- )
+hit
 치다, 때리다
 157
-find (-found- )
+find
 찾아내다
 212
 hobby
@@ -616,7 +616,7 @@ hobby
 fine
 괜찮은, 벌금(매기다)
 213
-hold (-held- )
+hold
 잡고 있다, 유지하다
 159
 finger
@@ -655,7 +655,7 @@ flower
 however
 그러나
 165
-fly (-flew-flown)
+fly
 날다, 파리
 220
 hug
@@ -757,7 +757,7 @@ just
 morning
 아침, 오전
 237
-keep (-kept- )
+keep
 유지하다, 계속하다
 292
 mountain
@@ -781,7 +781,7 @@ knock
 nail
 손톱, 발톱, 못
 241
-know (-knew-known)
+know
 알다
 296
 narrow
@@ -841,7 +841,7 @@ learn
 north
 북쪽(의), 북쪽으로
 251
-leave (-left- )
+leave
 떠나다
 306
 nose
@@ -859,7 +859,7 @@ leg
 often
 자주
 254
-let (-let- )
+let
 ~하게 허락하다
 309
 once
@@ -919,7 +919,7 @@ look
 park
 공원, 주차하다
 264
-lose (-lost- )
+lose
 잃다, 지다
 319
 part
@@ -1078,7 +1078,7 @@ section
 problem
 문제
 400
-see (-saw-seen)
+see
 보다
 346
 promise
@@ -1090,13 +1090,13 @@ seem
 protein
 단백질
 402
-sell (-sold- )
+sell
 팔다
 348
 proud
 자랑스러운
 403
-send (-sent- )
+send
 보내다
 349
 pull
@@ -1114,10 +1114,10 @@ serve
 push
 밀다
 406
-set (-set- )
+set
 놓다, 세우다
 352
-put (-put- )
+put
 놓다, 두다
 407
 setting
@@ -1144,10 +1144,10 @@ short
 race
 경주, 인종, 경주하다
 411
-shut (-shut- )
+shut
 닫다, 닫히다
 357
-read (-read- )
+read
 읽다
 412
 sick
@@ -1231,7 +1231,7 @@ rich
 soldier
 군인
 371
-ride (-rode-ridden)
+ride
 타다, 타기
 426
 some
@@ -1294,13 +1294,13 @@ spaceship
 rotten
 썩은
 436
-speak (-spoke-spoken)
+speak
 말하다
 382
 round
 둥근, 둥글게
 437
-spend (-spent- )
+spend
 (시간, 돈을) 쓰다
 383
 rubber
@@ -1348,7 +1348,7 @@ uncle
 strange
 이상한, 낯선
 500
-understand (-understood- )
+understand
 이해하다
 446
 street
@@ -1417,10 +1417,10 @@ surprise
 wait
 기다리다
 457
-take (-took-taken)
+take
 잡다, 가지고 가다
 512
-wake (-woke-woken)
+wake
 잠에서 깨다(깨우다)
 458
 talk
@@ -1441,7 +1441,7 @@ taste
 want
 원하다
 461
-teach (-taught- )
+teach
 가르치다
 516
 war
@@ -1453,7 +1453,7 @@ teenage
 warm
 따뜻한, 데우다
 463
-tell (-told- )
+tell
 말하다
 518
 wash
@@ -1480,7 +1480,7 @@ weak
 there
 거기에
 522
-wear (-wore-worn)
+wear
 입고 있다
 468
 thick
@@ -1501,7 +1501,7 @@ thing
 weigh
 무게가 나가다
 471
-think (-thought- )
+think
 생각하다
 526
 welcome
@@ -1540,7 +1540,7 @@ wide
 thumb
 엄지손가락
 532
-win (-won- )
+win
 이기다, 얻다
 478
 thunder
@@ -1618,7 +1618,7 @@ worried
 train
 열차, 훈련하다
 545
-write (-wrote-written)
+write
 쓰다
 491
 travel

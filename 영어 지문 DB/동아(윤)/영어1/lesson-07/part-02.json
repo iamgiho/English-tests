@@ -1,0 +1,46 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 2,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l07-p02-001",
+      "title": "Anna, the Location Manager",
+      "text": [
+        "I’m Anna, and I found this beautiful beach.",
+        "I’m a location manager, and my job is to find perfect places for shooting.",
+        "Of course, it is not easy, but I love my job.",
+        "I like to travel and enjoy challenges."
+      ],
+      "koreanText": [
+        "나는 Anna이고, 내가 이 아름다운 해변을 찾아냈어요.",
+        "나는 야외 촬영 관리자이고, 내 일은 촬영을 위한 완벽한 장소를 찾는 거예요.",
+        "물론, 이 일은 쉽지 않지만, 나는 내 일을 정말 좋아해요.",
+        "나는 여행하는 것을 좋아하고 도전을 즐겨요."
+      ],
+      "keyExpressions": [
+        "beautiful beach",
+        "location manager",
+        "job",
+        "perfect places",
+        "shooting",
+        "Of course",
+        "not easy",
+        "travel",
+        "enjoy challenges"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "beautiful beach", "translation": "아름다운 해변" },
+        { "expression": "location manager", "translation": "야외 촬영 관리자" },
+        { "expression": "job", "translation": "일" },
+        { "expression": "perfect places", "translation": "완벽한 장소" },
+        { "expression": "shooting", "translation": "촬영" },
+        { "expression": "Of course", "translation": "물론" },
+        { "expression": "not easy", "translation": "쉽지 않은" },
+        { "expression": "travel", "translation": "여행하다" },
+        { "expression": "enjoy challenges", "translation": "도전을 즐기다" }
+      ]
+    }
+  ]
+}
