@@ -512,6 +512,12 @@
       line-height: 1.5;
     }
 
+    .word-practice-meaning {
+      font-size: calc(1rem + 5pt);
+      font-weight: 700;
+      color: var(--ink);
+    }
+
     .admin-stack {
       display: grid;
       gap: 14px;
@@ -642,7 +648,7 @@
         <div class="body">
           <div class="field-row">
             <div class="field">
-              <label for="passageNickname">이름 또는 닉네임</label>
+              <label for="passageNickname">이름</label>
               <input id="passageNickname" placeholder="예: 김민준">
             </div>
             <div class="field">
@@ -690,7 +696,7 @@
         <div class="body">
           <div class="field-row">
             <div class="field">
-              <label for="writingNickname">이름 또는 닉네임</label>
+              <label for="writingNickname">이름</label>
               <input id="writingNickname" placeholder="예: 김민준">
             </div>
             <div class="field">
@@ -737,7 +743,7 @@
         <div class="section-head"><h2>Writing Practice</h2><span class="pill" id="writingPracticeProgress">0 / 0</span></div>
         <div class="body">
           <div class="field-row">
-            <div class="field"><label for="writingPracticeNickname">이름 또는 닉네임</label><input id="writingPracticeNickname" placeholder="예: 김민준"></div>
+            <div class="field"><label for="writingPracticeNickname">이름</label><input id="writingPracticeNickname" placeholder="예: 김민준"></div>
             <div class="field"><label for="writingPracticeGradeSelect">학년</label><select id="writingPracticeGradeSelect"></select></div>
             <div class="field"><label for="writingPracticeTextbookSelect">교과서</label><select id="writingPracticeTextbookSelect"></select></div>
             <div class="field"><label for="writingPracticeLessonSelect">단원</label><select id="writingPracticeLessonSelect"></select></div>
@@ -762,7 +768,7 @@
         <div class="body">
           <div class="field-row">
             <div class="field">
-              <label for="listeningNickname">이름 또는 닉네임</label>
+              <label for="listeningNickname">이름</label>
               <input id="listeningNickname" placeholder="예: 김민준">
             </div>
             <div class="field">
@@ -812,7 +818,7 @@
         <div class="section-head"><h2>Listening Practice</h2><span class="pill" id="listeningPracticeProgress">0 / 0</span></div>
         <div class="body">
           <div class="field-row">
-            <div class="field"><label for="listeningPracticeNickname">이름 또는 닉네임</label><input id="listeningPracticeNickname" placeholder="예: 김민준"></div>
+            <div class="field"><label for="listeningPracticeNickname">이름</label><input id="listeningPracticeNickname" placeholder="예: 김민준"></div>
             <div class="field"><label for="listeningPracticeGradeSelect">학년</label><select id="listeningPracticeGradeSelect"></select></div>
             <div class="field"><label for="listeningPracticeTextbookSelect">교과서</label><select id="listeningPracticeTextbookSelect"></select></div>
             <div class="field"><label for="listeningPracticeLessonSelect">단원</label><select id="listeningPracticeLessonSelect"></select></div>
@@ -841,13 +847,22 @@
           <div class="body">
             <div class="field-row">
               <div class="field">
-                <label for="wordPracticeName">이름 또는 닉네임</label>
+                <label for="wordPracticeName">이름</label>
                 <input id="wordPracticeName" placeholder="예: 김민준">
               </div>
               <div class="field">
-                <label for="wordPracticeBookSelect">단어장</label>
-                <select id="wordPracticeBookSelect"></select>
+                <label for="wordPracticeGradeSelect">학년</label>
+                <select id="wordPracticeGradeSelect"></select>
               </div>
+              <div class="field">
+                <label for="wordPracticeTextbookSelect">교과서</label>
+                <select id="wordPracticeTextbookSelect"></select>
+              </div>
+              <div class="field">
+                <label for="wordPracticeLessonSelect">단원</label>
+                <select id="wordPracticeLessonSelect"></select>
+              </div>
+              <select class="hidden" id="wordPracticeBookSelect" aria-hidden="true" tabindex="-1"></select>
             </div>
             <div class="notice" id="wordPracticeBookPath">GitHub / English-tests / 영어 단어</div>
             <div class="field-row" style="margin-top: 12px;">
@@ -906,13 +921,22 @@
           <div class="body">
             <div class="field-row">
               <div class="field">
-                <label for="studentName">이름 또는 닉네임</label>
+                <label for="studentName">이름</label>
                 <input id="studentName" placeholder="예: 김민준">
               </div>
               <div class="field">
-                <label for="wordBookSelect">단어장</label>
-                <select id="wordBookSelect"></select>
+                <label for="wordGradeSelect">학년</label>
+                <select id="wordGradeSelect"></select>
               </div>
+              <div class="field">
+                <label for="wordTextbookSelect">교과서</label>
+                <select id="wordTextbookSelect"></select>
+              </div>
+              <div class="field">
+                <label for="wordLessonSelect">단원</label>
+                <select id="wordLessonSelect"></select>
+              </div>
+              <select class="hidden" id="wordBookSelect" aria-hidden="true" tabindex="-1"></select>
             </div>
             <div class="notice" id="wordBookPath">GitHub / English-tests / 영어 단어</div>
             <div class="field-row" style="margin-top: 12px;">
@@ -1375,7 +1399,7 @@
       const nickname = $("#passageNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#partSelect").value);
       if (!nickname) {
-        setMessage($("#passageNotice"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        setMessage($("#passageNotice"), "이름을 먼저 입력하세요.", "bad");
         return;
       }
       if (!meta) return;
@@ -1503,7 +1527,7 @@
       const nickname = $("#writingNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#writingPartSelect").value);
       if (!nickname) {
-        setMessage($("#writingFeedback"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        setMessage($("#writingFeedback"), "이름을 먼저 입력하세요.", "bad");
         return;
       }
       if (!meta) return;
@@ -1702,7 +1726,7 @@
     async function startWritingPractice() {
       const nickname = $("#writingPracticeNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#writingPracticePartSelect").value);
-      if (!nickname) return setMessage($("#writingPracticeFeedback"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+      if (!nickname) return setMessage($("#writingPracticeFeedback"), "이름을 먼저 입력하세요.", "bad");
       if (!meta) return;
       try {
         const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
@@ -1828,7 +1852,7 @@
       const nickname = $("#listeningNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#listeningPartSelect").value);
       if (!nickname) {
-        setMessage($("#listeningFeedback"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        setMessage($("#listeningFeedback"), "이름을 먼저 입력하세요.", "bad");
         return;
       }
       if (!meta) return;
@@ -1994,7 +2018,7 @@
     async function startListeningPractice() {
       const nickname = $("#listeningPracticeNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#listeningPracticePartSelect").value);
-      if (!nickname) return setMessage($("#listeningPracticeFeedback"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+      if (!nickname) return setMessage($("#listeningPracticeFeedback"), "이름을 먼저 입력하세요.", "bad");
       if (!meta) return;
       try {
         const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
@@ -2393,6 +2417,67 @@
       return words.sort((a, b) => a.number - b.number);
     }
 
+    function getWordBookMeta(book, index) {
+      const title = book.title || `단어장 ${index + 1}`;
+      if (book.category !== "교과서 단어") {
+        return { ...book, index, wordGrade: "기초", wordTextbook: "기초 단어", wordLesson: title, wordLessonOrder: index };
+      }
+      const commonEnglish = title.match(/^공통영어2\s+(.+?)\s+(\d+)과$/);
+      if (commonEnglish) {
+        return { ...book, index, wordGrade: "고1", wordTextbook: `${commonEnglish[1]} / 공통영어2`, wordLesson: `${commonEnglish[2]}과`, wordLessonOrder: Number(commonEnglish[2]) };
+      }
+      const textbook = title.match(/^(중[1-3]|고[1-3])\s+(.+?)\s+(\d+)과$/);
+      if (textbook) {
+        const level = Number(textbook[1].slice(1));
+        return { ...book, index, wordGrade: textbook[1], wordTextbook: `${textbook[2]} / 영어${level}`, wordLesson: `${textbook[3]}과`, wordLessonOrder: Number(textbook[3]) };
+      }
+      return { ...book, index, wordGrade: "미분류", wordTextbook: "교과서", wordLesson: title, wordLessonOrder: index };
+    }
+
+    function getWordSelectorIds(prefix) {
+      return prefix === "wordPractice"
+        ? { grade: "#wordPracticeGradeSelect", textbook: "#wordPracticeTextbookSelect", lesson: "#wordPracticeLessonSelect", book: "#wordPracticeBookSelect" }
+        : { grade: "#wordGradeSelect", textbook: "#wordTextbookSelect", lesson: "#wordLessonSelect", book: "#wordBookSelect" };
+    }
+
+    function renderWordBookSelectors(prefix) {
+      const ids = getWordSelectorIds(prefix);
+      const gradeOrder = ["기초", "중1", "중2", "중3", "고1", "고2", "고3", "미분류"];
+      const grades = [...new Set(wordBookManifest.map((book) => book.wordGrade))]
+        .sort((a, b) => gradeOrder.indexOf(a) - gradeOrder.indexOf(b));
+      $(ids.grade).innerHTML = grades.map((grade) => `<option value="${escapeHtml(grade)}">${escapeHtml(grade)}</option>`).join("");
+      renderWordTextbookOptions(prefix);
+    }
+
+    function renderWordTextbookOptions(prefix) {
+      const ids = getWordSelectorIds(prefix);
+      const grade = $(ids.grade).value;
+      const textbooks = [...new Set(wordBookManifest.filter((book) => book.wordGrade === grade).map((book) => book.wordTextbook))];
+      $(ids.textbook).innerHTML = textbooks.map((textbook) => `<option value="${escapeHtml(textbook)}">${escapeHtml(textbook)}</option>`).join("");
+      renderWordLessonOptions(prefix);
+    }
+
+    function renderWordLessonOptions(prefix) {
+      const ids = getWordSelectorIds(prefix);
+      const grade = $(ids.grade).value;
+      const textbook = $(ids.textbook).value;
+      const books = wordBookManifest
+        .filter((book) => book.wordGrade === grade && book.wordTextbook === textbook)
+        .sort((a, b) => a.wordLessonOrder - b.wordLessonOrder);
+      $(ids.lesson).innerHTML = books.map((book) => `<option value="${book.index}">${escapeHtml(book.wordLesson)}</option>`).join("");
+      $(ids.book).innerHTML = books.map((book) => `<option value="${book.index}">${escapeHtml(book.title)}</option>`).join("");
+      $(ids.book).value = $(ids.lesson).value;
+      if (prefix === "wordPractice") loadSelectedPracticeWordBook();
+      else loadSelectedWordBook();
+    }
+
+    function selectWordLesson(prefix) {
+      const ids = getWordSelectorIds(prefix);
+      $(ids.book).value = $(ids.lesson).value;
+      if (prefix === "wordPractice") loadSelectedPracticeWordBook();
+      else loadSelectedWordBook();
+    }
+
     async function loadWordBookManifest() {
       try {
         const response = await fetch("words.json", { cache: "no-store" });
@@ -2401,18 +2486,9 @@
       } catch {
         wordBookManifest = fallbackWordBooks;
       }
-      const grouped = wordBookManifest.reduce((groups, book, index) => {
-        const category = book.category || "영어 단어";
-        (groups[category] ||= []).push({ book, index });
-        return groups;
-      }, {});
-      const options = Object.entries(grouped).map(([category, entries]) =>
-        `<optgroup label="${escapeHtml(category)}">${entries.map(({ book, index }) => `<option value="${index}">${escapeHtml(book.title)}</option>`).join("")}</optgroup>`
-      ).join("");
-      $("#wordBookSelect").innerHTML = options;
-      $("#wordPracticeBookSelect").innerHTML = options;
-      await loadSelectedWordBook();
-      await loadSelectedPracticeWordBook();
+      wordBookManifest = wordBookManifest.map(getWordBookMeta);
+      renderWordBookSelectors("word");
+      renderWordBookSelectors("wordPractice");
     }
 
     async function loadSelectedWordBook() {
@@ -2496,7 +2572,7 @@
       const end = Number($("#wordPracticeEnd").value);
       const words = currentPracticeWords.filter((word) => word.number >= start && word.number <= end);
       if (!name) {
-        setMessage($("#wordPracticeNotice"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        setMessage($("#wordPracticeNotice"), "이름을 먼저 입력하세요.", "bad");
         return;
       }
       if (!Number.isInteger(start) || !Number.isInteger(end) || start > end) {
@@ -2527,11 +2603,6 @@
       renderWordPractice();
     }
 
-    function practiceMemoryLine(word) {
-      const cleanMeaning = word.ko.replace(/^[a-z]+\.\s*/i, "");
-      return `기억 문장: “${word.en}”은(는) “${cleanMeaning}”이라는 뜻입니다.`;
-    }
-
     function renderWordPractice() {
       const session = wordPracticeSession;
       $("#wordPracticeAnswer").value = "";
@@ -2555,8 +2626,9 @@
         $("#wordPracticeStageTitle").textContent = session.stage === "relearn" ? "틀린 단어 다시 학습" : "1단계: 3회 노출 학습";
         const main = round === 3 ? word.ko : word.en;
         const hidden = round === 2 ? "뜻: ▓▓▓▓▓" : round === 3 ? "철자: ▓▓▓▓▓" : word.ko;
-        const memoryLine = round === 1 ? practiceMemoryLine(word) : "가린 답을 먼저 떠올린 뒤 확인하세요.";
-        $("#wordPracticeQuestion").innerHTML = `<h3>${round === 1 ? "보고 들으며 익히세요." : "가린 내용을 먼저 떠올리세요."}</h3><p class="question-main">${escapeHtml(main)}</p><p class="question-sub" id="wordPracticeHiddenText">${escapeHtml(hidden)}</p><p class="question-sub">${escapeHtml(memoryLine)}</p>`;
+        const recallHint = round === 1 ? "" : '<p class="question-sub">가린 답을 먼저 떠올린 뒤 확인하세요.</p>';
+        const meaningClass = round === 1 ? "question-sub word-practice-meaning" : "question-sub";
+        $("#wordPracticeQuestion").innerHTML = `<h3>${round === 1 ? "보고 들으며 익히세요." : "가린 내용을 먼저 떠올리세요."}</h3><p class="question-main">${escapeHtml(main)}</p><p class="${meaningClass}" id="wordPracticeHiddenText">${escapeHtml(hidden)}</p>${recallHint}`;
         if (round > 1) $("#revealWordPracticeBtn").classList.remove("hidden");
         if (round === 1) {
           $("#wordPracticeSoundBox").classList.remove("hidden");
@@ -2574,12 +2646,12 @@
         $("#wordPracticeStageTitle").textContent = "2단계: 음성 힌트 철자 시험";
         $("#wordPracticeSoundBox").classList.remove("hidden");
         session.replayLimit = Math.max(1, 4 - session.soundAttempt);
-        $("#wordPracticeQuestion").innerHTML = `<h3>소리를 듣고 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">틀리면 정답을 보고 한 번 정확히 다시 입력합니다.</p>`;
+        $("#wordPracticeQuestion").innerHTML = `<h3>소리를 듣고 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">틀린 단어는 정답을 한 번 따라 쓴 뒤, 현재 사이클이 끝나면 다시 시험합니다.</p>`;
         speakPracticeWord();
       } else if (session.stage === "spell" || session.stage === "spell-retest") {
         $("#wordPracticeStage").textContent = session.stage === "spell" ? "3단계" : "3단계 · 재시험";
         $("#wordPracticeStageTitle").textContent = session.stage === "spell" ? "3단계: 뜻만 보고 철자 입력" : "3단계: 오답 단어 재시험";
-        $("#wordPracticeQuestion").innerHTML = `<h3>뜻에 맞는 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">음성 힌트 없이 기억에서 꺼내세요.</p>`;
+        $("#wordPracticeQuestion").innerHTML = `<h3>뜻에 맞는 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">틀린 단어는 정답을 한 번 따라 쓴 뒤, 현재 사이클이 끝나면 다시 시험합니다.</p>`;
       } else if (session.stage === "meaning") {
         $("#wordPracticeStage").textContent = "4단계";
         $("#wordPracticeStageTitle").textContent = "4단계: 반대 방향 확인";
@@ -2621,9 +2693,10 @@
 
       if (session.correction) {
         if (!isCorrect) return setMessage($("#wordPracticeFeedback"), `정답 “${expected}”을 그대로 한 번 입력하세요.`, "bad");
+        session.correction = false;
         session.answered = true;
         $("#wordPracticeAnswer").disabled = true;
-        setMessage($("#wordPracticeFeedback"), "정답을 다시 정확히 입력했습니다. 다음으로 이동하세요.", "good");
+        setMessage($("#wordPracticeFeedback"), "정답을 따라 썼습니다. 다른 단어를 진행한 뒤, 사이클이 끝나면 이 단어를 다시 시험합니다.", "good");
         return;
       }
 
@@ -2635,10 +2708,10 @@
         setMessage($("#wordPracticeFeedback"), `정답입니다. ${expected}`, "good");
       } else {
         session.wrong.push(word);
-        if (session.stage === "sound") {
+        if (["sound", "spell", "spell-retest"].includes(session.stage)) {
           session.correction = true;
           $("#wordPracticeAnswer").value = "";
-          setMessage($("#wordPracticeFeedback"), `오답입니다. 정답은 “${expected}”입니다. 정답을 한 번 다시 입력하세요.`, "bad");
+          setMessage($("#wordPracticeFeedback"), `오답입니다. 정답은 “${expected}”입니다. 한 번 따라 쓰면 현재 사이클을 마친 뒤 다시 시험합니다.`, "bad");
         } else {
           session.answered = true;
           $("#wordPracticeAnswer").disabled = true;
@@ -2671,38 +2744,32 @@
     function finishPracticeStage() {
       const session = wordPracticeSession;
       if (session.stage === "sound") {
-        const score = Math.round((session.correct / session.queue.length) * 100);
-        if (score < 65) {
-          setMessage($("#wordPracticeFeedback"), `2단계 ${score}%입니다. 65% 이상이 필요해 같은 단계를 다시 연습합니다.`, "bad");
+        if (session.wrong.length) {
+          const retryWords = [...new Map(session.wrong.map((word) => [word.number, word])).values()];
           session.soundAttempt += 1;
-          return beginPracticeQuiz("sound", session.words);
+          beginPracticeQuiz("sound", retryWords);
+          setMessage($("#wordPracticeFeedback"), `사이클을 마쳤습니다. 틀린 ${retryWords.length}개 단어를 다시 시험합니다.`, "bad");
+          return;
         }
-        setMessage($("#wordPracticeFeedback"), `2단계 ${score}%로 통과했습니다.`, "good");
+        setMessage($("#wordPracticeFeedback"), "2단계의 모든 단어를 맞혀 통과했습니다.", "good");
         session.mastered = new Set();
         return beginPracticeQuiz("spell", session.words);
       }
       if (session.stage === "spell") {
-        const score = Math.round((session.correct / session.words.length) * 100);
-        if (score < 65) {
-          setMessage($("#wordPracticeFeedback"), `3단계 1차 ${score}%입니다. 65% 이상이 필요해 다시 시작합니다.`, "bad");
-          session.mastered = new Set();
-          return beginPracticeQuiz("spell", session.words);
+        if (session.wrong.length) {
+          const retryWords = [...new Map(session.wrong.map((word) => [word.number, word])).values()];
+          beginPracticeQuiz("spell-retest", retryWords);
+          setMessage($("#wordPracticeFeedback"), `3단계 사이클을 마쳤습니다. 틀린 ${retryWords.length}개 단어를 다시 시험합니다.`, "bad");
+          return;
         }
-        if (!session.wrong.length) return beginPracticeQuiz("meaning", shuffle(session.words).slice(0, Math.min(5, session.words.length)));
-        session.stage = "relearn";
-        session.queue = session.wrong;
-        session.index = 0;
-        return renderWordPractice();
+        return beginPracticeQuiz("meaning", shuffle(session.words).slice(0, Math.min(5, session.words.length)));
       }
       if (session.stage === "spell-retest") {
-        const finalScore = Math.round((session.mastered.size / session.words.length) * 100);
-        const remaining = session.queue.filter((word) => !session.mastered.has(word.number));
-        if (finalScore < 90 && remaining.length) {
-          setMessage($("#wordPracticeFeedback"), `현재 최종 숙달도 ${finalScore}%입니다. 남은 오답만 다시 학습합니다.`, "bad");
-          session.stage = "relearn";
-          session.queue = remaining;
-          session.index = 0;
-          return renderWordPractice();
+        if (session.wrong.length) {
+          const retryWords = [...new Map(session.wrong.map((word) => [word.number, word])).values()];
+          beginPracticeQuiz("spell-retest", retryWords);
+          setMessage($("#wordPracticeFeedback"), `재시험 사이클을 마쳤습니다. 다시 틀린 ${retryWords.length}개 단어를 또 시험합니다.`, "bad");
+          return;
         }
         return beginPracticeQuiz("meaning", shuffle(session.words).slice(0, Math.min(5, session.words.length)));
       }
@@ -2770,7 +2837,7 @@
       const end = Number($("#wordEnd").value);
       const book = wordBookManifest[Number($("#wordBookSelect").value)];
       if (!name) {
-        setMessage($("#wordNotice"), "이름 또는 닉네임을 먼저 입력하세요.", "bad");
+        setMessage($("#wordNotice"), "이름을 먼저 입력하세요.", "bad");
         return;
       }
       if (!Number.isInteger(start) || !Number.isInteger(end) || start > end) {
@@ -3105,13 +3172,17 @@
     $("#submitListeningPracticeBtn").addEventListener("click", submitListeningPracticeAnswer);
     $("#nextListeningPracticeBtn").addEventListener("click", nextListeningPracticeQuestion);
     $("#startWordBtn").addEventListener("click", startWordQuiz);
-    $("#wordBookSelect").addEventListener("change", loadSelectedWordBook);
+    $("#wordGradeSelect").addEventListener("change", () => renderWordTextbookOptions("word"));
+    $("#wordTextbookSelect").addEventListener("change", () => renderWordLessonOptions("word"));
+    $("#wordLessonSelect").addEventListener("change", () => selectWordLesson("word"));
     $("#resetWordBtn").addEventListener("click", resetWordQuiz);
     $("#nextWordBtn").addEventListener("click", nextWordQuestion);
     $("#shortAnswer").addEventListener("keydown", (event) => {
       if (event.key === "Enter") nextWordQuestion();
     });
-    $("#wordPracticeBookSelect").addEventListener("change", loadSelectedPracticeWordBook);
+    $("#wordPracticeGradeSelect").addEventListener("change", () => renderWordTextbookOptions("wordPractice"));
+    $("#wordPracticeTextbookSelect").addEventListener("change", () => renderWordLessonOptions("wordPractice"));
+    $("#wordPracticeLessonSelect").addEventListener("change", () => selectWordLesson("wordPractice"));
     $("#startWordPracticeBtn").addEventListener("click", startWordPractice);
     $("#resetWordPracticeBtn").addEventListener("click", resetWordPractice);
     $("#playWordPracticeBtn").addEventListener("click", () => speakPracticeWord());
