@@ -1,0 +1,312 @@
+1
+resilience
+(힘든 상황으로부터의) 회복력
+2
+overcome
+극복하다
+3
+wellness
+건강, 건강함
+4
+deal with ~
+~을 처리하다, 다루다
+5
+cultivate
+(지식·자질 등을) 기르다, 함양하다
+6
+inner
+내면의
+7
+strength
+강인함, 정신력
+8
+free from ~
+~을 면한, ~의 염려가 없는
+9
+adversity
+역경
+10
+take the form of ~
+~의 모습을 취하다
+11
+failure
+실패
+12
+issue
+문제
+13
+cope
+대처하다
+14
+ability
+능력
+15
+be known as ~
+~로 알려져 있다
+16
+spring back
+되튀다
+17
+bouncy
+잘 튀는, 탄력 있는
+18
+resilient
+회복력 있는
+19
+bounce back
+(병·곤경 등에서) 다시 회복되다
+20
+benefit
+(~에서) 득을 보다
+21
+countless
+셀 수 없이 많은
+22
+successful
+성공적인, 성공한
+23
+survive
+(위기 등을) 견뎌 내다
+24
+a stepping stone to ~
+~을 위한 발판
+25
+growth
+성장
+26
+fairy tale
+동화
+27
+poverty
+가난, 빈곤
+28
+loss
+죽음
+29
+disrespect
+~에게 무례하게 대하다
+30
+source
+원천, 근원
+31
+blessing
+축복과 같은 것
+32
+inspire
+~에게 영감을 주다
+33
+duckling
+새끼 오리
+34
+athlete
+운동선수
+35
+challenge
+(힘들지만 의미 있는) 도전, 과제
+36
+opportunity
+기회
+37
+medical condition
+질병
+38
+result in ~
+~을 야기하다
+39
+beneath
+아래에, 밑에
+40
+surgery
+수술
+41
+compete against ~
+~와 경쟁하다
+42
+disability
+장애
+43
+national
+국가의, 전국적인
+44
+participate in ~
+~에 참가하다
+45
+public speaking
+공개연설
+46
+physical
+육체의, 신체의
+47
+condition
+상태
+48
+potential
+잠재력
+49
+exceptional
+예외적인, 아주 드문
+50
+crisis
+위기
+51
+otherwise
+(만약) 그렇지 않으면
+52
+lasting
+지속적인
+53
+muscle
+근육
+54
+build ~ up
+~을 더 높이다, 강력하게 만들다
+55
+thought
+생각
+56
+behavior
+행동
+57
+allow
+허락하다, 허용하다
+58
+painful
+(마음이) 아픈, 고통스러운
+59
+basic
+기본적인, 근본적인
+60
+strategy
+전략
+61
+accept
+받아들이다
+62
+respect
+존중하다
+63
+passive
+수동적인, 소극적인
+64
+suffering
+(정신적·육체적) 고통
+65
+single ~ out
+~을 골라내다
+66
+face
+직면하다, 닥쳐오다
+67
+focus on ~
+~에 집중하다
+68
+embrace
+수용하다
+69
+unexpected
+예기치 않은, 뜻밖의
+70
+obstacle
+(성공 등을 가로막는) 장애물
+71
+think of ~
+~을 생각하다
+72
+that is (to say)
+즉, 말하자면
+73
+personal
+개인의, 개인적인
+74
+look after ~
+~을 돌보다, ~을 살피다
+75
+present
+현재의
+76
+moment
+순간
+77
+regret
+후회하다
+78
+meditate
+명상하다
+79
+work
+작동되다
+80
+take a deep breath
+깊이 숨 쉬다
+81
+observe
+관찰하다
+82
+judge
+판단하다, 평가하다
+83
+proceed with ~
+~을 계속 진행하다
+84
+base on ~
+~에 근거하여
+85
+go forward with ~
+~을 진행시키다
+86
+connect
+연결하다
+87
+trust
+(사람을) 신뢰하다, 믿다
+88
+counselor
+상담사
+89
+clarity
+명료, 명확
+90
+respond to ~
+~에 대응하다
+91
+tend to부정사
+~하는 경향이 있다
+92
+support
+격려, 도움
+93
+remove
+없애다, 제거하다
+94
+urge
+권고하다, 촉구하다
+95
+particularly
+특히
+96
+in the middle of ~
+~의 한가운데에
+97
+uncertainty
+불확실성
+98
+tough
+힘든
+99
+endure
+참다
+100
+apply A to B
+A를 B에 적용하다
+101
+minor
+작은, 사소한
+102
+gradually
+서서히
+103
+fulfilled
+만족감, 성취감을 느끼는
+104
+a key to ~
+~의 열쇠, 단서

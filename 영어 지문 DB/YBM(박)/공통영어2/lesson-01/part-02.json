@@ -1,0 +1,62 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 1,
+  "part": 2,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l01-p02-001",
+      "title": "Another Fake News Incident",
+      "text": [
+        "It reminded her of another incident of fake news that had happened a while ago.",
+        "The news that a famous athlete had died became the number one issue online, but it turned out to be fake.",
+        "It had been made by content creators who sought people’s attention.",
+        "They produced provocative false stories to make money by raising the number of views of their posts.",
+        "At that time, Gina criticized those who had made and spread fake news because it had hurt the athlete and confused people.",
+        "This time, however, Gina herself had accidentally contributed to the spread of fake news."
+      ],
+      "koreanText": [
+        "이것은 지나에게 얼마 전 있었던 또 다른 가짜 뉴스 사건을 떠올리게 했다.",
+        "유명한 운동선수가 사망했다는 뉴스가 온라인에서 가장 큰 이슈가 되었지만, 가짜로 밝혀졌다.",
+        "이것은 사람들의 주목을 끌기 위해 콘텐츠 제작자들이 만든 것이었다.",
+        "그들은 자신들의 게시물의 조회수를 높여 돈을 벌기 위해 자극적인 가짜 뉴스를 생산했다.",
+        "그 당시, 지나는 그런 가짜 뉴스를 만들고 퍼뜨린 사람들을 비판했었는데, 그것은 운동선수에게 상처를 주고 사람들을 혼란스럽게 했기 때문이었다.",
+        "하지만, 이번에는 지나 자신이 실수로 가짜 뉴스의 확산에 기여한 셈이 되었다."
+      ],
+      "keyExpressions": [
+        "remind A of B",
+        "incident",
+        "a while ago",
+        "athlete",
+        "issue",
+        "turn out to be",
+        "content creator",
+        "seek attention",
+        "provocative",
+        "make money",
+        "raise",
+        "views",
+        "criticize",
+        "confuse",
+        "contribute to"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "remind A of B", "translation": "A에게 B를 떠올리게 하다" },
+        { "expression": "incident", "translation": "사건" },
+        { "expression": "a while ago", "translation": "얼마 전" },
+        { "expression": "athlete", "translation": "운동선수" },
+        { "expression": "issue", "translation": "이슈, 문제" },
+        { "expression": "turn out to be", "translation": "~로 밝혀지다" },
+        { "expression": "content creator", "translation": "콘텐츠 제작자" },
+        { "expression": "seek attention", "translation": "주목을 끌다" },
+        { "expression": "provocative", "translation": "자극적인" },
+        { "expression": "make money", "translation": "돈을 벌다" },
+        { "expression": "raise", "translation": "높이다" },
+        { "expression": "views", "translation": "조회수" },
+        { "expression": "criticize", "translation": "비판하다" },
+        { "expression": "confuse", "translation": "혼란스럽게 하다" },
+        { "expression": "contribute to", "translation": "~에 기여하다" }
+      ]
+    }
+  ]
+}

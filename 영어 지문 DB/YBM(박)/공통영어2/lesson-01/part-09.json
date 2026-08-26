@@ -1,0 +1,58 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 1,
+  "part": 9,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l01-p09-001",
+      "title": "Think Critically in the Digital Age",
+      "text": [
+        "In the digital age, it might be impossible to avoid or eliminate all false information that spreads online.",
+        "However, if you have the ability to view information critically and objectively, you will be able to reduce the damage that fake news can cause.",
+        "Don’t forget!",
+        "Anyone can be the next person producing or spreading fake news!"
+      ],
+      "koreanText": [
+        "디지털 시대에는 온라인에서 퍼지는 모든 거짓 정보를 피하거나 없애는 것은 불가능할 수 있다.",
+        "하지만 만약 당신이 정보를 비판적이고 객관적으로 볼 수 있는 능력을 가지고 있다면, 당신은 가짜 뉴스가 야기할 수 있는 피해를 줄일 수 있을 것이다.",
+        "잊지 말아라!",
+        "누구나 가짜 뉴스를 생산하거나 퍼뜨리는 다음의 사람이 될 수 있다!"
+      ],
+      "keyExpressions": [
+        "digital age",
+        "impossible",
+        "avoid",
+        "eliminate",
+        "false information",
+        "spread online",
+        "ability",
+        "view",
+        "critically",
+        "objectively",
+        "be able to",
+        "reduce",
+        "damage",
+        "cause",
+        "produce"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "digital age", "translation": "디지털 시대" },
+        { "expression": "impossible", "translation": "불가능한" },
+        { "expression": "avoid", "translation": "피하다" },
+        { "expression": "eliminate", "translation": "없애다" },
+        { "expression": "false information", "translation": "거짓 정보" },
+        { "expression": "spread online", "translation": "온라인에서 퍼지다" },
+        { "expression": "ability", "translation": "능력" },
+        { "expression": "view", "translation": "보다" },
+        { "expression": "critically", "translation": "비판적으로" },
+        { "expression": "objectively", "translation": "객관적으로" },
+        { "expression": "be able to", "translation": "~할 수 있다" },
+        { "expression": "reduce", "translation": "줄이다" },
+        { "expression": "damage", "translation": "피해" },
+        { "expression": "cause", "translation": "야기하다" },
+        { "expression": "produce", "translation": "생산하다" }
+      ]
+    }
+  ]
+}

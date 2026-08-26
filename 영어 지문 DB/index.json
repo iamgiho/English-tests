@@ -526,5 +526,109 @@
     "lesson": 1,
     "part": 10,
     "path": "영어 지문 DB/동아(박)/영어2/lesson-01/part-10.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 1,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-01.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 2,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-02.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 3,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-03.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 4,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-04.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 5,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-05.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 6,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-06.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 7,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-07.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 8,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-08.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 1,
+    "part": 9,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-01/part-09.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 2,
+    "part": 1,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-02/part-01.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 2,
+    "part": 2,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-02/part-02.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 2,
+    "part": 3,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-02/part-03.json"
+  },
+  {
+    "grade": "고1",
+    "publisher": "YBM(박)",
+    "book": "공통영어2",
+    "lesson": 2,
+    "part": 4,
+    "path": "영어 지문 DB/YBM(박)/공통영어2/lesson-02/part-04.json"
   }
 ]

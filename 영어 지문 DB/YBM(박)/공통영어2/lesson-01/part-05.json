@@ -1,0 +1,64 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 1,
+  "part": 5,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l01-p05-001",
+      "title": "Why Fake News Spreads Faster",
+      "text": [
+        "Fake news on social media spreads significantly farther and faster than true stories.",
+        "A study by the Massachusetts Institute of Technology in the US has shown that fake news spreads online 6 times faster than real news on average.",
+        "One explanation for this phenomenon is that people like new and provocative things.",
+        "When information is astonishing, people not only feel that it is surprising, but they also want to share the stimulating news with others.",
+        "By passing it to others on social media, they can gain attention because they are the first to post previously unknown, but possibly false, information.",
+        "Also, fake news goes viral because people in their daily lives tend to think simply and effortlessly.",
+        "It is more likely for them to believe new information without any proof, instead of critically examining it."
+      ],
+      "koreanText": [
+        "소셜 미디어에서 가짜 뉴스는 진짜 이야기보다 훨씬 더 멀리, 빠르게 퍼진다.",
+        "미국 매사추세츠 공과대학의 한 연구에 따르면 가짜 뉴스는 평균적으로 진짜 뉴스보다 6배 빠르게 온라인에서 퍼지는 것으로 나타났다.",
+        "이러한 현상에 대한 한 가지 설명은 사람들이 새롭고 자극적인 것을 좋아한다는 것이다.",
+        "정보가 놀라운 것일 때 사람들은 그것이 놀랍다고 느낄 뿐만 아니라, 그 자극적인 뉴스를 다른 사람들과 공유하고 싶어 한다.",
+        "소셜 미디어를 통해 그것을 다른 사람들에게 전달함으로써, 그들은 아직 알려지지 않았지만 아마도 거짓일 수 있는 정보를 게시한 첫 번째 사람이기 때문에 주목을 받을 수 있다.",
+        "또한, 가짜 뉴스는 사람들이 일상생활에서 단순하고 쉽게 생각하는 경향이 있기 때문에 널리 퍼진다.",
+        "사람들은 비판적으로 그것을 조사하는 대신에, 어떠한 증거도 없이 새로운 정보를 믿을 가능성이 더 크다."
+      ],
+      "keyExpressions": [
+        "significantly",
+        "farther and faster",
+        "on average",
+        "phenomenon",
+        "provocative",
+        "not only A but also B",
+        "stimulating",
+        "pass A to B",
+        "gain attention",
+        "previously",
+        "possibly",
+        "go viral",
+        "tend to",
+        "effortlessly",
+        "instead of"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "significantly", "translation": "훨씬, 상당히" },
+        { "expression": "farther and faster", "translation": "더 멀리, 더 빠르게" },
+        { "expression": "on average", "translation": "평균적으로" },
+        { "expression": "phenomenon", "translation": "현상" },
+        { "expression": "provocative", "translation": "자극적인" },
+        { "expression": "not only A but also B", "translation": "A뿐만 아니라 B도" },
+        { "expression": "stimulating", "translation": "자극적인" },
+        { "expression": "pass A to B", "translation": "A를 B에게 전달하다" },
+        { "expression": "gain attention", "translation": "주목을 받다" },
+        { "expression": "previously", "translation": "이전에" },
+        { "expression": "possibly", "translation": "아마도" },
+        { "expression": "go viral", "translation": "널리 퍼지다" },
+        { "expression": "tend to", "translation": "~하는 경향이 있다" },
+        { "expression": "effortlessly", "translation": "쉽게, 노력 없이" },
+        { "expression": "instead of", "translation": "~ 대신에" }
+      ]
+    }
+  ]
+}

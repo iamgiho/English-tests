@@ -1,0 +1,58 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 1,
+  "part": 6,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l01-p06-001",
+      "title": "The Trap of Confirmation Bias",
+      "text": [
+        "Moreover, people are inclined to believe information that fits their prejudices or experiences even when not true.",
+        "In this process, people easily fall into the trap of “confirmation bias.”",
+        "That is, they selectively accept news in a way that only confirms their beliefs and ignore news that doesn’t support them.",
+        "During election season, for example, people tend to blindly believe any news describing their favored candidates in a positive way, while unconsciously believing news that reports something negative about other candidates."
+      ],
+      "koreanText": [
+        "또한, 사람들은 사실이 아니더라도 자신의 편견이나 경험에 부합하는 정보를 믿으려는 경향이 있다.",
+        "이 과정에서 사람들은 ‘확증 편향’의 함정에 쉽게 빠진다.",
+        "즉, 그들은 자신의 신념을 확인시켜 주는 뉴스만 선별적으로 받아들이고 이를 뒷받침하지 않는 뉴스는 무시한다.",
+        "예를 들어, 선거철에는 자신이 선호하는 후보를 긍정적으로 묘사하는 모든 뉴스를 맹목적으로 믿는 반면, 다른 후보에 대해 부정적인 내용을 보도하는 뉴스는 무의식적으로 믿는 경향이 있다."
+      ],
+      "keyExpressions": [
+        "moreover",
+        "be inclined to",
+        "fit",
+        "prejudice",
+        "even when",
+        "fall into the trap of",
+        "confirmation bias",
+        "that is",
+        "selectively",
+        "confirm",
+        "belief",
+        "election season",
+        "blindly",
+        "favored candidate",
+        "unconsciously"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "moreover", "translation": "또한" },
+        { "expression": "be inclined to", "translation": "~하려는 경향이 있다" },
+        { "expression": "fit", "translation": "~에 부합하다" },
+        { "expression": "prejudice", "translation": "편견" },
+        { "expression": "even when", "translation": "~일 때도, ~이더라도" },
+        { "expression": "fall into the trap of", "translation": "~의 함정에 빠지다" },
+        { "expression": "confirmation bias", "translation": "확증 편향" },
+        { "expression": "that is", "translation": "즉" },
+        { "expression": "selectively", "translation": "선별적으로" },
+        { "expression": "confirm", "translation": "확인시켜 주다" },
+        { "expression": "belief", "translation": "신념" },
+        { "expression": "election season", "translation": "선거철" },
+        { "expression": "blindly", "translation": "맹목적으로" },
+        { "expression": "favored candidate", "translation": "선호하는 후보" },
+        { "expression": "unconsciously", "translation": "무의식적으로" }
+      ]
+    }
+  ]
+}

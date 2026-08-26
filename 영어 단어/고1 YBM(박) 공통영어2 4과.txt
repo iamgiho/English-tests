@@ -1,0 +1,438 @@
+1
+microscope
+현미경
+2
+essential
+핵심적인, 필수적인
+3
+tool for ~
+~을 위한 도구
+4
+invent
+~을 발명하다
+5
+discover
+~을 발견하다
+6
+bacteria
+박테리아들
+7
+structure
+구조
+8
+organism
+유기체, 생물체
+9
+certain
+어떤, 특정한
+10
+accessible
+접근 가능한, 이용 가능한
+11
+due to ~
+~ 때문에
+12
+cost
+가격, 비용, ~의 비용이 들다
+13
+present
+제시하다, 제출하다
+14
+solution to ~
+~에 대한 해결책
+15
+achieve
+~을 성취하다
+16
+magnification
+확대
+17
+less than ~
+~보다 적은, ~ 미만의
+18
+in parts
+부품들로
+19
+research
+~을 연구하다
+20
+method
+방법
+21
+identify
+~을 확인하다, 식별하다
+22
+infectious
+전염성의
+23
+come across ~
+~을 우연히 발견하다
+24
+expensive
+값비싼
+25
+annually
+매년, 해마다
+26
+diagnosis
+진단
+27
+crucial
+결정적인, 핵심적인
+28
+prevent
+~을 막다
+29
+spread
+확산
+30
+sit + 형용사
+~한 상태로 있다
+31
+unused
+사용되지 않는
+32
+multiple
+다수의
+33
+bulky
+부피가 큰
+34
+awkward
+조작이 까다로운, 다루기 어려운
+35
+transport
+~을 운반하다
+36
+require
+~을 요구하다
+37
+operate
+작동하다
+38
+maintain
+~을 유지하다
+39
+delicate
+섬세한
+40
+instrument
+기구
+41
+nervous
+초조한
+42
+wonder
+(~을) 궁금해하다, 불가사의
+43
+cheap
+값싼
+44
+save
+~을 구하다
+45
+reflect on ~
+~을 숙고하다
+46
+not until + 완전한 절
+~한 후에야 비로소
+47
+affordable
+(가격이) 알맞은, 저렴한
+48
+take shape
+구체화되다
+49
+graduate
+대학원의, 석사 과정의
+50
+background
+배경
+51
+make a difference
+변화를 일으키다
+52
+recognize
+~을 인식하다
+53
+eager to부정사
+~하기를 열망하는
+54
+function
+작동하다
+55
+properly
+적절하게
+56
+meet the requirements
+요구를 충족시키다
+57
+minimum
+최소한의
+58
+eyepiece
+접안렌즈
+59
+component
+부품
+60
+specimen
+표본, 시료
+61
+from side to side
+좌우로
+62
+explore
+탐색하다
+63
+furthermore
+더구나, 게다가
+64
+mechanism
+작동 구조, 메커니즘
+65
+bring ~ into focus
+~에 초점을 맞추다
+66
+accomplish
+~을 성취하다
+67
+close to ~
+~에 가까이
+68
+far from ~
+~로부터 멀리
+69
+light source
+광원
+70
+illuminate
+~을 비추다
+71
+ideal
+이상적인, 완벽한
+72
+material
+재료
+73
+likely
+아마도
+74
+enormously
+엄청나게
+75
+on the other hand
+반면에
+76
+deliver ~ performance
+~한 성능을 보여주다
+77
+experiment with ~
+~로 실험하다
+78
+suitable
+적절한, 적합한
+79
+compromise
+타협안, 절충안
+80
+manufacturer
+제조업체, 제조업자
+81
+settle for ~
+~로 만족하다
+82
+middle ground
+중도, 절충안
+83
+extreme
+극단
+84
+inexpensive
+값싼, 저렴한
+85
+be determined to부정사
+~할 것을 결심하다
+86
+remain + 형용사
+~한 채로 남아 있다
+87
+draw
+~을 그리다
+88
+realize
+~을 깨닫다
+89
+medium
+제작 재료
+90
+fold
+접다
+91
+with precision
+정밀하게
+92
+available
+이용 가능한
+93
+face challenges
+어려움에 직면하다
+94
+attempt
+시도, 도전
+95
+ultimately
+결국, 끝내
+96
+settle on[upon] ~
+~로 결정하다
+97
+waterproof
+방수의
+98
+cardboard
+판지, 마분지
+99
+name
+이름을 지어주다, 명명하다
+100
+invention
+발명, 발명품
+101
+capable of + 동명사
+~할 수 있는
+102
+examine
+~을 검사하다
+103
+single-celled
+단세포의
+104
+incredibly
+믿을 수 없을 만큼
+105
+portable
+휴대가 쉬운
+106
+weigh
+무게가 ~이다
+107
+fit in[into] ~
+~에 알맞다
+108
+external
+외부의
+109
+power source
+전원
+110
+last
+오래가다
+111
+survive
+~을 이겨내다
+112
+fall
+낙하
+113
+usefulness
+유용함
+114
+enhance
+향상시키다
+115
+compatibility
+호환성
+116
+take pictures
+사진을 찍다
+117
+record
+~을 기록하다
+118
+project
+~을 영사하다, 투사하다
+119
+high-resolution
+고해상도의
+120
+distribute
+~을 배포하다
+121
+invaluable
+대단히 귀중한
+122
+worldwide
+전 세계의
+123
+utilize
+~을 활용하다
+124
+purpose
+목적
+125
+be instrumental in + 동명사
+~하는 데 매우 중요한 역할을 하다
+126
+detect
+발견하다, 탐지하다
+127
+fake
+가짜의
+128
+antimalarial
+말라리아 치료의, 예방의
+129
+responsible for ~
+~의 원인이 되는
+130
+sub-Saharan
+사하라 사막 이남의
+131
+crush ~ into …
+~을 …로 분쇄하다
+132
+uniform
+균일한
+133
+particle
+입자
+134
+mere
+단순한
+135
+publish
+~을 발표하다, 출판하다
+136
+currently
+현재
+137
+in progress
+진행 중인
+138
+introduce ~ to …
+~에게 …을 처음 경험하게 하다
+139
+give up on ~
+~에 대한 희망을 버리다
+140
+achievement
+성취, 업적
+141
+occur
+일어나다, 발생하다
+142
+lack
+~가 부족하다
+143
+access to ~
+~로의 접근, 접근 기회
+144
+health care
+의료 서비스, 보건 서비스
+145
+preventable
+예방할 수 있는
+146
+increasingly
+점점 더

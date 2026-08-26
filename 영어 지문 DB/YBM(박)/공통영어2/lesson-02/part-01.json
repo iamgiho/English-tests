@@ -1,0 +1,82 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 1,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l02-p01-001",
+      "title": "The Flow Crisis Begins",
+      "text": [
+        "The kitchen tap makes strange sounds.",
+        "It coughs.",
+        "It spits once, and then goes silent.",
+        "“Mom,” I shout out into the living room, “water is not coming out.”",
+        "“Alyssa, shush!” Mom says.",
+        "She is watching the TV, where a news anchor is talking about the “flow crisis.”",
+        "This is what the media has been calling the drought ever since people got tired of hearing the word “drought.”",
+        "Now the crisis is entering a new stage.",
+        "We have no running water out of the tap.",
+        "“To the mall!” says Uncle Basil.",
+        "My little brother Garrett and I jump in our uncle’s truck.",
+        "As we pull into the parking lot, we can see the crowd.",
+        "“You two go in. I’ll meet you inside,” Uncle Basil says.",
+        "Inside it’s like Black Friday at its worst — but today it’s not televisions and video games people are after.",
+        "What I see in the carts in the checkout line are mostly water bottles.",
+        "The essentials of life."
+      ],
+      "koreanText": [
+        "주방 수도꼭지가 이상한 소리를 낸다.",
+        "기침을 한다.",
+        "침을 한 번 뱉더니 조용해진다.",
+        "“엄마,” 나는 거실을 향해 소리친다. “물이 안 나와요.”",
+        "“Alyssa, 조용히 해!” 엄마가 말한다.",
+        "엄마는 TV를 보고 있고, TV에서는 뉴스 앵커가 ‘물 공급 위기’에 대해 이야기하고 있다.",
+        "사람들이 ‘가뭄’이라는 단어를 듣는 데 지친 이후로 언론은 가뭄을 이렇게 부르고 있다.",
+        "이제 위기는 새로운 단계로 접어들고 있다.",
+        "수도꼭지에서 수돗물이 나오지 않는다.",
+        "“쇼핑몰로 가자!” Basil 삼촌이 말한다.",
+        "동생 Garrett과 나는 삼촌의 트럭에 올라탄다.",
+        "주차장에 차를 세우자 많은 사람이 눈에 들어온다.",
+        "“너희 둘은 들어가. 안에서 만나자.”라고 Basil 삼촌이 말한다.",
+        "내부 풍경은 최악의 블랙 프라이데이와 비슷하지만, 오늘 사람들이 찾는 것은 텔레비전이나 비디오 게임이 아니다.",
+        "계산대에 줄을 선 카트에 보이는 것은 대부분 물병이다.",
+        "생명의 필수품."
+      ],
+      "keyExpressions": [
+        "tap",
+        "cough",
+        "spit",
+        "shout out",
+        "shush",
+        "news anchor",
+        "flow crisis",
+        "drought",
+        "be tired of",
+        "running water",
+        "pull into",
+        "parking lot",
+        "Black Friday",
+        "checkout line",
+        "essentials"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "tap", "translation": "수도꼭지" },
+        { "expression": "cough", "translation": "기침하다" },
+        { "expression": "spit", "translation": "침을 뱉다" },
+        { "expression": "shout out", "translation": "큰 소리로 외치다" },
+        { "expression": "shush", "translation": "조용히 하다" },
+        { "expression": "news anchor", "translation": "뉴스 앵커" },
+        { "expression": "flow crisis", "translation": "물 공급 위기" },
+        { "expression": "drought", "translation": "가뭄" },
+        { "expression": "be tired of", "translation": "~에 지치다" },
+        { "expression": "running water", "translation": "수돗물" },
+        { "expression": "pull into", "translation": "~에 차를 대다" },
+        { "expression": "parking lot", "translation": "주차장" },
+        { "expression": "Black Friday", "translation": "블랙 프라이데이" },
+        { "expression": "checkout line", "translation": "계산대 줄" },
+        { "expression": "essentials", "translation": "필수품" }
+      ]
+    }
+  ]
+}

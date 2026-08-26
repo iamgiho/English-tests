@@ -1,0 +1,60 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 1,
+  "part": 4,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l01-p04-001",
+      "title": "Fake News during an Emergency",
+      "text": [
+        "It is very common for fake news to spread during states of emergency.",
+        "For example, after an earthquake measuring 6.5 struck Ambon, Indonesia, in September 2019, thousands of residents did not return to their homes and were still in shelters for two weeks.",
+        "This was because of fake news stories on social media that another earthquake followed by a tsunami was about to strike.",
+        "One of those messages said, “It’s up to you if you want to believe me or not, but apparently Ambon is going to sink in the next few days.”",
+        "Many displaced people were so anxious about aftershocks that the government had to announce that the information was fake."
+      ],
+      "koreanText": [
+        "비상사태 동안 가짜 뉴스가 퍼지는 것은 매우 흔한 일이다.",
+        "예를 들어, 2019년 9월 인도네시아 암본에서 규모 6.5의 지진이 발생한 후, 수천 명의 주민들이 집으로 돌아가지 않고 2주 동안 대피소에 머물렀다.",
+        "이것은 소셜 미디어에 또 다른 지진이 발생한 후 쓰나미가 곧 이어질 것이라는 가짜 뉴스 이야기 때문이었다.",
+        "그 메시지 중 하나는 ‘내 말을 믿든 믿지 않든 당신 마음이지만, 분명히 앞으로 며칠 안에 암본이 가라앉을 것이다.’라는 내용이었다.",
+        "많은 이재민들이 여진에 대한 불안감에 휩싸여 있었기 때문에 정부는 이 정보가 가짜라고 발표해야 했다."
+      ],
+      "keyExpressions": [
+        "state of emergency",
+        "earthquake",
+        "measure",
+        "strike",
+        "residents",
+        "shelter",
+        "for two weeks",
+        "be about to",
+        "tsunami",
+        "be up to",
+        "apparently",
+        "sink",
+        "displaced people",
+        "aftershock",
+        "announce"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "state of emergency", "translation": "비상사태" },
+        { "expression": "earthquake", "translation": "지진" },
+        { "expression": "measure", "translation": "규모가 ~이다" },
+        { "expression": "strike", "translation": "덮치다, 발생하다" },
+        { "expression": "residents", "translation": "주민들" },
+        { "expression": "shelter", "translation": "대피소" },
+        { "expression": "for two weeks", "translation": "2주 동안" },
+        { "expression": "be about to", "translation": "곧 ~하려 하다" },
+        { "expression": "tsunami", "translation": "쓰나미" },
+        { "expression": "be up to", "translation": "~에게 달려 있다" },
+        { "expression": "apparently", "translation": "분명히, 듣자 하니" },
+        { "expression": "sink", "translation": "가라앉다" },
+        { "expression": "displaced people", "translation": "이재민들" },
+        { "expression": "aftershock", "translation": "여진" },
+        { "expression": "announce", "translation": "발표하다" }
+      ]
+    }
+  ]
+}

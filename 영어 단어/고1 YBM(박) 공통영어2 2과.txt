@@ -1,0 +1,201 @@
+1
+tap
+(수도·가스 등의) 꼭지
+2
+cough
+기침을 하다
+3
+spit
+침을 뱉다
+4
+shout ~ out
+(갑자기) ~을 크게 외치다
+5
+shush
+쉿, 조용히
+6
+anchor
+(뉴스의) 앵커, 진행자
+7
+flow
+(액체·기체·전기 등의) 흐름
+8
+crisis
+위기
+9
+drought
+가뭄
+10
+tired of ~
+~에 싫증이 난, ~이 지겨운
+11
+running water
+수돗물
+12
+pull into ~
+~에 차를 대다
+13
+parking lot
+주차장
+14
+Black Friday
+추수감사절 다음 금요일, 할인 행사일
+15
+after ~
+~을 찾고 있는
+16
+checkout
+계산대
+17
+essentials
+필수적인 것
+18
+look
+표정
+19
+impatience
+조급함
+20
+hostility
+적대심
+21
+thin
+거의 없는 수준의, 미약한
+22
+layer
+층, 겹
+23
+politeness
+정중함
+24
+stretch
+~을 늘이다
+25
+approach
+~에 접근하다
+26
+empty
+빈, 비우다
+27
+manage
+(어떻게든) ~하다, 해내다
+28
+try one's luck
+운을 걸고 해보다
+29
+place
+~을 놓다, 두다
+30
+unwanted
+원하지 않는, 필요하지 않는
+31
+abandon
+(물건·장소를) 버리고 떠나다
+32
+commodity
+(유용한) 것
+33
+reach for ~
+~을 잡으려 손을 뻗다
+34
+stack
+쌓다
+35
+recognize
+알아보다
+36
+lean
+몸을 기울이다
+37
+return the favor
+은혜를 갚다
+38
+deep
+(색깔이) 짙은
+39
+flush
+홍조
+40
+aisle
+통로
+41
+remind
+상기시키다
+42
+pile
+쌓다
+43
+take notice
+알아차리다, 주목하다
+44
+ridiculously
+터무니없이, 말도 안 되게
+45
+come up
+다가오다, 다가가다
+46
+grab
+~을 잡아채다, ~을 확 움켜쥐다
+47
+return
+(미소·인사 등에) 똑같이 답하다
+48
+bring out the best in ~
+~의 장점을 이끌어내다
+49
+favor
+호의
+50
+deserve
+~을 받을 만하다
+51
+fade
+점차 사라지다, 희미해지다
+52
+scare
+겁주다
+53
+firmly
+단단히
+54
+lock
+고정시키다
+55
+prove
+입증하다, 증명하다
+56
+bitter
+분한, 억울해하는
+57
+shorten
+짧게 하다
+58
+version
+버전, 판
+59
+tough
+어려운, 힘든
+60
+disastrous
+끔찍한, 재앙과도 같은
+61
+resume
+재개되다
+62
+provided (that) ~
+만약 ~라면
+63
+contribute to ~
+~의 요인이 되다
+64
+shortage
+부족
+65
+address
+~을 다루다, ~에 대처하다
+66
+population
+인구
+67
+agriculture
+농업

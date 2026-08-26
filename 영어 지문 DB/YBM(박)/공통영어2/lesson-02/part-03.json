@@ -1,0 +1,80 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 3,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l02-p03-001",
+      "title": "The Last Case of Water",
+      "text": [
+        "I manage my way to the side aisle, trying my luck.",
+        "Sometimes people place unwanted items in the wrong shelves.",
+        "Lucky!",
+        "I find a single case of water that someone abandoned there maybe yesterday, when it wasn’t such a precious commodity.",
+        "I reach for it, only to find it pulled away at the last second by a woman.",
+        "She stacks it on top of her cart like a crown on top of her canned goods.",
+        "“I’m sorry, but we were here first,” she says.",
+        "And then her daughter steps forward — a girl I recognize from soccer — Hali Hartling.",
+        "As her mother pulls their cart away, Hali leans closer to me.",
+        "“I’m sorry about that, Alyssa.”",
+        "“Didn’t I share my water with you at the practice last week?”",
+        "I point out to her.",
+        "“Maybe you could return the favor and share a few bottles with me.”",
+        "She looks back to her mother, who’s already moving down the aisle, then turns back to me shaking her head.",
+        "And then she gets a little bit red in the face, and turns to leave before it becomes a deep flush."
+      ],
+      "koreanText": [
+        "옆 통로로 가서 운을 시험해 본다.",
+        "가끔 사람들이 원하지 않는 물건을 엉뚱한 선반에 놓는 경우가 있다.",
+        "운이 좋다!",
+        "물이 그렇게 귀한 물건이 아니었던 어제 누군가 그곳에 버린 생수 한 상자를 발견한다.",
+        "손을 뻗어 생수 상자를 집어 들려는 순간, 한 여자가 상자를 가져가는 것을 본다.",
+        "그녀는 생수 상자를 카트에 담긴 통조림 위에 마치 왕관처럼 쌓아 놓는다.",
+        "“미안하지만 우리가 먼저 왔어요.” 그녀가 말한다.",
+        "그러자 그녀의 딸이 앞으로 나오는데, 축구팀에서 알고 있는 Hali Hartling이다.",
+        "엄마가 카트를 끌고 가자 Hali가 내게 몸을 기울인다.",
+        "“미안해, Alyssa.”",
+        "“지난주 연습할 때 내가 물 나눠주지 않았니?”",
+        "나는 그녀에게 지적한다.",
+        "“너도 호의를 갚아서 나랑 물 몇 병 나눠도 되겠네.”",
+        "그녀는 이미 통로를 따라 이동하고 있는 어머니를 돌아보더니 고개를 절레절레 흔들며 내게로 돌아선다.",
+        "그러고는 얼굴이 약간 붉어지더니 더 붉어지기 전에 자리를 뜨려고 돌아선다."
+      ],
+      "keyExpressions": [
+        "manage one's way",
+        "aisle",
+        "try one's luck",
+        "unwanted",
+        "abandon",
+        "commodity",
+        "reach for",
+        "at the last second",
+        "stack",
+        "recognize",
+        "lean closer",
+        "point out",
+        "return the favor",
+        "shake one's head",
+        "deep flush"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "manage one's way", "translation": "어떻게든 가다" },
+        { "expression": "aisle", "translation": "통로" },
+        { "expression": "try one's luck", "translation": "운을 시험해 보다" },
+        { "expression": "unwanted", "translation": "원하지 않는" },
+        { "expression": "abandon", "translation": "버리다" },
+        { "expression": "commodity", "translation": "물건" },
+        { "expression": "reach for", "translation": "~을 잡으려 손을 뻗다" },
+        { "expression": "at the last second", "translation": "마지막 순간에" },
+        { "expression": "stack", "translation": "쌓아 놓다" },
+        { "expression": "recognize", "translation": "알아보다" },
+        { "expression": "lean closer", "translation": "더 가까이 몸을 기울이다" },
+        { "expression": "point out", "translation": "지적하다" },
+        { "expression": "return the favor", "translation": "호의를 갚다" },
+        { "expression": "shake one's head", "translation": "고개를 흔들다" },
+        { "expression": "deep flush", "translation": "짙은 홍조" }
+      ]
+    }
+  ]
+}

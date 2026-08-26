@@ -1,0 +1,62 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 1,
+  "part": 7,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l01-p07-001",
+      "title": "How to Avoid Being Misled by Fake News",
+      "text": [
+        "With so much information on the Internet, how can you make sure that fake news does not mislead you?",
+        "First, read beyond the provocative headlines.",
+        "They can be so stimulating to get more clicks that you may click on them accidentally.",
+        "So don’t just read the headlines, but read the text carefully.",
+        "Second, don’t read the news at face value.",
+        "Exercise critical thinking skills to judge the news."
+      ],
+      "koreanText": [
+        "인터넷에 그렇게 많은 정보가 있는데 어떻게 가짜 뉴스가 당신을 현혹하지 않는지 확신할 수 있을까?",
+        "첫째, 자극적인 표제를 넘어 읽어라.",
+        "그것들은 더 많은 클릭을 유도하기 위해 지나치게 자극적이어서 당신은 뜻하지 않게 그것들을 클릭할 수 있다.",
+        "따라서 표제만 읽지 말고 본문을 주의 깊게 읽어라.",
+        "둘째, 뉴스를 액면 그대로 읽지 말아라.",
+        "뉴스를 판단하기 위해 비판적인 사고 기술을 연습해라."
+      ],
+      "keyExpressions": [
+        "make sure",
+        "mislead",
+        "read beyond",
+        "provocative",
+        "headline",
+        "stimulating",
+        "click",
+        "accidentally",
+        "not just A but B",
+        "text",
+        "carefully",
+        "at face value",
+        "exercise",
+        "critical thinking skills",
+        "judge"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "make sure", "translation": "확신하다" },
+        { "expression": "mislead", "translation": "현혹하다, 오도하다" },
+        { "expression": "read beyond", "translation": "~을 넘어 읽다" },
+        { "expression": "provocative", "translation": "자극적인" },
+        { "expression": "headline", "translation": "표제" },
+        { "expression": "stimulating", "translation": "자극적인" },
+        { "expression": "click", "translation": "클릭하다" },
+        { "expression": "accidentally", "translation": "뜻하지 않게" },
+        { "expression": "not just A but B", "translation": "A만 하지 말고 B하다" },
+        { "expression": "text", "translation": "본문" },
+        { "expression": "carefully", "translation": "주의 깊게" },
+        { "expression": "at face value", "translation": "액면 그대로" },
+        { "expression": "exercise", "translation": "연습하다" },
+        { "expression": "critical thinking skills", "translation": "비판적 사고 기술" },
+        { "expression": "judge", "translation": "판단하다" }
+      ]
+    }
+  ]
+}

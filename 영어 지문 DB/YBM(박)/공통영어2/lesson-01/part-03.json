@@ -1,0 +1,58 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 1,
+  "part": 3,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l01-p03-001",
+      "title": "The Harm Caused by Fake News",
+      "text": [
+        "Unfortunately, becoming an accidental distributor of fake news like Gina is not unusual.",
+        "Fake news is a deliberate attempt to manipulate people by spreading inaccurate information.",
+        "It is made by certain groups with the intention of attracting people’s attention, making profits, or gaining political benefits.",
+        "It can confuse people, disturb society, and even seriously harm the public as well as all individuals involved."
+      ],
+      "koreanText": [
+        "안타깝게도 지나처럼 우발적으로 가짜 뉴스를 유포하는 것은 드문 일이 아니다.",
+        "가짜 뉴스는 부정확한 정보를 퍼뜨림으로써 사람들을 조종하려는 의도적인 시도이다.",
+        "가짜 뉴스는 사람들의 관심을 끌거나, 이익을 얻거나, 혹은 정치적 이득을 얻으려는 의도를 가진 특정 집단에 의해 만들어진다.",
+        "이것은 사람들을 혼란스럽게 하고, 사회를 어지럽히고, 심지어 관련된 모든 개인뿐만 아니라 대중에게 심각하게 해를 끼칠 수 있다."
+      ],
+      "keyExpressions": [
+        "unfortunately",
+        "accidental",
+        "distributor",
+        "not unusual",
+        "deliberate",
+        "attempt",
+        "manipulate",
+        "inaccurate information",
+        "certain groups",
+        "with the intention of",
+        "attract attention",
+        "make profits",
+        "political benefits",
+        "disturb society",
+        "as well as"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "unfortunately", "translation": "안타깝게도" },
+        { "expression": "accidental", "translation": "우발적인" },
+        { "expression": "distributor", "translation": "유포자" },
+        { "expression": "not unusual", "translation": "드문 일이 아닌" },
+        { "expression": "deliberate", "translation": "의도적인" },
+        { "expression": "attempt", "translation": "시도" },
+        { "expression": "manipulate", "translation": "조종하다" },
+        { "expression": "inaccurate information", "translation": "부정확한 정보" },
+        { "expression": "certain groups", "translation": "특정 집단" },
+        { "expression": "with the intention of", "translation": "~하려는 의도로" },
+        { "expression": "attract attention", "translation": "관심을 끌다" },
+        { "expression": "make profits", "translation": "이익을 얻다" },
+        { "expression": "political benefits", "translation": "정치적 이득" },
+        { "expression": "disturb society", "translation": "사회를 어지럽히다" },
+        { "expression": "as well as", "translation": "~뿐만 아니라" }
+      ]
+    }
+  ]
+}

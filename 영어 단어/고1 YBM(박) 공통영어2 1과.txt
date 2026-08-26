@@ -1,0 +1,282 @@
+1
+fake
+가짜의
+2
+alert
+경보
+3
+scroll
+스크롤하다
+4
+astonished
+깜짝 놀란
+5
+fall
+떨어지다
+6
+immediately
+즉시, 즉각적으로
+7
+close
+친밀한
+8
+undamaged
+손상되지 않은
+9
+embarrassed
+당황한
+10
+spread
+퍼뜨리다
+11
+remind A of B
+A에게 B가 생각나게 하다
+12
+incident
+사건
+13
+athlete
+운동선수
+14
+issue
+문제
+15
+turn out to ~
+~인 것으로 밝혀지다, 판명되다
+16
+seek
+추구하다
+17
+provocative
+자극하는, 도발적인
+18
+raise
+(양이나 수준을) 높이다
+19
+post
+게시물, 게시하다
+20
+confuse
+혼란스럽게 하다
+21
+accidentally
+실수로
+22
+contribute to ~
+~에 기여하다
+23
+unfortunately
+불행하게도
+24
+accidental
+우연한
+25
+distributor
+배포자
+26
+deliberate
+고의적인
+27
+manipulate
+조종하다
+28
+inaccurate
+부정확한
+29
+certain
+특정한
+30
+intention
+의도
+31
+attract
+끌다
+32
+disturb
+어지럽히다
+33
+involved
+관련된
+34
+state
+상태
+35
+emergency
+비상 상황
+36
+measure
+(길이·크기·수량 등이) ~이다
+37
+strike
+(질병·재난 등이) ~을 덮치다
+38
+shelter
+피난처
+39
+be up to ~
+~에 달려 있다
+40
+apparently
+듣자 하니, 보아 하니
+41
+displaced
+쫓겨난
+42
+aftershock
+여진
+43
+viral
+급속도로 확산되는
+44
+significantly
+상당히
+45
+phenomenon
+현상
+46
+stimulating
+자극적인
+47
+previously
+이전에
+48
+possibly
+아마도
+49
+effortlessly
+노력 없이
+50
+likely
+가능성이 있는
+51
+proof
+증거
+52
+instead of ~
+~ 대신에
+53
+critically
+비판적으로
+54
+be inclined to ~
+~하는 경향이 있다
+55
+prejudice
+편견, 선입견
+56
+fall into ~
+(의도치 않게) ~에 빠지다
+57
+confirmation bias
+확증 편향
+58
+confirm
+~을 뒷받침하다
+59
+blindly
+맹목적으로
+60
+favored
+선호되는, 인기 있는
+61
+candidate
+후보자
+62
+unconsciously
+무의식적으로
+63
+spot
+~을 알아채다
+64
+mislead
+속이다, 오도하다
+65
+at face value
+액면 그대로
+66
+critical
+비판적인
+67
+judge
+판단하다
+68
+analyze
+분석하다
+69
+affect
+~에 영향을 주다
+70
+suit
+~에 알맞다
+71
+oppose
+~에 반대하다
+72
+credibility
+신뢰성
+73
+intent
+의도
+74
+reliable
+믿을 수 있는
+75
+valid
+타당한
+76
+eliminate
+~을 제거하다
+77
+objectively
+객관적으로
+78
+break out of ~
+~에서 벗어나다
+79
+access
+~에 접근하다
+80
+taste
+취향, 기호
+81
+selectively
+선택적으로
+82
+consistently
+지속적으로
+83
+encounter
+~에 직면하다, 부딪히다
+84
+alternative
+대안의
+85
+enclosed
+에워싸인
+86
+leak
+새다
+87
+term
+용어
+88
+distort
+왜곡하다
+89
+engage in ~
+~에 참여하다
+90
+debate
+토론, 논쟁
+91
+foster
+조성하다, 조장하다
+92
+division
+분열
+93
+collaboration
+협력
+94
+challenging
+힘든, 어려운

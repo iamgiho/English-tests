@@ -1,0 +1,58 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 1,
+  "part": 1,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l01-p01-001",
+      "title": "The Fake News about Heundeulbawi",
+      "text": [
+        "While scrolling through her social media one day, Gina was astonished when she saw the news headline, “The Heundeulbawi in Seoraksan National Park Has Fallen.”",
+        "Gina immediately shared the shocking story with her close friends.",
+        "Later, during the morning news on TV, a reporter standing next to the undamaged Heundeulbawi said, “Today’s Internet stories of the Heundeulbawi being damaged were fake.”",
+        "Gina was embarrassed by the fact that she had spread the fake news."
+      ],
+      "koreanText": [
+        "어느 날 지나는 소셜 미디어를 스크롤하다가 ‘설악산 국립공원 흔들바위가 떨어졌다’는 뉴스 헤드라인을 보고 깜짝 놀랐다.",
+        "지나는 즉시 친한 친구들에게 이 충격적인 소식을 공유했다.",
+        "이후에, TV의 아침 뉴스에서 피해 없는 흔들바위 옆에 서 있던 기자가 “오늘 인터넷에 올라온 흔들바위가 무너졌다는 기사는 가짜였습니다.”라고 말했다.",
+        "지나는 자신이 가짜 뉴스를 퍼뜨렸다는 사실에 당황했다."
+      ],
+      "keyExpressions": [
+        "scroll through",
+        "social media",
+        "be astonished",
+        "news headline",
+        "fall",
+        "immediately",
+        "share",
+        "shocking",
+        "close friends",
+        "morning news",
+        "reporter",
+        "undamaged",
+        "be damaged",
+        "fake",
+        "be embarrassed by"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "scroll through", "translation": "스크롤하다" },
+        { "expression": "social media", "translation": "소셜 미디어" },
+        { "expression": "be astonished", "translation": "깜짝 놀라다" },
+        { "expression": "news headline", "translation": "뉴스 헤드라인" },
+        { "expression": "fall", "translation": "떨어지다" },
+        { "expression": "immediately", "translation": "즉시" },
+        { "expression": "share", "translation": "공유하다" },
+        { "expression": "shocking", "translation": "충격적인" },
+        { "expression": "close friends", "translation": "친한 친구들" },
+        { "expression": "morning news", "translation": "아침 뉴스" },
+        { "expression": "reporter", "translation": "기자" },
+        { "expression": "undamaged", "translation": "피해 없는" },
+        { "expression": "be damaged", "translation": "무너지다, 손상되다" },
+        { "expression": "fake", "translation": "가짜인" },
+        { "expression": "be embarrassed by", "translation": "~에 당황하다" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 2,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l02-p02-001",
+      "title": "Empty Water Shelves",
+      "text": [
+        "There is a look of impatience on the faces of the people in line.",
+        "There is even hostility, hidden by a thin layer of politeness.",
+        "Even that politeness is stretched thin.",
+        "As I approach the back of the store for water bottles, I realize I am too late.",
+        "The shelves are already empty."
+      ],
+      "koreanText": [
+        "줄을 선 사람들의 얼굴에는 조급한 표정이 역력하다.",
+        "심지어는 얇은 공손함 뒤에 숨은 적대감까지 느껴진다.",
+        "그 공손함조차 얇아져 있다.",
+        "물병을 사러 매장 뒤편에 다다랐을 때 나는 너무 늦었다는 것을 깨닫는다.",
+        "진열대는 이미 비어 있다."
+      ],
+      "keyExpressions": [
+        "a look of",
+        "impatience",
+        "in line",
+        "hostility",
+        "hidden by",
+        "thin",
+        "layer",
+        "politeness",
+        "stretch",
+        "approach",
+        "the back of",
+        "water bottle",
+        "realize",
+        "too late",
+        "empty"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "a look of", "translation": "~한 표정" },
+        { "expression": "impatience", "translation": "조급함" },
+        { "expression": "in line", "translation": "줄을 선" },
+        { "expression": "hostility", "translation": "적대감" },
+        { "expression": "hidden by", "translation": "~에 의해 숨겨진" },
+        { "expression": "thin", "translation": "얇은" },
+        { "expression": "layer", "translation": "층" },
+        { "expression": "politeness", "translation": "공손함" },
+        { "expression": "stretch", "translation": "늘이다" },
+        { "expression": "approach", "translation": "~에 다다르다" },
+        { "expression": "the back of", "translation": "~의 뒤편" },
+        { "expression": "water bottle", "translation": "물병" },
+        { "expression": "realize", "translation": "깨닫다" },
+        { "expression": "too late", "translation": "너무 늦은" },
+        { "expression": "empty", "translation": "빈" }
+      ]
+    }
+  ]
+}
