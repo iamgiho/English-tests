@@ -1,0 +1,60 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 8,
+  "part": 4,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l08-p04-001",
+      "title": "Think Twice Before You Post",
+      "text": [
+        "All summer long, Goldilocks worked hard.",
+        "On the last day, Goldilocks said to Father Bear, “I deleted all my posts of your cottage, so please don’t worry.”",
+        "“You still don’t understand. Other people already shared them on social media. Your posts will live on forever,” said Father Bear.",
+        "“Oh, I didn’t think about that,” said Goldilocks.",
+        "“From now on, I’ll think twice before I press POST.”"
+      ],
+      "koreanText": [
+        "여름 내내, Goldilocks는 열심히 일했다.",
+        "마지막 날에 Goldilocks는 “오두막집에 관한 제 게시물을 모두 삭제했으니 걱정하지 마세요.”라고 아빠곰에게 말했다.",
+        "“너는 아직도 이해하지 못하는구나. 다른 사람들이 이미 소셜 미디어에 그것들을 공유했어. 너의 게시물은 영원히 남아 있을 거야.”라고 아빠곰이 말했다.",
+        "“아, 그 생각은 하지 못했어요.”라고 Goldilocks가 말했다.",
+        "“이제부터 ‘게시’를 누르기 전에 다시 생각할게요.”"
+      ],
+      "keyExpressions": [
+        "All summer long",
+        "worked hard",
+        "On the last day",
+        "deleted",
+        "posts",
+        "cottage",
+        "don’t worry",
+        "still don’t understand",
+        "already shared",
+        "social media",
+        "live on forever",
+        "From now on",
+        "think twice",
+        "before",
+        "press POST"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "All summer long", "translation": "여름 내내" },
+        { "expression": "worked hard", "translation": "열심히 일했다" },
+        { "expression": "On the last day", "translation": "마지막 날에" },
+        { "expression": "deleted", "translation": "삭제했다" },
+        { "expression": "posts", "translation": "게시물" },
+        { "expression": "cottage", "translation": "오두막집" },
+        { "expression": "don’t worry", "translation": "걱정하지 마세요" },
+        { "expression": "still don’t understand", "translation": "아직도 이해하지 못하다" },
+        { "expression": "already shared", "translation": "이미 공유했다" },
+        { "expression": "social media", "translation": "소셜 미디어" },
+        { "expression": "live on forever", "translation": "영원히 남아 있다" },
+        { "expression": "From now on", "translation": "이제부터" },
+        { "expression": "think twice", "translation": "다시 생각하다" },
+        { "expression": "before", "translation": "~하기 전에" },
+        { "expression": "press POST", "translation": "게시를 누르다" }
+      ]
+    }
+  ]
+}

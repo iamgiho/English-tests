@@ -1,0 +1,58 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 5,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l04-p05-001",
+      "title": "Ethical Progress through Neuroethics",
+      "text": [
+        "I hope that we can overcome these challenges through careful consideration of neuroethics.",
+        "This field highlights the social aspects of neural technology and provides possible answers to what should be considered legal and ethical.",
+        "I think it is important to establish a prior review process and thoroughly assess the ethical aspects before any kind of brain research is conducted.",
+        "This will ensure that science and technology progress in accordance with ethical principles."
+      ],
+      "koreanText": [
+        "저는 신경 윤리에 대한 신중한 고찰을 통해 우리가 이러한 난제를 극복할 수 있기를 바랍니다.",
+        "이 분야는 신경 기술의 사회적 측면을 강조하고 무엇이 합법적이고 윤리적으로 여겨져야 하는지에 대한 가능한 대답을 제시합니다.",
+        "저는 어떤 종류의 뇌 연구를 수행하기 전에 사전 검토 프로세스를 확립하고 윤리적 측면을 철저히 평가하는 것이 중요하다고 생각합니다.",
+        "이는 과학과 기술이 윤리적 원칙에 따라 발전하도록 보장할 것입니다."
+      ],
+      "keyExpressions": [
+        "overcome",
+        "challenges",
+        "careful consideration",
+        "highlight",
+        "social aspects",
+        "neural technology",
+        "legal",
+        "ethical",
+        "establish",
+        "prior review process",
+        "thoroughly",
+        "assess",
+        "brain research",
+        "ensure",
+        "in accordance with"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "overcome", "translation": "극복하다" },
+        { "expression": "challenges", "translation": "난제" },
+        { "expression": "careful consideration", "translation": "신중한 고찰" },
+        { "expression": "highlight", "translation": "강조하다" },
+        { "expression": "social aspects", "translation": "사회적 측면" },
+        { "expression": "neural technology", "translation": "신경 기술" },
+        { "expression": "legal", "translation": "합법적인" },
+        { "expression": "ethical", "translation": "윤리적인" },
+        { "expression": "establish", "translation": "확립하다" },
+        { "expression": "prior review process", "translation": "사전 검토 프로세스" },
+        { "expression": "thoroughly", "translation": "철저히" },
+        { "expression": "assess", "translation": "평가하다" },
+        { "expression": "brain research", "translation": "뇌 연구" },
+        { "expression": "ensure", "translation": "보장하다" },
+        { "expression": "in accordance with", "translation": "~에 따라" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,252 @@
+1
+decide
+~을 결정하다
+2
+volunteer
+v. 자원봉사하다; n. 자원봉사자
+3
+community center
+지역 주민 센터
+4
+senior citizen
+어르신, 노인
+5
+advice
+충고, 조언
+6
+slow
+느린
+7
+patient
+인내심이 있는
+8
+charger
+충전기
+9
+low
+(위치, 정도 등이) 낮은
+10
+seat
+n. 자리, 좌석; v. 앉히다
+11
+mind
+v. 언짢아하다, 꺼리다; n. 마음
+12
+window seat
+창가 자리
+13
+view
+전망, 경관
+14
+seasick
+뱃멀미가 나는
+15
+either
+(부정문에서) 역시
+16
+arrive
+도착하다
+17
+common
+n. 공유지, 공원; a. 흔한, 공통의
+18
+village
+마을
+19
+forest
+숲
+20
+villager
+마을 사람
+21
+farmer
+농부
+22
+raise
+~을 기르다, 키우다; (들어)올리다
+23
+cow
+암소, 젖소
+24
+luckily
+다행히도
+25
+grassland
+초지, 풀밭
+26
+lie
+v. 누워 있다, 눕다; 있다, 위치해 있다; n. 거짓말
+27
+allow
+허락하다
+28
+space
+공간, 우주
+29
+share
+공유하다
+30
+enough
+충분한
+31
+grass
+풀, 잔디
+32
+plenty
+풍부한 양, 충분한 양
+33
+tradition
+전통
+34
+rich
+부유한
+35
+notice
+v. 알아차리다; n. 공고문
+36
+rule
+규칙
+37
+bring
+가져오다, 데려오다
+38
+another
+또 다른
+39
+graze
+풀을 뜯다
+40
+fill
+채우다
+41
+tip
+조언, 충고
+42
+secret
+비밀
+43
+secretly
+몰래
+44
+additional
+추가의
+45
+push
+밀다
+46
+spot
+곳, 장소, 자리; 점
+47
+rise
+(수량이) 오르다, 증가하다
+48
+slowly
+천천히
+49
+population
+개체 수, 인구
+50
+quickly
+빠르게
+51
+disappear
+사라지다
+52
+happen
+(일이) 발생하다, 생기다
+53
+dry
+가문, 마른, 건조한
+54
+harsh
+가혹한, 냉혹한
+55
+die
+죽다
+56
+per
+~당, ~마다
+57
+support
+지지하다, 부양하다
+58
+lesson
+교훈
+59
+resource
+자원
+60
+value
+v. 소중히 여기다; n. 가치
+61
+fairly
+공정하게
+62
+inviting
+유혹적인, 솔깃한
+63
+mayor
+시장
+64
+silence
+고요, 적막
+65
+shame
+부끄러움
+66
+ex-mayor
+전직 시장
+67
+order
+명령, 지시
+68
+keep ~ in mind
+~을 명심하다
+69
+by the way
+그런데
+70
+once upon a time
+옛날에
+71
+in the middle of
+~의 가운데에
+72
+by tradition
+전통에 따라
+73
+break a rule
+규칙을 어기다
+74
+in secret
+몰래, 비밀리에
+75
+be full of
+~으로 가득 차다
+76
+the number of
+~의 수
+77
+to make matters worse
+엎친 데 덮친 격으로, 설상가상으로
+78
+at last
+마침내
+79
+be able to (동사원형)
+~할 수 있다
+80
+go back to
+~으로 돌아가다
+81
+stay away from
+~을 멀리하다, 가까이하지 않다
+82
+with no sign of anger
+화난 기색 없이
+83
+for a while
+잠시 동안
+84
+break one's heart
+매우 슬프게 하다

@@ -1,0 +1,306 @@
+1
+typhoon
+태풍
+2
+hit
+(태풍 등이) 덮치다, 엄습하다
+3
+warning
+주의, 경고
+4
+issue
+발표하다, 발행하다
+5
+rainfall
+강우, 강우량
+6
+chance
+가능성
+7
+flooding
+홍수
+8
+report
+보도, 알리다
+9
+ride
+(탈 것을) 타다, 몰다
+10
+favor
+친절, 부탁
+11
+wear
+(옷 등을) 입다, 쓰다, 신다
+12
+helmet
+헬멧, 안전모
+13
+earphones
+이어폰
+14
+island
+섬
+15
+volcanic
+화산의
+16
+eruption
+분출, 폭발
+17
+volcano
+화산
+18
+powerful
+강력한
+19
+appear
+나타나다, 생기다
+20
+destroy
+파괴하다
+21
+entire
+전체의, 온
+22
+therefore
+그러므로, 따라서
+23
+study
+공부하다, 연구하다
+24
+understand
+이해하다
+25
+active
+활동 중인
+26
+above
+~위에
+27
+sea level
+해수면
+28
+underwater
+수중의
+29
+locate
+~의 위치를 찾아내다, 위치시키다
+30
+still
+그럼에도 불구하고, 여전히
+31
+discover
+발견하다
+32
+along
+~을 따라
+33
+Ring of Fire
+불의 고리, 환태평양조산대
+34
+circle
+둘러싸다, 원
+35
+Pacific Ocean
+태평양
+36
+ring
+고리, 반지
+37
+home
+집, 가정, 고향, 발상지, 발원지
+38
+lie
+위치해 있다, 누워 있다, 눕다
+39
+area
+지역
+40
+earthquake
+지진
+41
+occur
+일어나다, 발생하다
+42
+sudden
+갑작스러운
+43
+cornfield
+옥수수 밭
+44
+surprising
+놀라운
+45
+overnight
+하룻밤 사이에
+46
+flat
+평평한
+47
+resident
+거주자, 주민
+48
+planet
+행성
+49
+Mars
+화성
+50
+Jupiter
+목성
+51
+solar system
+태양계
+52
+volume
+부피, 음량, (시리즈로 된 책의) 권
+53
+dangerous
+위험한
+54
+crop
+농작물
+55
+traffic
+교통
+56
+threaten
+위협하다
+57
+serious
+심각한
+58
+effect
+효과, 영향
+59
+weather
+날씨
+60
+ash
+재
+61
+dust
+먼지
+62
+prevent
+막다, 방해하다, 예방하다
+63
+reach
+~에 이르다, 도달하다, 닿다
+64
+disturb
+방해하다, 깨뜨리다, 어지럽히다
+65
+pattern
+패턴, 양식
+66
+deadly
+생명을 앗아가는, 치명적인
+67
+erupt
+분출하다, 터지다
+68
+kill
+죽이다
+69
+unusually
+비정상으로, 평소와 달리
+70
+soil
+흙, 토양
+71
+farming
+농사
+72
+tourist
+관광객
+73
+attraction
+명소
+74
+fantastic
+환상적인
+75
+scenery
+경치
+76
+produce
+생산하다, 만들다
+77
+electricity
+전기
+78
+actively
+적극적으로
+79
+heat
+열, 열기
+80
+energy
+에너지
+81
+hopeful
+기대하는, 희망에 찬
+82
+take care of ~
+~을 돌보다, ~을 처리하다, ~을 책임지다
+83
+finish the dishes
+설거지를 끝내다
+84
+go out
+외출하다
+85
+on one's way back
+돌아오는 길에
+86
+make sure
+반드시 ~하도록 하다, ~을 확실히 하다
+87
+have ~ in common
+~을 공통적으로 가지다
+88
+in fact
+사실은
+89
+name A after B
+B의 이름을 따서 A를 짓다
+90
+for sure
+확실히, 틀림없이
+91
+according to ~
+~에 따르면
+92
+a number of
+많은
+93
+so far
+지금까지
+94
+do harm
+해를 끼치다
+95
+have an effect on
+~에 영향을 끼치다
+96
+shoot ~ into …
+~을 …으로 쏘다, 내뿜다
+97
+prevent ~ from …
+~가 …하는 것을 막다, 방해하다
+98
+be good for ~
+~에 좋다
+99
+look for ~
+~을 찾다
+100
+millions of
+수백만의
+101
+turn A into B
+A를 B로 바꾸다
+102
+in harmony with ~
+~와 조화를 이루어

@@ -1,0 +1,68 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 4,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l04-p04-001",
+      "title": "Ethical Issues of Neural Implants",
+      "text": [
+        "Before we can fully embrace the era of AI-powered neural implants, many tricky ethical issues should be addressed.",
+        "The integration of AI technology with the human brain raises concerns about what it means to be human.",
+        "Our brains are believed to be central to our identity, existence, and value as human beings.",
+        "However, an over-reliance on technology may delay our natural development and create confusion about whether we are human, AI, or something in between.",
+        "Another critical issue is privacy.",
+        "There’s a risk that organizations or hackers could access personal data without permission through AI-connected implants.",
+        "This means that our thoughts, emotions, and behaviors could be controlled by hackers.",
+        "There’s an additional risk that this technology could lead to even greater social inequality, given that it may not be available to all due to its high cost.",
+        "Such unequal access to the technology could intensify the division between those who can afford the implants and those who cannot."
+      ],
+      "koreanText": [
+        "우리가 AI 기반 신경 임플란트 시대를 완전히 받아들이기 전에, 여러 가지 까다로운 윤리적 문제들이 해결되어야 합니다.",
+        "AI 기술과 인간의 뇌를 통합하는 것은 인간이라는 존재가 무엇을 의미하는가에 대한 우려를 제기합니다.",
+        "우리의 두뇌는 인간으로서의 정체성, 존재, 가치의 중심이라고 여겨집니다.",
+        "그러나 기술에 대한 지나친 의존은 우리의 자연스러운 발달을 지연시키고 우리가 인간인지, AI인지, 아니면 그 중간인지에 대한 혼란을 야기할 수 있습니다.",
+        "또 다른 중요한 문제는 프라이버시입니다.",
+        "조직이나 해커가 AI와 연결된 임플란트를 통해 허가 없이 개인 정보에 접근할 수 있는 위험이 있습니다.",
+        "이는 우리의 생각, 감정, 행동이 해커에 의해 통제될 수 있다는 뜻입니다.",
+        "또한 이 기술은 높은 비용으로 인해 모든 사람에게 제공되지 않을 수 있다는 점에서 사회적 불평등을 더욱 심화시킬 수 있다는 추가적인 위험도 있습니다.",
+        "기술에 대한 이러한 불평등한 접근성은 임플란트 비용을 감당할 수 있는 사람과 그렇지 않은 사람 사이의 분열을 심화시킬 수 있습니다."
+      ],
+      "keyExpressions": [
+        "fully embrace",
+        "ethical issues",
+        "be addressed",
+        "raise concerns",
+        "identity",
+        "existence",
+        "over-reliance",
+        "natural development",
+        "privacy",
+        "access personal data",
+        "without permission",
+        "be controlled",
+        "social inequality",
+        "unequal access",
+        "intensify the division"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "fully embrace", "translation": "완전히 받아들이다" },
+        { "expression": "ethical issues", "translation": "윤리적 문제" },
+        { "expression": "be addressed", "translation": "해결되다" },
+        { "expression": "raise concerns", "translation": "우려를 제기하다" },
+        { "expression": "identity", "translation": "정체성" },
+        { "expression": "existence", "translation": "존재" },
+        { "expression": "over-reliance", "translation": "지나친 의존" },
+        { "expression": "natural development", "translation": "자연스러운 발달" },
+        { "expression": "privacy", "translation": "프라이버시" },
+        { "expression": "access personal data", "translation": "개인 정보에 접근하다" },
+        { "expression": "without permission", "translation": "허가 없이" },
+        { "expression": "be controlled", "translation": "통제되다" },
+        { "expression": "social inequality", "translation": "사회적 불평등" },
+        { "expression": "unequal access", "translation": "불평등한 접근성" },
+        { "expression": "intensify the division", "translation": "분열을 심화시키다" }
+      ]
+    }
+  ]
+}

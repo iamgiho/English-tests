@@ -1,0 +1,64 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 2,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l04-p02-001",
+      "title": "Medical Applications of Neural Implants",
+      "text": [
+        "First, let’s explore how this fascinating technology has been applied.",
+        "The AI-powered neural implant has shown great promise in medical applications, offering solutions to a range of problems.",
+        "For instance, neural implants are used to treat brain disorders like Parkinson’s disease.",
+        "These implants electrically stimulate targeted regions of the brain at the right time with the help of AI to restore normal brain activity.",
+        "In addition, paralyzed people can have the ability to walk again with the help of a ‘digital bridge’ between two implants inserted into their brain and spine.",
+        "When they think about moving their legs, the AI analyzes the brain signals and sends them to their legs through the implants.",
+        "Similarly, those who have lost their arms can use artificial arms operated by the same mechanism."
+      ],
+      "koreanText": [
+        "먼저 이 매혹적인 기술이 어떻게 적용되었는지 살펴봅시다.",
+        "AI 기반 신경 임플란트는 다양한 문제에 대한 해결책을 제시하며 의료 분야 적용에서 큰 가능성을 보여 주었습니다.",
+        "예를 들어, 신경 임플란트는 파킨슨병과 같은 뇌 질환을 치료하는 데 사용됩니다.",
+        "이러한 임플란트는 정상적인 뇌 활동을 회복시키기 위해 AI의 도움을 받아 적시에 뇌의 표적 부위를 전기로 자극합니다.",
+        "또한 마비 환자들은 뇌와 척추에 삽입된 두 개의 임플란트 사이에 있는 ‘디지털 브릿지’의 도움으로 다시 걸을 수 있는 능력을 가질 수 있습니다.",
+        "환자가 다리를 움직이려고 생각하면 AI가 뇌 신호를 분석하여 임플란트를 통해 다리로 신호를 보냅니다.",
+        "마찬가지로 팔을 잃은 사람들도 동일한 메커니즘으로 작동하는 의수를 사용할 수 있습니다."
+      ],
+      "keyExpressions": [
+        "fascinating technology",
+        "be applied",
+        "show great promise",
+        "medical applications",
+        "a range of",
+        "brain disorders",
+        "electrically stimulate",
+        "targeted regions",
+        "restore",
+        "brain activity",
+        "paralyzed",
+        "brain signals",
+        "analyze",
+        "artificial arms",
+        "mechanism"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "fascinating technology", "translation": "매혹적인 기술" },
+        { "expression": "be applied", "translation": "적용되다" },
+        { "expression": "show great promise", "translation": "큰 가능성을 보여 주다" },
+        { "expression": "medical applications", "translation": "의료 분야 적용" },
+        { "expression": "a range of", "translation": "다양한" },
+        { "expression": "brain disorders", "translation": "뇌 질환" },
+        { "expression": "electrically stimulate", "translation": "전기로 자극하다" },
+        { "expression": "targeted regions", "translation": "표적 부위" },
+        { "expression": "restore", "translation": "회복시키다" },
+        { "expression": "brain activity", "translation": "뇌 활동" },
+        { "expression": "paralyzed", "translation": "마비된" },
+        { "expression": "brain signals", "translation": "뇌 신호" },
+        { "expression": "analyze", "translation": "분석하다" },
+        { "expression": "artificial arms", "translation": "의수" },
+        { "expression": "mechanism", "translation": "메커니즘" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 1,
+  "part": 5,
+  "passages": [
+    {
+      "id": "donga-park-english2-l01-p05-001",
+      "title": "Understanding the Habit Loop",
+      "text": [
+        "After defining your desired identity, you will want to integrate new habits into your daily routines.",
+        "It is worth noting here that any lasting habits take as little effort as possible.",
+        "To make habits take effect almost automatically, we need to understand the concept of the habit loop, which consists of four steps: cue, craving, response, and reward.",
+        "The more smoothly this loop operates, the more easily the habit is performed.",
+        "The following four laws offer practical guidance for each step."
+      ],
+      "koreanText": [
+        "자신이 원하는 정체성을 정의한 후에는 새로운 습관을 하루 일과에 통합시키고 싶을 것이다.",
+        "여기서 주목할 만한 점은 지속적인 습관에는 최소한의 노력이 든다는 것이다.",
+        "습관이 거의 자동적으로 시행되게 하기 위해, 우리는 습관 순환 고리의 개념을 이해할 필요가 있는데, 그것은 신호(cue), 갈망(craving), 반응(response), 그리고 보상(reward)의 네 단계로 구성된다.",
+        "이 순환 고리가 더 부드럽게 작동될수록 습관은 더 쉽게 수행된다.",
+        "다음 네 가지 법칙은 각 단계에 대한 실질적인 지침을 제공한다."
+      ],
+      "keyExpressions": [
+        "define",
+        "desired identity",
+        "daily routines",
+        "be worth noting",
+        "lasting habits",
+        "as little as possible",
+        "take effect",
+        "automatically",
+        "habit loop",
+        "consist of",
+        "cue",
+        "craving",
+        "response",
+        "reward",
+        "practical guidance"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "define", "translation": "정의하다" },
+        { "expression": "desired identity", "translation": "원하는 정체성" },
+        { "expression": "daily routines", "translation": "하루 일과" },
+        { "expression": "be worth noting", "translation": "주목할 만하다" },
+        { "expression": "lasting habits", "translation": "지속적인 습관" },
+        { "expression": "as little as possible", "translation": "가능한 한 적게" },
+        { "expression": "take effect", "translation": "시행되다" },
+        { "expression": "automatically", "translation": "자동적으로" },
+        { "expression": "habit loop", "translation": "습관 순환 고리" },
+        { "expression": "consist of", "translation": "~로 구성되다" },
+        { "expression": "cue", "translation": "신호" },
+        { "expression": "craving", "translation": "갈망" },
+        { "expression": "response", "translation": "반응" },
+        { "expression": "reward", "translation": "보상" },
+        { "expression": "practical guidance", "translation": "실질적인 지침" }
+      ]
+    }
+  ]
+}

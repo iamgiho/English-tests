@@ -1,0 +1,66 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 6,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l04-p06-001",
+      "title": "Opinions on AI-Powered Neural Implants",
+      "text": [
+        "What do you think about this technology?",
+        "Please share your opinion in the comments section below.",
+        "Wow, AI-powered neural implants sound incredible!",
+        "I can’t believe that AI can help the disabled walk again and use artificial arms that move according to their thoughts!",
+        "Well, the technology sounds amazing, but I’m really worried about the privacy issues it might cause.",
+        "I think it is necessary to strictly enforce privacy laws to protect the personal information of individuals.",
+        "Thank you all for sharing your thoughts.",
+        "I’ll talk more about how to address the concerns in my next post."
+      ],
+      "koreanText": [
+        "이 기술에 대해 여러분은 어떻게 생각하시나요?",
+        "아래 댓글란에 여러분의 의견을 공유해 주세요.",
+        "와, AI 기반 신경 임플란트는 정말 놀랍네요!",
+        "AI가 장애인을 다시 걸을 수 있게 돕고 생각에 따라 움직이는 의수를 사용하도록 도와줄 수 있다는 것이 믿기지 않아요!",
+        "음, 이 기술은 대단해 보이지만, 저는 이로 인해 발생할 수 있는 프라이버시 문제가 정말 걱정됩니다.",
+        "개인 정보 보호를 위해 개인 정보 보호법을 엄격하게 시행할 필요가 있다고 생각합니다.",
+        "의견을 공유해 주신 모든 분께 감사드립니다.",
+        "저의 다음 글에서 이러한 우려를 해결하는 방법에 관해 더 이야기해 보겠습니다."
+      ],
+      "keyExpressions": [
+        "share your opinion",
+        "sound incredible",
+        "the disabled",
+        "walk again",
+        "artificial arms",
+        "according to",
+        "thoughts",
+        "be worried about",
+        "privacy issues",
+        "cause",
+        "necessary",
+        "strictly enforce",
+        "privacy laws",
+        "personal information",
+        "address the concerns"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "share your opinion", "translation": "의견을 공유하다" },
+        { "expression": "sound incredible", "translation": "정말 놀랍게 들리다" },
+        { "expression": "the disabled", "translation": "장애인" },
+        { "expression": "walk again", "translation": "다시 걷다" },
+        { "expression": "artificial arms", "translation": "의수" },
+        { "expression": "according to", "translation": "~에 따라" },
+        { "expression": "thoughts", "translation": "생각" },
+        { "expression": "be worried about", "translation": "~을 걱정하다" },
+        { "expression": "privacy issues", "translation": "프라이버시 문제" },
+        { "expression": "cause", "translation": "발생시키다" },
+        { "expression": "necessary", "translation": "필요한" },
+        { "expression": "strictly enforce", "translation": "엄격하게 시행하다" },
+        { "expression": "privacy laws", "translation": "개인 정보 보호법" },
+        { "expression": "personal information", "translation": "개인 정보" },
+        { "expression": "address the concerns", "translation": "우려를 해결하다" }
+      ]
+    }
+  ]
+}

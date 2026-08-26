@@ -1,0 +1,330 @@
+1
+express
+표현하다, 급행의, 신속한
+2
+draw
+그리다
+3
+quite
+꽤, 상당히
+4
+skill
+기술, 기량
+5
+imagination
+상상력
+6
+completely
+완전히, 전적으로
+7
+stuck
+(~에 빠져) 갇힌, 꼼짝 못하는
+8
+mistaken
+잘못 알고 있는
+9
+cook
+요리사, 요리하다
+10
+connect
+연결하다
+11
+strongly
+강하게, 튼튼하게
+12
+baseball
+야구
+13
+exciting
+흥미로운, 신나는
+14
+challenging
+도전적인
+15
+fail
+실패하다
+16
+league
+리그, 연맹
+17
+found
+설립하다
+18
+create
+만들다, 창조하다
+19
+fight
+싸우다, 전투하다
+20
+local
+지역의
+21
+tryout
+심사, 테스트
+22
+right
+바로, 정확히
+23
+wonder
+궁금해하다
+24
+final
+결승전
+25
+imagine
+상상하다
+26
+banner
+현수막, 플래카드
+27
+hang
+매달다, 걸다
+28
+include
+포함하다
+29
+rule
+규칙
+30
+explain
+설명하다
+31
+suit
+정장
+32
+serious
+심각한, 진지한
+33
+unkind
+불친절한
+34
+wear
+입다, 쓰다, 끼다, 신다
+35
+impatient
+짜증 난, 참지 못하는
+36
+dream
+꿈
+37
+mailbox
+우편함
+38
+read
+~라고 적혀 있다, 읽다
+39
+invite
+초대하다
+40
+main
+주요한, 중요한
+41
+alone
+혼자
+42
+afraid
+두려운
+43
+spend
+(시간을) 보내다, (돈을) 쓰다
+44
+rest
+나머지
+45
+regret
+후회하다
+46
+decision
+결정, 판단
+47
+worth
+~의 가치가 있는
+48
+chase
+추구하다
+49
+even if
+비록 ~하더라도
+50
+catch
+붙잡다
+51
+miss
+놓치다, 그리워하다
+52
+opportunity
+기회
+53
+coast
+해안
+54
+guesthouse
+여행자용 숙소
+55
+particular
+특별한
+56
+throughout
+내내, ~동안 쭉
+57
+cycle
+자전거를 타다
+58
+thick
+두터운, 빽빽한
+59
+ahead
+(공간, 시간상으로) 앞에
+60
+wooden
+나무로 된, 목재의
+61
+gateway
+입구
+62
+thumping
+쿵쾅거리는
+63
+scream
+비명, 소리 지르다
+64
+dirt
+흙, 먼지
+65
+breathe
+숨을 쉬다
+66
+manage
+간신히 ~하다
+67
+entrance
+입구
+68
+free
+풀어주다, 빼내다, 자유로운
+69
+backward
+뒤쪽의, 뒤쪽으로
+70
+farmhouse
+농가
+71
+cast
+깁스, 붕대
+72
+relief
+안도, 안심
+73
+lesson
+교훈
+74
+manager
+경영자, 관리자
+75
+produce
+생산하다
+76
+safety
+안전
+77
+prepare for
+~을 준비하다
+78
+make it
+성공하다, 해내다
+79
+do well on
+~을 잘하다
+80
+do one's best
+최선을 다하다
+81
+apply for
+~에 지원하다
+82
+I'd say ~
+내 생각에 ~인 것 같다
+83
+be late for
+~에 늦다, 지각하다
+84
+set one's alarm
+알람을 맞추다
+85
+do one's hair
+머리를 손질하다
+86
+traffic jam
+교통 체증
+87
+get off
+(자동차 등에서) 내리다
+88
+stay on
+계속하다, 계속 남아 있다
+89
+used to + 동사원형
+(과거에) ~이었다, ~했다
+90
+not ~ anymore
+더 이상 ~ 않은
+91
+over and over
+반복해서
+92
+go after
+~을 추구하다
+93
+be afraid of
+~을 두려워하다
+94
+be ashamed of
+~을 부끄러워하다
+95
+make it to
+~에 이르다
+96
+go by
+지나가다, 흐르다
+97
+far away from
+~에서 멀리 떨어진
+98
+be worth ~ing
+~할 가치가 있다
+99
+in other words
+다시 말해서, 즉
+100
+day in and day out
+매일
+101
+as usual
+여느 때처럼
+102
+set off
+출발하다
+103
+side by side
+나란히
+104
+after a while
+얼마 후에
+105
+keep out
+~에 들어가지 않다
+106
+all of a sudden
+갑자기
+107
+move away
+치우다
+108
+feel in control
+자신에 차 있다
+109
+inch by inch
+조금씩
+110
+thanks to
+~덕분에

@@ -1,0 +1,66 @@
+{
+  "publisher": "동아(윤)",
+  "book": "영어1",
+  "lesson": 8,
+  "part": 3,
+  "passages": [
+    {
+      "id": "donga-yoon-english1-l08-p03-001",
+      "title": "The Bears Confront Goldilocks",
+      "text": [
+        "About an hour later, three bears came home.",
+        "“Someone ate my soup and broke my chair!” cried Baby Bear.",
+        "They went upstairs and saw Goldilocks.",
+        "Mother Bear found a phone next to Goldilocks.",
+        "“This is terrible! Look at all these posts of our home,” shouted Mother Bear angrily.",
+        "Goldilocks jumped up in surprise.",
+        "“You broke into our house and posted these pictures without our permission. Don’t you know these things are wrong?” said Father Bear.",
+        "“Please forgive me. I’m so sorry, and I’ll clean your house every day until the end of the summer,” said Goldilocks."
+      ],
+      "koreanText": [
+        "약 한 시간 후에, 곰 세 마리가 집으로 돌아왔다.",
+        "“누군가 내 수프를 먹고 내 의자를 부서뜨렸어요!”라고 아기곰이 외쳤다.",
+        "그들은 위층으로 가서 Goldilocks를 봤다.",
+        "엄마곰이 Goldilocks 옆에서 휴대폰을 발견했다.",
+        "“끔찍해! 우리 집에 관한 이 모든 게시물을 봐요.”라고 엄마곰이 화가 나서 외쳤다.",
+        "Goldilocks는 놀라서 벌떡 일어났다.",
+        "“너는 우리 집에 침입해서 우리의 허락 없이 이 사진들을 올렸어. 너는 이런 것들이 잘못이라는 것을 모르니?”라고 아빠곰이 말했다.",
+        "“용서해 주세요. 정말 죄송해요, 여름이 끝날 때까지 매일 여러분 집을 청소할게요.”라고 Goldilocks가 말했다."
+      ],
+      "keyExpressions": [
+        "About an hour later",
+        "came home",
+        "broke my chair",
+        "upstairs",
+        "next to",
+        "posts of our home",
+        "shouted angrily",
+        "jumped up",
+        "in surprise",
+        "broke into",
+        "without our permission",
+        "wrong",
+        "forgive me",
+        "every day",
+        "until the end of the summer"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "About an hour later", "translation": "약 한 시간 후에" },
+        { "expression": "came home", "translation": "집으로 돌아왔다" },
+        { "expression": "broke my chair", "translation": "내 의자를 부서뜨렸다" },
+        { "expression": "upstairs", "translation": "위층으로" },
+        { "expression": "next to", "translation": "~ 옆에" },
+        { "expression": "posts of our home", "translation": "우리 집에 관한 게시물" },
+        { "expression": "shouted angrily", "translation": "화가 나서 외쳤다" },
+        { "expression": "jumped up", "translation": "벌떡 일어났다" },
+        { "expression": "in surprise", "translation": "놀라서" },
+        { "expression": "broke into", "translation": "~에 침입했다" },
+        { "expression": "without our permission", "translation": "우리의 허락 없이" },
+        { "expression": "wrong", "translation": "잘못된" },
+        { "expression": "forgive me", "translation": "나를 용서하다" },
+        { "expression": "every day", "translation": "매일" },
+        { "expression": "until the end of the summer", "translation": "여름이 끝날 때까지" }
+      ]
+    }
+  ]
+}

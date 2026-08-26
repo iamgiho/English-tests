@@ -1,0 +1,519 @@
+1
+power
+힘
+2
+habit
+습관, 버릇
+3
+atomic
+아주 작은
+4
+routine
+일상, 일과
+5
+lead to ~
+~으로 이어지다, ~을 초래하다
+6
+improvement
+개선, 향상
+7
+on a daily basis
+매일
+8
+over time
+오랜 기간에 걸쳐, 시간이 지나면서
+9
+tiny
+아주 작은
+10
+make a difference in ~
+~에 변화를 가져오다, ~에 영향을 미치다
+11
+seek to부정사
+~하려고 노력하다
+12
+maintain
+~을 유지하다, 지속하다
+13
+valuable
+유용한, 유익한
+14
+tip
+조언, 비법
+15
+guide
+~을 안내하다
+16
+identity
+정체성
+17
+challenging
+힘든, 어려운
+18
+develop
+~을 향상시키다, 발달시키다
+19
+more than + 숫자
+~을 초과하는, ~보다 많은
+20
+happen
+일어나다, 발생하다
+21
+focus on ~
+~에 초점을 맞추다, 집중하다
+22
+external
+외적인, 외부적인
+23
+outcome
+결과
+24
+behavior
+행동, 행실
+25
+A rather than B
+B보다는 오히려 A
+26
+originate from ~
+~에서 유래하다, 비롯되다
+27
+inner
+내면의
+28
+consist of ~
+~로 이루어지다, 구성되다
+29
+layer
+층, 겹
+30
+outermost
+가장 바깥쪽의
+31
+achieve
+~을 성취하다, 달성하다
+32
+process
+과정, 프로세스
+33
+fundamental
+근본적인
+34
+change
+n. 변화; v. ~을 변화시키다, 바꾸다
+35
+useful
+유용한, 도움이 되는
+36
+the key to ~
+~에 대한 열쇠, 비결
+37
+lasting
+오래 지속되는
+38
+lie in ~
+~에 놓여 있다, ~에 있다
+39
+direction
+방향
+40
+occur
+일어나다, 발생하다
+41
+shift
+변화
+42
+from within
+내면으로부터, 내부로부터
+43
+in harmony with ~
+~와 조화롭게
+44
+work on ~
+~을 열심히 노력하다
+45
+step
+단계
+46
+ask
+~에게 …을 묻다
+47
+reinforce
+~을 강화하다
+48
+action
+행동
+49
+specifically
+구체적으로, 구체적으로 말하자면
+50
+repeat
+~을 반복하다
+51
+naturally
+자연스럽게
+52
+exercise
+운동하다
+53
+daily
+매일, 날마다
+54
+think of ~ as …
+~을 …로 여기다
+55
+energetic
+활력이 넘치는
+56
+motivated
+동기가 부여된
+57
+care about ~
+~에 대해 신경 쓰다
+58
+health
+건강, 건강 상태
+59
+try to부정사
+~하려고 노력하다
+60
+gradually
+점차, 서서히
+61
+lead
+~가 …하도록 이끌다
+62
+automatic
+자동적인, 무의식적인
+63
+loop
+순환, 고리
+64
+define
+~을 정의하다
+65
+desired
+기대하던, 바라던
+66
+integrate ~ into …
+~을 …으로 통합하다
+67
+worth + 동명사
+~할 가치가 있는
+68
+effort
+노력, 수고
+69
+take effect
+시행되다, 발효되다
+70
+automatically
+자동적으로
+71
+concept
+개념, 생각
+72
+cue
+신호
+73
+craving
+갈망, 열망
+74
+response
+반응
+75
+reward
+n. 보상; v. ~에 대해 보상하다
+76
+smoothly
+부드럽게
+77
+operate
+운용되다, 운영되다
+78
+easily
+쉽게, 용이하게
+79
+perform
+~을 수행하다, 이행하다
+80
+law
+법칙
+81
+offer
+~을 제공하다
+82
+practical
+실제적인, 실천적인
+83
+guidance
+도움, 안내
+84
+obvious
+명백한, 분명한
+85
+create
+~을 만들어내다
+86
+spark
+~을 촉발하다
+87
+common
+흔한, 자주 일어나는
+88
+formula
+공식
+89
+location
+장소, 위치
+90
+instead of ~
+~대신에, ~이 아니라
+91
+vague
+모호한
+92
+intent
+의도, 의향
+93
+work out
+운동하다
+94
+specific
+구체적인, 명확한
+95
+starting at ~
+~에 시작해서
+96
+effective
+효과적인
+97
+method
+방법, 방식
+98
+stack
+~을 차곡차곡 쌓다
+99
+current
+현재의
+100
+associate ~ with …
+~을 …와 연관시키다
+101
+particular
+특정한
+102
+pair ~ with …
+~을 …와 짝짓다
+103
+immediately
+즉시, 곧바로
+104
+change into ~
+~으로 갈아입다
+105
+workout clothes
+운동복
+106
+link
+n. 연결; v. ~을 연결시키다, 관련시키다
+107
+firmly
+확고하게
+108
+root
+~을 뿌리내리게 하다
+109
+attractive
+매력적인, 멋진
+110
+chemical
+화학적인
+111
+substance
+물질
+112
+dopamine
+도파민
+113
+release
+~을 방출하다, 내뿜다
+114
+increase
+~을 증가시키다
+115
+motivation
+동기
+116
+eager to부정사
+~하기를 열망하는
+117
+crucial
+매우 중요한
+118
+enjoyable
+즐거운, 재미있는
+119
+strategy
+전략
+120
+temptation
+유혹
+121
+bundle
+~을 묶다
+122
+known as ~
+~이라고 알려진
+123
+come into play
+작용하다, 영향을 미치다
+124
+work
+작동하다, 기능하다
+125
+link ~ to/with …
+~을 …와 연결하다
+126
+favorite
+가장 좋아하는
+127
+stationary bike
+실내 자전거
+128
+seamlessly
+매끄럽게
+129
+along with ~
+~와 함께
+130
+require
+~을 필요로 하다
+131
+prefer
+~을 선호하다
+132
+be likely to부정사
+~일 가능성이 있다
+133
+important
+중요한, 중대한
+134
+environment
+환경
+135
+aim to부정사
+~하는 것을 목표로 하다
+136
+regularly
+정기적으로, 규칙적으로
+137
+set ~ up
+~을 준비하다
+138
+dedicated
+전용화된, 전용의
+139
+ensure
+~라는 것을 보장하다
+140
+equipment
+장비, 도구
+141
+readily
+손쉽게, 바로
+142
+available
+이용 가능한
+143
+keep ~ away
+~가 접근하지 못하게 하다
+144
+distraction
+집중을 방해하는 것
+145
+approach
+접근법
+146
+it takes + 시간 + to부정사
+~하는 데 시간이 걸리다
+147
+less than + 숫자
+~ 미만의
+148
+goal
+목표
+149
+version
+버전, 판
+150
+place
+~을 놓다
+151
+powerful
+강력한
+152
+significantly
+현저하게, 눈에 띄게
+153
+continue
+~을 계속하다
+154
+satisfying
+만족스러운
+155
+rewarding
+보람 있는
+156
+experience
+~을 경험하다
+157
+a sense of accomplishment
+성취감
+158
+immediate
+즉각의, 즉시의
+159
+simply
+단순히, 그저
+160
+make progress
+진전하다, 발전하다
+161
+quick
+빠른, 신속한
+162
+highly
+매우, 많이
+163
+motivating
+동기를 부여하는
+164
+in itself
+원래, 본질적으로
+165
+keep track of ~
+~의 동향을 계속 파악하다
+166
+tracker
+추적자, 추적기
+167
+tool
+도구, 수단
+168
+record
+~을 기록하다
+169
+journal
+일기, 일지
+170
+provide ~ with …
+~에게 …을 제공하다
+171
+moment
+순간, 잠시
+172
+satisfaction
+만족, 만족감
+173
+stick to ~
+~을 지키다, 고수하다

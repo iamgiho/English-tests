@@ -1,0 +1,249 @@
+1
+book report
+독후감
+2
+novel
+소설
+3
+mystery
+추리 소설
+4
+new arrival
+신착 도서, 새로 도착한 물건
+5
+area
+구역, 지역
+6
+popular
+인기 있는
+7
+among
+~ 중에서
+8
+Great Britain
+영국
+9
+yearbook
+졸업 앨범
+10
+cool
+멋진, 시원한
+11
+particular
+특별한, 특정한
+12
+recommend
+추천하다
+13
+poet
+시인
+14
+season
+계절
+15
+pass
+지나가다
+16
+fill
+채우다
+17
+count
+(수를) 세다
+18
+memory
+기억, 추억
+19
+loneliness
+외로움
+20
+longing
+갈망
+21
+poetry
+(문학 장르) 시
+22
+line
+선, (글의) 행, (시의) 시구, 가사
+23
+poem
+(한 편의) 시
+24
+remain
+남아 있다, 계속 ~이다
+25
+favorite
+가장 좋아하는
+26
+bear
+(새끼, 아기를) 낳다, 곰
+27
+sew
+바느질하다
+28
+uniform
+유니폼, 교복
+29
+literature
+문학
+30
+elementary school
+초등학교
+31
+literary
+문학의, 문학적인
+32
+magazine
+잡지
+33
+cousin
+사촌
+34
+borrow
+빌리다
+35
+copy
+베끼다, 복사하다, (책) 한 부, 복사본
+36
+whole
+전체의, 모든
+37
+rare
+희귀한, 흔치 않은
+38
+college
+대학
+39
+express
+표현하다
+40
+hometown
+고향
+41
+lose
+~을 잃다, 지다
+42
+celebrate
+기념하다
+43
+graduation
+졸업
+44
+publish
+출판하다
+45
+title
+제목
+46
+present
+주다, 선물, 현재의
+47
+professor
+교수
+48
+advise
+충고하다
+49
+against
+~에 반대하여
+50
+plan
+계획, 계획하다
+51
+government
+정부
+52
+allow
+허락하다
+53
+publication
+출판, 발행
+54
+follow
+따르다
+55
+advice
+충고, 조언
+56
+idea
+생각
+57
+decide
+결정하다
+58
+further
+더, 더 멀리
+59
+arrest
+체포하다
+60
+independence
+독립
+61
+movement
+운동
+62
+charge
+기소, 혐의
+63
+prison
+감옥
+64
+harsh
+가혹한
+65
+treatment
+대우, 처리
+66
+police
+경찰
+67
+achieve
+이루다, 얻다
+68
+bring
+가져오다
+69
+shine
+빛나다
+70
+brightly
+밝게
+71
+check out
+~을 대출하다
+72
+come out
+나오다
+73
+look forward to
+~을 기대하다
+74
+take a seat
+자리에 앉다
+75
+take a picture
+사진을 찍다
+76
+have ~ in mind
+~을 염두에 두다
+77
+look good on
+~에게 잘 어울리다
+78
+can't wait to + 동사원형
+너무 ~하고 싶다
+79
+in a hurry
+서둘러
+80
+by hand
+손으로, 손수, 직접
+81
+hang out with
+~와 시간을 보내다
+82
+give up
+포기하다
+83
+take part in
+~에 참가하다

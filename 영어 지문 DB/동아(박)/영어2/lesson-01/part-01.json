@@ -1,0 +1,58 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 1,
+  "part": 1,
+  "passages": [
+    {
+      "id": "donga-park-english2-l01-p01-001",
+      "title": "The Life-Changing Power of Habits",
+      "text": [
+        "A habit is an atomic routine that is easy to do but has life-changing power.",
+        "Good habits lead to small improvements on a daily basis.",
+        "Over time, these tiny improvements can make a huge difference in our lives.",
+        "If you are seeking to build and maintain good habits for a better life, here are some valuable tips to guide you."
+      ],
+      "koreanText": [
+        "습관은 하기 쉽지만 삶을 변화시키는 힘을 가진 아주 작은 일상이다.",
+        "좋은 습관은 매일 작은 개선으로 이어진다.",
+        "시간이 지남에 따라 이러한 아주 작은 개선은 우리의 삶에 큰 변화를 가져올 수 있다.",
+        "더 나은 삶을 위해 좋은 습관을 만들고 유지하고자 한다면, 안내해 줄 몇 가지 유용한 조언이 여기 있다."
+      ],
+      "keyExpressions": [
+        "habit",
+        "atomic",
+        "routine",
+        "life-changing",
+        "power",
+        "lead to",
+        "improvement",
+        "on a daily basis",
+        "over time",
+        "tiny",
+        "make a difference",
+        "seek to",
+        "maintain",
+        "valuable",
+        "guide"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "habit", "translation": "습관" },
+        { "expression": "atomic", "translation": "아주 작은" },
+        { "expression": "routine", "translation": "일상" },
+        { "expression": "life-changing", "translation": "삶을 변화시키는" },
+        { "expression": "power", "translation": "힘" },
+        { "expression": "lead to", "translation": "~으로 이어지다" },
+        { "expression": "improvement", "translation": "개선" },
+        { "expression": "on a daily basis", "translation": "매일" },
+        { "expression": "over time", "translation": "시간이 지남에 따라" },
+        { "expression": "tiny", "translation": "아주 작은" },
+        { "expression": "make a difference", "translation": "변화를 가져오다" },
+        { "expression": "seek to", "translation": "~하고자 하다" },
+        { "expression": "maintain", "translation": "유지하다" },
+        { "expression": "valuable", "translation": "유용한" },
+        { "expression": "guide", "translation": "안내하다" }
+      ]
+    }
+  ]
+}
