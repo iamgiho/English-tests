@@ -1,0 +1,66 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 4,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l02-p04-001",
+      "title": "Ice Is Water",
+      "text": [
+        "I look for Garrett, whom I find in the frozen aisle.",
+        "Then I see something.",
+        "Just past the frozen vegetables and ice cream, there is a case packed with ice.",
+        "I open the door and reach for a bag.",
+        "“What are you doing? We need water, not ice,” he reminds me.",
+        "“Ice is water. Just help me,” I tell him.",
+        "Garrett and I put one bag of ice after another into our cart, until it is piled as high as it can get.",
+        "By now other people have taken notice and begin to empty the ice case."
+      ],
+      "koreanText": [
+        "나는 냉동식품 통로에서 Garrett을 발견한다.",
+        "그러다 뭔가를 발견한다.",
+        "냉동 야채와 아이스크림 바로 지나서 얼음이 가득 담긴 상자가 있다.",
+        "나는 문을 열고 얼음 봉지를 잡는다.",
+        "“뭐 하는 거야? 우린 얼음이 아니라 물이 필요해.” 동생이 내게 상기시켜 준다.",
+        "“얼음은 물이야. 돕기나 해.” 내가 말한다.",
+        "Garrett과 나는 최대한 높이 쌓일 때까지 얼음 봉지를 카트에 담는다.",
+        "이제 다른 사람들도 눈치를 채고 얼음 상자를 비우기 시작한다."
+      ],
+      "keyExpressions": [
+        "look for",
+        "frozen aisle",
+        "just past",
+        "frozen vegetables",
+        "be packed with",
+        "reach for",
+        "remind",
+        "not A but B",
+        "one after another",
+        "put A into B",
+        "pile",
+        "as high as",
+        "by now",
+        "take notice",
+        "empty"
+      ],
+      "keyExpressionTranslations": [
+        { "expression": "look for", "translation": "~을 찾다" },
+        { "expression": "frozen aisle", "translation": "냉동식품 통로" },
+        { "expression": "just past", "translation": "~을 바로 지나서" },
+        { "expression": "frozen vegetables", "translation": "냉동 야채" },
+        { "expression": "be packed with", "translation": "~로 가득 차다" },
+        { "expression": "reach for", "translation": "~을 잡으려 손을 뻗다" },
+        { "expression": "remind", "translation": "상기시키다" },
+        { "expression": "not A but B", "translation": "A가 아니라 B" },
+        { "expression": "one after another", "translation": "잇달아" },
+        { "expression": "put A into B", "translation": "A를 B에 넣다" },
+        { "expression": "pile", "translation": "쌓다" },
+        { "expression": "as high as", "translation": "~만큼 높이" },
+        { "expression": "by now", "translation": "이제는" },
+        { "expression": "take notice", "translation": "눈치채다" },
+        { "expression": "empty", "translation": "비우다" }
+      ]
+    }
+  ]
+}
