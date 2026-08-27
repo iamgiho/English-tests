@@ -22,32 +22,6 @@
         "그가 교실에 들어갔을 때, 모두 그를 쳐다봤습니다.",
         "Harry는 “안녕, 나는 Harry야. 만나서 반가워.”라고 말했습니다.",
         "그들은 그의 가시를 호기심을 갖고 바라봤습니다."
-      ],
-      "keyExpressions": [
-        "excited",
-        "first day",
-        "new school",
-        "On his way to school",
-        "make a lot of friends",
-        "entered",
-        "classroom",
-        "looked at",
-        "Nice to meet you",
-        "spines",
-        "curiously"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "excited", "translation": "신이 난" },
-        { "expression": "first day", "translation": "첫날" },
-        { "expression": "new school", "translation": "새로운 학교" },
-        { "expression": "On his way to school", "translation": "학교로 가는 길에" },
-        { "expression": "make a lot of friends", "translation": "많은 친구를 사귀다" },
-        { "expression": "entered", "translation": "들어갔다" },
-        { "expression": "classroom", "translation": "교실" },
-        { "expression": "looked at", "translation": "바라봤다" },
-        { "expression": "Nice to meet you", "translation": "만나서 반가워" },
-        { "expression": "spines", "translation": "가시" },
-        { "expression": "curiously", "translation": "호기심을 갖고" }
       ]
     }
   ]

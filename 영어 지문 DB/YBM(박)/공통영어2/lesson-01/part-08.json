@@ -24,40 +24,6 @@
         "마지막으로, 출처의 신뢰성을 확인해라.",
         "당신은 뉴스 기사를 작성한 사람이 누구인지, 뉴스 기사를 작성한 의도가 무엇인지 살펴봐야 한다.",
         "또한 당신은 뉴스 기사가 신뢰할 수 있는 미디어 출처에서 나온 것인지, 증거가 타당한지 확인할 필요가 있다."
-      ],
-      "keyExpressions": [
-        "question",
-        "analyze",
-        "evaluate",
-        "examine",
-        "bias",
-        "belief",
-        "affect",
-        "judgment",
-        "suit",
-        "oppose",
-        "as well",
-        "credibility",
-        "intent",
-        "reliable",
-        "valid"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "question", "translation": "질문하다" },
-        { "expression": "analyze", "translation": "분석하다" },
-        { "expression": "evaluate", "translation": "평가하다" },
-        { "expression": "examine", "translation": "점검하다, 살펴보다" },
-        { "expression": "bias", "translation": "편견" },
-        { "expression": "belief", "translation": "신념" },
-        { "expression": "affect", "translation": "영향을 미치다" },
-        { "expression": "judgment", "translation": "판단" },
-        { "expression": "suit", "translation": "~에 맞다" },
-        { "expression": "oppose", "translation": "~에 반대하다" },
-        { "expression": "as well", "translation": "또한" },
-        { "expression": "credibility", "translation": "신뢰성" },
-        { "expression": "intent", "translation": "의도" },
-        { "expression": "reliable", "translation": "신뢰할 수 있는" },
-        { "expression": "valid", "translation": "타당한" }
       ]
     }
   ]

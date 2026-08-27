@@ -16,28 +16,6 @@
         "저는 범죄 현장에 갔는데, 그림 곳곳에 케이크 조각들이 있었어요.",
         "그림 근처에 휠체어도 있었는데, 저는 휠체어 옆에서 케이크 상자를 발견했어요.",
         "그 상자는 Camila 빵집의 것이었어요."
-      ],
-      "keyExpressions": [
-        "crime scene",
-        "pieces of cake",
-        "all over",
-        "painting",
-        "wheelchair",
-        "near",
-        "cake box",
-        "next to",
-        "Bakery"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "crime scene", "translation": "범죄 현장" },
-        { "expression": "pieces of cake", "translation": "케이크 조각들" },
-        { "expression": "all over", "translation": "곳곳에" },
-        { "expression": "painting", "translation": "그림" },
-        { "expression": "wheelchair", "translation": "휠체어" },
-        { "expression": "near", "translation": "~ 근처에" },
-        { "expression": "cake box", "translation": "케이크 상자" },
-        { "expression": "next to", "translation": "~ 옆에" },
-        { "expression": "Bakery", "translation": "빵집" }
       ]
     }
   ]

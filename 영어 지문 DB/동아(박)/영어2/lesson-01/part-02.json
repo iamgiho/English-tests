@@ -14,40 +14,6 @@
       "koreanText": [
         "며칠 이상 좋은 습관을 기르고 유지하는 것이 어렵다고 생각할 수도 있다.",
         "이는 사람들이 외적인 결과나 행동이 어디에서 비롯되었는지, 즉 내면의 정체성보다 외적인 결과나 행동을 바꾸는 데에만 집중할 때 주로 발생한다."
-      ],
-      "keyExpressions": [
-        "find it challenging",
-        "develop",
-        "maintain",
-        "good habits",
-        "more than",
-        "a few days",
-        "often",
-        "happen",
-        "focus on",
-        "external",
-        "outcomes",
-        "behaviors",
-        "rather than",
-        "originate from",
-        "inner identity"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "find it challenging", "translation": "어렵다고 생각하다" },
-        { "expression": "develop", "translation": "기르다" },
-        { "expression": "maintain", "translation": "유지하다" },
-        { "expression": "good habits", "translation": "좋은 습관" },
-        { "expression": "more than", "translation": "~ 이상" },
-        { "expression": "a few days", "translation": "며칠" },
-        { "expression": "often", "translation": "주로" },
-        { "expression": "happen", "translation": "발생하다" },
-        { "expression": "focus on", "translation": "~에 집중하다" },
-        { "expression": "external", "translation": "외적인" },
-        { "expression": "outcomes", "translation": "결과" },
-        { "expression": "behaviors", "translation": "행동" },
-        { "expression": "rather than", "translation": "~보다" },
-        { "expression": "originate from", "translation": "~에서 비롯되다" },
-        { "expression": "inner identity", "translation": "내면의 정체성" }
       ]
     }
   ]

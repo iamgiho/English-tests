@@ -1,0 +1,40 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 2,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l04-p02-001",
+      "title": "An Affordable and Accessible Microscope",
+      "text": [
+        "While researching methods for identifying infectious diseases in Thailand in 2011, Prakash came across an expensive microscope that was meant for malaria testing but was unused.",
+        "Malaria takes over half a million lives annually, so early diagnosis is crucial in preventing its spread.",
+        "But then, why was the microscope sitting unused?",
+        "Prakash found that there were multiple reasons.",
+        "The microscope was bulky and awkward to transport, required training to operate, and was difficult to maintain.",
+        "As it was a delicate and expensive instrument, even trained lab workers felt nervous about using it.",
+        "Prakash began wondering.",
+        "A cheap, strong microscope could save thousands of lives.",
+        "After he returned to Stanford University, where he was a professor, he started to reflect on the idea.",
+        "It was not until he met Jim Cybulski that his idea of an affordable and accessible microscope began to take shape.",
+        "A graduate student at Stanford, Cybulski was looking for ways to apply his engineering background to make a difference in the real world.",
+        "After hearing Prakash’s vision, Cybulski quickly recognized its potential and was eager to contribute."
+      ],
+      "koreanText": [
+        "2011년 태국에서 전염병을 식별하는 방법을 연구하던 Prakash는 말라리아 검사에 사용되어야 하지만 쓰이지 않고 있는 고가의 현미경을 우연히 발견했다.",
+        "말라리아는 매년 50만 명 이상의 목숨을 앗아가기 때문에 확산을 막으려면 조기 진단이 매우 중요하다.",
+        "하지만 왜 현미경이 사용되지 않고 방치되어 있었을까?",
+        "여러 가지 이유가 있다는 것을 Prakash는 알게 되었다.",
+        "현미경은 운반하기에 부피가 크고 불편하고, 작동하려면 교육이 필요하며, 유지 관리가 어려웠다.",
+        "현미경은 섬세하고 값비싼 장비였기 때문에 숙련된 실험실 직원조차도 현미경 사용에 부담을 느꼈다.",
+        "Prakash는 고민하기 시작했다.",
+        "저렴하고 튼튼한 현미경만 있으면 수천 명의 생명을 구할 수 있겠다는 생각이 들었다.",
+        "교수로 재직 중이던 스탠퍼드 대학교로 돌아온 후, 그는 이 아이디어에 대해 곰곰이 생각하기 시작했다.",
+        "저렴하고 접근하기 쉬운 현미경에 대한 그의 아이디어는 Jim Cybulski를 만나고 나서야 구체화되기 시작했다.",
+        "스탠퍼드 대학원에 재학 중이던 Cybulski는 현실 세계에 변화를 일으키기 위해 자신의 공학적 배경을 적용할 방법을 찾고 있었다.",
+        "Prakash의 비전을 듣고 난 후 Cybulski는 그 잠재력을 금방 알아차리고 기여하고 싶어 했다."
+      ]
+    }
+  ]
+}

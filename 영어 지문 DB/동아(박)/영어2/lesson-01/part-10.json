@@ -28,40 +28,6 @@
         "새로운 습관을 시작할 때는 그것을 하는 데 2분이 채 걸리지 않아야 한다.",
         "예를 들어, “운동하라.”와 같은 목표를 세우는 대신 “바닥에 매트를 깔아라.”와 같은 2분 버전을 사용하라.",
         "일단 행동을 시작하고 나면 계속하기가 훨씬 더 쉬워지기 때문에 이 전략은 강력하다."
-      ],
-      "keyExpressions": [
-        "require effort",
-        "prefer",
-        "be likely to",
-        "environment",
-        "aim to",
-        "regularly",
-        "set up",
-        "dedicated",
-        "ensure",
-        "readily available",
-        "keep distractions away",
-        "approach",
-        "two-minute rule",
-        "take less than",
-        "significantly"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "require effort", "translation": "노력이 필요하다" },
-        { "expression": "prefer", "translation": "선호하다" },
-        { "expression": "be likely to", "translation": "~할 가능성이 있다" },
-        { "expression": "environment", "translation": "환경" },
-        { "expression": "aim to", "translation": "~하는 것을 목표로 하다" },
-        { "expression": "regularly", "translation": "규칙적으로" },
-        { "expression": "set up", "translation": "마련하다" },
-        { "expression": "dedicated", "translation": "전용의" },
-        { "expression": "ensure", "translation": "보장하다" },
-        { "expression": "readily available", "translation": "쉽게 사용할 수 있는" },
-        { "expression": "keep distractions away", "translation": "방해 요소를 멀리하다" },
-        { "expression": "approach", "translation": "접근법" },
-        { "expression": "two-minute rule", "translation": "2분 규칙" },
-        { "expression": "take less than", "translation": "~보다 적게 걸리다" },
-        { "expression": "significantly", "translation": "훨씬" }
       ]
     }
   ]

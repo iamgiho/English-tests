@@ -20,32 +20,6 @@
         "플라스틱은 절대로 완전히 없어지지 않는다고 들었어.",
         "나는 오늘 어떤 일회용 플라스틱도 사용하지 않았어.",
         "기분이 좋았어!"
-      ],
-      "keyExpressions": [
-        "often",
-        "food delivery services",
-        "Instead",
-        "favorite restaurant",
-        "reusable container",
-        "picked up the food",
-        "plastic",
-        "never goes away",
-        "completely",
-        "single-use plastic",
-        "felt good"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "often", "translation": "종종" },
-        { "expression": "food delivery services", "translation": "음식 배달 서비스" },
-        { "expression": "Instead", "translation": "대신" },
-        { "expression": "favorite restaurant", "translation": "가장 좋아하는 식당" },
-        { "expression": "reusable container", "translation": "재사용할 수 있는 용기" },
-        { "expression": "picked up the food", "translation": "음식을 가져왔다" },
-        { "expression": "plastic", "translation": "플라스틱" },
-        { "expression": "never goes away", "translation": "절대로 없어지지 않는다" },
-        { "expression": "completely", "translation": "완전히" },
-        { "expression": "single-use plastic", "translation": "일회용 플라스틱" },
-        { "expression": "felt good", "translation": "기분이 좋았다" }
       ]
     }
   ]

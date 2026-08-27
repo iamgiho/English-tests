@@ -34,38 +34,6 @@
         "여러분은 더 맛있는 오믈렛을 원하나요?",
         "그저 치즈, 채소, 또는 고기를 더해 보세요.",
         "그것은 더 맛있을 것입니다!"
-      ],
-      "keyExpressions": [
-        "answer",
-        "egg dishes",
-        "around the world",
-        "favorite",
-        "How about",
-        "popular",
-        "easily",
-        "beat some eggs",
-        "fry them in oil",
-        "delicious",
-        "add",
-        "vegetables",
-        "meat",
-        "taste better"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "answer", "translation": "정답" },
-        { "expression": "egg dishes", "translation": "달걀 요리" },
-        { "expression": "around the world", "translation": "전 세계에" },
-        { "expression": "favorite", "translation": "가장 좋아하는" },
-        { "expression": "How about", "translation": "~은 어떤가요" },
-        { "expression": "popular", "translation": "인기 있는" },
-        { "expression": "easily", "translation": "쉽게" },
-        { "expression": "beat some eggs", "translation": "달걀 몇 개를 휘저어 섞다" },
-        { "expression": "fry them in oil", "translation": "그것들을 기름에 부치다" },
-        { "expression": "delicious", "translation": "맛있는" },
-        { "expression": "add", "translation": "더하다" },
-        { "expression": "vegetables", "translation": "채소" },
-        { "expression": "meat", "translation": "고기" },
-        { "expression": "taste better", "translation": "더 맛있다" }
       ]
     }
   ]

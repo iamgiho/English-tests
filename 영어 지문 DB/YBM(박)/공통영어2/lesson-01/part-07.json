@@ -22,40 +22,6 @@
         "따라서 표제만 읽지 말고 본문을 주의 깊게 읽어라.",
         "둘째, 뉴스를 액면 그대로 읽지 말아라.",
         "뉴스를 판단하기 위해 비판적인 사고 기술을 연습해라."
-      ],
-      "keyExpressions": [
-        "make sure",
-        "mislead",
-        "read beyond",
-        "provocative",
-        "headline",
-        "stimulating",
-        "click",
-        "accidentally",
-        "not just A but B",
-        "text",
-        "carefully",
-        "at face value",
-        "exercise",
-        "critical thinking skills",
-        "judge"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "make sure", "translation": "확신하다" },
-        { "expression": "mislead", "translation": "현혹하다, 오도하다" },
-        { "expression": "read beyond", "translation": "~을 넘어 읽다" },
-        { "expression": "provocative", "translation": "자극적인" },
-        { "expression": "headline", "translation": "표제" },
-        { "expression": "stimulating", "translation": "자극적인" },
-        { "expression": "click", "translation": "클릭하다" },
-        { "expression": "accidentally", "translation": "뜻하지 않게" },
-        { "expression": "not just A but B", "translation": "A만 하지 말고 B하다" },
-        { "expression": "text", "translation": "본문" },
-        { "expression": "carefully", "translation": "주의 깊게" },
-        { "expression": "at face value", "translation": "액면 그대로" },
-        { "expression": "exercise", "translation": "연습하다" },
-        { "expression": "critical thinking skills", "translation": "비판적 사고 기술" },
-        { "expression": "judge", "translation": "판단하다" }
       ]
     }
   ]

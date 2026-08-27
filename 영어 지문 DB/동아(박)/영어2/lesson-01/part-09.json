@@ -16,40 +16,6 @@
         "유혹 묶기는 [내가 원하는 행동]을 [내게 필요한 습관]에 연결함으로써 작동한다.",
         "예를 들어, 가장 좋아하는 TV 프로그램을 보고 싶지만 운동을 해야 한다면, 거실에서 실내 자전거를 타면서 운동하는 동안에만 그 프로그램을 시청함으로써 이 두 행동을 함께 묶을 수 있다.",
         "이렇게 하면, 해야 하는 일을 하고 싶은 일과 함께 매끄럽게 할 수 있다."
-      ],
-      "keyExpressions": [
-        "temptation bundling",
-        "work by",
-        "link A with B",
-        "action",
-        "habit",
-        "favorite",
-        "work out",
-        "bundle",
-        "together",
-        "while exercising",
-        "stationary bike",
-        "living room",
-        "this way",
-        "seamlessly",
-        "along with"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "temptation bundling", "translation": "유혹 묶기" },
-        { "expression": "work by", "translation": "~함으로써 작동하다" },
-        { "expression": "link A with B", "translation": "A를 B에 연결하다" },
-        { "expression": "action", "translation": "행동" },
-        { "expression": "habit", "translation": "습관" },
-        { "expression": "favorite", "translation": "가장 좋아하는" },
-        { "expression": "work out", "translation": "운동하다" },
-        { "expression": "bundle", "translation": "묶다" },
-        { "expression": "together", "translation": "함께" },
-        { "expression": "while exercising", "translation": "운동하는 동안" },
-        { "expression": "stationary bike", "translation": "실내 자전거" },
-        { "expression": "living room", "translation": "거실" },
-        { "expression": "this way", "translation": "이렇게 하면" },
-        { "expression": "seamlessly", "translation": "매끄럽게" },
-        { "expression": "along with", "translation": "~와 함께" }
       ]
     }
   ]

@@ -40,48 +40,6 @@
         "가족 여행을 가는 것은 언제나 재미있다.",
         "통영, 이젠 안녕!",
         "다음에 보자!"
-      ],
-      "keyExpressions": [
-        "Early in the morning",
-        "pretty paintings",
-        "on the walls",
-        "best place",
-        "taking pictures",
-        "hundreds of pictures",
-        "Finally",
-        "means",
-        "east",
-        "cliff",
-        "Museum of Art",
-        "painter’s nickname",
-        "Magician of Color",
-        "various blue colors",
-        "paintings",
-        "great experience",
-        "family trip",
-        "for now",
-        "next time"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "Early in the morning", "translation": "아침 일찍" },
-        { "expression": "pretty paintings", "translation": "예쁜 그림들" },
-        { "expression": "on the walls", "translation": "벽에" },
-        { "expression": "best place", "translation": "최고의 장소" },
-        { "expression": "taking pictures", "translation": "사진을 찍는 것" },
-        { "expression": "hundreds of pictures", "translation": "수백 장의 사진" },
-        { "expression": "Finally", "translation": "마침내" },
-        { "expression": "means", "translation": "의미한다" },
-        { "expression": "east", "translation": "동쪽" },
-        { "expression": "cliff", "translation": "절벽" },
-        { "expression": "Museum of Art", "translation": "미술관" },
-        { "expression": "painter’s nickname", "translation": "화가의 별명" },
-        { "expression": "Magician of Color", "translation": "색채의 마술사" },
-        { "expression": "various blue colors", "translation": "다양한 푸른색" },
-        { "expression": "paintings", "translation": "그림들" },
-        { "expression": "great experience", "translation": "좋은 경험" },
-        { "expression": "family trip", "translation": "가족 여행" },
-        { "expression": "for now", "translation": "지금은" },
-        { "expression": "next time", "translation": "다음에" }
       ]
     }
   ]

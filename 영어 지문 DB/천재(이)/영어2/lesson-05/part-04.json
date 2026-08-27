@@ -22,40 +22,6 @@
         "“저는 거실에서 탐정 소설을 읽고 있었어요. 저는 물을 좀 마시기 위해 부엌에 갔고 식탁 위에 있는 상자를 발견했어요. 하지만 저는 그 상자 안에 있는 케이크를 볼 수 없었어요. 아시다시피, 저는 요즘 몸무게를 줄이려고 노력하고 있어요. 그래서 저는 디저트를 전혀 먹지 않아요. 무엇보다도, 저는 초콜릿 케이크를 좋아하지 않아요. 그 안에 너무 많은 설탕과 버터가 들어있어요.”",
         "“너는 언제 부엌에 갔니?”",
         "“저는 정확한 시간은 모르지만, Tom이 부엌에서 나오는 것을 봤어요.”"
-      ],
-      "keyExpressions": [
-        "Next",
-        "talked to",
-        "stayed home",
-        "all morning",
-        "between 11 and 12",
-        "detective novel",
-        "living room",
-        "drink some water",
-        "inside the box",
-        "lose weight",
-        "these days",
-        "dessert",
-        "Most of all",
-        "exact time",
-        "coming out of the kitchen"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "Next", "translation": "다음에" },
-        { "expression": "talked to", "translation": "~와 이야기했다" },
-        { "expression": "stayed home", "translation": "집에 머물렀다" },
-        { "expression": "all morning", "translation": "아침 내내" },
-        { "expression": "between 11 and 12", "translation": "11시와 12시 사이에" },
-        { "expression": "detective novel", "translation": "탐정 소설" },
-        { "expression": "living room", "translation": "거실" },
-        { "expression": "drink some water", "translation": "물을 좀 마시다" },
-        { "expression": "inside the box", "translation": "상자 안에" },
-        { "expression": "lose weight", "translation": "몸무게를 줄이다" },
-        { "expression": "these days", "translation": "요즘" },
-        { "expression": "dessert", "translation": "디저트" },
-        { "expression": "Most of all", "translation": "무엇보다도" },
-        { "expression": "exact time", "translation": "정확한 시간" },
-        { "expression": "coming out of the kitchen", "translation": "부엌에서 나오는 것" }
       ]
     }
   ]

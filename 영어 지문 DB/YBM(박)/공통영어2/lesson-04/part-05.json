@@ -1,0 +1,34 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 5,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l04-p05-001",
+      "title": "The Impact of the Foldscope",
+      "text": [
+        "The Foldscope has been utilized for various purposes beyond malaria diagnosis.",
+        "In Nigeria, it has also been instrumental in detecting fake antimalarial drugs.",
+        "The drugs are responsible for over 100,000 deaths annually in sub-Saharan Africa, mostly among children under five.",
+        "When crushed into powder and examined under a Foldscope, real drugs appear as uniform particles, while fake drugs appear as mere powder.",
+        "Furthermore, over 400 scientific papers have been published using Foldscope data, and around 1,200 projects are currently in progress in India.",
+        "In the United States, Foldscope programs in public libraries have introduced many children to the wonders of science.",
+        "If Prakash and Cybulski had given up on their idea of the Foldscope, these achievements could not have occurred.",
+        "As billions of people lack access to health care and thousands of preventable deaths occur, science is playing a crucial role in finding solutions to these challenges.",
+        "Tools like the Foldscope, which make science accessible to everyone, are becoming increasingly important."
+      ],
+      "koreanText": [
+        "폴드스코프는 말라리아 진단 외에도 다양한 용도로 활용되고 있다.",
+        "나이지리아에서는 가짜 말라리아 치료제를 탐지하는 데도 중요시되어 왔다.",
+        "사하라 사막 이남의 아프리카에서는 이 약으로 매년 10만 명 이상의 사망자가 발생하는데, 대부분 5세 미만의 어린이들이다.",
+        "가루로 분쇄하여 폴드스코프로 검사하면 진짜 약은 균일한 입자로 나타나지만 가짜 약은 단순한 가루로 나타난다.",
+        "뿐만 아니라, 폴드스코프 데이터를 사용하여 400편 이상의 과학 논문이 발표되었으며, 현재 인도에서는 약 1,200개의 프로젝트가 진행 중이다.",
+        "미국에서는 공공 도서관의 폴드스코프 프로그램을 통해 많은 어린이들에게 과학의 경이로움을 소개했다.",
+        "Prakash와 Cybulski가 폴드스코프에 대한 아이디어를 포기했다면 이러한 성과는 일어나지 못했을 것이다.",
+        "수십억 명의 사람들이 의료 서비스를 받지 못하고 예방할 수 있는 사망자가 수천 명씩 발생하고 있는 상황에서, 과학은 이러한 문제에 대한 해결책을 찾는 데 중요한 역할을 하고 있다.",
+        "폴드스코프와 같은 도구들은 과학을 모든 사람에게 접근 가능하게 만들어 주어 점차 중요해지고 있다."
+      ]
+    }
+  ]
+}

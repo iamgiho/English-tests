@@ -1,0 +1,28 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 1,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l04-p01-001",
+      "title": "The Foldscope",
+      "text": [
+        "Microscopes have been an essential tool for science for over 400 years.",
+        "If microscopes had not been invented, we might not have discovered bacteria or the microscopic structures of living organisms.",
+        "In certain areas of the world, however, even basic light microscopes are not accessible due to their cost.",
+        "It was the Foldscope that Manu Prakash and Jim Cybulski presented as a solution to the problem.",
+        "The Foldscope, a paper microscope they invented, achieved powerful magnification, and cost less than a dollar in parts.",
+        "“The idea has been to make science accessible to everybody,” said Prakash."
+      ],
+      "koreanText": [
+        "현미경은 400년 이상 과학의 필수 도구로 사용되어 왔다.",
+        "현미경이 발명되지 않았다면 우리는 박테리아나 생명체의 미세한 구조를 발견하지 못했을지도 모른다.",
+        "그러나 일부 지역에서는 기본적인 광학 현미경조차도 가격 때문에 접근하기 어려운 실정이다.",
+        "Manu Prakash와 Jim Cybulski가 이 문제에 대한 해결책으로 제시한 것이 바로 폴드스코프였다.",
+        "이들이 발명한 종이 현미경 폴드스코프는 강력한 배율을 구현하면서도 부품 가격이 1달러도 안 되었다.",
+        "“누구나 과학을 쉽게 접할 수 있게 하자는 취지였습니다.”라고 Prakash는 말했다."
+      ]
+    }
+  ]
+}

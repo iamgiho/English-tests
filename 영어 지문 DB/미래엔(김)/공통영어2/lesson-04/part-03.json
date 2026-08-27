@@ -30,40 +30,6 @@
         "마지막으로, AI 기반 신경 임플란트는 우리 뇌의 작동 방식에 혁명을 일으킬 것입니다.",
         "뇌의 역할이 정보를 학습하고 저장하는 것에서 임플란트가 제공하는 방대한 양의 데이터를 처리하는 것으로 바뀌게 될 것입니다.",
         "우리는 단순히 정보를 암기하는 대신 지식을 다운로드하고, 창의력을 발휘하여 그 지식을 해석하고, 새로운 아이디어를 창출할 수 있게 될 것입니다."
-      ],
-      "keyExpressions": [
-        "health care",
-        "industries",
-        "futurists",
-        "commercially available",
-        "significantly",
-        "daily lives",
-        "advances",
-        "read our minds",
-        "enable",
-        "capture",
-        "vividly recall",
-        "revolutionize",
-        "shift from A to B",
-        "vast amounts of",
-        "generate new ideas"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "health care", "translation": "의료 분야" },
-        { "expression": "industries", "translation": "산업 분야" },
-        { "expression": "futurists", "translation": "미래학자들" },
-        { "expression": "commercially available", "translation": "상용화된" },
-        { "expression": "significantly", "translation": "크게" },
-        { "expression": "daily lives", "translation": "일상" },
-        { "expression": "advances", "translation": "발전" },
-        { "expression": "read our minds", "translation": "우리의 마음을 읽다" },
-        { "expression": "enable", "translation": "가능하게 하다" },
-        { "expression": "capture", "translation": "캡처하다" },
-        { "expression": "vividly recall", "translation": "생생하게 회상하다" },
-        { "expression": "revolutionize", "translation": "혁명을 일으키다" },
-        { "expression": "shift from A to B", "translation": "A에서 B로 바뀌다" },
-        { "expression": "vast amounts of", "translation": "방대한 양의" },
-        { "expression": "generate new ideas", "translation": "새로운 아이디어를 창출하다" }
       ]
     }
   ]

@@ -1,0 +1,36 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 4,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l04-p04-001",
+      "title": "The Foldscope's Design and Features",
+      "text": [
+        "After drawing various designs on paper, Prakash and Cybulski realized that paper could be an excellent medium for their microscope.",
+        "It was cheap, easy to cut and fold with precision, and widely available.",
+        "They faced many challenges during their attempts to develop the perfect design.",
+        "Ultimately, they settled on waterproof cardboard paper with a small glass ball lens and named their invention the Foldscope.",
+        "The Foldscope provides a magnification of 140 times, making it capable of examining blood cells, bacteria, and single-celled organisms.",
+        "It is incredibly portable, weighs just 8 grams, fits easily in a pocket, and requires no external power source.",
+        "Moreover, the Foldscope is built to last, capable of surviving a three-story fall.",
+        "Its usefulness is further enhanced by its compatibility with phone cameras, allowing users to take pictures and record images of the specimen.",
+        "It is also possible to project a high-resolution image on a wall using the phone light.",
+        "It is no surprise that over 1.8 million Foldscopes have been distributed in over 160 countries, making it an invaluable tool for scientists worldwide."
+      ],
+      "koreanText": [
+        "종이에 다양한 디자인을 그려 본 후, Prakash와 Cybulski는 종이가 현미경의 훌륭한 매체가 될 수 있다는 사실을 깨달았다.",
+        "종이는 저렴하고, 정밀하게 자르고 접기 쉬우며, 어디서든 구할 수 있었다.",
+        "그들은 완벽한 디자인을 개발하는 과정에서 많은 어려움에 직면했다.",
+        "결국 그들은 작은 유리구슬 렌즈가 달린 방수 판지 종이를 사용하기로 결정하고 발명품의 이름을 폴드스코프라고 지었다.",
+        "폴드스코프는 140배의 배율을 제공하여 혈액 세포, 박테리아, 단세포 유기체를 검사할 수 있다.",
+        "그것은 휴대성이 뛰어나고, 무게가 8g에 불과해 주머니에 쉽게 넣을 수 있으며 외부 전원이 필요하지 않다.",
+        "게다가 폴드스코프는 3층에서 떨어져도 견딜 수 있을 정도로 견고하게 제작되었다.",
+        "휴대폰 카메라와 호환되므로 사용자가 표본의 사진을 찍고 이미지를 기록할 수 있어 유용성이 더욱 향상된다.",
+        "휴대폰 조명을 사용하여 벽에 고해상도 이미지를 투사하는 것도 가능하다.",
+        "160여 개국에 180만 대 이상의 폴드스코프가 배포되어 전 세계 과학자들에게 귀중한 도구가 된 것은 놀라운 일이 아니다."
+      ]
+    }
+  ]
+}

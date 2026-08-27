@@ -42,40 +42,6 @@
         "내부 풍경은 최악의 블랙 프라이데이와 비슷하지만, 오늘 사람들이 찾는 것은 텔레비전이나 비디오 게임이 아니다.",
         "계산대에 줄을 선 카트에 보이는 것은 대부분 물병이다.",
         "생명의 필수품."
-      ],
-      "keyExpressions": [
-        "tap",
-        "cough",
-        "spit",
-        "shout out",
-        "shush",
-        "news anchor",
-        "flow crisis",
-        "drought",
-        "be tired of",
-        "running water",
-        "pull into",
-        "parking lot",
-        "Black Friday",
-        "checkout line",
-        "essentials"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "tap", "translation": "수도꼭지" },
-        { "expression": "cough", "translation": "기침하다" },
-        { "expression": "spit", "translation": "침을 뱉다" },
-        { "expression": "shout out", "translation": "큰 소리로 외치다" },
-        { "expression": "shush", "translation": "조용히 하다" },
-        { "expression": "news anchor", "translation": "뉴스 앵커" },
-        { "expression": "flow crisis", "translation": "물 공급 위기" },
-        { "expression": "drought", "translation": "가뭄" },
-        { "expression": "be tired of", "translation": "~에 지치다" },
-        { "expression": "running water", "translation": "수돗물" },
-        { "expression": "pull into", "translation": "~에 차를 대다" },
-        { "expression": "parking lot", "translation": "주차장" },
-        { "expression": "Black Friday", "translation": "블랙 프라이데이" },
-        { "expression": "checkout line", "translation": "계산대 줄" },
-        { "expression": "essentials", "translation": "필수품" }
       ]
     }
   ]

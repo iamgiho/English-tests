@@ -28,40 +28,6 @@
         "이제, 그녀의 게시물은 많은 ‘좋아요’를 받고 있었고, Goldilocks는 행복했다.",
         "하지만, 그녀의 팔로워들은 곧 지루해졌다.",
         "그래서, 그녀는 더 충격적인 사진들을 올리기로 결심했다."
-      ],
-      "keyExpressions": [
-        "little girl",
-        "golden hair",
-        "small town",
-        "share photos",
-        "social media",
-        "At first",
-        "posted",
-        "everyday things",
-        "likes",
-        "funny pictures",
-        "followers",
-        "however",
-        "got bored",
-        "decided to",
-        "shocking pictures"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "little girl", "translation": "어린 소녀" },
-        { "expression": "golden hair", "translation": "금발" },
-        { "expression": "small town", "translation": "작은 마을" },
-        { "expression": "share photos", "translation": "사진을 공유하다" },
-        { "expression": "social media", "translation": "소셜 미디어" },
-        { "expression": "At first", "translation": "처음에" },
-        { "expression": "posted", "translation": "올렸다" },
-        { "expression": "everyday things", "translation": "일상적인 것들" },
-        { "expression": "likes", "translation": "좋아요" },
-        { "expression": "funny pictures", "translation": "웃긴 사진들" },
-        { "expression": "followers", "translation": "팔로워들" },
-        { "expression": "however", "translation": "하지만" },
-        { "expression": "got bored", "translation": "지루해졌다" },
-        { "expression": "decided to", "translation": "~하기로 결심했다" },
-        { "expression": "shocking pictures", "translation": "충격적인 사진들" }
       ]
     }
   ]

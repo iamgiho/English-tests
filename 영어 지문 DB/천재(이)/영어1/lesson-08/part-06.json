@@ -24,32 +24,6 @@
         "그러고 나서 모든 반 친구들이 Harry를 껴안았습니다.",
         "행복한 미소가 Harry의 얼굴에 번졌습니다.",
         "그는 더 이상 외롭지 않았습니다."
-      ],
-      "keyExpressions": [
-        "gladly",
-        "opened the box",
-        "looked inside",
-        "jacket",
-        "I love it",
-        "put on",
-        "classmates",
-        "hugged",
-        "happy smile",
-        "spread",
-        "not lonely anymore"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "gladly", "translation": "기뻐하며" },
-        { "expression": "opened the box", "translation": "상자를 열었다" },
-        { "expression": "looked inside", "translation": "안을 보았다" },
-        { "expression": "jacket", "translation": "재킷" },
-        { "expression": "I love it", "translation": "정말 마음에 들어" },
-        { "expression": "put on", "translation": "입었다" },
-        { "expression": "classmates", "translation": "반 친구들" },
-        { "expression": "hugged", "translation": "껴안았다" },
-        { "expression": "happy smile", "translation": "행복한 미소" },
-        { "expression": "spread", "translation": "번졌다" },
-        { "expression": "not lonely anymore", "translation": "더 이상 외롭지 않은" }
       ]
     }
   ]

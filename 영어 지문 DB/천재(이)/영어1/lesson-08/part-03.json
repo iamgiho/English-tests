@@ -32,34 +32,6 @@
         "Harry는 다시 혼자였습니다.",
         "“이 가시 때문에 아무도 나를 좋아하지 않아.”",
         "Harry는 정말 슬프다고 느꼈습니다."
-      ],
-      "keyExpressions": [
-        "school bus",
-        "friendly rabbit",
-        "waved at",
-        "sit next to",
-        "spines",
-        "hurt",
-        "I’m sorry",
-        "back seat",
-        "alone again",
-        "Nobody",
-        "because of",
-        "felt really sad"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "school bus", "translation": "학교 버스" },
-        { "expression": "friendly rabbit", "translation": "친절한 토끼" },
-        { "expression": "waved at", "translation": "~에게 손을 흔들었다" },
-        { "expression": "sit next to", "translation": "~ 옆에 앉다" },
-        { "expression": "spines", "translation": "가시" },
-        { "expression": "hurt", "translation": "아프게 했다" },
-        { "expression": "I’m sorry", "translation": "미안해" },
-        { "expression": "back seat", "translation": "뒷자리" },
-        { "expression": "alone again", "translation": "다시 혼자인" },
-        { "expression": "Nobody", "translation": "아무도 ~않다" },
-        { "expression": "because of", "translation": "~ 때문에" },
-        { "expression": "felt really sad", "translation": "정말 슬프다고 느꼈다" }
       ]
     }
   ]

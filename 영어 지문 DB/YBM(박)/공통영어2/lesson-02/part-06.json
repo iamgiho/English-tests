@@ -1,0 +1,24 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 2,
+  "part": 6,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l02-p06-001",
+      "title": "A Shortened Version of Dry",
+      "text": [
+        "The above is a shortened version of the opening of the novel Dry (2018).",
+        "It tells the story of a girl who has to make tough choices for her family during a disastrous California drought.",
+        "Her unwanted adventure ends when the water supply resumes and life is back to normal.",
+        "Provided that the factors contributing to water shortages worldwide are not addressed, including climate change, population growth, and using too much water for agriculture, it is possible that this story can become a reality."
+      ],
+      "koreanText": [
+        "위 내용은 소설 <드라이>(Dry, 2018)의 도입부를 축약한 것이다.",
+        "이 소설은 캘리포니아의 재앙적인 가뭄 속에서 가족을 위해 힘든 선택을 해야 하는 한 소녀의 이야기이다.",
+        "소녀의 원치 않는 모험은 물 공급이 재개되고 생활이 정상으로 돌아오면서 끝난다.",
+        "기후 변화, 인구 증가, 농업용수 과다 사용 등 전 세계적으로 물 부족을 야기하는 요인들이 해결되지 않는다면 이 소설의 이야기가 현실이 될 수도 있다."
+      ]
+    }
+  ]
+}

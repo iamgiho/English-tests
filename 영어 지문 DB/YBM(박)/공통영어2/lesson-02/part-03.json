@@ -40,40 +40,6 @@
         "“너도 호의를 갚아서 나랑 물 몇 병 나눠도 되겠네.”",
         "그녀는 이미 통로를 따라 이동하고 있는 어머니를 돌아보더니 고개를 절레절레 흔들며 내게로 돌아선다.",
         "그러고는 얼굴이 약간 붉어지더니 더 붉어지기 전에 자리를 뜨려고 돌아선다."
-      ],
-      "keyExpressions": [
-        "manage one's way",
-        "aisle",
-        "try one's luck",
-        "unwanted",
-        "abandon",
-        "commodity",
-        "reach for",
-        "at the last second",
-        "stack",
-        "recognize",
-        "lean closer",
-        "point out",
-        "return the favor",
-        "shake one's head",
-        "deep flush"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "manage one's way", "translation": "어떻게든 가다" },
-        { "expression": "aisle", "translation": "통로" },
-        { "expression": "try one's luck", "translation": "운을 시험해 보다" },
-        { "expression": "unwanted", "translation": "원하지 않는" },
-        { "expression": "abandon", "translation": "버리다" },
-        { "expression": "commodity", "translation": "물건" },
-        { "expression": "reach for", "translation": "~을 잡으려 손을 뻗다" },
-        { "expression": "at the last second", "translation": "마지막 순간에" },
-        { "expression": "stack", "translation": "쌓아 놓다" },
-        { "expression": "recognize", "translation": "알아보다" },
-        { "expression": "lean closer", "translation": "더 가까이 몸을 기울이다" },
-        { "expression": "point out", "translation": "지적하다" },
-        { "expression": "return the favor", "translation": "호의를 갚다" },
-        { "expression": "shake one's head", "translation": "고개를 흔들다" },
-        { "expression": "deep flush", "translation": "짙은 홍조" }
       ]
     }
   ]

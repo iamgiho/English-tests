@@ -22,32 +22,6 @@
         "그는 저보다 더 빨랐거든요.",
         "사실, 그 노인은 나이 든 사람이 아니었어요.",
         "그는 긴 갈색 머리의 젊은 남자였어요."
-      ],
-      "keyExpressions": [
-        "old man",
-        "gray hair",
-        "running away",
-        "fell off",
-        "wig",
-        "ran after",
-        "catch",
-        "faster than",
-        "In fact",
-        "young man",
-        "long brown hair"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "old man", "translation": "노인" },
-        { "expression": "gray hair", "translation": "회색 머리" },
-        { "expression": "running away", "translation": "도망가는" },
-        { "expression": "fell off", "translation": "~에서 떨어졌다" },
-        { "expression": "wig", "translation": "가발" },
-        { "expression": "ran after", "translation": "뒤쫓았다" },
-        { "expression": "catch", "translation": "잡다" },
-        { "expression": "faster than", "translation": "~보다 더 빠른" },
-        { "expression": "In fact", "translation": "사실" },
-        { "expression": "young man", "translation": "젊은 남자" },
-        { "expression": "long brown hair", "translation": "긴 갈색 머리" }
       ]
     }
   ]

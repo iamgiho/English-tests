@@ -18,26 +18,6 @@
         "이것은 Tom과 그의 개 Max의 우정에 관한 영화예요.",
         "많은 사람들이 이 영화를 만들기 위해 열심히 일하고 있어요.",
         "그들 중 몇 명을 만나 보고 싶나요?"
-      ],
-      "keyExpressions": [
-        "director",
-        "movie",
-        "friendship",
-        "between",
-        "A lot of people",
-        "working hard",
-        "create",
-        "meet some of them"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "director", "translation": "감독" },
-        { "expression": "movie", "translation": "영화" },
-        { "expression": "friendship", "translation": "우정" },
-        { "expression": "between", "translation": "~ 사이의" },
-        { "expression": "A lot of people", "translation": "많은 사람들" },
-        { "expression": "working hard", "translation": "열심히 일하는" },
-        { "expression": "create", "translation": "만들다" },
-        { "expression": "meet some of them", "translation": "그들 중 몇 명을 만나다" }
       ]
     }
   ]

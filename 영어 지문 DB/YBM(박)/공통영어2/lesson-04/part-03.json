@@ -1,0 +1,36 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 4,
+  "part": 3,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l04-p03-001",
+      "title": "Designing the Foldscope",
+      "text": [
+        "For a microscope to function properly, it must meet certain minimum requirements.",
+        "These include an eyepiece, a tube through which the viewer looks, and a lens for magnification.",
+        "The microscope must also have a component that can hold a specimen and move from side to side to explore different areas of the specimen.",
+        "Furthermore, a mechanism to bring the specimen into focus, usually accomplished by moving it closer to or farther from the lens, is necessary.",
+        "Finally, a light source is required to illuminate the specimen.",
+        "An ideal microscope would be made with the best performing materials and mechanisms for each component.",
+        "However, such a microscope would likely be enormously expensive.",
+        "On the other hand, a cheap microscope may not be able to deliver high performance.",
+        "Prakash and Cybulski experimented with various designs and materials in order to find a suitable compromise.",
+        "While many manufacturers might have settled for a middle ground between these two extremes, Prakash and Cybulski were determined to create a microscope that was both inexpensive and high-performing, while remaining accessible to all."
+      ],
+      "koreanText": [
+        "현미경이 제대로 작동하려면 몇 가지 최소 요구 사항을 충족해야 한다.",
+        "여기에는 접안 렌즈, 관찰자용 튜브, 배율용 렌즈가 포함된다.",
+        "현미경에는 또한 표본을 고정하고 좌우로 움직여 표본의 다른 영역을 탐색할 수 있는 부품이 있어야 한다.",
+        "게다가 일반적으로 표본을 렌즈에 더 가까이 또는 더 멀리 이동하여 초점을 맞출 수 있는 메커니즘이 필요하다.",
+        "마지막으로 표본을 비추기 위한 광원이 필요하다.",
+        "이상적인 현미경은 각 부품에 최상의 성능을 내는 재료와 메커니즘으로 만들어질 것이다.",
+        "하지만 그런 현미경은 엄청나게 비쌀 가능성이 높다.",
+        "반면에 저렴한 현미경은 높은 성능을 제공하지 못할 수 있다.",
+        "Prakash와 Cybulski는 적절한 타협점을 찾기 위해 다양한 디자인과 소재를 시험했다.",
+        "많은 제조업체가 이 두 가지 극단 사이의 절충안에 만족했을 수도 있지만, Prakash와 Cybulski는 누구나 쉽게 사용할 수 있으면서도 저렴하고 성능이 뛰어난 현미경을 만들기로 결심했다."
+      ]
+    }
+  ]
+}

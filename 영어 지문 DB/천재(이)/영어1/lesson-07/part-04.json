@@ -28,44 +28,6 @@
         "그것은 인도네시아와 싱가포르에서도 인기가 있습니다.",
         "여러분은 지금 배가 고프다고 느끼나요?",
         "오믈렛을 먹어 보는 건 어떤가요?"
-      ],
-      "keyExpressions": [
-        "around the world",
-        "their own",
-        "omelet recipes",
-        "Spanish omelet",
-        "means",
-        "potato",
-        "need",
-        "Malaysia",
-        "wrap",
-        "chicken fried rice",
-        "thin omelet",
-        "special omelet",
-        "popular",
-        "Indonesia",
-        "Singapore",
-        "feel hungry",
-        "How about"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "around the world", "translation": "전 세계의" },
-        { "expression": "their own", "translation": "그들 자신만의" },
-        { "expression": "omelet recipes", "translation": "오믈렛 조리법" },
-        { "expression": "Spanish omelet", "translation": "스페인 오믈렛" },
-        { "expression": "means", "translation": "의미한다" },
-        { "expression": "potato", "translation": "감자" },
-        { "expression": "need", "translation": "필요하다" },
-        { "expression": "Malaysia", "translation": "말레이시아" },
-        { "expression": "wrap", "translation": "감싸다" },
-        { "expression": "chicken fried rice", "translation": "닭고기 볶음밥" },
-        { "expression": "thin omelet", "translation": "얇은 오믈렛" },
-        { "expression": "special omelet", "translation": "특별한 오믈렛" },
-        { "expression": "popular", "translation": "인기 있는" },
-        { "expression": "Indonesia", "translation": "인도네시아" },
-        { "expression": "Singapore", "translation": "싱가포르" },
-        { "expression": "feel hungry", "translation": "배가 고프다고 느끼다" },
-        { "expression": "How about", "translation": "~은 어떤가요" }
       ]
     }
   ]

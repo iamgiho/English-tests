@@ -24,32 +24,6 @@
         "“걱정 마세요! 대식가를 알아냅시다!”",
         "그녀는 엄마에게 물었다, “누가 오늘 아침에 집에 있었죠?”",
         "“우리 아이들, Harry, Carol, 그리고 Tom이요.”"
-      ],
-      "keyExpressions": [
-        "called",
-        "find the person",
-        "wise old lady",
-        "next door",
-        "in town",
-        "in trouble",
-        "sweet smile",
-        "Don’t worry",
-        "find out",
-        "big eater",
-        "this morning"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "called", "translation": "전화했다" },
-        { "expression": "find the person", "translation": "그 사람을 찾다" },
-        { "expression": "wise old lady", "translation": "현명한 노부인" },
-        { "expression": "next door", "translation": "옆집에" },
-        { "expression": "in town", "translation": "마을에 있는" },
-        { "expression": "in trouble", "translation": "곤경에 처한" },
-        { "expression": "sweet smile", "translation": "다정한 미소" },
-        { "expression": "Don’t worry", "translation": "걱정 마세요" },
-        { "expression": "find out", "translation": "알아내다" },
-        { "expression": "big eater", "translation": "대식가" },
-        { "expression": "this morning", "translation": "오늘 아침" }
       ]
     }
   ]

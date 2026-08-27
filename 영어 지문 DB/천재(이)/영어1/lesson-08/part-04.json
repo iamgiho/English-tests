@@ -20,30 +20,6 @@
         "그의 반 친구들은 무언가에 대해 이야기하고 있었습니다.",
         "그러더니 그들은 Harry 없이 교실을 떠났습니다.",
         "Harry는 너무 외롭다고 느꼈습니다."
-      ],
-      "keyExpressions": [
-        "A few weeks later",
-        "sitting",
-        "in the back of",
-        "classroom",
-        "birthday",
-        "classmates",
-        "talking about",
-        "something",
-        "without",
-        "felt so lonely"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "A few weeks later", "translation": "몇 주 뒤" },
-        { "expression": "sitting", "translation": "앉아 있는" },
-        { "expression": "in the back of", "translation": "~의 뒤에" },
-        { "expression": "classroom", "translation": "교실" },
-        { "expression": "birthday", "translation": "생일" },
-        { "expression": "classmates", "translation": "반 친구들" },
-        { "expression": "talking about", "translation": "~에 대해 이야기하는" },
-        { "expression": "something", "translation": "무언가" },
-        { "expression": "without", "translation": "~ 없이" },
-        { "expression": "felt so lonely", "translation": "너무 외롭다고 느꼈다" }
       ]
     }
   ]

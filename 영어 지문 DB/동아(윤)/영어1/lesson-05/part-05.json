@@ -22,36 +22,6 @@
         "우리 가게에는 다양한 케이크가 많이 있었지만, 그는 단지 가장 작은 것을 원했어요.",
         "우리는 그날 케이크를 한 개만 팔아서, 저는 그를 똑똑히 기억해요.",
         "아, 그는 파란색 눈을 가지고 있었어요."
-      ],
-      "keyExpressions": [
-        "Last Friday",
-        "young man",
-        "came in",
-        "spoke to",
-        "in Spanish",
-        "understand",
-        "only English",
-        "a lot of",
-        "different cakes",
-        "smallest one",
-        "sold",
-        "remember him clearly",
-        "blue eyes"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "Last Friday", "translation": "지난 금요일" },
-        { "expression": "young man", "translation": "젊은 남자" },
-        { "expression": "came in", "translation": "들어왔다" },
-        { "expression": "spoke to", "translation": "~에게 말했다" },
-        { "expression": "in Spanish", "translation": "스페인어로" },
-        { "expression": "understand", "translation": "이해하다" },
-        { "expression": "only English", "translation": "영어로만" },
-        { "expression": "a lot of", "translation": "많은" },
-        { "expression": "different cakes", "translation": "다양한 케이크" },
-        { "expression": "smallest one", "translation": "가장 작은 것" },
-        { "expression": "sold", "translation": "팔았다" },
-        { "expression": "remember him clearly", "translation": "그를 똑똑히 기억하다" },
-        { "expression": "blue eyes", "translation": "파란색 눈" }
       ]
     }
   ]

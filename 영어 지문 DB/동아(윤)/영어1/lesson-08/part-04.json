@@ -20,40 +20,6 @@
         "“너는 아직도 이해하지 못하는구나. 다른 사람들이 이미 소셜 미디어에 그것들을 공유했어. 너의 게시물은 영원히 남아 있을 거야.”라고 아빠곰이 말했다.",
         "“아, 그 생각은 하지 못했어요.”라고 Goldilocks가 말했다.",
         "“이제부터 ‘게시’를 누르기 전에 다시 생각할게요.”"
-      ],
-      "keyExpressions": [
-        "All summer long",
-        "worked hard",
-        "On the last day",
-        "deleted",
-        "posts",
-        "cottage",
-        "don’t worry",
-        "still don’t understand",
-        "already shared",
-        "social media",
-        "live on forever",
-        "From now on",
-        "think twice",
-        "before",
-        "press POST"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "All summer long", "translation": "여름 내내" },
-        { "expression": "worked hard", "translation": "열심히 일했다" },
-        { "expression": "On the last day", "translation": "마지막 날에" },
-        { "expression": "deleted", "translation": "삭제했다" },
-        { "expression": "posts", "translation": "게시물" },
-        { "expression": "cottage", "translation": "오두막집" },
-        { "expression": "don’t worry", "translation": "걱정하지 마세요" },
-        { "expression": "still don’t understand", "translation": "아직도 이해하지 못하다" },
-        { "expression": "already shared", "translation": "이미 공유했다" },
-        { "expression": "social media", "translation": "소셜 미디어" },
-        { "expression": "live on forever", "translation": "영원히 남아 있다" },
-        { "expression": "From now on", "translation": "이제부터" },
-        { "expression": "think twice", "translation": "다시 생각하다" },
-        { "expression": "before", "translation": "~하기 전에" },
-        { "expression": "press POST", "translation": "게시를 누르다" }
       ]
     }
   ]

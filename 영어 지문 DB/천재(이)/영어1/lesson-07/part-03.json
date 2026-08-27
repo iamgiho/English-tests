@@ -20,36 +20,6 @@
         "나폴레옹은 마을에서 만든 오믈렛을 먹어 보았고, 그는 그것을 매우 즐겼습니다.",
         "그는 다음 날 그의 군대를 위해 거대한 오믈렛을 요청했습니다.",
         "오늘날, 베시에르 사람들은 매년 그들의 오믈렛 축제를 위해 거대한 오믈렛을 만듭니다."
-      ],
-      "keyExpressions": [
-        "interesting story",
-        "One day",
-        "army",
-        "stayed near",
-        "the town of Bessières",
-        "tried an omelet",
-        "enjoyed it",
-        "asked for",
-        "giant omelet",
-        "the next day",
-        "These days",
-        "omelet festival",
-        "every year"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "interesting story", "translation": "재미있는 이야기" },
-        { "expression": "One day", "translation": "어느 날" },
-        { "expression": "army", "translation": "군대" },
-        { "expression": "stayed near", "translation": "~ 근처에 머물렀다" },
-        { "expression": "the town of Bessières", "translation": "베시에르 마을" },
-        { "expression": "tried an omelet", "translation": "오믈렛을 먹어 보았다" },
-        { "expression": "enjoyed it", "translation": "그것을 즐겼다" },
-        { "expression": "asked for", "translation": "요청했다" },
-        { "expression": "giant omelet", "translation": "거대한 오믈렛" },
-        { "expression": "the next day", "translation": "다음 날" },
-        { "expression": "These days", "translation": "오늘날" },
-        { "expression": "omelet festival", "translation": "오믈렛 축제" },
-        { "expression": "every year", "translation": "매년" }
       ]
     }
   ]

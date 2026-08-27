@@ -1,0 +1,20 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 3,
+  "part": 1,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l03-p01-001",
+      "title": "The Power to Overcome",
+      "text": [
+        "This week’s topic in the City Wellness Center Newsletter is resilience, or “the power to overcome.”",
+        "Julia Hone, a famous doctor, tells us how we can deal with difficult times by cultivating our inner strength."
+      ],
+      "koreanText": [
+        "이번 주 시립 웰니스 센터 뉴스레터의 주제는 회복 탄력성, 즉 ‘극복하는 힘’이다.",
+        "유명한 의사인 Julia Hone은 우리가 내적 힘을 기름으로써 어려운 시기를 극복할 수 있는 방법에 대해 말해 준다."
+      ]
+    }
+  ]
+}

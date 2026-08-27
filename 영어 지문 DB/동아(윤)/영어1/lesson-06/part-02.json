@@ -18,30 +18,6 @@
         "남은 음식이 많아서 우리는 그것들을 집으로 가져왔어.",
         "그다음 날, 나는 그것들로 맛있는 점심을 만들었어.",
         "참고로, 인터넷에서 남은 음식을 위한 멋진 요리 아이디어를 찾을 수 있어."
-      ],
-      "keyExpressions": [
-        "birthday",
-        "last Saturday",
-        "ate out",
-        "lots of leftovers",
-        "brought them home",
-        "The next day",
-        "made a nice lunch out of them",
-        "FYI",
-        "cooking ideas",
-        "on the Internet"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "birthday", "translation": "생일" },
-        { "expression": "last Saturday", "translation": "지난 토요일" },
-        { "expression": "ate out", "translation": "외식했다" },
-        { "expression": "lots of leftovers", "translation": "많은 남은 음식" },
-        { "expression": "brought them home", "translation": "그것들을 집으로 가져왔다" },
-        { "expression": "The next day", "translation": "그다음 날" },
-        { "expression": "made a nice lunch out of them", "translation": "그것들로 맛있는 점심을 만들었다" },
-        { "expression": "FYI", "translation": "참고로" },
-        { "expression": "cooking ideas", "translation": "요리 아이디어" },
-        { "expression": "on the Internet", "translation": "인터넷에서" }
       ]
     }
   ]

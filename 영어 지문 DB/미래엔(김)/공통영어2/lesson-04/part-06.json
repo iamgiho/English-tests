@@ -26,40 +26,6 @@
         "개인 정보 보호를 위해 개인 정보 보호법을 엄격하게 시행할 필요가 있다고 생각합니다.",
         "의견을 공유해 주신 모든 분께 감사드립니다.",
         "저의 다음 글에서 이러한 우려를 해결하는 방법에 관해 더 이야기해 보겠습니다."
-      ],
-      "keyExpressions": [
-        "share your opinion",
-        "sound incredible",
-        "the disabled",
-        "walk again",
-        "artificial arms",
-        "according to",
-        "thoughts",
-        "be worried about",
-        "privacy issues",
-        "cause",
-        "necessary",
-        "strictly enforce",
-        "privacy laws",
-        "personal information",
-        "address the concerns"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "share your opinion", "translation": "의견을 공유하다" },
-        { "expression": "sound incredible", "translation": "정말 놀랍게 들리다" },
-        { "expression": "the disabled", "translation": "장애인" },
-        { "expression": "walk again", "translation": "다시 걷다" },
-        { "expression": "artificial arms", "translation": "의수" },
-        { "expression": "according to", "translation": "~에 따라" },
-        { "expression": "thoughts", "translation": "생각" },
-        { "expression": "be worried about", "translation": "~을 걱정하다" },
-        { "expression": "privacy issues", "translation": "프라이버시 문제" },
-        { "expression": "cause", "translation": "발생시키다" },
-        { "expression": "necessary", "translation": "필요한" },
-        { "expression": "strictly enforce", "translation": "엄격하게 시행하다" },
-        { "expression": "privacy laws", "translation": "개인 정보 보호법" },
-        { "expression": "personal information", "translation": "개인 정보" },
-        { "expression": "address the concerns", "translation": "우려를 해결하다" }
       ]
     }
   ]

@@ -16,40 +16,6 @@
         "무언가를 하는 것을 즐길 때 뇌에서는 도파민이라고 불리는 화학 물질이 분비되는데, 그것은 동기 부여를 증가시키고 그 행동을 반복하고 싶게 만든다.",
         "따라서 습관을 매력적이고 즐겁게 만드는 것이 매우 중요하다.",
         "여기서 유혹 묶기라고 알려진 전략이 작동하기 시작한다."
-      ],
-      "keyExpressions": [
-        "enjoy doing",
-        "chemical substance",
-        "dopamine",
-        "be released",
-        "brain",
-        "increase",
-        "motivation",
-        "be eager to",
-        "repeat",
-        "action",
-        "crucial",
-        "attractive",
-        "enjoyable",
-        "temptation bundling",
-        "come into play"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "enjoy doing", "translation": "~하는 것을 즐기다" },
-        { "expression": "chemical substance", "translation": "화학 물질" },
-        { "expression": "dopamine", "translation": "도파민" },
-        { "expression": "be released", "translation": "분비되다" },
-        { "expression": "brain", "translation": "뇌" },
-        { "expression": "increase", "translation": "증가시키다" },
-        { "expression": "motivation", "translation": "동기 부여" },
-        { "expression": "be eager to", "translation": "~하고 싶어 하다" },
-        { "expression": "repeat", "translation": "반복하다" },
-        { "expression": "action", "translation": "행동" },
-        { "expression": "crucial", "translation": "매우 중요한" },
-        { "expression": "attractive", "translation": "매력적인" },
-        { "expression": "enjoyable", "translation": "즐거운" },
-        { "expression": "temptation bundling", "translation": "유혹 묶기" },
-        { "expression": "come into play", "translation": "작동하기 시작하다" }
       ]
     }
   ]

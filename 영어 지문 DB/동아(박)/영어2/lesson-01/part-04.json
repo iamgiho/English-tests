@@ -24,40 +24,6 @@
         "예를 들어, 만약 매일 운동하는 것을 시작하고 싶다면, 자신을 건강에 신경 쓰는 활동적이고 의욕적인 사람이라고 생각하라.",
         "그런 다음 그러한 사람이 자연스럽게 할 일상적인 일을 하도록 노력하라.",
         "이러한 일상적인 일들을 반복하면 당신은 점차 그러한 사람이 될 것이다."
-      ],
-      "keyExpressions": [
-        "work on",
-        "identity",
-        "through two steps",
-        "keep asking",
-        "what kind of",
-        "reinforce",
-        "through one's actions",
-        "specifically",
-        "repeat",
-        "over time",
-        "naturally",
-        "exercise daily",
-        "think of A as B",
-        "care about",
-        "gradually lead A to B"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "work on", "translation": "~하기 위해 노력하다" },
-        { "expression": "identity", "translation": "정체성" },
-        { "expression": "through two steps", "translation": "두 단계를 통해" },
-        { "expression": "keep asking", "translation": "계속해서 묻다" },
-        { "expression": "what kind of", "translation": "어떤 종류의" },
-        { "expression": "reinforce", "translation": "강화하다" },
-        { "expression": "through one's actions", "translation": "행동을 통해" },
-        { "expression": "specifically", "translation": "구체적으로 말하자면" },
-        { "expression": "repeat", "translation": "반복하다" },
-        { "expression": "over time", "translation": "시간이 지나면서" },
-        { "expression": "naturally", "translation": "자연스럽게" },
-        { "expression": "exercise daily", "translation": "매일 운동하다" },
-        { "expression": "think of A as B", "translation": "A를 B라고 생각하다" },
-        { "expression": "care about", "translation": "~에 신경 쓰다" },
-        { "expression": "gradually lead A to B", "translation": "점차 A가 B가 되도록 이끌다" }
       ]
     }
   ]

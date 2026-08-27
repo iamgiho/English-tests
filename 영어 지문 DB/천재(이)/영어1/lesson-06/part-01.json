@@ -38,42 +38,6 @@
         "어떤 사람들은 야수가 저를 그렸다고 생각했죠.",
         "그래서 그는 ‘야수’라는 별명을 얻었어요.",
         "그는 자신만의 스타일을 지켰고 마침내 유명해졌어요."
-      ],
-      "keyExpressions": [
-        "Welcome to",
-        "gallery",
-        "Look at",
-        "strange",
-        "colored my face in green",
-        "Don’t worry",
-        "actually",
-        "this way",
-        "express his emotions",
-        "bright and wild colors",
-        "painting style",
-        "at first",
-        "beast",
-        "nickname",
-        "kept his own style",
-        "became famous"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "Welcome to", "translation": "~에 오신 것을 환영합니다" },
-        { "expression": "gallery", "translation": "미술관" },
-        { "expression": "Look at", "translation": "~을 보다" },
-        { "expression": "strange", "translation": "이상한" },
-        { "expression": "colored my face in green", "translation": "내 얼굴을 녹색으로 색칠했다" },
-        { "expression": "Don’t worry", "translation": "걱정하지 마세요" },
-        { "expression": "actually", "translation": "실제로" },
-        { "expression": "this way", "translation": "이런 식으로" },
-        { "expression": "express his emotions", "translation": "그의 감정을 표현하다" },
-        { "expression": "bright and wild colors", "translation": "밝고 거친 색" },
-        { "expression": "painting style", "translation": "그림 스타일" },
-        { "expression": "at first", "translation": "처음에" },
-        { "expression": "beast", "translation": "야수" },
-        { "expression": "nickname", "translation": "별명" },
-        { "expression": "kept his own style", "translation": "자신만의 스타일을 지켰다" },
-        { "expression": "became famous", "translation": "유명해졌다" }
       ]
     }
   ]

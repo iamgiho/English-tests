@@ -24,40 +24,6 @@
         "세 개 층에서의 변화는 모두 나름대로 유용하지만, 지속적인 성공에 이르는 비결은 변화의 방향에 있다.",
         "진정한 행동 변화는 내부로부터 정체성의 변화가 있을 때 일어난다.",
         "새로운 습관이 자신의 정체성과 조화를 이루지 않는다면, 그것은 지속될 가능성이 낮다."
-      ],
-      "keyExpressions": [
-        "behavior change",
-        "consist of",
-        "layer",
-        "outermost",
-        "outcome",
-        "achieve",
-        "process",
-        "fundamental",
-        "identity",
-        "in one's own way",
-        "the key to",
-        "lasting success",
-        "lie in",
-        "from within",
-        "in harmony with"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "behavior change", "translation": "행동 변화" },
-        { "expression": "consist of", "translation": "~로 구성되다" },
-        { "expression": "layer", "translation": "층" },
-        { "expression": "outermost", "translation": "가장 바깥쪽의" },
-        { "expression": "outcome", "translation": "결과" },
-        { "expression": "achieve", "translation": "성취하다" },
-        { "expression": "process", "translation": "과정" },
-        { "expression": "fundamental", "translation": "근본적인" },
-        { "expression": "identity", "translation": "정체성" },
-        { "expression": "in one's own way", "translation": "나름대로" },
-        { "expression": "the key to", "translation": "~에 이르는 비결" },
-        { "expression": "lasting success", "translation": "지속적인 성공" },
-        { "expression": "lie in", "translation": "~에 있다" },
-        { "expression": "from within", "translation": "내부로부터" },
-        { "expression": "in harmony with", "translation": "~와 조화를 이루는" }
       ]
     }
   ]

@@ -24,36 +24,6 @@
         "“오, 안 돼! 우리는 더 이상 축구를 못 하겠네. 안으로 들어가자.”",
         "반 친구들은 운동장을 떠났습니다.",
         "Harry는 혼자였습니다."
-      ],
-      "keyExpressions": [
-        "At lunchtime",
-        "classmates",
-        "playing soccer",
-        "join us",
-        "kicked",
-        "soccer ball",
-        "jumped",
-        "catch the ball",
-        "went flat",
-        "not anymore",
-        "go inside",
-        "left the playground",
-        "alone"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "At lunchtime", "translation": "점심시간에" },
-        { "expression": "classmates", "translation": "반 친구들" },
-        { "expression": "playing soccer", "translation": "축구를 하고 있는" },
-        { "expression": "join us", "translation": "우리와 함께하다" },
-        { "expression": "kicked", "translation": "찼다" },
-        { "expression": "soccer ball", "translation": "축구공" },
-        { "expression": "jumped", "translation": "점프했다" },
-        { "expression": "catch the ball", "translation": "공을 잡다" },
-        { "expression": "went flat", "translation": "바람이 빠졌다" },
-        { "expression": "not anymore", "translation": "더 이상 ~않다" },
-        { "expression": "go inside", "translation": "안으로 들어가다" },
-        { "expression": "left the playground", "translation": "운동장을 떠났다" },
-        { "expression": "alone", "translation": "혼자인" }
       ]
     }
   ]

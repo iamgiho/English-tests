@@ -18,30 +18,6 @@
         "저는 뒤로 돌았고 한 노인을 봤어요.",
         "그는 휠체어 앞에 서 있었어요.",
         "저는 키가 170cm 정도인데, 그는 저보다 조금 더 컸어요."
-      ],
-      "keyExpressions": [
-        "looking at",
-        "threw a cake at",
-        "painting",
-        "turned around",
-        "old man",
-        "standing",
-        "in front of",
-        "wheelchair",
-        "about 170 cm tall",
-        "a little taller than"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "looking at", "translation": "보고 있는" },
-        { "expression": "threw a cake at", "translation": "~을 향해 케이크를 던졌다" },
-        { "expression": "painting", "translation": "그림" },
-        { "expression": "turned around", "translation": "뒤로 돌았다" },
-        { "expression": "old man", "translation": "노인" },
-        { "expression": "standing", "translation": "서 있는" },
-        { "expression": "in front of", "translation": "~ 앞에" },
-        { "expression": "wheelchair", "translation": "휠체어" },
-        { "expression": "about 170 cm tall", "translation": "키가 170cm 정도인" },
-        { "expression": "a little taller than", "translation": "~보다 조금 더 큰" }
       ]
     }
   ]

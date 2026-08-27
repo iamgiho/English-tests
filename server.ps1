@@ -5,7 +5,7 @@ $listener.Prefixes.Add($prefix)
 
 try {
   $listener.Start()
-  Write-Host "내신 대비 영어 퀴즈 서버가 실행 중입니다."
+  Write-Host "Smart English Training 서버가 실행 중입니다."
   Write-Host $prefix
   Write-Host "종료하려면 이 창에서 Ctrl+C를 누르세요."
 

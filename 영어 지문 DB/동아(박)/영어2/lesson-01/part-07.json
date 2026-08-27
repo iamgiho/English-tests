@@ -18,40 +18,6 @@
         "현재의 습관은 이미 특정한 시간 및 장소와 연관되어 있으므로, “내가 [현재 습관]을 한 후에, [새로운 습관]을 할 것이다.”와 같이 말함으로써 그것을 새로운 습관과 짝지어라.",
         "실행 계획은 “저녁 8시쯤 저녁 식사를 마친 후에, 나는 즉시 운동복으로 갈아입을 것이다.”가 될 수 있다.",
         "신호와 행동 사이의 이러한 연결이 더 많이 반복될수록, 새로운 습관은 당신의 삶에 더 확고하게 뿌리내릴 것이다."
-      ],
-      "keyExpressions": [
-        "effective method",
-        "habit stacking",
-        "current habit",
-        "be associated with",
-        "particular",
-        "time and location",
-        "pair A with B",
-        "action plan",
-        "finish dinner",
-        "immediately",
-        "change into",
-        "workout clothes",
-        "link",
-        "firmly",
-        "be rooted in"
-      ],
-      "keyExpressionTranslations": [
-        { "expression": "effective method", "translation": "효과적인 방법" },
-        { "expression": "habit stacking", "translation": "습관 쌓기" },
-        { "expression": "current habit", "translation": "현재의 습관" },
-        { "expression": "be associated with", "translation": "~와 연관되어 있다" },
-        { "expression": "particular", "translation": "특정한" },
-        { "expression": "time and location", "translation": "시간 및 장소" },
-        { "expression": "pair A with B", "translation": "A를 B와 짝짓다" },
-        { "expression": "action plan", "translation": "실행 계획" },
-        { "expression": "finish dinner", "translation": "저녁 식사를 마치다" },
-        { "expression": "immediately", "translation": "즉시" },
-        { "expression": "change into", "translation": "~으로 갈아입다" },
-        { "expression": "workout clothes", "translation": "운동복" },
-        { "expression": "link", "translation": "연결" },
-        { "expression": "firmly", "translation": "확고하게" },
-        { "expression": "be rooted in", "translation": "~에 뿌리내리다" }
       ]
     }
   ]

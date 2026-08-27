@@ -1,0 +1,28 @@
+{
+  "publisher": "YBM(박)",
+  "book": "공통영어2",
+  "lesson": 3,
+  "part": 6,
+  "passages": [
+    {
+      "id": "ybm-park-common-english2-l03-p06-001",
+      "title": "Stop, Observe, and Proceed",
+      "text": [
+        "Stop whatever you are doing.",
+        "Take a few deep breaths.",
+        "Observe your emotions and thoughts as they are, not judging them as good or bad.",
+        "Proceed with what you were doing.",
+        "Or start something different based on what you observed.",
+        "Now go forward with your life."
+      ],
+      "koreanText": [
+        "하던 일이 무엇이건 그것을 멈추세요.",
+        "깊은 호흡을 몇 번 하세요.",
+        "당신의 감정과 생각들을 좋다 나쁘다 판단하지 말고 있는 그대로 지켜보세요.",
+        "하던 일을 다시 계속하세요.",
+        "아니면 지켜본 내용을 토대로 뭔가 다른 것을 시작해 보세요.",
+        "이제 당신의 삶을 계속 살아 나가는 거죠."
+      ]
+    }
+  ]
+}
