@@ -634,6 +634,7 @@
       <button class="tab-btn" data-tab="writingPracticeTab">Writing Practice</button>
       <button class="tab-btn" data-tab="listeningTab">Listening Test</button>
       <button class="tab-btn" data-tab="listeningPracticeTab">Listening Practice</button>
+      <button class="tab-btn" data-tab="listeningPractice2Tab">Listening Practice 2</button>
     </nav>
 
     <div class="tab-panel" id="passageTab">
@@ -837,6 +838,30 @@
       </section>
     </div>
 
+    <div class="tab-panel" id="listeningPractice2Tab">
+      <section>
+        <div class="section-head"><h2>Listening Practice 2</h2><span class="pill" id="listeningPractice2Progress">0 / 0</span></div>
+        <div class="body">
+          <div class="field-row">
+            <div class="field"><label for="listeningPractice2Nickname">이름</label><input id="listeningPractice2Nickname" placeholder="예: 김민준"></div>
+            <div class="field"><label for="listeningPractice2GradeSelect">학년</label><select id="listeningPractice2GradeSelect"></select></div>
+            <div class="field"><label for="listeningPractice2TextbookSelect">교과서</label><select id="listeningPractice2TextbookSelect"></select></div>
+            <div class="field"><label for="listeningPractice2LessonSelect">단원</label><select id="listeningPractice2LessonSelect"></select></div>
+            <div class="field"><label for="listeningPractice2PartSelect">파트</label><select id="listeningPractice2PartSelect"></select></div>
+            <button id="startListeningPractice2Btn">Listening Practice 2 시작</button>
+          </div>
+          <div class="question listening-prompt" style="margin-top: 12px; flex-direction: column;">
+            <div style="display:flex; align-items:center; gap:14px;"><button class="sound-button" id="playListeningPractice2Btn" type="button" disabled aria-label="영어 문장 듣기">🔊</button><div><h3>아이콘을 눌러 문장을 들으세요.</h3><p class="question-sub" id="listeningPractice2WordCount">(0단어)</p></div></div>
+            <p class="meaning-line" id="listeningPractice2Meaning">문장의 뜻이 여기에 표시됩니다.</p>
+          </div>
+          <div class="field" style="margin-top: 12px;"><label for="listeningPractice2Answer">받아쓰기 답안</label><textarea class="listening-answer" id="listeningPractice2Answer" placeholder="들은 영어 문장을 입력하세요." disabled></textarea></div>
+          <div class="toolbar"><button id="submitListeningPractice2Btn" disabled>답안 확인</button><button class="secondary" id="nextListeningPractice2Btn" disabled>다음</button></div>
+          <div class="feedback" id="listeningPractice2Feedback">오답이 없어질 때까지 틀린 문장만 반복해서 연습합니다.</div>
+          <div class="answer-comparison hidden" id="listeningPractice2Comparison"><div><strong>내 답안</strong><div id="listeningPractice2UserAnswer" style="margin-top:7px;"></div></div><div><strong>정답</strong><div id="listeningPractice2CorrectAnswer" style="margin-top:7px;"></div></div></div>
+        </div>
+      </section>
+    </div>
+
     <div class="tab-panel" id="wordPracticeTab">
       <div class="grid">
         <section>
@@ -892,7 +917,7 @@
             <div class="question" id="wordPracticeQuestion">
               <h3>단어 연습을 시작하세요.</h3>
               <p class="question-main">Ready</p>
-              <p class="question-sub">세 번의 단계적 노출 후 철자와 뜻을 능동적으로 떠올립니다.</p>
+              <p class="question-sub">세 번의 단계적 노출 후 영어→한국어, 한국어→영어, 듣기 순서로 연습합니다.</p>
             </div>
             <div class="toolbar hidden" id="wordPracticeSoundBox">
               <button class="sound-button" id="playWordPracticeBtn" type="button" aria-label="단어 듣기">🔊</button>
@@ -1059,7 +1084,8 @@
       passageResults: "exam.passageResults",
       writingResults: "exam.writingResults",
       writingPracticeResults: "exam.writingPracticeResults",
-      listeningResults: "exam.listeningResults"
+      listeningResults: "exam.listeningResults",
+      wordPracticeResults: "exam.wordPracticeResults"
     };
 
     const fallbackManifest = [
@@ -1138,6 +1164,37 @@
       { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 4, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-04.json" },
       { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 5, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-05.json" },
       { grade: "중1", publisher: "천재(이)", book: "영어1", lesson: 8, part: 6, path: "영어 지문 DB/천재(이)/영어1/lesson-08/part-06.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 1, part: 1, path: "영어 지문 DB/미래엔(문)/영어1/lesson-01/part-01.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 1, part: 2, path: "영어 지문 DB/미래엔(문)/영어1/lesson-01/part-02.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 1, part: 3, path: "영어 지문 DB/미래엔(문)/영어1/lesson-01/part-03.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 2, part: 1, path: "영어 지문 DB/미래엔(문)/영어1/lesson-02/part-01.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 2, part: 2, path: "영어 지문 DB/미래엔(문)/영어1/lesson-02/part-02.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 2, part: 3, path: "영어 지문 DB/미래엔(문)/영어1/lesson-02/part-03.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 2, part: 4, path: "영어 지문 DB/미래엔(문)/영어1/lesson-02/part-04.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 2, part: 5, path: "영어 지문 DB/미래엔(문)/영어1/lesson-02/part-05.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 2, part: 6, path: "영어 지문 DB/미래엔(문)/영어1/lesson-02/part-06.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 2, part: 7, path: "영어 지문 DB/미래엔(문)/영어1/lesson-02/part-07.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 3, part: 1, path: "영어 지문 DB/미래엔(문)/영어1/lesson-03/part-01.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 3, part: 2, path: "영어 지문 DB/미래엔(문)/영어1/lesson-03/part-02.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 3, part: 3, path: "영어 지문 DB/미래엔(문)/영어1/lesson-03/part-03.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 3, part: 4, path: "영어 지문 DB/미래엔(문)/영어1/lesson-03/part-04.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 4, part: 1, path: "영어 지문 DB/미래엔(문)/영어1/lesson-04/part-01.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 4, part: 2, path: "영어 지문 DB/미래엔(문)/영어1/lesson-04/part-02.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 4, part: 3, path: "영어 지문 DB/미래엔(문)/영어1/lesson-04/part-03.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 4, part: 4, path: "영어 지문 DB/미래엔(문)/영어1/lesson-04/part-04.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 5, part: 1, path: "영어 지문 DB/미래엔(문)/영어1/lesson-05/part-01.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 5, part: 2, path: "영어 지문 DB/미래엔(문)/영어1/lesson-05/part-02.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 5, part: 3, path: "영어 지문 DB/미래엔(문)/영어1/lesson-05/part-03.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 5, part: 4, path: "영어 지문 DB/미래엔(문)/영어1/lesson-05/part-04.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 5, part: 5, path: "영어 지문 DB/미래엔(문)/영어1/lesson-05/part-05.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 5, part: 6, path: "영어 지문 DB/미래엔(문)/영어1/lesson-05/part-06.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 6, part: 1, path: "영어 지문 DB/미래엔(문)/영어1/lesson-06/part-01.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 6, part: 2, path: "영어 지문 DB/미래엔(문)/영어1/lesson-06/part-02.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 6, part: 3, path: "영어 지문 DB/미래엔(문)/영어1/lesson-06/part-03.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 7, part: 1, path: "영어 지문 DB/미래엔(문)/영어1/lesson-07/part-01.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 7, part: 2, path: "영어 지문 DB/미래엔(문)/영어1/lesson-07/part-02.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 7, part: 3, path: "영어 지문 DB/미래엔(문)/영어1/lesson-07/part-03.json" },
+      { grade: "중1", publisher: "미래엔(문)", book: "영어1", lesson: 7, part: 4, path: "영어 지문 DB/미래엔(문)/영어1/lesson-07/part-04.json" },
       { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 5, part: 1, path: "영어 지문 DB/동아(윤)/영어1/lesson-05/part-01.json" },
       { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 5, part: 2, path: "영어 지문 DB/동아(윤)/영어1/lesson-05/part-02.json" },
       { grade: "중1", publisher: "동아(윤)", book: "영어1", lesson: 5, part: 3, path: "영어 지문 DB/동아(윤)/영어1/lesson-05/part-03.json" },
@@ -1165,6 +1222,13 @@
       { category: "영어 단어", title: "1단계 단어", path: "영어 단어/1단계 단어.txt" },
       { category: "교과서 단어", title: "공통영어2 미래엔(김) 1과", path: "영어 단어/공통영어2 미래엔(김) 1과.txt" },
       { category: "교과서 단어", title: "공통영어2 미래엔(김) 4과", path: "영어 단어/공통영어2 미래엔(김) 4과.txt" },
+      { category: "교과서 단어", title: "중1 미래엔(문) 1과", path: "영어 단어/중1 미래엔(문) 1과.txt" },
+      { category: "교과서 단어", title: "중1 미래엔(문) 2과", path: "영어 단어/중1 미래엔(문) 2과.txt" },
+      { category: "교과서 단어", title: "중1 미래엔(문) 3과", path: "영어 단어/중1 미래엔(문) 3과.txt" },
+      { category: "교과서 단어", title: "중1 미래엔(문) 4과", path: "영어 단어/중1 미래엔(문) 4과.txt" },
+      { category: "교과서 단어", title: "중1 미래엔(문) 5과", path: "영어 단어/중1 미래엔(문) 5과.txt" },
+      { category: "교과서 단어", title: "중1 미래엔(문) 6과", path: "영어 단어/중1 미래엔(문) 6과.txt" },
+      { category: "교과서 단어", title: "중1 미래엔(문) 7과", path: "영어 단어/중1 미래엔(문) 7과.txt" },
       { category: "교과서 단어", title: "중2 천재(이) 5과", path: "영어 단어/중2 천재(이) 5과.txt" },
       { category: "교과서 단어", title: "중1 천재(이) 5과", path: "영어 단어/중1 천재(이) 5과.txt" },
       { category: "교과서 단어", title: "중1 천재(이) 6과", path: "영어 단어/중1 천재(이) 6과.txt" },
@@ -1176,6 +1240,10 @@
       { category: "교과서 단어", title: "중1 동아(윤) 8과", path: "영어 단어/중1 동아(윤) 8과.txt" },
       { category: "교과서 단어", title: "고2 동아(박) 1과", path: "영어 단어/고2 동아(박) 1과.txt" },
       { category: "교과서 단어", title: "중3 천재(이) 5과", path: "영어 단어/중3 천재(이) 5과.txt" },
+      { category: "교과서 단어", title: "중3 NE능률 5과", path: "영어 단어/중3 NE능률 5과.txt" },
+      { category: "교과서 단어", title: "중3 NE능률 6과", path: "영어 단어/중3 NE능률 6과.txt" },
+      { category: "교과서 단어", title: "중3 NE능률 7과", path: "영어 단어/중3 NE능률 7과.txt" },
+      { category: "교과서 단어", title: "중3 NE능률 8과", path: "영어 단어/중3 NE능률 8과.txt" },
       { category: "교과서 단어", title: "중3 천재(이) 6과", path: "영어 단어/중3 천재(이) 6과.txt" },
       { category: "교과서 단어", title: "중3 천재(이) 7과", path: "영어 단어/중3 천재(이) 7과.txt" },
       { category: "교과서 단어", title: "중3 천재(이) 8과", path: "영어 단어/중3 천재(이) 8과.txt" },
@@ -1203,6 +1271,7 @@
     let writingPracticeSession = null;
     let listeningSession = null;
     let listeningPracticeSession = null;
+    let listeningPractice2Session = null;
     const googleIntegration = window.GOOGLE_INTEGRATION || { passage: {}, word: {}, sheetCsvUrl: "" };
 
     function readJson(key, fallback) {
@@ -1284,7 +1353,7 @@
     }
 
     function switchTab(tabId) {
-      if (!["listeningTab", "listeningPracticeTab", "wordPracticeTab"].includes(tabId)) window.speechSynthesis?.cancel();
+      if (!["listeningTab", "listeningPracticeTab", "listeningPractice2Tab", "wordPracticeTab"].includes(tabId)) window.speechSynthesis?.cancel();
       $$(".tab-btn").forEach((button) => button.classList.toggle("active", button.dataset.tab === tabId));
       $$(".tab-panel").forEach((panel) => panel.classList.toggle("active", panel.id === tabId));
     }
@@ -1310,6 +1379,7 @@
       renderPracticeSelectors("writingPractice");
       renderListeningSelectors();
       renderPracticeSelectors("listeningPractice");
+      renderPracticeSelectors("listeningPractice2");
     }
 
     function renderPracticeSelectors(prefix) {
@@ -1554,6 +1624,13 @@
         .replace(/[^a-z0-9\s]/g, "")
         .replace(/\s+/g, " ")
         .trim();
+    }
+
+    function normalizeLooseListeningAnswer(value) {
+      return String(value || "")
+        .normalize("NFKC")
+        .toLowerCase()
+        .replace(/[^a-z0-9]/g, "");
     }
 
     async function startWritingQuiz() {
@@ -2111,6 +2188,144 @@
       renderListeningWrongAnswers(getLocalListeningWrongAnswers()); setMessage($("#listeningPracticeFeedback"), `Listening Practice ${result.total}문장을 완료했습니다. 결과를 저장했습니다.`, "good"); submitListeningResult(result);
     }
 
+    async function startListeningPractice2() {
+      const nickname = $("#listeningPractice2Nickname").value.trim();
+      const meta = passageManifest.find((item) => item.path === $("#listeningPractice2PartSelect").value);
+      if (!nickname) return setMessage($("#listeningPractice2Feedback"), "이름을 먼저 입력하세요.", "bad");
+      if (!meta) return;
+      try {
+        const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
+        if (!response.ok) throw new Error("passage not found");
+        const data = await response.json();
+        let questionNumber = 0;
+        const questions = (data.passages || []).flatMap((passage) => {
+          const english = Array.isArray(passage.text) ? passage.text : [];
+          const korean = Array.isArray(passage.koreanText) ? passage.koreanText : [];
+          return english.map((answer, index) => ({
+            questionNumber: ++questionNumber,
+            answer: answer.trim(),
+            korean: korean[index] || "뜻 정보가 없습니다."
+          })).filter((item) => item.answer);
+        });
+        if (!questions.length) return setMessage($("#listeningPractice2Feedback"), "선택한 파트에는 영어 문장이 없습니다.", "bad");
+        listeningPractice2Session = {
+          nickname,
+          meta,
+          allQuestions: questions,
+          queue: questions,
+          index: 0,
+          cycle: 1,
+          cycleWrong: [],
+          firstWrongAnswers: [],
+          firstWrongNumbers: new Set(),
+          awaitingNext: false
+        };
+        renderListeningPractice2Question();
+      } catch {
+        setMessage($("#listeningPractice2Feedback"), "선택한 지문 DB를 불러오지 못했습니다.", "bad");
+      }
+    }
+
+    function renderListeningPractice2Question() {
+      const session = listeningPractice2Session;
+      if (!session) return;
+      const question = session.queue[session.index];
+      window.speechSynthesis?.cancel();
+      $("#listeningPractice2Progress").textContent = `사이클 ${session.cycle} · ${session.index + 1} / ${session.queue.length}`;
+      $("#listeningPractice2WordCount").textContent = `(${countEnglishWords(question.answer)}단어)`;
+      $("#listeningPractice2Meaning").textContent = question.korean;
+      $("#listeningPractice2Answer").value = "";
+      $("#listeningPractice2Answer").disabled = false;
+      $("#playListeningPractice2Btn").disabled = false;
+      $("#submitListeningPractice2Btn").disabled = false;
+      $("#nextListeningPractice2Btn").disabled = true;
+      $("#listeningPractice2Comparison").classList.add("hidden");
+      session.awaitingNext = false;
+      setMessage($("#listeningPractice2Feedback"), session.cycle === 1 ? "뜻을 참고해 문장을 듣고 영어 문장을 입력하세요." : "이전 사이클에서 틀린 문장입니다. 다시 듣고 입력하세요.");
+    }
+
+    function playListeningPractice2Sentence() {
+      if (!listeningPractice2Session || !("speechSynthesis" in window)) return setMessage($("#listeningPractice2Feedback"), "이 브라우저에서는 음성 재생을 지원하지 않습니다.", "bad");
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(listeningPractice2Session.queue[listeningPractice2Session.index].answer);
+      utterance.lang = "en-US";
+      utterance.rate = .85;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function submitListeningPractice2Answer() {
+      const session = listeningPractice2Session;
+      if (!session || session.awaitingNext) return;
+      const userAnswer = $("#listeningPractice2Answer").value.trim();
+      if (!userAnswer) return setMessage($("#listeningPractice2Feedback"), "들은 문장을 먼저 입력하세요.", "bad");
+      const question = session.queue[session.index];
+      const correct = normalizeLooseListeningAnswer(userAnswer) === normalizeLooseListeningAnswer(question.answer);
+      session.awaitingNext = true;
+      $("#listeningPractice2Answer").disabled = true;
+      $("#submitListeningPractice2Btn").disabled = true;
+      $("#nextListeningPractice2Btn").disabled = false;
+      if (correct) {
+        $("#listeningPractice2Comparison").classList.add("hidden");
+        return setMessage($("#listeningPractice2Feedback"), "정답입니다. 다음 버튼을 눌러 진행하세요.", "good");
+      }
+      session.cycleWrong.push(question);
+      if (!session.firstWrongNumbers.has(question.questionNumber)) {
+        session.firstWrongNumbers.add(question.questionNumber);
+        session.firstWrongAnswers.push({ questionNumber: question.questionNumber, userAnswer, answer: question.answer });
+      }
+      $("#listeningPractice2UserAnswer").textContent = userAnswer;
+      $("#listeningPractice2CorrectAnswer").textContent = question.answer;
+      $("#listeningPractice2Comparison").classList.remove("hidden");
+      setMessage($("#listeningPractice2Feedback"), "틀렸습니다. 이 문장은 현재 사이클이 끝난 뒤 다시 출제됩니다.", "bad");
+    }
+
+    function nextListeningPractice2Question() {
+      const session = listeningPractice2Session;
+      if (!session || !session.awaitingNext) return;
+      if (session.index < session.queue.length - 1) {
+        session.index += 1;
+        return renderListeningPractice2Question();
+      }
+      if (session.cycleWrong.length) {
+        const retryQuestions = [...new Map(session.cycleWrong.map((question) => [question.questionNumber, question])).values()];
+        session.queue = shuffle(retryQuestions);
+        session.index = 0;
+        session.cycle += 1;
+        session.cycleWrong = [];
+        renderListeningPractice2Question();
+        setMessage($("#listeningPractice2Feedback"), `사이클 ${session.cycle - 1}을 마쳤습니다. 틀린 ${retryQuestions.length}문장만 다시 시험합니다.`, "bad");
+        return;
+      }
+      const result = {
+        takenAt: new Date().toLocaleString("ko-KR"),
+        nickname: session.nickname,
+        grade: session.meta.grade,
+        textbook: session.meta.textbook,
+        lesson: `Lesson ${session.meta.lesson}`,
+        part: session.meta.partLabel,
+        total: session.allQuestions.length,
+        wrongAnswers: session.firstWrongAnswers,
+        mode: "Listening Practice 2"
+      };
+      const stored = readJson(STORAGE.listeningResults, []);
+      stored.unshift(result);
+      writeJson(STORAGE.listeningResults, stored);
+      listeningPractice2Session = null;
+      window.speechSynthesis?.cancel();
+      $("#listeningPractice2Progress").textContent = `${result.total} / ${result.total}`;
+      $("#listeningPractice2WordCount").textContent = "(완료)";
+      $("#listeningPractice2Meaning").textContent = "모든 문장을 맞혀 학습을 완료했습니다.";
+      $("#listeningPractice2Answer").value = "";
+      $("#listeningPractice2Answer").disabled = true;
+      $("#playListeningPractice2Btn").disabled = true;
+      $("#submitListeningPractice2Btn").disabled = true;
+      $("#nextListeningPractice2Btn").disabled = true;
+      $("#listeningPractice2Comparison").classList.add("hidden");
+      renderListeningWrongAnswers(getLocalListeningWrongAnswers());
+      setMessage($("#listeningPractice2Feedback"), `모든 문장을 맞혔습니다. 최초 오답 ${result.wrongAnswers.length}개를 저장하고 전송 중입니다.`, "good");
+      submitListeningResult(result).then((status) => setMessage($("#listeningPractice2Feedback"), status, "good"));
+    }
+
     function parseCsv(text) {
       const rows = [];
       let row = [];
@@ -2607,6 +2822,7 @@
       const name = $("#wordPracticeName").value.trim();
       const start = Number($("#wordPracticeStart").value);
       const end = Number($("#wordPracticeEnd").value);
+      const book = wordBookManifest[Number($("#wordPracticeBookSelect").value)];
       const words = currentPracticeWords.filter((word) => word.number >= start && word.number <= end);
       if (!name) {
         setMessage($("#wordPracticeNotice"), "이름을 먼저 입력하세요.", "bad");
@@ -2622,6 +2838,8 @@
       }
       wordPracticeSession = {
         name,
+        book: book?.title || "단어장",
+        range: `${start}~${end}`,
         words,
         queue: words,
         stage: "learn",
@@ -2634,6 +2852,8 @@
         correction: false,
         correct: 0,
         wrong: [],
+        firstWrongAnswers: [],
+        firstWrongKeys: new Set(),
         mastered: new Set()
       };
       setMessage($("#wordPracticeNotice"), `${start}~${end}번, ${words.length}개 단어 연습을 시작했습니다.`, "good");
@@ -2678,21 +2898,21 @@
 
       $("#wordPracticeAnswerBox").classList.remove("hidden");
       $("#nextWordPracticeBtn").disabled = false;
-      if (session.stage === "sound") {
-        $("#wordPracticeStage").textContent = "2단계";
-        $("#wordPracticeStageTitle").textContent = "2단계: 음성 힌트 철자 시험";
+      if (session.stage === "meaning" || session.stage === "meaning-retest") {
+        $("#wordPracticeStage").textContent = session.stage === "meaning" ? "2단계" : "2단계 · 재시험";
+        $("#wordPracticeStageTitle").textContent = session.stage === "meaning" ? "2단계: 영어 → 한국어 뜻" : "2단계: 오답 단어 재시험";
+        $("#wordPracticeQuestion").innerHTML = `<h3>영어 단어의 뜻을 한글로 입력하세요.</h3><p class="question-main">${escapeHtml(word.en)}</p><p class="question-sub">틀린 단어는 정답을 한 번 따라 쓴 뒤, 현재 사이클이 끝나면 다시 시험합니다.</p>`;
+      } else if (session.stage === "spell" || session.stage === "spell-retest") {
+        $("#wordPracticeStage").textContent = session.stage === "spell" ? "3단계" : "3단계 · 재시험";
+        $("#wordPracticeStageTitle").textContent = session.stage === "spell" ? "3단계: 한국어 뜻 → 영어" : "3단계: 오답 단어 재시험";
+        $("#wordPracticeQuestion").innerHTML = `<h3>뜻에 맞는 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">틀린 단어는 정답을 한 번 따라 쓴 뒤, 현재 사이클이 끝나면 다시 시험합니다.</p>`;
+      } else if (session.stage === "sound") {
+        $("#wordPracticeStage").textContent = "4단계";
+        $("#wordPracticeStageTitle").textContent = "4단계: 음성을 듣고 영어 철자";
         $("#wordPracticeSoundBox").classList.remove("hidden");
         session.replayLimit = Math.max(1, 4 - session.soundAttempt);
         $("#wordPracticeQuestion").innerHTML = `<h3>소리를 듣고 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">틀린 단어는 정답을 한 번 따라 쓴 뒤, 현재 사이클이 끝나면 다시 시험합니다.</p>`;
         speakPracticeWord();
-      } else if (session.stage === "spell" || session.stage === "spell-retest") {
-        $("#wordPracticeStage").textContent = session.stage === "spell" ? "3단계" : "3단계 · 재시험";
-        $("#wordPracticeStageTitle").textContent = session.stage === "spell" ? "3단계: 뜻만 보고 철자 입력" : "3단계: 오답 단어 재시험";
-        $("#wordPracticeQuestion").innerHTML = `<h3>뜻에 맞는 영어 철자를 입력하세요.</h3><p class="question-main">${escapeHtml(word.ko)}</p><p class="question-sub">틀린 단어는 정답을 한 번 따라 쓴 뒤, 현재 사이클이 끝나면 다시 시험합니다.</p>`;
-      } else if (session.stage === "meaning") {
-        $("#wordPracticeStage").textContent = "4단계";
-        $("#wordPracticeStageTitle").textContent = "4단계: 반대 방향 확인";
-        $("#wordPracticeQuestion").innerHTML = `<h3>영어 단어의 뜻을 한글로 입력하세요.</h3><p class="question-main">${escapeHtml(word.en)}</p><p class="question-sub">주관식으로 답하세요.</p>`;
       }
       setMessage($("#wordPracticeFeedback"), "정답을 입력하고 Enter 또는 다음을 누르세요.");
       setTimeout(() => $("#wordPracticeAnswer").focus(), 0);
@@ -2725,7 +2945,7 @@
       const value = $("#wordPracticeAnswer").value.trim();
       if (!value) return setMessage($("#wordPracticeFeedback"), "정답을 입력하세요.", "bad");
       const word = session.queue[session.index];
-      const expected = session.stage === "meaning" ? word.ko : word.en;
+      const expected = session.stage.startsWith("meaning") ? word.ko : word.en;
       const isCorrect = answersMatch(value, expected);
 
       if (session.correction) {
@@ -2745,7 +2965,23 @@
         setMessage($("#wordPracticeFeedback"), `정답입니다. ${expected}`, "good");
       } else {
         session.wrong.push(word);
-        if (["sound", "spell", "spell-retest"].includes(session.stage)) {
+        const baseStage = session.stage.replace("-retest", "");
+        const firstWrongKey = `${baseStage}:${word.number}`;
+        if (!session.firstWrongKeys.has(firstWrongKey)) {
+          session.firstWrongKeys.add(firstWrongKey);
+          const stageLabels = {
+            meaning: "Word Practice · 2단계 영어→한국어",
+            spell: "Word Practice · 3단계 한국어→영어",
+            sound: "Word Practice · 4단계 Listening"
+          };
+          session.firstWrongAnswers.push({
+            type: stageLabels[baseStage],
+            question: baseStage === "meaning" ? word.en : baseStage === "sound" ? `음성 · ${word.ko}` : word.ko,
+            userAnswer: value,
+            answer: expected
+          });
+        }
+        if (["sound", "meaning", "meaning-retest", "spell", "spell-retest"].includes(session.stage)) {
           session.correction = true;
           $("#wordPracticeAnswer").value = "";
           setMessage($("#wordPracticeFeedback"), `오답입니다. 정답은 “${expected}”입니다. 한 번 따라 쓰면 현재 사이클을 마친 뒤 다시 시험합니다.`, "bad");
@@ -2769,7 +3005,7 @@
           session.queue = session.words;
           return renderWordPractice();
         }
-        if (session.stage === "learn") return beginPracticeQuiz("sound", session.words);
+        if (session.stage === "learn") return beginPracticeQuiz("meaning", session.words);
         return beginPracticeQuiz("spell-retest", session.queue);
       }
       if (!session.answered) return submitWordPracticeAnswer();
@@ -2780,16 +3016,13 @@
 
     function finishPracticeStage() {
       const session = wordPracticeSession;
-      if (session.stage === "sound") {
+      if (session.stage === "meaning" || session.stage === "meaning-retest") {
         if (session.wrong.length) {
           const retryWords = [...new Map(session.wrong.map((word) => [word.number, word])).values()];
-          session.soundAttempt += 1;
-          beginPracticeQuiz("sound", retryWords);
-          setMessage($("#wordPracticeFeedback"), `사이클을 마쳤습니다. 틀린 ${retryWords.length}개 단어를 다시 시험합니다.`, "bad");
+          beginPracticeQuiz("meaning-retest", retryWords);
+          setMessage($("#wordPracticeFeedback"), `2단계 사이클을 마쳤습니다. 틀린 ${retryWords.length}개 단어를 다시 시험합니다.`, "bad");
           return;
         }
-        setMessage($("#wordPracticeFeedback"), "2단계의 모든 단어를 맞혀 통과했습니다.", "good");
-        session.mastered = new Set();
         return beginPracticeQuiz("spell", session.words);
       }
       if (session.stage === "spell") {
@@ -2799,7 +3032,8 @@
           setMessage($("#wordPracticeFeedback"), `3단계 사이클을 마쳤습니다. 틀린 ${retryWords.length}개 단어를 다시 시험합니다.`, "bad");
           return;
         }
-        return beginPracticeQuiz("meaning", shuffle(session.words).slice(0, Math.min(5, session.words.length)));
+        session.soundAttempt = 1;
+        return beginPracticeQuiz("sound", session.words);
       }
       if (session.stage === "spell-retest") {
         if (session.wrong.length) {
@@ -2808,22 +3042,54 @@
           setMessage($("#wordPracticeFeedback"), `재시험 사이클을 마쳤습니다. 다시 틀린 ${retryWords.length}개 단어를 또 시험합니다.`, "bad");
           return;
         }
-        return beginPracticeQuiz("meaning", shuffle(session.words).slice(0, Math.min(5, session.words.length)));
+        session.soundAttempt = 1;
+        return beginPracticeQuiz("sound", session.words);
       }
-      const score = Math.round((session.correct / session.queue.length) * 100);
-      $("#wordPracticeQuestion").innerHTML = `<h3>Word Practice 완료</h3><p class="question-main">${score}점</p><p class="question-sub">4단계 반대 방향 확인까지 마쳤습니다.</p>`;
+      if (session.stage === "sound") {
+        if (session.wrong.length) {
+          const retryWords = [...new Map(session.wrong.map((word) => [word.number, word])).values()];
+          session.soundAttempt += 1;
+          beginPracticeQuiz("sound", retryWords);
+          setMessage($("#wordPracticeFeedback"), `사이클을 마쳤습니다. 틀린 ${retryWords.length}개 단어를 다시 시험합니다.`, "bad");
+          return;
+        }
+        return finishWordPractice();
+      }
+    }
+
+    function finishWordPractice() {
+      const session = wordPracticeSession;
+      const total = session.words.length * 3;
+      const wrongCount = session.firstWrongAnswers.length;
+      const correct = total - wrongCount;
+      const score = Math.round((correct / total) * 100);
+      const result = {
+        name: session.name,
+        book: session.book,
+        range: session.range,
+        total,
+        correct,
+        score,
+        wrongAnswers: session.firstWrongAnswers,
+        takenAt: new Date().toLocaleString("ko-KR")
+      };
+      const stored = readJson(STORAGE.wordPracticeResults, []);
+      stored.unshift(result);
+      writeJson(STORAGE.wordPracticeResults, stored);
+      $("#wordPracticeQuestion").innerHTML = `<h3>Word Practice 완료</h3><p class="question-main">${score}점</p><p class="question-sub">영어→한국어, 한국어→영어, 듣기까지 모두 마쳤습니다.</p>`;
       $("#wordPracticeAnswerBox").classList.add("hidden");
       $("#wordPracticeSoundBox").classList.add("hidden");
       $("#nextWordPracticeBtn").disabled = true;
       $("#wordPracticeProgress").textContent = `${session.queue.length} / ${session.queue.length}`;
       $("#wordPracticeStage").textContent = "완료";
-      setMessage($("#wordPracticeFeedback"), "모든 연습 단계를 완료했습니다.", "good");
+      setMessage($("#wordPracticeFeedback"), `모든 연습 단계를 완료했습니다. 최초 오답 ${wrongCount}개를 저장하고 전송 중입니다.`, "good");
+      submitWordResult(result).then((status) => setMessage($("#wordPracticeFeedback"), `최초 오답 ${wrongCount}개를 저장했습니다. ${status}`, "good"));
     }
 
     function resetWordPractice() {
       wordPracticeSession = null;
       window.speechSynthesis?.cancel();
-      $("#wordPracticeQuestion").innerHTML = `<h3>단어 연습을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">세 번의 단계적 노출 후 철자와 뜻을 능동적으로 떠올립니다.</p>`;
+      $("#wordPracticeQuestion").innerHTML = `<h3>단어 연습을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">세 번의 단계적 노출 후 영어→한국어, 한국어→영어, 듣기 순서로 연습합니다.</p>`;
       $("#wordPracticeAnswerBox").classList.add("hidden");
       $("#wordPracticeSoundBox").classList.add("hidden");
       $("#revealWordPracticeBtn").classList.add("hidden");
@@ -3208,6 +3474,13 @@
     $("#playListeningPracticeBtn").addEventListener("click", playListeningPracticeSentence);
     $("#submitListeningPracticeBtn").addEventListener("click", submitListeningPracticeAnswer);
     $("#nextListeningPracticeBtn").addEventListener("click", nextListeningPracticeQuestion);
+    $("#listeningPractice2GradeSelect").addEventListener("change", () => renderPracticeTextbookOptions("listeningPractice2"));
+    $("#listeningPractice2TextbookSelect").addEventListener("change", () => renderPracticeLessonOptions("listeningPractice2"));
+    $("#listeningPractice2LessonSelect").addEventListener("change", () => renderPracticePartOptions("listeningPractice2"));
+    $("#startListeningPractice2Btn").addEventListener("click", startListeningPractice2);
+    $("#playListeningPractice2Btn").addEventListener("click", playListeningPractice2Sentence);
+    $("#submitListeningPractice2Btn").addEventListener("click", submitListeningPractice2Answer);
+    $("#nextListeningPractice2Btn").addEventListener("click", nextListeningPractice2Question);
     $("#startWordBtn").addEventListener("click", startWordQuiz);
     $("#wordGradeSelect").addEventListener("change", () => renderWordTextbookOptions("word"));
     $("#wordTextbookSelect").addEventListener("change", () => renderWordLessonOptions("word"));

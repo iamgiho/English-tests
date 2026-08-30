@@ -1,0 +1,38 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 4,
+  "part": 2,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l04-p02-001",
+      "title": "My Perfect Plan",
+      "text": [
+        "First, I need bus tickets!",
+        "I will buy tickets for the first bus from Suwon to Gunsan.",
+        "The streets will not be busy early in the morning.",
+        "Second, I will get a birthday cake!",
+        "I will buy a strawberry cake at a famous bakery in Gunsan.",
+        "My grandma loves strawberries.",
+        "Third, I will prepare for my grandma’s birthday party!",
+        "I will find a nice seafood restaurant.",
+        "Fourth, we will take family pictures!",
+        "Taking family photos in a studio will be great.",
+        "I’m so excited!"
+      ],
+      "koreanText": [
+        "첫 번째, 나는 버스표가 필요하다!",
+        "나는 수원에서 군산으로 가는 첫 버스표를 살 것이다.",
+        "이른 아침에는 길이 막히지 않을 것이다.",
+        "두 번째, 나는 생일 케이크를 살 것이다!",
+        "나는 군산에서 유명한 빵집에서 딸기 케이크를 살 것이다.",
+        "할머니는 딸기를 무척 좋아하신다.",
+        "세 번째, 나는 할머니의 생신 파티를 준비할 것이다!",
+        "나는 좋은 해산물 식당을 찾을 것이다.",
+        "네 번째, 우리는 가족사진을 찍을 것이다!",
+        "사진관에서 가족사진을 찍는 것은 멋질 것이다.",
+        "나는 정말 기대된다!"
+      ]
+    }
+  ]
+}

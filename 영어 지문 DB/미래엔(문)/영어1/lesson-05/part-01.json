@@ -1,0 +1,24 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 5,
+  "part": 1,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l05-p01-001",
+      "title": "The Zero Waste Challenge",
+      "text": [
+        "Last month, I saw “#ZeroWasteChallenge” on Jiwoo’s social media.",
+        "The challenge was making no trash.",
+        "I liked her idea and tried the challenge.",
+        "Here is my one-week plan for a trash-free life."
+      ],
+      "koreanText": [
+        "지난달에 나는 지우의 소셜 미디어에서 ‘#제로웨이스트챌린지’를 보았다.",
+        "그 챌린지는 쓰레기를 만들지 않는 것이었다.",
+        "나는 그녀의 생각이 마음에 들어서 그 챌린지를 해 보았다.",
+        "여기에 쓰레기 없는 생활을 위한 나의 일주일 계획이 있다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 5,
+  "part": 3,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l05-p03-001",
+      "title": "No Straw, Please",
+      "text": [
+        "It was really hot today, so Dad bought me lemonade.",
+        "It came with a straw.",
+        "I said, “No straw, please.",
+        "Thank you!”",
+        "I should say this more often."
+      ],
+      "koreanText": [
+        "오늘은 정말 더워서 아빠가 나에게 레모네이드를 사 주셨다.",
+        "그것은 빨대와 함께 나왔다.",
+        "나는 “빨대는 필요 없어요.",
+        "감사합니다!”라고 말했다.",
+        "나는 이 말을 더 자주 해야겠다."
+      ]
+    }
+  ]
+}

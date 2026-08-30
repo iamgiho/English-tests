@@ -1,0 +1,38 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 1,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l07-p01-001",
+      "title": "The Paran Quiz Show",
+      "text": [
+        "Welcome to the Paran Quiz Show!",
+        "I’m your host, Suji.",
+        "Today, we have two finalists, Namjun from Class 2 and Sara from Class 5.",
+        "Namjun and Sara, how are you today?",
+        "I’m nervous, but I’ll do my best.",
+        "I’m excited!",
+        "The winner will receive a Fast Pass for lunch.",
+        "Today’s topic is amazing facts about the world.",
+        "I’m going to ask you three questions.",
+        "Are you ready?",
+        "Yes, I’m ready!"
+      ],
+      "koreanText": [
+        "파란 퀴즈 쇼에 오신 것을 환영합니다!",
+        "저는 진행자인 수지입니다.",
+        "오늘 두 명의 결승전 출전자인 2반의 남준이와 5반의 Sara가 나와 있습니다.",
+        "남준과 Sara, 오늘 어떤가요?",
+        "저는 긴장되지만, 최선을 다하겠습니다.",
+        "저는 신이 나요!",
+        "우승자는 점심 패스트 패스(점심시간에 줄을 서지 않고 바로 급식을 먹을 수 있는 표)를 받게 됩니다.",
+        "오늘의 주제는 세상에 관한 놀라운 사실들이에요.",
+        "여러분에게 세 문제를 낼 거예요.",
+        "준비됐나요?",
+        "네, 준비됐습니다!"
+      ]
+    }
+  ]
+}

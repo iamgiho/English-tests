@@ -1,0 +1,279 @@
+1
+preference
+선호, 더 좋아함
+2
+pair
+한 켤레, 한 쌍
+3
+prefer
+~을 더 좋아하다, 선호하다
+4
+cheap
+값이 싼
+5
+choice
+선택
+6
+fresh
+신선한
+7
+healthy
+건강한
+8
+ingredient
+재료, 성분
+9
+expensive
+비싼
+10
+spend
+(돈을) 쓰다, (시간을) 보내다
+11
+instead
+대신에
+12
+guess
+추측하다
+13
+spending habit
+소비 습관
+14
+curly
+곱슬곱슬한
+15
+straighten
+똑바르게 하다, 곧게 하다
+16
+recommend
+추천하다, 권하다
+17
+difference
+차이, 다름
+18
+provide
+제공하다, 주다
+19
+free
+무료의, 무료로
+20
+treatment
+치료, (약품 등을 이용한) 처리
+21
+discount
+할인
+22
+regularly
+정기적으로, 규칙적으로
+23
+refund
+환불, 환불하다
+24
+clothes
+옷, 의복
+25
+similar
+비슷한
+26
+receipt
+영수증
+27
+flea market
+벼룩시장
+28
+market research
+시장 조사
+29
+item
+물품, 품목
+30
+set
+정하다, 값을 매기다
+31
+reasonable
+알맞은, (가격이) 적당한
+32
+remind
+생각나게 하다
+33
+recently
+최근에
+34
+review
+평가하다, 평가, 후기
+35
+taste
+맛, ~한 맛이 나다
+36
+bad point
+단점, 약점
+37
+balanced
+균형 잡힌
+38
+product
+제품
+39
+exactly
+정확하게
+40
+share
+함께 쓰다, 공유하다
+41
+app
+앱, 애플리케이션
+42
+borrow
+빌리다
+43
+neighbor
+이웃
+44
+download
+다운로드하다, 내려받다
+45
+return
+돌아오다, 반납하다
+46
+environmentally friendly
+친환경적인
+47
+resource
+자원
+48
+positive
+긍정적인
+49
+upset
+기분이 상한, 속상한
+50
+negative
+부정적인
+51
+experience
+경험, 경험하다
+52
+fix
+바로잡다, 수리하다
+53
+issue
+문제, 문제점
+54
+lender
+빌려주는 사람
+55
+update
+업데이트하다, 새롭게 바꾸다
+56
+exact
+정확한
+57
+condition
+상태, 조건
+58
+pet sitter
+반려동물을 돌보는 사람
+59
+owner
+주인, 소유주
+60
+reliable
+믿을 수 있는
+61
+upload
+올리다, 업로드하다
+62
+post
+게시글, 게시하다
+63
+dog walker
+개를 산책시키는 사람
+64
+whenever
+~할 때마다
+65
+concern
+걱정, 근심
+66
+personal
+개인의, 개인적인
+67
+though
+그렇지만, ~임에도 불구하고
+68
+purpose
+목적, 용도
+69
+develop
+개발하다, 발달시키다
+70
+allow
+허락하다, 허용하다
+71
+communicate
+의사소통하다
+72
+freely
+자유롭게
+73
+walk
+걷다, (동물을) 산책시키다
+74
+kind
+종류, 유형
+75
+sharing economy
+공유 경제
+76
+fee
+요금, 수수료
+77
+weakness
+약점
+78
+improve
+개선되다, 개선하다
+79
+on sale
+할인 중인
+80
+be made with
+~으로 만들어지다
+81
+for free
+무료로
+82
+find out
+알아내다, 알게 되다
+83
+go camping
+캠핑을 가다
+84
+focus on
+~에 집중하다, 초점을 맞추다
+85
+take care of
+~을 돌보다
+86
+search for
+~을 찾다
+87
+pick up
+~을 찾아오다, ~을 집어 들다
+88
+ask for
+~을 요청하다
+89
+look after
+~을 돌보다
+90
+What if …?
+…하면 어쩌지?
+91
+be aware of
+~을 알다, 알고 있다
+92
+share A with B
+A를 B와 공유하다
+93
+provide A to B
+B에게 A를 제공하다

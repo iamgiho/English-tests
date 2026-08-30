@@ -1,0 +1,28 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 5,
+  "part": 6,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l05-p06-001",
+      "title": "Sharing the Challenge",
+      "text": [
+        "I posted my pictures on my social media.",
+        "I got many “likes.”",
+        "Some of my friends even tried the challenge.",
+        "We shared useful tips and ideas.",
+        "This challenge was good for the environment, but it was also great for our friendship.",
+        "We helped the Earth together."
+      ],
+      "koreanText": [
+        "나는 나의 사진들을 소셜 미디어에 올렸다.",
+        "나는 많은 ‘좋아요’를 받았다.",
+        "내 친구들 몇몇은 그 챌린지를 해 보기도 했다.",
+        "우리는 유용한 조언과 생각을 공유했다.",
+        "이 챌린지는 환경에 좋았지만, 우리의 우정에도 좋았다.",
+        "우리는 함께 지구를 도왔다."
+      ]
+    }
+  ]
+}

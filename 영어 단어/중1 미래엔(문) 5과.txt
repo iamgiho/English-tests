@@ -1,0 +1,207 @@
+1
+try
+먹어 보다
+2
+weekend
+주말
+3
+ride a bike
+자전거를 타다
+4
+special
+특별한
+5
+plan
+계획, 계획안
+6
+go surfing
+서핑하러 가다
+7
+sound
+~하게 들리다
+8
+be good at ~
+~을 잘하다
+9
+teach
+가르치다
+10
+show
+~에게 …을 보여주다
+11
+later
+나중에
+12
+welcome to ~
+~에 온 것을 환영하다
+13
+strawberry
+딸기
+14
+bottle
+병, 용기
+15
+give
+~에게 …을 주다
+16
+discount
+할인
+17
+plogging
+달리면서 쓰레기 줍기
+18
+go plogging
+플로깅을 하러 가다
+19
+jog
+조깅하다
+20
+pick ~ up
+~을 줍다, 집어 들다
+21
+trash
+쓰레기
+22
+sound like ~
+~처럼 들리다
+23
+join
+함께하다
+24
+exercise
+운동하다
+25
+protect
+보호하다
+26
+environment
+환경
+27
+at the same time
+동시에
+28
+meet
+만나다
+29
+park
+공원
+30
+just
+그저, 단지
+31
+need
+필요하다
+32
+trash bag
+쓰레기봉투
+33
+last
+지난, 바로 전의
+34
+zero
+아무것도 없는
+35
+waste
+쓰레기
+36
+challenge
+챌린지, 도전
+37
+social media
+소셜 미디어, SNS
+38
+trash
+쓰레기
+39
+idea
+생각, 의견
+40
+try
+~을 해보다
+41
+one-week
+일주일의
+42
+plan
+계획, 계획안
+43
+trash-free
+쓰레기 없는
+44
+life
+삶, 생활
+45
+know
+알다, 알고 있다
+46
+today
+오늘
+47
+first
+첫 번째의, 처음의
+48
+give
+~에게 …을 주다
+49
+some
+얼마간의, 조금의
+50
+advice
+조언, 충고
+51
+important
+중요한
+52
+so
+그래서, 그렇게, 그 정도로
+53
+go through ~
+~을 살펴보다
+54
+garbage
+쓰레기
+55
+throw ~ away
+~을 버리다, 처분하다
+56
+paper
+종이
+57
+plastic
+플라스틱
+58
+wasteful
+낭비하는
+59
+say no to ~
+~을 거절하다, ~에 아니라고 말하다
+60
+straw
+빨대
+61
+really
+정말로
+62
+hot
+(날씨가) 더운
+63
+buy
+사다, ~에게 …을 사주다
+64
+lemonade
+레모네이드
+65
+come with ~
+~이 함께 나오다, 딸려 있다
+66
+often
+자주
+67
+sell
+팔다
+68
+secondhand
+중고의
+69
+item
+품목

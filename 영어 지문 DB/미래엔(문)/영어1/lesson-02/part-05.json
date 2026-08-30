@@ -1,0 +1,26 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 2,
+  "part": 5,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l02-p05-001",
+      "title": "Minjun Takes the Bus",
+      "text": [
+        "Minjun is taking the bus.",
+        "He is holding a bus card in his hand.",
+        "There are many people on the bus.",
+        "There is no seat for him, but that is okay.",
+        "He reads his favorite webtoon on his smartphone."
+      ],
+      "koreanText": [
+        "민준이는 버스에 타고 있어요.",
+        "그는 손에 버스 카드를 쥐고 있어요.",
+        "버스에는 사람들이 많이 있어요.",
+        "그가 앉을 자리는 없지만, 괜찮아요.",
+        "그는 스마트폰으로 자신이 가장 좋아하는 웹툰을 읽어요."
+      ]
+    }
+  ]
+}

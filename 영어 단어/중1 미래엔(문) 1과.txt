@@ -1,0 +1,249 @@
+1
+nice
+좋은
+2
+meet
+만나다
+3
+too
+또한
+4
+favorite
+가장 좋아하는
+5
+food
+음식
+6
+apple
+사과
+7
+twin
+쌍둥이
+8
+same
+같은
+9
+school
+학교
+10
+great
+훌륭한
+11
+year
+해, 년
+12
+like
+좋아하다
+13
+music
+음악
+14
+sport
+운동
+15
+baseball
+야구
+16
+class
+학급
+17
+kind
+종류
+18
+movie
+영화
+19
+comedy
+코미디
+20
+subject
+과목
+21
+season
+계절
+22
+everyone
+모두, 모든 사람
+23
+welcome to
+~에 온 것을 환영하다
+24
+class
+수업
+25
+English
+영어
+26
+teacher
+선생님
+27
+today
+오늘
+28
+first
+첫 번째의, 첫째로
+29
+day
+날
+30
+middle school
+중학교
+31
+nervous
+긴장한, 불안해하는
+32
+also
+또한
+33
+feel
+느끼다
+34
+okay
+괜찮은
+35
+box
+상자
+36
+survival
+생존
+37
+kit
+(특정한 도구) 세트
+38
+survival kit
+비상 용품 세트
+39
+have
+가지다
+40
+many
+많은
+41
+thing
+것
+42
+in
+~의 안에
+43
+some
+몇몇의, 약간의
+44
+sticky
+끈적거리는, 달라붙는
+45
+note
+쪽지
+46
+sticky note
+붙임쪽지, 접착식 메모지
+47
+use
+사용하다
+48
+write
+쓰다, 적다
+49
+name
+이름
+50
+remember
+기억하다
+51
+next
+다음으로
+52
+candy
+사탕
+53
+sweet
+달콤한
+54
+like
+~처럼
+55
+smile
+미소
+56
+want
+원하다
+57
+mirror
+거울
+58
+look in
+~을 들여다보다
+59
+say
+말하다
+60
+stress
+스트레스
+61
+ball
+공
+62
+hold
+쥐다, 잡다, 붙들다
+63
+tightly
+꽉, 단단히
+64
+then
+그러면, 그 다음에
+65
+go away
+사라지다, 없어지다
+66
+eraser
+지우개
+67
+erase
+지우다
+68
+mistake
+실수
+69
+start
+시작하다
+70
+all over again
+처음부터 다시
+71
+need
+필요하다
+72
+Band-Aid
+반창고
+73
+feeling
+감정
+74
+get
+~하게 되다
+75
+hurt
+기분이 상한
+76
+get hurt
+다치다
+77
+sometimes
+가끔, 때때로
+78
+with
+~를 가진, ~을 써서
+79
+make
+만들다
+80
+own
+자신의
+81
+Let's ~
+~하자
+82
+great
+좋은, 훌륭한
+83
+year
+해, 년

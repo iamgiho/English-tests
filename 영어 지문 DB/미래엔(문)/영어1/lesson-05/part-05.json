@@ -1,0 +1,26 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 5,
+  "part": 5,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l05-p05-001",
+      "title": "At a Zero-Waste Shop",
+      "text": [
+        "This morning, I ran out of shampoo.",
+        "I took the empty bottle and went to a zero-waste shop.",
+        "I filled my bottle with shampoo there.",
+        "It smelled so good!",
+        "This way, I cut down on plastic."
+      ],
+      "koreanText": [
+        "오늘 아침에 나는 샴푸를 다 써 버렸다.",
+        "나는 빈 병을 가지고 제로웨이스트 상점에 갔다.",
+        "나는 거기서 나의 병을 샴푸로 채웠다.",
+        "그것은 무척 좋은 냄새가 났다!",
+        "이런 방법으로 나는 플라스틱을 줄였다."
+      ]
+    }
+  ]
+}

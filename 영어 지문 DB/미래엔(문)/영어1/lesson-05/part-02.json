@@ -1,0 +1,28 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 5,
+  "part": 2,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l05-p02-001",
+      "title": "Knowing Your Trash",
+      "text": [
+        "Today is the first day of the challenge.",
+        "Jiwoo gave me some advice.",
+        "She said, “Knowing your trash is very important.”",
+        "So I went through my garbage.",
+        "I was throwing away too much paper and plastic!",
+        "I should not be so wasteful."
+      ],
+      "koreanText": [
+        "오늘은 챌린지의 첫날이다.",
+        "지우는 나에게 몇 가지 조언을 해 주었다.",
+        "그녀는 “너의 쓰레기를 아는 것이 아주 중요해.”라고 말했다.",
+        "그래서 나는 나의 쓰레기를 살펴보았다.",
+        "나는 너무 많은 종이와 플라스틱을 버리고 있었다!",
+        "나는 그렇게 낭비해서는 안 된다."
+      ]
+    }
+  ]
+}

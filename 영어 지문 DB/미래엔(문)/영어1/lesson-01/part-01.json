@@ -1,0 +1,28 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 1,
+  "part": 1,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l01-p01-001",
+      "title": "Welcome to My Class",
+      "text": [
+        "Hello, everyone!",
+        "Welcome to my class!",
+        "I’m Ms. Seo, your English teacher.",
+        "Today is the first day of middle school.",
+        "Are you nervous?",
+        "I’m also nervous, but I feel okay with this box."
+      ],
+      "koreanText": [
+        "안녕하세요, 여러분!",
+        "제 수업에 오신 것을 환영합니다!",
+        "저는 여러분의 영어 선생님인 서 선생님이에요.",
+        "오늘은 중학교 첫날이네요.",
+        "긴장되나요?",
+        "저도 긴장되지만, 이 상자가 있어서 괜찮아요."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 4,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l07-p04-001",
+      "title": "The Final Question",
+      "text": [
+        "Now, here comes the final question.",
+        "Which country has the most pyramids in the world?",
+        "I’m sure it’s Egypt!",
+        "It’s Sudan.",
+        "The answer is … Sudan!",
+        "Oh, really?",
+        "I’m surprised, too.",
+        "Hey Joe, tell us more about it.",
+        "Please look at this map.",
+        "Sudan and Egypt are close to each other.",
+        "Egypt is more famous for its pyramids, but Sudan has more pyramids than Egypt.",
+        "Thanks, Joe.",
+        "We have two winners today.",
+        "Congratulations, Namjun and Sara!"
+      ],
+      "koreanText": [
+        "이제 마지막 문제 나갑니다.",
+        "세계에서 어느 나라에 피라미드가 가장 많이 있을까요?",
+        "그것은 이집트인 것이 확실합니다!",
+        "그것은 수단입니다.",
+        "정답은 … 수단입니다!",
+        "오, 정말요?",
+        "저도 놀랐습니다.",
+        "이봐요 Joe, 그것에 대해 좀 더 말해 주세요.",
+        "이 지도를 봐 주세요.",
+        "수단과 이집트는 서로 가까이 있습니다.",
+        "이집트가 피라미드로 더 유명하지만, 수단에는 이집트보다 더 많은 피라미드가 있어요.",
+        "고마워요, Joe.",
+        "오늘 우승자가 두 명 있네요.",
+        "축하합니다, 남준과 Sara!"
+      ]
+    }
+  ]
+}

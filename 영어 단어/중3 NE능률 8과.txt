@@ -1,0 +1,204 @@
+1
+wise
+지혜로운, 현명한
+2
+agree
+동의하다, 찬성하다
+3
+travel
+여행하다, 이동하다
+4
+lost
+길을 잃은, 분실된
+5
+thick
+두꺼운, (나무가) 빽빽한
+6
+further
+더 멀리
+7
+decide
+결정하다
+8
+way out
+출구, 탈출구
+9
+strongly
+강하게
+10
+right
+오른쪽, 권리, 맞는
+11
+mean
+~라는 의미이다
+12
+correct
+옳은, 고치다
+13
+back
+되돌아가서
+14
+around
+~을 돌아서, ~을 우회하여
+15
+disagree
+동의하지 않다, 의견이 맞지 않다
+16
+straight
+곧장, 일직선으로, 곧은
+17
+forever
+영원히, 계속
+18
+path
+길
+19
+solve
+(문제 등을) 풀다, 해결하다
+20
+climb
+오르다, 올라가다
+21
+separate
+서로 다른, 분리된, 분리하다
+22
+reach
+~에 도착하다, 이르다
+23
+top
+맨 위, 꼭대기
+24
+whole
+전체의, 모든
+25
+hurry
+서두르다
+26
+bottom
+밑, 바닥
+27
+gone
+떠난, 가 버린
+28
+wrong
+틀린, 잘못된
+29
+choose
+고르다, 선택하다
+30
+deep
+깊이, 깊은 곳으로
+31
+attack
+공격하다
+32
+wild animal
+야생동물
+33
+hunger
+굶주림, 배고픔
+34
+protect
+보호하다
+35
+survival
+생존
+36
+skill
+기술
+37
+thief
+도둑
+38
+take
+빼앗다, 가져가다, (시간이) 걸리다
+39
+kindness
+친절
+40
+move
+감동시키다, 움직이다
+41
+wisdom
+지혜
+42
+pioneer
+처음 길을 연 사람, 개척자
+43
+discover
+발견하다
+44
+land
+땅, 토지
+45
+guide
+안내인, 가이드
+46
+like
+~처럼
+47
+each
+각자, 각각, 각자의
+48
+destination
+목적지, 도착지
+49
+compare
+비교하다
+50
+someday
+언젠가
+51
+realize
+깨닫다
+52
+life
+인생, 삶, 생명
+53
+on the way
+가는 도중에
+54
+for a while
+잠시 동안
+55
+go on
+계속되다
+56
+shake one's head
+고개를 가로젓다, 고개를 흔들다
+57
+get to
+~에 도착하다
+58
+think to oneself
+마음속으로 생각하다
+59
+die of
+~로 죽다
+60
+in the end
+마침내, 결국
+61
+make one's way
+나아가다
+62
+thanks to
+~ 덕분에
+63
+be able to + 동사원형
+~할 수 있다
+64
+on one's journey
+여행 중에
+65
+compare A to B
+A를 B와 비교하다
+66
+listen to
+~에 귀를 기울이다, ~을 듣다
+67
+make a decision
+결정하다
+68
+act on
+~에 따라 행동하다

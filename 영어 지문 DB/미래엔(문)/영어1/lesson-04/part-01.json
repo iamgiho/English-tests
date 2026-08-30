@@ -1,0 +1,22 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 4,
+  "part": 1,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l04-p01-001",
+      "title": "A Plan for Grandma’s Birthday",
+      "text": [
+        "This Saturday is my grandma’s birthday.",
+        "Dad and I will visit her in Gunsan.",
+        "Dad usually makes plans for our family trips, but I will make a plan this time!"
+      ],
+      "koreanText": [
+        "이번 토요일은 나의 할머니의 생신이다.",
+        "아빠와 나는 군산에 계신 할머니를 방문할 것이다.",
+        "아빠가 보통 우리 가족여행의 계획을 세우시지만, 이번에는 내가 계획을 세울 것이다!"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 2,
+  "part": 4,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l02-p04-001",
+      "title": "Jihun Takes the Bus",
+      "text": [
+        "Jihun is waiting for the bus.",
+        "There are many coins in his pocket.",
+        "He takes out 200 won and gets on the bus.",
+        "Lucky him!",
+        "There is an empty seat on the bus.",
+        "Jihun sits down and reads his comic book."
+      ],
+      "koreanText": [
+        "지훈이는 버스를 기다리고 있어요.",
+        "그의 주머니에는 동전이 많이 있어요.",
+        "그는 이백 원을 꺼내 버스에 타요.",
+        "그는 운이 좋아요!",
+        "버스에 빈자리가 있네요.",
+        "지훈이는 앉아서 그의 만화책을 읽어요."
+      ]
+    }
+  ]
+}

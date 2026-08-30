@@ -1,0 +1,234 @@
+1
+machine
+기계
+2
+candy
+사탕
+3
+chocolate
+초콜릿
+4
+waterfall
+폭포
+5
+interesting
+흥미로운, 재미있는
+6
+picture
+사진
+7
+pause
+잠깐 멈춤
+8
+wonderful
+멋있는, 훌륭한
+9
+someday
+언젠가
+10
+fireworks
+불꽃놀이
+11
+festival
+축제
+12
+happen
+(일이) 일어나다, 발생하다
+13
+soon
+곧, 바로
+14
+take place
+열리다, 개최되다
+15
+weekend
+주말
+16
+beach
+해변, 바닷가
+17
+exciting
+재미있는, 흥미로운
+18
+seafood
+해산물
+19
+before
+~전에
+20
+history
+역사
+21
+round
+둥근, 원형의
+22
+theater
+극장, 공연장
+23
+past
+과거
+24
+event
+행사, 경기
+25
+amazing
+놀라운
+26
+fact
+사실
+27
+welcome
+환영합니다
+28
+host
+진행자, 사회자
+29
+finalist
+결승전 출전자
+30
+nervous
+불안한, 긴장한
+31
+do one's best
+최선을 다하다
+32
+excited
+신이 난, 들뜬
+33
+winner
+우승자
+34
+receive
+받다, 받아들이다
+35
+topic
+화제, 주제
+36
+ask
+묻다, 물어보다
+37
+question
+질문, 문제
+38
+ready
+준비가 된
+39
+large
+큰, 넓은
+40
+desert
+사막
+41
+Sahara
+사하라 사막
+42
+Antarctica
+남극 대륙
+43
+answer
+답, 해답
+44
+think
+생각하다
+45
+have + to부정사
+~해야 한다
+46
+hot
+더운
+47
+sandy
+모래로 덮인
+48
+dry
+마른, 건조한
+49
+place
+장소
+50
+cold
+추운
+51
+move on to ~
+~로 넘어가다
+52
+tall
+키가 큰, 높은
+53
+mountain
+산
+54
+Hawaii
+하와이
+55
+difficult
+어려운, 힘든
+56
+on earth
+지구상에서
+57
+above
+~ 위에
+58
+sea level
+해수면
+59
+begin
+시작하다
+60
+below
+~ 아래에
+61
+bottom
+바닥, 맨 아래
+62
+top
+맨 위, 꼭대기
+63
+from A to B
+A에서 B까지
+64
+both
+둘 다의
+65
+correct
+맞는, 정확한
+66
+final
+마지막의, 최후의
+67
+country
+국가, 나라
+68
+many
+많은
+69
+pyramid
+피라미드
+70
+really
+정말, 진짜
+71
+surprised
+놀란
+72
+look at ~
+~을 보다, 살피다
+73
+map
+지도
+74
+close
+가까운
+75
+close to ~
+~에 가까운
+76
+each other
+서로
+77
+be famous for ~
+~으로 유명하다
+78
+congratulations
+축하해요

@@ -1,0 +1,210 @@
+1
+excited
+기대되는, 흥분한
+2
+restaurant
+식당, 레스토랑
+3
+park
+공원
+4
+free
+한가한
+5
+ticket
+표
+6
+concert
+연주회, 콘서트
+7
+take place
+개최되다, 열리다
+8
+come
+오다
+9
+start
+시작하다
+10
+bakery
+빵집, 제과점
+11
+want
+원하다
+12
+bread
+빵
+13
+really
+정말로
+14
+great
+아주 좋은, 멋진
+15
+straight
+똑바로
+16
+block
+구역, 블록
+17
+turn
+돌다
+18
+close
+가까운
+19
+waterfall
+폭포
+20
+perfect
+완벽한
+21
+near
+~근처에
+22
+sure
+확신하는
+23
+look at ~
+~을 보다
+24
+map
+지도
+25
+walk
+걷다
+26
+get
+도착하다
+27
+have to + 동사원형
+~해야 한다
+28
+take
+(시간이) 걸리다
+29
+minute
+분
+30
+visit
+방문하다
+31
+usually
+보통, 대체로
+32
+make a plan
+계획을 세우다
+33
+plan
+계획
+34
+trip
+여행
+35
+need
+필요로 하다
+36
+from A to B
+A에서 B까지
+37
+street
+거리
+38
+busy
+붐비는
+39
+get
+사다, 도착하다
+40
+strawberry
+딸기
+41
+famous
+유명한
+42
+bakery
+빵집, 제과점
+43
+prepare for ~
+~을 준비하다
+44
+find
+찾다
+45
+seafood
+해산물
+46
+take a picture[photo]
+사진을 찍다
+47
+studio
+스튜디오
+48
+great
+아주 좋은, 멋진
+49
+excited
+기대되는, 흥분한
+50
+look
+~해 보이다
+51
+perfect
+완벽한
+52
+wake up
+(잠에서) 깨다
+53
+miss
+놓치다
+54
+plan B
+제2안, 대안, 차선책
+55
+another
+또 다른
+56
+thanks to ~
+~ 덕분에
+57
+special
+특별한
+58
+enjoy
+즐기다
+59
+ride
+타다
+60
+instead
+대신에
+61
+meet
+만나다
+62
+love
+아주 좋아하다
+63
+success
+성공
+64
+put on
+입다
+65
+uniform
+교복, 유니폼
+66
+for fun
+재미로
+67
+look like ~
+~처럼 보이다
+68
+work out
+(일이) 잘 풀리다
+69
+perfectly
+완벽하게
+70
+upset
+속상한

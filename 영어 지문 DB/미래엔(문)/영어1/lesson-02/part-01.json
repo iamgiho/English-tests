@@ -1,0 +1,26 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 2,
+  "part": 1,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l02-p01-001",
+      "title": "Meet Jihun and Minjun",
+      "text": [
+        "Meet Jihun and Minjun.",
+        "They are 12 years old.",
+        "They both love comics and music, but they live in different times.",
+        "Jihun lives in 1995, and Minjun lives in the present.",
+        "Let’s look at their lives."
+      ],
+      "koreanText": [
+        "지훈이와 민준이를 만나 보세요.",
+        "그들은 열두 살이에요.",
+        "그들은 둘 다 만화와 음악을 정말 좋아하지만, 다른 시대에 살고 있어요.",
+        "지훈이는 1995년에 살고, 민준이는 현재에 살고 있어요.",
+        "그들의 생활을 살펴봅시다."
+      ]
+    }
+  ]
+}

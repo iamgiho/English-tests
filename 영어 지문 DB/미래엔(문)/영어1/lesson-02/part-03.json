@@ -1,0 +1,28 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 2,
+  "part": 3,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l02-p03-001",
+      "title": "Minjun’s Morning",
+      "text": [
+        "Loud hip-hop music is coming from Minjun’s smartphone.",
+        "Minjun wakes up.",
+        "He asks AI Joe, “Hey Joe, what’s the weather like today?”",
+        "“It’s sunny,” says Joe.",
+        "Then, Minjun gets ready for school.",
+        "He simply picks up his tablet."
+      ],
+      "koreanText": [
+        "요란한 힙합 음악이 민준이의 스마트폰에서 나오고 있어요.",
+        "민준이가 잠에서 깨요.",
+        "그는 AI Joe에게 “이봐 Joe, 오늘 날씨가 어때?”라고 물어요.",
+        "“화창해요.”라고 Joe가 말해요.",
+        "그러고 나서, 민준이는 학교에 갈 준비를 해요.",
+        "그는 그냥 간단히 태블릿을 집어 들어요."
+      ]
+    }
+  ]
+}

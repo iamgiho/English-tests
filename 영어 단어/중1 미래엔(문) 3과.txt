@@ -1,0 +1,201 @@
+1
+help
+돕다
+2
+wrong
+잘못된
+3
+machine
+기계
+4
+order
+주문하다
+5
+drink
+음료
+6
+watermelon
+수박
+7
+lemonade
+레모네이드
+8
+look
+~해 보이다
+9
+upset
+속상한
+10
+hungry
+배고픈
+11
+have
+먹다
+12
+worried
+걱정하는
+13
+fall
+넘어지다
+14
+hurt
+다치게 하다
+15
+match
+시합
+16
+get well
+병이 나아지다, 건강해지다
+17
+carry
+나르다
+18
+wait for ~
+~을 기다리다
+19
+in front of ~
+~ 앞에
+20
+coach
+코치
+21
+team
+팀
+22
+field
+경기장
+23
+practice
+연습
+24
+exciting
+신나는, 흥미진진한
+25
+news
+소식
+26
+member
+구성원, 멤버
+27
+welcome
+환영하다
+28
+new
+새로운
+29
+come out
+나오다
+30
+shout
+소리치다, 외치다
+31
+believe
+믿다
+32
+nice
+상냥한, 친절한
+33
+look
+~하게 보이다
+34
+nervous
+긴장한
+35
+never
+한 번도 ~ 않다
+36
+maybe
+아마도
+37
+play fetch
+물건을 던지고 가져오는 놀이를 하다
+38
+only
+오직 ~만
+39
+teach
+가르치다
+40
+another
+또 다른
+41
+softly
+부드럽게
+42
+watch
+보다
+43
+join
+참여하다, 함께하다
+44
+anytime
+언제든지
+45
+begin
+시작하다
+46
+silently
+조용히
+47
+somebody
+누군가
+48
+get
+잡다, ~하게 되다
+49
+go over ~
+~을 넘다
+50
+fence
+울타리, 담장
+51
+look at ~
+~을 보다
+52
+run
+달리다
+53
+toward
+~을 향하여
+54
+each other
+서로
+55
+bump into ~
+~에 부딪치다
+56
+fall down
+넘어지다
+57
+jump
+뛰어오르다
+58
+air
+공중
+59
+jump into the air
+공중으로 뛰어오르다
+60
+quickly
+재빨리, 빠르게
+61
+pass
+건네주다
+62
+surprised
+놀란
+63
+after
+~ 후에
+64
+talk about ~
+~에 대해 이야기하다
+65
+glad
+기쁜
+66
+excited
+신이 난
+67
+call out
+외치다

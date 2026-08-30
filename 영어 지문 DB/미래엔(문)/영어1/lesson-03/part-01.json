@@ -1,0 +1,26 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 3,
+  "part": 1,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l03-p01-001",
+      "title": "A New Member",
+      "text": [
+        "Coach Biscuit’s team was on the field for Saturday practice.",
+        "“I have some exciting news for you.",
+        "We have a new member,” Coach Biscuit said.",
+        "“Everyone, let’s welcome our new friend.",
+        "Cathy, please come out.”"
+      ],
+      "koreanText": [
+        "Biscuit 코치 팀은 토요일 연습을 위해 경기장에 있었다.",
+        "“너희들에게 신나는 소식이 있단다.",
+        "새로운 멤버가 있어.” Biscuit 코치가 말했다.",
+        "“모두, 새 친구를 환영합시다.",
+        "Cathy, 나와 주세요.”"
+      ]
+    }
+  ]
+}

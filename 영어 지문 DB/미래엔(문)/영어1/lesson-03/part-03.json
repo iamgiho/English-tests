@@ -1,0 +1,34 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 3,
+  "part": 3,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l03-p03-001",
+      "title": "The Game Begins",
+      "text": [
+        "Coach Biscuit said, “Cathy, this is your first day.",
+        "So you can watch and join the game anytime.”",
+        "The game began.",
+        "Cathy watched silently.",
+        "“Can somebody get the ball?",
+        "It’s going over the fence!” Rusty shouted.",
+        "“I’ll get it!”",
+        "Everyone looked at the ball and ran toward it.",
+        "They bumped into each other and fell down."
+      ],
+      "koreanText": [
+        "“Cathy, 오늘은 너의 첫날이구나.",
+        "그러니 너는 지켜보고 있다가 언제든지 경기에 참여할 수 있단다.” Biscuit 코치가 말했다.",
+        "경기가 시작되었다.",
+        "Cathy는 조용히 지켜보았다.",
+        "“누가 공 좀 잡아줄래?",
+        "공이 담장을 넘어가고 있어!” Rusty가 소리쳤다.",
+        "“내가 잡을게!”",
+        "모두가 공을 보면서 공을 향해 달렸다.",
+        "그들은 서로 부딪쳐서 넘어졌다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 1,
+  "part": 3,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l01-p03-001",
+      "title": "Make Your Own Survival Kit",
+      "text": [
+        "Now, what do you want in your school survival kit?",
+        "A mirror!",
+        "I look in the mirror and say, “Just be you!”",
+        "Jiwon: For me, a stress ball.",
+        "I hold the ball tightly.",
+        "Then my stress goes away.",
+        "An eraser!",
+        "It erases my mistakes.",
+        "I start all over again!",
+        "I need a Band-Aid!",
+        "My feelings get hurt sometimes.",
+        "But with the Band-Aid, I’m okay.",
+        "Great!",
+        "Now make your own survival kit.",
+        "Let’s have a great year!"
+      ],
+      "koreanText": [
+        "이제, 여러분의 학교 생존 키트에는 무엇을 원하나요?",
+        "거울이요!",
+        "저는 거울을 보고 “그냥 너답게 해!”라고 말해요.",
+        "저에게는, 스트레스 푸는 공이요.",
+        "저는 공을 꽉 쥐어요.",
+        "그러면 스트레스가 사라져요.",
+        "지우개요!",
+        "그것은 저의 실수를 지워 줘요.",
+        "저는 처음부터 다시 시작해요!",
+        "저는 반창고가 필요해요!",
+        "저의 감정이 때때로 상처 받아요.",
+        "그러나 이 반창고가 있어서, 저는 괜찮아요.",
+        "좋아요!",
+        "이제 여러분 자신의 생존 키트를 만들어 보세요.",
+        "좋은 한 해를 보내도록 합시다!"
+      ]
+    }
+  ]
+}

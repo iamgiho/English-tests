@@ -1,0 +1,42 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 7,
+  "part": 3,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l07-p03-001",
+      "title": "The Tallest Mountain",
+      "text": [
+        "Thank you, Joe.",
+        "Let’s move on to the next question.",
+        "What is the tallest mountain in the world?",
+        "It’s Mount Everest.",
+        "It’s Mauna Kea in Hawaii.",
+        "Well, it’s a difficult question.",
+        "Hey Joe, what is the tallest mountain on Earth?",
+        "Mount Everest is the tallest mountain above sea level.",
+        "Mauna Kea begins below sea level.",
+        "So from the bottom to the top, Mauna Kea is taller than Mount Everest.",
+        "Thank you, Joe.",
+        "Then who is correct?",
+        "For this question, you are both correct."
+      ],
+      "koreanText": [
+        "고마워요, Joe.",
+        "다음 문제로 넘어갑시다.",
+        "세계에서 가장 높은 산은 무엇일까요?",
+        "그것은 에베레스트산입니다.",
+        "그것은 하와이섬에 있는 마우나케아산입니다.",
+        "음, 그것은 어려운 문제입니다.",
+        "이봐요 Joe, 지구에서 가장 높은 산은 무엇인가요?",
+        "에베레스트산은 해수면 위에서 가장 높은 산입니다.",
+        "마우나케아산은 해수면 아래에서 시작됩니다.",
+        "따라서 맨 아래에서 꼭대기까지, 마우나케아산이 에베레스트산보다 더 높습니다.",
+        "고마워요, Joe.",
+        "그럼 누가 맞나요?",
+        "이 문제에 한해서는, 여러분 둘 다 맞습니다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 2,
+  "part": 2,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l02-p02-001",
+      "title": "Jihun’s Morning",
+      "text": [
+        "It is morning.",
+        "Ring, ring, ring!",
+        "The alarm clock is going off.",
+        "Jihun gets up.",
+        "He looks out the window and checks the weather.",
+        "It is raining.",
+        "He puts his books and lunchbox in his backpack and grabs his umbrella.",
+        "As he leaves, he says, “Ugh! My backpack is so heavy!”"
+      ],
+      "koreanText": [
+        "아침이에요.",
+        "따릉, 따릉, 따르릉!",
+        "자명종이 울리고 있어요.",
+        "지훈이가 일어나요.",
+        "그는 창밖을 내다보고 날씨를 확인해요.",
+        "비가 오고 있어요.",
+        "그는 책과 도시락을 책가방에 넣고 우산을 집어 들어요.",
+        "그는 출발하면서 “윽! 책가방이 정말 무거워!”라고 말해요."
+      ]
+    }
+  ]
+}

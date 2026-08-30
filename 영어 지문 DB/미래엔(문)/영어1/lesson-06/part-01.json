@@ -1,0 +1,44 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 6,
+  "part": 1,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l06-p01-001",
+      "title": "Dream Jobs",
+      "text": [
+        "My teacher told us about tomorrow’s presentation.",
+        "He asked us, “What do you want to be when you grow up?”",
+        "I said to myself, “Oh, no.",
+        "Not again!",
+        "What do I want to be?",
+        "I have no idea.”",
+        "At home, I asked my family about their dream jobs.",
+        "Dad said, “Well, I wanted to be an astronaut when I was young.",
+        "I wanted to travel to the moon.”",
+        "“When I grow up, I’m going to be a robot designer,” said my big sister Angela.",
+        "My little sister Sophie shouted, “I’m going to be a superhero or a bird!”",
+        "Dad asked me, “What about you, Noah?",
+        "What do you want to be?”",
+        "I was stressed out."
+      ],
+      "koreanText": [
+        "나의 선생님은 우리에게 내일 발표에 대해서 말씀하셨다.",
+        "선생님은 우리에게 “여러분은 커서 무엇이 되고 싶은가요?”라고 물어보셨다.",
+        "나는 나 자신에게 “오, 안 돼.",
+        "또야!",
+        "내가 뭐가 되고 싶냐고?",
+        "모르겠어.”라고 말했다.",
+        "집에서 나는 가족들에게 그들의 꿈의 직업에 대해 물었다.",
+        "아빠는 “글쎄, 나는 어렸을 때는 우주 비행사가 되고 싶었단다.",
+        "나는 달로 여행 가고 싶었거든.”이라고 말씀하셨다.",
+        "“나는 커서 로봇 디자이너가 될 거야.” 나의 누나 Angela가 말했다.",
+        "나의 여동생 Sophie가 “나는 슈퍼히어로나 새가 될 거야!”라고 소리쳤다.",
+        "아빠가 내게 “Noah, 너는 어떠니?",
+        "너는 무엇이 되고 싶어?”라고 물어보셨다.",
+        "나는 스트레스가 쌓였다."
+      ]
+    }
+  ]
+}

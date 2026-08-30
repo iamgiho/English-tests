@@ -1,0 +1,270 @@
+1
+weather
+날씨
+2
+today
+오늘
+3
+cloudy
+흐린
+4
+rainy
+비가 오는
+5
+late
+늦은
+6
+run
+달리다
+7
+cold
+추운
+8
+windy
+바람이 부는
+9
+outside
+바깥에
+10
+go out
+외출하다, 밖에 나가다
+11
+practice
+연습
+12
+need
+필요하다
+13
+jacket
+외투
+14
+then
+그러면
+15
+clothes
+옷
+16
+online
+온라인으로
+17
+kind
+종류
+18
+look for ~
+~을 찾다
+19
+cute
+귀여운
+20
+enjoy
+즐기다
+21
+field trip
+현장 학습
+22
+walk
+걷다
+23
+walk around ~
+~ 주변을 걷다
+24
+beautiful
+아름다운
+25
+warm
+따뜻한
+26
+sunny
+화창한
+27
+everything
+모든 것
+28
+perfect
+완벽한
+29
+many
+많은
+30
+take a picture
+사진을 찍다
+31
+send
+보내다
+32
+later
+나중에
+33
+have fun
+재밌게 지내다
+34
+both
+둘 다
+35
+comic
+만화책
+36
+live
+살다
+37
+different
+다른
+38
+time
+시기, 시대
+39
+present
+현재
+40
+look at ~
+~을 보다
+41
+life
+생활
+42
+ring
+(종·벨 등의) 울리는 소리
+43
+alarm clock
+자명종, 알람 시계
+44
+go off
+울리다
+45
+get up
+일어나다
+46
+look out ~
+~의 밖을 내다보다
+47
+check
+확인하다
+48
+put
+두다
+49
+lunchbox
+도시락
+50
+backpack
+책가방, 배낭
+51
+grab
+잡다
+52
+leave
+떠나다
+53
+heavy
+무거운
+54
+loud
+소리가 큰
+55
+wake up
+일어나다
+56
+ask
+묻다
+57
+get ready for ~
+~을 준비하다
+58
+simply
+단순히
+59
+pick up ~
+~을 집어 들다
+60
+tablet
+태블릿 PC
+61
+wait for ~
+~을 기다리다
+62
+coin
+동전
+63
+pocket
+주머니
+64
+take out ~
+~을 꺼내다
+65
+get on ~
+~에 타다
+66
+lucky
+운이 좋은
+67
+empty
+비어 있는
+68
+seat
+자리
+69
+comic book
+만화책
+70
+sit down
+앉다
+71
+take the bus
+버스를 타다
+72
+hold
+쥐고 있다
+73
+favorite
+가장 좋아하는
+74
+webtoon
+웹툰
+75
+listen to ~
+~을 듣다
+76
+show
+TV·라디오 프로그램
+77
+record
+녹음하다
+78
+tape
+테이프
+79
+sometimes
+가끔
+80
+letter
+편지
+81
+request
+요청하다
+82
+rap
+랩, 랩 음악
+83
+later
+나중에
+84
+share
+공유하다
+85
+social media
+소셜 미디어
+86
+around the world
+전 세계에, 세계 곳곳에
+87
+before
+~ 전에
+88
+bedtime
+잠자는 시간, 잘 시간
+89
+say
+말하다, ~라고 쓰여 있다
+90
+amazing
+놀라운

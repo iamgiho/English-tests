@@ -1,0 +1,44 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 3,
+  "part": 4,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l03-p04-001",
+      "title": "Another New Member",
+      "text": [
+        "Then, Cathy jumped into the air and got the ball.",
+        "She quickly passed it over.",
+        "“Wow, Cathy!",
+        "How did you do that?”",
+        "The dogs were surprised.",
+        "After the game, everyone talked about Cathy.",
+        "“We have a cat on our team now.",
+        "I’m so glad!” said Max.",
+        "“Great!” Coach Biscuit said.",
+        "“We have another new member.”",
+        "“A dog or a cat?”",
+        "Everyone got excited.",
+        "“Cookie!",
+        "Please come out.” Coach Biscuit called out to the new member."
+      ],
+      "koreanText": [
+        "그때, Cathy가 공중으로 뛰어올라서 공을 잡았다.",
+        "그녀는 재빨리 공을 넘겨주었다.",
+        "“와, Cathy!",
+        "그것을 어떻게 했니?”",
+        "개들은 놀랐다.",
+        "경기 후에, 모두가 Cathy에 대해 이야기했다.",
+        "“이제 우리 팀에 고양이가 있어요.",
+        "저는 무척 기뻐요!” Max가 말했다.",
+        "“좋아!” Biscuit 코치가 말했다.",
+        "“우리에게 또 다른 새 멤버가 있단다.”",
+        "“개예요, 아니면 고양이예요?”",
+        "모두가 흥분했다.",
+        "“Cookie!",
+        "나와 주세요.” Biscuit 코치가 새 멤버에게 외쳤다."
+      ]
+    }
+  ]
+}

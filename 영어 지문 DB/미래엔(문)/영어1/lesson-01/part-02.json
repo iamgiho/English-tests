@@ -1,0 +1,32 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 1,
+  "part": 2,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l01-p02-001",
+      "title": "My School Survival Kit",
+      "text": [
+        "This box is my school survival kit.",
+        "I have many things in it.",
+        "First, I have some sticky notes.",
+        "I use them on the first day.",
+        "I write your names and remember them.",
+        "Next, I have some candy.",
+        "These are for you.",
+        "They’re sweet, like your smiles."
+      ],
+      "koreanText": [
+        "이 상자는 저의 학교 생존 키트예요.",
+        "저는 이 안에 많은 것을 가지고 있답니다.",
+        "첫째로, 붙임쪽지를 가지고 있어요.",
+        "저는 그것들을 첫날에 사용한답니다.",
+        "저는 여러분의 이름을 적어서 기억해요.",
+        "다음으로 사탕을 가지고 있어요.",
+        "이것들은 여러분을 위한 거예요.",
+        "그것들은 여러분의 미소처럼 달콤하답니다."
+      ]
+    }
+  ]
+}

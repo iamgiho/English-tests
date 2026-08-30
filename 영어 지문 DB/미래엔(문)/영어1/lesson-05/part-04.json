@@ -1,0 +1,30 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 5,
+  "part": 4,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l05-p04-001",
+      "title": "Buying and Selling Secondhand Items",
+      "text": [
+        "Today I cleaned my room and found too many T-shirts.",
+        "I didn’t wear some of them for a long time.",
+        "With Mom’s help, I used an app for buying and selling secondhand items.",
+        "We listed my T-shirts on the app.",
+        "To my surprise, one person wanted one, and I sold it to him.",
+        "With that money, I bought a used badminton racket.",
+        "Hooray!"
+      ],
+      "koreanText": [
+        "오늘 나는 내 방을 정리하다가 너무 많은 티셔츠를 찾아냈다.",
+        "나는 그중 어떤 것은 오랫동안 입지 않았다.",
+        "엄마의 도움으로, 나는 중고품을 사고파는 앱을 사용했다.",
+        "우리는 그 앱에 나의 티셔츠들을 올렸다.",
+        "놀랍게도, 한 사람이 하나를 원해서 나는 그것을 그에게 팔았다.",
+        "그 돈으로, 나는 중고 배드민턴 라켓을 샀다.",
+        "만세!"
+      ]
+    }
+  ]
+}

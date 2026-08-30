@@ -1,0 +1,321 @@
+1
+plastic bag
+비닐봉지
+2
+agree
+동의하다
+3
+environment
+환경
+4
+reduce
+줄이다
+5
+use
+사용, 사용하다
+6
+opinion
+의견
+7
+reusable
+다시 사용할 수 있는
+8
+stair
+계단
+9
+save
+구하다, 절약하다
+10
+protect
+보호하다
+11
+ride
+타기, 타다
+12
+suggestion
+제안
+13
+recycle
+재활용하다
+14
+resource
+자원
+15
+encourage
+격려하다
+16
+place
+놓다, 두다, 장소
+17
+colored
+~한 색깔의
+18
+bin
+통, 쓰레기통
+19
+remind
+생각나게 하다
+20
+separate
+분리하다, 분리된, 별개의
+21
+properly
+알맞게, 제대로
+22
+waste
+낭비하다, 낭비, 쓰레기
+23
+soil
+흙, 토양
+24
+pollution
+오염
+25
+ocean
+바다, 대양
+26
+hold
+개최하다, 잡다, 들다
+27
+theme
+주제
+28
+raise
+높이다, 올리다
+29
+awareness
+의식, 인식
+30
+environmental
+환경의
+31
+article
+(신문) 기사
+32
+mostly
+대부분, 거의 모두
+33
+disappear
+사라지다
+34
+sometime
+언젠가, 조만간
+35
+global warming
+지구 온난화
+36
+melt
+녹이다, 녹다
+37
+incredible
+놀라운, 믿기 어려운
+38
+sheep
+양
+39
+chemical
+화학 물질, 화학의
+40
+unwanted
+원하지 않는, 불필요한
+41
+bright
+영리한, 똑똑한
+42
+edible
+먹을 수 있는
+43
+grain
+곡식
+44
+charge
+충전하다
+45
+electric
+전기의
+46
+electricity
+전기
+47
+creative
+창의적인
+48
+example
+예시
+49
+underwater
+수중의, 물속에서
+50
+professor
+교수
+51
+explanation
+설명
+52
+tourist
+관광객
+53
+sea life
+바다 생물, 해양 생물
+54
+activity
+활동
+55
+seriously
+심각하게
+56
+damage
+훼손하다, 손상시키다, 손상
+57
+prevent
+방지하다, 막다
+58
+attract
+마음을 끌다, 끌어들이다
+59
+below
+~보다 아래에
+60
+surface
+표면, 수면
+61
+contain
+포함하다, ~이 들어 있다
+62
+statue
+조각상
+63
+material
+재료
+64
+support
+살게 하다, 지지하다, 부양하다
+65
+provide
+제공하다
+66
+additional
+추가의
+67
+artwork
+예술품
+68
+unique
+독특한
+69
+realize
+깨닫다, 이해하다
+70
+rich
+부유한, 풍부한
+71
+architecture
+건축, 건축술
+72
+architect
+건축가
+73
+eco-friendly
+친환경적인
+74
+throughout
+~동안 내내, ~곳곳에
+75
+climate change
+기후 변화
+76
+inside
+안에, 안으로, 안의
+77
+structure
+구조
+78
+possible
+가능한
+79
+outside
+바깥의, 바깥에
+80
+natural
+자연적인
+81
+flow
+흐름
+82
+greenery
+푸른 잎, 푸른 나무
+83
+shade
+그늘
+84
+direct
+직접적인
+85
+quality
+질, 자질
+86
+goal
+목표
+87
+hopefully
+바라건대, 잘되면
+88
+field
+분야
+89
+innovation
+혁신
+90
+all the way
+줄곧, 내내
+91
+add up
+조금씩 늘어나다, 합쳐지다
+92
+take care of
+~을 돌보다
+93
+throw away
+버리다
+94
+instead of
+~ 대신에
+95
+be concerned about
+~을 걱정하다
+96
+break down
+(썩어서) 분해되다
+97
+what's more
+게다가
+98
+join hands
+힘을 합치다
+99
+attract A to B
+A를 B로 끌어들이다
+100
+away from
+~로부터 떨어져
+101
+a variety of
+다양한, 여러 가지의
+102
+contribute to
+~에 기여하다, ~에 도움이 되다
+103
+in addition to
+~ 이외에도, ~에 더하여
+104
+protect A from B
+A를 B로부터 보호하다
+105
+provide A with B
+A에게 B를 제공하다
+106
+come up with
+떠올리다, 생각해 내다
+107
+in harmony
+조화를 이루어, 잘 어울려

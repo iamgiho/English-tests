@@ -1,0 +1,309 @@
+1
+interested
+관심 있는, 흥미 있어 하는
+2
+be interested in ~
+~에 관심이 있다
+3
+fashion
+패션
+4
+want
+원하다, 바라다
+5
+be
+~이다, ~되다
+6
+skater
+스케이트 선수
+7
+birthday
+생일
+8
+come up
+(행사 등이) 다가오다
+9
+know
+알다
+10
+do
+하다
+11
+something
+어떤 것
+12
+bake
+(빵 등을) 굽다
+13
+be good at ~
+~을 잘하다
+14
+be into ~
+~에 관심이 있다
+15
+webtoon
+웹툰
+16
+show
+보여주다
+17
+sure
+그럼, 그래
+18
+share
+공유하다
+19
+write
+쓰다
+20
+homework
+숙제
+21
+dream job
+장래 희망, 꿈의 직업
+22
+future
+미래
+23
+tennis player
+테니스 선수
+24
+win
+우승하다
+25
+world
+세계
+26
+championship
+선수권 대회
+27
+someday
+언젠가
+28
+AI
+인공 지능
+29
+computer
+컴퓨터
+30
+scientist
+과학자
+31
+nice
+멋진
+32
+who
+누구
+33
+want
+원하다
+34
+be
+~이다, ~되다
+35
+teacher
+선생님
+36
+tell
+알리다, 말하다
+37
+tomorrow
+내일
+38
+presentation
+발표
+39
+ask
+묻다, 물어보다
+40
+what
+무엇
+41
+when
+~할 때
+42
+grow up
+자라다, 성장하다
+43
+say
+말하다
+44
+myself
+나 자신
+45
+have no idea
+전혀 모르다
+46
+dream job
+장래 희망, 꿈의 직업
+47
+astronaut
+우주 비행사
+48
+young
+어린
+49
+travel
+여행하다, 여행가다
+50
+moon
+달
+51
+robot
+로봇
+52
+designer
+디자이너
+53
+big sister
+누나, 언니
+54
+little sister
+여동생
+55
+shout
+외치다, 소리치다
+56
+superhero
+슈퍼 히어로
+57
+bird
+새
+58
+stress out
+스트레스를 주다
+59
+later
+나중에
+60
+come
+오다
+61
+come home after work
+퇴근하다, 일하고 집에 오다
+62
+everything
+모든 것, 모두
+63
+okay
+괜찮은
+64
+something
+어떤 것, 어떤 일, 무엇
+65
+wrong
+이상이 있는, 문제가 있는
+66
+wrong with ~
+~에 이상이 있는, 문제가 있는
+67
+anything
+무엇, 아무것
+68
+future
+미래
+69
+mean
+의미하다
+70
+everyone
+모든 사람
+71
+even
+심지어
+72
+only
+오직, 단지
+73
+cry
+외치다, 울부짖다
+74
+know
+알다
+75
+grown-up
+어른, 성인
+76
+have
+가지다, 있다
+77
+job
+직업
+78
+right
+맞는
+79
+take care of ~
+~을 돌보다
+80
+answer
+해답, 답
+81
+go on
+계속하다
+82
+always
+항상, 언제나
+83
+nice
+친절한, 다정한
+84
+be afraid of ~
+~을 두려워하다
+85
+most of all
+무엇보다도
+86
+smile
+미소 짓다
+87
+hope
+바라다
+88
+become
+~이 되다
+89
+kind
+종류
+90
+person
+사람
+91
+already
+이미, 벌써
+92
+just then
+바로 그때
+93
+idea
+아이디어, 생각
+94
+that’s it
+바로 그것이다
+95
+the next day
+그 다음 날
+96
+give a presentation
+발표를 하다
+97
+caring
+배려하는, 잘 돌보는
+98
+help
+돕다
+99
+others
+다른 사람들, 다른 것들
+100
+also
+또한
+101
+brave
+용감한
+102
+try
+시도하다, 해보다
+103
+new
+새로운

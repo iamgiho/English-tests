@@ -1,0 +1,273 @@
+1
+weather forecast
+일기예보
+2
+invention
+발명품, 발명
+3
+refrigerator
+냉장고
+4
+sense
+감지하다, 감각
+5
+suggest
+제안하다
+6
+destination
+목적지
+7
+set
+조정하다, 맞춰 놓다
+8
+above
+~보다 위에
+9
+location
+위치, 장소
+10
+awesome
+굉장한, 멋진
+11
+advanced
+발전된, 앞선
+12
+technology
+기술
+13
+function
+기능
+14
+accident
+사고
+15
+control
+제어하다, 통제하다
+16
+brain
+뇌
+17
+thought
+생각
+18
+electronic
+전자의
+19
+signal
+신호
+20
+travel
+여행하다, 이동하다
+21
+label
+표, 라벨
+22
+outer space
+우주 공간
+23
+farming
+농업, 농사
+24
+resource
+자원
+25
+instead
+대신에
+26
+lab
+실험실
+27
+cell
+세포
+28
+require
+필요로 하다, 요구하다
+29
+nutrient
+영양분
+30
+almost
+거의
+31
+cashier
+계산원
+32
+sensor
+감지기, 센서
+33
+anymore
+이제는 더 이상
+34
+task
+일, 과제
+35
+delivery
+배달
+36
+factory
+공장
+37
+public
+공공의, 일반 사람들의
+38
+perform
+수행하다, 해내다
+39
+program
+프로그래밍하다
+40
+artificial
+인공적인
+41
+intelligence
+지능
+42
+perceive
+알아차리다, 인식하다
+43
+environment
+환경
+44
+decision
+결정
+45
+recognize
+알아보다, 인식하다
+46
+speech
+연설, 말
+47
+act
+행동하다, 행동
+48
+praise
+칭찬
+49
+present
+현재의, 현재, 선물
+50
+anywhere
+어디에서도
+51
+road
+도로, 길
+52
+disaster
+재난, 재해
+53
+area
+지역
+54
+throughout
+~동안 내내
+55
+emotion
+감정
+56
+sensor
+센서, 감지기
+57
+navigate
+길을 찾다
+58
+relax
+쉬다, 휴식을 취하다
+59
+ride
+타다, 타고 가기
+60
+swarm
+떼, 벌 떼
+61
+including
+~을 포함하여
+62
+building site
+건설 현장
+63
+solution
+해결책, 해법
+64
+search-and-rescue
+수색 구조
+65
+survivor
+생존자
+66
+clear
+치우다, 분명한
+67
+route
+길, 경로
+68
+escape
+탈출하다, 달아나다
+69
+safety
+안전, 안전한 곳
+70
+toward
+~을 향하여
+71
+bright
+밝은
+72
+perfect
+완벽한
+73
+expect
+기대하다
+74
+convenient
+편리한
+75
+threat
+위험, 위협
+76
+possible
+가능한
+77
+ensure
+반드시 ~하게 하다
+78
+good
+좋은 일, 선, 좋은
+79
+in detail
+자세하게
+80
+turn A into B
+A를 B로 바꾸다
+81
+go bad
+상하다, 썩다
+82
+work on
+~에 노력하다, ~에 착수하다
+83
+such as
+~와 같은
+84
+come true
+이루어지다, 실현되다
+85
+pay for
+돈을 내다, 대가를 지불하다
+86
+keep track of
+~을 계속 확인하다, 추적하다
+87
+a variety of
+다양한, 여러 가지의
+88
+be able to + 동사원형
+~할 수 있다
+89
+deal with
+~을 처리하다, 다루다
+90
+as a group
+함께, 집단으로
+91
+a threat to
+~에 대한 위협

@@ -1,0 +1,24 @@
+{
+  "publisher": "미래엔(문)",
+  "book": "영어1",
+  "lesson": 2,
+  "part": 6,
+  "passages": [
+    {
+      "id": "mirae-moon-english1-l02-p06-001",
+      "title": "Jihun’s Night",
+      "text": [
+        "At night, Jihun is listening to his favorite radio show.",
+        "He records songs from the radio on a tape.",
+        "There are many great songs on the tape.",
+        "Sometimes, he writes a letter to the DJ and requests a song."
+      ],
+      "koreanText": [
+        "밤에, 지훈이는 자신이 가장 좋아하는 라디오 프로그램을 듣고 있어요.",
+        "그는 라디오에서 나오는 노래를 테이프에 녹음해요.",
+        "테이프에는 좋은 노래들이 많이 있어요.",
+        "때때로, 그는 DJ에게 편지를 쓰고 노래를 신청해요."
+      ]
+    }
+  ]
+}
