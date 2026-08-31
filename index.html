@@ -523,6 +523,17 @@
       gap: 14px;
     }
 
+    .admin-drilldown { display: grid; gap: 10px; }
+    .admin-drilldown details { border: 1px solid var(--line); border-radius: 8px; background: #fff; overflow: hidden; }
+    .admin-drilldown details details { margin: 0 12px 10px; background: #fafbf8; }
+    .admin-drilldown summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; padding: 13px 14px; cursor: pointer; font-weight: 750; list-style: none; }
+    .admin-drilldown summary::-webkit-details-marker { display: none; }
+    .admin-drilldown summary::after { content: "＋"; color: var(--muted); font-size: 18px; }
+    .admin-drilldown details[open] > summary::after { content: "−"; }
+    .admin-drilldown .drill-count { margin-left: auto; color: var(--muted); font-size: 12px; font-weight: 650; }
+    .admin-attempt-meta { padding: 0 14px 10px; color: var(--muted); font-size: 13px; }
+    .admin-answer-list { padding: 0 14px 14px; overflow-x: auto; }
+
     table {
       width: 100%;
       border-collapse: collapse;
@@ -1057,16 +1068,8 @@
             </div>
           </div>
           <div class="body">
-            <h3>시험 결과</h3>
-            <div id="resultTable"></div>
-            <h3 style="margin-top: 18px;">오답 기록</h3>
-            <div id="wrongAnswerTable"></div>
-            <h3 style="margin-top: 18px;">Writing 오답 기록</h3>
-            <div id="writingWrongAnswerTable"></div>
-            <h3 style="margin-top: 18px;">Writing Practice 정답 여부</h3>
-            <div id="writingPracticeResultTable"></div>
-            <h3 style="margin-top: 18px;">Listening 오답 기록</h3>
-            <div id="listeningWrongAnswerTable"></div>
+            <p class="question-sub">시험 항목을 누른 뒤 학생 이름과 응시 날짜를 차례로 선택하면 상세 내용을 볼 수 있습니다.</p>
+            <div class="admin-drilldown" id="adminDrilldown"></div>
             <div class="notice" id="adminSheetNotice">Google 스프레드시트 데이터를 불러오는 중입니다.</div>
           </div>
         </section>
@@ -2397,6 +2400,7 @@
         const isWriting = columns.type.some((type) => type.toLowerCase() === "writing");
         const isWritingPractice = columns.type.some((type) => type.toLowerCase() === "writing practice");
         const isListening = columns.type.some((type) => type.toLowerCase().startsWith("listening"));
+        if (columns.type.some((type) => type.toLowerCase().includes("word practice"))) result.mode = "Word Practice";
         if (isWritingPractice) {
           const [grade = "-", textbook = "-"] = result.book.split("|").map((item) => item.trim());
           const [lesson = "-", part = "-"] = result.range.split("|").map((item) => item.trim());
@@ -2435,6 +2439,7 @@
           return null;
         }
         for (let index = 0; index < count; index += 1) {
+          if (!columns.question[index] && !columns.userAnswer[index] && !columns.answer[index]) continue;
           wrongAnswers.push({
             takenAt: result.takenAt,
             nickname: result.nickname,
@@ -2466,7 +2471,9 @@
     }
 
     function renderWritingWrongAnswers(wrongAnswers) {
-      $("#writingWrongAnswerTable").innerHTML = table(
+      const target = $("#writingWrongAnswerTable");
+      if (!target) return;
+      target.innerHTML = table(
         ["일시", "닉네임", "학년", "교과서", "단원", "파트", "한글 문장", "제출한 답", "영어 정답"],
         wrongAnswers.map((answer) => [
           answer.takenAt,
@@ -2492,7 +2499,9 @@
     }
 
     function renderWritingPracticeResults(results = getLocalWritingPracticeResults()) {
-      $("#writingPracticeResultTable").innerHTML = table(
+      const target = $("#writingPracticeResultTable");
+      if (!target) return;
+      target.innerHTML = table(
         ["일시", "닉네임", "학년", "교과서", "단원", "파트", "문장 번호", "정답 여부"],
         results.map((item) => [item.takenAt, item.nickname, item.grade, item.textbook, item.lesson, item.part, item.questionNumber, item.correct ? "정답" : "오답"])
       );
@@ -2515,7 +2524,9 @@
     }
 
     function renderListeningWrongAnswers(wrongAnswers) {
-      $("#listeningWrongAnswerTable").innerHTML = table(
+      const target = $("#listeningWrongAnswerTable");
+      if (!target) return;
+      target.innerHTML = table(
         ["일시", "닉네임", "학년", "교과서", "단원", "파트", "문장 번호", "제출한 답", "영어 정답"],
         wrongAnswers.map((answer) => [
           answer.takenAt,
@@ -3067,10 +3078,11 @@
         name: session.name,
         book: session.book,
         range: session.range,
-        total,
-        correct,
-        score,
-        wrongAnswers: session.firstWrongAnswers,
+          total,
+          correct,
+          score,
+          mode: "Word Practice",
+          wrongAnswers: session.firstWrongAnswers,
         takenAt: new Date().toLocaleString("ko-KR")
       };
       const stored = readJson(STORAGE.wordPracticeResults, []);
@@ -3269,7 +3281,7 @@
       body.set(fields.range, result.range);
       body.set(fields.score, String(result.score));
       body.set(fields.correct, `${result.correct}/${result.total}`);
-      body.set(fields.type, wrongText("type"));
+      body.set(fields.type, wrongAnswers.length ? wrongText("type") : (result.mode || "오답 없음"));
       body.set(fields.question, wrongText("question"));
       body.set(fields.userAnswer, wrongText("userAnswer"));
       body.set(fields.answer, wrongText("answer"));
@@ -3364,32 +3376,88 @@
         } catch {
           // Writing Google 설정 전에는 별도 로컬 기록을 관리자 화면에 표시합니다.
         }
+        const writingPracticeResults = sharedWritingPracticeResults.length ? sharedWritingPracticeResults : getLocalWritingPracticeResults();
         $("#dataStat").textContent = `${results.length}결과`;
-        $("#resultTable").innerHTML = table(
-          ["일시", "닉네임", "단어장", "범위", "점수", "정답"],
-          results.map((result) => [result.takenAt, result.nickname, result.book || "-", result.range || "-", `${result.score}점`, result.correctText || "-"])
-        );
-        $("#wrongAnswerTable").innerHTML = table(
-          ["일시", "닉네임", "유형", "문항", "제출한 답", "실제 정답"],
-          wrongAnswers.map((answer) => [answer.takenAt, answer.nickname, answer.type, answer.question, answer.userAnswer, answer.answer])
-        );
-        renderWritingWrongAnswers(writingWrongAnswers);
-        renderWritingPracticeResults(sharedWritingPracticeResults.length ? sharedWritingPracticeResults : getLocalWritingPracticeResults());
-        renderListeningWrongAnswers(listeningWrongAnswers);
+        renderAdminDrilldown({ results, wrongAnswers, writingWrongAnswers, writingPracticeResults, listeningWrongAnswers });
         setMessage($("#adminSheetNotice"), `단어 결과 ${results.length}개와 오답 ${wrongAnswers.length}개, ${writingSource} Writing 오답 ${writingWrongAnswers.length}개, ${listeningSource} Listening 오답 ${listeningWrongAnswers.length}개를 불러왔습니다.`, "good");
       } catch {
         $("#dataStat").textContent = "시트 오류";
-        $("#resultTable").innerHTML = `<div class="notice bad">Google 스프레드시트 시험 결과를 불러오지 못했습니다.</div>`;
-        $("#wrongAnswerTable").innerHTML = `<div class="notice bad">Google 스프레드시트 오답 기록을 불러오지 못했습니다.</div>`;
         const localWriting = getLocalWritingWrongAnswers();
         const localListening = getLocalListeningWrongAnswers();
-        renderWritingWrongAnswers(localWriting);
-        renderWritingPracticeResults();
-        renderListeningWrongAnswers(localListening);
+        renderAdminDrilldown({ results: [], wrongAnswers: [], writingWrongAnswers: localWriting, writingPracticeResults: getLocalWritingPracticeResults(), listeningWrongAnswers: localListening });
         setMessage($("#adminSheetNotice"), `단어 스프레드시트를 불러오지 못했습니다. Writing 로컬 오답 ${localWriting.length}개와 Listening 로컬 오답 ${localListening.length}개를 표시했습니다.`, "bad");
       } finally {
         $("#refreshAdminSheetBtn").disabled = false;
       }
+    }
+
+    function renderAdminDrilldown({ results, wrongAnswers, writingWrongAnswers, writingPracticeResults, listeningWrongAnswers }) {
+      const attemptKey = (item) => `${item.nickname}\u0000${item.takenAt}`;
+      const wordWrongByAttempt = new Map();
+      wrongAnswers.forEach((answer) => {
+        const key = attemptKey(answer);
+        if (!wordWrongByAttempt.has(key)) wordWrongByAttempt.set(key, []);
+        wordWrongByAttempt.get(key).push(answer);
+      });
+
+      const attempts = results.map((result) => {
+        const answers = wordWrongByAttempt.get(attemptKey(result)) || [];
+        const isPractice = result.mode === "Word Practice" || answers.some((answer) => String(answer.type).toLowerCase().includes("word practice"));
+        return {
+          category: isPractice ? "Word Practice" : "Word",
+          nickname: result.nickname,
+          takenAt: result.takenAt,
+          meta: [result.book, result.range, `${result.score}점`, result.correctText].filter(Boolean).join(" · "),
+          headers: ["유형", "문항", "제출한 답", "실제 정답"],
+          rows: answers.map((answer) => [answer.type, answer.question, answer.userAnswer, answer.answer])
+        };
+      });
+
+      const addGroupedAttempts = (items, category, headers, rowOf, metaOf) => {
+        const groups = new Map();
+        items.forEach((item) => {
+          const key = attemptKey(item);
+          if (!groups.has(key)) groups.set(key, []);
+          groups.get(key).push(item);
+        });
+        groups.forEach((group) => attempts.push({
+          category,
+          nickname: group[0].nickname,
+          takenAt: group[0].takenAt,
+          meta: metaOf(group[0]),
+          headers,
+          rows: group.map(rowOf)
+        }));
+      };
+
+      const passageMeta = (item) => [item.grade, item.textbook, item.lesson, item.part].filter(Boolean).join(" · ");
+      addGroupedAttempts(writingWrongAnswers, "Writing", ["한글 문장", "제출한 답", "영어 정답"], (item) => [item.korean, item.userAnswer, item.answer], passageMeta);
+      addGroupedAttempts(writingPracticeResults, "Writing Practice", ["문장 번호", "정답 여부"], (item) => [item.questionNumber, item.correct ? "정답" : "오답"], passageMeta);
+      addGroupedAttempts(listeningWrongAnswers, "Listening", ["문장 번호", "제출한 답", "영어 정답"], (item) => [item.questionNumber, item.userAnswer, item.answer], passageMeta);
+
+      const categories = new Map();
+      attempts.forEach((attempt) => {
+        if (!categories.has(attempt.category)) categories.set(attempt.category, new Map());
+        const students = categories.get(attempt.category);
+        if (!students.has(attempt.nickname)) students.set(attempt.nickname, []);
+        students.get(attempt.nickname).push(attempt);
+      });
+
+      const detail = (label, count, body, className = "") => `<details class="${className}"><summary><span>${escapeHtml(label)}</span><span class="drill-count">${escapeHtml(count)}</span></summary>${body}</details>`;
+      const categoryOrder = ["Word", "Word Practice", "Writing", "Writing Practice", "Listening"];
+      const html = categoryOrder.filter((category) => categories.has(category)).map((category) => {
+        const students = categories.get(category);
+        const studentHtml = [...students.entries()].sort(([a], [b]) => a.localeCompare(b, "ko")).map(([nickname, studentAttempts]) => {
+          const attemptHtml = studentAttempts.sort((a, b) => String(b.takenAt).localeCompare(String(a.takenAt))).map((attempt) => {
+            const rows = attempt.rows.length ? table(attempt.headers, attempt.rows) : `<div class="notice good">오답이 없습니다.</div>`;
+            return detail(attempt.takenAt || "날짜 없음", attempt.rows.length ? `오답 ${attempt.rows.length}개` : "오답 없음", `<div class="admin-attempt-meta">${escapeHtml(attempt.meta || "상세 정보 없음")}</div><div class="admin-answer-list">${rows}</div>`, "admin-attempt");
+          }).join("");
+          return detail(nickname || "이름 없음", `${studentAttempts.length}회 응시`, attemptHtml);
+        }).join("");
+        const count = [...students.values()].reduce((sum, list) => sum + list.length, 0);
+        return detail(category, `${students.size}명 · ${count}회`, studentHtml);
+      }).join("");
+      $("#adminDrilldown").innerHTML = html || `<div class="notice">저장된 데이터가 없습니다.</div>`;
     }
 
     function table(headers, rows) {
