@@ -939,6 +939,7 @@
             </div>
             <div class="toolbar">
               <button class="secondary hidden" id="revealWordPracticeBtn">가린 부분 보기</button>
+              <button class="secondary hidden" id="showWordPracticeAnswerBtn" type="button">정답 보기</button>
               <button id="nextWordPracticeBtn" disabled>다음</button>
             </div>
             <div class="feedback" id="wordPracticeFeedback">아직 진행 중인 연습이 없습니다.</div>
@@ -1225,6 +1226,7 @@
       { category: "영어 단어", title: "1단계 단어", path: "영어 단어/1단계 단어.txt" },
       { category: "교과서 단어", title: "공통영어2 미래엔(김) 1과", path: "영어 단어/공통영어2 미래엔(김) 1과.txt" },
       { category: "교과서 단어", title: "공통영어2 미래엔(김) 4과", path: "영어 단어/공통영어2 미래엔(김) 4과.txt" },
+      { category: "교과서 단어", title: "공통영어2 미래엔(김) 4과 딥러닝", path: "영어 단어/공통영어2 미래엔(김) 4과 딥러닝.txt" },
       { category: "교과서 단어", title: "중1 미래엔(문) 1과", path: "영어 단어/중1 미래엔(문) 1과.txt" },
       { category: "교과서 단어", title: "중1 미래엔(문) 2과", path: "영어 단어/중1 미래엔(문) 2과.txt" },
       { category: "교과서 단어", title: "중1 미래엔(문) 3과", path: "영어 단어/중1 미래엔(문) 3과.txt" },
@@ -2681,6 +2683,10 @@
       if (book.category !== "교과서 단어") {
         return { ...book, index, wordGrade: "통합", wordTextbook: "통합", wordLesson: title, wordLessonOrder: index };
       }
+      const commonEnglishSection = title.match(/^공통영어2\s+(.+?)\s+(\d+)과\s+(.+)$/);
+      if (commonEnglishSection) {
+        return { ...book, index, wordGrade: "고1", wordTextbook: `${commonEnglishSection[1]} / 공통영어2`, wordLesson: `${commonEnglishSection[2]}과 · ${commonEnglishSection[3]}`, wordLessonOrder: Number(commonEnglishSection[2]) + 0.5 };
+      }
       const commonEnglish = title.match(/^공통영어2\s+(.+?)\s+(\d+)과$/);
       if (commonEnglish) {
         return { ...book, index, wordGrade: "고1", wordTextbook: `${commonEnglish[1]} / 공통영어2`, wordLesson: `${commonEnglish[2]}과`, wordLessonOrder: Number(commonEnglish[2]) };
@@ -2878,6 +2884,7 @@
       $("#wordPracticeAnswerBox").classList.add("hidden");
       $("#wordPracticeSoundBox").classList.add("hidden");
       $("#revealWordPracticeBtn").classList.add("hidden");
+      $("#showWordPracticeAnswerBtn").classList.add("hidden");
       $("#nextWordPracticeBtn").disabled = false;
       if (!session) return;
 
@@ -2939,6 +2946,15 @@
       $("#revealWordPracticeBtn").classList.add("hidden");
     }
 
+    function showWordPracticeAnswer() {
+      const session = wordPracticeSession;
+      if (!session || !session.correction) return;
+      const word = session.queue[session.index];
+      const expected = session.stage.startsWith("meaning") ? word.ko : word.en;
+      setMessage($("#wordPracticeFeedback"), `정답은 “${expected}”입니다. 한 번 따라 쓰면 현재 사이클을 마친 뒤 다시 시험합니다.`, "bad");
+      $("#wordPracticeAnswer").focus();
+    }
+
     function beginPracticeQuiz(stage, words) {
       const session = wordPracticeSession;
       session.stage = stage;
@@ -2964,6 +2980,7 @@
         session.correction = false;
         session.answered = true;
         $("#wordPracticeAnswer").disabled = true;
+        $("#showWordPracticeAnswerBtn").classList.add("hidden");
         setMessage($("#wordPracticeFeedback"), "정답을 따라 썼습니다. 다른 단어를 진행한 뒤, 사이클이 끝나면 이 단어를 다시 시험합니다.", "good");
         return;
       }
@@ -2995,6 +3012,7 @@
         if (["sound", "meaning", "meaning-retest", "spell", "spell-retest"].includes(session.stage)) {
           session.correction = true;
           $("#wordPracticeAnswer").value = "";
+          $("#showWordPracticeAnswerBtn").classList.remove("hidden");
           setMessage($("#wordPracticeFeedback"), `오답입니다. 정답은 “${expected}”입니다. 한 번 따라 쓰면 현재 사이클을 마친 뒤 다시 시험합니다.`, "bad");
         } else {
           session.answered = true;
@@ -3105,6 +3123,7 @@
       $("#wordPracticeAnswerBox").classList.add("hidden");
       $("#wordPracticeSoundBox").classList.add("hidden");
       $("#revealWordPracticeBtn").classList.add("hidden");
+      $("#showWordPracticeAnswerBtn").classList.add("hidden");
       $("#nextWordPracticeBtn").disabled = true;
       $("#wordPracticeProgress").textContent = "0 / 0";
       $("#wordPracticeStage").textContent = "대기";
@@ -3565,6 +3584,7 @@
     $("#resetWordPracticeBtn").addEventListener("click", resetWordPractice);
     $("#playWordPracticeBtn").addEventListener("click", () => speakPracticeWord());
     $("#revealWordPracticeBtn").addEventListener("click", revealWordPractice);
+    $("#showWordPracticeAnswerBtn").addEventListener("click", showWordPracticeAnswer);
     $("#nextWordPracticeBtn").addEventListener("click", advanceWordPractice);
     $("#wordPracticeAnswer").addEventListener("keydown", (event) => {
       if (event.key === "Enter") submitWordPracticeAnswer();

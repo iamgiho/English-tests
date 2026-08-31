@@ -1,0 +1,102 @@
+1
+artificial
+인공의, 인조의
+2
+replace
+~을 대신하다, 대체하다
+3
+date back to ~
+~까지 거슬러 올라가다
+4
+ancient
+고대의
+5
+discovery
+발견
+6
+wooden
+나무로 된
+7
+toe
+발가락
+8
+Egyptian
+이집트의, 이집트 사람의
+9
+mummy
+미라
+10
+B.C.
+기원전
+11
+knight
+기사
+12
+known as ~
+~라고 알려진
+13
+spring-operated
+스프링으로 작동되는
+14
+so that + 완전한 절
+~하도록
+15
+tightly
+꽉, 단단히
+16
+demand
+수요, 필요
+17
+significantly
+크게, 상당히
+18
+seek
+~을 구하다, 찾다
+19
+replacement
+대체품, 대신할 것
+20
+result in ~
+~을 일으키다, 초래하다
+21
+remarkable
+주목할 만한, 놀라운
+22
+advance
+발전, 진보
+23
+make a(n) ~ return to …
+…로 ~하게 돌아오다
+24
+impressive
+인상적인, 인상 깊은
+25
+potential
+가능성, 잠재력
+26
+thanks to ~
+~ 덕분에, ~ 때문에
+27
+integration
+통합, 하나로 합침
+28
+cutting-edge
+최첨단의
+29
+robotics
+로봇 공학
+30
+complex
+복잡한
+31
+with one's thoughts
+~의 생각으로
+32
+advancement
+발전, 진보
+33
+empower
+힘을 주다, 할 수 있게 하다
+34
+lead a life
+삶을 살다
