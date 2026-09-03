@@ -1,0 +1,38 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 34,
+  "part": 34,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q34-001",
+      "title": "새로운 기술의 미묘하고 장기적인 영향: 전자레인지의 예 (The Subtle, Long-Term Social Effects of Technology)",
+      "text": [
+        "When we focus on the obvious aspects of media, we miss the changes that accumulate over time but are not apparent day to day.",
+        "Most of us notice the obvious aspects of a new medium or technology while missing the more subtle aspects.",
+        "Take, for example, the microwave oven.",
+        "It was introduced in the early 1980s and revolutionized food preparation.",
+        "Traditionally, one person spent the better part of an afternoon fixing an evening meal for a family.",
+        "Now, it was possible to prepare foods very quickly, and this shortening of preparation time was liberating for the cooks in the family, most of whom tended to be women.",
+        "But the short-term, obvious implications of greater convenience made it easy to overlook the long-term implications of no longer having one person fix food for the family to eat together at an evening meal.",
+        "As time went on, fewer and fewer families sat down together to eat dinner.",
+        "Meals that took a long time to prepare became a luxury of the past, except perhaps for special occasions.",
+        "The effects of the microwave oven on family life were not anticipated and would have been difficult to foresee."
+      ],
+      "koreanText": [
+        "우리가 매체의 분명한 측면에 집중할 때, 우리는 시간이 흐름에 따라 축적되지만 하루 하루 뚜렷하게 보이지 않는 변화를 놓친다.",
+        "우리들 대부분은 더 미묘한 측면들을 놓치는 동안 새로운 매체나 기술의 분명한 측면은 알아차린다.",
+        "예를 들어, 전자레인지를 보라.",
+        "그것은 1980년대 초반에 도입되었고 음식 준비 과정에 혁명을 일으켰다.",
+        "전통적으로, 한 사람이 가족을 위한 저녁 식사를 준비하느라 오후의 대부분을 보냈다.",
+        "이제 음식을 매우 빠르게 준비하는 것이 가능해졌고, 이러한 준비 시간의 단축은 대부분 여성인 경향이 있었던 가족 내 요리사들을 해방시켰다.",
+        "하지만 더 큰 편리함이라는 단기적이고 분명한 영향은 더 이상 한 사람이 가족이 저녁 식사에서 함께 먹기 위해 음식을 준비하지 않게 되는 것의 장기적인 영향을 간과하기 쉽게 만들었다.",
+        "시간이 흐르면서, 점점 더 적은 수의 가족들이 저녁을 먹기 위해 함께 둘러앉았다.",
+        "아마도 특별한 경우를 제외하고는, 준비하는 데 오랜 시간이 걸리는 식사는 과거의 사치품이 되었다.",
+        "전자레인지가 가정 생활에 미친 영향은 예상되지 못했으며, 예견하기도 어려웠을 것이다."
+      ]
+    }
+  ]
+}

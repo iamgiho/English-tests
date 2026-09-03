@@ -1,0 +1,36 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 32,
+  "part": 32,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q32-001",
+      "title": "공유된 사회적 이해와 안정적 집단 소속의 필요성 (Cognitive Motivations: The Need for Shared Social Understanding)",
+      "text": [
+        "Of the cognitive motivations, the most fundamental one encourages people to understand their environment to predict what is going to happen in case of uncertainties.",
+        "Most important, people prefer to develop meanings that are shared with other people.",
+        "For example, if in a given year more people accept offers of admission than a college expects, quite a few students end up living in dorm lounges or campus hotels.",
+        "It is easy to understand why living in the lounge is problematic (no closet, for one thing).",
+        "But what is wrong with a room at campus hotels?",
+        "After all, students in a hotel get private bathrooms, their own TV, and larger rooms.",
+        "In fact, living in those hotels is problematic because the student residents are not a part of a stable group with people who will be their neighbors for the year; they must wait in uncertainty before finding their social niche.",
+        "The uncertainty itself is the problem.",
+        "People lack a shared social understanding, normally developed from membership in a stable group."
+      ],
+      "koreanText": [
+        "인지적 동기 중에서, 가장 근본적인 것은 사람들이 불확실성의 경우에서 무엇이 일어날지 예측하기 위해 자신의 환경을 이해하게 한다.",
+        "가장 중요한 점은, 사람들이 다른 사람들과 공유되는 의미를 발전시키는 것을 선호한다는 것이다.",
+        "예를 들어, 어떤 해에 대학이 예상한 것보다 더 많은 사람이 입학 허가를 받아들이면, 꽤 다수의 학생이 결국 기숙사 라운지나 캠퍼스 호텔에서 살게 된다.",
+        "라운지에서 사는 것이 왜 문제가 되는지 이해하기는 쉽다(우선 옷장이 없다).",
+        "하지만 캠퍼스 호텔의 방은 무엇이 문제일까?",
+        "결국, 호텔에 있는 학생들은 개인 욕실, 전용 TV, 그리고 더 넓은 방을 갖게 된다.",
+        "사실, 이런 호텔에서 사는 것이 문제가 되는데 왜냐하면 그 학생 거주자들이 그해 동안 이웃이 될 사람들과 함께하는 안정적인 집단의 일원이 아니기 때문이다. 그래서 그들은 자신의 사회적 적소를 찾기 전까지 불확실한 상태에서 기다려야만 한다.",
+        "불확실성 그 자체가 문제인 것이다.",
+        "사람들은 안정적인 집단의 구성원 자격으로부터 보통 발전되는 공유된 사회적 이해가 결여되어 있다."
+      ]
+    }
+  ]
+}

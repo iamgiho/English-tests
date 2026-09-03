@@ -1,0 +1,34 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 23,
+  "part": 23,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q23-001",
+      "title": "인간 마음의 다양성과 종의 생존 (Variation in Human Minds and Species Survival)",
+      "text": [
+        "It’s important for humans to have many kinds of minds, because variation is critical for the survival of a species.",
+        "One of Charles Darwin’s greatest insights was that variation is a prerequisite for natural selection to work.",
+        "Think about it: If there’s a huge change in the environment, like a catastrophic drop in the food supply or a big increase in temperature, a species without much variation might be completely wiped out.",
+        "A species with great variation will more likely have some survivors after any catastrophe ―the members who are well suited for the new environment.",
+        "Darwin observed variation in the bodies of animals, and the same principle applies to human minds.",
+        "If we all had the same kind of mind ―if there were only one human nature―then when disaster struck, we might become extinct.",
+        "Thankfully, our species has many kinds of minds, both within a single culture and across cultures, so we’re less likely to be wiped out.",
+        "This variation preserves the evolvability of our species."
+      ],
+      "koreanText": [
+        "인간이 다양한 유형의 마음을 갖는 것은 중요한데, 변이는 종의 생존에 결정적이기 때문이다.",
+        "Charles Darwin의 가장 위대한 통찰 중 하나는 변이가 자연선택이 작동하기 위한 선행 조건이라는 점이었다.",
+        "생각해 보라. 만약에 식량 공급에서의 재앙적 감소나 기온에서의 큰 상승과 같은 환경에 거대한 변화가 있다면, 많은 변이가 없는 종은 완전히 사라질 수도 있다.",
+        "변이가 큰 종은 어떤 재앙 이후에도 몇몇 생존자들 즉 새로운 환경에 잘 적응한 구성원들을 가질 가능성이 더 크다.",
+        "Darwin은 동물의 몸에서 변이를 관찰했으며, 동일한 원리는 인간의 마음에도 적용된다.",
+        "만약 우리가 모두 같은 유형의 마음을 가지고 있고 인간 본성이 하나뿐이라면, 재난이 닥쳤을 때 우리는 멸종할지도 모른다.",
+        "다행히도 우리 종은 단일 문화 내와 문화 간 둘 다에서 다양한 유형의 마음을 지니고 있어서 우리는 사라질 가능성이 더 낮다.",
+        "이러한 변이는 우리 종의 진화 가능성을 보존한다."
+      ]
+    }
+  ]
+}

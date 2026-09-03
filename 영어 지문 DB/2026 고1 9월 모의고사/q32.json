@@ -1,0 +1,36 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 32,
+  "part": 32,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q32-001",
+      "title": "스토아 철학의 통찰: 판단이 감정을 형성한다 (Stoic Philosophy: Emotions Arise from Judgments)",
+      "text": [
+        "One of the most fascinating and empowering insights in Stoic philosophy is that our emotions are not random; they arise from our judgments.",
+        "This may sound surprising, especially if you’ve ever felt overwhelmed by anger, fear, or sadness.",
+        "But the Stoics taught that emotions aren’t just automatic reactions.",
+        "They’re shaped by how we interpret events.",
+        "Here’s how it works: something happens, you interpret what it means, and that interpretation triggers an emotional response.",
+        "For example: If someone criticizes you, you may feel angry not due to the words themselves but because you perceive the comment as unfair or threatening.",
+        "If you lose a job, you might feel devastated not simply because of the job loss but because you believe it defines your worth or future.",
+        "Change the judgment, and you change the emotion.",
+        "This doesn’t mean suppressing how you feel; it means examining the story you tell yourself and choosing one that serves you better."
+      ],
+      "koreanText": [
+        "스토아 철학에서 가장 매혹적이고 힘을 주는 통찰 중 하나는 우리의 감정이 임의적이지 않다는 것이다. 즉, 그것들은 우리의 판단으로부터 생겨난다.",
+        "이것은 특히 만약 당신이 분노, 두려움 또는 슬픔에 압도당해 본 적이 있다면 놀랍게 들릴 수 있다.",
+        "하지만 스토아학파는 감정이 단지 자동적인 반응이 아니라고 가르쳤다.",
+        "그것들은 어떻게 우리가 사건을 해석하는지에 의해 형성된다.",
+        "여기에 그것이 작동하는 방식이 있다. 무언가가 발생하면, 당신은 그것이 무엇을 의미하는지 해석하고, 그 해석은 감정적 반응을 일으킨다.",
+        "예를 들어, 만약 누군가가 당신을 비난한다면, 당신은 그 말 자체 때문이 아니라 당신이 그 언급을 불공정하거나 위협적이라고 인식하기 때문에 화가 날 수 있다.",
+        "만약 당신이 일자리를 잃는다면, 당신은 단지 일자리 상실 때문만이 아니라 그것이 당신의 가치나 미래를 규정한다고 믿기 때문에 망연자실할 수 있다.",
+        "그 해석을 바꿔라, 그러면 당신은 그 감정을 바꾼다.",
+        "이것은 당신이 어떻게 느끼는지를 억누르는 것을 의미하는 것이 아니라, 그것은 당신이 스스로에게 하는 이야기를 점검하고 당신에게 더 도움이 되는 것을 선택하는 것을 의미한다."
+      ]
+    }
+  ]
+}

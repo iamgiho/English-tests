@@ -1,0 +1,40 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 19,
+  "part": 19,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q19-001",
+      "title": "함께 부른 노래 (Singing Together with Durwood)",
+      "text": [
+        "Maggie stood up, her hands gripping the seat in front of her.",
+        "She had never sung alone before, and as she opened her mouth to begin, her voice started shaking.",
+        "A few children turned around to look at her, and her heart began to race.",
+        "She focused hard on the lyrics, trying not to forget the words.",
+        "Then she noticed movement beside her.",
+        "Durwood quietly stood up and began to sing along.",
+        "His voice was steady and calm, carrying the song forward.",
+        "Maggie let out a breath she hadn’t realized she was holding.",
+        "The tightness in her shoulders slowly faded.",
+        "With Durwood singing beside her, the tension in her chest eased.",
+        "She continued the song, no longer frozen, and they finished it together."
+      ],
+      "koreanText": [
+        "Maggie는 자리에서 일어나 그녀 앞의 좌석을 자신의 손으로 꽉 붙잡았다.",
+        "그녀는 혼자 노래를 불러본 적이 한 번도 없었고, 입을 열어 노래를 시작하자 그녀의 목소리가 떨리기 시작했다.",
+        "몇몇 아이들이 뒤돌아 그녀를 바라보았고, 그녀의 심장이 빠르게 뛰기 시작했다.",
+        "가사를 잊지 않으려 그녀는 가사에 애써 집중했다.",
+        "그때 그녀는 자신의 옆에서 움직임을 알아차렸다.",
+        "Durwood가 조용히 일어나 함께 노래를 부르기 시작했다.",
+        "그의 목소리는 안정되고 차분했고, 그 노래를 앞으로 이끌고 있었다.",
+        "Maggie는 자신이 참고 있다고 깨닫지 못했던 숨을 내쉬었다.",
+        "그녀의 어깨의 경직이 서서히 사라졌다.",
+        "Durwood가 그녀의 옆에서 노래를 부르자 가슴 속의 긴장이 누그러졌다.",
+        "그녀는 더 이상 얼어붙지 않은 채로 노래를 이어 갔고, 그들은 함께 그것을 마쳤다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 18,
+  "part": 18,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q18-001",
+      "title": "현장체험학습 장소 변경 안내 (School Field Trip Location Change)",
+      "text": [
+        "Dear Parents and Guardians,",
+        "We appreciate your support and cooperation in our school programs.",
+        "We would like to share important information regarding this Friday’s school field trip.",
+        "Our school had originally planned an outdoor field trip to Dreamland Amusement Park.",
+        "However, according to the latest weather forecast, extremely low temperatures are expected throughout Friday.",
+        "Spending long hours outdoors under these conditions may be potentially unsafe for students.",
+        "After careful consideration, we have decided to change the location.",
+        "Instead of the amusement park, students will visit the City Science Museum, where they will participate in guided exhibitions and hands-on learning activities.",
+        "We kindly ask for your understanding.",
+        "Sincerely, Michael Thompson, Vice Principal"
+      ],
+      "koreanText": [
+        "학부모님 및 보호자님께,",
+        "저희는 저희 학교 프로그램에 보내주시는 여러분의 성원과 협조에 감사드립니다.",
+        "이번 주 금요일 학교 현장체험학습과 관련하여 중요한 소식을 공유하고자 합니다.",
+        "본교는 원래 Dreamland Amusement Park로의 야외 현장체험학습을 계획했습니다.",
+        "그러나 최신 날씨 예보에 따르면 금요일 내내 매우 낮은 기온이 예상됩니다.",
+        "이러한 상황에서 장시간을 야외에서 보내는 것은 학생들에게 잠재적으로 안전하지 않을 수 있습니다.",
+        "신중한 검토 후에 장소를 변경하기로 결정했습니다.",
+        "놀이공원 대신, 학생들은 시립 과학 박물관을 방문하여 안내 전시 관람과 실제 체험 학습 활동에 참여하게 될 것입니다.",
+        "여러분의 이해를 진심으로 부탁드립니다.",
+        "진심을 담아, Michael Thompson 교감"
+      ]
+    }
+  ]
+}

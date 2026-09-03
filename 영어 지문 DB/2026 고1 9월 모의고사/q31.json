@@ -1,0 +1,36 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 31,
+  "part": 31,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q31-001",
+      "title": "입맛의 사회적 본질과 모방 (The Social Nature of Taste)",
+      "text": [
+        "Our tastes are social.",
+        "Even when you first drank milk, there was the milk, yes, but there was also the person behind the milk who will have presumably either made or messed up your relationship with food for the couple of decades after that.",
+        "We learn to eat from our families and friends, at school and in work.",
+        "A village develops a particular recipe for an apple pie ―one that nobody outside the village likes, but who cares?",
+        "We want these things not just because of what they are, but who we are.",
+        "Tastes spread like this, person to person, like viruses, almost irrespective of the qualities of the food involved.",
+        "We observe other people in their food lives, often judgmentally.",
+        "Nothing turns me off something quicker than the wrong people liking it, by which I mean people almost identical to me in every respect, in a way that doesn’t flatter me.",
+        "I avoided the viral chopped salad moment of 2024 by the skin of my teeth."
+      ],
+      "koreanText": [
+        "우리의 입맛은 사회적이다.",
+        "당신이 처음 우유를 마셨을 때에도, 우유가 있었다. 그렇다. 하지만 그 우유 뒤에는 이후 몇십 년 동안 아마 음식과 당신의 관계를 형성했거나 망쳐놓았을 사람도 있었다.",
+        "우리는 가족과 친구들로부터, 학교에서 그리고 직장에서 먹는 것을 배운다.",
+        "한 마을은 사과 파이를 위한 특정 레시피를 개발하는데, 이는 그 마을 밖에서는 누구도 좋아하지 않는 것이지만, 누가 신경 쓰겠는가?",
+        "우리는 이런 것들을 그것들이 단지 무엇인지 때문만이 아니라, 우리가 누구인지 때문에 원한다.",
+        "입맛은 이렇게 마치 바이러스처럼 사람에서 사람으로 퍼지며, 연관된 음식의 특성과는 거의 무관하다.",
+        "우리는, 종종 비판적으로, 다른 사람들을 그들의 식생활로 관찰한다.",
+        "어울리지 않는 사람들이 그것을 좋아하는 것만큼 나를 어떤 것에서 더 빨리 질리게 만드는 것은 없는데, 여기서 내가 의미하는 바는 모든 면에서 나와 거의 동일한 사람들인데, 그것이 나를 돋보이게 하지 않는 면에서 그렇다.",
+        "나는 바이러스처럼 퍼졌던 2024년의 다진 샐러드 순간을 간신히 피했다."
+      ]
+    }
+  ]
+}

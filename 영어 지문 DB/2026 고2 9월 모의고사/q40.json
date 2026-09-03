@@ -1,0 +1,28 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 40,
+  "part": 40,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q40-001",
+      "title": "자기 인식과 순수한 선행 동기 (Self-Perception and Pure Motivations for Doing Good)",
+      "text": [
+        "Our adult brains retain a preference for perpetuating good, fair behavior.",
+        "Simply perceiving ourselves as people who do good deeds and behaving accordingly motivates us to do greater good in the future.",
+        "In one paid study of one hundred college students, subjects who wrote down a list of past good deeds and were then asked to donate money to a charity gave, on average, over half the earnings they’d made from the study — almost twice as much as those who had been instructed to recall previous bad deeds.",
+        "In addition, subjects who’d taken pains to describe not only how they’d been nice to others but how people responded were likely to donate significantly less than those who focused purely on the actions themselves.",
+        "In other words, people who seemed concerned about appearances (e.g., the impact of their good deed, as much as the deed itself) were less generous than those who cared more about doing good for its own sake."
+      ],
+      "koreanText": [
+        "우리의 성인 뇌는 선하고 공정한 행동을 영속시키는 것에 대한 선호를 유지한다.",
+        "단순히 우리 자신을 좋은 행위를 하는 사람으로 인식하고 그에 맞춰 행동하는 것만으로도 우리가 미래에 더 큰 선을 행하도록 동기를 부여한다.",
+        "100명의 대학생을 대상으로 한 보수가 지급되는 한 연구에서, 과거 좋은 행위의 목록을 작성한 후 자선 단체에 기부할 것을 요청받은 피실험자들은 평균적으로 연구를 통해 번 수익의 절반 이상을 기부했다. 이는 이전의 나쁜 행위를 회상하도록 지시받았던 사람들보다 거의 두 배였다.",
+        "게다가, 자신이 타인에게 얼마나 친절했는지뿐만 아니라 사람들이 어떻게 반응했는지까지 공들여 묘사했던 피실험자들은, 순수하게 행위 그 자체에만 초점을 둔 사람들보다 훨씬 적게 기부하는 경향이 있었다.",
+        "다시 말해서, 겉모습(예를 들어, 좋은 행위 그 자체만큼이나 자신의 좋은 행위가 미칠 영향력)에 신경을 쓰는 것처럼 보이는 사람들은, 선을 그 자체를 위해 행하는 것에 더 마음을 쓰는 사람들보다 덜 관대했다."
+      ]
+    }
+  ]
+}

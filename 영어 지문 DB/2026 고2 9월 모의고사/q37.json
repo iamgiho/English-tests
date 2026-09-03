@@ -1,0 +1,36 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 37,
+  "part": 37,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q37-001",
+      "title": "언어와 문화: 개인주의와 집단주의에 따른 의사소통 양식 (Language as Culture: Communication Styles in Individualistic vs Collectivistic Societies)",
+      "text": [
+        "Language is a manifestation of culture.",
+        "At different language acquisition stages, children do not learn language per se; rather they learn the various patterns and styles of language interaction that enable them to function as competent communicators in different situational contexts.",
+        "They develop a culture-specific communication style that is, for example, direct and explicit in individualistic cultures or indirect and implicit in collectivistic cultures.",
+        "Examples of words linked with the direct style are categorical words like absolutely, certainly, or positively.",
+        "By contrast, the cultural assumptions of interdependence and harmony require that collectivists limit themselves to implicit and even ambiguous use of words, using terms like maybe, perhaps, or probably.",
+        "The English language is the only language in the world that spells I with a capital letter.",
+        "This phenomenon may reflect the fact that the roots of individualism are in England.",
+        "There is no Japanese equivalent for the English I.",
+        "Different words are used to refer to the self, depending on the social situation, the speaker’s gender, age, and the other social attributes relative to the listener."
+      ],
+      "koreanText": [
+        "언어는 문화의 발현이다.",
+        "언어 습득의 여러 단계에서 아이들은 언어 그 자체만을 배우지 않는다. 그보다는 다양한 상황적 맥락 속에서 유능한 소통가로서 제 역할을 할 수 있게 해주는 언어적 상호작용의 다양한 패턴과 양식을 배운다.",
+        "그들은 문화 특유의 의사소통 양식을 발달시키는데, 예를 들어 개인주의 문화에서는 직접적이고 명시적이나, 집단주의 문화에서는 간접적이고 암시적이다.",
+        "직접적인 양식과 연결된 단어의 사례로는 ‘전적으로(absolutely)’, ‘확실히(certainly)’, 또는 ‘분명히(positively)’와 같은 단정적인 단어들이 있다.",
+        "대조적으로, 상호 의존과 화합이라는 문화적 전제는 집단주의자들이 ‘어쩌면(maybe)’, ‘아마도(perhaps)’, 혹은 ‘그럴지도(probably)’와 같은 표현을 쓰면서 암시적이고 심지어 모호한 어휘 사용으로 스스로를 제한하도록 요구한다.",
+        "영어는 전 세계에서 ‘I’를 대문자로 표기하는 유일한 언어이다.",
+        "이러한 현상은 개인주의의 뿌리가 잉글랜드에 있다는 사실을 반영하는 것일 수도 있다.",
+        "영어의 ‘I’에 상응하는 일본어 표현은 존재하지 않는다.",
+        "사회적 상황, 화자의 성별과 나이, 그리고 청자에 대한 여타의 사회적 속성들에 따라 각기 다른 단어들이 자신을 지칭하는 데 사용된다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 35,
+  "part": 35,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q35-001",
+      "title": "디지털 트윈의 발전과 산업적 응용 (The Evolution and Industrial Application of Digital Twins)",
+      "text": [
+        "Digital twins are digital replicas of assets or activities using modeling and sensors to create digital representations.",
+        "Digital twins are not new; engineering teams in various industries have used 3D renderings of computer-aided design models, asset models, and process simulations for years.",
+        "However, faster wireless networks and the resulting availability of real-time data enable much more detailed and dynamic digital representations.",
+        "When sensors collect data from a connected device, the sensor data can be used to continuously update the digital twin.",
+        "The digital twin becomes a real-time accurate copy of a physical object’s properties and states.",
+        "For instance, digital twins of physical assets such as power-generation turbines, jet engines, and train engines are becoming common when the assets are very valuable and when downtime would be very costly."
+      ],
+      "koreanText": [
+        "디지털 트윈은 디지털 표현을 만들기 위해 모델링과 센서를 사용하는 자산이나 활동의 디지털 복제본이다.",
+        "디지털 트윈은 새로운 것이 아니다. 가령 다양한 산업의 엔지니어링 팀은 수년 동안 컴퓨터 지원 설계(CAD) 모델의 3D 렌더링, 자산 모델 및 공정 시뮬레이션을 사용해 왔다.",
+        "그러나 더 빠른 무선 네트워크와 그로 인한 실시간 데이터의 가용성은 훨씬 더 상세하고 역동적인 디지털 표현을 가능하게 한다.",
+        "연결된 기기로부터 센서가 데이터를 수집할 때, 그 센서 데이터는 디지털 트윈을 지속적으로 업데이트하는 데 사용될 수 있다.",
+        "디지털 트윈은 물리적 객체의 속성과 상태에 대한 정확한 실시간 복사본이 된다.",
+        "예를 들어, 발전 터빈, 제트 엔진, 기차 엔진과 같은 물리적 자산의 디지털 트윈은 자산이 매우 가치 있고 가동 중단 비용이 매우 클 때 일반화되고 있다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 21,
+  "part": 21,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q21-001",
+      "title": "움직임의 중요성과 본래의 설계 (Movement is Life: Returning to Our Design)",
+      "text": [
+        "We are wonderfully made, yet we don’t allow ourselves to participate in the wonder for which we were created.",
+        "Instead of moving anywhere and everywhere, most of us spend our time moving nowhere.",
+        "We occupy the same square footage of a chair for hours and hours every day.",
+        "Many kids today are being held captive by ‘smart’ devices like phones and tablets.",
+        "They are not going outside to play, they are not learning how to socialize and read physical cues from others.",
+        "As a result they are not learning or building their movement repertoire, the very thing that will help them learn, communicate, create, and become emotionally mature.",
+        "They are not even learning how to run, how to skip, or how to climb.",
+        "Instead, they are learning how to live with anxiety, depression, and even diseases they were never meant to have.",
+        "The point is we are getting further and further away from our design.",
+        "We were made to move― and through movement, we are meant to live extraordinary lives.",
+        "Movement is life to us."
+      ],
+      "koreanText": [
+        "우리는 경이롭게 만들어졌지만, 우리가 창조된 목적인 그 경이로움에 우리 자신이 참여하게 하지 않는다.",
+        "어디로든 사방으로 움직이는 대신에, 우리의 대부분은 어디로도 움직이지 않은 채 우리의 시간을 보낸다.",
+        "우리는 매일 몇 시간이고 의자와 동일한 제곱 피트수를 차지한다.",
+        "오늘날 많은 아이들은 폰과 태블릿 같은 ‘스마트’ 기기들에 사로잡혀 있는 중이다.",
+        "그들은 놀기 위해 밖으로 나가지 않고 있으며, 그들은 사회화하는 법과 타인으로부터 신체적 신호를 읽는 법을 배우고 있지 않다.",
+        "그 결과 그들은 그들의 움직임 레퍼토리, 즉 그들이 학습하고 소통하고 창조하며 정서적으로 성숙해지도록 도와줄 바로 그것을 배우거나 형성하지 않고 있다.",
+        "그들은 심지어 달리는 법, 깡충 뛰는 법, 혹은 기어오르는 법조차 배우고 있지 않다.",
+        "대신에 그들은 결코 가지기로 되어 있지 않았던 불안, 우울, 그리고 심지어 질병들과 사는 법을 배우고 있다.",
+        "요점은 우리가 우리의 설계로부터 점점 더 멀어지고 있는 중이라는 것이다.",
+        "우리는 움직이도록 만들어졌으며, 움직임을 통해 특별한 삶을 살도록 되어있다.",
+        "움직임은 우리에게 삶‘이다.’"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 39,
+  "part": 39,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q39-001",
+      "title": "절엽 개미의 균류 농경 문명 (Leafcutter Ants: Nature's Master Farmers)",
+      "text": [
+        "With millions of members in a colony, leafcutter ants cultivate their own food.",
+        "Just like humans, they’re farmers.",
+        "Some of the ants set forth from the nest to find fresh vegetation; when they find it, they chew off large pieces that they carry back to the nest.",
+        "However, the ants don’t eat these leaves.",
+        "Instead, smaller worker ants take the pieces of leaves, chew them into smaller pieces, and use these as fertilizer to grow fungus in large underground ‘gardens.’",
+        "The ants feed the fungus, and the fungus blossoms into small fruiting bodies which the ants later eat.",
+        "Using this successful farming strategy, the ants build enormous nests underground, something spanning hundreds of square meters.",
+        "Just like humans, they have perfected an agricultural civilization."
+      ],
+      "koreanText": [
+        "한 군락에 수백만 마리의 구성원이 있는 절엽 개미는 그들만의 먹이를 경작한다.",
+        "인간과 마찬가지로, 그들은 농부이다.",
+        "몇몇 개미는 신선한 식물을 찾기 위해 둥지를 떠난다. 그리고 그들이 그것을 찾으면, 그들은 그들이 둥지로 다시 짊어지고 올 큰 조각을 씹어 떼어낸다.",
+        "하지만, 개미는 이 잎을 먹지 않는다.",
+        "대신에, 더 작은 일개미가 잎 조각을 가져다가 그것들을 더 작은 조각으로 씹고, 그것들을 커다란 지하 ‘정원’에서 균류를 키우기 위한 비료로 사용한다.",
+        "개미는 균류에게 먹이를 주고, 균류는 개미가 나중에 먹을 작은 자실체로 피어난다.",
+        "이 성공적인 농업 전략을 사용하여, 개미는 지하에 거대한 둥지, 수백 제곱미터에 달하는 것을 짓는다.",
+        "인간과 마찬가지로, 그들은 농업 문명을 완성했다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 38,
+  "part": 38,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q38-001",
+      "title": "측정 단위의 발전과 일관성의 필요성 (The Evolution of Measurement Units: The Need for Consistency)",
+      "text": [
+        "To harness the full potential of units of measurement, we need some degree of consistency.",
+        "Subjective measures contain useful knowledge, but this can be difficult to share, based as it is on an individual’s experience.",
+        "The historian of science Theodore M. Porter describes measurement as a ‘technology of distance’: a tool that uses shared rules to bridge differences of culture and geography, allowing for the exchange of information.",
+        "Following this logic, if measurement is another sort of language, then just as with words, individual units need reliable definitions in order to communicate.",
+        "In the earliest societies, these definitions might need to be shared no more widely than a single settlement, meaning that the definition can be no more complex than knowing that a unit was equal to a certain body part.",
+        "As these communities grew in size, though, the inadequacies of this system would become evident.",
+        "Imagine a disagreement over trade or tribute: it is a moment of conflict that demands greater consistency in measurement."
+      ],
+      "koreanText": [
+        "측정 단위의 최대 잠재력을 이용하려면 우리는 어느 정도의 일관성이 필요하다.",
+        "주관적인 측정은 유용한 지식을 포함하고 있지만 이것은 개인의 사실상 경험에 기반하기 때문에 공유하기 어려울 수 있다.",
+        "과학사학자 Theodore M. Porter는 측정을 ‘거리의 기술’이라고 묘사한다. 즉, 문화와 지리의 차이를 메우기 위해 공유된 규칙을 사용하여 정보의 교환을 가능하게 하는 도구이다.",
+        "이러한 논리에 따라서, 측정이 또 다른 종류의 언어라면, 단어와 마찬가지로, 개별 단위는 의사소통을 하기 위해 신뢰할 만한 정의가 필요하다.",
+        "가장 초기의 사회에서, 이러한 정의는 하나의 정착지 정도의 범위로만 공유될 필요가 있었을 것이고, 이는 그 정의가 한 단위는 특정 신체 분위와 대등하다는 것을 아는 정도로만 복잡하면 된다는 것을 의미한다.",
+        "하지만 이러한 공동체들이 규모가 커지면서, 이 체계의 불충분함이 분명해졌다.",
+        "무역이나 조공에 관한 불일치를 상상해 보아라. 그것은 측정에 있어 더 큰 일관성을 요구하는 갈등의 순간이다."
+      ]
+    }
+  ]
+}
