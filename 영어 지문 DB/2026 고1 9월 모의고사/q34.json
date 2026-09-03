@@ -1,0 +1,32 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 34,
+  "part": 34,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q34-001",
+      "title": "달리기의 복잡성과 신체의 선천적 지능 (The Complex Alchemy of Running and the Body's Intelligence)",
+      "text": [
+        "If our bodies know best, why are they easily injured when we do something so seemingly natural as running?",
+        "On the one hand, running seems very easy, but that is only because our bodies are so very good at it.",
+        "The most powerful supercomputer on the planet cannot administer the enormous number of computations it takes to run, untethered, on two legs.",
+        "Wherever our running intelligence is, running is not all conscious to us and is so complicated that only the T1000 Terminators of our imagination are able to do it.",
+        "Because our running knowledge is buried so deeply within muscle fibres, cells and our DNA, we have to accept that we cannot fully explain its complexities.",
+        "That doesn’t mean our bodies don’t know how to do it.",
+        "We may feel our way towards understanding the alchemy of running by learning how to use our senses, getting them firing, and seeing what they are capable of, and accepting that our bodies know more about running than we ever will."
+      ],
+      "koreanText": [
+        "만약 우리의 몸이 가장 잘 안다면, 왜 그들은 우리가 달리기처럼 겉보기에 자연스러운 무언가를 할 때 쉽게 다칠까?",
+        "한편으로, 달리기는 매우 쉬워 보이지만, 그것은 오직 우리의 몸이 그것을 아주 잘하기 때문이다.",
+        "지구상의 가장 강력한 슈퍼컴퓨터도 매인 줄이 풀린 채 두 다리로 달리는 데 필요한 엄청난 수의 계산을 처리할 수 없다.",
+        "우리의 달리기 지능이 어디에 있든 간에, 달리기는 우리에게 완전히 의식적이지 않고, 너무 복잡해서 오직 우리의 상상 속 T1000 터미네이터만이 그것을 할 수 있다.",
+        "우리의 달리기 지식은 근섬유, 세포, 그리고 우리의 DNA 속에 아주 깊이 묻혀 있기 때문에, 우리는 우리가 그것의 복잡성을 완전히 설명할 수 없다는 것을 받아들여야 한다.",
+        "그것은 우리의 몸이 그것을 어떻게 하는지 모른다는 것을 의미하지는 않는다.",
+        "우리는 우리의 감각을 사용하는 법을 배우고, 그것들을 활성화하게 하고, 그리고 그것들이 무엇을 할 수 있는지 봄으로써, 달리기의 연금술을 이해하고, 우리의 몸이 우리가 장차 그러할 것보다 달리기에 대해 더 잘 알고 있다는 것을 받아들이는 쪽으로 더듬어 나아갈 수 있다."
+      ]
+    }
+  ]
+}

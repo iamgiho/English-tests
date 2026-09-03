@@ -1,0 +1,32 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 29,
+  "part": 29,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q29-001",
+      "title": "자본주의와 값싼 자연 및 미개척 영역의 수탈 (Capitalism, Cheap Nature, and the Role of Frontiers)",
+      "text": [
+        "Capitalism is not a system where cash is everywhere but rather one in which islands of cash exchange exist within oceans of cheap―or potentially cheap―natures.",
+        "Reproducing life within the cash nexus is expensive, and it grows more expensive over time.",
+        "Workers’ wages can be frozen, even rolled back, but in the end inequality leads to crises of the kind we’ve recently seen bring about populist protests in the United States and the United Kingdom.",
+        "Workers demand dignity, and their labor becomes expensive.",
+        "Production processes burn through an island, and energy is no longer cheap.",
+        "The climate changes, and crops can no longer grow as abundantly as they once did.",
+        "Frontiers are so important in these processes because they offer places where the new cheap things can be seized ―and the cheap work of humans and other natures can be forcefully taken."
+      ],
+      "koreanText": [
+        "자본주의는 현금이 어디에나 존재하는 시스템이라기보다는, 값싼 혹은 잠재적으로 값싼 만물의 바다 안에 현금 교환이라는 섬들이 존재하는 시스템이다.",
+        "현금 거래 관계 내에서 삶을 재생산하는 것은 비싸고, 시간이 흐를수록 그것은 더 비싸진다.",
+        "노동자의 임금은 동결되거나 심지어 삭감될 수 있지만, 결국 불평등은 우리가 최근 미국과 영국에서 포퓰리스트 시위를 발생시켰다고 목격한 것과 같은 종류의 위기를 초래한다.",
+        "노동자들은 존엄성을 요구하고, 그들의 노동력은 비싸진다.",
+        "생산 과정은 섬(현금 교환의 섬)을 고갈시키며, 에너지는 더 이상 값싸지 않게 된다.",
+        "기후가 변화하고, 작물은 한때 그랬던 것처럼 더 이상 풍부하게 자라지 않는다.",
+        "이러한 과정에서 미개척 영역이 중요한데, 왜냐하면 그것이 새로운 값싼 것들이 확보될 수 있는 장소를 제공하기 때문이다. 즉, 값싼 인간의 노동력과 다른 만물이 강제로 취해질 수 있다는 것이다."
+      ]
+    }
+  ]
+}

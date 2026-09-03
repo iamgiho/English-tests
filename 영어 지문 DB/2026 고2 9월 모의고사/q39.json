@@ -1,0 +1,36 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 39,
+  "part": 39,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q39-001",
+      "title": "조직 내 배제의 악순환과 예방 조치의 필요성 (Organizational Exclusion and the Need for Precautions)",
+      "text": [
+        "Exclusion is a state that is ignored by the organization psychologists.",
+        "Therefore, it is possible that precautions regarding organizational exclusion are not taken.",
+        "Individuals react to organizational exclusion by trying to strengthen their basic needs, which are threatened.",
+        "Positive social behaviors develop belonging and self-respect.",
+        "The likelihood that individuals who try to adapt to positive social behaviors will experience organizational exclusion decreases.",
+        "However, individuals may be faced with more exclusion when they cannot adapt to a group.",
+        "When excluded individuals grow away from communication and social activities, their contribution to the organization they are in may decrease.",
+        "When this situation is not avoided, exclusion increases even more and strongly affects the performance of the employee in a negative way.",
+        "Precautions need to be taken regarding organizational exclusion, which is very important for business."
+      ],
+      "koreanText": [
+        "배제는 조직 심리학자들에 의해 간과되는 상태이다.",
+        "따라서 조직 배제에 관한 예방 조치가 취해지지 않을 가능성이 있다.",
+        "개인들은 위협 받는 그들의 기본적인 욕구를 강화하려고 노력함으로써 조직 배제에 반응한다.",
+        "긍정적인 사회적 행동은 소속감과 자기 존중을 발달시킨다.",
+        "긍정적인 사회적 행동에 적응하려고 노력하는 개인들이 조직 배제를 경험할 가능성은 낮아진다.",
+        "그러나, 개인들이 집단에 적응하지 못할 때 그들은 더 많은 배제를 직면하게 될 수도 있다.",
+        "배제된 개인들이 의사소통 및 사회 활동과 멀어질 때, 그들이 속한 조직에 대한 기여도는 감소할 수도 있다.",
+        "이러한 상황을 피하지 못할 경우, 배제는 훨씬 더 늘어나고 직원 성과에 부정적인 방식으로 강하게 영향을 미친다.",
+        "조직 배제에 관한 예방 조치는 취해져야 할 필요가 있는데, 이는 업무에서 매우 중요하다."
+      ]
+    }
+  ]
+}

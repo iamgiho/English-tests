@@ -1,0 +1,28 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 35,
+  "part": 35,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q35-001",
+      "title": "반려견 목욕 주기와 올바른 관리 기준 (Pet Care Criterion: How Often Dogs Actually Need Baths)",
+      "text": [
+        "Our number one criterion for how we care for our pets should be, “Is this what they actually need? How is it impacting them?” rather than, “What do I want?”",
+        "For example, we have encountered many dog owners who bathe their dogs religiously multiple times a week because they want to avoid the ‘doggy’ smell, but veterinary dermatologists warn against such practices, as they are not good for a dog’s skin.",
+        "If someone is really concerned about their dog’s smell they can use waterless shampoo and thoroughly brush their dog every day but keep the baths down to once or twice a week at most.",
+        "Unless they have a skin condition for which a vet has prescribed medicated baths, most dogs don’t need to be bathed on a regular basis.",
+        "Even dogs with thick, heavy coats generally only need baths every 6 to 8 weeks."
+      ],
+      "koreanText": [
+        "우리가 우리의 반려동물을 어떻게 돌보는지에 대한 우리의 첫 번째 기준은 ‘내가 무엇을 원하는가?’보다는 ‘이것이 그들이 실제로 필요한 것인가? 그것이 그들에게 어떻게 영향을 미치고 있는가?’가 되어야 한다.",
+        "예를 들어, 그들은 ‘개’ 냄새를 피하고 싶기 때문에 일주일에 여러 번 계율을 지키듯이 그들의 개를 목욕시키는 많은 반려동물 주인들을 마주쳐왔지만 수의 피부과 전문의는 그것들이 개의 피부에 좋지 않기 때문에 그러한 관행에 대해 경고한다.",
+        "만약 누군가가 그들의 개의 냄새에 대해 정말로 걱정한다면, 그들은 물이 필요 없는 샴푸를 사용할 수 있고 매일 충분히 그들의 개를 빗질해줄 수 있지만, 목욕은 기껏해야 일주일에 한두 번으로 제한해야 한다.",
+        "그들이 수의사가 약욕을 처방한 피부 상태를 가지고 있지 않는다면, 대부분의 개는 주기적으로 목욕시켜질 ‘필요’가 없다.",
+        "심지어 빽빽하고 무거운 털이 있는 개조차도 일반적으로 오직 6주에서 8주마다 목욕을 필요로 한다."
+      ]
+    }
+  ]
+}

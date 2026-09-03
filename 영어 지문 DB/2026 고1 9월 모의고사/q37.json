@@ -1,0 +1,40 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 37,
+  "part": 37,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q37-001",
+      "title": "천문학의 발전: 코페르니쿠스에서 갈릴레오의 망원경까지 (The Evolution of Astronomy: From Copernicus to Galileo)",
+      "text": [
+        "Even before telescopes existed, people looked out into space and tried to understand the universe.",
+        "The Egyptians, Babylonians, Greeks, and Maya were among the first peoples to map the movements of the stars.",
+        "In Europe, a 16th-century Polish mathematician named Nicolaus Copernicus put forth a revolutionary idea.",
+        "Copernicus watched the stars and took measurements by eye.",
+        "He concluded that the view of the universe accepted at the time ─ that the Sun traveled around Earth ─ was wrong, and that it was in fact Earth that traveled around the Sun.",
+        "Despite widespread objections to his ideas, he published his theory in a book.",
+        "Later astronomers built on Copernicus’ work.",
+        "Technological improvements led to the development of the telescope in the early 17th century.",
+        "Using a telescope, the Italian scientist Galileo Galilei discovered the four largest moons of Jupiter and observed craters on Earth’s Moon.",
+        "He also confirmed that Copernicus’ theory was correct.",
+        "Over the centuries, scientific discoveries and information from telescopes advanced our knowledge of how the universe works."
+      ],
+      "koreanText": [
+        "망원경이 존재하기도 전에, 사람들은 우주로 밖을 내다보았고 우주를 이해하려고 노력했다.",
+        "이집트인, 바빌로니아인, 그리스인, 그리고 마야인들은 별들의 움직임을 지도로 만든 최초의 민족 중에 있었다.",
+        "유럽에서는, Nicolaus Copernicus라고 불리는 16세기의 폴란드 수학자가 한 가지 혁명적인 아이디어를 제기했다.",
+        "Copernicus는 별들을 관찰했고 맨눈으로 측정했다.",
+        "그는 그 당시에 받아들여진 우주에 대한 관점, 즉 태양이 지구 주위를 이동했다는 것이 틀렸고, 태양 주위를 이동한 것은 사실 지구였다고 결론지었다.",
+        "그의 아이디어에 대해 널리 퍼진 반대에도 불구하고, 그는 한 권의 책에 그의 이론을 출판했다.",
+        "나중에 천문학자들은 Copernicus의 연구를 바탕으로 삼았다.",
+        "기술적인 개선은 17세기 초에 망원경의 발전으로 이어졌다.",
+        "망원경을 사용하여, 이탈리아 과학자 Galileo Galilei는 목성의 네 개의 가장 큰 위성을 발견했고 지구의 달에 있는 분화구를 관찰했다.",
+        "그는 또한 Copernicus의 이론이 옳았음을 확증했다.",
+        "수 세기에 걸쳐, 망원경으로부터 온 과학적 발견과 정보는 우주가 어떻게 작동하는지에 대한 우리의 지식을 전진시켰다."
+      ]
+    }
+  ]
+}

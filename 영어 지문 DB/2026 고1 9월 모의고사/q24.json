@@ -1,0 +1,44 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 24,
+  "part": 24,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q24-001",
+      "title": "불확실성을 마주하는 용기와 계획의 유연성 (Embracing Uncertainty: Writing Plans in Pencil)",
+      "text": [
+        "Letting go of our need for control, being aware, is a lot about gathering the courage to face uncertainty.",
+        "Human beings want to know.",
+        "When we don’t know, when things are uncertain, we often feel frightened and become inflexible.",
+        "So we pretend that things are more predictable than they really are, even though we actually live with enormous uncertainty all the time.",
+        "We cling to our plans and ideas about how things should be and turn out ever so desperately.",
+        "And there’s nothing wrong with having plans.",
+        "I think it’s a beautiful thing.",
+        "But there’s a difference between planning and thinking all your plans have to come to fruition.",
+        "American president Eisenhower once said: ‘Plans are worthless, but planning is everything.’",
+        "Imagine if we all used pencil instead of ink to write in our calendars and planners.",
+        "Both figuratively and literally.",
+        "Imagine if we could bear in mind that what we write down, what we think is going to happen, might not be what actually happens.",
+        "And if we could try our best to be all right with that."
+      ],
+      "koreanText": [
+        "통제하려는 우리의 욕구를 내려놓는 것, 즉 알아차리는 것은, 매우 불확실성에 맞설 용기를 모으는 일에 관한 것이다.",
+        "인간은 알고 싶어 한다.",
+        "우리가 알지 못할 때, 상황이 불확실할 때 우리는 종종 두려움을 느끼고 경직된다.",
+        "그래서 우리가 항상 막대한 불확실성과 실제로 살아가고 있음에도 불구하고, 우리는 상황이 실제로 그것들이 그러한 것보다 더 예측 가능하다고 가장한다.",
+        "우리는 상황이 어떻게 되어야 하고 어떻게 결과로 나타나야 하는지에 대한 우리의 계획과 생각들에 매우 절박하게 매달린다.",
+        "그리고 계획을 가지는 것에는 아무런 잘못도 없다.",
+        "나는 그것이 아주 아름다운 것이라고 생각한다.",
+        "그러나 계획을 세우는 것과, 세운 모든 계획이 열매를 맺어야 한다고 믿는 것 사이에는 차이가 있다.",
+        "미국의 대통령 Eisenhower는 한때 ‘계획은 쓸모없지만, 계획하는 것은 모든 것이다.’라고 말했다.",
+        "우리가 모두 우리의 달력과 플래너에 잉크 대신 연필로 글을 쓴다고 상상해 보라.",
+        "비유적으로 그리고 문자 그대로 둘 다.",
+        "우리는 우리가 적어 놓는 것, 우리가 생각하기에 일어날 것은 실제로 일어나는 것이 아닐 수도 있다는 점을 염두에 둘 수 있는지를 상상해 보라.",
+        "그리고 그것에 대해 괜찮아지도록 우리가 최선을 다할 수 있는지."
+      ]
+    }
+  ]
+}

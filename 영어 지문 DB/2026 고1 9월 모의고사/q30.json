@@ -1,0 +1,40 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 30,
+  "part": 30,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q30-001",
+      "title": "적절한 단락 길이의 중요성 (The Importance of Keeping Paragraphs Short and Balanced)",
+      "text": [
+        "Keep your paragraphs short.",
+        "Writing is visual ― it catches the eye before it has a chance to catch the brain.",
+        "Short paragraphs put air around what you write and make it look inviting, whereas a long chunk of type can discourage a reader from even starting to read.",
+        "Newspaper paragraphs should be only two or three sentences long; newspaper type is set in a narrow width, and the inches quickly add up.",
+        "You may think such frequent paragraphing will damage the development of your point.",
+        "Obviously The New Yorker is obsessed by this fear ― a reader can go for miles without relief.",
+        "Don’t worry; the gains far outweigh the hazards.",
+        "But don’t go too far.",
+        "A succession of tiny paragraphs is as annoying as a paragraph that’s too long.",
+        "I’m thinking of all those tiny paragraphs ― verbless wonders ― written by modern journalists trying to make their articles quick ‘n’ easy.",
+        "Actually they make the reader’s job harder by chopping up a natural train of thought."
+      ],
+      "koreanText": [
+        "단락을 짧게 유지하라.",
+        "글쓰기는 시각적인데 즉 그것이 뇌를 사로잡을 기회를 갖기 전에 눈을 사로잡는다.",
+        "짧은 단락은 당신이 쓴 것 주변에 여백을 넣어 그것을 매력적으로 보이게 하는 반면, 긴 활자 덩어리는 독자가 아예 읽기 시작하는 것조차 꺼리게 만들 수 있다.",
+        "신문 단락은 오직 두세 문장 길이여야 하는데, 신문의 활자는 좁은 폭으로 짜여 있고, 인치는 빠르게 늘어난다.",
+        "당신은 이러한 잦은 단락 나누기가 당신의 요지 전개에 해를 입힐 것이라고 생각할 수도 있다.",
+        "명백히 The New Yorker는 이 두려움에 사로잡혀 있는데, 독자는 쉼 없이 수 마일을 갈 수 있다.",
+        "걱정하지 마라. 얻는 이점이 위험성을 훨씬 능가한다.",
+        "하지만 너무 지나치지는 말라.",
+        "아주 작은 단락의 연속은 너무 긴 단락만큼이나 짜증스럽다.",
+        "나는 기사를 빠르‘고’ 쉽게 만들려고 애쓰는 현대의 기자들에 의해 쓰여진 그 모든 아주 작은 단락들, 즉 동사가 없는 경이로운 것들을 떠올리고 있다.",
+        "사실 그것들은 자연스러운 생각의 맥락을 잘라내버림으로써 독자의 일을 더 어렵게 만든다."
+      ]
+    }
+  ]
+}

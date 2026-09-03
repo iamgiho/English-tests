@@ -1,0 +1,801 @@
+1
+to whom it may concern
+관계자분께, 담당자 앞
+2
+promotional
+홍보의, 판촉의
+3
+brochure
+안내 책자, 브로셔
+4
+overall
+전반적인, 종합적인
+5
+review
+검토하다, 재고하다
+6
+suit
+부합하다, 알맞다
+7
+intend to
+~할 작정이다, 의도하다
+8
+proceed
+진행하다, 나아가다
+9
+budget
+예산
+10
+assistance
+도움, 지원
+11
+look forward to
+~을 고대하다, 기대하다
+12
+with a long face
+시무룩한 얼굴로, 우울한 표정으로
+13
+sink into
+~에 털썩 주저앉다, 빠져들다
+14
+make it
+해내다, 성공하다
+15
+flawless
+흠잡을 데 없는, 완벽한
+16
+hold back
+(감정·눈물 등을) 억누르다, 참다
+17
+cheer
+환호하다, 응원하다
+18
+play a joke on
+~에게 장난을 치다
+19
+delighted
+아주 기뻐하는
+20
+indifferent
+무관심한, 냉담한
+21
+thrilled
+아주 신난, 전율을 느끼는
+22
+embarrassed
+당황스러운, 어색한
+23
+may well
+~하는 것도 당연하다
+24
+nearest and dearest
+가장 가까운 사람들
+25
+look to
+~에 의지하다, ~을 기대하다
+26
+benefit
+유익, 이익, 혜택
+27
+feedback
+피드백, 조언
+28
+critical
+비판적인, 중대한
+29
+insight
+통찰력
+30
+closeness
+친밀함, 가까움
+31
+fellow
+동료의, 동료
+32
+ideal
+이상적인
+33
+will do
+충분하다, 알맞다
+34
+admire
+높이 평가하다, 존경하다
+35
+flexible
+유연한, 융통성 있는
+36
+circulate
+배포하다, 순환시키다
+37
+linear
+선형의, 직선적인
+38
+priority
+우선순위, 우선 사항
+39
+craft
+공들여 만들다, 정교하게 작성하다
+40
+not necessarily
+반드시 ~인 것은 아닌
+41
+branch off
+(갈래로) 갈라져 나가다
+42
+sprout
+싹이 트다, 생겨나다
+43
+timely
+시의적절한, 때맞춘
+44
+capitalize on
+~을 활용하다, 기회로 삼다
+45
+interruption
+중단, 방해
+46
+shift
+변화, 전환; 이동하다
+47
+fluid
+유동적인, 가변적인
+48
+modification
+수정, 변형
+49
+constantly
+끊임없이, 지속적으로
+50
+ingest
+(음식·정보 등을) 섭취하다, 삼키다
+51
+submit
+제출하다, 굴복하다
+52
+overload
+과부하를 걸다, 과적하다
+53
+digest
+소화하다, 완전히 이해하다
+54
+virtual
+가상의, 사실상의
+55
+divert
+(방향·주의를) 전환하다, 딴 데로 돌리다
+56
+half-hearted
+성의 없는, 마음이 내키지 않는
+57
+shorthand
+약칭의, 간략한, 속기의
+58
+hurriedly
+서둘러, 급히
+59
+clarify
+명확하게 하다, 분명히 밝히다
+60
+nervous indigestion
+신경성 소화불량
+61
+in and of itself
+그것 자체로, 본질적으로
+62
+drive
+몰아가다, 추진하다
+63
+in particular
+특히, 특별히
+64
+satisfaction
+만족(감)
+65
+measureless
+박자[규칙]가 없는, 헤아릴 수 없는
+66
+prelude
+전주곡, 서곡
+67
+ambiguity
+모호함, 다의성
+68
+release
+(긴장 등을) 해소하다, 풀어주다
+69
+subsequent
+그 다음의, 뒤이은
+70
+in turn
+결국, 이에 따라, 차례로
+71
+unambiguous
+모호하지 않은, 분명한
+72
+modulation
+(음악) 전조, 조바꿈, 조절
+73
+piece
+(음악·미술 등의) 작품, 곡
+74
+progressive
+진보적인
+75
+curriculum
+교육 과정
+76
+literacy
+문해력, 활용 능력
+77
+deliberately
+의도적으로, 계획적으로
+78
+distract
+주의를 딴 데로 돌리다, 산만하게 하다
+79
+provoke
+자극하다, 유발하다
+80
+credibility
+신뢰성
+81
+clickbait
+낚시성 콘텐츠
+82
+fragmentation
+파편화, 분열
+83
+unpack
+분석하다, 밝히다
+84
+infinite
+무한한
+85
+notification
+알림, 통지
+86
+be rooted in
+~에 기인하다, 뿌리를 두다
+87
+profit motive
+이윤 추구 동기
+88
+passive
+수동적인
+89
+intended
+의도된, 계획된
+90
+manipulation
+교묘한 조작, 다루기
+91
+capitalism
+자본주의
+92
+reproduce
+재생산하다, 복제하다
+93
+nexus
+결합, 연결, 관계
+94
+wage
+임금, 급료
+95
+roll back
+되돌리다, 축소하다
+96
+inequality
+불평등
+97
+crisis
+위기 (복수형 crises)
+98
+populist
+대중영합주의의, 포퓰리스트의
+99
+protest
+항의, 시위
+100
+dignity
+존엄성, 위엄
+101
+burn through
+~을 다 써버리다, 탕진하다
+102
+abundantly
+풍부하게
+103
+frontier
+국경, 미개척 영역
+104
+seize
+붙잡다, 장악하다, 압수하다
+105
+forcefully
+강제로, 강력하게
+106
+eco-friendly
+친환경적인
+107
+deed
+행위, 행동
+108
+moral licensing
+도덕적 허가 효과
+109
+in the context of
+~의 맥락[상황]에서
+110
+compensate for
+~을 보상하다, 벌충하다
+111
+restore
+회복하다, 복원하다
+112
+reluctant
+꺼리는, 주저하는
+113
+quick-fix
+임시변통, 즉각적인 해결책
+114
+re-establish
+재확립하다, 다시 수립하다
+115
+inconsistency
+불일치, 모순
+116
+burdening
+부담을 지우는, 해가 되는
+117
+petition
+청원(서), 탄원
+118
+address
+(문제 등을) 다루다, 처리하다
+119
+on the move
+이동하는, 바쁘게 돌아다니는
+120
+phase shift
+상전이, 단계 변화
+121
+transition
+이행하다, 전환하다
+122
+solid
+고체(의), 단단한
+123
+liquid
+액체(의)
+124
+molecule
+분자
+125
+loosen
+느슨해지다, 풀다
+126
+particle
+입자, 미립자
+127
+in flux
+끊임없이 변화하는, 유동적인
+128
+stability
+안정(성)
+129
+permanently
+영구적으로, 영원히
+130
+nomad
+유목민
+131
+multiple
+다수의, 다양한
+132
+migratory
+이주하는, 이동성의
+133
+diverse
+다양한
+134
+demographic
+인구 집단, 인구 통계의
+135
+settle
+정착하다, 해결하다
+136
+cognitive
+인지의, 인식의
+137
+fundamental
+근본적인, 기초적인
+138
+in case of
+~의 경우에, ~에 대비하여
+139
+admission
+입학 (허가), 입장
+140
+end up -ing
+결국 ~하게 되다
+141
+problematic
+문제가 있는
+142
+for one thing
+우선 한 가지 이유는
+143
+resident
+거주자, 주민
+144
+niche
+꼭 맞는 자리, 적소
+145
+lack
+결핍되다, 부족하다
+146
+membership
+소속(감), 회원 자격
+147
+distinguish from
+~와 구별하다
+148
+majority
+대다수, 다수
+149
+luxury
+사치(품), 호화로움
+150
+grieve
+몹시 슬퍼하다, 애도하다
+151
+collective
+집단적인, 공동의
+152
+consciousness
+의식, 자각
+153
+vulnerability
+취약성, 상처받기 쉬움
+154
+mortality
+필멸(의 운명), 죽음을 면할 수 없음
+155
+honour
+(가치를) 존중하다, 예우하다
+156
+diminishment
+감소, 약화
+157
+absence
+부재, 결석
+158
+devotion
+헌신, 전념
+159
+compassion
+연민, 동정(심)
+160
+commitment
+전념, 헌신, 약속
+161
+clear the way
+길을 열어주다, 장애물을 치우다
+162
+in time
+시간이 흐르면서, 제때에
+163
+underestimate
+과소평가하다
+164
+hardship
+고난, 역경
+165
+obvious
+명백한, 눈에 띄는
+166
+subtle
+미묘한, 알아채기 힘든
+167
+revolutionize
+대변혁을 일으키다, 혁신하다
+168
+the better part of
+~의 대부분
+169
+fix
+(식사 등을) 마련하다, 고치다
+170
+liberate
+해방시키다, 자유롭게 만들다
+171
+implication
+영향, 결과, 함축된 의미
+172
+overlook
+간과하다, 못 본 체하다
+173
+occasion
+특별한 행사, 때, 경우
+174
+anticipate
+예상하다, 예측하다
+175
+foresee
+예견하다, 내다보다
+176
+solely
+오로지, 단지
+177
+consequence
+결과, 중요성
+178
+accumulate
+축적되다, 쌓이다
+179
+apparent
+명백한, 겉보기의
+180
+digital twin
+디지털 트윈
+181
+replica
+복제본
+182
+asset
+자산, 유산
+183
+representation
+표현, 묘사
+184
+rendering
+렌더링, 표현물
+185
+simulation
+모의실험, 시뮬레이션
+186
+availability
+이용 가능성, 유효성
+187
+enable
+가능하게 하다
+188
+accurate
+정확한, 정밀한
+189
+property
+특성, 속성, 재산
+190
+capture
+포착하다, 담아내다
+191
+strictly
+엄격하게, 순전히
+192
+downtime
+가동 중단 시간
+193
+costly
+많은 비용이 드는, 손실이 큰
+194
+surroundings
+환경, 주변 (환경)
+195
+suitable for
+~에 적합한, 알맞다
+196
+forage
+먹이를 찾아다니다; 사료
+197
+shelter
+은신처, 피난처
+198
+predator
+포식자
+199
+determinant
+결정 요인
+200
+reproductive
+번식의, 생식의
+201
+offspring
+자손, 새끼
+202
+establish
+확립하다, 구축하다
+203
+territory
+(동물의) 세력권, 텃세권
+204
+preferentially
+우선적으로, 선호하여
+205
+nourishment
+영양분, 음식물
+206
+pickings
+수확물, 쉽게 얻는 것
+207
+remarkable
+놀라운, 주목할 만한
+208
+seek out
+~을 찾아내다, 추구하다
+209
+necessities of life
+생존 필수 요건, 생필품
+210
+setting
+환경, 배경, 설정
+211
+manifestation
+표명, 나타남
+212
+acquisition
+습득, 획득
+213
+per se
+그 자체로
+214
+competent
+유능한, 적임의
+215
+situational
+상황에 따른, 상황적인
+216
+individualism
+개인주의
+217
+equivalent
+상응하는 것; 동등한
+218
+refer to
+~을 가리키다, 언급하다
+219
+attribute
+속성, 특성
+220
+relative to
+~와 관련하여, ~에 비하여
+221
+assumption
+가정, 전제
+222
+interdependence
+상호의존(성)
+223
+implicit
+암묵적인, 내포된
+224
+explicit
+명시적인, 노골적인
+225
+categorical
+단정적인, 절대적인
+226
+crowding
+혼잡감, 붐빔
+227
+make a distinction
+구별하다, 차이를 두다
+228
+density
+밀도, 농도
+229
+sensory
+감각의
+230
+neutral
+중립적인
+231
+invariably
+변함없이, 언제나
+232
+intensify
+강화되다, 심해지다
+233
+dread
+몹시 두려워하다
+234
+accentuate
+두드러지게 하다, 강조하다
+235
+dominant
+지배적인, 우세한
+236
+aggressive
+공격적인, 적극적인
+237
+violent
+폭력적인, 격렬한
+238
+conversely
+반대로, 역으로
+239
+pedestrian
+보행자; 보행자의
+240
+urban
+도시의
+241
+defuse
+완화하다, 진정시키다
+242
+be faced with
+~에 직면하다
+243
+exclusion
+배제, 소외
+244
+adapt to
+~에 적응하다, 맞추다
+245
+precaution
+예방 조치, 경계
+246
+organizational
+조직의, 단체의
+247
+threaten
+위협하다
+248
+belonging
+소속감
+249
+self-respect
+자존심, 자긍심
+250
+likelihood
+가능성, 확률
+251
+grow away from
+~와 소원해지다, 멀어지다
+252
+contribution
+기여, 공헌
+253
+retain
+유지하다, 보유하다
+254
+perpetuate
+영속시키다, 지속시키다
+255
+accordingly
+그에 따라, 상응하여
+256
+donate
+기부하다, 기증하다
+257
+earnings
+소득, 수입
+258
+take pains to
+애를 쓰다, 공을 들이다
+259
+appearance
+외양, 겉모습, 체면
+260
+generous
+관대한, 아낌없는
+261
+for its own sake
+그 자체를 위하여
+262
+virtue
+미덕, 선행
+263
+observant
+관찰력 있는, 준수하는
+264
+ignorant
+무지한, 알지 못하는
+265
+suspend
+일시 중단하다, 유예하다
+266
+tolerant
+관대한, 너그러운
+267
+activate
+활성화하다, 작동시키다

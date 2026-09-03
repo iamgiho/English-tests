@@ -1,0 +1,32 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 38,
+  "part": 38,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q38-001",
+      "title": "밀도와 혼잡성의 차이: 기존 기분과 행동의 강화 (Density vs. Crowding: Intensifying Moods and Behaviors)",
+      "text": [
+        "Environmental psychologists make a distinction between the physical measurement of density (how many people are in a particular space) and crowding (the psychological feeling of not having enough space).",
+        "Usually, high density is needed for the phenomenon of crowding, which makes people experience sensory overload, a lack of control, and rising stress and anxiety.",
+        "However, some psychologists see crowding as neutral rather than invariably negative, and believe that people’s moods and behaviors intensify as density increases.",
+        "So if an individual is looking forward to a concert, say, the feeling of crowding enhances their enjoyment of the performance.",
+        "But if they are dreading an event, crowding will make the person’s experience of it even worse.",
+        "Put into a community setting, crowding may accentuate the dominant behavior ― an aggressive group may turn violent as density rises.",
+        "Conversely, creating positive social spaces such as parks and pedestrian areas in high-density urban environments may help to lift the general mood and defuse tension."
+      ],
+      "koreanText": [
+        "환경심리학자들은 밀도(특정 장소에 얼마나 많은 사람들이 있는가)의 물리적 측정과 혼잡성(공간이 충분치 않다는 심리적 감정)을 구분한다.",
+        "대개 높은 밀도는 혼잡 현상이 요구되고, 이는 사람들이 감각적 과부하, 통제 결여와 증가하는 스트레스와 불안을 경험하게 한다.",
+        "하지만 몇몇 심리학자들은 혼잡성을 변함없이 부정적인 것으로 보기보다 중립적으로 보고, 밀도가 올라감에 따라 사람들의 기분과 행동도 강화된다는 것을 믿는다.",
+        "그래서, 예를 들어, 한 개인이 콘서트를 기대하고 있다면, 혼잡성의 느낌은 공연의 즐거움을 높인다.",
+        "그러나 만약 그들이 행사를 두려워하고 있다면, 혼잡성은 개인의 그것을 겪는 경험을 훨씬 더 나쁘게 만들 것이다.",
+        "공동체 환경에 넣어보면, 혼잡성은 지배적 행동을 두드러지게 하는데, 공격적인 집단이 밀도가 올라감에 따라 폭력적으로 될 수 있다.",
+        "반대로 높은 밀도의 도시 환경에 있는 공원이나 보행 구역과 같은 긍정적인 사회적 공간은 전체적인 기분을 올리고 긴장감을 완화하는 것을 도울 수 있다."
+      ]
+    }
+  ]
+}

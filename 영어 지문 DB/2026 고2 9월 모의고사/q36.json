@@ -1,0 +1,28 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 36,
+  "part": 36,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q36-001",
+      "title": "동물의 서식지 선택 능력과 미래 양육 필요에 대한 예측 (Habitat Selection in Animals: Anticipating Future Needs)",
+      "text": [
+        "The ability to select a set of surroundings suitable for foraging, shelter from predators, and the availability of mates is one of the most important determinants of biological success ― measured as survival to reproductive age and the production of offspring.",
+        "Many studies have shown that not only do animals have a remarkable ability to seek out the best available locations for the necessities of life, but that they are able to anticipate how a setting will serve their future needs.",
+        "For example, the black-throated green warbler, a small songbird that nests in spruce forests of eastern North America, establishes territories preferentially among the red spruce trees early in the summer months, even though these trees offer less food than the neighboring white spruce trees.",
+        "Later, though, when nests are built and hungry baby birds need nourishment, it is the red spruce forest that offers the easier pickings.",
+        "Somehow, the warbler has been guided to settle in locations that will suit its future parenting needs better than its present ones."
+      ],
+      "koreanText": [
+        "먹이 찾아다니기, 천적으로부터의 은신처 그리고 짝을 만날 가능성에 적합한 일련의 환경을 선택하는 능력은 번식 연령까지의 생존과 새끼를 낳는 것으로 측정되는 생물학적 성공의 가장 중요한 결정 요소 중 하나이다.",
+        "많은 연구는 동물이 삶의 필수 요소들을 찾기 위해 이용 가능한 최적의 장소를 찾아내는 놀라운 능력을 갖추고 있을 뿐만 아니라, 환경이 자신들의 미래의 필요를 어떻게 충족시킬지 예측할 수 있다는 것을 보여 주어 왔다.",
+        "예를 들어, 북미 동부의 가문비나무 숲에 둥지를 트는 작은 명금류인 검은가슴푸른솔새는 붉은 가문비나무들이 인접한 흰 가문비나무보다 먹이를 적게 제공함에도, 이른 여름 몇 달 동안에 우선적으로 붉은 가문비나무 사이에 활동 영역을 형성한다.",
+        "그러나 나중에 둥지가 지어지고 배고픈 어린 새들이 먹이가 필요할 때, 더 쉽게 채집물을 제공하는 곳은 바로 붉은 가문비나무 숲이다.",
+        "어떻게든, 그 솔새는 현재의 필요보다 미래의 양육 필요에 더 적합할 장소에 자리를 잡도록 유도되었다."
+      ]
+    }
+  ]
+}

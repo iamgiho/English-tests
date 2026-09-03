@@ -1,0 +1,38 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 40,
+  "part": 40,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q40-001",
+      "title": "진화적 관점에서의 자아존중감: 사회적 관계의 감시 기제 (Self-Esteem as a Social Monitoring Mechanism)",
+      "text": [
+        "From an evolutionary perspective, self-esteem has developed as a monitoring mechanism for the quality of our relationships.",
+        "The system monitors other people’s reactions to our behaviors and sends an alarm that alerts us to any possible changes in our inclusion status.",
+        "The monitoring system generally operates nonconsciously until it detects that our relational value is falling or low.",
+        "When the alarm bell rings, the threat to our social bonds is pushed into conscious awareness and we evaluate the situation.",
+        "Am I being accepted or am I being pushed out?",
+        "Do I need to adjust my behaviors to fix the relationship?",
+        "With such a high value for survival closely tied with relationships, it makes sense that the way we mobilize our internal resources around relationships would be highly networked in our brain and body.",
+        "It also makes sense that we would develop specific mechanisms to attend to minimizing rejection and enhancing acceptance.",
+        "The continuous scanning is normal, a part of being human.",
+        "We all have an interpersonal process of searching for cues from the environment to assess our value in the social structure."
+      ],
+      "koreanText": [
+        "진화적 관점에서, 자아존중감은 우리 관계의 질을 위한 감시 기제로서 발달해 왔다.",
+        "이 시스템은 우리의 행동에 대한 다른 사람들의 반응을 감시하고, 우리의 포함 상태에서의 어떠한 가능한 변화에 대해 우리를 경계시키는 경보를 보낸다.",
+        "이 감시 시스템은 그것이 우리의 관계적 가치가 떨어지거나 낮다는 것을 탐지할 때까지 보통 무의식적으로 작동한다.",
+        "경보가 울릴 때, 우리의 사회적 유대에 대한 위협이 의식적 인식으로 밀려 들어오고 우리는 그 상황을 평가한다.",
+        "‘내가 수용되고 있는가, 아니면 밀려나고 있는가?’",
+        "‘나는 관계를 바로잡기 위해 내 행동을 조정할 필요가 있는가?’",
+        "관계와 밀접하게 연결된 생존을 위한 그러한 높은 가치와 함께, 우리가 관계를 중심으로 내부 자원을 동원하는 방식이 우리의 뇌와 신체 내에서 고도로 연결되어있다는 것은 타당하다.",
+        "우리가 거절을 최소화하고 수용을 높이는 것에 주의를 기울이기 위한 특정한 기제들을 발달시켰다는 점 또한 타당하다.",
+        "지속적인 점검은 정상적이며, 인간다움의 한 부분이다.",
+        "우리 모두는 사회적 구조 내에서 우리의 가치를 평가하기 위해 환경에서 단서를 찾는 대인관계적 과정을 가지고 있다."
+      ]
+    }
+  ]
+}

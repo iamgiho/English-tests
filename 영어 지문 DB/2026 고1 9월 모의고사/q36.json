@@ -1,0 +1,38 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 36,
+  "part": 36,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q36-001",
+      "title": "수학의 본질: 숫자가 아닌 패턴과 논리 (Mathematics as Patterns and Logic: The Sudoku Example)",
+      "text": [
+        "The central concerns of mathematics are not numbers, but patterns, structures, symmetries and connections.",
+        "Take, for example, the Sudoku puzzles that appear daily in newspapers.",
+        "The objective is to complete a 9 × 9 grid, starting from a few given numbers or clues, while ensuring that each row, each column and each 3 × 3 block contains all the digits from 1 to 9 once and only once.",
+        "But the numerical values of the digits are irrelevant; what is important is that there are nine distinct symbols.",
+        "They could be nine letters or nine shapes.",
+        "It’s the pattern that matters.",
+        "One Irish daily paper publishes these puzzles with the statement ‘There’s no maths involved, simply use reasoning and logic!’",
+        "It seems that even the idea that something might be spoiled by mathematics is enough to scare off potential solvers!",
+        "Could you imagine the promotion of an exhibition in the National Gallery with the slogan ‘No art involved, just painting and sculpture’ ?",
+        "If you can do Sudoku, you can do maths!"
+      ],
+      "koreanText": [
+        "수학의 주요 관심사는 숫자가 아니라, 패턴, 구조, 대칭 그리고 연결이다.",
+        "신문에 매일 실리는 스도쿠 퍼즐을 예로 들어보자.",
+        "그 목표는 각 행, 각 열, 그리고 각 3×3 블록이 1부터 9까지의 모든 숫자를 한 번씩 그리고 오직 한 번만 포함하는 것을 확실하게 하면서, 몇 개의 주어진 숫자나 단서로부터 시작하여 9×9 격자를 완성하는 것이다.",
+        "그러나 숫자의 수치적인 값은 관련이 없다. 중요한 것은 아홉 개의 별개의 기호가 있다는 것이다.",
+        "그것들은 아홉 개의 글자 또는 아홉 개의 모양일 수도 있다.",
+        "중요한 것은 패턴이다.",
+        "한 아일랜드 일간지는 ‘수학과 관련이 없습니다. 단지 추론과 논리를 사용하세요!’라는 말과 함께 이러한 퍼즐을 게재했다.",
+        "수학에 의해서 더럽혀질지도 모른다는 ‘생각’만으로도 잠재적인 풀이자들을 겁주어 쫓아 버리기에 충분한 것처럼 보인다!",
+        "당신은 ‘예술과 관련이 없습니다. 단지 그림과 조각 뿐’이라는 슬로건을 가진 국립 미술관의 전시회 홍보를 상상할 수 있겠는가?",
+        "만약 당신이 스도쿠를 할 수 있다면, 당신은 수학을 할 수 있다!"
+      ]
+    }
+  ]
+}

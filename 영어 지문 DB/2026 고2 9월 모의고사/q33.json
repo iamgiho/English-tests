@@ -1,0 +1,34 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 33,
+  "part": 33,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q33-001",
+      "title": "상실에 대한 애도의 역동성과 치유적 힘 (The Transformative Power of Grieving Our Losses)",
+      "text": [
+        "Psychological theories across the field agree on the importance of grieving our losses, from the highly personal through to the broadly collective.",
+        "Grief is a dynamic emotional process essential to consciousness.",
+        "At a psychological level, it supports us to both face into our own and others’ vulnerability, transience and mortality, and to repair life energy after significant loss.",
+        "Grief work honours the loss, the sadness and the experience of diminishment or absence, while also setting up the ground for self-transformation and the continuation of life.",
+        "Psychotherapist Fran Weller describes grief work as “an act of devotion, rooted in love and compassion” that requires “an ongoing practice of deepening, attending and listening.”",
+        "When we grieve for what is lost, it clears the way towards a strengthening of love and commitment for what remains.",
+        "In time this may build a desire to make good from the loss by repairing as many damages as we can and/or compensating for them.",
+        "Grief can make us both very sad and very motivated to act."
+      ],
+      "koreanText": [
+        "심리학 분야 전반에서 심리학 이론들은 매우 개인적인 것부터 명백히 집단적인 것에 이르기까지, 우리의 상실을 애도하는 것의 중요성에 동의한다.",
+        "애도는 의식에 필수적인 역동적인 정서적 과정이다.",
+        "심리적 수준에서, 그것은 우리 자신과 타인의 연약함, 덧없음, 그리고 죽음을 직시하는 것도, 중대한 상실 이후의 삶의 에너지를 회복하는 것도 지원한다.",
+        "애도 작업(Grief work)은 상실, 슬픔, 그리고 위축이나 부재의 경험을 존중하고, 한편으로는 자기 변신과 삶의 지속을 위한 기반을 마련하기도 한다.",
+        "심리치료사 Fran Weller는 애도 작업을 ‘심화, 주의 기울이기와 경청의 지속적인 실천’을 요구하는 ‘사랑과 연민에 뿌리를 둔 헌신적인 행위’라고 묘사한다.",
+        "우리가 잃어버린 것에 대해 애도할 때, 그것은 남아 있는 것에 대한 사랑과 헌신을 강화하는 길을 열어 준다.",
+        "시간이 지나면 이것은 우리가 할 수 있는 한 많은 피해들을 고치고/고치거나 그것들을 보상함으로써 상실로부터 이로움을 만들어내려는 욕구를 형성할 수도 있다.",
+        "애도는 우리를 매우 슬프게 만드는 동시에 행동하도록 강하게 동기를 부여할 수 있다."
+      ]
+    }
+  ]
+}

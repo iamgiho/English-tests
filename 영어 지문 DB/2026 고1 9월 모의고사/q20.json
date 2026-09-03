@@ -1,0 +1,38 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 20,
+  "part": 20,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q20-001",
+      "title": "학습 게임의 본질: 오락이 아닌 참여와 상호작용 (Focus on Engagement in Learning Games)",
+      "text": [
+        "Learning games need to be what we call ‘fun enough.’",
+        "Many new learning game developers try to design an entertaining game.",
+        "Unfortunately, that often makes learning harder rather than easier.",
+        "Remember, you are not creating the next great commercial game to entertain your learners; you are creating a learning game in which success will be measured by the achievement of learning outcomes.",
+        "Resist the temptation to create a ton of rules, pile on different game elements, and incorporate multiple dynamics to keep player interest high.",
+        "Yes, the game should be engaging with a mild level of fun, but learning should be the goal.",
+        "Focus on engagement rather than entertainment.",
+        "The goals of the game play should be interactivity and engagement.",
+        "Research shows that what makes games instructional is the level of interactivity and engagement the learners have with the content.",
+        "Given those parameters, making sure the learners are engaged and active is far more important than making sure they are entertained."
+      ],
+      "koreanText": [
+        "학습 게임은 우리가 ‘필요한 만큼 재미있는’이라 부르는 것이 될 필요가 있다.",
+        "많은 새로운 학습 게임 개발자는 재미있는 게임을 설계하려고 한다.",
+        "불행히도 그것은 종종 학습을 더 쉽게 라기보다는 오히려 더 어렵게 만든다.",
+        "당신은 당신의 학습자를 즐겁게 하기 위한 그 다음의 훌륭한 상업용 게임을 만들고 있는 것이 아니라는 것을 기억하라. 당신은 성공이 학습 성과의 달성에 의해 측정될 학습 게임을 만들고 있다.",
+        "플레이어의 흥미를 높이기 위해 수많은 규칙을 만들고, 다른 게임 요소들을 쌓아 올리고, 다양한 역학을 포함하려는 유혹을 억제하라.",
+        "그렇다, 게임은 가벼운 수준의 재미를 가지고 참여를 이끌어야 하지만, 학습이 목표가 되어야 한다.",
+        "오락이 아니라 참여에 집중하라.",
+        "게임 플레이의 목표는 상호작용성과 참여여야 한다.",
+        "연구는 게임을 교육적으로 만드는 것은 학습자가 콘텐츠와 갖는 상호작용성과 참여의 수준임을 보여준다.",
+        "그러한 요인을 고려할 때, 그들이 즐거워하는 것을 보장하는 것보다 학습자가 참여하고 능동적인지를 보장하는 것이 훨씬 더 중요하다."
+      ]
+    }
+  ]
+}

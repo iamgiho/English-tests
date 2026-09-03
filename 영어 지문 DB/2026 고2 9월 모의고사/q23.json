@@ -1,0 +1,34 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 23,
+  "part": 23,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q23-001",
+      "title": "음악에서 긴장감 조성과 해소의 역할 (Creating and Resolving Tension in Music)",
+      "text": [
+        "Music can bring us into a very comfortable rhythm, and it can be satisfying in and of itself.",
+        "Most of the time, however, we want something more to happen.",
+        "There needs to be a process that creates tension and drives the movement towards something in particular.",
+        "The excitement that arises in this process creates satisfaction and pleasure.",
+        "This is seen in the measureless prelude as well.",
+        "But there the tension might be caused by the ambiguity of the rhythm.",
+        "Therefore, the fluid movement in the prelude usually creates a tension that can be released in the subsequent movement with a set rhythm.",
+        "This, in turn, creates new and other types of tensions, where the rhythm is unambiguous and predictable, but where unexpected chords and modulations create drama and an experience of development in the piece."
+      ],
+      "koreanText": [
+        "음악은 우리를 매우 편안한 리듬 속으로 이끌 수 있으며, 그 자체로 만족감을 줄 수 있다.",
+        "하지만 대부분의 경우, 우리는 그 이상의 무언가가 일어나기를 원한다.",
+        "긴장감을 조성하고 특정한 무언가를 향해 악장을 몰아가는 과정이 필요하다.",
+        "이 과정에서 발생하는 흥분은 만족감과 즐거움을 만들어 낸다.",
+        "이것은 마디가 없는 전주곡에도 보인다.",
+        "하지만 그곳에서 긴장감은 리듬의 모호함에 의해 발생할 수 있다.",
+        "따라서 전주곡에서의 유동적인 움직임은 보통 정해진 리듬이 있는 후속 악장에서 해소될 수 있는 긴장감을 형성한다.",
+        "이것은 다음에는 새롭고 다른 종류의 긴장감을 만들어 내는데, 그곳에서는 리듬이 모호하지 않고 예측 가능하지만, 예상치 못한 화음과 전조가 드라마를 형성하고 곡의 전개라는 경험을 만들어 낸다."
+      ]
+    }
+  ]
+}

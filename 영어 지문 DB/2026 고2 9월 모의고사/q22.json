@@ -1,0 +1,40 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 22,
+  "part": 22,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q22-001",
+      "title": "식사 중 멀티태스킹의 위험성과 온전한 식사의 중요성 (Mindful Eating: Why You Shouldn't Multitask While Eating)",
+      "text": [
+        "When we are ‘always on’ we are constantly ingesting content ― reading alerts and texts, liking, checking emails, downloading, uploading, upgrading, updating, deleting, submitting responses, and posting.",
+        "If we do it while we are eating, our multitasking is overloading us.",
+        "As our will attempts to digest the virtual content its forces are diverted from the physical content, our food.",
+        "It’s easy to eat a sandwich in a minute while talking on the phone.",
+        "Some people are skilled at doing both at the same time.",
+        "Others write a half-hearted, shorthand text while they hurriedly eat their sandwich at the same time.",
+        "The result can be a misunderstood text with the need for further clarifying texts and the beginnings of nervous indigestion.",
+        "Eat your sandwich.",
+        "Taste it.",
+        "Let it go down.",
+        "Then text."
+      ],
+      "koreanText": [
+        "우리가 ‘항상 접속되어’ 있을 때 우리는 알림과 문자 읽기, ‘좋아요’ 누르기, 이메일 확인하기, 다운로드하기, 업로드하기, 업그레이드하기, 업데이트하기, 삭제하기, 답변 제출하기, 그리고 게시물 올리기와 같이 끊임없이 콘텐츠를 섭취한다.",
+        "만약 우리가 음식을 먹는 동안 그것을 한다면, 우리의 멀티태스킹은 우리에게 과부하를 주고 있다.",
+        "우리의 의지가 가상 콘텐츠를 소화하려고 시도함에 따라, 그것의 힘은 물리적 내용물인 우리의 음식으로부터 분산된다.",
+        "전화 통화를 하는 동안 1분 내로 샌드위치를 먹는 것은 쉬운 일이다.",
+        "어떤 사람들은 동시에 두 가지를 하는 데 능숙하다.",
+        "다른 사람들은 샌드위치를 급하게 먹는 동시에 성의 없고 짧게 줄인 문자를 쓴다.",
+        "그 결과는 더욱 명백히 설명하는 문자가 필요한 오해 섞인 메시지와 신경성 소화 불량의 시작일 수 있다.",
+        "샌드위치를 먹어라.",
+        "맛을 느껴라.",
+        "그것을 내려가게 하라.",
+        "그러고 나서 문자를 보내라."
+      ]
+    }
+  ]
+}

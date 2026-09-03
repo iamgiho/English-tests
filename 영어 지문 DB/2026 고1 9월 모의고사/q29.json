@@ -1,0 +1,38 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 9월 모의고사",
+  "question": 29,
+  "part": 29,
+  "passages": [
+    {
+      "id": "mock-h1-2026-09-q29-001",
+      "title": "유산소 호흡과 무산소 호흡이 운동에 미치는 영향 (Aerobic vs. Anaerobic Respiration in Athletic Performance)",
+      "text": [
+        "To understand how breathing affects athletic performance, we first need to understand how the body makes energy from air and food.",
+        "There are two options: with oxygen, a process known as aerobic respiration, and without it, which is called anaerobic respiration.",
+        "Anaerobic energy is generated only with glucose (a simple sugar), and it’s quicker and easier for our bodies to access.",
+        "It’s a kind of backup system and turbo boost when the body doesn’t have enough oxygen.",
+        "But anaerobic energy is inefficient and can be toxic, creating too much lactic acid.",
+        "The sickness, muscle weakness, and sweating you experience after you’ve pushed it too hard at the gym is the feeling of anaerobic overload.",
+        "This process explains why the first few minutes of an intense workout are often so miserable.",
+        "Our lungs and respiratory system haven’t caught up to supply the oxygen our bodies need, and so the body has to use anaerobic respiration.",
+        "This also explains why, after we’re warmed up, exercise feels easier.",
+        "The body has switched from anaerobic to aerobic respiration."
+      ],
+      "koreanText": [
+        "호흡이 운동 수행 능력에 어떻게 영향을 미치는지를 이해하기 위해서는, 우리는 먼저 신체가 공기와 음식으로부터 어떻게 에너지를 만들어 내는지를 이해할 필요가 있다.",
+        "두 가지 옵션이 있는데, 산소를 사용하는 것은 유산소 호흡이라고 알려진 과정이고, 산소 없이 이루어지는 것은 무산소 호흡이라고 불린다.",
+        "무산소 에너지는 오직 포도당(단순당)만으로 생성되며, 그것은 우리 몸이 이용하기에 더 빠르고 더 쉽다.",
+        "그것은 몸에 충분한 산소가 없을 때의 일종의 예비 시스템이자 터보 부스트이다.",
+        "그러나 무산소 에너지는 비효율적이고 독성을 띨 수도 있으며, 너무 많은 젖산을 만들어 낸다.",
+        "헬스장에서 자신을 지나치게 몰아붙인 뒤 경험하게 되는 메스꺼움, 근육 약화, 그리고 땀은 바로 무산소 과부하라는 느낌이다.",
+        "이 과정은 왜 고강도 운동의 처음 몇 분이 흔히 그렇게 힘든지를 설명해 준다.",
+        "우리의 폐와 호흡계는 아직 우리 몸이 필요로 하는 산소를 공급할 만큼 따라잡지 못했기 때문에, 몸은 무산소 호흡을 사용할 수밖에 없다.",
+        "이것은 또한 왜 우리가 몸이 충분히 풀린 뒤에는 운동이 더 쉽게 느껴지는지도 설명해 준다.",
+        "몸이 무산소에서 유산소 호흡으로 전환한 것이다."
+      ]
+    }
+  ]
+}

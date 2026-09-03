@@ -1,0 +1,32 @@
+{
+  "grade": "고2",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고2 9월 모의고사",
+  "question": 24,
+  "part": 24,
+  "passages": [
+    {
+      "id": "mock-h2-2026-09-q24-001",
+      "title": "주의력 문해력 교육과 디지털 조작 인식 (Teaching Attention Literacy: Becoming Critical Users)",
+      "text": [
+        "Progressive educators and librarians are developing curricula to teach what we might call attention literacy.",
+        "This means helping students recognize, for example, how the architecture of a social media feed or a news site is deliberately designed to distract or provoke them.",
+        "Classes in media literacy traditionally cover how to evaluate the credibility of sources ― now they also include recognizing clickbait, understanding the role of algorithms in what content is served up, and observing one’s own patterns of distraction.",
+        "A student might be tasked with tracking how many times they switch tasks or check their phone in an hour of homework, to raise self-awareness about fragmentation.",
+        "Another lesson might involve unpacking the design of popular apps: Why does an app use infinite scrolling instead of pages?",
+        "Why do notifications appear with specific colors and sounds?",
+        "By treating these as deliberate design choices (often rooted in psychology and profit motives), young people become more critical users rather than passive consumers."
+      ],
+      "koreanText": [
+        "진보적인 교육자들과 사서들은 우리가 주의력 문해력이라 부를 만한 것을 가르치기 위한 교육과정을 개발하고 있다.",
+        "예를 들어, 이것은 소셜 미디어 피드나 뉴스 사이트의 구조가 학생들을 산만하게 하거나 자극하도록 어떻게 의도적으로 설계되었는지 그들이 인식하도록 돕는 것을 의미한다.",
+        "미디어 문해력 수업은 전통적으로 어떻게 정보원의 신뢰성을 평가하는지 다루었지만, 이제는 클릭베이트(특정 링크를 클릭하도록 유도하는 수법)를 인식하고, 어떤 콘텐츠가 제공되는 것에 있어 알고리즘의 역할을 이해하며, 자신만의 주의 산만 패턴을 관찰하는 것도 포함한다.",
+        "학생은 프래그멘테이션(정보를 의도적으로 흩어놓거나 단계를 복잡하게 쪼개는 수법)에 대한 자기 인식을 높이기 위해, 숙제하는 한 시간에 얼마나 여러 번 작업을 전환하거나 전화기를 확인하는지 추적하는 과제를 받을 수도 있다.",
+        "또 다른 수업은 인기 앱들의 설계를 분석하는 것을 포함할 수 있다. 왜 앱은 페이지 대신 무한 스크롤을 사용할까?",
+        "왜 알림은 특정한 색상과 소리로 나타날까?",
+        "이러한 것들을 (흔히 심리학과 이윤 동기에 뿌리를 둔) 의도적인 디자인 선택으로 취급함으로써, 젊은이들은 수동적인 소비자가 아니라 더 비판적인 사용자가 된다."
+      ]
+    }
+  ]
+}
