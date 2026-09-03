@@ -2612,7 +2612,7 @@
 
       // 품사 표시는 답안에서 생략할 수 있습니다.
       const stripPartOfSpeech = (value) => value
-        .replace(/^(?:(?:n|v|a|adj|adv)\.\s*)+/i, "")
+        .replace(/^(?:(?:n|v|a|adj|adv|aux)\.\s*)+/i, "")
         .trim();
 
       // 세미콜론으로 나뉜 품사별 뜻은 각각 독립된 정답으로 인정합니다.
@@ -2670,9 +2670,16 @@
     }
 
     function wordPracticeCopyAnswer(answer) {
-      const value = String(answer || "").normalize("NFKC");
+      let value = String(answer || "").normalize("NFKC");
+      // 따라 쓰기에서는 괄호 안의 부연 설명도 생략합니다.
+      const bracketedContent = /\([^()]*\)|\[[^\[\]]*\]/g;
+      let previousValue;
+      do {
+        previousValue = value;
+        value = value.replace(bracketedContent, "");
+      } while (value !== previousValue);
       const withoutPartOfSpeech = value.replace(
-        /(^|[;,/\s])(?:n|v|a|adj|adv|prep|pron|conj|interj)\.\s*/gi,
+        /(^|[;,/\s])(?:n|v|a|adj|adv|aux|prep|pron|conj|interj)\.\s*/gi,
         "$1"
       );
       return withoutPartOfSpeech
