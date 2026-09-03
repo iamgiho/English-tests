@@ -2669,6 +2669,18 @@
       return false;
     }
 
+    function wordPracticeCopyAnswer(answer) {
+      const value = String(answer || "").normalize("NFKC");
+      const withoutPartOfSpeech = value.replace(
+        /(^|[;,/\s])(?:n|v|a|adj|adv|prep|pron|conj|interj)\.\s*/gi,
+        "$1"
+      );
+      return withoutPartOfSpeech
+        .replace(/[\p{P}\p{S}]+/gu, " ")
+        .replace(/\s+/g, " ")
+        .trim();
+    }
+
     function parseWordBook(text) {
       const lines = text.split(/\r?\n/).map((line) => line.trim()).filter(Boolean);
       const words = [];
@@ -2952,7 +2964,8 @@
       if (!session || !session.correction) return;
       const word = session.queue[session.index];
       const expected = session.stage.startsWith("meaning") ? word.ko : word.en;
-      setMessage($("#wordPracticeFeedback"), `정답은 “${expected}”입니다. 한 번 따라 쓰면 현재 사이클을 마친 뒤 다시 시험합니다.`, "bad");
+      const copyAnswer = wordPracticeCopyAnswer(expected) || expected;
+      setMessage($("#wordPracticeFeedback"), `정답은 “${copyAnswer}”입니다. 한 번 따라 쓰면 현재 사이클을 마친 뒤 다시 시험합니다.`, "bad");
       $("#wordPracticeAnswer").focus();
     }
 
@@ -2977,7 +2990,8 @@
       const isCorrect = answersMatch(value, expected);
 
       if (session.correction) {
-        if (!isCorrect) return setMessage($("#wordPracticeFeedback"), `정답 “${expected}”을 그대로 한 번 입력하세요.`, "bad");
+        const copyAnswer = wordPracticeCopyAnswer(expected) || expected;
+        if (!answersMatch(value, copyAnswer)) return setMessage($("#wordPracticeFeedback"), `정답 “${copyAnswer}”을 그대로 한 번 입력하세요.`, "bad");
         session.correction = false;
         session.answered = true;
         $("#wordPracticeAnswer").disabled = true;
@@ -3014,7 +3028,8 @@
           session.correction = true;
           $("#wordPracticeAnswer").value = "";
           $("#showWordPracticeAnswerBtn").classList.remove("hidden");
-          setMessage($("#wordPracticeFeedback"), `오답입니다. 정답은 “${expected}”입니다. 한 번 따라 쓰면 현재 사이클을 마친 뒤 다시 시험합니다.`, "bad");
+          const copyAnswer = wordPracticeCopyAnswer(expected) || expected;
+          setMessage($("#wordPracticeFeedback"), `오답입니다. 정답은 “${copyAnswer}”입니다. 한 번 따라 쓰면 현재 사이클을 마친 뒤 다시 시험합니다.`, "bad");
         } else {
           session.answered = true;
           $("#wordPracticeAnswer").disabled = true;
