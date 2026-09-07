@@ -3052,11 +3052,12 @@
       if (!value) return setMessage($("#wordPracticeFeedback"), "정답을 입력하세요.", "bad");
       const word = session.queue[session.index];
       const expected = session.stage.startsWith("meaning") ? word.ko : word.en;
-      const isCorrect = answersMatch(value, expected);
+      // 안내한 따라 쓰기 답안도 일반 문제와 재시험에서 동일하게 인정합니다.
+      const copyAnswer = wordPracticeCopyAnswer(expected) || expected;
+      const isCorrect = answersMatch(value, expected) || answersMatch(value, copyAnswer);
 
       if (session.correction) {
-        const copyAnswer = wordPracticeCopyAnswer(expected) || expected;
-        if (!answersMatch(value, copyAnswer)) return setMessage($("#wordPracticeFeedback"), `정답 “${copyAnswer}”을 그대로 한 번 입력하세요.`, "bad");
+        if (!isCorrect) return setMessage($("#wordPracticeFeedback"), `정답 “${copyAnswer}”을 그대로 한 번 입력하세요.`, "bad");
         session.correction = false;
         session.answered = true;
         $("#wordPracticeAnswer").disabled = true;
