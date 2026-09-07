@@ -3046,6 +3046,7 @@
 
     function submitWordPracticeAnswer() {
       const session = wordPracticeSession;
+      if (session?.stage === "complete") return;
       if (!session || ["learn", "relearn"].includes(session.stage)) return advanceWordPractice();
       if (session.answered) return advanceWordPractice();
       const value = $("#wordPracticeAnswer").value.trim();
@@ -3106,7 +3107,7 @@
 
     function advanceWordPractice() {
       const session = wordPracticeSession;
-      if (!session) return;
+      if (!session || session.stage === "complete") return;
       if (["learn", "relearn"].includes(session.stage)) {
         session.index += 1;
         if (session.index < session.queue.length) return renderWordPractice();
@@ -3170,6 +3171,8 @@
 
     function finishWordPractice() {
       const session = wordPracticeSession;
+      if (!session || session.stage === "complete") return;
+      session.stage = "complete";
       const total = session.words.length * 3;
       const wrongCount = session.firstWrongAnswers.length;
       const correct = total - wrongCount;
@@ -3195,7 +3198,9 @@
       $("#wordPracticeProgress").textContent = `${session.queue.length} / ${session.queue.length}`;
       $("#wordPracticeStage").textContent = "완료";
       setMessage($("#wordPracticeFeedback"), `모든 연습 단계를 완료했습니다. 최초 오답 ${wrongCount}개를 저장하고 전송 중입니다.`, "good");
-      submitWordResult(result).then((status) => setMessage($("#wordPracticeFeedback"), `최초 오답 ${wrongCount}개를 저장했습니다. ${status}`, "good"));
+      submitWordResult(result).then((status) => {
+        if (wordPracticeSession === session) setMessage($("#wordPracticeFeedback"), `최초 오답 ${wrongCount}개를 저장했습니다. ${status}`, "good");
+      });
     }
 
     function resetWordPractice() {
@@ -3669,7 +3674,9 @@
     $("#showWordPracticeAnswerBtn").addEventListener("click", showWordPracticeAnswer);
     $("#nextWordPracticeBtn").addEventListener("click", advanceWordPractice);
     $("#wordPracticeAnswer").addEventListener("keydown", (event) => {
-      if (event.key === "Enter") submitWordPracticeAnswer();
+      if (event.key !== "Enter" || event.isComposing || event.keyCode === 229) return;
+      event.preventDefault();
+      submitWordPracticeAnswer();
     });
     $("#adminLoginBtn").addEventListener("click", adminLogin);
     $("#refreshAdminSheetBtn").addEventListener("click", loadAdminSheetData);
