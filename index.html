@@ -646,6 +646,7 @@
       <button class="tab-btn" data-tab="listeningTab">Listening Test</button>
       <button class="tab-btn" data-tab="listeningPracticeTab">Listening Practice</button>
       <button class="tab-btn" data-tab="listeningPractice2Tab">Listening Practice 2</button>
+      <button class="tab-btn" data-tab="listeningPractice3Tab">Listening Practice 3</button>
     </nav>
 
     <div class="tab-panel" id="passageTab">
@@ -765,8 +766,9 @@
           <div class="question" style="margin-top: 12px;"><h3>뜻에 맞게 단어를 배열하세요.</h3><p class="question-sub" id="writingPracticePrompt">학습 범위를 선택하고 연습을 시작하세요.</p></div>
           <div class="field" style="margin-top: 12px;"><label>섞인 단어 — 터치하거나 드래그하세요</label><div class="word-bank" id="writingPracticeBank"></div></div>
           <div class="field" style="margin-top: 12px;"><label>답안 — 단어를 터치하면 다시 빠집니다</label><div class="word-answer-zone" id="writingPracticeAnswer"></div></div>
-          <div class="toolbar"><button id="submitWritingPracticeBtn" disabled>답안 확인</button><button class="secondary" id="nextWritingPracticeBtn" disabled>다음</button></div>
+          <div class="toolbar"><button id="submitWritingPracticeBtn" disabled>답안 확인</button><button class="secondary" id="undoWritingPracticeBtn" disabled>되돌리기</button><button class="secondary" id="nextWritingPracticeBtn" disabled>다음</button></div>
           <div class="feedback" id="writingPracticeFeedback">단어를 원하는 자리로 자유롭게 옮길 수 있습니다.</div>
+          <div class="answer-comparison hidden" id="writingPracticeComparison"><div><strong>정답 순서</strong><div id="writingPracticeCorrectAnswer" style="margin-top: 7px;"></div></div></div>
         </div>
       </section>
     </div>
@@ -869,6 +871,31 @@
           <div class="toolbar"><button id="submitListeningPractice2Btn" disabled>답안 확인</button><button class="secondary" id="nextListeningPractice2Btn" disabled>다음</button></div>
           <div class="feedback" id="listeningPractice2Feedback">오답이 없어질 때까지 틀린 문장만 반복해서 연습합니다.</div>
           <div class="answer-comparison hidden" id="listeningPractice2Comparison"><div><strong>내 답안</strong><div id="listeningPractice2UserAnswer" style="margin-top:7px;"></div></div><div><strong>정답</strong><div id="listeningPractice2CorrectAnswer" style="margin-top:7px;"></div></div></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="tab-panel" id="listeningPractice3Tab">
+      <section>
+        <div class="section-head"><h2>Listening Practice 3</h2><span class="pill" id="listeningPractice3Progress">0 / 0</span></div>
+        <div class="body">
+          <div class="field-row">
+            <div class="field"><label for="listeningPractice3Nickname">이름</label><input id="listeningPractice3Nickname" placeholder="예: 김민준"></div>
+            <div class="field"><label for="listeningPractice3GradeSelect">학년</label><select id="listeningPractice3GradeSelect"></select></div>
+            <div class="field"><label for="listeningPractice3TextbookSelect">교과서</label><select id="listeningPractice3TextbookSelect"></select></div>
+            <div class="field"><label for="listeningPractice3LessonSelect">단원</label><select id="listeningPractice3LessonSelect"></select></div>
+            <div class="field"><label for="listeningPractice3PartSelect">파트</label><select id="listeningPractice3PartSelect"></select></div>
+            <button id="startListeningPractice3Btn">Listening Practice 3 시작</button>
+          </div>
+          <div class="question listening-prompt" style="margin-top: 12px; flex-direction: column;">
+            <div style="display:flex; align-items:center; gap:14px;"><button class="sound-button" id="playListeningPractice3Btn" type="button" disabled aria-label="영어 문장 듣기">🔊</button><div><h3>아이콘을 눌러 문장을 들은 뒤 단어를 배열하세요.</h3><p class="question-sub" id="listeningPractice3WordCount">(0단어)</p></div></div>
+            <p class="meaning-line" id="listeningPractice3Meaning">문장의 뜻이 여기에 표시됩니다.</p>
+          </div>
+          <div class="field" style="margin-top: 12px;"><label>섞인 단어 — 터치하거나 드래그하세요</label><div class="word-bank" id="listeningPractice3Bank"></div></div>
+          <div class="field" style="margin-top: 12px;"><label>답안 — 단어를 터치하면 다시 빠집니다</label><div class="word-answer-zone" id="listeningPractice3Answer"></div></div>
+          <div class="toolbar"><button id="submitListeningPractice3Btn" disabled>답안 확인</button><button class="secondary" id="nextListeningPractice3Btn" disabled>다음</button></div>
+          <div class="feedback" id="listeningPractice3Feedback">오답이 없어질 때까지 틀린 문장만 반복해서 연습합니다.</div>
+          <div class="answer-comparison hidden" id="listeningPractice3Comparison"><div><strong>내 답안</strong><div id="listeningPractice3UserAnswer" style="margin-top:7px;"></div></div><div><strong>정답</strong><div id="listeningPractice3CorrectAnswer" style="margin-top:7px;"></div></div></div>
         </div>
       </section>
     </div>
@@ -1323,6 +1350,7 @@
     let listeningSession = null;
     let listeningPracticeSession = null;
     let listeningPractice2Session = null;
+    let listeningPractice3Session = null;
     const googleIntegration = window.GOOGLE_INTEGRATION || { passage: {}, word: {}, sheetCsvUrl: "" };
 
     function readJson(key, fallback) {
@@ -1404,7 +1432,7 @@
     }
 
     function switchTab(tabId) {
-      if (!["listeningTab", "listeningPracticeTab", "listeningPractice2Tab", "wordPracticeTab"].includes(tabId)) window.speechSynthesis?.cancel();
+      if (!["listeningTab", "listeningPracticeTab", "listeningPractice2Tab", "listeningPractice3Tab", "wordPracticeTab"].includes(tabId)) window.speechSynthesis?.cancel();
       $$(".tab-btn").forEach((button) => button.classList.toggle("active", button.dataset.tab === tabId));
       $$(".tab-panel").forEach((panel) => panel.classList.toggle("active", panel.id === tabId));
     }
@@ -1443,6 +1471,7 @@
       renderListeningSelectors();
       renderPracticeSelectors("listeningPractice");
       renderPracticeSelectors("listeningPractice2");
+      renderPracticeSelectors("listeningPractice3");
     }
 
     function renderPracticeSelectors(prefix) {
@@ -1892,8 +1921,15 @@
       return (String(text).match(/[A-Za-z]+(?:['’][A-Za-z]+)*/g) || []).length;
     }
 
+    function writingPracticeSentence(sentence) {
+      return String(sentence)
+        .trim()
+        .replace(/[.]+$/, "")
+        .replace(/^([A-Z])/, (letter) => letter.toLowerCase());
+    }
+
     function sentenceTokens(sentence) {
-      return String(sentence).trim().split(/\s+/).filter(Boolean).map((text, index) => ({ id: `${Date.now()}-${index}-${Math.random()}`, text }));
+      return writingPracticeSentence(sentence).split(/\s+/).filter(Boolean).map((text, index) => ({ id: `${Date.now()}-${index}-${Math.random()}`, text }));
     }
 
     async function startWritingPractice() {
@@ -1905,13 +1941,14 @@
         const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
         if (!response.ok) throw new Error("passage not found");
         const data = await response.json();
+        let questionNumber = 0;
         const questions = (data.passages || []).flatMap((passage) => {
           const english = Array.isArray(passage.text) ? passage.text : [];
           const korean = Array.isArray(passage.koreanText) ? passage.koreanText : [];
-          return english.slice(0, Math.min(english.length, korean.length)).map((answer, index) => ({ answer, korean: korean[index] }));
+          return english.slice(0, Math.min(english.length, korean.length)).map((answer, index) => ({ questionNumber: ++questionNumber, answer, korean: korean[index] }));
         });
         if (!questions.length) return setMessage($("#writingPracticeFeedback"), "영어와 한글이 연결된 문장이 없습니다.", "bad");
-        writingPracticeSession = { nickname, meta, questions: shuffle(questions), index: 0, results: [], bank: [], answer: [], awaitingNext: false };
+        writingPracticeSession = { nickname, meta, allQuestions: questions, queue: shuffle(questions), index: 0, cycle: 1, cycleWrong: [], firstResults: [], firstAnswered: new Set(), bank: [], answer: [], history: [], correction: false, awaitingNext: false };
         renderWritingPracticeQuestion();
       } catch {
         setMessage($("#writingPracticeFeedback"), "선택한 지문 DB를 불러오지 못했습니다.", "bad");
@@ -1921,14 +1958,18 @@
     function renderWritingPracticeQuestion() {
       const session = writingPracticeSession;
       if (!session) return;
-      const question = session.questions[session.index];
+      const question = session.queue[session.index];
       session.bank = shuffle(sentenceTokens(question.answer));
       session.answer = [];
+      session.history = [];
+      session.correction = false;
       session.awaitingNext = false;
-      $("#writingPracticeProgress").textContent = `${session.index + 1} / ${session.questions.length}`;
+      $("#writingPracticeProgress").textContent = `사이클 ${session.cycle} · ${session.index + 1} / ${session.queue.length}`;
       $("#writingPracticePrompt").textContent = question.korean;
       $("#submitWritingPracticeBtn").disabled = false;
+      $("#undoWritingPracticeBtn").disabled = true;
       $("#nextWritingPracticeBtn").disabled = true;
+      $("#writingPracticeComparison").classList.add("hidden");
       renderWritingPracticeWords();
       setMessage($("#writingPracticeFeedback"), "단어를 터치하거나 드래그해서 문장을 완성하세요.");
     }
@@ -1952,6 +1993,7 @@
       };
       draw($("#writingPracticeBank"), session.bank, "bank");
       draw($("#writingPracticeAnswer"), session.answer, "answer");
+      $("#undoWritingPracticeBtn").disabled = session.awaitingNext || !session.history.length;
     }
 
     function moveWritingPracticeToken(id, target, targetIndex = null) {
@@ -1960,9 +2002,19 @@
       const source = session.bank.some((token) => token.id === id) ? session.bank : session.answer;
       const index = source.findIndex((token) => token.id === id);
       if (index < 0) return;
+      session.history.push({ bank: [...session.bank], answer: [...session.answer] });
       const [token] = source.splice(index, 1);
       const destination = target === "answer" ? session.answer : session.bank;
       destination.splice(targetIndex === null ? destination.length : targetIndex, 0, token);
+      renderWritingPracticeWords();
+    }
+
+    function undoWritingPracticeMove() {
+      const session = writingPracticeSession;
+      if (!session || session.awaitingNext || !session.history.length) return;
+      const previous = session.history.pop();
+      session.bank = previous.bank;
+      session.answer = previous.answer;
       renderWritingPracticeWords();
     }
 
@@ -1983,25 +2035,60 @@
       const session = writingPracticeSession;
       if (!session || session.awaitingNext) return;
       if (!session.answer.length) return setMessage($("#writingPracticeFeedback"), "단어를 선택해 답안을 만드세요.", "bad");
-      const correct = normalizeWritingAnswer(session.answer.map((token) => token.text).join(" ")) === normalizeWritingAnswer(session.questions[session.index].answer);
-      session.results.push({ questionNumber: session.index + 1, correct });
-      session.awaitingNext = true;
-      $("#submitWritingPracticeBtn").disabled = true;
-      $("#nextWritingPracticeBtn").disabled = false;
+      const question = session.queue[session.index];
+      const correct = normalizeWritingAnswer(session.answer.map((token) => token.text).join(" ")) === normalizeWritingAnswer(question.answer);
+      if (session.correction) {
+        if (!correct) return setMessage($("#writingPracticeFeedback"), "정답 순서를 보고 한 번 더 정확하게 배열하세요.", "bad");
+        session.awaitingNext = true;
+        $("#submitWritingPracticeBtn").disabled = true;
+        $("#undoWritingPracticeBtn").disabled = true;
+        $("#nextWritingPracticeBtn").disabled = false;
+        renderWritingPracticeWords();
+        return setMessage($("#writingPracticeFeedback"), "정답 순서대로 다시 맞혔습니다. 다음 버튼을 눌러 진행하세요.", "good");
+      }
+      if (!session.firstAnswered.has(question.questionNumber)) {
+        session.firstAnswered.add(question.questionNumber);
+        session.firstResults.push({ questionNumber: question.questionNumber, correct });
+      }
+      if (correct) {
+        session.awaitingNext = true;
+        $("#submitWritingPracticeBtn").disabled = true;
+        $("#undoWritingPracticeBtn").disabled = true;
+        $("#nextWritingPracticeBtn").disabled = false;
+        renderWritingPracticeWords();
+        return setMessage($("#writingPracticeFeedback"), "정답입니다. 다음 버튼을 눌러 진행하세요.", "good");
+      }
+      session.cycleWrong.push(question);
+      session.correction = true;
+      session.answer = [];
+      session.bank = shuffle(sentenceTokens(question.answer));
+      session.history = [];
+      $("#writingPracticeCorrectAnswer").textContent = writingPracticeSentence(question.answer);
+      $("#writingPracticeComparison").classList.remove("hidden");
       renderWritingPracticeWords();
-      setMessage($("#writingPracticeFeedback"), correct ? "정답입니다. 다음 버튼을 눌러 진행하세요." : "틀렸습니다. 다음 문제에서 다시 연습해 보세요.", correct ? "good" : "bad");
+      setMessage($("#writingPracticeFeedback"), "틀렸습니다. 아래 정답 순서를 보고 한 번 더 따라 맞히세요. 이 문장은 현재 사이클이 끝난 뒤 다시 출제됩니다.", "bad");
     }
 
     function nextWritingPracticeQuestion() {
       const session = writingPracticeSession;
       if (!session || !session.awaitingNext) return;
-      if (session.index < session.questions.length - 1) { session.index += 1; return renderWritingPracticeQuestion(); }
-      const result = { takenAt: new Date().toLocaleString("ko-KR"), nickname: session.nickname, grade: session.meta.grade, textbook: session.meta.textbook, lesson: session.meta.lessonLabel, part: session.meta.partLabel, total: session.questions.length, results: session.results };
+      if (session.index < session.queue.length - 1) { session.index += 1; return renderWritingPracticeQuestion(); }
+      if (session.cycleWrong.length) {
+        const retryQuestions = [...new Map(session.cycleWrong.map((question) => [question.questionNumber, question])).values()];
+        session.queue = shuffle(retryQuestions);
+        session.index = 0;
+        session.cycle += 1;
+        session.cycleWrong = [];
+        renderWritingPracticeQuestion();
+        return setMessage($("#writingPracticeFeedback"), `사이클 ${session.cycle - 1}을 마쳤습니다. 틀린 ${retryQuestions.length}문장만 다시 연습합니다.`, "bad");
+      }
+      const result = { takenAt: new Date().toLocaleString("ko-KR"), nickname: session.nickname, grade: session.meta.grade, textbook: session.meta.textbook, lesson: session.meta.lessonLabel, part: session.meta.partLabel, total: session.allQuestions.length, results: session.firstResults };
       const stored = readJson(STORAGE.writingPracticeResults, []); stored.unshift(result); writeJson(STORAGE.writingPracticeResults, stored);
       writingPracticeSession = null;
       $("#writingPracticeProgress").textContent = `${result.total} / ${result.total}`;
       $("#writingPracticeBank").innerHTML = ""; $("#writingPracticeAnswer").innerHTML = "";
-      $("#submitWritingPracticeBtn").disabled = true; $("#nextWritingPracticeBtn").disabled = true;
+      $("#submitWritingPracticeBtn").disabled = true; $("#undoWritingPracticeBtn").disabled = true; $("#nextWritingPracticeBtn").disabled = true;
+      $("#writingPracticeComparison").classList.add("hidden");
       renderWritingPracticeResults();
       setMessage($("#writingPracticeFeedback"), `Writing Practice ${result.total}문장을 완료했습니다. 정답 여부만 저장했습니다.`, "good");
       submitWritingPracticeResult(result);
@@ -2387,6 +2474,153 @@
       renderListeningWrongAnswers(getLocalListeningWrongAnswers());
       setMessage($("#listeningPractice2Feedback"), `모든 문장을 맞혔습니다. 최초 오답 ${result.wrongAnswers.length}개를 저장하고 전송 중입니다.`, "good");
       submitListeningResult(result).then((status) => setMessage($("#listeningPractice2Feedback"), status, "good"));
+    }
+
+    async function startListeningPractice3() {
+      const nickname = $("#listeningPractice3Nickname").value.trim();
+      const meta = passageManifest.find((item) => item.path === $("#listeningPractice3PartSelect").value);
+      if (!nickname) return setMessage($("#listeningPractice3Feedback"), "이름을 먼저 입력하세요.", "bad");
+      if (!meta) return;
+      try {
+        const response = await fetch(encodeURI(meta.path), { cache: "no-store" });
+        if (!response.ok) throw new Error("passage not found");
+        const data = await response.json();
+        let questionNumber = 0;
+        const questions = (data.passages || []).flatMap((passage) => {
+          const english = Array.isArray(passage.text) ? passage.text : [];
+          const korean = Array.isArray(passage.koreanText) ? passage.koreanText : [];
+          return english.map((answer, index) => ({ questionNumber: ++questionNumber, answer: answer.trim(), korean: korean[index] || "뜻 정보가 없습니다." })).filter((item) => item.answer);
+        });
+        if (!questions.length) return setMessage($("#listeningPractice3Feedback"), "선택한 파트에는 영어 문장이 없습니다.", "bad");
+        listeningPractice3Session = { nickname, meta, allQuestions: questions, queue: questions, index: 0, cycle: 1, cycleWrong: [], firstWrongAnswers: [], firstWrongNumbers: new Set(), bank: [], answer: [], awaitingNext: false };
+        renderListeningPractice3Question();
+      } catch { setMessage($("#listeningPractice3Feedback"), "선택한 지문 DB를 불러오지 못했습니다.", "bad"); }
+    }
+
+    function renderListeningPractice3Question() {
+      const session = listeningPractice3Session;
+      if (!session) return;
+      const question = session.queue[session.index];
+      window.speechSynthesis?.cancel();
+      session.bank = shuffle(sentenceTokens(question.answer));
+      session.answer = [];
+      session.awaitingNext = false;
+      $("#listeningPractice3Progress").textContent = `사이클 ${session.cycle} · ${session.index + 1} / ${session.queue.length}`;
+      $("#listeningPractice3WordCount").textContent = `(${countEnglishWords(question.answer)}단어)`;
+      $("#listeningPractice3Meaning").textContent = question.korean;
+      $("#playListeningPractice3Btn").disabled = false;
+      $("#submitListeningPractice3Btn").disabled = false;
+      $("#nextListeningPractice3Btn").disabled = true;
+      $("#listeningPractice3Comparison").classList.add("hidden");
+      renderListeningPractice3Words();
+      setMessage($("#listeningPractice3Feedback"), session.cycle === 1 ? "문장을 듣고 단어를 올바른 순서로 배열하세요." : "이전 사이클에서 틀린 문장입니다. 다시 듣고 배열하세요.");
+    }
+
+    function renderListeningPractice3Words() {
+      const session = listeningPractice3Session;
+      if (!session) return;
+      const draw = (element, items, zone) => {
+        element.innerHTML = "";
+        items.forEach((token) => {
+          const button = document.createElement("button");
+          button.type = "button";
+          button.className = "word-chip secondary";
+          button.textContent = token.text;
+          button.draggable = !session.awaitingNext;
+          button.dataset.tokenId = token.id;
+          button.addEventListener("click", () => moveListeningPractice3Token(token.id, zone === "bank" ? "answer" : "bank"));
+          button.addEventListener("dragstart", (event) => event.dataTransfer.setData("text/plain", token.id));
+          element.appendChild(button);
+        });
+      };
+      draw($("#listeningPractice3Bank"), session.bank, "bank");
+      draw($("#listeningPractice3Answer"), session.answer, "answer");
+    }
+
+    function moveListeningPractice3Token(id, target, targetIndex = null) {
+      const session = listeningPractice3Session;
+      if (!session || session.awaitingNext) return;
+      const source = session.bank.some((token) => token.id === id) ? session.bank : session.answer;
+      const index = source.findIndex((token) => token.id === id);
+      if (index < 0) return;
+      const [token] = source.splice(index, 1);
+      const destination = target === "answer" ? session.answer : session.bank;
+      destination.splice(targetIndex === null ? destination.length : targetIndex, 0, token);
+      renderListeningPractice3Words();
+    }
+
+    function setupListeningPractice3DropZone(element, zone) {
+      element.addEventListener("dragover", (event) => { event.preventDefault(); element.classList.add("drop-active"); });
+      element.addEventListener("dragleave", () => element.classList.remove("drop-active"));
+      element.addEventListener("drop", (event) => {
+        event.preventDefault();
+        element.classList.remove("drop-active");
+        const id = event.dataTransfer.getData("text/plain");
+        const chips = [...element.querySelectorAll(".word-chip")];
+        const targetIndex = chips.findIndex((chip) => event.clientX < chip.getBoundingClientRect().left + chip.offsetWidth / 2);
+        moveListeningPractice3Token(id, zone, targetIndex < 0 ? chips.length : targetIndex);
+      });
+    }
+
+    function playListeningPractice3Sentence() {
+      const session = listeningPractice3Session;
+      if (!session || !("speechSynthesis" in window)) return setMessage($("#listeningPractice3Feedback"), "이 브라우저에서는 음성 재생을 지원하지 않습니다.", "bad");
+      window.speechSynthesis.cancel();
+      const utterance = new SpeechSynthesisUtterance(session.queue[session.index].answer);
+      utterance.lang = "en-US";
+      utterance.rate = .85;
+      window.speechSynthesis.speak(utterance);
+    }
+
+    function submitListeningPractice3Answer() {
+      const session = listeningPractice3Session;
+      if (!session || session.awaitingNext) return;
+      if (!session.answer.length) return setMessage($("#listeningPractice3Feedback"), "단어를 선택해 답안을 만드세요.", "bad");
+      const question = session.queue[session.index];
+      const userAnswer = session.answer.map((token) => token.text).join(" ");
+      const correct = normalizeWritingAnswer(userAnswer) === normalizeWritingAnswer(question.answer);
+      session.awaitingNext = true;
+      $("#submitListeningPractice3Btn").disabled = true;
+      $("#nextListeningPractice3Btn").disabled = false;
+      renderListeningPractice3Words();
+      if (correct) return setMessage($("#listeningPractice3Feedback"), "정답입니다. 다음 버튼을 눌러 진행하세요.", "good");
+      session.cycleWrong.push(question);
+      if (!session.firstWrongNumbers.has(question.questionNumber)) {
+        session.firstWrongNumbers.add(question.questionNumber);
+        session.firstWrongAnswers.push({ questionNumber: question.questionNumber, userAnswer, answer: question.answer });
+      }
+      $("#listeningPractice3UserAnswer").textContent = userAnswer;
+      $("#listeningPractice3CorrectAnswer").textContent = writingPracticeSentence(question.answer);
+      $("#listeningPractice3Comparison").classList.remove("hidden");
+      setMessage($("#listeningPractice3Feedback"), "틀렸습니다. 이 문장은 현재 사이클이 끝난 뒤 다시 출제됩니다.", "bad");
+    }
+
+    function nextListeningPractice3Question() {
+      const session = listeningPractice3Session;
+      if (!session || !session.awaitingNext) return;
+      if (session.index < session.queue.length - 1) { session.index += 1; return renderListeningPractice3Question(); }
+      if (session.cycleWrong.length) {
+        const retryQuestions = [...new Map(session.cycleWrong.map((question) => [question.questionNumber, question])).values()];
+        session.queue = shuffle(retryQuestions);
+        session.index = 0;
+        session.cycle += 1;
+        session.cycleWrong = [];
+        renderListeningPractice3Question();
+        return setMessage($("#listeningPractice3Feedback"), `사이클 ${session.cycle - 1}을 마쳤습니다. 틀린 ${retryQuestions.length}문장만 다시 시험합니다.`, "bad");
+      }
+      const result = { takenAt: new Date().toLocaleString("ko-KR"), nickname: session.nickname, grade: session.meta.grade, textbook: session.meta.textbook, lesson: session.meta.lessonLabel, part: session.meta.partLabel, total: session.allQuestions.length, wrongAnswers: session.firstWrongAnswers, mode: "Listening Practice 3" };
+      const stored = readJson(STORAGE.listeningResults, []); stored.unshift(result); writeJson(STORAGE.listeningResults, stored);
+      listeningPractice3Session = null;
+      window.speechSynthesis?.cancel();
+      $("#listeningPractice3Progress").textContent = `${result.total} / ${result.total}`;
+      $("#listeningPractice3WordCount").textContent = "(완료)";
+      $("#listeningPractice3Meaning").textContent = "모든 문장을 맞혀 학습을 완료했습니다.";
+      $("#listeningPractice3Bank").innerHTML = ""; $("#listeningPractice3Answer").innerHTML = "";
+      $("#playListeningPractice3Btn").disabled = true; $("#submitListeningPractice3Btn").disabled = true; $("#nextListeningPractice3Btn").disabled = true;
+      $("#listeningPractice3Comparison").classList.add("hidden");
+      renderListeningWrongAnswers(getLocalListeningWrongAnswers());
+      setMessage($("#listeningPractice3Feedback"), `모든 문장을 맞혔습니다. 최초 오답 ${result.wrongAnswers.length}개를 저장하고 전송 중입니다.`, "good");
+      submitListeningResult(result).then((status) => setMessage($("#listeningPractice3Feedback"), status, "good"));
     }
 
     function parseCsv(text) {
@@ -3633,9 +3867,16 @@
     $("#writingPracticeLessonSelect").addEventListener("change", () => renderPracticePartOptions("writingPractice"));
     $("#startWritingPracticeBtn").addEventListener("click", startWritingPractice);
     $("#submitWritingPracticeBtn").addEventListener("click", submitWritingPracticeAnswer);
+    $("#undoWritingPracticeBtn").addEventListener("click", undoWritingPracticeMove);
     $("#nextWritingPracticeBtn").addEventListener("click", nextWritingPracticeQuestion);
     setupWritingPracticeDropZone($("#writingPracticeBank"), "bank");
     setupWritingPracticeDropZone($("#writingPracticeAnswer"), "answer");
+    document.addEventListener("keydown", (event) => {
+      if ((event.ctrlKey || event.metaKey) && event.key.toLowerCase() === "z" && writingPracticeSession && !writingPracticeSession.awaitingNext && writingPracticeSession.history.length) {
+        event.preventDefault();
+        undoWritingPracticeMove();
+      }
+    });
     $("#listeningGradeSelect").addEventListener("change", renderListeningTextbookOptions);
     $("#listeningTextbookSelect").addEventListener("change", renderListeningLessonOptions);
     $("#listeningLessonSelect").addEventListener("change", renderListeningPartOptions);
@@ -3657,6 +3898,15 @@
     $("#playListeningPractice2Btn").addEventListener("click", playListeningPractice2Sentence);
     $("#submitListeningPractice2Btn").addEventListener("click", submitListeningPractice2Answer);
     $("#nextListeningPractice2Btn").addEventListener("click", nextListeningPractice2Question);
+    $("#listeningPractice3GradeSelect").addEventListener("change", () => renderPracticeTextbookOptions("listeningPractice3"));
+    $("#listeningPractice3TextbookSelect").addEventListener("change", () => renderPracticeLessonOptions("listeningPractice3"));
+    $("#listeningPractice3LessonSelect").addEventListener("change", () => renderPracticePartOptions("listeningPractice3"));
+    $("#startListeningPractice3Btn").addEventListener("click", startListeningPractice3);
+    $("#playListeningPractice3Btn").addEventListener("click", playListeningPractice3Sentence);
+    $("#submitListeningPractice3Btn").addEventListener("click", submitListeningPractice3Answer);
+    $("#nextListeningPractice3Btn").addEventListener("click", nextListeningPractice3Question);
+    setupListeningPractice3DropZone($("#listeningPractice3Bank"), "bank");
+    setupListeningPractice3DropZone($("#listeningPractice3Answer"), "answer");
     $("#startWordBtn").addEventListener("click", startWordQuiz);
     $("#wordGradeSelect").addEventListener("change", () => renderWordTextbookOptions("word"));
     $("#wordTextbookSelect").addEventListener("change", () => renderWordLessonOptions("word"));
