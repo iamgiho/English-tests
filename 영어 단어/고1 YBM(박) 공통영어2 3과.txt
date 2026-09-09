@@ -12,7 +12,7 @@ deal with
 ~을 처리하다, 다루다
 5
 cultivate
-(지식·자질 등을) 기르다, 함양하다
+기르다, 함양하다
 6
 inner
 내면의
@@ -54,7 +54,7 @@ resilient
 회복력 있는
 19
 bounce back
-(병·곤경 등에서) 다시 회복되다
+다시 회복되다
 20
 benefit
 (~에서) 득을 보다
@@ -189,7 +189,7 @@ passive
 수동적인, 소극적인
 64
 suffering
-(정신적·육체적) 고통
+고통
 65
 single ~ out
 ~을 골라내다

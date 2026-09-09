@@ -123,7 +123,7 @@ life
 생활
 42
 ring
-(종·벨 등의) 울리는 소리
+울리는 소리
 43
 alarm clock
 자명종, 알람 시계
@@ -225,7 +225,7 @@ listen to
 ~을 듣다
 76
 show
-TV·라디오 프로그램
+TV 프로그램
 77
 record
 녹음하다

@@ -42,7 +42,7 @@ classroom
 교실
 15
 spine
-(동·식물의) 가시
+가시
 16
 curiously
 호기심을 갖고, 궁금한 듯이
