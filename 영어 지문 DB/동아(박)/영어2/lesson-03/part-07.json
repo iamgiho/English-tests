@@ -1,0 +1,28 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 3,
+  "part": 7,
+  "passages": [
+    {
+      "id": "donga-park-english2-l03-p07-001",
+      "title": "Alfonse Mucha",
+      "text": [
+        "Alfonse Mucha (1860-1939) was one of the first Art Nouveau artists, which led to this form of art being referred to as the ‘Mucha Style.’",
+        "His style became famous later on in his life and is used often, even to this day.",
+        "His fame, however, did not happen overnight.",
+        "As a younger artist, Mucha was rejected when he applied for his local art school, but he did not give up.",
+        "Holding on to his dream of one day becoming an artist, he moved to Vienna at the age of 19 to continue his education.",
+        "After working different jobs to support himself during his studies, he finally finished his schooling and 7 years later, moved to Paris."
+      ],
+      "koreanText": [
+        "알폰스 무하(1860-1939)는 초창기 아르누보 예술가 중 한 명이었고, 이로 인해 이러한 형태의 예술은 ‘무하 양식’이라고 불리게 되었다.",
+        "그의 양식은 생애 후반에 유명해졌으며, 심지어 오늘날까지도 자주 사용된다.",
+        "그러나 그의 명성은 하룻밤 사이에 이루어진 것이 아니었다.",
+        "젊은 예술가였던 무하는 지역 미술 학교에 지원했다가 거절당했지만 포기하지 않았다.",
+        "언젠가 예술가가 되겠다는 꿈을 고수한 채 그는 학업을 이어 나가기 위해 19세에 빈으로 이주했다.",
+        "공부하는 동안 스스로를 부양하기 위해 여러 가지 일을 한 후, 그는 마침내 학교 교육을 마쳤고 7년 후 파리로 이주했다."
+      ]
+    }
+  ]
+}

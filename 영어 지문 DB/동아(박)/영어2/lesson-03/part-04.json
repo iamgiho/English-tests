@@ -1,0 +1,30 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 3,
+  "part": 4,
+  "passages": [
+    {
+      "id": "donga-park-english2-l03-p04-001",
+      "title": "The Success of Grandma Moses",
+      "text": [
+        "Her first paintings were done with leftover crayons and old paintbrushes that had been used by her grandchildren.",
+        "She started by making these paintings to give away as gifts.",
+        "Later, she tried selling them at local markets, but they received little or no attention.",
+        "Then, one day in 1939, an art collector named Louis Calder noticed her paintings in the window of a drugstore.",
+        "Realizing the beauty of her work, he organized exhibitions of her drawings, which were all a big hit with the public, and the rest is history.",
+        "The exhibitions brought the work of Grandma Moses to the public, allowing people from all walks of life to appreciate the calming beauty of her everyday life.",
+        "The story of Grandma Moses is a reminder that it is never too late to accomplish our dreams."
+      ],
+      "koreanText": [
+        "그녀의 초창기 그림들은 손주들이 썼던 남은 크레파스와 오래된 붓으로 그려졌다.",
+        "그녀는 선물로 나눠주기 위해 이 그림들을 제작하는 것으로 시작했다.",
+        "나중에 그녀는 지역 시장에서 그것들을 판매하려고 시도했지만, 거의 혹은 전혀 주목을 받지 못했다.",
+        "그러던 1939년의 어느 날, 루이 칼더라는 이름의 미술품 수집가가 한 약국 창문에 걸린 그녀의 그림들을 발견했다.",
+        "그는 그녀 작품의 아름다움을 깨닫고 그녀의 그림 전시회들을 열었는데, 이는 모두 대중에게 큰 인기를 끌었고, 그 후의 일은 다들 아는 대로이다.",
+        "전시회들은 그랜마 모지스의 작품들을 대중에게 알렸고, 각계각층의 사람들이 그녀의 일상생활의 평온한 아름다움을 감상할 수 있게 해주었다.",
+        "그랜마 모지스의 이야기는 우리의 꿈을 이루기에 결코 너무 늦은 때는 없다는 것을 상기시켜 준다."
+      ]
+    }
+  ]
+}

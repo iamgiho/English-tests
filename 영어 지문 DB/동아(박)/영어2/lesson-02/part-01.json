@@ -1,0 +1,30 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 2,
+  "part": 1,
+  "passages": [
+    {
+      "id": "donga-park-english2-l02-p01-001",
+      "title": "A Journey to Australia",
+      "text": [
+        "This past summer, I had the remarkable opportunity to spend a month in Australia.",
+        "My uncle, a wildlife biologist conducting research on Australian animals, invited me to join him on an ecotour.",
+        "Knowing that I was passionate about animals and nature, he thought this would be a great experience.",
+        "Upon arriving in Melbourne, I was greeted by the chilly air, a sharp contrast to the humid heat I had left behind in Korea.",
+        "Realizing where I was made me even more excited about my adventure ahead.",
+        "My trip to Australia was filled with visits to remarkable places and encounters with incredible nature.",
+        "I will share four of the most memorable destinations from my journey."
+      ],
+      "koreanText": [
+        "지난여름에 나는 호주에서 한 달을 보낼 수 있는 놀라운 기회가 있었다.",
+        "호주 동물에 대한 연구를 수행하고 있는 야생 동물 생물학자인 나의 삼촌이 나를 생태 관광에 함께하도록 초대해 주셨다.",
+        "삼촌은 내가 동물과 자연에 열정적이라는 것을 아셨기 때문에, 이번이 아주 좋은 경험이 될 것이라고 생각하셨다.",
+        "멜버른에 도착하자마자, 한국에 두고 온 습한 무더위와 극명한 대조를 이루는 쌀쌀한 공기가 나를 맞이했다.",
+        "내가 어디에 있는지를 깨닫는 것은 앞으로의 모험에 대해 더욱더 설레게 만들었다.",
+        "나의 호주 여행은 놀라운 곳들을 방문하는 것과 믿을 수 없는 자연과의 만남으로 가득 찼다.",
+        "나의 여행에서 가장 기억에 남는 네 곳의 여행지를 공유하고자 한다."
+      ]
+    }
+  ]
+}

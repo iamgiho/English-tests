@@ -1,0 +1,32 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 3,
+  "part": 1,
+  "passages": [
+    {
+      "id": "donga-park-english2-l03-p01-001",
+      "title": "The Stories Behind Art",
+      "text": [
+        "Many works of art bring us happiness or comfort by their existence alone.",
+        "Take, for example, the work of Arthur Elsley.",
+        "His paintings of children and their pets have made people smile for over a century.",
+        "The work of another artist, Mark Rothko, might be more recognizable.",
+        "The solid colors in his paintings bring to mind the diversity of human emotions, helping those who view them feel a sense of warmth and comfort.",
+        "Artwork, however, is more deeply appreciated with a deeper understanding of the artist and the experiences that helped produce it.",
+        "We are going to explore the lives of three artists whose art has inspired people from different cultures and generations.",
+        "As their life experiences became the inspiration for their art, understanding the stories behind their work will not only help us better appreciate their work but also inspire us."
+      ],
+      "koreanText": [
+        "많은 예술 작품들은 존재만으로도 우리에게 행복이나 위안을 가져다준다.",
+        "예를 들어 아서 엘슬리의 작품을 보자.",
+        "아이들과 그들의 반려동물을 그린 그의 그림들은 한 세기 이상 사람들을 미소 짓게 만들어왔다.",
+        "또 다른 화가인 마크 로스코의 작품은 더 잘 알아볼 수 있을지도 모른다.",
+        "그의 그림 속 단색들은 인간 감정의 다양성을 연상시키며, 이를 보는 사람들이 따뜻함과 편안함을 느끼게 도와준다.",
+        "그러나 예술 작품은 예술가와 그 작품을 제작하는 데 도움을 준 경험에 대한 더 깊은 이해가 있을 때 더 깊이 있게 감상된다.",
+        "우리는 다양한 문화와 세대의 사람들에게 영감을 준 작품을 남긴 세 명의 예술가들의 삶을 탐구할 것이다.",
+        "그들 삶의 경험이 예술에 영감이 되었기 때문에, 그들의 작품 뒤에 숨겨진 이야기를 이해하는 것은 우리가 그들의 작품을 더 잘 감상하도록 도와줄 뿐만 아니라 우리에게도 영감을 줄 것이다."
+      ]
+    }
+  ]
+}

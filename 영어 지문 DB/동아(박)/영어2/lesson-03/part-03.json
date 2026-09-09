@@ -1,0 +1,24 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 3,
+  "part": 3,
+  "passages": [
+    {
+      "id": "donga-park-english2-l03-p03-001",
+      "title": "Grandma Moses",
+      "text": [
+        "Before she started painting, Grandma Moses lived on a farm, selling homemade foods at local markets while raising her five children.",
+        "She started painting in her 70s but had become an internationally recognized artist by the time she passed away at the age of 101.",
+        "During that time, she produced more than 1,600 paintings.",
+        "These paintings portray a simple lifestyle in the rural countryside, bringing about a sense of nostalgia about the past."
+      ],
+      "koreanText": [
+        "그림을 그리기 시작하기 전에, 그랜마 모지스는 농장에서 살며 다섯 자녀를 키우면서 집에서 만든 음식을 지역 시장에서 팔았다.",
+        "그녀는 70대에 그림을 그리기 시작했지만, 101세의 나이로 세상을 떠날 무렵에는 국제적으로 인정받는 예술가가 되었다.",
+        "그 기간 동안, 그녀는 1,600점 이상의 그림을 그렸다.",
+        "이 그림들은 시골 지역의 소박한 생활 방식을 묘사하며, 과거에 대한 향수를 불러일으킨다."
+      ]
+    }
+  ]
+}

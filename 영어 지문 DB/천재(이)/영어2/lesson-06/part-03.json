@@ -1,0 +1,36 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어2",
+  "lesson": 6,
+  "part": 3,
+  "passages": [
+    {
+      "id": "chunjae-lee-english2-l06-p03-001",
+      "title": "A Day at Hanauma Bay",
+      "text": [
+        "Today, we headed to Hanauma Bay to go snorkeling.",
+        "Before snorkeling, we watched an educational video.",
+        "We learned not to harm the sea animals or touch the coral.",
+        "The underwater world was wonderful.",
+        "We saw lots of colorful fish and a turtle swimming there.",
+        "It was amazing!",
+        "It is already the last day of our trip.",
+        "I’m sad to go home, but I will always remember Hawaii.",
+        "Aloha, Soobin!",
+        "Mahalo, Hawaii!"
+      ],
+      "koreanText": [
+        "오늘 우리는 스노클링을 하러 하나우마 베이로 향했다.",
+        "스노클링을 하기 전에, 우리는 교육용 영상을 시청했다.",
+        "우리는 바다 동물들을 해치거나 산호를 만지지 말아야 한다는 것을 배웠다.",
+        "수중 세계는 정말 멋졌다.",
+        "우리는 거기에서 형형색색의 많은 물고기들과 바다거북 한 마리가 헤엄치는 것을 보았다.",
+        "정말 놀라웠다!",
+        "벌써 우리 여행의 마지막 날이다.",
+        "집에 돌아가야 해서 슬프지만, 나는 항상 하와이를 기억할 것이다.",
+        "알로하, 수빈!",
+        "마할로, 하와이!"
+      ]
+    }
+  ]
+}

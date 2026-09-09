@@ -1,0 +1,22 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 3,
+  "part": 6,
+  "passages": [
+    {
+      "id": "donga-park-english2-l03-p06-001",
+      "title": "Hope Through Art",
+      "text": [
+        "Underneath the cheerful content of the painting is the sadness that Lee felt as he lived alone, far away from his family.",
+        "But these paintings also allowed him to remember the good times and look forward to a happier future.",
+        "His ability to express this hope through art brought his work much attention, and his art is a source of comfort to people to this day."
+      ],
+      "koreanText": [
+        "그림의 경쾌한 내용 이면에는 이중섭이 가족과 멀리 떨어져 홀로 살면서 느꼈던 슬픔이 담겨 있다.",
+        "하지만 이 그림들은 또한 그가 좋은 시절을 기억하고 더 행복한 미래를 기대할 수 있게 해 주었다.",
+        "예술을 통해 이러한 희망을 표현하는 그의 능력은 그의 작품에 많은 관심을 불러일으켰고, 그의 예술은 오늘날까지도 사람들에게 위안의 원천이 되고 있다."
+      ]
+    }
+  ]
+}

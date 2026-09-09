@@ -1,0 +1,30 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 3,
+  "part": 8,
+  "passages": [
+    {
+      "id": "donga-park-english2-l03-p08-001",
+      "title": "Mucha’s Opportunity",
+      "text": [
+        "In Paris, Mucha made money drawing inserts and illustrations for magazines but also continued working on his own art.",
+        "His big break came much later in 1894, when he landed the opportunity to draw a poster for the play Gismonda.",
+        "He was working alone late on Christmas Eve when he was commissioned to produce a drawing of the actor Sarah Bernhardt for a poster of the play.",
+        "Based on a style that he had been developing, he produced a life-sized poster, portraying Bernhardt as a member of Byzantine royalty.",
+        "This led him to eventually become known as a primary figure in the development of the Art Nouveau form.",
+        "Mucha was not an instant success when he started his career, but he kept working on his own style until the right opportunity came along.",
+        "Success is said to happen only when preparation meets opportunity, and Mucha’s story reminds us that beautiful things can happen when the two finally come together."
+      ],
+      "koreanText": [
+        "파리에서 무하는 잡지에 삽입 광고와 삽화를 그리며 돈을 벌었지만, 자신의 예술 작업도 계속했다.",
+        "그의 큰 기회는 훨씬 나중인 1894년에 찾아왔는데, 그때 그는 연극 ‘지스몬다’의 포스터를 그릴 기회를 얻었다.",
+        "연극 포스터를 위해 배우 사라 베른하르트의 그림을 제작해 달라는 의뢰를 받았을 때, 그는 크리스마스이브 늦은 시간에 홀로 작업을 하고 있었다.",
+        "그는 자신이 개발해 온 양식을 바탕으로 베른하르트를 비잔틴 왕족의 일원으로 묘사하는 실물 크기의 포스터를 제작했다.",
+        "이로 인해 그는 마침내 아르누보 양식 발전의 주요 인물로 알려지게 되었다.",
+        "무하는 자신의 경력을 시작했을 때 즉각적인 성공을 거두지는 못했지만, 적절한 기회가 생길 때까지 자신만의 양식을 계속해 나갔다.",
+        "성공은 준비가 기회와 만날 때만 이루어진다고 하는데, 무하의 이야기는 그 두 가지가 마침내 결합할 때 아름다운 일들이 일어날 수 있다는 것을 상기시켜 준다."
+      ]
+    }
+  ]
+}

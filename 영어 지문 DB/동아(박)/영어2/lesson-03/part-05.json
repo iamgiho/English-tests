@@ -1,0 +1,36 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 3,
+  "part": 5,
+  "passages": [
+    {
+      "id": "donga-park-english2-l03-p05-001",
+      "title": "Lee Jungseop",
+      "text": [
+        "Lee Jungseop (1916-1956) is one of the most important artists of 20th century Korean modern art.",
+        "While White Ox is his most recognized piece, much of his work dealt with the themes of young children and family.",
+        "Lee used common objects such as animals and children to produce artwork that reminded him of ‘home.’",
+        "This painting, Two Children and Fish and Crab, seems lighthearted at first glance.",
+        "However, behind this seemingly happy image of children is a sad story.",
+        "In 1951, Lee and his family took refuge on Jejudo.",
+        "Although they were fleeing from the war, for Lee, the year that he spent on the island with his wife and children was the highlight of his life.",
+        "Sadly, it was also the last year of happiness for his family.",
+        "Poverty from the war led to the separation of his family, as he was forced to send his wife and two sons to Japan for a better chance of survival.",
+        "During this time of separation, Lee continued to create art, which was his way of remembering the memories he had with his family."
+      ],
+      "koreanText": [
+        "이중섭(1916-1956)은 20세기 한국 현대 미술의 가장 중요한 예술가 중 한 명이다.",
+        "‘흰 소’가 그의 가장 잘 알려진 작품이지만, 그의 많은 작품은 어린아이들과 가족이라는 주제를 다루었다.",
+        "이중섭은 동물, 아이들과 같은 일상적인 대상을 사용하여 자신에게 ‘고향’을 떠올리게 하는 작품을 제작하였다.",
+        "이 그림 ‘두 아이와 물고기와 게’는 언뜻 보기에 쾌활해 보인다.",
+        "그러나 겉보기에는 행복해 보이는 이 아이들의 모습 뒤에는 슬픈 이야기가 있다.",
+        "1951년에 이중섭과 그의 가족은 제주도로 피난을 갔다.",
+        "비록 전쟁을 피해 피난 중이었지만, 이중섭에게는 아내와 아이들과 함께 그 섬에서 보낸 한 해가 그의 인생에서 가장 빛나던 때였다.",
+        "슬프게도, 그것은 그의 가족에게 행복했던 마지막 해이기도 했다.",
+        "전쟁으로 인한 빈곤은 가족의 헤어짐으로 이어졌는데, 더 나은 생존 가능성을 위해 그가 아내와 두 아들을 일본으로 보낼 수밖에 없었기 때문이었다.",
+        "헤어져 있는 이 기간 동안 이중섭은 계속해서 예술 작품을 창작했고, 이는 가족과의 추억을 기억하는 그의 방식이었다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어2",
+  "lesson": 6,
+  "part": 2,
+  "passages": [
+    {
+      "id": "chunjae-lee-english2-l06-p02-001",
+      "title": "Hawaiian Culture",
+      "text": [
+        "Today we went to a culture center.",
+        "We learned about traditional Hawaiian culture there.",
+        "First, we learned what some Hawaiian words mean.",
+        "‘Aloha’ is used to say ‘hello’ or ‘goodbye,’ and ‘mahalo’ means ‘thank you.’",
+        "Then it was hula dance time!",
+        "Surprisingly, many of the movements stood for things in nature.",
+        "For example, if you raise your arms above your head in a circle, it stands for the moon.",
+        "When I danced hula, I could feel the Hawaiian people’s love for nature.",
+        "On the way back to Soobin’s house, we saw a big, beautiful rainbow.",
+        "Soobin explained, ‘You can often see rainbows in Hawaii. So, Hawaii is called the Rainbow State.’"
+      ],
+      "koreanText": [
+        "오늘 우리는 문화 센터에 갔다.",
+        "우리는 거기에서 하와이 전통문화에 대해 배웠다.",
+        "먼저, 우리는 몇몇 하와이 단어들이 무엇을 의미하는지 배웠다.",
+        "Aloha는 ‘안녕’ 또는 ‘잘 가’라는 인사를 하는 데 사용되고, mahalo는 ‘고마워’를 의미한다.",
+        "그다음은 훌라 춤 시간이었다!",
+        "놀랍게도, 많은 동작들이 자연의 것들을 상징했다.",
+        "예를 들어, 팔을 머리 위로 원을 그리며 들면, 그것은 달을 의미한다.",
+        "훌라 춤을 출 때, 나는 하와이 사람들의 자연에 대한 사랑을 느낄 수 있었다.",
+        "수빈이네 집으로 돌아가는 길에, 우리는 크고 아름다운 무지개를 보았다.",
+        "수빈이는 “하와이에서는 무지개를 자주 볼 수 있어. 그래서 하와이는 ‘무지개 주’라고 불려.”라고 설명해 주었다."
+      ]
+    }
+  ]
+}
