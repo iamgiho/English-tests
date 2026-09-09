@@ -1,0 +1,219 @@
+1
+busy
+바쁜
+2
+project
+프로젝트, 과제
+3
+be interested in
+~에 관심이 있다
+4
+science
+과학
+5
+journey
+여행, 여정
+6
+astronaut
+우주 비행사
+7
+come true
+이루어지다, 실현되다
+8
+awesome
+굉장한, 아주 멋진
+9
+chimpanzee
+침팬지
+10
+study
+~을 연구하다
+11
+wild
+야생
+12
+role model
+롤 모델, 본받을 사람
+13
+behavior
+행동
+14
+explore
+~을 탐험하다
+15
+greatness
+위대함, 뛰어남
+16
+receive
+~을 받다
+17
+invitation
+초대장
+18
+ordinary
+보통의, 평범한
+19
+celebrate
+~을 기념하다, 축하하다
+20
+excited
+신이 난, 흥분한
+21
+exploration
+탐구, 탐험
+22
+stop
+방문지
+23
+airplane
+비행기
+24
+garage
+차고, 격납고
+25
+model
+모형의
+26
+hang
+매달리다, 걸려 있다
+27
+ceiling
+천장
+28
+leather
+가죽
+29
+pilot
+비행사, 파일럿
+30
+goggles
+고글, 보호 안경
+31
+display
+~을 전시하다
+32
+put on
+~을 입다, 착용하다
+33
+sound
+소리
+34
+engine
+엔진
+35
+look around
+둘러보다
+36
+in surprise
+놀라서
+37
+wall
+벽
+38
+brave
+용감한
+39
+strong
+강한, 강인한
+40
+female
+여성의
+41
+read
+~라고 쓰여 있다
+42
+enter
+~에 입학하다
+43
+flight
+비행
+44
+give up
+포기하다
+45
+achieve
+~을 이루다, 성취하다
+46
+fly
+~을 조종하다, 날다, 비행하다
+47
+fight
+싸우다
+48
+against
+~에 맞서
+49
+independence
+독립
+50
+move
+~을 감동시키다
+51
+step into
+~에 들어가다
+52
+be filled with
+~으로 가득 차다
+53
+drawing
+그림
+54
+insect
+곤충
+55
+plant
+식물, 풀
+56
+forest
+숲
+57
+suddenly
+갑자기
+58
+catch
+~을 잡다
+59
+honeybee
+꿀벌
+60
+detailed
+자세한, 세밀한
+61
+alive
+살아 있는
+62
+bookshelf
+책장, 책꽂이
+63
+shining
+빛나는
+64
+pick up
+~을 집어 들다
+65
+cover
+(책 등의) 표지
+66
+truly
+진심으로, 정말로
+67
+true
+진정한, 진심 어린
+68
+nature
+자연
+69
+clearly
+분명하게, 뚜렷하게
+70
+corner
+구석, 모퉁이
+71
+step out of
+~에서 나오다
+72
+last
+맨 마지막의, 최종의
+73
+adventure
+모험
