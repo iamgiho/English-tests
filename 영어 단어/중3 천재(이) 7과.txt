@@ -242,7 +242,7 @@ energy
 hopeful
 기대하는, 희망에 찬
 82
-take care of ~
+take care of
 ~을 돌보다, ~을 처리하다, ~을 책임지다
 83
 finish the dishes
@@ -269,7 +269,7 @@ B의 이름을 따서 A를 짓다
 for sure
 확실히, 틀림없이
 91
-according to ~
+according to
 ~에 따르면
 92
 a number of
@@ -284,16 +284,16 @@ do harm
 have an effect on
 ~에 영향을 끼치다
 96
-shoot ~ into …
-~을 …으로 쏘다, 내뿜다
+shoot
+쏘다
 97
-prevent ~ from …
-~가 …하는 것을 막다, 방해하다
+prevent
+막다
 98
-be good for ~
+be good for
 ~에 좋다
 99
-look for ~
+look for
 ~을 찾다
 100
 millions of
@@ -302,5 +302,5 @@ millions of
 turn A into B
 A를 B로 바꾸다
 102
-in harmony with ~
+in harmony with
 ~와 조화를 이루어

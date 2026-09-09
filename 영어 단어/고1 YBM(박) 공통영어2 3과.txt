@@ -8,7 +8,7 @@ overcome
 wellness
 건강, 건강함
 4
-deal with ~
+deal with
 ~을 처리하다, 다루다
 5
 cultivate
@@ -20,13 +20,13 @@ inner
 strength
 강인함, 정신력
 8
-free from ~
+free from
 ~을 면한, ~의 염려가 없는
 9
 adversity
 역경
 10
-take the form of ~
+take the form of
 ~의 모습을 취하다
 11
 failure
@@ -41,7 +41,7 @@ cope
 ability
 능력
 15
-be known as ~
+be known as
 ~로 알려져 있다
 16
 spring back
@@ -68,7 +68,7 @@ successful
 survive
 (위기 등을) 견뎌 내다
 24
-a stepping stone to ~
+a stepping stone to
 ~을 위한 발판
 25
 growth
@@ -110,7 +110,7 @@ opportunity
 medical condition
 질병
 38
-result in ~
+result in
 ~을 야기하다
 39
 beneath
@@ -119,7 +119,7 @@ beneath
 surgery
 수술
 41
-compete against ~
+compete against
 ~와 경쟁하다
 42
 disability
@@ -128,7 +128,7 @@ disability
 national
 국가의, 전국적인
 44
-participate in ~
+participate in
 ~에 참가하다
 45
 public speaking
@@ -197,7 +197,7 @@ single ~ out
 face
 직면하다, 닥쳐오다
 67
-focus on ~
+focus on
 ~에 집중하다
 68
 embrace
@@ -209,7 +209,7 @@ unexpected
 obstacle
 (성공 등을 가로막는) 장애물
 71
-think of ~
+think of
 ~을 생각하다
 72
 that is (to say)
@@ -218,7 +218,7 @@ that is (to say)
 personal
 개인의, 개인적인
 74
-look after ~
+look after
 ~을 돌보다, ~을 살피다
 75
 present
@@ -245,13 +245,13 @@ observe
 judge
 판단하다, 평가하다
 83
-proceed with ~
+proceed with
 ~을 계속 진행하다
 84
-base on ~
+base on
 ~에 근거하여
 85
-go forward with ~
+go forward with
 ~을 진행시키다
 86
 connect
@@ -266,10 +266,10 @@ counselor
 clarity
 명료, 명확
 90
-respond to ~
+respond to
 ~에 대응하다
 91
-tend to부정사
+tend to
 ~하는 경향이 있다
 92
 support
@@ -284,7 +284,7 @@ urge
 particularly
 특히
 96
-in the middle of ~
+in the middle of
 ~의 한가운데에
 97
 uncertainty
@@ -308,5 +308,5 @@ gradually
 fulfilled
 만족감, 성취감을 느끼는
 104
-a key to ~
+a key to
 ~의 열쇠, 단서

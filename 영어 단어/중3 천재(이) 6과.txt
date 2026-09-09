@@ -3,7 +3,7 @@ decide
 ~을 결정하다
 2
 volunteer
-v. 자원봉사하다; n. 자원봉사자
+자원봉사하다; 자원봉사자
 3
 community center
 지역 주민 센터
@@ -27,10 +27,10 @@ low
 (위치, 정도 등이) 낮은
 10
 seat
-n. 자리, 좌석; v. 앉히다
+자리, 좌석; 앉히다
 11
 mind
-v. 언짢아하다, 꺼리다; n. 마음
+언짢아하다, 꺼리다; 마음
 12
 window seat
 창가 자리
@@ -48,7 +48,7 @@ arrive
 도착하다
 17
 common
-n. 공유지, 공원; a. 흔한, 공통의
+공유지, 공원; 흔한, 공통의
 18
 village
 마을
@@ -75,7 +75,7 @@ grassland
 초지, 풀밭
 26
 lie
-v. 누워 있다, 눕다; 있다, 위치해 있다; n. 거짓말
+누워 있다, 눕다; 있다, 위치해 있다; 거짓말
 27
 allow
 허락하다
@@ -102,7 +102,7 @@ rich
 부유한
 35
 notice
-v. 알아차리다; n. 공고문
+알아차리다; 공고문
 36
 rule
 규칙
@@ -177,7 +177,7 @@ resource
 자원
 60
 value
-v. 소중히 여기다; n. 가치
+소중히 여기다; 가치
 61
 fairly
 공정하게
@@ -233,7 +233,7 @@ to make matters worse
 at last
 마침내
 79
-be able to (동사원형)
+be able to
 ~할 수 있다
 80
 go back to

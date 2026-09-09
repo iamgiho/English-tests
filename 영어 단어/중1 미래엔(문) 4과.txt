@@ -65,7 +65,7 @@ near
 sure
 확신하는
 23
-look at ~
+look at
 ~을 보다
 24
 map
@@ -77,7 +77,7 @@ walk
 get
 도착하다
 27
-have to + 동사원형
+have to
 ~해야 한다
 28
 take
@@ -125,7 +125,7 @@ famous
 bakery
 빵집, 제과점
 43
-prepare for ~
+prepare for
 ~을 준비하다
 44
 find
@@ -164,7 +164,7 @@ plan B
 another
 또 다른
 56
-thanks to ~
+thanks to
 ~ 덕분에
 57
 special
@@ -197,7 +197,7 @@ uniform
 for fun
 재미로
 67
-look like ~
+look like
 ~처럼 보이다
 68
 work out

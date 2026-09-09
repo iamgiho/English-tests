@@ -50,7 +50,7 @@ online
 kind
 종류
 18
-look for ~
+look for
 ~을 찾다
 19
 cute
@@ -65,7 +65,7 @@ field trip
 walk
 걷다
 23
-walk around ~
+walk around
 ~ 주변을 걷다
 24
 beautiful
@@ -116,7 +116,7 @@ time
 present
 현재
 40
-look at ~
+look at
 ~을 보다
 41
 life
@@ -134,7 +134,7 @@ go off
 get up
 일어나다
 46
-look out ~
+look out
 ~의 밖을 내다보다
 47
 check
@@ -167,19 +167,19 @@ wake up
 ask
 묻다
 57
-get ready for ~
+get ready for
 ~을 준비하다
 58
 simply
 단순히
 59
-pick up ~
+pick up
 ~을 집어 들다
 60
 tablet
 태블릿 PC
 61
-wait for ~
+wait for
 ~을 기다리다
 62
 coin
@@ -188,10 +188,10 @@ coin
 pocket
 주머니
 64
-take out ~
+take out
 ~을 꺼내다
 65
-get on ~
+get on
 ~에 타다
 66
 lucky
@@ -221,7 +221,7 @@ favorite
 webtoon
 웹툰
 75
-listen to ~
+listen to
 ~을 듣다
 76
 show

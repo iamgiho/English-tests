@@ -266,14 +266,11 @@ ask for
 look after
 ~을 돌보다
 90
-What if …?
-…하면 어쩌지?
-91
 be aware of
 ~을 알다, 알고 있다
-92
+91
 share A with B
 A를 B와 공유하다
-93
+92
 provide A to B
 B에게 A를 제공하다

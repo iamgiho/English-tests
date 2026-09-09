@@ -26,13 +26,13 @@ crisis
 drought
 가뭄
 10
-tired of ~
+tired of
 ~에 싫증이 난, ~이 지겨운
 11
 running water
 수돗물
 12
-pull into ~
+pull into
 ~에 차를 대다
 13
 parking lot
@@ -41,7 +41,7 @@ parking lot
 Black Friday
 추수감사절 다음 금요일, 할인 행사일
 15
-after ~
+after
 ~을 찾고 있는
 16
 checkout
@@ -95,7 +95,7 @@ abandon
 commodity
 (유용한) 것
 33
-reach for ~
+reach for
 ~을 잡으려 손을 뻗다
 34
 stack
@@ -140,7 +140,7 @@ grab
 return
 (미소·인사 등에) 똑같이 답하다
 48
-bring out the best in ~
+bring out the best in
 ~의 장점을 이끌어내다
 49
 favor
@@ -182,10 +182,10 @@ disastrous
 resume
 재개되다
 62
-provided (that) ~
+provided (that)
 만약 ~라면
 63
-contribute to ~
+contribute to
 ~의 요인이 되다
 64
 shortage

@@ -2,7 +2,7 @@
 interested
 관심 있는, 흥미 있어 하는
 2
-be interested in ~
+be interested in
 ~에 관심이 있다
 3
 fashion
@@ -35,10 +35,10 @@ something
 bake
 (빵 등을) 굽다
 13
-be good at ~
+be good at
 ~을 잘하다
 14
-be into ~
+be into
 ~에 관심이 있다
 15
 webtoon
@@ -194,7 +194,7 @@ something
 wrong
 이상이 있는, 문제가 있는
 66
-wrong with ~
+wrong with
 ~에 이상이 있는, 문제가 있는
 67
 anything
@@ -233,7 +233,7 @@ job
 right
 맞는
 79
-take care of ~
+take care of
 ~을 돌보다
 80
 answer
@@ -248,7 +248,7 @@ always
 nice
 친절한, 다정한
 84
-be afraid of ~
+be afraid of
 ~을 두려워하다
 85
 most of all

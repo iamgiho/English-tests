@@ -20,19 +20,19 @@ go surfing
 sound
 ~하게 들리다
 8
-be good at ~
+be good at
 ~을 잘하다
 9
 teach
 가르치다
 10
 show
-~에게 …을 보여주다
+보여주다
 11
 later
 나중에
 12
-welcome to ~
+welcome to
 ~에 온 것을 환영하다
 13
 strawberry
@@ -42,7 +42,7 @@ bottle
 병, 용기
 15
 give
-~에게 …을 주다
+주다
 16
 discount
 할인
@@ -62,7 +62,7 @@ pick ~ up
 trash
 쓰레기
 22
-sound like ~
+sound like
 ~처럼 들리다
 23
 join
@@ -141,7 +141,7 @@ first
 첫 번째의, 처음의
 48
 give
-~에게 …을 주다
+주다
 49
 some
 얼마간의, 조금의
@@ -155,7 +155,7 @@ important
 so
 그래서, 그렇게, 그 정도로
 53
-go through ~
+go through
 ~을 살펴보다
 54
 garbage
@@ -173,7 +173,7 @@ plastic
 wasteful
 낭비하는
 59
-say no to ~
+say no to
 ~을 거절하다, ~에 아니라고 말하다
 60
 straw
@@ -185,23 +185,20 @@ really
 hot
 (날씨가) 더운
 63
-buy
-사다, ~에게 …을 사주다
-64
 lemonade
 레모네이드
-65
-come with ~
+64
+come with
 ~이 함께 나오다, 딸려 있다
-66
+65
 often
 자주
-67
+66
 sell
 팔다
-68
+67
 secondhand
 중고의
-69
+68
 item
 품목

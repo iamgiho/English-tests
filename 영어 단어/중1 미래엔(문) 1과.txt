@@ -239,7 +239,7 @@ make
 own
 자신의
 81
-Let's ~
+Let's
 ~하자
 82
 great

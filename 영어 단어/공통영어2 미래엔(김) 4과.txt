@@ -1,246 +1,246 @@
 1
 neural
-a. 신경(계통)의
+신경(계통)의
 2
 implant
-n. (수술을 통해 인체에) 주입하는[심는] 물질[장치]
+(수술을 통해 인체에) 주입하는[심는] 물질[장치]
 3
 neuroscience
-n. 신경과학
+신경과학
 4
-treatment for ~
+treatment for
 ~에 대한 치료법
 5
 disorder
-n. 장애, 질환
+장애, 질환
 6
 nervous system
-n. 신경계
+신경계
 7
 spinal cord
-n. 척수
+척수
 8
 traditionally
-adv. 전통적으로
+전통적으로
 9
 various
-a. 다양한
+다양한
 10
 function
-n. 기능
+기능
 11
 medical
-a. 의학의, 의료의
+의학의, 의료의
 12
 device
-n. 장치
+장치
 13
 exciting
-a. 신나는
+신나는
 14
 rapid
-a. 빠른
+빠른
 15
 advancement
-n. 진보, 발전
+진보, 발전
 16
 artificial intelligence
-n. 인공지능 (AI)
+인공지능 (AI)
 17
 post
-n. 게시물
+게시물
 18
 examine
-v. 조사하다
+조사하다
 19
 incredible
-a. 믿을 수 없는, 대단한
+믿을 수 없는, 대단한
 20
 benefit
-n. 혜택, 이득
+혜택, 이득
 21
 amazing
-a. 놀라운
+놀라운
 22
 potential
-n. 잠재력
+잠재력
 23
 ethical
-a. 윤리적인
+윤리적인
 24
 concern
-n. 걱정, 우려
+걱정, 우려
 25
 surround
-v. ~을 둘러싸다
+~을 둘러싸다
 26
 explore
-v. 탐색하다
+탐색하다
 27
 fascinating
-a. 매력적인
+매력적인
 28
 apply
-v. 적용하다
+적용하다
 29
 promise
-n. 가능성, 장래성
+가능성, 장래성
 30
 application
-n. 적용
+적용
 31
-a range of ~
+a range of
 다양한 ~
 32
 electrically
-adv. 전기적으로
+전기적으로
 33
 stimulate
-v. ~을 자극하다
+~을 자극하다
 34
 target
-v. 목표로 정하다
+목표로 정하다
 35
 region
-n. 부위
+부위
 36
 normal
-a. 평범한, 보통의, 정상적인
+평범한, 보통의, 정상적인
 37
 paralyze
-v. 마비시키다
+마비시키다
 38
 spine
-n. 척추, 등뼈
+척추, 등뼈
 39
 analyze
-v. ~을 분석하다
+~을 분석하다
 40
 signal
-n. 신호
+신호
 41
 similarly
-adv. 유사하게
+유사하게
 42
 artificial
-a. 인공의
+인공의
 43
 mechanism
-n. (목적 달성을 위한) 방법, 메커니즘
+(목적 달성을 위한) 방법, 메커니즘
 44
 operate
-v. 작동하다
+작동하다
 45
 health care
-n. 의료 (서비스), 보건 (서비스)
+의료 (서비스), 보건 (서비스)
 46
 spread
-v. 퍼지다
+퍼지다
 47
 industry
-n. 산업
+산업
 48
 futurist
-n. 미래학자
+미래학자
 49
 predict
-v. 예측하다, 예언하다
+예측하다, 예언하다
 50
 commercially
-adv. 상업적으로
+상업적으로
 51
 available
-a. 이용할 수 있는
+이용할 수 있는
 52
 significantly
-adv. 상당히
+상당히
 53
 advance
-n. 진보
+진보
 54
-install ~ in …
-~을 …에 설치하다
+install
+설치하다
 55
 enhance
-v. 향상시키다
+향상시키다
 56
-similar to ~
+similar to
 ~와 유사한
 57
 capture
-v. 포착하다
+포착하다
 58
-look through ~
+look through
 ~을 살펴보다
 59
 feed
-n. 공급(장치)
+공급(장치)
 60
 vividly
-adv. 생생하게
+생생하게
 61
 recall
-v. ~을 회상하다
+~을 회상하다
 62
 valuable
-a. 소중한, 귀중한
+소중한, 귀중한
 63
 revolutionize
-v. ~에 혁신을 일으키다
+~에 혁신을 일으키다
 64
 shift
-v. 바뀌다
+바뀌다
 65
 process
-v. 처리하다
+처리하다
 66
 vast
-a. 방대한
+방대한
 67
-instead of ~
+instead of
 ~ 대신에
 68
 creativity
-n. 창의성
+창의성
 69
 interpret
-v. ~을 해석하다
+~을 해석하다
 70
 generate
-v. 생성하다, 발생시키다
+생성하다, 발생시키다
 71
 embrace
-v. ~을 포용하다, 수용하다
+~을 포용하다, 수용하다
 72
 tricky
-a. (상황·일·분야 등이) 까다로운
+(상황·일·분야 등이) 까다로운
 73
 issue
-n. 문제, 쟁점
+문제, 쟁점
 74
 address
-v. 다루다[대처하다]
+다루다[대처하다]
 75
 integration
-n. 통합
+통합
 76
 identity
-n. 정체성
+정체성
 77
 existence
-n. 존재, 실재
+존재, 실재
 78
 value
-n. 가치; v. ~을 소중히 여기다
+가치; ~을 소중히 여기다
 79
-over-reliance on ~
+over-reliance on
 ~에 대한 지나친 의존
 80
 delay
-v. 지연시키다
+지연시키다
 81
 confusion
-n. 혼란
+혼란
 82
 whether A, B, or C
 A 또는 B 또는 C인지
@@ -249,127 +249,127 @@ in between
 그 사이에 있는
 84
 critical
-a. 중요한
+중요한
 85
 privacy
-n. 사생활, 프라이버시
+사생활, 프라이버시
 86
 risk
-n. 위험, 위험 요소
+위험, 위험 요소
 87
 organization
-n. 조직, 기구, 단체
+조직, 기구, 단체
 88
 hacker
-n. 해커
+해커
 89
 access
-v. ~에 접근[접속]하다
+~에 접근[접속]하다
 90
 permission
-n. 허락, 허가
+허락, 허가
 91
 control
-v. ~을 통제하다
+~을 통제하다
 92
 additional
-a. 추가적인
+추가적인
 93
-lead to ~
+lead to
 ~로 이어지다
 94
 inequality
-n. 불평등
+불평등
 95
-available to ~
+available to
 ~에게 이용 가능한
 96
-due to ~
+due to
 ~ 때문에
 97
 unequal
-a. 불평등한
+불평등한
 98
 intensify
-v. ~을 강화하다
+~을 강화하다
 99
 division
-n. 분열
+분열
 100
 afford
-v. ~의 여유가 있다
+~의 여유가 있다
 101
 overcome
-v. ~을 극복하다, 이겨내다
+~을 극복하다, 이겨내다
 102
 challenge
-n. 도전, 난제
+도전, 난제
 103
 careful
-a. 신중한, 조심하는
+신중한, 조심하는
 104
 consideration
-n. 고려, 고찰
+고려, 고찰
 105
 highlight
-v. ~을 강조하다
+~을 강조하다
 106
 aspect
-n. 측면
+측면
 107
 legal
-a. 합법적인
+합법적인
 108
 establish
-v. ~을 설립하다
+~을 설립하다
 109
 prior
-a. 사전의
+사전의
 110
 review
-n. 검토
+검토
 111
 thoroughly
-adv. 철저하게
+철저하게
 112
 assess
-v. ~을 평가하다
+~을 평가하다
 113
 conduct
-v. 수행하다
+수행하다
 114
 ensure
-v. ~을 보장하다
+~을 보장하다
 115
-in accordance with ~
+in accordance with
 ~에 따라서
 116
 principle
-n. 원칙, 원리
+원칙, 원리
 117
 opinion
-n. 의견
+의견
 118
 below
-adv. 아래에
+아래에
 119
 the disabled
-n. 장애인들
+장애인들
 120
-according to ~
+according to
 ~에 따라서
 121
 sound
-v. ~하게 들리다
+~하게 들리다
 122
 worried
-a. 걱정된
+걱정된
 123
 strictly
-adv. 엄격하게
+엄격하게
 124
 protect
-v. ~을 보호하다
+~을 보호하다
 125
 enforce
-v. (법률 등)을 집행하다
+(법률 등)을 집행하다

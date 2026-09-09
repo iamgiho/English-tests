@@ -41,7 +41,7 @@ athlete
 issue
 문제
 15
-turn out to ~
+turn out to
 ~인 것으로 밝혀지다, 판명되다
 16
 seek
@@ -62,7 +62,7 @@ confuse
 accidentally
 실수로
 22
-contribute to ~
+contribute to
 ~에 기여하다
 23
 unfortunately
@@ -113,7 +113,7 @@ strike
 shelter
 피난처
 39
-be up to ~
+be up to
 ~에 달려 있다
 40
 apparently
@@ -152,19 +152,19 @@ likely
 proof
 증거
 52
-instead of ~
+instead of
 ~ 대신에
 53
 critically
 비판적으로
 54
-be inclined to ~
+be inclined to
 ~하는 경향이 있다
 55
 prejudice
 편견, 선입견
 56
-fall into ~
+fall into
 (의도치 않게) ~에 빠지다
 57
 confirmation bias
@@ -230,7 +230,7 @@ eliminate
 objectively
 객관적으로
 78
-break out of ~
+break out of
 ~에서 벗어나다
 79
 access
@@ -263,7 +263,7 @@ term
 distort
 왜곡하다
 89
-engage in ~
+engage in
 ~에 참여하다
 90
 debate

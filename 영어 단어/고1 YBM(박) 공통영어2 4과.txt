@@ -5,7 +5,7 @@ microscope
 essential
 핵심적인, 필수적인
 3
-tool for ~
+tool for
 ~을 위한 도구
 4
 invent
@@ -29,7 +29,7 @@ certain
 accessible
 접근 가능한, 이용 가능한
 11
-due to ~
+due to
 ~ 때문에
 12
 cost
@@ -38,7 +38,7 @@ cost
 present
 제시하다, 제출하다
 14
-solution to ~
+solution to
 ~에 대한 해결책
 15
 achieve
@@ -47,7 +47,7 @@ achieve
 magnification
 확대
 17
-less than ~
+less than
 ~보다 적은, ~ 미만의
 18
 in parts
@@ -65,7 +65,7 @@ identify
 infectious
 전염성의
 23
-come across ~
+come across
 ~을 우연히 발견하다
 24
 expensive
@@ -86,7 +86,7 @@ prevent
 spread
 확산
 30
-sit + 형용사
+sit
 ~한 상태로 있다
 31
 unused
@@ -131,10 +131,10 @@ cheap
 save
 ~을 구하다
 45
-reflect on ~
+reflect on
 ~을 숙고하다
 46
-not until + 완전한 절
+not until
 ~한 후에야 비로소
 47
 affordable
@@ -155,7 +155,7 @@ make a difference
 recognize
 ~을 인식하다
 53
-eager to부정사
+eager to
 ~하기를 열망하는
 54
 function
@@ -197,10 +197,10 @@ bring ~ into focus
 accomplish
 ~을 성취하다
 67
-close to ~
+close to
 ~에 가까이
 68
-far from ~
+far from
 ~로부터 멀리
 69
 light source
@@ -227,7 +227,7 @@ on the other hand
 deliver ~ performance
 ~한 성능을 보여주다
 77
-experiment with ~
+experiment with
 ~로 실험하다
 78
 suitable
@@ -239,7 +239,7 @@ compromise
 manufacturer
 제조업체, 제조업자
 81
-settle for ~
+settle for
 ~로 만족하다
 82
 middle ground
@@ -251,10 +251,10 @@ extreme
 inexpensive
 값싼, 저렴한
 85
-be determined to부정사
+be determined to
 ~할 것을 결심하다
 86
-remain + 형용사
+remain
 ~한 채로 남아 있다
 87
 draw
@@ -284,7 +284,7 @@ attempt
 ultimately
 결국, 끝내
 96
-settle on[upon] ~
+settle on[upon]
 ~로 결정하다
 97
 waterproof
@@ -299,7 +299,7 @@ name
 invention
 발명, 발명품
 101
-capable of + 동명사
+capable of
 ~할 수 있는
 102
 examine
@@ -317,7 +317,7 @@ portable
 weigh
 무게가 ~이다
 107
-fit in[into] ~
+fit in[into]
 ~에 알맞다
 108
 external
@@ -371,7 +371,7 @@ utilize
 purpose
 목적
 125
-be instrumental in + 동명사
+be instrumental in
 ~하는 데 매우 중요한 역할을 하다
 126
 detect
@@ -383,56 +383,50 @@ fake
 antimalarial
 말라리아 치료의, 예방의
 129
-responsible for ~
+responsible for
 ~의 원인이 되는
 130
 sub-Saharan
 사하라 사막 이남의
 131
-crush ~ into …
-~을 …로 분쇄하다
-132
 uniform
 균일한
-133
+132
 particle
 입자
-134
+133
 mere
 단순한
-135
+134
 publish
 ~을 발표하다, 출판하다
-136
+135
 currently
 현재
-137
+136
 in progress
 진행 중인
-138
-introduce ~ to …
-~에게 …을 처음 경험하게 하다
-139
-give up on ~
+137
+give up on
 ~에 대한 희망을 버리다
-140
+138
 achievement
 성취, 업적
-141
+139
 occur
 일어나다, 발생하다
-142
+140
 lack
 ~가 부족하다
-143
-access to ~
+141
+access to
 ~로의 접근, 접근 기회
-144
+142
 health care
 의료 서비스, 보건 서비스
-145
+143
 preventable
 예방할 수 있는
-146
+144
 increasingly
 점점 더

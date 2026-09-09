@@ -131,7 +131,7 @@ answer
 think
 생각하다
 45
-have + to부정사
+have to
 ~해야 한다
 46
 hot
@@ -149,7 +149,7 @@ place
 cold
 추운
 51
-move on to ~
+move on to
 ~로 넘어가다
 52
 tall
@@ -212,7 +212,7 @@ really
 surprised
 놀란
 72
-look at ~
+look at
 ~을 보다, 살피다
 73
 map
@@ -221,13 +221,13 @@ map
 close
 가까운
 75
-close to ~
+close to
 ~에 가까운
 76
 each other
 서로
 77
-be famous for ~
+be famous for
 ~으로 유명하다
 78
 congratulations

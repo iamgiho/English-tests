@@ -50,10 +50,10 @@ get well
 carry
 나르다
 18
-wait for ~
+wait for
 ~을 기다리다
 19
-in front of ~
+in front of
 ~ 앞에
 20
 coach
@@ -143,13 +143,13 @@ somebody
 get
 잡다, ~하게 되다
 49
-go over ~
+go over
 ~을 넘다
 50
 fence
 울타리, 담장
 51
-look at ~
+look at
 ~을 보다
 52
 run
@@ -161,7 +161,7 @@ toward
 each other
 서로
 55
-bump into ~
+bump into
 ~에 부딪치다
 56
 fall down
@@ -188,7 +188,7 @@ surprised
 after
 ~ 후에
 64
-talk about ~
+talk about
 ~에 대해 이야기하다
 65
 glad
