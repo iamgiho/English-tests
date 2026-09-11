@@ -1503,7 +1503,8 @@
 
     function initStorage() {
       if (!localStorage.getItem(STORAGE.studentPassword)) localStorage.setItem(STORAGE.studentPassword, "english2026");
-      if (!localStorage.getItem(STORAGE.adminPassword)) localStorage.setItem(STORAGE.adminPassword, "admin2026");
+      const savedAdminPassword = localStorage.getItem(STORAGE.adminPassword);
+      if (!savedAdminPassword || savedAdminPassword === "admin2026") localStorage.setItem(STORAGE.adminPassword, "administer");
       if (!localStorage.getItem(STORAGE.passwordChangedAt)) localStorage.setItem(STORAGE.passwordChangedAt, new Date().toISOString().slice(0, 10));
       localStorage.removeItem("exam.words");
       if (!localStorage.getItem(STORAGE.results)) writeJson(STORAGE.results, []);
@@ -3951,7 +3952,7 @@
 
     function savePasswords() {
       localStorage.setItem(STORAGE.studentPassword, $("#studentPasswordInput").value.trim() || "english2026");
-      localStorage.setItem(STORAGE.adminPassword, $("#adminPasswordInput").value.trim() || "admin2026");
+      localStorage.setItem(STORAGE.adminPassword, $("#adminPasswordInput").value.trim() || "administer");
       localStorage.setItem(STORAGE.passwordChangedAt, $("#passwordChangedAt").value || new Date().toISOString().slice(0, 10));
       updatePasswordDue();
       setMessage($("#adminWorkNotice"), "비밀번호를 저장했습니다. 변경일 기준 7일 뒤 다시 바꾸면 됩니다.", "good");
