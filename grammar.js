@@ -36,7 +36,11 @@ async function loadGrammar() {
 
 function grammarUnitNotice() {
   const unit = grammarUnits.find(unit => unit.id === $('#grammarUnitSelect').value);
-  setMessage($('#grammarNotice'), unit ? `${unit.title} · ${unit.words.length}개 동사` : '단원을 선택하세요.');
+  if (!unit) return setMessage($('#grammarNotice'), '단원을 선택하세요.');
+  $('#grammarRangeStart').value = 1;
+  $('#grammarRangeEnd').value = unit.words.length;
+  $('#grammarRangeStart').max = $('#grammarRangeEnd').max = unit.words.length;
+  setMessage($('#grammarNotice'), `${unit.title} · 선택 가능 번호 1~${unit.words.length}`);
 }
 
 function grammarShow(id, visible) { $('#' + id).classList.toggle('hidden', !visible); }
@@ -44,10 +48,16 @@ function grammarShow(id, visible) { $('#' + id).classList.toggle('hidden', !visi
 function startGrammar() {
   const name = $('#grammarName').value.trim();
   const unit = grammarUnits.find(unit => unit.id === $('#grammarUnitSelect').value);
+  const start = Number($('#grammarRangeStart').value);
+  const end = Number($('#grammarRangeEnd').value);
   if (!name) { $('#grammarName').focus(); return setMessage($('#grammarFeedback'), '이름을 먼저 입력하세요.', 'bad'); }
   if (!unit) return;
-  grammarSession = { name, unit, stage: 'learn', round: 1, queue: [...unit.words], index: 0, wrong: [], records: [], failed: new Set(), corrections: 0, retries: 0, replays: 0, answered: false, pending: [] };
-  $('#grammarName').disabled = $('#grammarUnitSelect').disabled = $('#grammarStart').disabled = true;
+  if (!Number.isInteger(start) || !Number.isInteger(end) || start < 1 || start > end || end > unit.words.length) {
+    return setMessage($('#grammarFeedback'), `동사 번호를 1~${unit.words.length} 사이에서 올바르게 입력하세요.`, 'bad');
+  }
+  const words = unit.words.slice(start - 1, end);
+  grammarSession = { name, unit, words, range: `${start}~${end}`, stage: 'learn', round: 1, queue: [...words], index: 0, wrong: [], records: [], failed: new Set(), corrections: 0, retries: 0, replays: 0, answered: false, pending: [] };
+  $('#grammarName').disabled = $('#grammarUnitSelect').disabled = $('#grammarRangeStart').disabled = $('#grammarRangeEnd').disabled = $('#grammarStart').disabled = true;
   $('#grammarResult').innerHTML = '';
   renderGrammar();
 }
@@ -189,11 +199,11 @@ function nextGrammar() {
   if (++s.index < s.queue.length) return renderGrammar();
   if (s.stage === 'learn') {
     if (++s.round <= 3) { s.index = 0; return renderGrammar(); }
-    return grammarBegin('written', s.unit.words);
+    return grammarBegin('written', s.words);
   }
   if (s.stage !== 'retest') s.afterRetest = s.stage === 'written' ? 'sound' : 'complete';
   if (s.wrong.length) { s.retries++; return grammarBegin('retest', s.wrong); }
-  if (s.afterRetest === 'sound') return grammarBegin('sound', s.unit.words);
+  if (s.afterRetest === 'sound') return grammarBegin('sound', s.words);
   finishGrammar();
 }
 
@@ -201,9 +211,9 @@ function finishGrammar() {
   const s = grammarSession;
   s.stage = 'complete';
   window.speechSynthesis?.cancel();
-  const total = s.unit.words.length * 6;
+  const total = s.words.length * 6;
   const correct = total - s.failed.size;
-  const result = { name: s.name, unit: s.unit.title, total, correct, score: Math.round(correct / total * 100), retries: s.retries, corrections: s.corrections, wrongAnswers: s.records, takenAt: new Date().toLocaleString('ko-KR') };
+  const result = { name: s.name, unit: s.unit.title, range: s.range, total, correct, score: Math.round(correct / total * 100), retries: s.retries, corrections: s.corrections, wrongAnswers: s.records, takenAt: new Date().toLocaleString('ko-KR') };
   let saved = true;
   try { writeJson(grammarResultKey, [result, ...readJson(grammarResultKey, [])]); } catch { saved = false; }
   for (const id of ['grammarAnswers', 'grammarNext', 'grammarSound', 'grammarReplay', 'grammarReveal']) grammarShow(id, false);
@@ -211,13 +221,13 @@ function finishGrammar() {
   $('#grammarQuestion').innerHTML = `<h3>Grammar 학습 완료</h3><p class="question-main">${result.score}점</p><p class="question-sub">본시험 ${correct} / ${total}항목 정답 · 오답 재시험 ${s.retries}회 · 모든 동사 통과</p>`;
   $('#grammarResult').innerHTML = s.records.length ? table(['단계', '현재형', '틀린 항목', '내 답', '정답'], s.records.map(r => [r.stage, r.present, r.field, r.userAnswer, r.answer])) : '<div class="notice good">최초 오답이 없습니다.</div>';
   setMessage($('#grammarFeedback'), saved ? '완료 결과와 본시험 최초 오답을 이 브라우저에 저장했습니다.' : '학습은 완료했지만 저장 공간 문제로 결과를 저장하지 못했습니다.', saved ? 'good' : 'bad');
-  $('#grammarName').disabled = $('#grammarUnitSelect').disabled = $('#grammarStart').disabled = false;
+  $('#grammarName').disabled = $('#grammarUnitSelect').disabled = $('#grammarRangeStart').disabled = $('#grammarRangeEnd').disabled = $('#grammarStart').disabled = false;
 }
 
 function resetGrammar() {
   window.speechSynthesis?.cancel();
   grammarSession = null;
-  $('#grammarName').disabled = $('#grammarUnitSelect').disabled = false;
+  $('#grammarName').disabled = $('#grammarUnitSelect').disabled = $('#grammarRangeStart').disabled = $('#grammarRangeEnd').disabled = false;
   $('#grammarStart').disabled = !grammarUnits.length;
   for (const id of ['grammarAnswers', 'grammarNext', 'grammarSound', 'grammarReplay', 'grammarReveal']) grammarShow(id, false);
   $('#grammarStage').textContent = '대기';

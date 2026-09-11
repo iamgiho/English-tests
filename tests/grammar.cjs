@@ -39,6 +39,9 @@ function answer(overrides = {}) {
   await run('loadGrammar()');
   assert.equal(run('grammarUnits[0].words.length'), wordCount);
   context.$('#grammarUnitSelect').value = data.units[0].id;
+  run('grammarUnitNotice()');
+  assert.equal(Number(context.$('#grammarRangeStart').value), 1);
+  assert.equal(Number(context.$('#grammarRangeEnd').value), wordCount);
   run('startGrammar()');
   assert.equal(state(), null, 'name required');
   context.$('#grammarName').value = '테스트';
@@ -100,6 +103,16 @@ function answer(overrides = {}) {
   run('resetGrammar()');
   assert.equal(state(), null);
   assert.equal(context.$('#grammarStart').disabled, false);
+  context.$('#grammarRangeStart').value = '3';
+  context.$('#grammarRangeEnd').value = '2';
+  run('startGrammar()');
+  assert.equal(state(), null, 'invalid range rejected');
+  context.$('#grammarRangeStart').value = '2';
+  context.$('#grammarRangeEnd').value = '3';
+  run('startGrammar()');
+  assert.equal(state().words.length, 2, 'selected range only');
+  assert.equal(state().words[0].present, data.units[0].words[1].present);
+  assert.equal(state().range, '2~3');
   for (const match of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) new vm.Script(match[1]);
   console.log(`PASS: ${wordCount} verbs, reveal rounds, 3-play limit, per-field correction, repeated silent retests, listening, scoring, storage, reset, answer variants.`);
 })().catch(error => { console.error(error); process.exitCode = 1; });

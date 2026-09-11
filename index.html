@@ -668,6 +668,16 @@
               </select>
             </div>
           </div>
+          <div class="field-row" style="margin-top: 12px;">
+            <div class="field">
+              <label for="grammarRangeStart">시작 동사 번호</label>
+              <input id="grammarRangeStart" type="number" inputmode="numeric" min="1" step="1">
+            </div>
+            <div class="field">
+              <label for="grammarRangeEnd">끝 동사 번호</label>
+              <input id="grammarRangeEnd" type="number" inputmode="numeric" min="1" step="1">
+            </div>
+          </div>
           <div class="toolbar">
             <button id="grammarStart" disabled>학습 시작</button>
             <button id="grammarReset" class="secondary">처음으로</button>
@@ -3839,7 +3849,7 @@
 
       readJson('exam.grammarResults', []).forEach((result) => attempts.push({
         category: 'Grammar', nickname: result.name, takenAt: result.takenAt,
-        meta: `${result.unit} · ${result.score}점 · ${result.correct}/${result.total} · 재시험 ${result.retries}회 · 이 브라우저 기록`,
+        meta: `${result.unit} · ${result.range || '전체 범위'} · ${result.score}점 · ${result.correct}/${result.total} · 재시험 ${result.retries}회 · 이 브라우저 기록`,
         headers: ['단계', '현재형', '틀린 항목', '내 답', '정답'],
         rows: result.wrongAnswers.map((answer) => [answer.stage, answer.present, answer.field, answer.userAnswer, answer.answer])
       }));
