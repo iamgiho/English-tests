@@ -89,11 +89,9 @@ function renderGrammar() {
     input.removeAttribute('aria-invalid');
     $('#' + field.id + 'Feedback').textContent = '';
   }
-  const forms = `과거형: ${escapeHtml(word.past.join(' / '))} · 과거분사형: ${escapeHtml(word.participle.join(' / '))}`;
   if (learning) {
     const prompt = s.round === 3 ? word.meaning.join(', ') : word.present;
-    const detail = s.round === 1 ? `뜻: ${escapeHtml(word.meaning.join(', '))}<br>${forms}` : s.round === 2 ? '뜻: ▓▓▓ · 과거형: ▓▓▓ · 과거분사형: ▓▓▓' : '현재형: ▓▓▓ · 과거형: ▓▓▓ · 과거분사형: ▓▓▓';
-    $('#grammarQuestion').innerHTML = `<h3>${s.round === 1 ? '보고 들으며 익히세요.' : '가린 내용을 떠올린 뒤 확인하세요.'}</h3><p class="question-main">${escapeHtml(prompt)}</p><p class="question-sub" id="grammarHidden">${detail}</p>`;
+    $('#grammarQuestion').innerHTML = `<h3>${s.round === 1 ? '보고 들으며 익히세요.' : '가린 내용을 떠올린 뒤 확인하세요.'}</h3><p class="question-main grammar-study-prompt">${escapeHtml(prompt)}</p><div id="grammarHidden" class="grammar-form-grid">${grammarStudyCards(word, s.round, s.round === 1)}</div>`;
   } else {
     $('#grammarQuestion').innerHTML = `<h3>${sound ? '현재형을 듣고 세 칸을 입력하세요.' : '현재형을 보고 세 칸을 입력하세요.'}</h3><p class="question-main">${sound ? '🔊' : escapeHtml(word.present)}</p>`;
     $('#grammarMeaning').focus();
@@ -102,11 +100,21 @@ function renderGrammar() {
   if (sound || (learning && s.round === 1)) speakGrammar();
 }
 
+function grammarStudyCards(word, round, revealed) {
+  const fields = round === 3
+    ? [{ key: 'present', label: '현재형' }, ...grammarFields.slice(1)]
+    : grammarFields;
+  return fields.map(field => {
+    const value = field.key === 'present' ? word.present : word[field.key].join(' / ');
+    return `<div class="grammar-form-card grammar-${field.key}"><span class="grammar-form-label">${field.label}</span><strong class="grammar-form-value">${revealed ? escapeHtml(value) : '<span class="grammar-covered">가려진 정답</span>'}</strong></div>`;
+  }).join('');
+}
+
 function revealGrammar() {
   const s = grammarSession;
   if (!s || s.stage !== 'learn' || s.round === 1) return;
   const word = s.queue[s.index];
-  $('#grammarHidden').textContent = `현재형: ${word.present} · 뜻: ${word.meaning.join(', ')} · 과거형: ${word.past.join(' / ')} · 과거분사형: ${word.participle.join(' / ')}`;
+  $('#grammarHidden').innerHTML = grammarStudyCards(word, s.round, true);
   grammarShow('grammarReveal', false);
   $('#grammarNext').disabled = false;
 }
