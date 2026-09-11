@@ -227,7 +227,6 @@
       overflow-wrap: anywhere;
     }
 
-    .grammar-covered { color: var(--muted); font-size: 18px; }
     .grammar-study-row {
       display: flex;
       flex-wrap: wrap;
@@ -235,7 +234,7 @@
       gap: 24px 48px;
       margin-top: 24px;
     }
-    .grammar-study-form { min-width: 0; max-width: 100%; }
+    .grammar-study-form { flex: 1 1 220px; min-width: 0; max-width: 100%; }
     .grammar-study-meaning { margin: 20px 0 0; font-size: 24px; line-height: 1.5; }
     #grammarAnswers input { font-size: 22px; min-height: 54px; }
     #grammarAnswers input:disabled { opacity: 1; color: var(--ink); }
@@ -760,7 +759,7 @@
           </div>
           <div class="notice" id="grammarNotice" role="status">단어를 불러오는 중입니다.</div>
           <div class="toolbar"><span class="pill" id="grammarStage">대기</span><span class="pill" id="grammarProgress">0 / 0</span></div>
-          <div class="question" id="grammarQuestion"><h3>Grammar 학습을 시작하세요.</h3><p class="question-sub">3회 노출 학습 → 세 칸 입력 시험 → 듣기 시험 · 오답은 따라 쓴 뒤 음성 없이 재시험합니다.</p></div>
+          <div class="question" id="grammarQuestion"><h3>Grammar 학습을 시작하세요.</h3><p class="question-sub">3회 노출 학습 → 세 칸 입력 시험 → 오답 재시험 · 오답은 따라 쓴 뒤 음성 없이 재시험합니다.</p></div>
           <div class="toolbar">
             <button id="grammarReveal" class="secondary hidden">가린 정답 보기</button>
             <button id="grammarSound" class="secondary hidden">현재형 듣기</button>

@@ -71,17 +71,16 @@ function renderGrammar() {
   s.replays = 0;
   $('#grammarSound').disabled = false;
   const learning = s.stage === 'learn';
-  const sound = s.stage === 'sound';
   grammarShow('grammarAnswers', !learning);
   grammarShow('grammarNext', true);
   grammarShow('grammarReveal', learning && s.round > 1);
-  grammarShow('grammarSound', sound || (learning && s.round === 1));
-  grammarShow('grammarReplay', sound || (learning && s.round === 1));
+  grammarShow('grammarSound', learning && s.round === 1);
+  grammarShow('grammarReplay', learning && s.round === 1);
   $('#grammarNext').disabled = !learning || s.round > 1;
   $('#grammarSubmit').disabled = false;
   $('#grammarSubmit').textContent = '정답 확인';
   $('#grammarProgress').textContent = `${s.index + 1} / ${s.queue.length}`;
-  $('#grammarStage').textContent = learning ? `3회 노출 학습 · ${s.round}회차` : s.stage === 'retest' ? '오답 재시험 · 현재형 보고 입력' : sound ? '듣기 시험' : '현재형 보고 입력';
+  $('#grammarStage').textContent = learning ? `3회 노출 학습 · ${s.round}회차` : s.stage === 'retest' ? '오답 재시험 · 현재형 보고 입력' : '현재형 보고 입력';
   for (const field of grammarFields) {
     const input = $('#' + field.id);
     input.value = '';
@@ -92,11 +91,11 @@ function renderGrammar() {
   if (learning) {
     $('#grammarQuestion').innerHTML = `<h3>${s.round === 1 ? '보고 들으며 익히세요.' : '가린 내용을 떠올린 뒤 확인하세요.'}</h3><div id="grammarHidden">${grammarStudyCards(word, s.round, s.round === 1)}</div>`;
   } else {
-    $('#grammarQuestion').innerHTML = `<h3>${sound ? '현재형을 듣고 세 칸을 입력하세요.' : '현재형을 보고 세 칸을 입력하세요.'}</h3><p class="question-main">${sound ? '🔊' : escapeHtml(word.present)}</p>`;
+    $('#grammarQuestion').innerHTML = `<h3>현재형을 보고 세 칸을 입력하세요.</h3><p class="question-main">${escapeHtml(word.present)}</p>`;
     $('#grammarMeaning').focus();
   }
   setMessage($('#grammarFeedback'), learning ? '학습을 마치면 다음을 누르세요.' : '뜻, 과거형, 과거분사형을 각각 입력하세요.');
-  if (sound || (learning && s.round === 1)) speakGrammar();
+  if (learning && s.round === 1) speakGrammar();
 }
 
 function grammarStudyCards(word, round, revealed) {
@@ -104,9 +103,9 @@ function grammarStudyCards(word, round, revealed) {
   const forms = fields.map(field => {
     const value = field.key === 'present' ? word.present : word[field.key].join(' / ');
     const visible = revealed || (field.key === 'present' && round !== 3);
-    return `<div class="grammar-study-form"><span class="grammar-form-label">${field.label}</span><strong class="grammar-form-value">${visible ? escapeHtml(value) : '<span class="grammar-covered">가려진 정답</span>'}</strong></div>`;
+    return `<div class="grammar-study-form"><span class="grammar-form-label">${field.label}</span><strong class="grammar-form-value">${visible ? escapeHtml(value) : '&nbsp;'}</strong></div>`;
   }).join('');
-  const meaning = revealed || round === 3 ? escapeHtml(word.meaning.join(', ')) : '<span class="grammar-covered">가려진 정답</span>';
+  const meaning = revealed || round === 3 ? escapeHtml(word.meaning.join(', ')) : '&nbsp;';
   return `<div class="grammar-study-row">${forms}</div><p class="grammar-study-meaning">뜻: ${meaning}</p>`;
 }
 
@@ -121,7 +120,7 @@ function revealGrammar() {
 
 function speakGrammar() {
   const s = grammarSession;
-  if (!s || !(s.stage === 'sound' || (s.stage === 'learn' && s.round === 1))) return;
+  if (!s || s.stage !== 'learn' || s.round !== 1) return;
   $('#grammarReplay').textContent = `음성 ${s.replays} / 3`;
   if (!window.speechSynthesis || typeof SpeechSynthesisUtterance === 'undefined') return setMessage($('#grammarFeedback'), '이 브라우저에서는 음성을 지원하지 않습니다. 음성을 지원하는 브라우저에서 학습해 주세요.', 'bad');
   if (s.replays >= 3) return;
@@ -170,7 +169,7 @@ function submitGrammar() {
       wrong.push(field.key);
       if (!copying && s.stage !== 'retest') {
         s.failed.add(`${s.stage}:${word.present}:${field.key}`);
-        s.records.push({ stage: s.stage === 'sound' ? '듣기' : '현재형 보고 입력', present: word.present, field: field.label, userAnswer: value, answer: word[field.key].join(' / ') });
+        s.records.push({ stage: '현재형 보고 입력', present: word.present, field: field.label, userAnswer: value, answer: word[field.key].join(' / ') });
       }
       input.value = '';
     }
@@ -209,9 +208,7 @@ function nextGrammar() {
     if (++s.round <= 3) { s.index = 0; return renderGrammar(); }
     return grammarBegin('written', s.words);
   }
-  if (s.stage !== 'retest') s.afterRetest = s.stage === 'written' ? 'sound' : 'complete';
   if (s.wrong.length) { s.retries++; return grammarBegin('retest', s.wrong); }
-  if (s.afterRetest === 'sound') return grammarBegin('sound', s.words);
   finishGrammar();
 }
 
@@ -219,7 +216,7 @@ function finishGrammar() {
   const s = grammarSession;
   s.stage = 'complete';
   window.speechSynthesis?.cancel();
-  const total = s.words.length * 6;
+  const total = s.words.length * 3;
   const correct = total - s.failed.size;
   const result = { name: s.name, unit: s.unit.title, range: s.range, total, correct, score: Math.round(correct / total * 100), retries: s.retries, corrections: s.corrections, wrongAnswers: s.records, takenAt: new Date().toLocaleString('ko-KR') };
   let saved = true;
@@ -240,7 +237,7 @@ function resetGrammar() {
   for (const id of ['grammarAnswers', 'grammarNext', 'grammarSound', 'grammarReplay', 'grammarReveal']) grammarShow(id, false);
   $('#grammarStage').textContent = '대기';
   $('#grammarProgress').textContent = '0 / 0';
-  $('#grammarQuestion').innerHTML = '<h3>Grammar 학습을 시작하세요.</h3><p class="question-sub">3회 노출 학습 → 세 칸 입력 시험 → 듣기 시험</p>';
+  $('#grammarQuestion').innerHTML = '<h3>Grammar 학습을 시작하세요.</h3><p class="question-sub">3회 노출 학습 → 세 칸 입력 시험 → 오답 재시험</p>';
   $('#grammarResult').innerHTML = '';
   setMessage($('#grammarFeedback'), '이름과 단원을 설정하세요.');
 }

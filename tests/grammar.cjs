@@ -82,19 +82,12 @@ function answer(overrides = {}) {
   answer(); run('nextGrammar()');
   assert.equal(state().stage, 'retest', 'copying cannot complete a retest');
   answer(); run('nextGrammar()');
-  assert.equal(state().stage, 'sound');
-  assert.equal(context.$('#grammarSound').disabled, false);
-  answer({ participle: 'bad' }); answer(); run('nextGrammar()');
-  while (state().stage === 'sound') { answer(); run('nextGrammar()'); }
-  assert.equal(state().stage, 'retest');
-  const beforeRetest = speeches;
-  answer(); run('nextGrammar()');
-  assert.equal(speeches, beforeRetest);
+  assert.equal(speeches, before, 'finishes without a listening test');
   assert.equal(state().stage, 'complete');
   const result = stored.get('exam.grammarResults')[0];
-  assert.equal(result.total, wordCount * 6);
-  assert.equal(result.correct, wordCount * 6 - 2);
-  assert.equal(result.wrongAnswers.length, 2);
+  assert.equal(result.total, wordCount * 3);
+  assert.equal(result.correct, wordCount * 3 - 1);
+  assert.equal(result.wrongAnswers.length, 1);
   assert.equal(stored.size, 1, 'grammar storage is separate');
   assert.equal(run("grammarMatches('설정하다', grammarUnits[0].words[10], 'meaning')"), true);
   assert.equal(run("grammarMatches('하게두다', grammarUnits[0].words[6], 'meaning')"), true);
@@ -114,5 +107,17 @@ function answer(overrides = {}) {
   assert.equal(state().words[0].present, data.units[0].words[1].present);
   assert.equal(state().range, '2~3');
   for (const match of html.matchAll(/<script\b[^>]*>([\s\S]*?)<\/script>/g)) new vm.Script(match[1]);
-  console.log(`PASS: ${wordCount} verbs, reveal rounds, 3-play limit, per-field correction, repeated silent retests, listening, scoring, storage, reset, answer variants.`);
+  for (let round = 1; round <= 3; round++) {
+    for (let i = 0; i < 2; i++) {
+      if (round > 1) run('revealGrammar()');
+      run('nextGrammar()');
+    }
+  }
+  const beforeWritten = speeches;
+  while (state().stage === 'written') { answer(); run('nextGrammar()'); }
+  assert.equal(state().stage, 'complete', 'perfect written test completes directly');
+  assert.equal(speeches, beforeWritten);
+  assert.equal(stored.get('exam.grammarResults')[0].total, 6);
+  assert.equal(stored.get('exam.grammarResults')[0].score, 100);
+  console.log(`PASS: ${wordCount} verbs, reveal rounds, learning audio, corrections, silent retests, direct completion, range scoring, storage, reset.`);
 })().catch(error => { console.error(error); process.exitCode = 1; });
