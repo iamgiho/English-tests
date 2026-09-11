@@ -90,8 +90,7 @@ function renderGrammar() {
     $('#' + field.id + 'Feedback').textContent = '';
   }
   if (learning) {
-    const prompt = s.round === 3 ? word.meaning.join(', ') : word.present;
-    $('#grammarQuestion').innerHTML = `<h3>${s.round === 1 ? '보고 들으며 익히세요.' : '가린 내용을 떠올린 뒤 확인하세요.'}</h3><p class="question-main grammar-study-prompt">${escapeHtml(prompt)}</p><div id="grammarHidden" class="grammar-form-grid">${grammarStudyCards(word, s.round, s.round === 1)}</div>`;
+    $('#grammarQuestion').innerHTML = `<h3>${s.round === 1 ? '보고 들으며 익히세요.' : '가린 내용을 떠올린 뒤 확인하세요.'}</h3><div id="grammarHidden">${grammarStudyCards(word, s.round, s.round === 1)}</div>`;
   } else {
     $('#grammarQuestion').innerHTML = `<h3>${sound ? '현재형을 듣고 세 칸을 입력하세요.' : '현재형을 보고 세 칸을 입력하세요.'}</h3><p class="question-main">${sound ? '🔊' : escapeHtml(word.present)}</p>`;
     $('#grammarMeaning').focus();
@@ -101,13 +100,14 @@ function renderGrammar() {
 }
 
 function grammarStudyCards(word, round, revealed) {
-  const fields = round === 3
-    ? [{ key: 'present', label: '현재형' }, ...grammarFields.slice(1)]
-    : grammarFields;
-  return fields.map(field => {
+  const fields = [{ key: 'present', label: '현재형' }, ...grammarFields.slice(1)];
+  const forms = fields.map(field => {
     const value = field.key === 'present' ? word.present : word[field.key].join(' / ');
-    return `<div class="grammar-form-card grammar-${field.key}"><span class="grammar-form-label">${field.label}</span><strong class="grammar-form-value">${revealed ? escapeHtml(value) : '<span class="grammar-covered">가려진 정답</span>'}</strong></div>`;
+    const visible = revealed || (field.key === 'present' && round !== 3);
+    return `<div class="grammar-study-form"><span class="grammar-form-label">${field.label}</span><strong class="grammar-form-value">${visible ? escapeHtml(value) : '<span class="grammar-covered">가려진 정답</span>'}</strong></div>`;
   }).join('');
+  const meaning = revealed || round === 3 ? escapeHtml(word.meaning.join(', ')) : '<span class="grammar-covered">가려진 정답</span>';
+  return `<div class="grammar-study-row">${forms}</div><p class="grammar-study-meaning">뜻: ${meaning}</p>`;
 }
 
 function revealGrammar() {
