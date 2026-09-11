@@ -628,7 +628,7 @@
     <header>
       <div>
         <h1>Smart English Training</h1>
-        <p class="sub">단어, 순서 맞추기, Writing, Listening 학습을 한곳에서 관리합니다.</p>
+        <p class="sub">단어, Grammar, 순서 맞추기, Writing, Listening 학습을 한곳에서 관리합니다.</p>
       </div>
       <div class="top-actions">
         <span class="pill" id="passwordDue">비밀번호 확인 중</span>
@@ -640,6 +640,7 @@
       <button class="tab-btn active" data-tab="adminTab">관리자</button>
       <button class="tab-btn" data-tab="wordTab">Word Test</button>
       <button class="tab-btn" data-tab="wordPracticeTab">Word Practice</button>
+      <button class="tab-btn" data-tab="grammarTab">Grammar</button>
       <button class="tab-btn" data-tab="passageTab">순서 맞추기</button>
       <button class="tab-btn" data-tab="writingTab">Writing Test</button>
       <button class="tab-btn" data-tab="writingPracticeTab">Writing Practice</button>
@@ -648,6 +649,51 @@
       <button class="tab-btn" data-tab="listeningPractice2Tab">Listening Practice 2</button>
       <button class="tab-btn" data-tab="listeningPractice3Tab">Listening Practice 3</button>
     </nav>
+
+    <div class="tab-panel" id="grammarTab">
+      <section>
+        <div class="section-head">
+          <h2>Grammar</h2>
+        </div>
+        <div class="body">
+          <div class="field-row">
+            <div class="field">
+              <label for="grammarName">이름</label>
+              <input id="grammarName" placeholder="예: 김민준" autocomplete="name">
+            </div>
+            <div class="field">
+              <label for="grammarUnitSelect">단원</label>
+              <select id="grammarUnitSelect">
+                <option value="verb-past-participle">동사의 과거·과거분사</option>
+              </select>
+            </div>
+          </div>
+          <div class="toolbar">
+            <button id="grammarStart" disabled>학습 시작</button>
+            <button id="grammarReset" class="secondary">처음으로</button>
+          </div>
+          <div class="notice" id="grammarNotice" role="status">단어를 불러오는 중입니다.</div>
+          <div class="toolbar"><span class="pill" id="grammarStage">대기</span><span class="pill" id="grammarProgress">0 / 0</span></div>
+          <div class="question" id="grammarQuestion"><h3>Grammar 학습을 시작하세요.</h3><p class="question-sub">3회 노출 학습 → 세 칸 입력 시험 → 듣기 시험 · 오답은 따라 쓴 뒤 음성 없이 재시험합니다.</p></div>
+          <div class="toolbar">
+            <button id="grammarReveal" class="secondary hidden">가린 정답 보기</button>
+            <button id="grammarSound" class="secondary hidden">현재형 듣기</button>
+            <span id="grammarReplay" class="hidden"></span>
+          </div>
+          <form id="grammarAnswers" class="hidden" autocomplete="off">
+            <div class="field-row">
+              <div class="field"><label for="grammarMeaning">뜻</label><input id="grammarMeaning" spellcheck="false" aria-describedby="grammarMeaningFeedback"><div id="grammarMeaningFeedback" aria-live="polite"></div></div>
+              <div class="field"><label for="grammarPast">과거형</label><input id="grammarPast" spellcheck="false" autocapitalize="none" aria-describedby="grammarPastFeedback"><div id="grammarPastFeedback" aria-live="polite"></div></div>
+              <div class="field"><label for="grammarParticiple">과거분사형</label><input id="grammarParticiple" spellcheck="false" autocapitalize="none" aria-describedby="grammarParticipleFeedback"><div id="grammarParticipleFeedback" aria-live="polite"></div></div>
+            </div>
+            <div class="toolbar"><button id="grammarSubmit" type="submit">정답 확인</button></div>
+          </form>
+          <div class="toolbar"><button id="grammarNext" class="hidden">다음</button></div>
+          <div class="feedback" id="grammarFeedback" role="status">이름과 단원을 설정하세요.</div>
+          <div id="grammarResult"></div>
+        </div>
+      </section>
+    </div>
 
     <div class="tab-panel" id="passageTab">
       <section>
@@ -3791,6 +3837,12 @@
       addGroupedAttempts(writingPracticeResults, "Writing Practice", ["문장 번호", "정답 여부"], (item) => [item.questionNumber, item.correct ? "정답" : "오답"], passageMeta);
       addGroupedAttempts(listeningWrongAnswers, "Listening", ["문장 번호", "제출한 답", "영어 정답"], (item) => [item.questionNumber, item.userAnswer, item.answer], passageMeta);
 
+      readJson('exam.grammarResults', []).forEach((result) => attempts.push({
+        category: 'Grammar', nickname: result.name, takenAt: result.takenAt,
+        meta: `${result.unit} · ${result.score}점 · ${result.correct}/${result.total} · 재시험 ${result.retries}회 · 이 브라우저 기록`,
+        headers: ['단계', '현재형', '틀린 항목', '내 답', '정답'],
+        rows: result.wrongAnswers.map((answer) => [answer.stage, answer.present, answer.field, answer.userAnswer, answer.answer])
+      }));
       const categories = new Map();
       attempts.forEach((attempt) => {
         if (!categories.has(attempt.category)) categories.set(attempt.category, new Map());
@@ -3800,7 +3852,7 @@
       });
 
       const detail = (label, count, body, className = "") => `<details class="${className}"><summary><span>${escapeHtml(label)}</span><span class="drill-count">${escapeHtml(count)}</span></summary>${body}</details>`;
-      const categoryOrder = ["Word", "Word Practice", "Writing", "Writing Practice", "Listening"];
+      const categoryOrder = ["Word", "Word Practice", "Grammar", "Writing", "Writing Practice", "Listening"];
       const html = categoryOrder.filter((category) => categories.has(category)).map((category) => {
         const students = categories.get(category);
         const studentHtml = [...students.entries()].sort(([a], [b]) => a.localeCompare(b, "ko")).map(([nickname, studentAttempts]) => {
@@ -3948,5 +4000,6 @@
     $("#refreshAdminSheetBtn").addEventListener("click", loadAdminSheetData);
     $("#savePasswordsBtn").addEventListener("click", savePasswords);
   </script>
+  <script src="grammar.js"></script>
 </body>
 </html>
