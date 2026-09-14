@@ -1,0 +1,21 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 6,
+  "part": 7,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-07.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l06-p07-001",
+      "title": "Choosing a Speaker",
+      "text": [
+        "G: Jinho, look! These two speakers look pretty cool.",
+        "B: Yeah, they do. Which do you prefer, the red one or the black one?",
+        "G: I prefer the red one to the black one. It’s only 20 dollars, and it comes with a discount coupon for music downloads.",
+        "B: Although the black one is 40 dollars, I think it’s the right one for me. I heard it has better sound quality"
+      ]
+    }
+  ]
+}

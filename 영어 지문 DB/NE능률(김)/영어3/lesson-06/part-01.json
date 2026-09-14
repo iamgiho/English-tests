@@ -1,0 +1,21 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 6,
+  "part": 1,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-01.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l06-p01-001",
+      "title": "Choosing Shoes on Sale",
+      "text": [
+        "G: These two pairs of shoes are on sale! Which do you prefer?",
+        "B: Well, I prefer the white shoes to the black ones.",
+        "G: Why is that? The black ones are cheaper.",
+        "B: Yes, but I like the design of the white ones better."
+      ]
+    }
+  ]
+}

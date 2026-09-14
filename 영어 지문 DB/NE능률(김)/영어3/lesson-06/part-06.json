@@ -1,0 +1,24 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 6,
+  "part": 6,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-06.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l06-p06-001",
+      "title": "Making a Balanced Product Review",
+      "text": [
+        "G: I tried Spring Chips recently, and now I want to review them.",
+        "B: That sounds fun. How will you do your review?",
+        "G: I’ll make a video. I want to focus on their delicious taste!",
+        "B: Okay, but don’t forget to talk about their bad points too.",
+        "G: I won’t. I want to give a balanced review.",
+        "B: Good. Your video will make it easier for people to choose better products.",
+        "G: That’s exactly what I want. I’d like to give people more useful information about the product."
+      ]
+    }
+  ]
+}

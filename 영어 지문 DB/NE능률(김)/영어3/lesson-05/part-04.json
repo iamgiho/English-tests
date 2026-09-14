@@ -1,0 +1,24 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 5,
+  "part": 4,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-04.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l05-p04-001",
+      "title": "A New Bag Made of Corn",
+      "text": [
+        "G: I read a cool article today.",
+        "B: What was it about?",
+        "G: It was about a new bag. It just looks like a plastic bag, but it’s made mostly of corn.",
+        "B: That sounds really amazing.",
+        "G: Yes, but there’s more. The bag breaks down in soil in only three months and disappears in about three minutes in warm water!",
+        "B: Wow! That will help us reduce plastic waste by a lot!",
+        "G: I know! The company will start selling the bag sometime this year. I can’t wait to use it!"
+      ]
+    }
+  ]
+}

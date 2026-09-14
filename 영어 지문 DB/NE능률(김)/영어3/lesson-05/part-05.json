@@ -1,0 +1,22 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 5,
+  "part": 5,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-05.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l05-p05-001",
+      "title": "Making a Bag from Old Clothes",
+      "text": [
+        "G: I want to buy a new bag.",
+        "B: You already have too many bags. In my opinion, you don’t need any more.",
+        "G: But I’m bored with my old bags.",
+        "B: Then how about using old clothes to make a new bag? You can find out how to do it online.",
+        "G: Oh, that sounds interesting! I can’t wait to make my own bag."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 5,
+  "part": 2,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-02.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l05-p02-001",
+      "title": "Taking the Stairs to Save Energy",
+      "text": [
+        "G: Jiho, hurry up! The elevator is going up soon.",
+        "B: The science room is just on the third floor. Why don’t we take the stairs?",
+        "G: I don’t want to walk all the way up there.",
+        "B: Come on. Elevators use lots of energy. We need to save energy to protect the environment.",
+        "G: But one elevator ride doesn’t use that much energy.",
+        "B: That’s true, but the energy from all the elevator rides adds up over time. In my opinion, taking care of the environment starts with the little things.",
+        "G: You have a point. Let’s take the stairs."
+      ]
+    }
+  ]
+}

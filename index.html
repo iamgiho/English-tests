@@ -1434,6 +1434,28 @@
       {"grade":"고2","publisher":"모의고사","book":"2026 고2 9월 모의고사","question":40,"part":40,"path":"영어 지문 DB/2026 고2 9월 모의고사/q40.json"}
     );
 
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":5,"part":1,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-05/part-01.json"}, {"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":5,"part":2,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-05/part-02.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":5,"part":3,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-05/part-03.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":5,"part":4,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-05/part-04.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":5,"part":5,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-05/part-05.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":6,"part":1,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-06/part-01.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":6,"part":2,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-06/part-02.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":6,"part":3,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-06/part-03.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":6,"part":4,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-06/part-04.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":6,"part":5,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-06/part-05.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":6,"part":6,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-06/part-06.json"});
+
+    fallbackManifest.push({"grade":"중3","publisher":"NE능률(김)","book":"영어3","lesson":6,"part":7,"orderingOnly":true,"path":"영어 지문 DB/NE능률(김)/영어3/lesson-06/part-07.json"});
+
     const fallbackWordBooks = [
       {"category":"모의고사 단어","title":"2026 고1 9월 모의고사","grade":"고1","textbook":"9월 모의고사","lesson":"9월 모의고사","path":"영어 단어/2026 고1 모의고사.txt"},
       {"category":"모의고사 단어","title":"2026 고2 9월 모의고사","grade":"고2","textbook":"9월 모의고사","lesson":"9월 모의고사","path":"영어 단어/2026 고2 모의고사.txt"},
@@ -1590,7 +1612,7 @@
         ...item,
         grade: item.grade || (/공통영어\s*2/i.test(item.book || "") ? "고1" : /영어\s*2/i.test(item.book || "") ? "고2" : "미분류"),
         lesson,
-        lessonLabel: isMockExam ? `${lesson}번` : `Lesson ${lesson}`,
+        lessonLabel: item.lessonLabel || (isMockExam ? `${lesson}번` : `Lesson ${lesson}`),
         textbook: isMockExam ? (item.book.match(/\d+월 모의고사/)?.[0] || item.book) : `${item.publisher || "출판사 미분류"} / ${item.book || "교과서 미분류"}`,
         partLabel: isMockExam ? "전체 지문" : item.part ? `파트 ${item.part}` : item.section || "파트 미분류"
       };
@@ -1621,14 +1643,14 @@
     }
 
     function renderPracticeSelectors(prefix) {
-      const grades = [...new Set(passageManifest.map((item) => item.grade))].sort((a, b) => a.localeCompare(b, "ko"));
+      const grades = [...new Set(passageManifest.filter((item) => !item.orderingOnly).map((item) => item.grade))].sort((a, b) => a.localeCompare(b, "ko"));
       $(`#${prefix}GradeSelect`).innerHTML = grades.map((grade) => `<option value="${escapeHtml(grade)}">${escapeHtml(grade)}</option>`).join("");
       renderPracticeTextbookOptions(prefix);
     }
 
     function renderPracticeTextbookOptions(prefix) {
       const grade = $(`#${prefix}GradeSelect`).value;
-      const textbooks = [...new Set(passageManifest.filter((item) => item.grade === grade).map((item) => item.textbook))];
+      const textbooks = [...new Set(passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade).map((item) => item.textbook))];
       $(`#${prefix}TextbookSelect`).innerHTML = textbooks.map((item) => `<option value="${escapeHtml(item)}">${escapeHtml(item)}</option>`).join("");
       renderPracticeLessonOptions(prefix);
     }
@@ -1636,7 +1658,7 @@
     function renderPracticeLessonOptions(prefix) {
       const grade = $(`#${prefix}GradeSelect`).value;
       const textbook = $(`#${prefix}TextbookSelect`).value;
-      const lessons = [...new Set(passageManifest.filter((item) => item.grade === grade && item.textbook === textbook).map((item) => item.lesson))].sort((a, b) => Number(a) - Number(b));
+      const lessons = [...new Set(passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade && item.textbook === textbook).map((item) => item.lesson))].sort((a, b) => Number(a) - Number(b));
       $(`#${prefix}LessonSelect`).innerHTML = lessons.map((item) => `<option value="${escapeHtml(item)}">${escapeHtml(passageLessonLabel(grade, textbook, item))}</option>`).join("");
       renderPracticePartOptions(prefix);
     }
@@ -1645,7 +1667,7 @@
       const grade = $(`#${prefix}GradeSelect`).value;
       const textbook = $(`#${prefix}TextbookSelect`).value;
       const lesson = $(`#${prefix}LessonSelect`).value;
-      const parts = passageManifest.filter((item) => item.grade === grade && item.textbook === textbook && String(item.lesson) === lesson);
+      const parts = passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade && item.textbook === textbook && String(item.lesson) === lesson);
       $(`#${prefix}PartSelect`).innerHTML = parts.map((item) => `<option value="${escapeHtml(item.path)}">${escapeHtml(item.partLabel)}</option>`).join("");
     }
 
@@ -1679,14 +1701,14 @@
     }
 
     function renderWritingSelectors() {
-      const grades = [...new Set(passageManifest.map((item) => item.grade))].sort((a, b) => a.localeCompare(b, "ko"));
+      const grades = [...new Set(passageManifest.filter((item) => !item.orderingOnly).map((item) => item.grade))].sort((a, b) => a.localeCompare(b, "ko"));
       $("#writingGradeSelect").innerHTML = grades.map((grade) => `<option value="${escapeHtml(grade)}">${escapeHtml(grade)}</option>`).join("");
       renderWritingTextbookOptions();
     }
 
     function renderWritingTextbookOptions() {
       const grade = $("#writingGradeSelect").value;
-      const textbooks = [...new Set(passageManifest.filter((item) => item.grade === grade).map((item) => item.textbook))];
+      const textbooks = [...new Set(passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade).map((item) => item.textbook))];
       $("#writingTextbookSelect").innerHTML = textbooks.map((textbook) => `<option value="${escapeHtml(textbook)}">${escapeHtml(textbook)}</option>`).join("");
       renderWritingLessonOptions();
     }
@@ -1694,7 +1716,7 @@
     function renderWritingLessonOptions() {
       const grade = $("#writingGradeSelect").value;
       const textbook = $("#writingTextbookSelect").value;
-      const lessons = [...new Set(passageManifest.filter((item) => item.grade === grade && item.textbook === textbook).map((item) => item.lesson))].sort((a, b) => Number(a) - Number(b));
+      const lessons = [...new Set(passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade && item.textbook === textbook).map((item) => item.lesson))].sort((a, b) => Number(a) - Number(b));
       $("#writingLessonSelect").innerHTML = lessons.map((lesson) => `<option value="${escapeHtml(lesson)}">${escapeHtml(passageLessonLabel(grade, textbook, lesson))}</option>`).join("");
       renderWritingPartOptions();
     }
@@ -1703,19 +1725,19 @@
       const grade = $("#writingGradeSelect").value;
       const textbook = $("#writingTextbookSelect").value;
       const lesson = $("#writingLessonSelect").value;
-      const parts = passageManifest.filter((item) => item.grade === grade && item.textbook === textbook && String(item.lesson) === lesson);
+      const parts = passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade && item.textbook === textbook && String(item.lesson) === lesson);
       $("#writingPartSelect").innerHTML = parts.map((item) => `<option value="${escapeHtml(item.path)}">${escapeHtml(item.partLabel)}</option>`).join("");
     }
 
     function renderListeningSelectors() {
-      const grades = [...new Set(passageManifest.map((item) => item.grade))].sort((a, b) => a.localeCompare(b, "ko"));
+      const grades = [...new Set(passageManifest.filter((item) => !item.orderingOnly).map((item) => item.grade))].sort((a, b) => a.localeCompare(b, "ko"));
       $("#listeningGradeSelect").innerHTML = grades.map((grade) => `<option value="${escapeHtml(grade)}">${escapeHtml(grade)}</option>`).join("");
       renderListeningTextbookOptions();
     }
 
     function renderListeningTextbookOptions() {
       const grade = $("#listeningGradeSelect").value;
-      const textbooks = [...new Set(passageManifest.filter((item) => item.grade === grade).map((item) => item.textbook))];
+      const textbooks = [...new Set(passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade).map((item) => item.textbook))];
       $("#listeningTextbookSelect").innerHTML = textbooks.map((textbook) => `<option value="${escapeHtml(textbook)}">${escapeHtml(textbook)}</option>`).join("");
       renderListeningLessonOptions();
     }
@@ -1723,7 +1745,7 @@
     function renderListeningLessonOptions() {
       const grade = $("#listeningGradeSelect").value;
       const textbook = $("#listeningTextbookSelect").value;
-      const lessons = [...new Set(passageManifest.filter((item) => item.grade === grade && item.textbook === textbook).map((item) => item.lesson))].sort((a, b) => Number(a) - Number(b));
+      const lessons = [...new Set(passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade && item.textbook === textbook).map((item) => item.lesson))].sort((a, b) => Number(a) - Number(b));
       $("#listeningLessonSelect").innerHTML = lessons.map((lesson) => `<option value="${escapeHtml(lesson)}">${escapeHtml(passageLessonLabel(grade, textbook, lesson))}</option>`).join("");
       renderListeningPartOptions();
     }
@@ -1732,7 +1754,7 @@
       const grade = $("#listeningGradeSelect").value;
       const textbook = $("#listeningTextbookSelect").value;
       const lesson = $("#listeningLessonSelect").value;
-      const parts = passageManifest.filter((item) => item.grade === grade && item.textbook === textbook && String(item.lesson) === lesson);
+      const parts = passageManifest.filter((item) => !item.orderingOnly).filter((item) => item.grade === grade && item.textbook === textbook && String(item.lesson) === lesson);
       $("#listeningPartSelect").innerHTML = parts.map((item) => `<option value="${escapeHtml(item.path)}">${escapeHtml(item.partLabel)}</option>`).join("");
     }
 

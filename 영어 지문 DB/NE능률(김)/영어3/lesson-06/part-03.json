@@ -1,0 +1,25 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 6,
+  "part": 3,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-03.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l06-p03-001",
+      "title": "Choosing a Hair Salon",
+      "text": [
+        "G1: I think my hair is too curly. I want to straighten my hair. Can you recommend a good place?",
+        "G2: Sure. I know two places, Styles Studio and Hair Castle.",
+        "G1: Is there any difference between the two?",
+        "G2: Well, Styles Studio provides free treatment to keep your hair healthy.",
+        "G1: That’s great. What about Hair Castle?",
+        "G2: Hair Castle doesn’t provide treatment for free, but they give student discounts.",
+        "G1: Okay. Which do you prefer?",
+        "G2: I prefer Styles Studio to Hair Castle. It’s important for me to get hair treatment regularly."
+      ]
+    }
+  ]
+}

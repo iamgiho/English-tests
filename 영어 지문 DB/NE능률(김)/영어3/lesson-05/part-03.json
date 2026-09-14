@@ -1,0 +1,21 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 5,
+  "part": 3,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-03.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l05-p03-001",
+      "title": "A Photo Contest on Pollution",
+      "text": [
+        "B: Our club is holding a photo contest next week.",
+        "G: What kinds of photos will be in it?",
+        "B: The theme is pollution around the world. We are holding this contest to raise students’ awareness of environmental problems.",
+        "G: That sounds nice. I can’t wait to see it!"
+      ]
+    }
+  ]
+}

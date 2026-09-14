@@ -1,0 +1,26 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 6,
+  "part": 5,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-05.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l06-p05-001",
+      "title": "Preparing for a Flea Market",
+      "text": [
+        "G: What should we sell at the flea market next month?",
+        "B: Before we choose anything to sell, I think we need to do some market research.",
+        "G: Market research? Why do we need that?",
+        "B: Because it helps us find out what items are popular these days.",
+        "G: I see. Then we can decide what to sell at the market.",
+        "B: That’s right. It will also help us set reasonable prices for our items.",
+        "G: Cool. Is there anything else we should do?",
+        "B: Oh, don’t forget to register our names by this Friday.",
+        "G: Right. Thanks for reminding me."
+      ]
+    }
+  ]
+}

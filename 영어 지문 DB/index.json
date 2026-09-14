@@ -1422,5 +1422,113 @@
     "question": 40,
     "part": 40,
     "path": "영어 지문 DB/2026 고2 9월 모의고사/q40.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 5,
+    "part": 1,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-01.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 5,
+    "part": 2,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-02.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 5,
+    "part": 3,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-03.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 5,
+    "part": 4,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-04.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 5,
+    "part": 5,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-05.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 6,
+    "part": 1,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-01.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 6,
+    "part": 2,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-02.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 6,
+    "part": 3,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-03.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 6,
+    "part": 4,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-04.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 6,
+    "part": 5,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-05.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 6,
+    "part": 6,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-06.json"
+  },
+  {
+    "grade": "중3",
+    "publisher": "NE능률(김)",
+    "book": "영어3",
+    "lesson": 6,
+    "part": 7,
+    "orderingOnly": true,
+    "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-07.json"
   }
 ]

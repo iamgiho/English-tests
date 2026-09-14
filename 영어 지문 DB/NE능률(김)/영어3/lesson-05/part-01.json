@@ -1,0 +1,20 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 5,
+  "part": 1,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-05/part-01.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l05-p01-001",
+      "title": "Reducing Plastic Bag Use",
+      "text": [
+        "B: I think we’re using too many plastic bags.",
+        "G: I agree. It’s not good for the environment. How can we reduce our use of plastic bags?",
+        "B: In my opinion, we should bring reusable bags when we go shopping."
+      ]
+    }
+  ]
+}

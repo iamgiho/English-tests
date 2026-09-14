@@ -1,0 +1,20 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 6,
+  "part": 4,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-04.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l06-p04-001",
+      "title": "Remembering the Receipt",
+      "text": [
+        "B: I’m going to get a refund for these clothes this evening. I found I have similar ones.",
+        "W: Okay. Don’t forget to bring your receipt. Last time you couldn’t get a refund because you didn’t bring it.",
+        "B: Okay, Mom. I won’t forget it this time."
+      ]
+    }
+  ]
+}

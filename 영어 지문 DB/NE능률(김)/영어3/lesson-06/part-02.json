@@ -1,0 +1,23 @@
+{
+  "grade": "중3",
+  "publisher": "NE능률(김)",
+  "book": "영어3",
+  "lesson": 6,
+  "part": 2,
+  "orderingOnly": true,
+  "path": "영어 지문 DB/NE능률(김)/영어3/lesson-06/part-02.json",
+  "passages": [
+    {
+      "id": "ne-kim-english3-l06-p02-001",
+      "title": "Choosing a Sandwich",
+      "text": [
+        "G: Which do you prefer, the Special Sandwich or the Classic Sandwich?",
+        "B: Well, the Special Sandwich is the healthier choice. It’s made with lots of fresh vegetables and other healthy ingredients.",
+        "G: But it’s much more expensive than the Classic Sandwich.",
+        "B: I know, but I prefer the Special Sandwich to the Classic Sandwich. Eating healthy is important to me.",
+        "G: I prefer the cheaper one. I’ll spend my money on books instead.",
+        "B: I guess our spending habits are different."
+      ]
+    }
+  ]
+}
