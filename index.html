@@ -715,6 +715,7 @@
       <button class="tab-btn active" data-tab="adminTab">관리자</button>
       <button class="tab-btn" data-tab="wordTab">Word Test</button>
       <button class="tab-btn" data-tab="wordPracticeTab">Word Practice</button>
+      <button class="tab-btn" data-tab="definitionTab">영영풀이</button>
       <button class="tab-btn" data-tab="grammarTab">Grammar</button>
       <button class="tab-btn" data-tab="passageTab">순서 맞추기</button>
       <button class="tab-btn" data-tab="writingTab">Writing Test</button>
@@ -724,6 +725,28 @@
       <button class="tab-btn" data-tab="listeningPractice2Tab">Listening Practice 2</button>
       <button class="tab-btn" data-tab="listeningPractice3Tab">Listening Practice 3</button>
     </nav>
+
+    <div class="tab-panel" id="definitionTab">
+      <section>
+        <div class="section-head"><h2>영영풀이</h2><span class="pill" id="definitionProgress">0 / 0</span></div>
+        <div class="body">
+          <p class="sub">영어로 된 풀이를 읽고 알맞은 영어 단어를 입력하세요.</p>
+          <div class="field"><label for="definitionUnit">단원</label><select id="definitionUnit" disabled></select></div>
+          <div class="field"><label for="definitionName">이름</label><input id="definitionName" autocomplete="name" placeholder="이름을 입력하세요"></div>
+          <p class="question-sub">제출한 답안과 결과는 이 브라우저에 저장되며 관리자 탭에서 확인할 수 있습니다.</p>
+          <div id="definitionSaveNotice" role="status"></div>
+          <div class="notice" id="definitionNotice" role="status">단어를 불러오는 중입니다.</div>
+          <div class="toolbar"><button id="definitionStart" disabled>학습 시작</button></div>
+          <div class="question"><h3>English definition</h3><p class="question-main" id="definitionQuestion" lang="en">학습할 단어를 준비하고 있습니다.</p></div>
+          <form id="definitionForm" class="hidden" autocomplete="off">
+            <div class="field"><label for="definitionAnswer">영어 단어</label><input id="definitionAnswer" lang="en" placeholder="영어 단어를 입력하세요" spellcheck="false" autocapitalize="none" aria-describedby="definitionFeedback"></div>
+            <div class="toolbar"><button id="definitionSubmit" type="submit">정답 확인</button><button id="definitionNext" type="button" class="secondary hidden">다음 문제</button></div>
+          </form>
+          <div class="feedback" id="definitionFeedback" role="status">DB 등록 후 학습할 수 있습니다.</div>
+          <div id="definitionResult"></div>
+        </div>
+      </section>
+    </div>
 
     <div class="tab-panel" id="grammarTab">
       <section>
@@ -1600,6 +1623,7 @@
     }
 
     function switchTab(tabId) {
+      if (tabId === 'adminTab') renderAdminData();
       if (!["listeningTab", "listeningPracticeTab", "listeningPractice2Tab", "listeningPractice3Tab", "wordPracticeTab"].includes(tabId)) window.speechSynthesis?.cancel();
       $$(".tab-btn").forEach((button) => button.classList.toggle("active", button.dataset.tab === tabId));
       $$(".tab-panel").forEach((panel) => panel.classList.toggle("active", panel.id === tabId));
@@ -3951,6 +3975,12 @@
         headers: ['단계', '현재형', '틀린 항목', '내 답', '정답'],
         rows: result.wrongAnswers.map((answer) => [answer.stage, answer.present, answer.field, answer.userAnswer, answer.answer])
       }));
+      readJson('exam.definitionResults', []).forEach((result) => attempts.push({
+        category: '영영풀이', nickname: result.name, takenAt: result.takenAt,
+        meta: `${result.unit} · ${result.completed ? '완료' : '진행 중'} · ${result.answered}/${result.total}문제 제출 · 정답 ${result.correct}개 · 이 브라우저 기록`,
+        headers: ['문항 번호', '영영풀이', '제출한 답', '정답'],
+        rows: result.wrongAnswers.map(answer => [answer.number, answer.definition, answer.userAnswer, answer.answer])
+      }));
       const categories = new Map();
       attempts.forEach((attempt) => {
         if (!categories.has(attempt.category)) categories.set(attempt.category, new Map());
@@ -3960,7 +3990,7 @@
       });
 
       const detail = (label, count, body, className = "") => `<details class="${className}"><summary><span>${escapeHtml(label)}</span><span class="drill-count">${escapeHtml(count)}</span></summary>${body}</details>`;
-      const categoryOrder = ["Word", "Word Practice", "Grammar", "Writing", "Writing Practice", "Listening"];
+      const categoryOrder = ["Word", "Word Practice", "영영풀이", "Grammar", "Writing", "Writing Practice", "Listening"];
       const html = categoryOrder.filter((category) => categories.has(category)).map((category) => {
         const students = categories.get(category);
         const studentHtml = [...students.entries()].sort(([a], [b]) => a.localeCompare(b, "ko")).map(([nickname, studentAttempts]) => {
@@ -4109,5 +4139,6 @@
     $("#savePasswordsBtn").addEventListener("click", savePasswords);
   </script>
   <script src="grammar.js"></script>
+  <script src="definitions.js"></script>
 </body>
 </html>
