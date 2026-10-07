@@ -128,5 +128,613 @@
       { "present": "stay", "past": ["stayed"], "participle": ["stayed"], "meaning": ["머무르다"] },
       { "present": "destroy", "past": ["destroyed"], "participle": ["destroyed"], "meaning": ["파괴하다"] }
     ]
-  }]
+  },
+{
+  "id": "that-what",
+  "title": "that / what 구분",
+  "type": "choice",
+  "questions": [
+    {
+      "number": 1,
+      "sentence": "I know ______ you need.",
+      "answer": "what",
+      "reason": "선행사 X / you need ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 2,
+      "sentence": "This is the book ______ I bought yesterday.",
+      "answer": "that",
+      "reason": "선행사 the book O / I bought ___ yesterday → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 3,
+      "sentence": "I think ______ he is right.",
+      "answer": "that",
+      "reason": "선행사 X / he is right → 주어·동사·보어가 모두 있어 완전"
+    },
+    {
+      "number": 4,
+      "sentence": "______ she said surprised everyone.",
+      "answer": "What",
+      "reason": "선행사 X / she said ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 5,
+      "sentence": "The man ______ called me is my uncle.",
+      "answer": "that",
+      "reason": "선행사 the man O / ___ called me → 주어가 빠져 불완전"
+    },
+    {
+      "number": 6,
+      "sentence": "She believes ______ the test was difficult.",
+      "answer": "that",
+      "reason": "선행사 X / the test was difficult → 완전"
+    },
+    {
+      "number": 7,
+      "sentence": "Tell me ______ happened yesterday.",
+      "answer": "what",
+      "reason": "선행사 X / ___ happened yesterday → 주어가 빠져 불완전"
+    },
+    {
+      "number": 8,
+      "sentence": "The car ______ was parked outside belongs to Tom.",
+      "answer": "that",
+      "reason": "선행사 the car O / ___ was parked outside → 주어가 빠져 불완전"
+    },
+    {
+      "number": 9,
+      "sentence": "We know ______ they arrived safely.",
+      "answer": "that",
+      "reason": "선행사 X / they arrived safely → 완전"
+    },
+    {
+      "number": 10,
+      "sentence": "I remember ______ you told me.",
+      "answer": "what",
+      "reason": "선행사 X / you told me ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 11,
+      "sentence": "The story ______ she told us was interesting.",
+      "answer": "that",
+      "reason": "선행사 the story O / she told us ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 12,
+      "sentence": "He said ______ his brother was busy.",
+      "answer": "that",
+      "reason": "선행사 X / his brother was busy → 완전"
+    },
+    {
+      "number": 13,
+      "sentence": "I couldn't understand ______ caused the problem.",
+      "answer": "what",
+      "reason": "선행사 X / ___ caused the problem → 주어가 빠져 불완전"
+    },
+    {
+      "number": 14,
+      "sentence": "The machine ______ caused the problem was old.",
+      "answer": "that",
+      "reason": "선행사 the machine O / ___ caused the problem → 주어가 빠져 불완전"
+    },
+    {
+      "number": 15,
+      "sentence": "She knows ______ I live in Seoul.",
+      "answer": "that",
+      "reason": "선행사 X / I live in Seoul → 완전"
+    },
+    {
+      "number": 16,
+      "sentence": "Please show me ______ you found.",
+      "answer": "what",
+      "reason": "선행사 X / you found ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 17,
+      "sentence": "Please show me the key ______ you found.",
+      "answer": "that",
+      "reason": "선행사 the key O / you found ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 18,
+      "sentence": "We heard ______ the store was closed.",
+      "answer": "that",
+      "reason": "선행사 X / the store was closed → 완전"
+    },
+    {
+      "number": 19,
+      "sentence": "______ made him angry was obvious.",
+      "answer": "What",
+      "reason": "선행사 X / ___ made him angry → 주어가 빠져 불완전"
+    },
+    {
+      "number": 20,
+      "sentence": "The comment ______ made him angry was unnecessary.",
+      "answer": "that",
+      "reason": "선행사 the comment O / ___ made him angry → 주어가 빠져 불완전"
+    },
+    {
+      "number": 21,
+      "sentence": "I hope ______ you can come tomorrow.",
+      "answer": "that",
+      "reason": "선행사 X / you can come tomorrow → 완전"
+    },
+    {
+      "number": 22,
+      "sentence": "She gave me ______ I asked for.",
+      "answer": "what",
+      "reason": "선행사 X / I asked for ___ → 전치사 for의 목적어가 빠져 불완전"
+    },
+    {
+      "number": 23,
+      "sentence": "She gave me the information ______ I asked for.",
+      "answer": "that",
+      "reason": "선행사 the information O / I asked for ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 24,
+      "sentence": "They discovered ______ the door was unlocked.",
+      "answer": "that",
+      "reason": "선행사 X / the door was unlocked → 완전"
+    },
+    {
+      "number": 25,
+      "sentence": "This is ______ I wanted.",
+      "answer": "what",
+      "reason": "선행사 X / I wanted ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 26,
+      "sentence": "This is the computer ______ I wanted.",
+      "answer": "that",
+      "reason": "선행사 the computer O / I wanted ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 27,
+      "sentence": "He noticed ______ everyone was quiet.",
+      "answer": "that",
+      "reason": "선행사 X / everyone was quiet → 완전"
+    },
+    {
+      "number": 28,
+      "sentence": "I don't know ______ broke the window.",
+      "answer": "what",
+      "reason": "선행사 X / ___ broke the window → 주어가 빠져 불완전"
+    },
+    {
+      "number": 29,
+      "sentence": "The ball ______ broke the window was mine.",
+      "answer": "that",
+      "reason": "선행사 the ball O / ___ broke the window → 주어가 빠져 불완전"
+    },
+    {
+      "number": 30,
+      "sentence": "She explained ______ she needed more time.",
+      "answer": "that",
+      "reason": "선행사 X / she needed more time → 완전"
+    },
+    {
+      "number": 31,
+      "sentence": "Take ______ you want.",
+      "answer": "what",
+      "reason": "선행사 X / you want ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 32,
+      "sentence": "Take the food ______ you want.",
+      "answer": "that",
+      "reason": "선행사 the food O / you want ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 33,
+      "sentence": "I believe ______ she can solve the problem.",
+      "answer": "that",
+      "reason": "선행사 X / she can solve the problem → 완전"
+    },
+    {
+      "number": 34,
+      "sentence": "______ he bought was very expensive.",
+      "answer": "What",
+      "reason": "선행사 X / he bought ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 35,
+      "sentence": "The watch ______ he bought was very expensive.",
+      "answer": "that",
+      "reason": "선행사 the watch O / he bought ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 36,
+      "sentence": "They reported ______ nobody was injured.",
+      "answer": "that",
+      "reason": "선행사 X / nobody was injured → 완전"
+    },
+    {
+      "number": 37,
+      "sentence": "We couldn't see ______ was inside the box.",
+      "answer": "what",
+      "reason": "선행사 X / ___ was inside the box → 주어가 빠져 불완전"
+    },
+    {
+      "number": 38,
+      "sentence": "The object ______ was inside the box looked strange.",
+      "answer": "that",
+      "reason": "선행사 the object O / ___ was inside the box → 주어가 빠져 불완전"
+    },
+    {
+      "number": 39,
+      "sentence": "I heard ______ your sister won the contest.",
+      "answer": "that",
+      "reason": "선행사 X / your sister won the contest → 완전"
+    },
+    {
+      "number": 40,
+      "sentence": "He showed us ______ he had made.",
+      "answer": "what",
+      "reason": "선행사 X / he had made ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 41,
+      "sentence": "He showed us the model ______ he had made.",
+      "answer": "that",
+      "reason": "선행사 the model O / he had made ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 42,
+      "sentence": "She realized ______ she had made a mistake.",
+      "answer": "that",
+      "reason": "선행사 X / she had made a mistake → 완전"
+    },
+    {
+      "number": 43,
+      "sentence": "______ matters most is your effort.",
+      "answer": "What",
+      "reason": "선행사 X / ___ matters most → 주어가 빠져 불완전"
+    },
+    {
+      "number": 44,
+      "sentence": "The factor ______ matters most is your effort.",
+      "answer": "that",
+      "reason": "선행사 the factor O / ___ matters most → 주어가 빠져 불완전"
+    },
+    {
+      "number": 45,
+      "sentence": "We assumed ______ the train would arrive on time.",
+      "answer": "that",
+      "reason": "선행사 X / the train would arrive on time → 완전"
+    },
+    {
+      "number": 46,
+      "sentence": "I can't believe ______ you did.",
+      "answer": "what",
+      "reason": "선행사 X / you did ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 47,
+      "sentence": "I can't believe the thing ______ you did.",
+      "answer": "that",
+      "reason": "선행사 the thing O / you did ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 48,
+      "sentence": "He promised ______ he would return soon.",
+      "answer": "that",
+      "reason": "선행사 X / he would return soon → 완전"
+    },
+    {
+      "number": 49,
+      "sentence": "We used ______ was available.",
+      "answer": "what",
+      "reason": "선행사 X / ___ was available → 주어가 빠져 불완전"
+    },
+    {
+      "number": 50,
+      "sentence": "We used the equipment ______ was available.",
+      "answer": "that",
+      "reason": "선행사 the equipment O / ___ was available → 주어가 빠져 불완전"
+    },
+    {
+      "number": 51,
+      "sentence": "She admitted ______ she was wrong.",
+      "answer": "that",
+      "reason": "선행사 X / she was wrong → 완전"
+    },
+    {
+      "number": 52,
+      "sentence": "I found ______ I had lost.",
+      "answer": "what",
+      "reason": "선행사 X / I had lost ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 53,
+      "sentence": "I found the wallet ______ I had lost.",
+      "answer": "that",
+      "reason": "선행사 the wallet O / I had lost ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 54,
+      "sentence": "We learned ______ the museum opens at nine.",
+      "answer": "that",
+      "reason": "선행사 X / the museum opens at nine → 완전"
+    },
+    {
+      "number": 55,
+      "sentence": "Do you remember ______ happened next?",
+      "answer": "what",
+      "reason": "선행사 X / ___ happened next → 주어가 빠져 불완전"
+    },
+    {
+      "number": 56,
+      "sentence": "Do you remember the event ______ happened next?",
+      "answer": "that",
+      "reason": "선행사 the event O / ___ happened next → 주어가 빠져 불완전"
+    },
+    {
+      "number": 57,
+      "sentence": "I suspect ______ he already knows the answer.",
+      "answer": "that",
+      "reason": "선행사 X / he already knows the answer → 완전"
+    },
+    {
+      "number": 58,
+      "sentence": "She didn't understand ______ I meant.",
+      "answer": "what",
+      "reason": "선행사 X / I meant ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 59,
+      "sentence": "She didn't understand the expression ______ I used.",
+      "answer": "that",
+      "reason": "선행사 the expression O / I used ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 60,
+      "sentence": "The teacher explained ______ water freezes at zero degrees.",
+      "answer": "that",
+      "reason": "선행사 X / water freezes at zero degrees → 완전"
+    },
+    {
+      "number": 61,
+      "sentence": "______ surprised me was his answer.",
+      "answer": "What",
+      "reason": "선행사 X / ___ surprised me → 주어가 빠져 불완전"
+    },
+    {
+      "number": 62,
+      "sentence": "The answer ______ surprised me was unexpected.",
+      "answer": "that",
+      "reason": "선행사 the answer O / ___ surprised me → 주어가 빠져 불완전"
+    },
+    {
+      "number": 63,
+      "sentence": "Everyone knows ______ the Earth moves around the Sun.",
+      "answer": "that",
+      "reason": "선행사 X / the Earth moves around the Sun → 완전"
+    },
+    {
+      "number": 64,
+      "sentence": "I ate ______ she prepared.",
+      "answer": "what",
+      "reason": "선행사 X / she prepared ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 65,
+      "sentence": "I ate the meal ______ she prepared.",
+      "answer": "that",
+      "reason": "선행사 the meal O / she prepared ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 66,
+      "sentence": "He mentioned ______ the meeting had been canceled.",
+      "answer": "that",
+      "reason": "선행사 X / the meeting had been canceled → 완전"
+    },
+    {
+      "number": 67,
+      "sentence": "Nobody knew ______ was missing.",
+      "answer": "what",
+      "reason": "선행사 X / ___ was missing → 주어가 빠져 불완전"
+    },
+    {
+      "number": 68,
+      "sentence": "Nobody knew the document ______ was missing.",
+      "answer": "that",
+      "reason": "선행사 the document O / ___ was missing → 주어가 빠져 불완전"
+    },
+    {
+      "number": 69,
+      "sentence": "She confirmed ______ the package had arrived.",
+      "answer": "that",
+      "reason": "선행사 X / the package had arrived → 완전"
+    },
+    {
+      "number": 70,
+      "sentence": "I will buy ______ you recommend.",
+      "answer": "what",
+      "reason": "선행사 X / you recommend ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 71,
+      "sentence": "I will buy the phone ______ you recommend.",
+      "answer": "that",
+      "reason": "선행사 the phone O / you recommend ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 72,
+      "sentence": "We expect ______ prices will rise next year.",
+      "answer": "that",
+      "reason": "선행사 X / prices will rise next year → 완전"
+    },
+    {
+      "number": 73,
+      "sentence": "______ caused the fire is still unknown.",
+      "answer": "What",
+      "reason": "선행사 X / ___ caused the fire → 주어가 빠져 불완전"
+    },
+    {
+      "number": 74,
+      "sentence": "The device ______ caused the fire was damaged.",
+      "answer": "that",
+      "reason": "선행사 the device O / ___ caused the fire → 주어가 빠져 불완전"
+    },
+    {
+      "number": 75,
+      "sentence": "He discovered ______ his phone was gone.",
+      "answer": "that",
+      "reason": "선행사 X / his phone was gone → 완전"
+    },
+    {
+      "number": 76,
+      "sentence": "We discussed ______ we had observed.",
+      "answer": "what",
+      "reason": "선행사 X / we had observed ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 77,
+      "sentence": "We discussed the pattern ______ we had observed.",
+      "answer": "that",
+      "reason": "선행사 the pattern O / we had observed ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 78,
+      "sentence": "She thinks ______ the movie is too long.",
+      "answer": "that",
+      "reason": "선행사 X / the movie is too long → 완전"
+    },
+    {
+      "number": 79,
+      "sentence": "I couldn't recognize ______ was lying on the floor.",
+      "answer": "what",
+      "reason": "선행사 X / ___ was lying on the floor → 주어가 빠져 불완전"
+    },
+    {
+      "number": 80,
+      "sentence": "I couldn't recognize the object ______ was lying on the floor.",
+      "answer": "that",
+      "reason": "선행사 the object O / ___ was lying on the floor → 주어가 빠져 불완전"
+    },
+    {
+      "number": 81,
+      "sentence": "They announced ______ school would be closed tomorrow.",
+      "answer": "that",
+      "reason": "선행사 X / school would be closed tomorrow → 완전"
+    },
+    {
+      "number": 82,
+      "sentence": "She kept ______ she needed.",
+      "answer": "what",
+      "reason": "선행사 X / she needed ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 83,
+      "sentence": "She kept the papers ______ she needed.",
+      "answer": "that",
+      "reason": "선행사 the papers O / she needed ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 84,
+      "sentence": "I noticed ______ the lights were still on.",
+      "answer": "that",
+      "reason": "선행사 X / the lights were still on → 완전"
+    },
+    {
+      "number": 85,
+      "sentence": "______ happened after the meeting shocked us.",
+      "answer": "What",
+      "reason": "선행사 X / ___ happened after the meeting → 주어가 빠져 불완전"
+    },
+    {
+      "number": 86,
+      "sentence": "The incident ______ happened after the meeting shocked us.",
+      "answer": "that",
+      "reason": "선행사 the incident O / ___ happened after the meeting → 주어가 빠져 불완전"
+    },
+    {
+      "number": 87,
+      "sentence": "He believes ______ his plan will work.",
+      "answer": "that",
+      "reason": "선행사 X / his plan will work → 완전"
+    },
+    {
+      "number": 88,
+      "sentence": "We should repair ______ is broken.",
+      "answer": "what",
+      "reason": "선행사 X / ___ is broken → 주어가 빠져 불완전"
+    },
+    {
+      "number": 89,
+      "sentence": "We should repair the machine ______ is broken.",
+      "answer": "that",
+      "reason": "선행사 the machine O / ___ is broken → 주어가 빠져 불완전"
+    },
+    {
+      "number": 90,
+      "sentence": "She heard ______ someone was knocking at the door.",
+      "answer": "that",
+      "reason": "선행사 X / someone was knocking at the door → 완전"
+    },
+    {
+      "number": 91,
+      "sentence": "I didn't expect ______ he showed me.",
+      "answer": "what",
+      "reason": "선행사 X / he showed me ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 92,
+      "sentence": "I didn't expect the result ______ he showed me.",
+      "answer": "that",
+      "reason": "선행사 the result O / he showed me ___ → 목적어가 빠져 불완전"
+    },
+    {
+      "number": 93,
+      "sentence": "We all agree ______ exercise is important.",
+      "answer": "that",
+      "reason": "선행사 X / exercise is important → 완전"
+    },
+    {
+      "number": 94,
+      "sentence": "______ changed her mind remains unclear.",
+      "answer": "What",
+      "reason": "선행사 X / ___ changed her mind → 주어가 빠져 불완전"
+    },
+    {
+      "number": 95,
+      "sentence": "The news ______ changed her mind came yesterday.",
+      "answer": "that",
+      "reason": "선행사 the news O / ___ changed her mind → 주어가 빠져 불완전"
+    },
+    {
+      "number": 96,
+      "sentence": "I realized ______ I had left my bag at home.",
+      "answer": "that",
+      "reason": "선행사 X / I had left my bag at home → 완전"
+    },
+    {
+      "number": 97,
+      "sentence": "Choose ______ fits you best.",
+      "answer": "what",
+      "reason": "선행사 X / ___ fits you best → 주어가 빠져 불완전"
+    },
+    {
+      "number": 98,
+      "sentence": "Choose the shirt ______ fits you best.",
+      "answer": "that",
+      "reason": "선행사 the shirt O / ___ fits you best → 주어가 빠져 불완전"
+    },
+    {
+      "number": 99,
+      "sentence": "Scientists found ______ the temperature had increased.",
+      "answer": "that",
+      "reason": "선행사 X / the temperature had increased → 완전"
+    },
+    {
+      "number": 100,
+      "sentence": "This is ______ makes the system effective.",
+      "answer": "what",
+      "reason": "선행사 X / ___ makes the system effective → 주어가 빠져 불완전"
+    }
+  ]
+}
+  ]
 }

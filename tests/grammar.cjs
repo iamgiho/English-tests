@@ -11,7 +11,10 @@ const stored = new Map();
 let speeches = 0;
 const context = vm.createContext({
   $: id => {
-    if (!elements.has(id)) elements.set(id, { value: '', disabled: false, textContent: '', innerHTML: '', style: {}, classList: { toggle() {} }, focus() {}, setAttribute() {}, removeAttribute() {}, addEventListener() {} });
+    if (!elements.has(id)) {
+      const classes = new Set();
+      elements.set(id, { value: '', disabled: false, textContent: '', innerHTML: '', style: {}, classList: { toggle(name, on) { if (on) classes.add(name); else classes.delete(name); }, contains(name) { return classes.has(name); } }, focus() {}, setAttribute() {}, removeAttribute() {}, addEventListener() {} });
+    }
     return elements.get(id);
   },
   window: { speechSynthesis: { cancel() {}, speak() { speeches++; } } },
@@ -119,5 +122,62 @@ function answer(overrides = {}) {
   assert.equal(speeches, beforeWritten);
   assert.equal(stored.get('exam.grammarResults')[0].total, 6);
   assert.equal(stored.get('exam.grammarResults')[0].score, 100);
-  console.log(`PASS: ${wordCount} verbs, reveal rounds, learning audio, corrections, silent retests, direct completion, range scoring, storage, reset.`);
+  const choiceUnit = data.units.find(unit => unit.id === 'that-what');
+  assert.equal(choiceUnit.questions.length, 100);
+  assert.equal(new Set(choiceUnit.questions.map(q => q.number)).size, 100);
+  context.$('#grammarUnitSelect').value = 'that-what';
+  run('grammarUnitNotice()');
+  assert.equal(context.$('#grammarRangeEnd').value, 100);
+  assert.equal(context.$('#grammarRangeStartLabel').textContent, '시작 문항 번호');
+  const audioBeforeChoice = speeches;
+  run('startGrammar()');
+  assert.equal(state().stage, 'choice');
+  assert.equal(context.$('#grammarAnswers').classList.contains('hidden'), true);
+  assert.equal(context.$('#grammarChoices').classList.contains('hidden'), false);
+  run('nextGrammar()');
+  assert.equal(state().index, 0, 'must answer before advancing');
+  for (let i = 0; i < 100; i++) {
+    const q = state().queue[state().index];
+    assert.equal(q.number, i + 1);
+    assert.equal(context.$('#grammarReason').classList.contains('hidden'), true);
+    assert.equal(context.$('#grammarReason').textContent, '');
+    const answer = q.answer.toLowerCase();
+    const submitted = i === 0 ? 'that' : answer;
+    run(`submitGrammarChoice('${submitted}')`);
+    assert.equal(context.$('#grammarReason').textContent, `이유: ${q.reason}`);
+    assert.equal(context.$('#grammarReason').classList.contains('hidden'), false);
+    assert.equal(context.$('#grammarThat').disabled, true);
+    assert.ok(context.$('#grammarQuestion').innerHTML.includes(`>${q.answer}</strong>`));
+    run("submitGrammarChoice('what')");
+    run('nextGrammar()');
+  }
+  assert.equal(state().stage, 'retest');
+  assert.equal(state().queue.length, 1);
+  assert.equal(state().records.length, 1, 'double click cannot change first answer');
+  run("submitGrammarChoice('that'); nextGrammar()");
+  assert.equal(state().stage, 'retest');
+  assert.equal(state().records.length, 1, 'retests do not alter original score');
+  run("submitGrammarChoice('what'); nextGrammar()");
+  assert.equal(state().stage, 'complete');
+  const choiceResult = stored.get('exam.grammarResults')[0];
+  assert.equal(choiceResult.score, 99);
+  assert.equal(choiceResult.total, 100);
+  assert.equal(choiceResult.retries, 2);
+  assert.equal(choiceResult.wrongAnswers[0].reason, choiceUnit.questions[0].reason);
+  assert.equal(speeches, audioBeforeChoice, 'choice tests have no audio');
+  run('resetGrammar()');
+  context.$('#grammarRangeStart').value = '100';
+  context.$('#grammarRangeEnd').value = '101';
+  run('startGrammar()');
+  assert.equal(state(), null, 'choice range overflow rejected');
+  context.$('#grammarRangeEnd').value = '100';
+  run("startGrammar(); submitGrammarChoice('what'); nextGrammar()");
+  assert.equal(stored.get('exam.grammarResults')[0].total, 1);
+  assert.equal(stored.get('exam.grammarResults')[0].score, 100);
+  context.$('#grammarUnitSelect').value = data.units[0].id;
+  run('grammarUnitNotice(); startGrammar()');
+  assert.equal(state().stage, 'learn');
+  assert.equal(context.$('#grammarChoices').classList.contains('hidden'), true);
+  assert.equal(context.$('#grammarRangeEnd').value, wordCount);
+  console.log(`PASS: ${wordCount} verbs and 100 that/what questions; explanations, first-answer scoring, repeated retests, range boundaries, unit switching, audio isolation.`);
 })().catch(error => { console.error(error); process.exitCode = 1; });

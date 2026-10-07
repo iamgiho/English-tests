@@ -227,6 +227,10 @@
       overflow-wrap: anywhere;
     }
 
+    .grammar-choice-sentence { font-size: clamp(26px, 3vw, 38px); line-height: 1.65; overflow-wrap: anywhere; margin: 18px 0; }
+    .grammar-choice-answer { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 6px; }
+    #grammarChoices button { min-width: 120px; min-height: 56px; font-size: 24px; }
+    #grammarReason { margin-top: 16px; font-size: 18px; line-height: 1.8; white-space: pre-wrap; }
     .grammar-study-row {
       display: flex;
       flex-wrap: wrap;
@@ -768,11 +772,11 @@
           </div>
           <div class="field-row" style="margin-top: 12px;">
             <div class="field">
-              <label for="grammarRangeStart">시작 동사 번호</label>
+              <label id="grammarRangeStartLabel" for="grammarRangeStart">시작 동사 번호</label>
               <input id="grammarRangeStart" type="number" inputmode="numeric" min="1" step="1">
             </div>
             <div class="field">
-              <label for="grammarRangeEnd">끝 동사 번호</label>
+              <label id="grammarRangeEndLabel" for="grammarRangeEnd">끝 동사 번호</label>
               <input id="grammarRangeEnd" type="number" inputmode="numeric" min="1" step="1">
             </div>
           </div>
@@ -788,6 +792,11 @@
             <button id="grammarSound" class="secondary hidden">현재형 듣기</button>
             <span id="grammarReplay" class="hidden"></span>
           </div>
+          <div id="grammarChoices" class="toolbar hidden" role="group" aria-label="빈칸 정답 선택">
+            <button id="grammarThat" type="button">that</button>
+            <button id="grammarWhat" type="button">what</button>
+          </div>
+          <div id="grammarReason" class="notice hidden" aria-live="polite"></div>
           <form id="grammarAnswers" class="hidden" autocomplete="off">
             <div class="field-row">
               <div class="field"><label for="grammarMeaning">뜻</label><input id="grammarMeaning" spellcheck="false" aria-describedby="grammarMeaningFeedback"><div id="grammarMeaningFeedback" aria-live="polite"></div></div>
@@ -3972,8 +3981,8 @@
       readJson('exam.grammarResults', []).forEach((result) => attempts.push({
         category: 'Grammar', nickname: result.name, takenAt: result.takenAt,
         meta: `${result.unit} · ${result.range || '전체 범위'} · ${result.score}점 · ${result.correct}/${result.total} · 재시험 ${result.retries}회 · 이 브라우저 기록`,
-        headers: ['단계', '현재형', '틀린 항목', '내 답', '정답'],
-        rows: result.wrongAnswers.map((answer) => [answer.stage, answer.present, answer.field, answer.userAnswer, answer.answer])
+        headers: ['단계', '현재형 / 예문', '틀린 항목', '내 답', '정답', '이유'],
+        rows: result.wrongAnswers.map((answer) => [answer.stage, answer.present, answer.field, answer.userAnswer, answer.answer, answer.reason || ''])
       }));
       readJson('exam.definitionResults', []).forEach((result) => attempts.push({
         category: '영영풀이', nickname: result.name, takenAt: result.takenAt,
