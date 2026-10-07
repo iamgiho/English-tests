@@ -231,6 +231,8 @@
     .grammar-choice-answer { color: var(--accent-dark); text-decoration: underline; text-underline-offset: 6px; }
     #grammarChoices button { min-width: 120px; min-height: 56px; font-size: 24px; }
     #grammarReason { margin-top: 16px; font-size: 18px; line-height: 1.8; white-space: pre-wrap; }
+    #grammarBlankAnswer { font-size: 24px; min-height: 56px; }
+    #grammarBlankForm { max-width: 540px; margin-top: 16px; }
     .grammar-study-row {
       display: flex;
       flex-wrap: wrap;
@@ -796,6 +798,11 @@
             <button id="grammarThat" type="button">that</button>
             <button id="grammarWhat" type="button">what</button>
           </div>
+          <form id="grammarBlankForm" class="hidden" autocomplete="off">
+            <label for="grammarBlankAnswer">정답 · 현재분사 또는 과거분사</label>
+            <input id="grammarBlankAnswer" spellcheck="false" autocapitalize="none" placeholder="알맞은 분사형을 입력하세요">
+            <div class="toolbar"><button id="grammarBlankSubmit" type="submit">정답 확인</button></div>
+          </form>
           <div id="grammarReason" class="notice hidden" aria-live="polite"></div>
           <form id="grammarAnswers" class="hidden" autocomplete="off">
             <div class="field-row">

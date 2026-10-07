@@ -7,6 +7,8 @@ const grammarFields = [
 let grammarUnits = [];
 let grammarSession = null;
 const grammarResultKey = 'exam.grammarResults';
+const grammarIsQuestionUnit = unit => ['choice', 'blank'].includes(unit?.type);
+const grammarQuestionOptions = question => question.options || ['that', 'what'];
 
 async function loadGrammar() {
   try {
@@ -18,11 +20,14 @@ async function loadGrammar() {
     for (const unit of data.units) {
       if (!unit.id || ids.has(unit.id) || !unit.title) throw new Error('unit');
       ids.add(unit.id);
-      if (unit.type === 'choice') {
+      if (grammarIsQuestionUnit(unit)) {
         if (!unit.questions?.length) throw new Error('questions');
         const numbers = new Set();
         for (const q of unit.questions) {
-          if (!Number.isInteger(q.number) || q.number < 1 || numbers.has(q.number) || typeof q.sentence !== 'string' || !q.sentence.includes('______') || !/^(what|that)$/i.test(q.answer) || typeof q.reason !== 'string' || !q.reason.trim()) throw new Error('question');
+          const options = grammarQuestionOptions(q);
+          const validOptions = Array.isArray(options) && options.length === 2 && options.every(value => typeof value === 'string' && value.trim()) && new Set(options.map(value => value.toLowerCase())).size === 2;
+          const validAnswer = typeof q.answer === 'string' && (unit.type === 'choice' ? validOptions && options.some(value => value.toLowerCase() === q.answer.toLowerCase()) : /^[a-z]+$/i.test(q.answer));
+          if (!Number.isInteger(q.number) || q.number < 1 || numbers.has(q.number) || typeof q.sentence !== 'string' || !q.sentence.includes('______') || !validAnswer || typeof q.reason !== 'string' || !q.reason.trim()) throw new Error('question');
           numbers.add(q.number);
         }
         continue;
@@ -48,7 +53,7 @@ function grammarUnitNotice() {
   const unit = grammarUnits.find(unit => unit.id === $('#grammarUnitSelect').value);
   if (!unit) return setMessage($('#grammarNotice'), '단원을 선택하세요.');
   resetGrammar();
-  const choice = unit.type === 'choice';
+  const choice = grammarIsQuestionUnit(unit);
   const count = choice ? unit.questions.length : unit.words.length;
   $('#grammarRangeStartLabel').textContent = choice ? '시작 문항 번호' : '시작 동사 번호';
   $('#grammarRangeEndLabel').textContent = choice ? '끝 문항 번호' : '끝 동사 번호';
@@ -68,13 +73,13 @@ function startGrammar() {
   const end = Number($('#grammarRangeEnd').value);
   if (!name) { $('#grammarName').focus(); return setMessage($('#grammarFeedback'), '이름을 먼저 입력하세요.', 'bad'); }
   if (!unit) return;
-  const items = unit.type === 'choice' ? unit.questions : unit.words;
+  const items = grammarIsQuestionUnit(unit) ? unit.questions : unit.words;
   if (!Number.isInteger(start) || !Number.isInteger(end) || start < 1 || start > end || end > items.length) {
     return setMessage($('#grammarFeedback'), `번호를 1~${items.length} 사이에서 올바르게 입력하세요.`, 'bad');
   }
   const words = items.slice(start - 1, end);
   grammarSession = { name, unit, words, range: `${start}~${end}`, stage: 'learn', round: 1, queue: [...words], index: 0, wrong: [], records: [], failed: new Set(), corrections: 0, retries: 0, replays: 0, answered: false, pending: [] };
-  if (unit.type === 'choice') grammarSession.stage = 'choice';
+  if (grammarIsQuestionUnit(unit)) grammarSession.stage = 'choice';
   $('#grammarName').disabled = $('#grammarUnitSelect').disabled = $('#grammarRangeStart').disabled = $('#grammarRangeEnd').disabled = $('#grammarStart').disabled = true;
   $('#grammarResult').innerHTML = '';
   renderGrammar();
@@ -83,7 +88,8 @@ function startGrammar() {
 function renderGrammar() {
   window.speechSynthesis?.cancel();
   const s = grammarSession;
-  if (s.unit.type === 'choice') return renderGrammarChoice();
+  if (grammarIsQuestionUnit(s.unit)) return renderGrammarChoice();
+  grammarShow('grammarBlankForm', false);
   grammarShow('grammarChoices', false);
   grammarShow('grammarReason', false);
   const word = s.queue[s.index];
@@ -173,32 +179,43 @@ function renderGrammarChoice() {
   const q = s.queue[s.index];
   s.answered = false;
   for (const id of ['grammarAnswers', 'grammarReveal', 'grammarSound', 'grammarReplay', 'grammarReason']) grammarShow(id, false);
-  grammarShow('grammarChoices', true);
+  const blank = s.unit.type === 'blank';
+  grammarShow('grammarChoices', !blank);
+  grammarShow('grammarBlankForm', blank);
+  $('#grammarBlankAnswer').value = '';
+  $('#grammarBlankAnswer').disabled = $('#grammarBlankSubmit').disabled = false;
   grammarShow('grammarNext', true);
   $('#grammarNext').disabled = true;
   $('#grammarThat').disabled = $('#grammarWhat').disabled = false;
+  const options = grammarQuestionOptions(q);
+  $('#grammarThat').textContent = $('#grammarThat').value = options[0];
+  $('#grammarWhat').textContent = $('#grammarWhat').value = options[1];
   $('#grammarReason').textContent = '';
-  $('#grammarStage').textContent = s.stage === 'retest' ? 'that / what · 오답 재시험' : 'that / what · 본시험';
+  $('#grammarStage').textContent = `${s.unit.title} · ${s.stage === 'retest' ? '오답 재시험' : '본시험'}`;
   $('#grammarProgress').textContent = `${s.index + 1} / ${s.queue.length}`;
-  $('#grammarQuestion').innerHTML = `<h3>문항 ${q.number} · 빈칸에 들어갈 말을 선택하세요.</h3><p class="grammar-choice-sentence">${escapeHtml(q.sentence)}</p>`;
-  setMessage($('#grammarFeedback'), 'that 또는 what을 선택하세요.');
-  $('#grammarThat').focus();
+  $('#grammarQuestion').innerHTML = `<h3>문항 ${q.number} · ${blank ? '괄호 안 동사를 알맞은 분사형으로 바꾸어 입력하세요.' : '빈칸에 들어갈 말을 선택하세요.'}</h3><p class="grammar-choice-sentence">${escapeHtml(q.sentence)}</p>`;
+  setMessage($('#grammarFeedback'), blank ? '현재분사 또는 과거분사 형태를 입력하세요.' : `${options[0]} 또는 ${options[1]}을 선택하세요.`);
+  $(blank ? '#grammarBlankAnswer' : '#grammarThat').focus();
 }
 
 function submitGrammarChoice(value) {
   const s = grammarSession;
-  if (!s || s.unit.type !== 'choice' || !['choice', 'retest'].includes(s.stage) || s.answered || !['that', 'what'].includes(value)) return;
+  if (!s || !grammarIsQuestionUnit(s.unit) || !['choice', 'retest'].includes(s.stage) || s.answered) return;
+  value = String(value).trim();
+  if (!value) return setMessage($('#grammarFeedback'), '정답을 입력하세요.', 'bad');
   const q = s.queue[s.index];
-  const correct = value === q.answer.toLowerCase();
+  if (s.unit.type === 'choice' && !grammarQuestionOptions(q).includes(value)) return;
+  const correct = value.toLowerCase() === q.answer.toLowerCase();
   s.answered = true;
   if (!correct) {
     s.wrong.push(q);
     if (s.stage === 'choice') {
       s.failed.add(q.number);
-      s.records.push({ stage: 'that / what', present: q.sentence, field: `문항 ${q.number}`, userAnswer: value, answer: q.answer, reason: q.reason });
+      s.records.push({ stage: s.unit.title, present: q.sentence, field: `문항 ${q.number}`, userAnswer: value, answer: q.answer, reason: q.reason });
     }
   }
   $('#grammarThat').disabled = $('#grammarWhat').disabled = true;
+  $('#grammarBlankAnswer').disabled = $('#grammarBlankSubmit').disabled = true;
   $('#grammarNext').disabled = false;
   const [before, after] = q.sentence.split('______');
   $('#grammarQuestion').innerHTML = `<h3>문항 ${q.number}</h3><p class="grammar-choice-sentence">${escapeHtml(before)}<strong class="grammar-choice-answer">${escapeHtml(q.answer)}</strong>${escapeHtml(after)}</p>`;
@@ -210,7 +227,7 @@ function submitGrammarChoice(value) {
 
 function submitGrammar() {
   const s = grammarSession;
-  if (!s || s.unit.type === 'choice' || s.stage === 'learn' || s.stage === 'complete' || s.answered) return;
+  if (!s || grammarIsQuestionUnit(s.unit) || s.stage === 'learn' || s.stage === 'complete' || s.answered) return;
   const fields = s.pending.length ? grammarFields.filter(f => s.pending.includes(f.key)) : grammarFields;
   const empty = fields.find(f => !$('#' + f.id).value.trim());
   if (empty) { $('#' + empty.id).focus(); return setMessage($('#grammarFeedback'), `${empty.label}을 입력하세요.`, 'bad'); }
@@ -277,13 +294,13 @@ function finishGrammar() {
   const s = grammarSession;
   s.stage = 'complete';
   window.speechSynthesis?.cancel();
-  const choice = s.unit.type === 'choice';
+  const choice = grammarIsQuestionUnit(s.unit);
   const total = s.words.length * (choice ? 1 : 3);
   const correct = total - s.failed.size;
   const result = { name: s.name, unit: s.unit.title, range: s.range, total, correct, score: Math.round(correct / total * 100), retries: s.retries, corrections: s.corrections, wrongAnswers: s.records, takenAt: new Date().toLocaleString('ko-KR') };
   let saved = true;
   try { writeJson(grammarResultKey, [result, ...readJson(grammarResultKey, [])]); } catch { saved = false; }
-  for (const id of ['grammarAnswers', 'grammarNext', 'grammarSound', 'grammarReplay', 'grammarReveal', 'grammarChoices', 'grammarReason']) grammarShow(id, false);
+  for (const id of ['grammarAnswers', 'grammarNext', 'grammarSound', 'grammarReplay', 'grammarReveal', 'grammarChoices', 'grammarReason', 'grammarBlankForm']) grammarShow(id, false);
   $('#grammarStage').textContent = '완료';
   $('#grammarQuestion').innerHTML = `<h3>Grammar 학습 완료</h3><p class="question-main">${result.score}점</p><p class="question-sub">본시험 ${correct} / ${total}항목 정답 · 오답 재시험 ${s.retries}회 · ${choice ? '모든 문항' : '모든 동사'} 통과</p>`;
   $('#grammarResult').innerHTML = s.records.length ? table(['단계', '현재형 / 예문', '틀린 항목', '내 답', '정답', '이유'], s.records.map(r => [r.stage, r.present, r.field, r.userAnswer, r.answer, r.reason || ''])) : '<div class="notice good">최초 오답이 없습니다.</div>';
@@ -296,12 +313,13 @@ function resetGrammar() {
   grammarSession = null;
   $('#grammarName').disabled = $('#grammarUnitSelect').disabled = $('#grammarRangeStart').disabled = $('#grammarRangeEnd').disabled = false;
   $('#grammarStart').disabled = !grammarUnits.length;
-  for (const id of ['grammarAnswers', 'grammarNext', 'grammarSound', 'grammarReplay', 'grammarReveal', 'grammarChoices', 'grammarReason']) grammarShow(id, false);
+  for (const id of ['grammarAnswers', 'grammarNext', 'grammarSound', 'grammarReplay', 'grammarReveal', 'grammarChoices', 'grammarReason', 'grammarBlankForm']) grammarShow(id, false);
   $('#grammarStage').textContent = '대기';
   $('#grammarProgress').textContent = '0 / 0';
   $('#grammarQuestion').innerHTML = '<h3>Grammar 학습을 시작하세요.</h3><p class="question-sub">3회 노출 학습 → 세 칸 입력 시험 → 오답 재시험</p>';
-  if (grammarUnits.find(unit => unit.id === $('#grammarUnitSelect').value)?.type === 'choice') {
-    $('#grammarQuestion').innerHTML = '<h3>that / what 구분 시험</h3><p class="question-sub">답을 선택하면 정답과 이유를 보여줍니다. 틀린 문항은 다시 시험합니다.</p>';
+  const unit = grammarUnits.find(unit => unit.id === $('#grammarUnitSelect').value);
+  if (grammarIsQuestionUnit(unit)) {
+    $('#grammarQuestion').innerHTML = `<h3>${escapeHtml(unit.title)} 시험</h3><p class="question-sub">답을 ${unit.type === 'blank' ? '입력' : '선택'}하면 정답과 이유를 보여줍니다. 틀린 문항은 다시 시험합니다.</p>`;
   }
   $('#grammarResult').innerHTML = '';
   setMessage($('#grammarFeedback'), '이름과 단원을 설정하세요.');
@@ -313,8 +331,15 @@ $('#grammarUnitSelect').addEventListener('change', grammarUnitNotice);
 $('#grammarReveal').addEventListener('click', revealGrammar);
 $('#grammarSound').addEventListener('click', speakGrammar);
 $('#grammarNext').addEventListener('click', nextGrammar);
-$('#grammarThat').addEventListener('click', () => submitGrammarChoice('that'));
-$('#grammarWhat').addEventListener('click', () => submitGrammarChoice('what'));
+$('#grammarThat').addEventListener('click', () => submitGrammarChoice($('#grammarThat').value));
+$('#grammarWhat').addEventListener('click', () => submitGrammarChoice($('#grammarWhat').value));
+$('#grammarBlankForm').addEventListener('submit', event => {
+  event.preventDefault();
+  submitGrammarChoice($('#grammarBlankAnswer').value);
+});
+$('#grammarBlankAnswer').addEventListener('keydown', event => {
+  if (event.key === 'Enter' && (event.isComposing || event.keyCode === 229)) event.preventDefault();
+});
 $('#grammarAnswers').addEventListener('submit', event => { event.preventDefault(); submitGrammar(); });
 $('#grammarAnswers').addEventListener('keydown', event => {
   if (event.key !== 'Enter') return;

@@ -1,740 +1,3727 @@
 {
-  "units": [{
-    "id": "verb-past-participle",
-    "title": "동사의 과거·과거분사",
-    "words": [
-      { "present": "bet", "past": ["bet"], "participle": ["bet"], "meaning": ["돈을 걸다"] },
-      { "present": "burst", "past": ["burst"], "participle": ["burst"], "meaning": ["터지다"] },
-      { "present": "cost", "past": ["cost"], "participle": ["cost"], "meaning": ["비용이 들다"] },
-      { "present": "cut", "past": ["cut"], "participle": ["cut"], "meaning": ["자르다"] },
-      { "present": "hit", "past": ["hit"], "participle": ["hit"], "meaning": ["치다"] },
-      { "present": "hurt", "past": ["hurt"], "participle": ["hurt"], "meaning": ["다치게 하다"] },
-      { "present": "let", "past": ["let"], "participle": ["let"], "meaning": ["~하게 두다"] },
-      { "present": "put", "past": ["put"], "participle": ["put"], "meaning": ["놓다"] },
-      { "present": "quit", "past": ["quit"], "participle": ["quit"], "meaning": ["그만두다"] },
-      { "present": "read", "past": ["read"], "participle": ["read"], "meaning": ["읽다"], "speech": "reed" },
-      { "present": "set", "past": ["set"], "participle": ["set"], "meaning": ["놓다", "설정하다"] },
-      { "present": "bring", "past": ["brought"], "participle": ["brought"], "meaning": ["가져오다"] },
-      { "present": "build", "past": ["built"], "participle": ["built"], "meaning": ["짓다"] },
-      { "present": "buy", "past": ["bought"], "participle": ["bought"], "meaning": ["사다"] },
-      { "present": "catch", "past": ["caught"], "participle": ["caught"], "meaning": ["잡다"] },
-      { "present": "feel", "past": ["felt"], "participle": ["felt"], "meaning": ["느끼다"] },
-      { "present": "fight", "past": ["fought"], "participle": ["fought"], "meaning": ["싸우다"] },
-      { "present": "find", "past": ["found"], "participle": ["found"], "meaning": ["찾다"] },
-      { "present": "get", "past": ["got"], "participle": ["got"], "meaning": ["얻다"] },
-      { "present": "have", "past": ["had"], "participle": ["had"], "meaning": ["가지다"] },
-      { "present": "hear", "past": ["heard"], "participle": ["heard"], "meaning": ["듣다"] },
-      { "present": "hold", "past": ["held"], "participle": ["held"], "meaning": ["잡다"] },
-      { "present": "keep", "past": ["kept"], "participle": ["kept"], "meaning": ["유지하다"] },
-      { "present": "leave", "past": ["left"], "participle": ["left"], "meaning": ["떠나다", "남기다"] },
-      { "present": "lose", "past": ["lost"], "participle": ["lost"], "meaning": ["잃다"] },
-      { "present": "make", "past": ["made"], "participle": ["made"], "meaning": ["만들다"] },
-      { "present": "mean", "past": ["meant"], "participle": ["meant"], "meaning": ["의미하다"] },
-      { "present": "meet", "past": ["met"], "participle": ["met"], "meaning": ["만나다"] },
-      { "present": "pay", "past": ["paid"], "participle": ["paid"], "meaning": ["지불하다"] },
-      { "present": "say", "past": ["said"], "participle": ["said"], "meaning": ["말하다"] },
-      { "present": "sell", "past": ["sold"], "participle": ["sold"], "meaning": ["팔다"] },
-      { "present": "send", "past": ["sent"], "participle": ["sent"], "meaning": ["보내다"] },
-      { "present": "sit", "past": ["sat"], "participle": ["sat"], "meaning": ["앉다"] },
-      { "present": "sleep", "past": ["slept"], "participle": ["slept"], "meaning": ["자다"] },
-      { "present": "spend", "past": ["spent"], "participle": ["spent"], "meaning": ["쓰다", "보내다"] },
-      { "present": "stand", "past": ["stood"], "participle": ["stood"], "meaning": ["서다"] },
-      { "present": "teach", "past": ["taught"], "participle": ["taught"], "meaning": ["가르치다"] },
-      { "present": "tell", "past": ["told"], "participle": ["told"], "meaning": ["말하다"] },
-      { "present": "think", "past": ["thought"], "participle": ["thought"], "meaning": ["생각하다"] },
-      { "present": "understand", "past": ["understood"], "participle": ["understood"], "meaning": ["이해하다"] },
-      { "present": "win", "past": ["won"], "participle": ["won"], "meaning": ["이기다"] },
-      { "present": "lead", "past": ["led"], "participle": ["led"], "meaning": ["이끌다"] },
-      { "present": "learn", "past": ["learned"], "participle": ["learned"], "meaning": ["배우다"] },
-      { "present": "feed", "past": ["fed"], "participle": ["fed"], "meaning": ["먹이를 주다"] },
-      { "present": "hang", "past": ["hung"], "participle": ["hung"], "meaning": ["걸다"] },
-      { "present": "lay", "past": ["laid"], "participle": ["laid"], "meaning": ["놓다"] },
-      { "present": "lend", "past": ["lent"], "participle": ["lent"], "meaning": ["빌려주다"] },
-      { "present": "shoot", "past": ["shot"], "participle": ["shot"], "meaning": ["쏘다"] },
-      { "present": "spoil", "past": ["spoiled"], "participle": ["spoiled"], "meaning": ["망치다"] },
-      { "present": "sting", "past": ["stung"], "participle": ["stung"], "meaning": ["쏘다"] },
-      { "present": "wind", "past": ["wound"], "participle": ["wound"], "meaning": ["감다"], "speech": "wined" },
-      { "present": "bind", "past": ["bound"], "participle": ["bound"], "meaning": ["묶다"] },
-      { "present": "grind", "past": ["ground"], "participle": ["ground"], "meaning": ["갈다"] },
-      { "present": "bend", "past": ["bent"], "participle": ["bent"], "meaning": ["구부리다"] },
-      { "present": "come", "past": ["came"], "participle": ["come"], "meaning": ["오다"] },
-      { "present": "become", "past": ["became"], "participle": ["become"], "meaning": ["~이 되다"] },
-      { "present": "run", "past": ["ran"], "participle": ["run"], "meaning": ["달리다"] },
-      { "present": "overcome", "past": ["overcame"], "participle": ["overcome"], "meaning": ["극복하다"] },
-      { "present": "begin", "past": ["began"], "participle": ["begun"], "meaning": ["시작하다"] },
-      { "present": "break", "past": ["broke"], "participle": ["broken"], "meaning": ["깨뜨리다"] },
-      { "present": "choose", "past": ["chose"], "participle": ["chosen"], "meaning": ["선택하다"] },
-      { "present": "do", "past": ["did"], "participle": ["done"], "meaning": ["하다"] },
-      { "present": "drink", "past": ["drank"], "participle": ["drunk"], "meaning": ["마시다"] },
-      { "present": "drive", "past": ["drove"], "participle": ["driven"], "meaning": ["운전하다"] },
-      { "present": "eat", "past": ["ate"], "participle": ["eaten"], "meaning": ["먹다"] },
-      { "present": "fall", "past": ["fell"], "participle": ["fallen"], "meaning": ["떨어지다"] },
-      { "present": "fly", "past": ["flew"], "participle": ["flown"], "meaning": ["날다"] },
-      { "present": "forget", "past": ["forgot"], "participle": ["forgotten"], "meaning": ["잊다"] },
-      { "present": "give", "past": ["gave"], "participle": ["given"], "meaning": ["주다"] },
-      { "present": "go", "past": ["went"], "participle": ["gone"], "meaning": ["가다"] },
-      { "present": "grow", "past": ["grew"], "participle": ["grown"], "meaning": ["자라다", "기르다"] },
-      { "present": "know", "past": ["knew"], "participle": ["known"], "meaning": ["알다"] },
-      { "present": "ride", "past": ["rode"], "participle": ["ridden"], "meaning": ["타다"] },
-      { "present": "see", "past": ["saw"], "participle": ["seen"], "meaning": ["보다"] },
-      { "present": "show", "past": ["showed"], "participle": ["shown"], "meaning": ["보여주다"] },
-      { "present": "sing", "past": ["sang"], "participle": ["sung"], "meaning": ["노래하다"] },
-      { "present": "speak", "past": ["spoke"], "participle": ["spoken"], "meaning": ["말하다"] },
-      { "present": "swim", "past": ["swam"], "participle": ["swum"], "meaning": ["수영하다"] },
-      { "present": "take", "past": ["took"], "participle": ["taken"], "meaning": ["가져가다", "잡다"] },
-      { "present": "throw", "past": ["threw"], "participle": ["thrown"], "meaning": ["던지다"] },
-      { "present": "wear", "past": ["wore"], "participle": ["worn"], "meaning": ["입다"] },
-      { "present": "write", "past": ["wrote"], "participle": ["written"], "meaning": ["쓰다"] },
-      { "present": "wake", "past": ["woke"], "participle": ["woken"], "meaning": ["깨다"] },
-      { "present": "arise", "past": ["arose"], "participle": ["arisen"], "meaning": ["발생하다"] },
-      { "present": "bite", "past": ["bit"], "participle": ["bitten"], "meaning": ["물다"] },
-      { "present": "blow", "past": ["blew"], "participle": ["blown"], "meaning": ["불다"] },
-      { "present": "draw", "past": ["drew"], "participle": ["drawn"], "meaning": ["그리다"] },
-      { "present": "freeze", "past": ["froze"], "participle": ["frozen"], "meaning": ["얼다"] },
-      { "present": "hide", "past": ["hid"], "participle": ["hidden"], "meaning": ["숨기다"] },
-      { "present": "lie", "past": ["lay"], "participle": ["lain"], "meaning": ["눕다"] },
-      { "present": "ring", "past": ["rang"], "participle": ["rung"], "meaning": ["울리다"] },
-      { "present": "rise", "past": ["rose"], "participle": ["risen"], "meaning": ["오르다"] },
-      { "present": "shake", "past": ["shook"], "participle": ["shaken"], "meaning": ["흔들다"] },
-      { "present": "steal", "past": ["stole"], "participle": ["stolen"], "meaning": ["훔치다"] },
-      { "present": "tear", "past": ["tore"], "participle": ["torn"], "meaning": ["찢다"] },
-      { "present": "withdraw", "past": ["withdrew"], "participle": ["withdrawn"], "meaning": ["돈을 뽑다"] },
-      { "present": "forbid", "past": ["forbade"], "participle": ["forbidden"], "meaning": ["금지하다"] },
-      { "present": "forgive", "past": ["forgave"], "participle": ["forgiven"], "meaning": ["용서하다"] },
-      { "present": "bear", "past": ["bore"], "participle": ["born"], "meaning": ["낳다"] },
-      { "present": "beat", "past": ["beat"], "participle": ["beaten"], "meaning": ["때리다"] },
-      { "present": "shrink", "past": ["shrank"], "participle": ["shrunk"], "meaning": ["줄어들다"] },
-      { "present": "sink", "past": ["sank"], "participle": ["sunk"], "meaning": ["가라앉다"] },
-      { "present": "spring", "past": ["sprang"], "participle": ["sprung"], "meaning": ["튀어 오르다"] },
-      { "present": "swear", "past": ["swore"], "participle": ["sworn"], "meaning": ["맹세하다"] },
-      { "present": "weave", "past": ["wove"], "participle": ["woven"], "meaning": ["짜다"] },
-      { "present": "work", "past": ["worked"], "participle": ["worked"], "meaning": ["일하다"] },
-      { "present": "walk", "past": ["walked"], "participle": ["walked"], "meaning": ["걷다"] },
-      { "present": "help", "past": ["helped"], "participle": ["helped"], "meaning": ["돕다"] },
-      { "present": "look", "past": ["looked"], "participle": ["looked"], "meaning": ["보다"] },
-      { "present": "watch", "past": ["watched"], "participle": ["watched"], "meaning": ["보다"] },
-      { "present": "clean", "past": ["cleaned"], "participle": ["cleaned"], "meaning": ["청소하다"] },
-      { "present": "open", "past": ["opened"], "participle": ["opened"], "meaning": ["열다"] },
-      { "present": "visit", "past": ["visited"], "participle": ["visited"], "meaning": ["방문하다"] },
-      { "present": "want", "past": ["wanted"], "participle": ["wanted"], "meaning": ["원하다"] },
-      { "present": "need", "past": ["needed"], "participle": ["needed"], "meaning": ["필요로 하다"] },
-      { "present": "call", "past": ["called"], "participle": ["called"], "meaning": ["부르다", "전화하다"] },
-      { "present": "start", "past": ["started"], "participle": ["started"], "meaning": ["시작하다"] },
-      { "present": "finish", "past": ["finished"], "participle": ["finished"], "meaning": ["끝내다"] },
-      { "present": "answer", "past": ["answered"], "participle": ["answered"], "meaning": ["대답하다"] },
-      { "present": "happen", "past": ["happened"], "participle": ["happened"], "meaning": ["일어나다"] },
-      { "present": "play", "past": ["played"], "participle": ["played"], "meaning": ["놀다"] },
-      { "present": "enjoy", "past": ["enjoyed"], "participle": ["enjoyed"], "meaning": ["즐기다"] },
-      { "present": "stay", "past": ["stayed"], "participle": ["stayed"], "meaning": ["머무르다"] },
-      { "present": "destroy", "past": ["destroyed"], "participle": ["destroyed"], "meaning": ["파괴하다"] }
-    ]
-  },
-{
-  "id": "that-what",
-  "title": "that / what 구분",
-  "type": "choice",
-  "questions": [
-    {
-      "number": 1,
-      "sentence": "I know ______ you need.",
-      "answer": "what",
-      "reason": "선행사 X / you need ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 2,
-      "sentence": "This is the book ______ I bought yesterday.",
-      "answer": "that",
-      "reason": "선행사 the book O / I bought ___ yesterday → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 3,
-      "sentence": "I think ______ he is right.",
-      "answer": "that",
-      "reason": "선행사 X / he is right → 주어·동사·보어가 모두 있어 완전"
-    },
-    {
-      "number": 4,
-      "sentence": "______ she said surprised everyone.",
-      "answer": "What",
-      "reason": "선행사 X / she said ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 5,
-      "sentence": "The man ______ called me is my uncle.",
-      "answer": "that",
-      "reason": "선행사 the man O / ___ called me → 주어가 빠져 불완전"
-    },
-    {
-      "number": 6,
-      "sentence": "She believes ______ the test was difficult.",
-      "answer": "that",
-      "reason": "선행사 X / the test was difficult → 완전"
-    },
-    {
-      "number": 7,
-      "sentence": "Tell me ______ happened yesterday.",
-      "answer": "what",
-      "reason": "선행사 X / ___ happened yesterday → 주어가 빠져 불완전"
-    },
-    {
-      "number": 8,
-      "sentence": "The car ______ was parked outside belongs to Tom.",
-      "answer": "that",
-      "reason": "선행사 the car O / ___ was parked outside → 주어가 빠져 불완전"
-    },
-    {
-      "number": 9,
-      "sentence": "We know ______ they arrived safely.",
-      "answer": "that",
-      "reason": "선행사 X / they arrived safely → 완전"
-    },
-    {
-      "number": 10,
-      "sentence": "I remember ______ you told me.",
-      "answer": "what",
-      "reason": "선행사 X / you told me ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 11,
-      "sentence": "The story ______ she told us was interesting.",
-      "answer": "that",
-      "reason": "선행사 the story O / she told us ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 12,
-      "sentence": "He said ______ his brother was busy.",
-      "answer": "that",
-      "reason": "선행사 X / his brother was busy → 완전"
-    },
-    {
-      "number": 13,
-      "sentence": "I couldn't understand ______ caused the problem.",
-      "answer": "what",
-      "reason": "선행사 X / ___ caused the problem → 주어가 빠져 불완전"
-    },
-    {
-      "number": 14,
-      "sentence": "The machine ______ caused the problem was old.",
-      "answer": "that",
-      "reason": "선행사 the machine O / ___ caused the problem → 주어가 빠져 불완전"
-    },
-    {
-      "number": 15,
-      "sentence": "She knows ______ I live in Seoul.",
-      "answer": "that",
-      "reason": "선행사 X / I live in Seoul → 완전"
-    },
-    {
-      "number": 16,
-      "sentence": "Please show me ______ you found.",
-      "answer": "what",
-      "reason": "선행사 X / you found ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 17,
-      "sentence": "Please show me the key ______ you found.",
-      "answer": "that",
-      "reason": "선행사 the key O / you found ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 18,
-      "sentence": "We heard ______ the store was closed.",
-      "answer": "that",
-      "reason": "선행사 X / the store was closed → 완전"
-    },
-    {
-      "number": 19,
-      "sentence": "______ made him angry was obvious.",
-      "answer": "What",
-      "reason": "선행사 X / ___ made him angry → 주어가 빠져 불완전"
-    },
-    {
-      "number": 20,
-      "sentence": "The comment ______ made him angry was unnecessary.",
-      "answer": "that",
-      "reason": "선행사 the comment O / ___ made him angry → 주어가 빠져 불완전"
-    },
-    {
-      "number": 21,
-      "sentence": "I hope ______ you can come tomorrow.",
-      "answer": "that",
-      "reason": "선행사 X / you can come tomorrow → 완전"
-    },
-    {
-      "number": 22,
-      "sentence": "She gave me ______ I asked for.",
-      "answer": "what",
-      "reason": "선행사 X / I asked for ___ → 전치사 for의 목적어가 빠져 불완전"
-    },
-    {
-      "number": 23,
-      "sentence": "She gave me the information ______ I asked for.",
-      "answer": "that",
-      "reason": "선행사 the information O / I asked for ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 24,
-      "sentence": "They discovered ______ the door was unlocked.",
-      "answer": "that",
-      "reason": "선행사 X / the door was unlocked → 완전"
-    },
-    {
-      "number": 25,
-      "sentence": "This is ______ I wanted.",
-      "answer": "what",
-      "reason": "선행사 X / I wanted ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 26,
-      "sentence": "This is the computer ______ I wanted.",
-      "answer": "that",
-      "reason": "선행사 the computer O / I wanted ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 27,
-      "sentence": "He noticed ______ everyone was quiet.",
-      "answer": "that",
-      "reason": "선행사 X / everyone was quiet → 완전"
-    },
-    {
-      "number": 28,
-      "sentence": "I don't know ______ broke the window.",
-      "answer": "what",
-      "reason": "선행사 X / ___ broke the window → 주어가 빠져 불완전"
-    },
-    {
-      "number": 29,
-      "sentence": "The ball ______ broke the window was mine.",
-      "answer": "that",
-      "reason": "선행사 the ball O / ___ broke the window → 주어가 빠져 불완전"
-    },
-    {
-      "number": 30,
-      "sentence": "She explained ______ she needed more time.",
-      "answer": "that",
-      "reason": "선행사 X / she needed more time → 완전"
-    },
-    {
-      "number": 31,
-      "sentence": "Take ______ you want.",
-      "answer": "what",
-      "reason": "선행사 X / you want ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 32,
-      "sentence": "Take the food ______ you want.",
-      "answer": "that",
-      "reason": "선행사 the food O / you want ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 33,
-      "sentence": "I believe ______ she can solve the problem.",
-      "answer": "that",
-      "reason": "선행사 X / she can solve the problem → 완전"
-    },
-    {
-      "number": 34,
-      "sentence": "______ he bought was very expensive.",
-      "answer": "What",
-      "reason": "선행사 X / he bought ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 35,
-      "sentence": "The watch ______ he bought was very expensive.",
-      "answer": "that",
-      "reason": "선행사 the watch O / he bought ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 36,
-      "sentence": "They reported ______ nobody was injured.",
-      "answer": "that",
-      "reason": "선행사 X / nobody was injured → 완전"
-    },
-    {
-      "number": 37,
-      "sentence": "We couldn't see ______ was inside the box.",
-      "answer": "what",
-      "reason": "선행사 X / ___ was inside the box → 주어가 빠져 불완전"
-    },
-    {
-      "number": 38,
-      "sentence": "The object ______ was inside the box looked strange.",
-      "answer": "that",
-      "reason": "선행사 the object O / ___ was inside the box → 주어가 빠져 불완전"
-    },
-    {
-      "number": 39,
-      "sentence": "I heard ______ your sister won the contest.",
-      "answer": "that",
-      "reason": "선행사 X / your sister won the contest → 완전"
-    },
-    {
-      "number": 40,
-      "sentence": "He showed us ______ he had made.",
-      "answer": "what",
-      "reason": "선행사 X / he had made ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 41,
-      "sentence": "He showed us the model ______ he had made.",
-      "answer": "that",
-      "reason": "선행사 the model O / he had made ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 42,
-      "sentence": "She realized ______ she had made a mistake.",
-      "answer": "that",
-      "reason": "선행사 X / she had made a mistake → 완전"
-    },
-    {
-      "number": 43,
-      "sentence": "______ matters most is your effort.",
-      "answer": "What",
-      "reason": "선행사 X / ___ matters most → 주어가 빠져 불완전"
-    },
-    {
-      "number": 44,
-      "sentence": "The factor ______ matters most is your effort.",
-      "answer": "that",
-      "reason": "선행사 the factor O / ___ matters most → 주어가 빠져 불완전"
-    },
-    {
-      "number": 45,
-      "sentence": "We assumed ______ the train would arrive on time.",
-      "answer": "that",
-      "reason": "선행사 X / the train would arrive on time → 완전"
-    },
-    {
-      "number": 46,
-      "sentence": "I can't believe ______ you did.",
-      "answer": "what",
-      "reason": "선행사 X / you did ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 47,
-      "sentence": "I can't believe the thing ______ you did.",
-      "answer": "that",
-      "reason": "선행사 the thing O / you did ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 48,
-      "sentence": "He promised ______ he would return soon.",
-      "answer": "that",
-      "reason": "선행사 X / he would return soon → 완전"
-    },
-    {
-      "number": 49,
-      "sentence": "We used ______ was available.",
-      "answer": "what",
-      "reason": "선행사 X / ___ was available → 주어가 빠져 불완전"
-    },
-    {
-      "number": 50,
-      "sentence": "We used the equipment ______ was available.",
-      "answer": "that",
-      "reason": "선행사 the equipment O / ___ was available → 주어가 빠져 불완전"
-    },
-    {
-      "number": 51,
-      "sentence": "She admitted ______ she was wrong.",
-      "answer": "that",
-      "reason": "선행사 X / she was wrong → 완전"
-    },
-    {
-      "number": 52,
-      "sentence": "I found ______ I had lost.",
-      "answer": "what",
-      "reason": "선행사 X / I had lost ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 53,
-      "sentence": "I found the wallet ______ I had lost.",
-      "answer": "that",
-      "reason": "선행사 the wallet O / I had lost ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 54,
-      "sentence": "We learned ______ the museum opens at nine.",
-      "answer": "that",
-      "reason": "선행사 X / the museum opens at nine → 완전"
-    },
-    {
-      "number": 55,
-      "sentence": "Do you remember ______ happened next?",
-      "answer": "what",
-      "reason": "선행사 X / ___ happened next → 주어가 빠져 불완전"
-    },
-    {
-      "number": 56,
-      "sentence": "Do you remember the event ______ happened next?",
-      "answer": "that",
-      "reason": "선행사 the event O / ___ happened next → 주어가 빠져 불완전"
-    },
-    {
-      "number": 57,
-      "sentence": "I suspect ______ he already knows the answer.",
-      "answer": "that",
-      "reason": "선행사 X / he already knows the answer → 완전"
-    },
-    {
-      "number": 58,
-      "sentence": "She didn't understand ______ I meant.",
-      "answer": "what",
-      "reason": "선행사 X / I meant ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 59,
-      "sentence": "She didn't understand the expression ______ I used.",
-      "answer": "that",
-      "reason": "선행사 the expression O / I used ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 60,
-      "sentence": "The teacher explained ______ water freezes at zero degrees.",
-      "answer": "that",
-      "reason": "선행사 X / water freezes at zero degrees → 완전"
-    },
-    {
-      "number": 61,
-      "sentence": "______ surprised me was his answer.",
-      "answer": "What",
-      "reason": "선행사 X / ___ surprised me → 주어가 빠져 불완전"
-    },
-    {
-      "number": 62,
-      "sentence": "The answer ______ surprised me was unexpected.",
-      "answer": "that",
-      "reason": "선행사 the answer O / ___ surprised me → 주어가 빠져 불완전"
-    },
-    {
-      "number": 63,
-      "sentence": "Everyone knows ______ the Earth moves around the Sun.",
-      "answer": "that",
-      "reason": "선행사 X / the Earth moves around the Sun → 완전"
-    },
-    {
-      "number": 64,
-      "sentence": "I ate ______ she prepared.",
-      "answer": "what",
-      "reason": "선행사 X / she prepared ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 65,
-      "sentence": "I ate the meal ______ she prepared.",
-      "answer": "that",
-      "reason": "선행사 the meal O / she prepared ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 66,
-      "sentence": "He mentioned ______ the meeting had been canceled.",
-      "answer": "that",
-      "reason": "선행사 X / the meeting had been canceled → 완전"
-    },
-    {
-      "number": 67,
-      "sentence": "Nobody knew ______ was missing.",
-      "answer": "what",
-      "reason": "선행사 X / ___ was missing → 주어가 빠져 불완전"
-    },
-    {
-      "number": 68,
-      "sentence": "Nobody knew the document ______ was missing.",
-      "answer": "that",
-      "reason": "선행사 the document O / ___ was missing → 주어가 빠져 불완전"
-    },
-    {
-      "number": 69,
-      "sentence": "She confirmed ______ the package had arrived.",
-      "answer": "that",
-      "reason": "선행사 X / the package had arrived → 완전"
-    },
-    {
-      "number": 70,
-      "sentence": "I will buy ______ you recommend.",
-      "answer": "what",
-      "reason": "선행사 X / you recommend ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 71,
-      "sentence": "I will buy the phone ______ you recommend.",
-      "answer": "that",
-      "reason": "선행사 the phone O / you recommend ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 72,
-      "sentence": "We expect ______ prices will rise next year.",
-      "answer": "that",
-      "reason": "선행사 X / prices will rise next year → 완전"
-    },
-    {
-      "number": 73,
-      "sentence": "______ caused the fire is still unknown.",
-      "answer": "What",
-      "reason": "선행사 X / ___ caused the fire → 주어가 빠져 불완전"
-    },
-    {
-      "number": 74,
-      "sentence": "The device ______ caused the fire was damaged.",
-      "answer": "that",
-      "reason": "선행사 the device O / ___ caused the fire → 주어가 빠져 불완전"
-    },
-    {
-      "number": 75,
-      "sentence": "He discovered ______ his phone was gone.",
-      "answer": "that",
-      "reason": "선행사 X / his phone was gone → 완전"
-    },
-    {
-      "number": 76,
-      "sentence": "We discussed ______ we had observed.",
-      "answer": "what",
-      "reason": "선행사 X / we had observed ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 77,
-      "sentence": "We discussed the pattern ______ we had observed.",
-      "answer": "that",
-      "reason": "선행사 the pattern O / we had observed ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 78,
-      "sentence": "She thinks ______ the movie is too long.",
-      "answer": "that",
-      "reason": "선행사 X / the movie is too long → 완전"
-    },
-    {
-      "number": 79,
-      "sentence": "I couldn't recognize ______ was lying on the floor.",
-      "answer": "what",
-      "reason": "선행사 X / ___ was lying on the floor → 주어가 빠져 불완전"
-    },
-    {
-      "number": 80,
-      "sentence": "I couldn't recognize the object ______ was lying on the floor.",
-      "answer": "that",
-      "reason": "선행사 the object O / ___ was lying on the floor → 주어가 빠져 불완전"
-    },
-    {
-      "number": 81,
-      "sentence": "They announced ______ school would be closed tomorrow.",
-      "answer": "that",
-      "reason": "선행사 X / school would be closed tomorrow → 완전"
-    },
-    {
-      "number": 82,
-      "sentence": "She kept ______ she needed.",
-      "answer": "what",
-      "reason": "선행사 X / she needed ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 83,
-      "sentence": "She kept the papers ______ she needed.",
-      "answer": "that",
-      "reason": "선행사 the papers O / she needed ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 84,
-      "sentence": "I noticed ______ the lights were still on.",
-      "answer": "that",
-      "reason": "선행사 X / the lights were still on → 완전"
-    },
-    {
-      "number": 85,
-      "sentence": "______ happened after the meeting shocked us.",
-      "answer": "What",
-      "reason": "선행사 X / ___ happened after the meeting → 주어가 빠져 불완전"
-    },
-    {
-      "number": 86,
-      "sentence": "The incident ______ happened after the meeting shocked us.",
-      "answer": "that",
-      "reason": "선행사 the incident O / ___ happened after the meeting → 주어가 빠져 불완전"
-    },
-    {
-      "number": 87,
-      "sentence": "He believes ______ his plan will work.",
-      "answer": "that",
-      "reason": "선행사 X / his plan will work → 완전"
-    },
-    {
-      "number": 88,
-      "sentence": "We should repair ______ is broken.",
-      "answer": "what",
-      "reason": "선행사 X / ___ is broken → 주어가 빠져 불완전"
-    },
-    {
-      "number": 89,
-      "sentence": "We should repair the machine ______ is broken.",
-      "answer": "that",
-      "reason": "선행사 the machine O / ___ is broken → 주어가 빠져 불완전"
-    },
-    {
-      "number": 90,
-      "sentence": "She heard ______ someone was knocking at the door.",
-      "answer": "that",
-      "reason": "선행사 X / someone was knocking at the door → 완전"
-    },
-    {
-      "number": 91,
-      "sentence": "I didn't expect ______ he showed me.",
-      "answer": "what",
-      "reason": "선행사 X / he showed me ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 92,
-      "sentence": "I didn't expect the result ______ he showed me.",
-      "answer": "that",
-      "reason": "선행사 the result O / he showed me ___ → 목적어가 빠져 불완전"
-    },
-    {
-      "number": 93,
-      "sentence": "We all agree ______ exercise is important.",
-      "answer": "that",
-      "reason": "선행사 X / exercise is important → 완전"
-    },
-    {
-      "number": 94,
-      "sentence": "______ changed her mind remains unclear.",
-      "answer": "What",
-      "reason": "선행사 X / ___ changed her mind → 주어가 빠져 불완전"
-    },
-    {
-      "number": 95,
-      "sentence": "The news ______ changed her mind came yesterday.",
-      "answer": "that",
-      "reason": "선행사 the news O / ___ changed her mind → 주어가 빠져 불완전"
-    },
-    {
-      "number": 96,
-      "sentence": "I realized ______ I had left my bag at home.",
-      "answer": "that",
-      "reason": "선행사 X / I had left my bag at home → 완전"
-    },
-    {
-      "number": 97,
-      "sentence": "Choose ______ fits you best.",
-      "answer": "what",
-      "reason": "선행사 X / ___ fits you best → 주어가 빠져 불완전"
-    },
-    {
-      "number": 98,
-      "sentence": "Choose the shirt ______ fits you best.",
-      "answer": "that",
-      "reason": "선행사 the shirt O / ___ fits you best → 주어가 빠져 불완전"
-    },
-    {
-      "number": 99,
-      "sentence": "Scientists found ______ the temperature had increased.",
-      "answer": "that",
-      "reason": "선행사 X / the temperature had increased → 완전"
-    },
-    {
-      "number": 100,
-      "sentence": "This is ______ makes the system effective.",
-      "answer": "what",
-      "reason": "선행사 X / ___ makes the system effective → 주어가 빠져 불완전"
+  "units": [
+    {
+      "id": "verb-past-participle",
+      "title": "동사의 과거·과거분사",
+      "words": [
+        {
+          "present": "bet",
+          "past": [
+            "bet"
+          ],
+          "participle": [
+            "bet"
+          ],
+          "meaning": [
+            "돈을 걸다"
+          ]
+        },
+        {
+          "present": "burst",
+          "past": [
+            "burst"
+          ],
+          "participle": [
+            "burst"
+          ],
+          "meaning": [
+            "터지다"
+          ]
+        },
+        {
+          "present": "cost",
+          "past": [
+            "cost"
+          ],
+          "participle": [
+            "cost"
+          ],
+          "meaning": [
+            "비용이 들다"
+          ]
+        },
+        {
+          "present": "cut",
+          "past": [
+            "cut"
+          ],
+          "participle": [
+            "cut"
+          ],
+          "meaning": [
+            "자르다"
+          ]
+        },
+        {
+          "present": "hit",
+          "past": [
+            "hit"
+          ],
+          "participle": [
+            "hit"
+          ],
+          "meaning": [
+            "치다"
+          ]
+        },
+        {
+          "present": "hurt",
+          "past": [
+            "hurt"
+          ],
+          "participle": [
+            "hurt"
+          ],
+          "meaning": [
+            "다치게 하다"
+          ]
+        },
+        {
+          "present": "let",
+          "past": [
+            "let"
+          ],
+          "participle": [
+            "let"
+          ],
+          "meaning": [
+            "~하게 두다"
+          ]
+        },
+        {
+          "present": "put",
+          "past": [
+            "put"
+          ],
+          "participle": [
+            "put"
+          ],
+          "meaning": [
+            "놓다"
+          ]
+        },
+        {
+          "present": "quit",
+          "past": [
+            "quit"
+          ],
+          "participle": [
+            "quit"
+          ],
+          "meaning": [
+            "그만두다"
+          ]
+        },
+        {
+          "present": "read",
+          "past": [
+            "read"
+          ],
+          "participle": [
+            "read"
+          ],
+          "meaning": [
+            "읽다"
+          ],
+          "speech": "reed"
+        },
+        {
+          "present": "set",
+          "past": [
+            "set"
+          ],
+          "participle": [
+            "set"
+          ],
+          "meaning": [
+            "놓다",
+            "설정하다"
+          ]
+        },
+        {
+          "present": "bring",
+          "past": [
+            "brought"
+          ],
+          "participle": [
+            "brought"
+          ],
+          "meaning": [
+            "가져오다"
+          ]
+        },
+        {
+          "present": "build",
+          "past": [
+            "built"
+          ],
+          "participle": [
+            "built"
+          ],
+          "meaning": [
+            "짓다"
+          ]
+        },
+        {
+          "present": "buy",
+          "past": [
+            "bought"
+          ],
+          "participle": [
+            "bought"
+          ],
+          "meaning": [
+            "사다"
+          ]
+        },
+        {
+          "present": "catch",
+          "past": [
+            "caught"
+          ],
+          "participle": [
+            "caught"
+          ],
+          "meaning": [
+            "잡다"
+          ]
+        },
+        {
+          "present": "feel",
+          "past": [
+            "felt"
+          ],
+          "participle": [
+            "felt"
+          ],
+          "meaning": [
+            "느끼다"
+          ]
+        },
+        {
+          "present": "fight",
+          "past": [
+            "fought"
+          ],
+          "participle": [
+            "fought"
+          ],
+          "meaning": [
+            "싸우다"
+          ]
+        },
+        {
+          "present": "find",
+          "past": [
+            "found"
+          ],
+          "participle": [
+            "found"
+          ],
+          "meaning": [
+            "찾다"
+          ]
+        },
+        {
+          "present": "get",
+          "past": [
+            "got"
+          ],
+          "participle": [
+            "got"
+          ],
+          "meaning": [
+            "얻다"
+          ]
+        },
+        {
+          "present": "have",
+          "past": [
+            "had"
+          ],
+          "participle": [
+            "had"
+          ],
+          "meaning": [
+            "가지다"
+          ]
+        },
+        {
+          "present": "hear",
+          "past": [
+            "heard"
+          ],
+          "participle": [
+            "heard"
+          ],
+          "meaning": [
+            "듣다"
+          ]
+        },
+        {
+          "present": "hold",
+          "past": [
+            "held"
+          ],
+          "participle": [
+            "held"
+          ],
+          "meaning": [
+            "잡다"
+          ]
+        },
+        {
+          "present": "keep",
+          "past": [
+            "kept"
+          ],
+          "participle": [
+            "kept"
+          ],
+          "meaning": [
+            "유지하다"
+          ]
+        },
+        {
+          "present": "leave",
+          "past": [
+            "left"
+          ],
+          "participle": [
+            "left"
+          ],
+          "meaning": [
+            "떠나다",
+            "남기다"
+          ]
+        },
+        {
+          "present": "lose",
+          "past": [
+            "lost"
+          ],
+          "participle": [
+            "lost"
+          ],
+          "meaning": [
+            "잃다"
+          ]
+        },
+        {
+          "present": "make",
+          "past": [
+            "made"
+          ],
+          "participle": [
+            "made"
+          ],
+          "meaning": [
+            "만들다"
+          ]
+        },
+        {
+          "present": "mean",
+          "past": [
+            "meant"
+          ],
+          "participle": [
+            "meant"
+          ],
+          "meaning": [
+            "의미하다"
+          ]
+        },
+        {
+          "present": "meet",
+          "past": [
+            "met"
+          ],
+          "participle": [
+            "met"
+          ],
+          "meaning": [
+            "만나다"
+          ]
+        },
+        {
+          "present": "pay",
+          "past": [
+            "paid"
+          ],
+          "participle": [
+            "paid"
+          ],
+          "meaning": [
+            "지불하다"
+          ]
+        },
+        {
+          "present": "say",
+          "past": [
+            "said"
+          ],
+          "participle": [
+            "said"
+          ],
+          "meaning": [
+            "말하다"
+          ]
+        },
+        {
+          "present": "sell",
+          "past": [
+            "sold"
+          ],
+          "participle": [
+            "sold"
+          ],
+          "meaning": [
+            "팔다"
+          ]
+        },
+        {
+          "present": "send",
+          "past": [
+            "sent"
+          ],
+          "participle": [
+            "sent"
+          ],
+          "meaning": [
+            "보내다"
+          ]
+        },
+        {
+          "present": "sit",
+          "past": [
+            "sat"
+          ],
+          "participle": [
+            "sat"
+          ],
+          "meaning": [
+            "앉다"
+          ]
+        },
+        {
+          "present": "sleep",
+          "past": [
+            "slept"
+          ],
+          "participle": [
+            "slept"
+          ],
+          "meaning": [
+            "자다"
+          ]
+        },
+        {
+          "present": "spend",
+          "past": [
+            "spent"
+          ],
+          "participle": [
+            "spent"
+          ],
+          "meaning": [
+            "쓰다",
+            "보내다"
+          ]
+        },
+        {
+          "present": "stand",
+          "past": [
+            "stood"
+          ],
+          "participle": [
+            "stood"
+          ],
+          "meaning": [
+            "서다"
+          ]
+        },
+        {
+          "present": "teach",
+          "past": [
+            "taught"
+          ],
+          "participle": [
+            "taught"
+          ],
+          "meaning": [
+            "가르치다"
+          ]
+        },
+        {
+          "present": "tell",
+          "past": [
+            "told"
+          ],
+          "participle": [
+            "told"
+          ],
+          "meaning": [
+            "말하다"
+          ]
+        },
+        {
+          "present": "think",
+          "past": [
+            "thought"
+          ],
+          "participle": [
+            "thought"
+          ],
+          "meaning": [
+            "생각하다"
+          ]
+        },
+        {
+          "present": "understand",
+          "past": [
+            "understood"
+          ],
+          "participle": [
+            "understood"
+          ],
+          "meaning": [
+            "이해하다"
+          ]
+        },
+        {
+          "present": "win",
+          "past": [
+            "won"
+          ],
+          "participle": [
+            "won"
+          ],
+          "meaning": [
+            "이기다"
+          ]
+        },
+        {
+          "present": "lead",
+          "past": [
+            "led"
+          ],
+          "participle": [
+            "led"
+          ],
+          "meaning": [
+            "이끌다"
+          ]
+        },
+        {
+          "present": "learn",
+          "past": [
+            "learned"
+          ],
+          "participle": [
+            "learned"
+          ],
+          "meaning": [
+            "배우다"
+          ]
+        },
+        {
+          "present": "feed",
+          "past": [
+            "fed"
+          ],
+          "participle": [
+            "fed"
+          ],
+          "meaning": [
+            "먹이를 주다"
+          ]
+        },
+        {
+          "present": "hang",
+          "past": [
+            "hung"
+          ],
+          "participle": [
+            "hung"
+          ],
+          "meaning": [
+            "걸다"
+          ]
+        },
+        {
+          "present": "lay",
+          "past": [
+            "laid"
+          ],
+          "participle": [
+            "laid"
+          ],
+          "meaning": [
+            "놓다"
+          ]
+        },
+        {
+          "present": "lend",
+          "past": [
+            "lent"
+          ],
+          "participle": [
+            "lent"
+          ],
+          "meaning": [
+            "빌려주다"
+          ]
+        },
+        {
+          "present": "shoot",
+          "past": [
+            "shot"
+          ],
+          "participle": [
+            "shot"
+          ],
+          "meaning": [
+            "쏘다"
+          ]
+        },
+        {
+          "present": "spoil",
+          "past": [
+            "spoiled"
+          ],
+          "participle": [
+            "spoiled"
+          ],
+          "meaning": [
+            "망치다"
+          ]
+        },
+        {
+          "present": "sting",
+          "past": [
+            "stung"
+          ],
+          "participle": [
+            "stung"
+          ],
+          "meaning": [
+            "쏘다"
+          ]
+        },
+        {
+          "present": "wind",
+          "past": [
+            "wound"
+          ],
+          "participle": [
+            "wound"
+          ],
+          "meaning": [
+            "감다"
+          ],
+          "speech": "wined"
+        },
+        {
+          "present": "bind",
+          "past": [
+            "bound"
+          ],
+          "participle": [
+            "bound"
+          ],
+          "meaning": [
+            "묶다"
+          ]
+        },
+        {
+          "present": "grind",
+          "past": [
+            "ground"
+          ],
+          "participle": [
+            "ground"
+          ],
+          "meaning": [
+            "갈다"
+          ]
+        },
+        {
+          "present": "bend",
+          "past": [
+            "bent"
+          ],
+          "participle": [
+            "bent"
+          ],
+          "meaning": [
+            "구부리다"
+          ]
+        },
+        {
+          "present": "come",
+          "past": [
+            "came"
+          ],
+          "participle": [
+            "come"
+          ],
+          "meaning": [
+            "오다"
+          ]
+        },
+        {
+          "present": "become",
+          "past": [
+            "became"
+          ],
+          "participle": [
+            "become"
+          ],
+          "meaning": [
+            "~이 되다"
+          ]
+        },
+        {
+          "present": "run",
+          "past": [
+            "ran"
+          ],
+          "participle": [
+            "run"
+          ],
+          "meaning": [
+            "달리다"
+          ]
+        },
+        {
+          "present": "overcome",
+          "past": [
+            "overcame"
+          ],
+          "participle": [
+            "overcome"
+          ],
+          "meaning": [
+            "극복하다"
+          ]
+        },
+        {
+          "present": "begin",
+          "past": [
+            "began"
+          ],
+          "participle": [
+            "begun"
+          ],
+          "meaning": [
+            "시작하다"
+          ]
+        },
+        {
+          "present": "break",
+          "past": [
+            "broke"
+          ],
+          "participle": [
+            "broken"
+          ],
+          "meaning": [
+            "깨뜨리다"
+          ]
+        },
+        {
+          "present": "choose",
+          "past": [
+            "chose"
+          ],
+          "participle": [
+            "chosen"
+          ],
+          "meaning": [
+            "선택하다"
+          ]
+        },
+        {
+          "present": "do",
+          "past": [
+            "did"
+          ],
+          "participle": [
+            "done"
+          ],
+          "meaning": [
+            "하다"
+          ]
+        },
+        {
+          "present": "drink",
+          "past": [
+            "drank"
+          ],
+          "participle": [
+            "drunk"
+          ],
+          "meaning": [
+            "마시다"
+          ]
+        },
+        {
+          "present": "drive",
+          "past": [
+            "drove"
+          ],
+          "participle": [
+            "driven"
+          ],
+          "meaning": [
+            "운전하다"
+          ]
+        },
+        {
+          "present": "eat",
+          "past": [
+            "ate"
+          ],
+          "participle": [
+            "eaten"
+          ],
+          "meaning": [
+            "먹다"
+          ]
+        },
+        {
+          "present": "fall",
+          "past": [
+            "fell"
+          ],
+          "participle": [
+            "fallen"
+          ],
+          "meaning": [
+            "떨어지다"
+          ]
+        },
+        {
+          "present": "fly",
+          "past": [
+            "flew"
+          ],
+          "participle": [
+            "flown"
+          ],
+          "meaning": [
+            "날다"
+          ]
+        },
+        {
+          "present": "forget",
+          "past": [
+            "forgot"
+          ],
+          "participle": [
+            "forgotten"
+          ],
+          "meaning": [
+            "잊다"
+          ]
+        },
+        {
+          "present": "give",
+          "past": [
+            "gave"
+          ],
+          "participle": [
+            "given"
+          ],
+          "meaning": [
+            "주다"
+          ]
+        },
+        {
+          "present": "go",
+          "past": [
+            "went"
+          ],
+          "participle": [
+            "gone"
+          ],
+          "meaning": [
+            "가다"
+          ]
+        },
+        {
+          "present": "grow",
+          "past": [
+            "grew"
+          ],
+          "participle": [
+            "grown"
+          ],
+          "meaning": [
+            "자라다",
+            "기르다"
+          ]
+        },
+        {
+          "present": "know",
+          "past": [
+            "knew"
+          ],
+          "participle": [
+            "known"
+          ],
+          "meaning": [
+            "알다"
+          ]
+        },
+        {
+          "present": "ride",
+          "past": [
+            "rode"
+          ],
+          "participle": [
+            "ridden"
+          ],
+          "meaning": [
+            "타다"
+          ]
+        },
+        {
+          "present": "see",
+          "past": [
+            "saw"
+          ],
+          "participle": [
+            "seen"
+          ],
+          "meaning": [
+            "보다"
+          ]
+        },
+        {
+          "present": "show",
+          "past": [
+            "showed"
+          ],
+          "participle": [
+            "shown"
+          ],
+          "meaning": [
+            "보여주다"
+          ]
+        },
+        {
+          "present": "sing",
+          "past": [
+            "sang"
+          ],
+          "participle": [
+            "sung"
+          ],
+          "meaning": [
+            "노래하다"
+          ]
+        },
+        {
+          "present": "speak",
+          "past": [
+            "spoke"
+          ],
+          "participle": [
+            "spoken"
+          ],
+          "meaning": [
+            "말하다"
+          ]
+        },
+        {
+          "present": "swim",
+          "past": [
+            "swam"
+          ],
+          "participle": [
+            "swum"
+          ],
+          "meaning": [
+            "수영하다"
+          ]
+        },
+        {
+          "present": "take",
+          "past": [
+            "took"
+          ],
+          "participle": [
+            "taken"
+          ],
+          "meaning": [
+            "가져가다",
+            "잡다"
+          ]
+        },
+        {
+          "present": "throw",
+          "past": [
+            "threw"
+          ],
+          "participle": [
+            "thrown"
+          ],
+          "meaning": [
+            "던지다"
+          ]
+        },
+        {
+          "present": "wear",
+          "past": [
+            "wore"
+          ],
+          "participle": [
+            "worn"
+          ],
+          "meaning": [
+            "입다"
+          ]
+        },
+        {
+          "present": "write",
+          "past": [
+            "wrote"
+          ],
+          "participle": [
+            "written"
+          ],
+          "meaning": [
+            "쓰다"
+          ]
+        },
+        {
+          "present": "wake",
+          "past": [
+            "woke"
+          ],
+          "participle": [
+            "woken"
+          ],
+          "meaning": [
+            "깨다"
+          ]
+        },
+        {
+          "present": "arise",
+          "past": [
+            "arose"
+          ],
+          "participle": [
+            "arisen"
+          ],
+          "meaning": [
+            "발생하다"
+          ]
+        },
+        {
+          "present": "bite",
+          "past": [
+            "bit"
+          ],
+          "participle": [
+            "bitten"
+          ],
+          "meaning": [
+            "물다"
+          ]
+        },
+        {
+          "present": "blow",
+          "past": [
+            "blew"
+          ],
+          "participle": [
+            "blown"
+          ],
+          "meaning": [
+            "불다"
+          ]
+        },
+        {
+          "present": "draw",
+          "past": [
+            "drew"
+          ],
+          "participle": [
+            "drawn"
+          ],
+          "meaning": [
+            "그리다"
+          ]
+        },
+        {
+          "present": "freeze",
+          "past": [
+            "froze"
+          ],
+          "participle": [
+            "frozen"
+          ],
+          "meaning": [
+            "얼다"
+          ]
+        },
+        {
+          "present": "hide",
+          "past": [
+            "hid"
+          ],
+          "participle": [
+            "hidden"
+          ],
+          "meaning": [
+            "숨기다"
+          ]
+        },
+        {
+          "present": "lie",
+          "past": [
+            "lay"
+          ],
+          "participle": [
+            "lain"
+          ],
+          "meaning": [
+            "눕다"
+          ]
+        },
+        {
+          "present": "ring",
+          "past": [
+            "rang"
+          ],
+          "participle": [
+            "rung"
+          ],
+          "meaning": [
+            "울리다"
+          ]
+        },
+        {
+          "present": "rise",
+          "past": [
+            "rose"
+          ],
+          "participle": [
+            "risen"
+          ],
+          "meaning": [
+            "오르다"
+          ]
+        },
+        {
+          "present": "shake",
+          "past": [
+            "shook"
+          ],
+          "participle": [
+            "shaken"
+          ],
+          "meaning": [
+            "흔들다"
+          ]
+        },
+        {
+          "present": "steal",
+          "past": [
+            "stole"
+          ],
+          "participle": [
+            "stolen"
+          ],
+          "meaning": [
+            "훔치다"
+          ]
+        },
+        {
+          "present": "tear",
+          "past": [
+            "tore"
+          ],
+          "participle": [
+            "torn"
+          ],
+          "meaning": [
+            "찢다"
+          ]
+        },
+        {
+          "present": "withdraw",
+          "past": [
+            "withdrew"
+          ],
+          "participle": [
+            "withdrawn"
+          ],
+          "meaning": [
+            "돈을 뽑다"
+          ]
+        },
+        {
+          "present": "forbid",
+          "past": [
+            "forbade"
+          ],
+          "participle": [
+            "forbidden"
+          ],
+          "meaning": [
+            "금지하다"
+          ]
+        },
+        {
+          "present": "forgive",
+          "past": [
+            "forgave"
+          ],
+          "participle": [
+            "forgiven"
+          ],
+          "meaning": [
+            "용서하다"
+          ]
+        },
+        {
+          "present": "bear",
+          "past": [
+            "bore"
+          ],
+          "participle": [
+            "born"
+          ],
+          "meaning": [
+            "낳다"
+          ]
+        },
+        {
+          "present": "beat",
+          "past": [
+            "beat"
+          ],
+          "participle": [
+            "beaten"
+          ],
+          "meaning": [
+            "때리다"
+          ]
+        },
+        {
+          "present": "shrink",
+          "past": [
+            "shrank"
+          ],
+          "participle": [
+            "shrunk"
+          ],
+          "meaning": [
+            "줄어들다"
+          ]
+        },
+        {
+          "present": "sink",
+          "past": [
+            "sank"
+          ],
+          "participle": [
+            "sunk"
+          ],
+          "meaning": [
+            "가라앉다"
+          ]
+        },
+        {
+          "present": "spring",
+          "past": [
+            "sprang"
+          ],
+          "participle": [
+            "sprung"
+          ],
+          "meaning": [
+            "튀어 오르다"
+          ]
+        },
+        {
+          "present": "swear",
+          "past": [
+            "swore"
+          ],
+          "participle": [
+            "sworn"
+          ],
+          "meaning": [
+            "맹세하다"
+          ]
+        },
+        {
+          "present": "weave",
+          "past": [
+            "wove"
+          ],
+          "participle": [
+            "woven"
+          ],
+          "meaning": [
+            "짜다"
+          ]
+        },
+        {
+          "present": "work",
+          "past": [
+            "worked"
+          ],
+          "participle": [
+            "worked"
+          ],
+          "meaning": [
+            "일하다"
+          ]
+        },
+        {
+          "present": "walk",
+          "past": [
+            "walked"
+          ],
+          "participle": [
+            "walked"
+          ],
+          "meaning": [
+            "걷다"
+          ]
+        },
+        {
+          "present": "help",
+          "past": [
+            "helped"
+          ],
+          "participle": [
+            "helped"
+          ],
+          "meaning": [
+            "돕다"
+          ]
+        },
+        {
+          "present": "look",
+          "past": [
+            "looked"
+          ],
+          "participle": [
+            "looked"
+          ],
+          "meaning": [
+            "보다"
+          ]
+        },
+        {
+          "present": "watch",
+          "past": [
+            "watched"
+          ],
+          "participle": [
+            "watched"
+          ],
+          "meaning": [
+            "보다"
+          ]
+        },
+        {
+          "present": "clean",
+          "past": [
+            "cleaned"
+          ],
+          "participle": [
+            "cleaned"
+          ],
+          "meaning": [
+            "청소하다"
+          ]
+        },
+        {
+          "present": "open",
+          "past": [
+            "opened"
+          ],
+          "participle": [
+            "opened"
+          ],
+          "meaning": [
+            "열다"
+          ]
+        },
+        {
+          "present": "visit",
+          "past": [
+            "visited"
+          ],
+          "participle": [
+            "visited"
+          ],
+          "meaning": [
+            "방문하다"
+          ]
+        },
+        {
+          "present": "want",
+          "past": [
+            "wanted"
+          ],
+          "participle": [
+            "wanted"
+          ],
+          "meaning": [
+            "원하다"
+          ]
+        },
+        {
+          "present": "need",
+          "past": [
+            "needed"
+          ],
+          "participle": [
+            "needed"
+          ],
+          "meaning": [
+            "필요로 하다"
+          ]
+        },
+        {
+          "present": "call",
+          "past": [
+            "called"
+          ],
+          "participle": [
+            "called"
+          ],
+          "meaning": [
+            "부르다",
+            "전화하다"
+          ]
+        },
+        {
+          "present": "start",
+          "past": [
+            "started"
+          ],
+          "participle": [
+            "started"
+          ],
+          "meaning": [
+            "시작하다"
+          ]
+        },
+        {
+          "present": "finish",
+          "past": [
+            "finished"
+          ],
+          "participle": [
+            "finished"
+          ],
+          "meaning": [
+            "끝내다"
+          ]
+        },
+        {
+          "present": "answer",
+          "past": [
+            "answered"
+          ],
+          "participle": [
+            "answered"
+          ],
+          "meaning": [
+            "대답하다"
+          ]
+        },
+        {
+          "present": "happen",
+          "past": [
+            "happened"
+          ],
+          "participle": [
+            "happened"
+          ],
+          "meaning": [
+            "일어나다"
+          ]
+        },
+        {
+          "present": "play",
+          "past": [
+            "played"
+          ],
+          "participle": [
+            "played"
+          ],
+          "meaning": [
+            "놀다"
+          ]
+        },
+        {
+          "present": "enjoy",
+          "past": [
+            "enjoyed"
+          ],
+          "participle": [
+            "enjoyed"
+          ],
+          "meaning": [
+            "즐기다"
+          ]
+        },
+        {
+          "present": "stay",
+          "past": [
+            "stayed"
+          ],
+          "participle": [
+            "stayed"
+          ],
+          "meaning": [
+            "머무르다"
+          ]
+        },
+        {
+          "present": "destroy",
+          "past": [
+            "destroyed"
+          ],
+          "participle": [
+            "destroyed"
+          ],
+          "meaning": [
+            "파괴하다"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "that-what",
+      "title": "that / what 구분",
+      "type": "choice",
+      "questions": [
+        {
+          "number": 1,
+          "sentence": "I know ______ you need.",
+          "answer": "what",
+          "reason": "선행사 X / you need ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 2,
+          "sentence": "This is the book ______ I bought yesterday.",
+          "answer": "that",
+          "reason": "선행사 the book O / I bought ___ yesterday → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 3,
+          "sentence": "I think ______ he is right.",
+          "answer": "that",
+          "reason": "선행사 X / he is right → 주어·동사·보어가 모두 있어 완전"
+        },
+        {
+          "number": 4,
+          "sentence": "______ she said surprised everyone.",
+          "answer": "What",
+          "reason": "선행사 X / she said ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 5,
+          "sentence": "The man ______ called me is my uncle.",
+          "answer": "that",
+          "reason": "선행사 the man O / ___ called me → 주어가 빠져 불완전"
+        },
+        {
+          "number": 6,
+          "sentence": "She believes ______ the test was difficult.",
+          "answer": "that",
+          "reason": "선행사 X / the test was difficult → 완전"
+        },
+        {
+          "number": 7,
+          "sentence": "Tell me ______ happened yesterday.",
+          "answer": "what",
+          "reason": "선행사 X / ___ happened yesterday → 주어가 빠져 불완전"
+        },
+        {
+          "number": 8,
+          "sentence": "The car ______ was parked outside belongs to Tom.",
+          "answer": "that",
+          "reason": "선행사 the car O / ___ was parked outside → 주어가 빠져 불완전"
+        },
+        {
+          "number": 9,
+          "sentence": "We know ______ they arrived safely.",
+          "answer": "that",
+          "reason": "선행사 X / they arrived safely → 완전"
+        },
+        {
+          "number": 10,
+          "sentence": "I remember ______ you told me.",
+          "answer": "what",
+          "reason": "선행사 X / you told me ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 11,
+          "sentence": "The story ______ she told us was interesting.",
+          "answer": "that",
+          "reason": "선행사 the story O / she told us ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 12,
+          "sentence": "He said ______ his brother was busy.",
+          "answer": "that",
+          "reason": "선행사 X / his brother was busy → 완전"
+        },
+        {
+          "number": 13,
+          "sentence": "I couldn't understand ______ caused the problem.",
+          "answer": "what",
+          "reason": "선행사 X / ___ caused the problem → 주어가 빠져 불완전"
+        },
+        {
+          "number": 14,
+          "sentence": "The machine ______ caused the problem was old.",
+          "answer": "that",
+          "reason": "선행사 the machine O / ___ caused the problem → 주어가 빠져 불완전"
+        },
+        {
+          "number": 15,
+          "sentence": "She knows ______ I live in Seoul.",
+          "answer": "that",
+          "reason": "선행사 X / I live in Seoul → 완전"
+        },
+        {
+          "number": 16,
+          "sentence": "Please show me ______ you found.",
+          "answer": "what",
+          "reason": "선행사 X / you found ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 17,
+          "sentence": "Please show me the key ______ you found.",
+          "answer": "that",
+          "reason": "선행사 the key O / you found ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 18,
+          "sentence": "We heard ______ the store was closed.",
+          "answer": "that",
+          "reason": "선행사 X / the store was closed → 완전"
+        },
+        {
+          "number": 19,
+          "sentence": "______ made him angry was obvious.",
+          "answer": "What",
+          "reason": "선행사 X / ___ made him angry → 주어가 빠져 불완전"
+        },
+        {
+          "number": 20,
+          "sentence": "The comment ______ made him angry was unnecessary.",
+          "answer": "that",
+          "reason": "선행사 the comment O / ___ made him angry → 주어가 빠져 불완전"
+        },
+        {
+          "number": 21,
+          "sentence": "I hope ______ you can come tomorrow.",
+          "answer": "that",
+          "reason": "선행사 X / you can come tomorrow → 완전"
+        },
+        {
+          "number": 22,
+          "sentence": "She gave me ______ I asked for.",
+          "answer": "what",
+          "reason": "선행사 X / I asked for ___ → 전치사 for의 목적어가 빠져 불완전"
+        },
+        {
+          "number": 23,
+          "sentence": "She gave me the information ______ I asked for.",
+          "answer": "that",
+          "reason": "선행사 the information O / I asked for ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 24,
+          "sentence": "They discovered ______ the door was unlocked.",
+          "answer": "that",
+          "reason": "선행사 X / the door was unlocked → 완전"
+        },
+        {
+          "number": 25,
+          "sentence": "This is ______ I wanted.",
+          "answer": "what",
+          "reason": "선행사 X / I wanted ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 26,
+          "sentence": "This is the computer ______ I wanted.",
+          "answer": "that",
+          "reason": "선행사 the computer O / I wanted ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 27,
+          "sentence": "He noticed ______ everyone was quiet.",
+          "answer": "that",
+          "reason": "선행사 X / everyone was quiet → 완전"
+        },
+        {
+          "number": 28,
+          "sentence": "I don't know ______ broke the window.",
+          "answer": "what",
+          "reason": "선행사 X / ___ broke the window → 주어가 빠져 불완전"
+        },
+        {
+          "number": 29,
+          "sentence": "The ball ______ broke the window was mine.",
+          "answer": "that",
+          "reason": "선행사 the ball O / ___ broke the window → 주어가 빠져 불완전"
+        },
+        {
+          "number": 30,
+          "sentence": "She explained ______ she needed more time.",
+          "answer": "that",
+          "reason": "선행사 X / she needed more time → 완전"
+        },
+        {
+          "number": 31,
+          "sentence": "Take ______ you want.",
+          "answer": "what",
+          "reason": "선행사 X / you want ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 32,
+          "sentence": "Take the food ______ you want.",
+          "answer": "that",
+          "reason": "선행사 the food O / you want ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 33,
+          "sentence": "I believe ______ she can solve the problem.",
+          "answer": "that",
+          "reason": "선행사 X / she can solve the problem → 완전"
+        },
+        {
+          "number": 34,
+          "sentence": "______ he bought was very expensive.",
+          "answer": "What",
+          "reason": "선행사 X / he bought ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 35,
+          "sentence": "The watch ______ he bought was very expensive.",
+          "answer": "that",
+          "reason": "선행사 the watch O / he bought ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 36,
+          "sentence": "They reported ______ nobody was injured.",
+          "answer": "that",
+          "reason": "선행사 X / nobody was injured → 완전"
+        },
+        {
+          "number": 37,
+          "sentence": "We couldn't see ______ was inside the box.",
+          "answer": "what",
+          "reason": "선행사 X / ___ was inside the box → 주어가 빠져 불완전"
+        },
+        {
+          "number": 38,
+          "sentence": "The object ______ was inside the box looked strange.",
+          "answer": "that",
+          "reason": "선행사 the object O / ___ was inside the box → 주어가 빠져 불완전"
+        },
+        {
+          "number": 39,
+          "sentence": "I heard ______ your sister won the contest.",
+          "answer": "that",
+          "reason": "선행사 X / your sister won the contest → 완전"
+        },
+        {
+          "number": 40,
+          "sentence": "He showed us ______ he had made.",
+          "answer": "what",
+          "reason": "선행사 X / he had made ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 41,
+          "sentence": "He showed us the model ______ he had made.",
+          "answer": "that",
+          "reason": "선행사 the model O / he had made ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 42,
+          "sentence": "She realized ______ she had made a mistake.",
+          "answer": "that",
+          "reason": "선행사 X / she had made a mistake → 완전"
+        },
+        {
+          "number": 43,
+          "sentence": "______ matters most is your effort.",
+          "answer": "What",
+          "reason": "선행사 X / ___ matters most → 주어가 빠져 불완전"
+        },
+        {
+          "number": 44,
+          "sentence": "The factor ______ matters most is your effort.",
+          "answer": "that",
+          "reason": "선행사 the factor O / ___ matters most → 주어가 빠져 불완전"
+        },
+        {
+          "number": 45,
+          "sentence": "We assumed ______ the train would arrive on time.",
+          "answer": "that",
+          "reason": "선행사 X / the train would arrive on time → 완전"
+        },
+        {
+          "number": 46,
+          "sentence": "I can't believe ______ you did.",
+          "answer": "what",
+          "reason": "선행사 X / you did ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 47,
+          "sentence": "I can't believe the thing ______ you did.",
+          "answer": "that",
+          "reason": "선행사 the thing O / you did ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 48,
+          "sentence": "He promised ______ he would return soon.",
+          "answer": "that",
+          "reason": "선행사 X / he would return soon → 완전"
+        },
+        {
+          "number": 49,
+          "sentence": "We used ______ was available.",
+          "answer": "what",
+          "reason": "선행사 X / ___ was available → 주어가 빠져 불완전"
+        },
+        {
+          "number": 50,
+          "sentence": "We used the equipment ______ was available.",
+          "answer": "that",
+          "reason": "선행사 the equipment O / ___ was available → 주어가 빠져 불완전"
+        },
+        {
+          "number": 51,
+          "sentence": "She admitted ______ she was wrong.",
+          "answer": "that",
+          "reason": "선행사 X / she was wrong → 완전"
+        },
+        {
+          "number": 52,
+          "sentence": "I found ______ I had lost.",
+          "answer": "what",
+          "reason": "선행사 X / I had lost ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 53,
+          "sentence": "I found the wallet ______ I had lost.",
+          "answer": "that",
+          "reason": "선행사 the wallet O / I had lost ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 54,
+          "sentence": "We learned ______ the museum opens at nine.",
+          "answer": "that",
+          "reason": "선행사 X / the museum opens at nine → 완전"
+        },
+        {
+          "number": 55,
+          "sentence": "Do you remember ______ happened next?",
+          "answer": "what",
+          "reason": "선행사 X / ___ happened next → 주어가 빠져 불완전"
+        },
+        {
+          "number": 56,
+          "sentence": "Do you remember the event ______ happened next?",
+          "answer": "that",
+          "reason": "선행사 the event O / ___ happened next → 주어가 빠져 불완전"
+        },
+        {
+          "number": 57,
+          "sentence": "I suspect ______ he already knows the answer.",
+          "answer": "that",
+          "reason": "선행사 X / he already knows the answer → 완전"
+        },
+        {
+          "number": 58,
+          "sentence": "She didn't understand ______ I meant.",
+          "answer": "what",
+          "reason": "선행사 X / I meant ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 59,
+          "sentence": "She didn't understand the expression ______ I used.",
+          "answer": "that",
+          "reason": "선행사 the expression O / I used ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 60,
+          "sentence": "The teacher explained ______ water freezes at zero degrees.",
+          "answer": "that",
+          "reason": "선행사 X / water freezes at zero degrees → 완전"
+        },
+        {
+          "number": 61,
+          "sentence": "______ surprised me was his answer.",
+          "answer": "What",
+          "reason": "선행사 X / ___ surprised me → 주어가 빠져 불완전"
+        },
+        {
+          "number": 62,
+          "sentence": "The answer ______ surprised me was unexpected.",
+          "answer": "that",
+          "reason": "선행사 the answer O / ___ surprised me → 주어가 빠져 불완전"
+        },
+        {
+          "number": 63,
+          "sentence": "Everyone knows ______ the Earth moves around the Sun.",
+          "answer": "that",
+          "reason": "선행사 X / the Earth moves around the Sun → 완전"
+        },
+        {
+          "number": 64,
+          "sentence": "I ate ______ she prepared.",
+          "answer": "what",
+          "reason": "선행사 X / she prepared ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 65,
+          "sentence": "I ate the meal ______ she prepared.",
+          "answer": "that",
+          "reason": "선행사 the meal O / she prepared ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 66,
+          "sentence": "He mentioned ______ the meeting had been canceled.",
+          "answer": "that",
+          "reason": "선행사 X / the meeting had been canceled → 완전"
+        },
+        {
+          "number": 67,
+          "sentence": "Nobody knew ______ was missing.",
+          "answer": "what",
+          "reason": "선행사 X / ___ was missing → 주어가 빠져 불완전"
+        },
+        {
+          "number": 68,
+          "sentence": "Nobody knew the document ______ was missing.",
+          "answer": "that",
+          "reason": "선행사 the document O / ___ was missing → 주어가 빠져 불완전"
+        },
+        {
+          "number": 69,
+          "sentence": "She confirmed ______ the package had arrived.",
+          "answer": "that",
+          "reason": "선행사 X / the package had arrived → 완전"
+        },
+        {
+          "number": 70,
+          "sentence": "I will buy ______ you recommend.",
+          "answer": "what",
+          "reason": "선행사 X / you recommend ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 71,
+          "sentence": "I will buy the phone ______ you recommend.",
+          "answer": "that",
+          "reason": "선행사 the phone O / you recommend ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 72,
+          "sentence": "We expect ______ prices will rise next year.",
+          "answer": "that",
+          "reason": "선행사 X / prices will rise next year → 완전"
+        },
+        {
+          "number": 73,
+          "sentence": "______ caused the fire is still unknown.",
+          "answer": "What",
+          "reason": "선행사 X / ___ caused the fire → 주어가 빠져 불완전"
+        },
+        {
+          "number": 74,
+          "sentence": "The device ______ caused the fire was damaged.",
+          "answer": "that",
+          "reason": "선행사 the device O / ___ caused the fire → 주어가 빠져 불완전"
+        },
+        {
+          "number": 75,
+          "sentence": "He discovered ______ his phone was gone.",
+          "answer": "that",
+          "reason": "선행사 X / his phone was gone → 완전"
+        },
+        {
+          "number": 76,
+          "sentence": "We discussed ______ we had observed.",
+          "answer": "what",
+          "reason": "선행사 X / we had observed ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 77,
+          "sentence": "We discussed the pattern ______ we had observed.",
+          "answer": "that",
+          "reason": "선행사 the pattern O / we had observed ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 78,
+          "sentence": "She thinks ______ the movie is too long.",
+          "answer": "that",
+          "reason": "선행사 X / the movie is too long → 완전"
+        },
+        {
+          "number": 79,
+          "sentence": "I couldn't recognize ______ was lying on the floor.",
+          "answer": "what",
+          "reason": "선행사 X / ___ was lying on the floor → 주어가 빠져 불완전"
+        },
+        {
+          "number": 80,
+          "sentence": "I couldn't recognize the object ______ was lying on the floor.",
+          "answer": "that",
+          "reason": "선행사 the object O / ___ was lying on the floor → 주어가 빠져 불완전"
+        },
+        {
+          "number": 81,
+          "sentence": "They announced ______ school would be closed tomorrow.",
+          "answer": "that",
+          "reason": "선행사 X / school would be closed tomorrow → 완전"
+        },
+        {
+          "number": 82,
+          "sentence": "She kept ______ she needed.",
+          "answer": "what",
+          "reason": "선행사 X / she needed ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 83,
+          "sentence": "She kept the papers ______ she needed.",
+          "answer": "that",
+          "reason": "선행사 the papers O / she needed ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 84,
+          "sentence": "I noticed ______ the lights were still on.",
+          "answer": "that",
+          "reason": "선행사 X / the lights were still on → 완전"
+        },
+        {
+          "number": 85,
+          "sentence": "______ happened after the meeting shocked us.",
+          "answer": "What",
+          "reason": "선행사 X / ___ happened after the meeting → 주어가 빠져 불완전"
+        },
+        {
+          "number": 86,
+          "sentence": "The incident ______ happened after the meeting shocked us.",
+          "answer": "that",
+          "reason": "선행사 the incident O / ___ happened after the meeting → 주어가 빠져 불완전"
+        },
+        {
+          "number": 87,
+          "sentence": "He believes ______ his plan will work.",
+          "answer": "that",
+          "reason": "선행사 X / his plan will work → 완전"
+        },
+        {
+          "number": 88,
+          "sentence": "We should repair ______ is broken.",
+          "answer": "what",
+          "reason": "선행사 X / ___ is broken → 주어가 빠져 불완전"
+        },
+        {
+          "number": 89,
+          "sentence": "We should repair the machine ______ is broken.",
+          "answer": "that",
+          "reason": "선행사 the machine O / ___ is broken → 주어가 빠져 불완전"
+        },
+        {
+          "number": 90,
+          "sentence": "She heard ______ someone was knocking at the door.",
+          "answer": "that",
+          "reason": "선행사 X / someone was knocking at the door → 완전"
+        },
+        {
+          "number": 91,
+          "sentence": "I didn't expect ______ he showed me.",
+          "answer": "what",
+          "reason": "선행사 X / he showed me ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 92,
+          "sentence": "I didn't expect the result ______ he showed me.",
+          "answer": "that",
+          "reason": "선행사 the result O / he showed me ___ → 목적어가 빠져 불완전"
+        },
+        {
+          "number": 93,
+          "sentence": "We all agree ______ exercise is important.",
+          "answer": "that",
+          "reason": "선행사 X / exercise is important → 완전"
+        },
+        {
+          "number": 94,
+          "sentence": "______ changed her mind remains unclear.",
+          "answer": "What",
+          "reason": "선행사 X / ___ changed her mind → 주어가 빠져 불완전"
+        },
+        {
+          "number": 95,
+          "sentence": "The news ______ changed her mind came yesterday.",
+          "answer": "that",
+          "reason": "선행사 the news O / ___ changed her mind → 주어가 빠져 불완전"
+        },
+        {
+          "number": 96,
+          "sentence": "I realized ______ I had left my bag at home.",
+          "answer": "that",
+          "reason": "선행사 X / I had left my bag at home → 완전"
+        },
+        {
+          "number": 97,
+          "sentence": "Choose ______ fits you best.",
+          "answer": "what",
+          "reason": "선행사 X / ___ fits you best → 주어가 빠져 불완전"
+        },
+        {
+          "number": 98,
+          "sentence": "Choose the shirt ______ fits you best.",
+          "answer": "that",
+          "reason": "선행사 the shirt O / ___ fits you best → 주어가 빠져 불완전"
+        },
+        {
+          "number": 99,
+          "sentence": "Scientists found ______ the temperature had increased.",
+          "answer": "that",
+          "reason": "선행사 X / the temperature had increased → 완전"
+        },
+        {
+          "number": 100,
+          "sentence": "This is ______ makes the system effective.",
+          "answer": "what",
+          "reason": "선행사 X / ___ makes the system effective → 주어가 빠져 불완전"
+        }
+      ]
+    },
+    {
+      "id": "present-past-participle",
+      "title": "현재분사 / 과거분사 구분",
+      "type": "blank",
+      "questions": [
+        {
+          "number": 1,
+          "sentence": "Look at the boy ______ in the park. (run: 달리다)",
+          "answer": "running",
+          "reason": "the boy가 run함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 2,
+          "sentence": "The window ______ by Tom was expensive. (break: 깨뜨리다)",
+          "answer": "broken",
+          "reason": "the window가 break를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 3,
+          "sentence": "The girl ______ next to me is my sister. (sit: 앉다)",
+          "answer": "sitting",
+          "reason": "the girl이 sit함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 4,
+          "sentence": "The cake ______ by my mother was delicious. (make: 만들다)",
+          "answer": "made",
+          "reason": "the cake가 make를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 5,
+          "sentence": "The man ______ across the street is my teacher. (walk: 걷다)",
+          "answer": "walking",
+          "reason": "the man이 walk함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 6,
+          "sentence": "The books ______ on the desk belong to me. (place: 놓다)",
+          "answer": "placed",
+          "reason": "the books가 place를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 7,
+          "sentence": "I saw a dog ______ after a cat. (run: 달리다)",
+          "answer": "running",
+          "reason": "a dog이 run함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 8,
+          "sentence": "The letter ______ yesterday arrived this morning. (send: 보내다)",
+          "answer": "sent",
+          "reason": "the letter가 send를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 9,
+          "sentence": "The woman ______ at the door is my aunt. (stand: 서다)",
+          "answer": "standing",
+          "reason": "the woman이 stand함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 10,
+          "sentence": "The picture ______ by Picasso is famous. (paint: 그리다, 칠하다)",
+          "answer": "painted",
+          "reason": "the picture가 paint를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 11,
+          "sentence": "The baby ______ on the bed is asleep. (lie: 눕다)",
+          "answer": "lying",
+          "reason": "the baby가 lie함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 12,
+          "sentence": "The car ______ in Korea is popular overseas. (produce: 생산하다)",
+          "answer": "produced",
+          "reason": "the car가 produce를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 13,
+          "sentence": "The students ______ in the library are quiet. (study: 공부하다)",
+          "answer": "studying",
+          "reason": "the students가 study함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 14,
+          "sentence": "The food ______ at this restaurant is fresh. (serve: 제공하다)",
+          "answer": "served",
+          "reason": "the food가 serve를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 15,
+          "sentence": "The man ______ to Jane is my father. (talk: 이야기하다)",
+          "answer": "talking",
+          "reason": "the man이 talk함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 16,
+          "sentence": "The bike ______ by my brother is new. (buy: 사다)",
+          "answer": "bought",
+          "reason": "the bike가 buy를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 17,
+          "sentence": "The children ______ outside are my cousins. (play: 놀다, 연주하다)",
+          "answer": "playing",
+          "reason": "the children이 play함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 18,
+          "sentence": "The bridge ______ in 1990 is still in use. (build: 짓다)",
+          "answer": "built",
+          "reason": "the bridge가 build를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 19,
+          "sentence": "The woman ______ a red dress is my teacher. (wear: 입다)",
+          "answer": "wearing",
+          "reason": "the woman이 wear함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 20,
+          "sentence": "The money ______ from the bank was recovered. (steal: 훔치다)",
+          "answer": "stolen",
+          "reason": "the money가 steal을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 21,
+          "sentence": "The bird ______ in the tree is very small. (sing: 노래하다)",
+          "answer": "singing",
+          "reason": "the bird가 sing함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 22,
+          "sentence": "The room ______ every morning is on the second floor. (clean: 청소하다)",
+          "answer": "cleaned",
+          "reason": "the room이 clean을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 23,
+          "sentence": "The boy ______ a bicycle is my neighbor. (ride: 타다)",
+          "answer": "riding",
+          "reason": "the boy가 ride함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 24,
+          "sentence": "The vase ______ on the table is very old. (display: 전시하다)",
+          "answer": "displayed",
+          "reason": "the vase가 display를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 25,
+          "sentence": "The girl ______ loudly is my little sister. (laugh: 웃다)",
+          "answer": "laughing",
+          "reason": "the girl이 laugh함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 26,
+          "sentence": "The homework ______ by the students was collected. (complete: 완성하다)",
+          "answer": "completed",
+          "reason": "the homework가 complete를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 27,
+          "sentence": "The people ______ in line have tickets. (wait: 기다리다)",
+          "answer": "waiting",
+          "reason": "the people이 wait함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 28,
+          "sentence": "The song ______ by the singer became popular. (write: 쓰다)",
+          "answer": "written",
+          "reason": "the song이 write를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 29,
+          "sentence": "The child ______ with the toy is my nephew. (play: 놀다, 연주하다)",
+          "answer": "playing",
+          "reason": "the child가 play함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 30,
+          "sentence": "The house ______ by the storm was repaired. (damage: 손상시키다)",
+          "answer": "damaged",
+          "reason": "the house가 damage를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 31,
+          "sentence": "The man ______ newspapers is standing outside. (sell: 팔다)",
+          "answer": "selling",
+          "reason": "the man이 sell함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 32,
+          "sentence": "The trees ______ by the strong wind were removed. (damage: 손상시키다)",
+          "answer": "damaged",
+          "reason": "the trees가 damage를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 33,
+          "sentence": "The woman ______ dinner is my mother. (cook: 요리하다)",
+          "answer": "cooking",
+          "reason": "the woman이 cook함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 34,
+          "sentence": "The problem ______ by the teacher was difficult. (give: 주다)",
+          "answer": "given",
+          "reason": "the problem이 give를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 35,
+          "sentence": "The students ______ for the bus are my classmates. (wait: 기다리다)",
+          "answer": "waiting",
+          "reason": "the students가 wait함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 36,
+          "sentence": "The computer ______ last year still works well. (buy: 사다)",
+          "answer": "bought",
+          "reason": "the computer가 buy를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 37,
+          "sentence": "The dog ______ at the stranger is mine. (bark: 짖다)",
+          "answer": "barking",
+          "reason": "the dog이 bark함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 38,
+          "sentence": "The road ______ by fallen trees was reopened. (block: 막다)",
+          "answer": "blocked",
+          "reason": "the road가 block을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 39,
+          "sentence": "The woman ______ the piano is my sister. (play: 놀다, 연주하다)",
+          "answer": "playing",
+          "reason": "the woman이 play함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 40,
+          "sentence": "The vegetables ______ on this farm are sold locally. (grow: 자라다, 기르다)",
+          "answer": "grown",
+          "reason": "the vegetables가 grow를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 41,
+          "sentence": "The man ______ a heavy box needs help. (carry: 나르다)",
+          "answer": "carrying",
+          "reason": "the man이 carry함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 42,
+          "sentence": "The package ______ yesterday is on the table. (deliver: 배달하다)",
+          "answer": "delivered",
+          "reason": "the package가 deliver를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 43,
+          "sentence": "The boy ______ near the window is my cousin. (stand: 서다)",
+          "answer": "standing",
+          "reason": "the boy가 stand함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 44,
+          "sentence": "The book ______ by my teacher is useful. (recommend: 추천하다)",
+          "answer": "recommended",
+          "reason": "the book이 recommend를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 45,
+          "sentence": "The students ______ English are in my class. (learn: 배우다)",
+          "answer": "learning",
+          "reason": "the students가 learn함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 46,
+          "sentence": "The building ______ by fire was rebuilt. (destroy: 파괴하다)",
+          "answer": "destroyed",
+          "reason": "the building이 destroy를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 47,
+          "sentence": "The girl ______ a picture is my niece. (draw: 그리다)",
+          "answer": "drawing",
+          "reason": "the girl이 draw함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 48,
+          "sentence": "The documents ______ on the desk belong to Mr. Kim. (leave: 남기다)",
+          "answer": "left",
+          "reason": "the documents가 leave를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 49,
+          "sentence": "The man ______ the door is our teacher. (open: 열다)",
+          "answer": "opening",
+          "reason": "the man이 open함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 50,
+          "sentence": "The door ______ by the man leads to the garden. (open: 열다)",
+          "answer": "opened",
+          "reason": "the door가 open을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 51,
+          "sentence": "The boy ______ the floor is my brother. (sweep: 쓸다)",
+          "answer": "sweeping",
+          "reason": "the boy가 sweep함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 52,
+          "sentence": "The floor ______ by the boy is now clean. (sweep: 쓸다)",
+          "answer": "swept",
+          "reason": "the floor가 sweep을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 53,
+          "sentence": "The worker ______ the wall is wearing a mask. (paint: 그리다, 칠하다)",
+          "answer": "painting",
+          "reason": "the worker가 paint함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 54,
+          "sentence": "The wall ______ yesterday is already dry. (paint: 그리다, 칠하다)",
+          "answer": "painted",
+          "reason": "the wall이 paint를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 55,
+          "sentence": "The woman ______ the boxes works here. (move: 옮기다)",
+          "answer": "moving",
+          "reason": "the woman이 move함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 56,
+          "sentence": "The boxes ______ into the room are very heavy. (move: 옮기다)",
+          "answer": "moved",
+          "reason": "the boxes가 move를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 57,
+          "sentence": "The chef ______ the vegetables is my uncle. (cut: 자르다)",
+          "answer": "cutting",
+          "reason": "the chef가 cut함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 58,
+          "sentence": "The vegetables ______ into small pieces are in the bowl. (cut: 자르다)",
+          "answer": "cut",
+          "reason": "the vegetables가 cut을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 59,
+          "sentence": "The student ______ the question raised his hand. (answer: 대답하다)",
+          "answer": "answering",
+          "reason": "the student가 answer함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 60,
+          "sentence": "The question ______ by the student was difficult. (answer: 대답하다)",
+          "answer": "answered",
+          "reason": "the question이 answer를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 61,
+          "sentence": "The woman ______ a letter is my aunt. (write: 쓰다)",
+          "answer": "writing",
+          "reason": "the woman이 write함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 62,
+          "sentence": "The letter ______ by my aunt arrived today. (write: 쓰다)",
+          "answer": "written",
+          "reason": "the letter가 write를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 63,
+          "sentence": "The man ______ the camera is a reporter. (hold: 들고 있다)",
+          "answer": "holding",
+          "reason": "the man이 hold함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 64,
+          "sentence": "The camera ______ by the reporter is expensive. (use: 사용하다)",
+          "answer": "used",
+          "reason": "the camera가 use를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 65,
+          "sentence": "The students ______ the experiment are wearing gloves. (perform: 수행하다)",
+          "answer": "performing",
+          "reason": "the students가 perform함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 66,
+          "sentence": "The experiment ______ in the laboratory took two hours. (perform: 수행하다)",
+          "answer": "performed",
+          "reason": "the experiment가 perform을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 67,
+          "sentence": "The man ______ the broken chair is my father. (fix: 고치다)",
+          "answer": "fixing",
+          "reason": "the man이 fix함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 68,
+          "sentence": "The chair ______ by my father is in the kitchen. (fix: 고치다)",
+          "answer": "fixed",
+          "reason": "the chair가 fix를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 69,
+          "sentence": "The girl ______ the flowers is my cousin. (water: 물을 주다)",
+          "answer": "watering",
+          "reason": "the girl이 water함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 70,
+          "sentence": "The flowers ______ every morning grow quickly. (water: 물을 주다)",
+          "answer": "watered",
+          "reason": "the flowers가 water를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 71,
+          "sentence": "The worker ______ the boxes onto the truck is strong. (load: 싣다)",
+          "answer": "loading",
+          "reason": "the worker가 load함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 72,
+          "sentence": "The boxes ______ onto the truck will be delivered today. (load: 싣다)",
+          "answer": "loaded",
+          "reason": "the boxes가 load를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 73,
+          "sentence": "The boy ______ the ball is my brother. (throw: 던지다)",
+          "answer": "throwing",
+          "reason": "the boy가 throw함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 74,
+          "sentence": "The ball ______ by the boy landed in the garden. (throw: 던지다)",
+          "answer": "thrown",
+          "reason": "the ball이 throw를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 75,
+          "sentence": "The woman ______ the report is our manager. (read: 읽다)",
+          "answer": "reading",
+          "reason": "the woman이 read함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 76,
+          "sentence": "The report ______ by our manager is on the desk. (read: 읽다)",
+          "answer": "read",
+          "reason": "the report가 read를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 77,
+          "sentence": "The man ______ the table is my uncle. (repair: 수리하다)",
+          "answer": "repairing",
+          "reason": "the man이 repair함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 78,
+          "sentence": "The table ______ last week looks new. (repair: 수리하다)",
+          "answer": "repaired",
+          "reason": "the table이 repair를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 79,
+          "sentence": "The scientist ______ the samples works at the university. (examine: 조사하다)",
+          "answer": "examining",
+          "reason": "the scientist가 examine함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 80,
+          "sentence": "The samples ______ under the microscope were collected yesterday. (examine: 조사하다)",
+          "answer": "examined",
+          "reason": "the samples가 examine을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 81,
+          "sentence": "The student ______ the computer is in my class. (use: 사용하다)",
+          "answer": "using",
+          "reason": "the student가 use함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 82,
+          "sentence": "The computer ______ by the student belongs to the school. (use: 사용하다)",
+          "answer": "used",
+          "reason": "the computer가 use를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 83,
+          "sentence": "The workers ______ a new bridge are from this city. (build: 짓다)",
+          "answer": "building",
+          "reason": "the workers가 build함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 84,
+          "sentence": "The bridge ______ across the river opened last month. (build: 짓다)",
+          "answer": "built",
+          "reason": "the bridge가 build를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 85,
+          "sentence": "The teacher ______ the lesson is Mr. Lee. (explain: 설명하다)",
+          "answer": "explaining",
+          "reason": "the teacher가 explain함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 86,
+          "sentence": "The rule ______ by the teacher is important. (explain: 설명하다)",
+          "answer": "explained",
+          "reason": "the rule이 explain을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 87,
+          "sentence": "The boy ______ a sandwich is my son. (eat: 먹다)",
+          "answer": "eating",
+          "reason": "the boy가 eat함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 88,
+          "sentence": "The bread ______ this morning is still warm. (bake: 굽다)",
+          "answer": "baked",
+          "reason": "the bread가 bake를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 89,
+          "sentence": "The woman ______ the clothes is my mother. (wash: 씻다, 세탁하다)",
+          "answer": "washing",
+          "reason": "the woman이 wash함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 90,
+          "sentence": "The clothes ______ yesterday are now dry. (wash: 씻다, 세탁하다)",
+          "answer": "washed",
+          "reason": "the clothes가 wash를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 91,
+          "sentence": "The farmer ______ the field is my grandfather. (plow: 갈다)",
+          "answer": "plowing",
+          "reason": "the farmer가 plow함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 92,
+          "sentence": "The field ______ yesterday is ready for planting. (plow: 갈다)",
+          "answer": "plowed",
+          "reason": "the field가 plow를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 93,
+          "sentence": "The girl ______ the package works at the post office. (carry: 나르다)",
+          "answer": "carrying",
+          "reason": "the girl이 carry함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 94,
+          "sentence": "The package ______ in paper is for you. (wrap: 싸다)",
+          "answer": "wrapped",
+          "reason": "the package가 wrap을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 95,
+          "sentence": "The man ______ the tree is a gardener. (trim: 다듬다)",
+          "answer": "trimming",
+          "reason": "the man이 trim함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 96,
+          "sentence": "The tree ______ by the gardener looks neat. (trim: 다듬다)",
+          "answer": "trimmed",
+          "reason": "the tree가 trim을 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 97,
+          "sentence": "The students ______ the chairs are helping the teacher. (arrange: 배열하다)",
+          "answer": "arranging",
+          "reason": "the students가 arrange함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 98,
+          "sentence": "The chairs ______ in a circle are for the meeting. (arrange: 배열하다)",
+          "answer": "arranged",
+          "reason": "the chairs가 arrange를 당함 → 수동 관계 → 과거분사"
+        },
+        {
+          "number": 99,
+          "sentence": "The man ______ the gate is a security guard. (close: 닫다)",
+          "answer": "closing",
+          "reason": "the man이 close함 → 능동 관계 → 현재분사"
+        },
+        {
+          "number": 100,
+          "sentence": "The gate ______ at night is opened every morning. (close: 닫다)",
+          "answer": "closed",
+          "reason": "the gate가 close를 당함 → 수동 관계 → 과거분사"
+        }
+      ]
+    },
+    {
+      "id": "subject-verb-agreement",
+      "title": "수일치",
+      "type": "choice",
+      "questions": [
+        {
+          "number": 1,
+          "sentence": "The boy in the classroom ______ my brother.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 the boy → 단수 → is"
+        },
+        {
+          "number": 2,
+          "sentence": "The students in the classroom ______ very quiet.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the students → 복수 → are"
+        },
+        {
+          "number": 3,
+          "sentence": "The color of these flowers ______ beautiful.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 the color → 단수 → is"
+        },
+        {
+          "number": 4,
+          "sentence": "The pages of this book ______ very old.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the pages → 복수 → are"
+        },
+        {
+          "number": 5,
+          "sentence": "The teacher with several students ______ waiting outside.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 the teacher → 단수 → is"
+        },
+        {
+          "number": 6,
+          "sentence": "The students with their teacher ______ waiting outside.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the students → 복수 → are"
+        },
+        {
+          "number": 7,
+          "sentence": "The number of students in the class ______ increasing.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 the number → 단수 → is"
+        },
+        {
+          "number": 8,
+          "sentence": "A number of students ______ absent today.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "a number of + 복수명사 → 복수 취급 → are"
+        },
+        {
+          "number": 9,
+          "sentence": "Each student ______ a different answer.",
+          "options": [
+            "has",
+            "have"
+          ],
+          "answer": "has",
+          "reason": "진짜 주어 each student → 단수 → has"
+        },
+        {
+          "number": 10,
+          "sentence": "Every student ______ required to attend the meeting.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 every student → 단수 → is"
+        },
+        {
+          "number": 11,
+          "sentence": "Each of the students ______ a notebook.",
+          "options": [
+            "has",
+            "have"
+          ],
+          "answer": "has",
+          "reason": "진짜 주어 each → 단수 → has"
+        },
+        {
+          "number": 12,
+          "sentence": "Every one of these books ______ useful.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 every one → 단수 → is"
+        },
+        {
+          "number": 13,
+          "sentence": "Either answer ______ acceptable.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 either answer → 단수 → is"
+        },
+        {
+          "number": 14,
+          "sentence": "Neither student ______ ready.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 neither student → 단수 → is"
+        },
+        {
+          "number": 15,
+          "sentence": "Neither of the answers ______ correct.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 neither → 단수 → is"
+        },
+        {
+          "number": 16,
+          "sentence": "Either of the two plans ______ possible.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 either → 단수 → is"
+        },
+        {
+          "number": 17,
+          "sentence": "Everyone ______ responsible for the result.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 everyone → 단수 → is"
+        },
+        {
+          "number": 18,
+          "sentence": "Someone ______ knocking at the door.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 someone → 단수 → is"
+        },
+        {
+          "number": 19,
+          "sentence": "Nobody ______ the answer.",
+          "options": [
+            "know",
+            "knows"
+          ],
+          "answer": "knows",
+          "reason": "진짜 주어 nobody → 단수 → knows"
+        },
+        {
+          "number": 20,
+          "sentence": "Everything ______ ready for the event.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 everything → 단수 → is"
+        },
+        {
+          "number": 21,
+          "sentence": "Both students ______ correct.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 both students → 복수 → are"
+        },
+        {
+          "number": 22,
+          "sentence": "Both of the books ______ useful.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 both → 복수 → are"
+        },
+        {
+          "number": 23,
+          "sentence": "Many students ______ interested in the program.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 many students → 복수 → are"
+        },
+        {
+          "number": 24,
+          "sentence": "Several people ______ waiting outside.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 several people → 복수 → are"
+        },
+        {
+          "number": 25,
+          "sentence": "Few students ______ the answer.",
+          "options": [
+            "know",
+            "knows"
+          ],
+          "answer": "know",
+          "reason": "진짜 주어 few students → 복수 → know"
+        },
+        {
+          "number": 26,
+          "sentence": "Many a student ______ this mistake.",
+          "options": [
+            "make",
+            "makes"
+          ],
+          "answer": "makes",
+          "reason": "many a + 단수명사 → 단수 → makes"
+        },
+        {
+          "number": 27,
+          "sentence": "More than one student ______ absent.",
+          "options": [
+            "was",
+            "were"
+          ],
+          "answer": "was",
+          "reason": "more than one + 단수명사 → 단수 → was"
+        },
+        {
+          "number": 28,
+          "sentence": "One of the students ______ from Canada.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 one → 단수 → is"
+        },
+        {
+          "number": 29,
+          "sentence": "One of my friends ______ English very well.",
+          "options": [
+            "speak",
+            "speaks"
+          ],
+          "answer": "speaks",
+          "reason": "진짜 주어 one → 단수 → speaks"
+        },
+        {
+          "number": 30,
+          "sentence": "Two of my friends ______ in Seoul.",
+          "options": [
+            "live",
+            "lives"
+          ],
+          "answer": "live",
+          "reason": "진짜 주어 two → 복수 → live"
+        },
+        {
+          "number": 31,
+          "sentence": "Tom and Jane ______ good friends.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "Tom and Jane → 두 대상 → 복수 → are"
+        },
+        {
+          "number": 32,
+          "sentence": "Bread and butter ______ my usual breakfast.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "bread and butter가 하나의 음식 조합을 의미 → 단수 취급 → is"
+        },
+        {
+          "number": 33,
+          "sentence": "The teacher and the writer ______ attending the meeting.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "관사 the가 각각 붙어 두 사람을 의미 → 복수 → are"
+        },
+        {
+          "number": 34,
+          "sentence": "The teacher and writer ______ attending the meeting.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "하나의 사람이 teacher와 writer 두 역할을 가짐 → 단수 → is"
+        },
+        {
+          "number": 35,
+          "sentence": "My friend and neighbor ______ coming tonight.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "한 사람이 두 역할을 가짐 → 단수 → is"
+        },
+        {
+          "number": 36,
+          "sentence": "My friend and my neighbor ______ coming tonight.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "my가 각각 붙어 두 사람을 의미 → 복수 → are"
+        },
+        {
+          "number": 37,
+          "sentence": "Tom, as well as his friends, ______ invited.",
+          "options": [
+            "was",
+            "were"
+          ],
+          "answer": "was",
+          "reason": "진짜 주어 Tom → 단수 → was"
+        },
+        {
+          "number": 38,
+          "sentence": "The students, as well as their teacher, ______ invited.",
+          "options": [
+            "was",
+            "were"
+          ],
+          "answer": "were",
+          "reason": "진짜 주어 the students → 복수 → were"
+        },
+        {
+          "number": 39,
+          "sentence": "Jane, together with her sisters, ______ traveling abroad.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 Jane → 단수 → is"
+        },
+        {
+          "number": 40,
+          "sentence": "The players, together with their coach, ______ practicing.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the players → 복수 → are"
+        },
+        {
+          "number": 41,
+          "sentence": "The manager, along with his employees, ______ attending the event.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 the manager → 단수 → is"
+        },
+        {
+          "number": 42,
+          "sentence": "The employees, along with their manager, ______ attending the event.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the employees → 복수 → are"
+        },
+        {
+          "number": 43,
+          "sentence": "The teacher, not the students, ______ responsible.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 the teacher → 단수 → is"
+        },
+        {
+          "number": 44,
+          "sentence": "The students, not the teacher, ______ responsible.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the students → 복수 → are"
+        },
+        {
+          "number": 45,
+          "sentence": "Either Tom or Jane ______ coming.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "either A or B에서 가까운 주어 Jane → 단수 → is"
+        },
+        {
+          "number": 46,
+          "sentence": "Either Tom or his friends ______ coming.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "가까운 주어 his friends → 복수 → are"
+        },
+        {
+          "number": 47,
+          "sentence": "Either the students or the teacher ______ responsible.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "가까운 주어 the teacher → 단수 → is"
+        },
+        {
+          "number": 48,
+          "sentence": "Either the teacher or the students ______ responsible.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "가까운 주어 the students → 복수 → are"
+        },
+        {
+          "number": 49,
+          "sentence": "Neither Tom nor his friends ______ ready.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "가까운 주어 his friends → 복수 → are"
+        },
+        {
+          "number": 50,
+          "sentence": "Neither the students nor the teacher ______ ready.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "가까운 주어 the teacher → 단수 → is"
+        },
+        {
+          "number": 51,
+          "sentence": "Not only Tom but also Jane ______ responsible.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "가까운 주어 Jane → 단수 → is"
+        },
+        {
+          "number": 52,
+          "sentence": "Not only the teacher but also the students ______ responsible.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "가까운 주어 the students → 복수 → are"
+        },
+        {
+          "number": 53,
+          "sentence": "Not only the students but also the teacher ______ responsible.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "가까운 주어 the teacher → 단수 → is"
+        },
+        {
+          "number": 54,
+          "sentence": "Either you or I ______ responsible for this.",
+          "options": [
+            "am",
+            "are"
+          ],
+          "answer": "am",
+          "reason": "가까운 주어 I → am"
+        },
+        {
+          "number": 55,
+          "sentence": "Either I or you ______ responsible for this.",
+          "options": [
+            "am",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "가까운 주어 you → are"
+        },
+        {
+          "number": 56,
+          "sentence": "Ten dollars ______ enough for lunch.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "ten dollars가 하나의 금액 → 단수 취급 → is"
+        },
+        {
+          "number": 57,
+          "sentence": "Twenty kilometers ______ a long distance to walk.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "twenty kilometers가 하나의 거리 → 단수 취급 → is"
+        },
+        {
+          "number": 58,
+          "sentence": "Three hours ______ enough to finish the work.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "three hours가 하나의 시간량 → 단수 취급 → is"
+        },
+        {
+          "number": 59,
+          "sentence": "Five years ______ a long time to wait.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "five years가 하나의 기간 → 단수 취급 → is"
+        },
+        {
+          "number": 60,
+          "sentence": "One hundred dollars ______ required to enter the program.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "하나의 금액 → 단수 취급 → is"
+        },
+        {
+          "number": 61,
+          "sentence": "Half of the cake ______ gone.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "of 뒤 the cake → 단수 → is"
+        },
+        {
+          "number": 62,
+          "sentence": "Half of the students ______ absent.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "of 뒤 the students → 복수 → are"
+        },
+        {
+          "number": 63,
+          "sentence": "Some of the water ______ dirty.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "of 뒤 the water → 불가산 단수 → is"
+        },
+        {
+          "number": 64,
+          "sentence": "Some of the students ______ absent.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "of 뒤 the students → 복수 → are"
+        },
+        {
+          "number": 65,
+          "sentence": "Most of the money ______ gone.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "of 뒤 the money → 불가산 단수 → is"
+        },
+        {
+          "number": 66,
+          "sentence": "Most of the books ______ damaged.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "of 뒤 the books → 복수 → are"
+        },
+        {
+          "number": 67,
+          "sentence": "All of the information ______ correct.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "information → 불가산 단수 → is"
+        },
+        {
+          "number": 68,
+          "sentence": "All of the students ______ ready.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "students → 복수 → are"
+        },
+        {
+          "number": 69,
+          "sentence": "Two-thirds of the land ______ covered with trees.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "land → 불가산 단수 → is"
+        },
+        {
+          "number": 70,
+          "sentence": "Two-thirds of the students ______ present.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "students → 복수 → are"
+        },
+        {
+          "number": 71,
+          "sentence": "A lot of money ______ needed.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "money → 불가산 단수 → is"
+        },
+        {
+          "number": 72,
+          "sentence": "A lot of students ______ waiting.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "students → 복수 → are"
+        },
+        {
+          "number": 73,
+          "sentence": "Plenty of water ______ available.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "water → 불가산 단수 → is"
+        },
+        {
+          "number": 74,
+          "sentence": "Plenty of books ______ available.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "books → 복수 → are"
+        },
+        {
+          "number": 75,
+          "sentence": "Reading books ______ a good habit.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "동명사구 Reading books → 단수 취급 → is"
+        },
+        {
+          "number": 76,
+          "sentence": "Exercising regularly ______ good for your health.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "동명사구 Exercising regularly → 단수 취급 → is"
+        },
+        {
+          "number": 77,
+          "sentence": "Learning foreign languages ______ time and effort.",
+          "options": [
+            "require",
+            "requires"
+          ],
+          "answer": "requires",
+          "reason": "동명사구 Learning foreign languages → 단수 → requires"
+        },
+        {
+          "number": 78,
+          "sentence": "To learn a new language ______ difficult.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "to부정사구 To learn a new language → 단수 취급 → is"
+        },
+        {
+          "number": 79,
+          "sentence": "To exercise every day ______ discipline.",
+          "options": [
+            "require",
+            "requires"
+          ],
+          "answer": "requires",
+          "reason": "to부정사구 → 단수 취급 → requires"
+        },
+        {
+          "number": 80,
+          "sentence": "What he said ______ true.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "What he said 전체가 하나의 주어 → 단수 취급 → is"
+        },
+        {
+          "number": 81,
+          "sentence": "What she needs ______ more time.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "What she needs 전체가 하나의 주어 → 단수 → is"
+        },
+        {
+          "number": 82,
+          "sentence": "That he passed the exam ______ surprising.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "That he passed the exam 전체가 하나의 주어 → 단수 → is"
+        },
+        {
+          "number": 83,
+          "sentence": "Whether he will come ______ uncertain.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "Whether he will come 전체가 하나의 주어 → 단수 → is"
+        },
+        {
+          "number": 84,
+          "sentence": "The news ______ surprising.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "news → 형태는 -s지만 단수명사 → is"
+        },
+        {
+          "number": 85,
+          "sentence": "Mathematics ______ my favorite subject.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "Mathematics → 학문명 → 단수 → is"
+        },
+        {
+          "number": 86,
+          "sentence": "Physics ______ difficult for some students.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "Physics → 학문명 → 단수 → is"
+        },
+        {
+          "number": 87,
+          "sentence": "The scissors ______ on the desk.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "scissors → 복수 취급 → are"
+        },
+        {
+          "number": 88,
+          "sentence": "These pants ______ too large for me.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "pants → 복수 취급 → are"
+        },
+        {
+          "number": 89,
+          "sentence": "A pair of scissors ______ on the desk.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 a pair → 단수 → is"
+        },
+        {
+          "number": 90,
+          "sentence": "Two pairs of pants ______ in the closet.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 two pairs → 복수 → are"
+        },
+        {
+          "number": 91,
+          "sentence": "There ______ a book on the desk.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "뒤 실제 주어 a book → 단수 → is"
+        },
+        {
+          "number": 92,
+          "sentence": "There ______ several books on the desk.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "뒤 실제 주어 several books → 복수 → are"
+        },
+        {
+          "number": 93,
+          "sentence": "There ______ a student in the room.",
+          "options": [
+            "was",
+            "were"
+          ],
+          "answer": "was",
+          "reason": "뒤 실제 주어 a student → 단수 → was"
+        },
+        {
+          "number": 94,
+          "sentence": "There ______ many students in the room.",
+          "options": [
+            "was",
+            "were"
+          ],
+          "answer": "were",
+          "reason": "뒤 실제 주어 many students → 복수 → were"
+        },
+        {
+          "number": 95,
+          "sentence": "The quality of the products ______ improved.",
+          "options": [
+            "has",
+            "have"
+          ],
+          "answer": "has",
+          "reason": "진짜 주어 the quality → 단수 → has"
+        },
+        {
+          "number": 96,
+          "sentence": "The effects of climate change ______ becoming more noticeable.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the effects → 복수 → are"
+        },
+        {
+          "number": 97,
+          "sentence": "The use of smartphones ______ increased rapidly.",
+          "options": [
+            "has",
+            "have"
+          ],
+          "answer": "has",
+          "reason": "진짜 주어 the use → 단수 → has"
+        },
+        {
+          "number": 98,
+          "sentence": "The causes of the problem ______ still unclear.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the causes → 복수 → are"
+        },
+        {
+          "number": 99,
+          "sentence": "One of the main reasons for the change ______ the rising cost of energy.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "is",
+          "reason": "진짜 주어 one → 단수 → is"
+        },
+        {
+          "number": 100,
+          "sentence": "The results of the recent experiments ______ important for future research.",
+          "options": [
+            "is",
+            "are"
+          ],
+          "answer": "are",
+          "reason": "진짜 주어 the results → 복수 → are"
+        }
+      ]
     }
-  ]
-}
   ]
 }
