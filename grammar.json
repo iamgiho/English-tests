@@ -3722,6 +3722,1013 @@
           "reason": "진짜 주어 the results → 복수 → are"
         }
       ]
+    },
+    {
+      "id": "finite-nonfinite",
+      "title": "동사 / 준동사 구분",
+      "type": "choice",
+      "questions": [
+        {
+          "number": 1,
+          "sentence": "The boy ______ near the window is my brother.",
+          "options": [
+            "stands",
+            "standing"
+          ],
+          "answer": "standing",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the boy가 stand함 → standing"
+        },
+        {
+          "number": 2,
+          "sentence": "The boy ______ near the window every morning.",
+          "options": [
+            "stands",
+            "standing"
+          ],
+          "answer": "stands",
+          "reason": "절에 본동사가 없음 → 동사 필요 → stands"
+        },
+        {
+          "number": 3,
+          "sentence": "The book ______ by the professor became popular.",
+          "options": [
+            "written",
+            "was written"
+          ],
+          "answer": "written",
+          "reason": "절의 본동사 became이 이미 있음 → 준동사 필요 → the book이 write를 당함 → written"
+        },
+        {
+          "number": 4,
+          "sentence": "The book ______ by the professor last year.",
+          "options": [
+            "written",
+            "was written"
+          ],
+          "answer": "was written",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was written"
+        },
+        {
+          "number": 5,
+          "sentence": "The students ______ in the library are preparing for the test.",
+          "options": [
+            "studying",
+            "study"
+          ],
+          "answer": "studying",
+          "reason": "절의 본동사 are preparing이 이미 있음 → 준동사 필요 → the students가 study함 → studying"
+        },
+        {
+          "number": 6,
+          "sentence": "The students ______ in the library every evening.",
+          "options": [
+            "study",
+            "studying"
+          ],
+          "answer": "study",
+          "reason": "절에 본동사가 없음 → 동사 필요 → study"
+        },
+        {
+          "number": 7,
+          "sentence": "The car ______ in Germany is very expensive.",
+          "options": [
+            "produced",
+            "is produced"
+          ],
+          "answer": "produced",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the car가 produce를 당함 → produced"
+        },
+        {
+          "number": 8,
+          "sentence": "The car ______ in Germany.",
+          "options": [
+            "produced",
+            "is produced"
+          ],
+          "answer": "is produced",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → is produced"
+        },
+        {
+          "number": 9,
+          "sentence": "The woman ______ to my teacher is my aunt.",
+          "options": [
+            "talking",
+            "talks"
+          ],
+          "answer": "talking",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the woman이 talk함 → talking"
+        },
+        {
+          "number": 10,
+          "sentence": "The woman ______ to my teacher every morning.",
+          "options": [
+            "talks",
+            "talking"
+          ],
+          "answer": "talks",
+          "reason": "절에 본동사가 없음 → 동사 필요 → talks"
+        },
+        {
+          "number": 11,
+          "sentence": "The bridge ______ across the river connects the two towns.",
+          "options": [
+            "built",
+            "was built"
+          ],
+          "answer": "built",
+          "reason": "절의 본동사 connects가 이미 있음 → 준동사 필요 → the bridge가 build를 당함 → built"
+        },
+        {
+          "number": 12,
+          "sentence": "The bridge ______ across the river in 2010.",
+          "options": [
+            "built",
+            "was built"
+          ],
+          "answer": "was built",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was built"
+        },
+        {
+          "number": 13,
+          "sentence": "The girl ______ a red coat is my cousin.",
+          "options": [
+            "wearing",
+            "wears"
+          ],
+          "answer": "wearing",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the girl이 wear함 → wearing"
+        },
+        {
+          "number": 14,
+          "sentence": "The girl ______ a red coat every winter.",
+          "options": [
+            "wears",
+            "wearing"
+          ],
+          "answer": "wears",
+          "reason": "절에 본동사가 없음 → 동사 필요 → wears"
+        },
+        {
+          "number": 15,
+          "sentence": "The food ______ at this restaurant tastes excellent.",
+          "options": [
+            "served",
+            "is served"
+          ],
+          "answer": "served",
+          "reason": "절의 본동사 tastes가 이미 있음 → 준동사 필요 → the food가 serve를 당함 → served"
+        },
+        {
+          "number": 16,
+          "sentence": "The food ______ at this restaurant every evening.",
+          "options": [
+            "is served",
+            "served"
+          ],
+          "answer": "is served",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → is served"
+        },
+        {
+          "number": 17,
+          "sentence": "The dog ______ across the field belongs to my neighbor.",
+          "options": [
+            "running",
+            "runs"
+          ],
+          "answer": "running",
+          "reason": "절의 본동사 belongs가 이미 있음 → 준동사 필요 → the dog이 run함 → running"
+        },
+        {
+          "number": 18,
+          "sentence": "The dog ______ across the field every morning.",
+          "options": [
+            "runs",
+            "running"
+          ],
+          "answer": "runs",
+          "reason": "절에 본동사가 없음 → 동사 필요 → runs"
+        },
+        {
+          "number": 19,
+          "sentence": "The letter ______ yesterday arrived this morning.",
+          "options": [
+            "sent",
+            "was sent"
+          ],
+          "answer": "sent",
+          "reason": "절의 본동사 arrived가 이미 있음 → 준동사 필요 → the letter가 send를 당함 → sent"
+        },
+        {
+          "number": 20,
+          "sentence": "The letter ______ yesterday.",
+          "options": [
+            "was sent",
+            "sent"
+          ],
+          "answer": "was sent",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was sent"
+        },
+        {
+          "number": 21,
+          "sentence": "The children ______ outside are making too much noise.",
+          "options": [
+            "playing",
+            "play"
+          ],
+          "answer": "playing",
+          "reason": "절의 본동사 are making이 이미 있음 → 준동사 필요 → the children이 play함 → playing"
+        },
+        {
+          "number": 22,
+          "sentence": "The children ______ outside after school.",
+          "options": [
+            "play",
+            "playing"
+          ],
+          "answer": "play",
+          "reason": "절에 본동사가 없음 → 동사 필요 → play"
+        },
+        {
+          "number": 23,
+          "sentence": "The picture ______ on the wall belongs to my grandmother.",
+          "options": [
+            "displayed",
+            "was displayed"
+          ],
+          "answer": "displayed",
+          "reason": "절의 본동사 belongs가 이미 있음 → 준동사 필요 → the picture가 display를 당함 → displayed"
+        },
+        {
+          "number": 24,
+          "sentence": "The picture ______ on the wall yesterday.",
+          "options": [
+            "was displayed",
+            "displayed"
+          ],
+          "answer": "was displayed",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was displayed"
+        },
+        {
+          "number": 25,
+          "sentence": "The man ______ a large box needs some help.",
+          "options": [
+            "carrying",
+            "carries"
+          ],
+          "answer": "carrying",
+          "reason": "절의 본동사 needs가 이미 있음 → 준동사 필요 → the man이 carry함 → carrying"
+        },
+        {
+          "number": 26,
+          "sentence": "The man ______ a large box every morning.",
+          "options": [
+            "carries",
+            "carrying"
+          ],
+          "answer": "carries",
+          "reason": "절에 본동사가 없음 → 동사 필요 → carries"
+        },
+        {
+          "number": 27,
+          "sentence": "The documents ______ on the desk contain important information.",
+          "options": [
+            "left",
+            "were left"
+          ],
+          "answer": "left",
+          "reason": "절의 본동사 contain이 이미 있음 → 준동사 필요 → the documents가 leave를 당함 → left"
+        },
+        {
+          "number": 28,
+          "sentence": "The documents ______ on the desk last night.",
+          "options": [
+            "were left",
+            "left"
+          ],
+          "answer": "were left",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → were left"
+        },
+        {
+          "number": 29,
+          "sentence": "The students ______ the experiment are wearing gloves.",
+          "options": [
+            "conducting",
+            "conduct"
+          ],
+          "answer": "conducting",
+          "reason": "절의 본동사 are wearing이 이미 있음 → 준동사 필요 → the students가 conduct함 → conducting"
+        },
+        {
+          "number": 30,
+          "sentence": "The students ______ the experiment every Friday.",
+          "options": [
+            "conduct",
+            "conducting"
+          ],
+          "answer": "conduct",
+          "reason": "절에 본동사가 없음 → 동사 필요 → conduct"
+        },
+        {
+          "number": 31,
+          "sentence": "The experiment ______ by the students produced unexpected results.",
+          "options": [
+            "conducted",
+            "was conducted"
+          ],
+          "answer": "conducted",
+          "reason": "절의 본동사 produced가 이미 있음 → 준동사 필요 → the experiment가 conduct를 당함 → conducted"
+        },
+        {
+          "number": 32,
+          "sentence": "The experiment ______ by the students yesterday.",
+          "options": [
+            "was conducted",
+            "conducted"
+          ],
+          "answer": "was conducted",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was conducted"
+        },
+        {
+          "number": 33,
+          "sentence": "The scientist ______ the samples works at this university.",
+          "options": [
+            "examining",
+            "examines"
+          ],
+          "answer": "examining",
+          "reason": "절의 본동사 works가 이미 있음 → 준동사 필요 → the scientist가 examine함 → examining"
+        },
+        {
+          "number": 34,
+          "sentence": "The scientist ______ the samples every morning.",
+          "options": [
+            "examines",
+            "examining"
+          ],
+          "answer": "examines",
+          "reason": "절에 본동사가 없음 → 동사 필요 → examines"
+        },
+        {
+          "number": 35,
+          "sentence": "The samples ______ under the microscope came from the river.",
+          "options": [
+            "examined",
+            "were examined"
+          ],
+          "answer": "examined",
+          "reason": "절의 본동사 came이 이미 있음 → 준동사 필요 → the samples가 examine을 당함 → examined"
+        },
+        {
+          "number": 36,
+          "sentence": "The samples ______ under the microscope yesterday.",
+          "options": [
+            "were examined",
+            "examined"
+          ],
+          "answer": "were examined",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → were examined"
+        },
+        {
+          "number": 37,
+          "sentence": "The company ______ the new software plans to release it next month.",
+          "options": [
+            "developing",
+            "develops"
+          ],
+          "answer": "developing",
+          "reason": "절의 본동사 plans가 이미 있음 → 준동사 필요 → the company가 develop함 → developing"
+        },
+        {
+          "number": 38,
+          "sentence": "The company ______ new software every year.",
+          "options": [
+            "develops",
+            "developing"
+          ],
+          "answer": "develops",
+          "reason": "절에 본동사가 없음 → 동사 필요 → develops"
+        },
+        {
+          "number": 39,
+          "sentence": "The software ______ by the company is widely used.",
+          "options": [
+            "developed",
+            "was developed"
+          ],
+          "answer": "developed",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the software가 develop을 당함 → developed"
+        },
+        {
+          "number": 40,
+          "sentence": "The software ______ by the company five years ago.",
+          "options": [
+            "was developed",
+            "developed"
+          ],
+          "answer": "was developed",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was developed"
+        },
+        {
+          "number": 41,
+          "sentence": "The workers ______ the road are wearing helmets.",
+          "options": [
+            "repairing",
+            "repair"
+          ],
+          "answer": "repairing",
+          "reason": "절의 본동사 are wearing이 이미 있음 → 준동사 필요 → the workers가 repair함 → repairing"
+        },
+        {
+          "number": 42,
+          "sentence": "The workers ______ the road every summer.",
+          "options": [
+            "repair",
+            "repairing"
+          ],
+          "answer": "repair",
+          "reason": "절에 본동사가 없음 → 동사 필요 → repair"
+        },
+        {
+          "number": 43,
+          "sentence": "The road ______ after the storm is now open.",
+          "options": [
+            "repaired",
+            "was repaired"
+          ],
+          "answer": "repaired",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the road가 repair를 당함 → repaired"
+        },
+        {
+          "number": 44,
+          "sentence": "The road ______ after the storm.",
+          "options": [
+            "was repaired",
+            "repaired"
+          ],
+          "answer": "was repaired",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was repaired"
+        },
+        {
+          "number": 45,
+          "sentence": "The teacher ______ the lesson is Mr. Kim.",
+          "options": [
+            "explaining",
+            "explains"
+          ],
+          "answer": "explaining",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the teacher가 explain함 → explaining"
+        },
+        {
+          "number": 46,
+          "sentence": "The teacher ______ the lesson clearly.",
+          "options": [
+            "explains",
+            "explaining"
+          ],
+          "answer": "explains",
+          "reason": "절에 본동사가 없음 → 동사 필요 → explains"
+        },
+        {
+          "number": 47,
+          "sentence": "The rule ______ by the teacher seems simple.",
+          "options": [
+            "explained",
+            "was explained"
+          ],
+          "answer": "explained",
+          "reason": "절의 본동사 seems가 이미 있음 → 준동사 필요 → the rule이 explain을 당함 → explained"
+        },
+        {
+          "number": 48,
+          "sentence": "The rule ______ by the teacher during yesterday's class.",
+          "options": [
+            "was explained",
+            "explained"
+          ],
+          "answer": "was explained",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was explained"
+        },
+        {
+          "number": 49,
+          "sentence": "The farmer ______ the field owns several tractors.",
+          "options": [
+            "plowing",
+            "plows"
+          ],
+          "answer": "plowing",
+          "reason": "절의 본동사 owns가 이미 있음 → 준동사 필요 → the farmer가 plow함 → plowing"
+        },
+        {
+          "number": 50,
+          "sentence": "The farmer ______ the field every spring.",
+          "options": [
+            "plows",
+            "plowing"
+          ],
+          "answer": "plows",
+          "reason": "절에 본동사가 없음 → 동사 필요 → plows"
+        },
+        {
+          "number": 51,
+          "sentence": "The field ______ yesterday is ready for planting.",
+          "options": [
+            "plowed",
+            "was plowed"
+          ],
+          "answer": "plowed",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the field가 plow를 당함 → plowed"
+        },
+        {
+          "number": 52,
+          "sentence": "The field ______ yesterday before the rain started.",
+          "options": [
+            "was plowed",
+            "plowed"
+          ],
+          "answer": "was plowed",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → was plowed"
+        },
+        {
+          "number": 53,
+          "sentence": "The researchers ______ the data discovered an unusual pattern.",
+          "options": [
+            "analyzing",
+            "analyzed"
+          ],
+          "answer": "analyzing",
+          "reason": "절의 본동사 discovered가 이미 있음 → 준동사 필요 → the researchers가 analyze함 → analyzing"
+        },
+        {
+          "number": 54,
+          "sentence": "The researchers ______ the data and discovered an unusual pattern.",
+          "options": [
+            "analyzed",
+            "analyzing"
+          ],
+          "answer": "analyzed",
+          "reason": "and로 analyzed와 discovered가 병렬 → 동사 필요 → analyzed"
+        },
+        {
+          "number": 55,
+          "sentence": "The data ______ by the researchers revealed a clear trend.",
+          "options": [
+            "analyzed",
+            "were analyzed"
+          ],
+          "answer": "analyzed",
+          "reason": "절의 본동사 revealed가 이미 있음 → 준동사 필요 → the data가 analyze를 당함 → analyzed"
+        },
+        {
+          "number": 56,
+          "sentence": "The data ______ by the researchers before the report was written.",
+          "options": [
+            "were analyzed",
+            "analyzed"
+          ],
+          "answer": "were analyzed",
+          "reason": "주절에 본동사가 없음 → 동사 필요 → 수동 관계 → were analyzed"
+        },
+        {
+          "number": 57,
+          "sentence": "Students ______ to complete the assignment must submit it by Friday.",
+          "options": [
+            "required",
+            "are required"
+          ],
+          "answer": "required",
+          "reason": "절의 본동사 must submit이 이미 있음 → 준동사 필요 → students가 require를 당함 → required"
+        },
+        {
+          "number": 58,
+          "sentence": "Students ______ to complete the assignment by Friday.",
+          "options": [
+            "are required",
+            "required"
+          ],
+          "answer": "are required",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → are required"
+        },
+        {
+          "number": 59,
+          "sentence": "The equipment ______ in the laboratory requires regular maintenance.",
+          "options": [
+            "used",
+            "is used"
+          ],
+          "answer": "used",
+          "reason": "절의 본동사 requires가 이미 있음 → 준동사 필요 → the equipment가 use를 당함 → used"
+        },
+        {
+          "number": 60,
+          "sentence": "The equipment ______ in the laboratory every day.",
+          "options": [
+            "is used",
+            "used"
+          ],
+          "answer": "is used",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → is used"
+        },
+        {
+          "number": 61,
+          "sentence": "Animals ______ in cold climates often have thick fur.",
+          "options": [
+            "living",
+            "live"
+          ],
+          "answer": "living",
+          "reason": "절의 본동사 have가 이미 있음 → 준동사 필요 → animals가 live함 → living"
+        },
+        {
+          "number": 62,
+          "sentence": "Animals ______ in a wide variety of environments.",
+          "options": [
+            "live",
+            "living"
+          ],
+          "answer": "live",
+          "reason": "절에 본동사가 없음 → 동사 필요 → live"
+        },
+        {
+          "number": 63,
+          "sentence": "The plants ______ under low-light conditions grew slowly.",
+          "options": [
+            "grown",
+            "were grown"
+          ],
+          "answer": "grown",
+          "reason": "절의 본동사 grew가 이미 있음 → 준동사 필요 → the plants가 grow를 당함 → grown"
+        },
+        {
+          "number": 64,
+          "sentence": "The plants ______ under low-light conditions for three weeks.",
+          "options": [
+            "were grown",
+            "grown"
+          ],
+          "answer": "were grown",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → were grown"
+        },
+        {
+          "number": 65,
+          "sentence": "The article ______ several important questions has attracted attention.",
+          "options": [
+            "raising",
+            "raises"
+          ],
+          "answer": "raising",
+          "reason": "절의 본동사 has attracted이 이미 있음 → 준동사 필요 → the article이 raise함 → raising"
+        },
+        {
+          "number": 66,
+          "sentence": "The article ______ several important questions about the issue.",
+          "options": [
+            "raises",
+            "raising"
+          ],
+          "answer": "raises",
+          "reason": "절에 본동사가 없음 → 동사 필요 → raises"
+        },
+        {
+          "number": 67,
+          "sentence": "The changes ______ in the experiment were carefully recorded.",
+          "options": [
+            "observed",
+            "were observed"
+          ],
+          "answer": "observed",
+          "reason": "절의 본동사 were recorded가 이미 있음 → 준동사 필요 → the changes가 observe를 당함 → observed"
+        },
+        {
+          "number": 68,
+          "sentence": "The changes ______ during the experiment.",
+          "options": [
+            "were observed",
+            "observed"
+          ],
+          "answer": "were observed",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → were observed"
+        },
+        {
+          "number": 69,
+          "sentence": "The bacteria ______ on the roots can survive dry conditions.",
+          "options": [
+            "growing",
+            "grow"
+          ],
+          "answer": "growing",
+          "reason": "절의 본동사 can survive가 이미 있음 → 준동사 필요 → the bacteria가 grow함 → growing"
+        },
+        {
+          "number": 70,
+          "sentence": "The bacteria ______ rapidly under these conditions.",
+          "options": [
+            "grow",
+            "growing"
+          ],
+          "answer": "grow",
+          "reason": "절에 본동사가 없음 → 동사 필요 → grow"
+        },
+        {
+          "number": 71,
+          "sentence": "The samples ______ from three different sites showed similar results.",
+          "options": [
+            "collected",
+            "were collected"
+          ],
+          "answer": "collected",
+          "reason": "절의 본동사 showed가 이미 있음 → 준동사 필요 → the samples가 collect를 당함 → collected"
+        },
+        {
+          "number": 72,
+          "sentence": "The samples ______ from three different sites last week.",
+          "options": [
+            "were collected",
+            "collected"
+          ],
+          "answer": "were collected",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → were collected"
+        },
+        {
+          "number": 73,
+          "sentence": "The factors ______ plant growth vary among environments.",
+          "options": [
+            "affecting",
+            "affect"
+          ],
+          "answer": "affecting",
+          "reason": "절의 본동사 vary가 이미 있음 → 준동사 필요 → the factors가 affect함 → affecting"
+        },
+        {
+          "number": 74,
+          "sentence": "Several factors ______ plant growth.",
+          "options": [
+            "affect",
+            "affecting"
+          ],
+          "answer": "affect",
+          "reason": "절에 본동사가 없음 → 동사 필요 → affect"
+        },
+        {
+          "number": 75,
+          "sentence": "The genes ______ by drought play important roles in stress responses.",
+          "options": [
+            "activated",
+            "were activated"
+          ],
+          "answer": "activated",
+          "reason": "절의 본동사 play가 이미 있음 → 준동사 필요 → the genes가 activate를 당함 → activated"
+        },
+        {
+          "number": 76,
+          "sentence": "These genes ______ by drought under severe stress conditions.",
+          "options": [
+            "are activated",
+            "activated"
+          ],
+          "answer": "are activated",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → are activated"
+        },
+        {
+          "number": 77,
+          "sentence": "The method ______ to measure carbon content is widely used.",
+          "options": [
+            "used",
+            "is used"
+          ],
+          "answer": "used",
+          "reason": "절의 본동사 is가 이미 있음 → 준동사 필요 → the method가 use를 당함 → used"
+        },
+        {
+          "number": 78,
+          "sentence": "This method ______ to measure carbon content in many laboratories.",
+          "options": [
+            "is used",
+            "used"
+          ],
+          "answer": "is used",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → is used"
+        },
+        {
+          "number": 79,
+          "sentence": "Researchers ______ to understand the mechanism conducted several experiments.",
+          "options": [
+            "trying",
+            "tried"
+          ],
+          "answer": "trying",
+          "reason": "절의 본동사 conducted가 이미 있음 → 준동사 필요 → researchers가 try함 → trying"
+        },
+        {
+          "number": 80,
+          "sentence": "Researchers ______ to understand the mechanism through several experiments.",
+          "options": [
+            "tried",
+            "trying"
+          ],
+          "answer": "tried",
+          "reason": "절에 본동사가 없음 → 동사 필요 → tried"
+        },
+        {
+          "number": 81,
+          "sentence": "The organisms ______ in the soil interact with plant roots.",
+          "options": [
+            "living",
+            "live"
+          ],
+          "answer": "living",
+          "reason": "절의 본동사 interact가 이미 있음 → 준동사 필요 → the organisms가 live함 → living"
+        },
+        {
+          "number": 82,
+          "sentence": "Many organisms ______ in the soil and interact with plant roots.",
+          "options": [
+            "live",
+            "living"
+          ],
+          "answer": "live",
+          "reason": "live와 interact가 and로 병렬 → 동사 필요 → live"
+        },
+        {
+          "number": 83,
+          "sentence": "The information ______ from the survey helped researchers design the experiment.",
+          "options": [
+            "obtained",
+            "was obtained"
+          ],
+          "answer": "obtained",
+          "reason": "절의 본동사 helped가 이미 있음 → 준동사 필요 → the information이 obtain을 당함 → obtained"
+        },
+        {
+          "number": 84,
+          "sentence": "The information ______ from the survey before the experiment began.",
+          "options": [
+            "was obtained",
+            "obtained"
+          ],
+          "answer": "was obtained",
+          "reason": "주절에 본동사가 없음 → 동사 필요 → 수동 관계 → was obtained"
+        },
+        {
+          "number": 85,
+          "sentence": "The process ______ carbon from the atmosphere plays an important role in the ecosystem.",
+          "options": [
+            "removing",
+            "removes"
+          ],
+          "answer": "removing",
+          "reason": "절의 본동사 plays가 이미 있음 → 준동사 필요 → the process가 remove함 → removing"
+        },
+        {
+          "number": 86,
+          "sentence": "The process ______ carbon from the atmosphere.",
+          "options": [
+            "removes",
+            "removing"
+          ],
+          "answer": "removes",
+          "reason": "절에 본동사가 없음 → 동사 필요 → removes"
+        },
+        {
+          "number": 87,
+          "sentence": "The compounds ______ by plant roots influence microbial activity.",
+          "options": [
+            "released",
+            "were released"
+          ],
+          "answer": "released",
+          "reason": "절의 본동사 influence가 이미 있음 → 준동사 필요 → the compounds가 release를 당함 → released"
+        },
+        {
+          "number": 88,
+          "sentence": "These compounds ______ by plant roots under stress.",
+          "options": [
+            "are released",
+            "released"
+          ],
+          "answer": "are released",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → are released"
+        },
+        {
+          "number": 89,
+          "sentence": "The microbial communities ______ under different conditions showed distinct patterns.",
+          "options": [
+            "formed",
+            "were formed"
+          ],
+          "answer": "formed",
+          "reason": "절의 본동사 showed가 이미 있음 → 준동사 필요 → the microbial communities가 form을 당함 → formed"
+        },
+        {
+          "number": 90,
+          "sentence": "Different microbial communities ______ under different environmental conditions.",
+          "options": [
+            "are formed",
+            "formed"
+          ],
+          "answer": "are formed",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → are formed"
+        },
+        {
+          "number": 91,
+          "sentence": "The factors ______ whether a species can survive are not fully understood.",
+          "options": [
+            "determining",
+            "determine"
+          ],
+          "answer": "determining",
+          "reason": "절의 본동사 are가 이미 있음 → 준동사 필요 → the factors가 determine함 → determining"
+        },
+        {
+          "number": 92,
+          "sentence": "Several environmental factors ______ whether a species can survive.",
+          "options": [
+            "determine",
+            "determining"
+          ],
+          "answer": "determine",
+          "reason": "절에 본동사가 없음 → 동사 필요 → determine"
+        },
+        {
+          "number": 93,
+          "sentence": "The techniques ______ to analyze microbial communities have improved rapidly.",
+          "options": [
+            "used",
+            "are used"
+          ],
+          "answer": "used",
+          "reason": "절의 본동사 have improved가 이미 있음 → 준동사 필요 → the techniques가 use를 당함 → used"
+        },
+        {
+          "number": 94,
+          "sentence": "These techniques ______ to analyze microbial communities.",
+          "options": [
+            "are used",
+            "used"
+          ],
+          "answer": "are used",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → are used"
+        },
+        {
+          "number": 95,
+          "sentence": "Scientists ______ the relationship between plants and microbes often examine root exudates.",
+          "options": [
+            "studying",
+            "study"
+          ],
+          "answer": "studying",
+          "reason": "절의 본동사 examine이 이미 있음 → 준동사 필요 → scientists가 study함 → studying"
+        },
+        {
+          "number": 96,
+          "sentence": "Scientists ______ the relationship between plants and microbes using various methods.",
+          "options": [
+            "study",
+            "studying"
+          ],
+          "answer": "study",
+          "reason": "절에 본동사가 없음 → 동사 필요 → study"
+        },
+        {
+          "number": 97,
+          "sentence": "The results ______ from the experiment support the original hypothesis.",
+          "options": [
+            "obtained",
+            "were obtained"
+          ],
+          "answer": "obtained",
+          "reason": "절의 본동사 support가 이미 있음 → 준동사 필요 → the results가 obtain을 당함 → obtained"
+        },
+        {
+          "number": 98,
+          "sentence": "The results ______ from the experiment yesterday.",
+          "options": [
+            "were obtained",
+            "obtained"
+          ],
+          "answer": "were obtained",
+          "reason": "절에 본동사가 없음 → 동사 필요 → 수동 관계 → were obtained"
+        },
+        {
+          "number": 99,
+          "sentence": "The evidence ______ that climate affects species distribution has increased in recent years.",
+          "options": [
+            "showing",
+            "shows"
+          ],
+          "answer": "showing",
+          "reason": "절의 본동사 has increased가 이미 있음 → 준동사 필요 → the evidence가 show함 → showing"
+        },
+        {
+          "number": 100,
+          "sentence": "The evidence clearly ______ that climate affects species distribution.",
+          "options": [
+            "shows",
+            "showing"
+          ],
+          "answer": "shows",
+          "reason": "절에 본동사가 없음 → 동사 필요 → shows"
+        }
+      ]
     }
   ]
 }
