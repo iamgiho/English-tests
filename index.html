@@ -1528,6 +1528,7 @@
       { category: "교과서 단어", title: "중3 NE능률 6과", path: "영어 단어/중3 NE능률 6과.txt" },
       { category: "교과서 단어", title: "중3 NE능률 7과", path: "영어 단어/중3 NE능률 7과.txt" },
       { category: "교과서 단어", title: "중3 NE능률 8과", path: "영어 단어/중3 NE능률 8과.txt" },
+      { category: "교과서 단어", title: "중3 NE능률 외부지문", grade: "중3", textbook: "NE능률 / 영어3", lesson: "외부지문", path: "영어 단어/중3 NE능률 외부지문.txt" },
       { category: "교과서 단어", title: "중3 천재(이) 6과", path: "영어 단어/중3 천재(이) 6과.txt" },
       { category: "교과서 단어", title: "중3 천재(이) 7과", path: "영어 단어/중3 천재(이) 7과.txt" },
       { category: "교과서 단어", title: "중3 천재(이) 8과", path: "영어 단어/중3 천재(이) 8과.txt" },
@@ -3206,6 +3207,9 @@
         return { ...book, index, wordGrade: "통합", wordTextbook: "통합", wordLesson: title, wordLessonOrder: index };
       }
       const commonEnglishSection = title.match(/^공통영어2\s+(.+?)\s+(\d+)과\s+(.+)$/);
+      if (book.grade && book.textbook && book.lesson) {
+        return { ...book, index, wordGrade: book.grade, wordTextbook: book.textbook, wordLesson: book.lesson, wordLessonOrder: index };
+      }
       if (commonEnglishSection) {
         return { ...book, index, wordGrade: "고1", wordTextbook: `${commonEnglishSection[1]} / 공통영어2`, wordLesson: `${commonEnglishSection[2]}과 · ${commonEnglishSection[3]}`, wordLessonOrder: Number(commonEnglishSection[2]) + 0.5 };
       }
