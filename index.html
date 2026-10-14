@@ -933,9 +933,9 @@
             <div class="field"><label for="writingPracticePartSelect">파트</label><select id="writingPracticePartSelect"></select></div>
             <button id="startWritingPracticeBtn">Writing Practice 시작</button>
           </div>
-          <div class="question" style="margin-top: 12px;"><h3>뜻에 맞게 단어를 배열하세요.</h3><p class="question-sub" id="writingPracticePrompt">학습 범위를 선택하고 연습을 시작하세요.</p></div>
-          <div class="field" style="margin-top: 12px;"><label>섞인 단어 — 터치하거나 드래그하세요</label><div class="word-bank" id="writingPracticeBank"></div></div>
-          <div class="field" style="margin-top: 12px;"><label>답안 — 단어를 터치하면 다시 빠집니다</label><div class="word-answer-zone" id="writingPracticeAnswer"></div></div>
+          <div class="question" style="margin-top: 12px;"><h3>뜻에 맞게 단어·표현을 배열하세요.</h3><p class="question-sub" id="writingPracticePrompt">학습 범위를 선택하고 연습을 시작하세요.</p><p class="question-sub">관사와 뒤따르는 단어, 주요 숙어·복합어는 2~3단어로 묶어 제공합니다.</p></div>
+          <div class="field" style="margin-top: 12px;"><label>섞인 단어·표현 — 터치하거나 드래그하세요</label><div class="word-bank" id="writingPracticeBank"></div></div>
+          <div class="field" style="margin-top: 12px;"><label>답안 — 단어·표현을 터치하면 다시 빠집니다</label><div class="word-answer-zone" id="writingPracticeAnswer"></div></div>
           <div class="toolbar"><button id="submitWritingPracticeBtn" disabled>답안 확인</button><button class="secondary" id="undoWritingPracticeBtn" disabled>되돌리기</button><button class="secondary" id="nextWritingPracticeBtn" disabled>다음</button></div>
           <div class="feedback" id="writingPracticeFeedback">단어를 원하는 자리로 자유롭게 옮길 수 있습니다.</div>
           <div class="answer-comparison hidden" id="writingPracticeComparison"><div><strong>정답 순서</strong><div id="writingPracticeCorrectAnswer" style="margin-top: 7px;"></div></div></div>
@@ -2141,6 +2141,42 @@
       return writingPracticeSentence(sentence).split(/\s+/).filter(Boolean).map((text, index) => ({ id: `${Date.now()}-${index}-${Math.random()}`, text }));
     }
 
+    function writingPracticeTokens(sentence) {
+      // Conservative phrase list: keep clause structure and verb grammar available to arrange.
+      const phrases = [
+        "in front of", "in spite of", "on behalf of", "as well as", "as soon as", "in order to",
+        "a lot of", "a couple of", "a number of", "of course", "for example", "for instance",
+        "in fact", "at least", "at first", "at last", "at once", "so far", "right now",
+        "each other", "one another", "because of", "instead of", "according to", "such as",
+        "due to", "thanks to", "in addition", "in particular", "in general", "on purpose",
+        "look for", "looks for", "looked for", "looking for", "look after", "take care of",
+        "takes care of", "took care of", "get rid of", "give up", "gives up", "gave up",
+        "pick up", "picked up", "find out", "found out",
+        "high school", "middle school", "elementary school", "ice cream", "living room",
+        "climate change", "global warming", "social media", "artificial intelligence",
+        "cell phone", "mobile phone", "traffic light", "human beings", "New York"
+      ].map((phrase) => phrase.toLowerCase().split(" ")).sort((a, b) => b.length - a.length);
+      const tokens = sentenceTokens(sentence);
+      const key = (text) => text.toLowerCase().replace(/[.,!?;:]+$/, "");
+      const endsPhrase = (text) => /[.,!?;:]$/.test(text);
+      const matches = (phrase, start) => phrase.every((word, offset) =>
+        tokens[start + offset] && key(tokens[start + offset].text) === word &&
+        (offset === phrase.length - 1 || !endsPhrase(tokens[start + offset].text)));
+      const adjectives = new Set("new old young good bad big small long short little great beautiful important different interesting famous special modern local traditional natural large popular main first second last".split(" "));
+      const chunks = [];
+      for (let i = 0; i < tokens.length;) {
+        let length = phrases.find((phrase) => matches(phrase, i))?.length || 1;
+        if (length === 1 && /^(a|an|the)$/i.test(tokens[i].text) && tokens[i + 1]) {
+          const compound = phrases.find((phrase) => phrase.length === 2 && matches(phrase, i + 1));
+          length = compound ? 3 : 2;
+          if (!compound && adjectives.has(key(tokens[i + 1].text)) && !endsPhrase(tokens[i + 1].text) && tokens[i + 2]) length = 3;
+        }
+        chunks.push({ id: tokens[i].id, text: tokens.slice(i, i + length).map((token) => token.text).join(" ") });
+        i += length;
+      }
+      return chunks;
+    }
+
     async function startWritingPractice() {
       const nickname = $("#writingPracticeNickname").value.trim();
       const meta = passageManifest.find((item) => item.path === $("#writingPracticePartSelect").value);
@@ -2168,7 +2204,7 @@
       const session = writingPracticeSession;
       if (!session) return;
       const question = session.queue[session.index];
-      session.bank = shuffle(sentenceTokens(question.answer));
+      session.bank = shuffle(writingPracticeTokens(question.answer));
       session.answer = [];
       session.history = [];
       session.correction = false;
@@ -2180,7 +2216,7 @@
       $("#nextWritingPracticeBtn").disabled = true;
       $("#writingPracticeComparison").classList.add("hidden");
       renderWritingPracticeWords();
-      setMessage($("#writingPracticeFeedback"), "단어를 터치하거나 드래그해서 문장을 완성하세요.");
+      setMessage($("#writingPracticeFeedback"), "단어·표현을 터치하거나 드래그해서 문장을 완성하세요.");
     }
 
     function renderWritingPracticeWords() {
@@ -2269,13 +2305,10 @@
       }
       session.cycleWrong.push(question);
       session.correction = true;
-      session.answer = [];
-      session.bank = shuffle(sentenceTokens(question.answer));
-      session.history = [];
       $("#writingPracticeCorrectAnswer").textContent = writingPracticeSentence(question.answer);
       $("#writingPracticeComparison").classList.remove("hidden");
       renderWritingPracticeWords();
-      setMessage($("#writingPracticeFeedback"), "틀렸습니다. 아래 정답 순서를 보고 한 번 더 따라 맞히세요. 이 문장은 현재 사이클이 끝난 뒤 다시 출제됩니다.", "bad");
+      setMessage($("#writingPracticeFeedback"), "틀렸습니다. 입력한 답안과 아래 정답 순서를 비교하며 고쳐보세요. 이 문장은 현재 사이클이 끝난 뒤 다시 출제됩니다.", "bad");
     }
 
     function nextWritingPracticeQuestion() {
