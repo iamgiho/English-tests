@@ -1,0 +1,174 @@
+1
+recommend
+추천하다
+2
+take
+사다
+3
+stripe
+줄무늬
+4
+comfortable
+편안한
+5
+backpack
+배낭
+6
+another
+또 다른
+7
+look for
+찾다
+8
+cheap
+저렴한
+9
+quite
+꽤
+10
+popular
+인기 있는
+11
+go for
+선택하다
+12
+decide
+결정하다
+13
+option
+선택
+14
+carrot
+당근
+15
+other
+다른
+16
+suggestion
+제안
+17
+add
+더하다
+18
+candle
+양초
+19
+secret
+비밀
+20
+shopper
+쇼핑하는 사람
+21
+price
+가격
+22
+actually
+사실
+23
+tricky
+교묘한
+24
+tag
+가격표
+25
+imagine
+상상하다
+26
+clothing
+옷
+27
+find
+찾다
+28
+say
+쓰여 있다
+29
+cross out
+줄을 그어 지우다
+30
+talk to oneself
+혼잣말하다
+31
+on sale
+할인 중인
+32
+deal
+거래
+33
+in fact
+사실은
+34
+still
+아직
+35
+half
+반쯤
+36
+empty
+비어 있는
+37
+full
+가득 찬
+38
+choose
+고르다
+39
+between
+사이에
+40
+type
+종류
+41
+fat
+지방
+42
+fat-free
+지방이 없는
+43
+pick up
+집어 들다
+44
+proud
+자랑스러워하는
+45
+choice
+선택
+46
+trick
+속이다
+47
+flavor
+맛
+48
+lastly
+마지막으로
+49
+stressed
+스트레스를 받은
+50
+friendly
+친절한
+51
+clerk
+점원
+52
+easily
+쉽게
+53
+decision
+결정
+54
+make a decision
+결정하다
+55
+realize
+깨닫다
+56
+remember
+기억하다
+57
+guide
+안내하다
+58
+wise
+현명한
