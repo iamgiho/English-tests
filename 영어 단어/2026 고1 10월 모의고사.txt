@@ -1,0 +1,63 @@
+1
+global
+전 세계적인
+2
+citizen
+시민
+3
+necessary
+필요한, 필수적인
+4
+skeptical
+회의적인, 의심하는
+5
+citizenship
+시민권, 시민으로서의 자격
+6
+nation-state
+국민 국가
+7
+exist
+존재하다
+8
+rise
+등장, 부상
+9
+century
+세기, 100년
+10
+state
+국가
+11
+identity
+정체성
+12
+religion
+종교
+13
+connection
+연결, 관계
+14
+challenge
+과제, 어려움
+15
+given
+~을 고려하면
+16
+layer
+(기존의 것에) 덧붙이다
+17
+face
+~에 직면하다
+18
+replace
+대체하다
+19
+precisely
+바로, 정확히
+20
+obligation
+의무, 책임
+21
+community
+공동체, 지역 사회
