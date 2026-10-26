@@ -1,0 +1,32 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어2",
+  "lesson": 7,
+  "part": 2,
+  "passages": [
+    {
+      "id": "chunjae-lee-english2-l07-p02-001",
+      "title": "7과 파트2",
+      "text": [
+        "First, let’s imagine Logan at a clothing store.",
+        "He finds a nice T-shirt that he really likes.",
+        "The price tag says 40 dollars.",
+        "Logan thinks that it is expensive.",
+        "But the next day, he sees that the price is crossed out and the tag says 30 dollars.",
+        "Logan talks to himself, “Oh, it’s on sale! What a great deal!”",
+        "He gets excited and decides to buy it.",
+        "In fact, 30 dollars is still a lot, but Logan thinks it is a great price!"
+      ],
+      "koreanText": [
+        "먼저, 옷 가게에 있는 Logan을 상상해 보세요.",
+        "그는 정말 마음에 드는 멋진 티셔츠를 발견합니다.",
+        "가격표에는 40달러라고 쓰여 있습니다.",
+        "Logan은 그것이 비싸다고 생각합니다.",
+        "하지만 다음날, 그는 가격이 줄을 그어 지워져 있고 가격표에 30달러라고 쓰여 있는 것을 봅니다.",
+        "Logan은 “아, 할인 중이구나! 정말 좋은 거래야!”라고 혼잣말을 합니다.",
+        "그는 신이 나서 그것을 구입하기로 결정합니다.",
+        "사실, 30달러는 여전히 큰 금액이지만, Logan은 그것이 좋은 가격이라고 생각합니다!"
+      ]
+    }
+  ]
+}

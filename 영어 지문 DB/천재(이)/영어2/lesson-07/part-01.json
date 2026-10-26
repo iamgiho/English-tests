@@ -1,0 +1,22 @@
+{
+  "publisher": "천재(이)",
+  "book": "영어2",
+  "lesson": 7,
+  "part": 1,
+  "passages": [
+    {
+      "id": "chunjae-lee-english2-l07-p01-001",
+      "title": "7과 파트1",
+      "text": [
+        "What do you think about when you go shopping?",
+        "Price might be one thing, but there are actually more things to think about.",
+        "Here are a few shopping secrets that you must know."
+      ],
+      "koreanText": [
+        "쇼핑하러 갈 때 여러분은 무슨 생각을 하나요?",
+        "가격이 하나의 요소일 수 있지만, 실제로는 생각해야 할 것들이 더 많습니다.",
+        "여기 여러분이 꼭 알아야 할 몇 가지 쇼핑 비밀이 있습니다."
+      ]
+    }
+  ]
+}
