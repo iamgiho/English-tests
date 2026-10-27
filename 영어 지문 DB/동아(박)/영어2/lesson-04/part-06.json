@@ -1,0 +1,28 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 6,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p06-001",
+      "title": "4과 파트6",
+      "text": [
+        "Second, online education caters to personalized learning opportunities that meet the various needs of each learner.",
+        "One of the criticisms of traditional education is that it takes a one-size-fits-all approach that fails to address the various needs of students.",
+        "In contrast, online learning can offer a customized learning path for each learner.",
+        "To achieve this, a computer learning program first assesses each learner’s current level and weaknesses.",
+        "Based on the assessment, each learner is offered personalized online lessons and more detailed explanations when necessary.",
+        "This kind of personalized feedback process can be highly interactive and motivate learners to reach higher levels of achievement."
+      ],
+      "koreanText": [
+        "둘째, 온라인 교육은 각 학습자의 다양한 요구를 충족시키는 개인화된 학습 기회를 맞춤 제공합니다.",
+        "전통적 교육이 받는 비판 중 하나는 학생들의 다양한 요구를 다루지 못하는 천편일률적인 접근법을 취한다는 점입니다.",
+        "이에 반해 온라인 학습은 각 학습자에게 맞춤형 학습 경로를 제공할 수 있습니다.",
+        "이를 달성하기 위해, 컴퓨터 학습 프로그램이 각 학습자의 현재 수준과 약점을 먼저 평가합니다.",
+        "그 평가에 기반하여 각 학습자는 개인화된 온라인 수업을 받고, 필요시 더 자세한 설명을 제공받습니다.",
+        "이러한 개인화된 피드백 과정은 매우 상호 작용적일 수 있고 학습자가 더 높은 성취수준에 도달하도록 동기를 부여할 수 있습니다."
+      ]
+    }
+  ]
+}

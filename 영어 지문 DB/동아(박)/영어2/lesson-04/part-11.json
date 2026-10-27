@@ -1,0 +1,24 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 11,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p11-001",
+      "title": "4과 파트11",
+      "text": [
+        "Traditional education also fosters the development of students’ social and interpersonal skills.",
+        "Beyond classroom instruction, students interact during their lunch breaks and extracurricular activities.",
+        "While spending time together and being engaged in various types of interaction, students are exposed to valuable opportunities to learn how to communicate with each other.",
+        "Consequently, students acquire essential social skills such as collaboration, conflict resolution, and leadership."
+      ],
+      "koreanText": [
+        "전통적 교육은 또한 학생들의 사회성 및 대인 관계 능력의 발달을 촉진합니다.",
+        "교실 수업을 넘어서, 학생들은 점심시간과 수업 외 특별 활동에서 상호 작용을 합니다.",
+        "함께 시간을 보내고 다양한 유형의 상호 작용에 참여하는 동안, 학생들은 서로 소통하는 방법을 배울 수 있는 귀중한 기회에 노출됩니다.",
+        "결과적으로, 학생들은 협력과 갈등 해결, 리더십 같은 필수적인 사회성을 습득합니다."
+      ]
+    }
+  ]
+}

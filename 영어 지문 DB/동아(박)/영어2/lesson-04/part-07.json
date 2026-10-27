@@ -1,0 +1,20 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 7,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p07-001",
+      "title": "4과 파트7",
+      "text": [
+        "Finally, online education uses advanced technology such as multimedia materials or virtual simulations to provide more engaging and impactful learning experiences.",
+        "For example, students can learn history more effectively by using virtual reality programs, which can show them realistic details of famous historical sites or allow them to travel back in time."
+      ],
+      "koreanText": [
+        "마지막으로, 온라인 교육은 멀티미디어 자료나 가상 시뮬레이션 같은 첨단 기술을 사용하여 보다 매력적이고 영향력 있는 학습 경험을 제공합니다.",
+        "예를 들어, 학생들은 가상 현실 프로그램을 사용함으로써 역사를 더 효과적으로 배울 수 있는데, 이러한 프로그램은 유명한 유적지의 실제 같은 세부 양식을 보여 주거나 과거로 여행할 수 있게 해 줍니다."
+      ]
+    }
+  ]
+}

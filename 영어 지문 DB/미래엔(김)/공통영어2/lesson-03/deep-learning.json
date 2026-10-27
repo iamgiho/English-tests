@@ -1,0 +1,34 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 3,
+  "section": "딥러닝",
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l03-deep-learning-001",
+      "title": "3과 딥러닝",
+      "text": [
+        "If you have ever been to an art museum, you may have encountered docents and curators.",
+        "While these two roles may appear similar, they actually have quite different responsibilities, requiring different skills.",
+        "With the word docent coming from a Latin word meaning “to teach,” docents are guides who lead museum tours and provide information about the artworks and artists featured in an exhibition.",
+        "They are usually volunteers who have a passion for art and enjoy sharing their knowledge.",
+        "To carry out their responsibilities effectively, docents need specialized training in presentation and communication skills.",
+        "On the other hand, curators are professionals who design and organize exhibitions, with the word curator coming from a Latin word meaning “to take care of.”",
+        "Curators determine the main theme of each exhibition, select artworks that fit with the theme, and arrange them in an engaging way which captivates the audience.",
+        "Curators are typically employed by museums and are expected to possess advanced degrees in art history, museum studies, or a related field.",
+        "Despite their distinct roles, both docents and curators share a common goal: enriching every visitor’s experience."
+      ],
+      "koreanText": [
+        "미술관에 가 본 적이 있다면 여러분은 도슨트와 큐레이터를 마주쳤을지도 모른다.",
+        "이 두 가지 역할은 비슷해 보일 수도 있지만, 사실 그들은 상당히 다른 책임이 있고 서로 다른 기술이 필요하다.",
+        "도슨트는 '가르치다'라는 뜻의 라틴어에서 유래한 단어로, 박물관 투어를 안내하고 전시회에 출품된 작품과 예술가에 대한 정보를 제공하는 가이드이다.",
+        "일반적으로 그들은 예술에 대한 열정이 있고 자신의 지식을 공유하는 것을 즐기는 자원봉사자들이다.",
+        "도슨트는 자신의 책임을 효과적으로 수행하기 위해 발표 및 의사소통 기술에 대한 전문 교육을 받아야 한다.",
+        "반면, 큐레이터는 전시회를 기획하고 준비하는 전문가로, 큐레이터라는 단어는 '돌보다'라는 뜻의 라틴어에서 유래했다.",
+        "큐레이터는 각 전시회의 주요 주제를 정하고, 그 주제에 맞는 작품을 선정하여 관객을 사로잡을 수 있는 매력적인 방식으로 작품을 배치한다.",
+        "큐레이터는 일반적으로 박물관에 고용되며 미술사, 박물관학 또는 관련 분야의 고급 학위를 소지해야 한다.",
+        "뚜렷이 다른 역할에도 불구하고 도슨트와 큐레이터는 모든 방문객의 경험을 풍부하게 만든다는 공통된 목표를 공유한다."
+      ]
+    }
+  ]
+}

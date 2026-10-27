@@ -1,0 +1,20 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 3,
+  "part": 5,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l03-p05-001",
+      "title": "3과 파트5",
+      "text": [
+        "Thank you for joining this guided tour, and I hope my explanations have aided you in appreciating these paintings.",
+        "Please take some time to further explore the exhibition."
+      ],
+      "koreanText": [
+        "이번 가이드 투어에 참여해 주셔서 감사드리며, 제 설명이 그림을 감상하시는 데 도움이 되었기를 바랍니다.",
+        "잠시 시간을 내어 전시를 더 둘러보세요."
+      ]
+    }
+  ]
+}

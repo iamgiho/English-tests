@@ -1,0 +1,22 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 3,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p03-001",
+      "title": "4과 파트3",
+      "text": [
+        "Which one do you think is better?",
+        "We decided to explore this topic by considering the perspectives of our readers.",
+        "The following represents two sides of the debate."
+      ],
+      "koreanText": [
+        "어느 교육이 더 좋다고 생각하는가?",
+        "우리는 독자들의 관점을 고려하여 이 주제를 탐구해 보기로 했다.",
+        "다음은 이 논쟁의 양측을 대변한다."
+      ]
+    }
+  ]
+}

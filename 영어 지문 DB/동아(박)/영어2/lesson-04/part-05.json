@@ -1,0 +1,26 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 5,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p05-001",
+      "title": "4과 파트5",
+      "text": [
+        "First, online education breaks down the barriers of time and space.",
+        "Learners can access learning programs from anywhere and at any time.",
+        "For instance, take Khan Academy, an online education program providing free lectures.",
+        "It started when its founder, Sal Khan, uploaded teaching videos he made for his cousin who was living far away.",
+        "Now learners from all around the world can enjoy the program’s outstanding lectures on a wide variety of subjects at any time they want."
+      ],
+      "koreanText": [
+        "첫째, 온라인 교육은 시간과 공간의 장벽을 무너뜨립니다.",
+        "학습자들은 언제 어디서나 학습 프로그램에 접속할 수 있습니다.",
+        "예를 들어 무료 강의를 제공하는 온라인 교육 프로그램인 Khan Academy를 봅시다.",
+        "그것은 설립자인 Sal Khan이 멀리 살고 있는 사촌을 위해 만든 강의 영상을 업로드하면서 시작되었습니다.",
+        "이제는 전 세계의 학습자들이 원하는 시간에 언제든지 폭넓은 주제에 관한 해당 프로그램의 뛰어난 강의를 즐길 수 있습니다."
+      ]
+    }
+  ]
+}

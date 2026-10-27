@@ -1,0 +1,22 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 10,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p10-001",
+      "title": "4과 파트10",
+      "text": [
+        "First, traditional education has proven more successful in providing an educational environment where students can concentrate and learn better.",
+        "According to a study on students’ level of concentration and understanding in traditional classrooms and online classes, students in traditional classrooms performed better.",
+        "It seems that it is much easier for students to pay attention and understand the content taught in a traditional classroom because they are learning together."
+      ],
+      "koreanText": [
+        "첫째, 전통적 교육을 학생들이 더 잘 집중하고 배울 수 있는 교육 환경을 제공하는 데 보다 성공적인 것으로 판명되었습니다.",
+        "전통적 교실과 온라인 수업에서의 학생들의 집중도와 이해도에 관한 연구에 따르면, 전통적 교실의 학생들이 학업을 더 잘 수행했습니다.",
+        "함께 학습하고 있기 때문에, 학생들이 주의를 기울이고 전통적 교실에서 배우는 내용을 이해하는 것이 훨씬 더 쉬운 것으로 보입니다."
+      ]
+    }
+  ]
+}

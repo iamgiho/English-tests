@@ -1,0 +1,22 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 14,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p14-001",
+      "title": "4과 파트14",
+      "text": [
+        "It is certainly not easy to judge which form of education is better.",
+        "Online education has advantages such as accessibility, personalized instruction, and innovative teaching materials based on advanced technology.",
+        "Traditional education, on the other hand, provides a more dynamic learning environment, based on the relationships students and teachers build together."
+      ],
+      "koreanText": [
+        "어떤 형태의 교육이 더 나은지를 판단하는 것은 분명 쉽지 않다.",
+        "온라인 교육은 접근성, 개인 맞춤형 지도, 첨단 기술을 기반으로 한 혁신적인 교수 자료와 같은 장점이 있다.",
+        "반면, 전통적 교육은 학생과 교사가 함께 구축하는 관계를 바탕으로 더 역동적인 학습 환경을 제공한다."
+      ]
+    }
+  ]
+}

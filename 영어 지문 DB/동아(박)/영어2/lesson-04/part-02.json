@@ -1,0 +1,22 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 2,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p02-001",
+      "title": "4과 파트2",
+      "text": [
+        "Margie’s desire reflects the ongoing debate on the merits of online education compared to those of traditional education.",
+        "As many of us already know, online education is instruction in electronically supported learning environments using multimedia and Internet platforms.",
+        "Traditional education, on the other hand, generally refers to the conventional teaching-learning process in a classroom setting in which teachers and students are present together."
+      ],
+      "koreanText": [
+        "Margie의 바람은 전통적 교육의 장점과 비교하여 온라인 교육의 장점에 관해 계속 진행 중인 논쟁을 반영한다.",
+        "많은 사람들이 이미 알고 있듯이, 온라인 교육은 멀티미디어와 인터넷 플랫폼을 활용한, 전자적으로 지원되는 학습 환경에서의 교육이다.",
+        "반면, 전통적 교육은 일반적으로 교사와 학생이 함께 있는 교실 환경에서의 전통적인 교수-학습 과정을 의미한다."
+      ]
+    }
+  ]
+}

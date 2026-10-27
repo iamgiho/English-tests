@@ -1,0 +1,22 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 8,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p08-001",
+      "title": "4과 파트8",
+      "text": [
+        "Advances in technology can make education so much better.",
+        "Learning anywhere and at any time and receiving personalized lessons can make learning more effective and rewarding.",
+        "It is evident that the future of education lies in online education."
+      ],
+      "koreanText": [
+        "기술의 발전은 교육을 훨씬 더 좋게 만들 수 있습니다.",
+        "언제 어디서나 배우고 개인 맞춤형 수업을 받는 것은 학습을 더 효과적이고 보람 있게 만들 수 있습니다.",
+        "교육의 미래가 온라인 교육에 있다는 것은 명백합니다."
+      ]
+    }
+  ]
+}

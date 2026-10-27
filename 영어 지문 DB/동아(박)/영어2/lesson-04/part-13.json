@@ -1,0 +1,24 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 13,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p13-001",
+      "title": "4과 파트13",
+      "text": [
+        "In short, effective learning requires meaningful relationships between teachers and students, as well as among peers.",
+        "This interpersonal connection represents the main advantage of traditional education.",
+        "Guided by strong relationships, students can concentrate better, acquire interpersonal skills, and enjoy hands-on learning experiences.",
+        "Traditional education makes all of this possible."
+      ],
+      "koreanText": [
+        "요컨대, 효과적인 학습은 교사와 학생 사이, 그리고 또래 사이의 의미 있는 관계를 필요로 합니다.",
+        "이러한 대인 간의 연결은 전통적 교육의 주요 장점을 대표합니다.",
+        "굳건한 관계를 통해 학생들은 더 잘 집중하고, 대인 관계 기술을 습득하며, 실제적인 학습 경험을 즐길 수 있습니다.",
+        "전통적 교육은 이 모든 것을 가능하게 합니다."
+      ]
+    }
+  ]
+}

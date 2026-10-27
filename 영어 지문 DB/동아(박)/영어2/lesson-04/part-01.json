@@ -1,0 +1,24 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 1,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p01-001",
+      "title": "4과 파트1",
+      "text": [
+        "In Isaac Asimov’s short story The Fun They Had, a young girl named Margie living in 2155 receives her education through a “mechanical teacher.”",
+        "Her learning takes place one-on-one in her study next to her bedroom.",
+        "One day, she finds a “real” book on traditional schools from hundreds of years ago and longs to receive a traditional education.",
+        "She dreams of attending a real school where all the students learn the same things, laugh and play on the playground, and go home together at the end of the day."
+      ],
+      "koreanText": [
+        "Isaac Asimov의 단편 소설 ‘The Fun They Had’에서는 2155년에 살고 있는 Margie라는 이름의 한 어린 여학생이 ‘기계 선생님’을 통해 교육을 받는다.",
+        "그녀의 학습은 침실 옆에 있는 서재에서 일대일로 이루어진다.",
+        "어느 날, 그녀는 수백 년 전의 전통적인 학교에 관한 ‘진짜’ 책을 발견하고 전통적 교육을 받기를 간절히 원한다.",
+        "그녀는 모든 학생들이 같은 것을 배우고, 운동장에서 웃고 놀며, 하루가 끝나면 함께 집에 가는 진짜 학교에 다니는 것을 꿈꾼다."
+      ]
+    }
+  ]
+}

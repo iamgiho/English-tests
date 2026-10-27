@@ -1,0 +1,26 @@
+{
+  "publisher": "미래엔(김)",
+  "book": "공통영어2",
+  "lesson": 3,
+  "part": 1,
+  "passages": [
+    {
+      "id": "miraen-kim-common-english2-l03-p01-001",
+      "title": "3과 파트1",
+      "text": [
+        "Welcome to the Dream Art Gallery!",
+        "I’m Isabel Williams, the docent for the From Shadows to Spotlights exhibit.",
+        "Today, you’re going to meet three amazing artists who never gave up on their art, despite challenges in their lives.",
+        "Each artist has a unique painting style and story that has made their work highly valued.",
+        "Let’s explore each artist’s life and artwork."
+      ],
+      "koreanText": [
+        "드림 아트 갤러리에 오신 것을 환영합니다!",
+        "저는 <그림자에서 빛으로> 전시회의 도슨트인 Isabel Williams입니다.",
+        "오늘은 인생의 역경에도 불구하고 결코 예술을 포기하지 않았던 세 명의 놀라운 예술가들을 만나 보려고 합니다.",
+        "각 예술가에게는 독특한 화풍과 그들의 작품을 높이 평가받게 만들어 준 이야기가 있습니다.",
+        "각 예술가의 삶과 작품을 함께 살펴봅시다."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "publisher": "동아(박)",
+  "book": "영어2",
+  "lesson": 4,
+  "part": 12,
+  "passages": [
+    {
+      "id": "donga-park-english2-l04-p12-001",
+      "title": "4과 파트12",
+      "text": [
+        "Finally, traditional education offers hands-on and practical learning opportunities.",
+        "Subjects such as lab sciences and vocational training rely heavily on experiments and direct guidance from instructors.",
+        "For instance, in a biology class, students learn how to handle a microscope, and observing the shape of a cell through a microscope for the first time will present them with a truly engaging experience.",
+        "Online platforms may provide simulations and virtual tools, but they cannot fully substitute the hands-on experiences offered by traditional classrooms."
+      ],
+      "koreanText": [
+        "마지막으로, 전통적 교육은 실제적이며 실용적인 학습 기회를 제공합니다.",
+        "실험 과학, 직업 훈련과 같은 과목들은 실험과 강사의 직접적인 지도에 크게 의존합니다.",
+        "예를 들어, 생물학 수업에서 학생들은 현미경 다루는 법을 배우고, 현미경으로 세포의 모양을 처음으로 관찰하는 것은 학생들에게 정말로 매력적인 경험을 선사할 것입니다.",
+        "온라인 플랫폼이 시뮬레이션과 가상 도구를 제공할 수는 있겠지만, 전통적인 교실에서 제공하는 직접적인 경험을 완전히 대체할 수는 없습니다."
+      ]
+    }
+  ]
+}
