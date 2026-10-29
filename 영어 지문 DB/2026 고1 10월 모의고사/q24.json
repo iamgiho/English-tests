@@ -1,0 +1,30 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 10월 모의고사",
+  "question": 24,
+  "part": 24,
+  "passages": [
+    {
+      "id": "mock-h1-2026-10-q24-001",
+      "title": "긍정적인 환상이 목표 달성 노력을 약화시키는 이유",
+      "text": [
+        "Unfortunately, sometimes the idea of a goal is disconnected from the daily reality of what it will take to achieve it.",
+        "We fall in love with the idea of a goal, pushing out of mind how different our daytoday will need to be for us to make it happen.",
+        "In fact, research even suggests that positive fantasies about our future can lead us to put less effort into our goals because our fantasies provide us with a false and premature sense of accomplishment.",
+        "We romanticize a goal —falling in love with the idea of a change.",
+        "In the process, we gloss over the intricacies and challenges of integrating a complex new behavior into our life.",
+        "As one study nicely summed it up, fantasizing about a positive future “seduces a person to mentally enjoy the desired future in the here and now” —and because we don’t reflect on why our fantasy is not yet our future, “a necessity to act is not induced.”"
+      ],
+      "koreanText": [
+        "안타깝게도 때로는 목표에 대한 생각이 그것을 달성하는 데 필요한 일상의 현실과 동떨어져 있다.",
+        "우리는 목표를 이루기 위해 우리의 일상이 얼마나 달라져야 할지를 머릿속에서 밀어낸 채, 목표에 대한 생각에 매료된다.",
+        "실제로 연구는 미래에 대한 긍정적인 환상이 거짓되고 성급한 성취감을 주기 때문에 목표를 위해 노력을 덜 기울이게 할 수도 있음을 시사한다.",
+        "우리는 목표를 낭만적으로 생각하며, 변화에 대한 생각에 매료된다.",
+        "그 과정에서 우리는 복잡한 새로운 행동을 삶에 통합하는 데 따르는 복잡한 문제와 어려움을 간과한다.",
+        "한 연구가 이를 잘 요약했듯이, 긍정적인 미래를 상상하는 것은 ‘지금 이 순간에 원하는 미래를 머릿속으로 즐기도록 사람을 유혹하며’, 우리가 상상하는 미래가 왜 아직 실현되지 않았는지 성찰하지 않기 때문에 ‘행동할 필요성이 유발되지 않는다.’"
+      ]
+    }
+  ]
+}

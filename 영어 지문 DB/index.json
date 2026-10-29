@@ -15,6 +15,10 @@
   {"grade":"고2","publisher":"동아(박)","book":"영어2","lesson":4,"part":14,"path":"영어 지문 DB/동아(박)/영어2/lesson-04/part-14.json"},
   {"grade":"고2","publisher":"동아(박)","book":"영어2","lesson":4,"part":15,"path":"영어 지문 DB/동아(박)/영어2/lesson-04/part-15.json"},
   {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":20,"part":20,"path":"영어 지문 DB/2026 고1 10월 모의고사/q20.json"},
+  {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":21,"part":21,"path":"영어 지문 DB/2026 고1 10월 모의고사/q21.json"},
+  {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":22,"part":22,"path":"영어 지문 DB/2026 고1 10월 모의고사/q22.json"},
+  {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":23,"part":23,"path":"영어 지문 DB/2026 고1 10월 모의고사/q23.json"},
+  {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":24,"part":24,"path":"영어 지문 DB/2026 고1 10월 모의고사/q24.json"},
   {
     "grade": "중1",
     "publisher": "미래엔(문)",

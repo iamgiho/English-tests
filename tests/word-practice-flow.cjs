@@ -132,5 +132,41 @@ Promise.resolve().then(() => {
   assert.equal(sent[1].wrongAnswers.length, 0);
   assert.equal(stored.get('results').length, 2);
   assert.equal(stored.get('results')[0].score, 100);
+  for (const book of [
+    { category: '모의고사 단어', title: '2026 고1 10월 모의고사' },
+    { category: '모의고사 단어', title: '2026 고2 9월 모의고사' },
+    { title: '0단계 단어' },
+    { title: '1단계 단어' }
+  ]) {
+    ctx.wordBookManifest = [book];
+    ctx.startWordPractice();
+    for (let i = 0; i < 9; i++) next();
+    let count = 0;
+    let madeError = false;
+    const stages = new Set();
+    while (ctx.wordPracticeSession.stage !== 'complete') {
+      assert.ok(++count < 60);
+      const current = ctx.wordPracticeSession;
+      stages.add(current.stage);
+      assert.ok(['meaning', 'meaning-retest'].includes(current.stage), 'excluded books must only quiz Korean meanings');
+      if (current.answered) { next(); continue; }
+      const word = current.queue[current.index];
+      if (current.stage === 'meaning' && !madeError && book.title !== '0단계 단어') {
+        input.value = 'incorrect';
+        madeError = true;
+      } else if (current.correction) {
+        ctx.showWordPracticeAnswer();
+        input.value = ctx.$('#wordPracticeFeedback').textContent.match(/“([^”]+)”/)[1];
+      } else {
+        input.value = current.stage.startsWith('meaning') ? word.ko : word.en;
+      }
+      enter();
+    }
+    assert.ok(stages.has('meaning'));
+    if (madeError) assert.ok(stages.has('meaning-retest'));
+    assert.equal(sent.at(-1).total, 3);
+    assert.equal(sent.at(-1).score, madeError ? 67 : 100);
+    assert.doesNotMatch(ctx.$('#wordPracticeQuestion').innerHTML, /한국어→영어|듣기까지/);
+  }
   console.log(`Passed full practice flows (${actions + perfectActions} actions), IME, validation, scores (67/100), deduplication, async response, reset and restart checks.`);
 });

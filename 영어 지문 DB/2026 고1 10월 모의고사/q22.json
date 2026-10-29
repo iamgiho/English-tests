@@ -1,0 +1,34 @@
+{
+  "grade": "고1",
+  "category": "모의고사",
+  "publisher": "모의고사",
+  "book": "2026 고1 10월 모의고사",
+  "question": 22,
+  "part": 22,
+  "passages": [
+    {
+      "id": "mock-h1-2026-10-q22-001",
+      "title": "시간 인식과 사용의 사회적 구성",
+      "text": [
+        "Sociologists argue that our perception and usage of time are not just basic properties of nature, like a clock ticking away in the background, nor are they simply psychological phenomena of individual experience.",
+        "Instead, how we perceive and understand time is to a large degree shaped by tradition and cultural norms.",
+        "Eviatar Zerubavel’s work, The Seven Day Circle: The History and Meaning of the Week, demonstrates how the week, a fundamental unit of time, is a social invention that varies across cultures, influencing how people structure their activities and rhythms of life.",
+        "Why do we consider a ninetofive job routine?",
+        "Why don’t many of us work on the weekends?",
+        "Why do we usually pay our bills at the end of the month?",
+        "Why is the retirement age sixtyfive?",
+        "These numbers and patterns aren’t really dictated by nature or any essential human characteristic, but are rather social creations that we internalize and come to accept as “normal.”"
+      ],
+      "koreanText": [
+        "사회학자들은 시간에 대한 우리의 인식과 사용이 배경에서 똑딱거리는 시계처럼 단순히 자연의 기본적인 특성인 것도 아니고, 개인적 경험의 심리적 현상에 불과한 것도 아니라고 주장한다.",
+        "오히려 우리가 시간을 인식하고 이해하는 방식은 전통과 문화적 규범에 의해 상당 부분 형성된다.",
+        "에비아타르 제루바벨의 저서 『7일의 순환: 일주일의 역사와 의미』는 시간의 근본적인 단위인 일주일이 문화마다 다르며 사람들이 활동과 삶의 리듬을 구성하는 방식에 영향을 미치는 사회적 발명품임을 보여준다.",
+        "우리는 왜 오전 9시부터 오후 5시까지 일하는 것을 일상적인 일과로 여기는가?",
+        "우리 중 많은 사람들은 왜 주말에 일하지 않는가?",
+        "우리는 왜 보통 월말에 청구 요금을 납부하는가?",
+        "은퇴 연령은 왜 65세인가?",
+        "이러한 숫자와 양상은 실제로 자연이나 인간의 어떤 본질적 특성에 의해 좌우되는 것이 아니라, 우리가 내면화하고 ‘정상적인 것’으로 받아들이게 되는 사회적 창조물이다."
+      ]
+    }
+  ]
+}

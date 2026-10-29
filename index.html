@@ -1125,7 +1125,7 @@
             <div class="question" id="wordPracticeQuestion">
               <h3>단어 연습을 시작하세요.</h3>
               <p class="question-main">Ready</p>
-              <p class="question-sub">세 번의 단계적 노출 후 영어→한국어, 한국어→영어, 듣기 순서로 연습합니다.</p>
+              <p class="question-sub">세 번의 단계적 노출 후 영어→한국어, 한국어→영어, 듣기 순서로 연습합니다. 모의고사 단어와 공통 0·1단계 단어는 영어 철자 입력 단계를 모두 생략하고 한국어 뜻 맞추기까지 진행합니다.</p>
             </div>
             <div class="toolbar hidden" id="wordPracticeSoundBox">
               <button class="sound-button" id="playWordPracticeBtn" type="button" aria-label="단어 듣기">🔊</button>
@@ -1468,6 +1468,10 @@
       {"grade":"고1","publisher":"모의고사","book":"2026 고1 9월 모의고사","question":19,"part":19,"path":"영어 지문 DB/2026 고1 9월 모의고사/q19.json"},
       {"grade":"고1","publisher":"모의고사","book":"2026 고1 9월 모의고사","question":20,"part":20,"path":"영어 지문 DB/2026 고1 9월 모의고사/q20.json"},
       {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":20,"part":20,"path":"영어 지문 DB/2026 고1 10월 모의고사/q20.json"},
+      {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":21,"part":21,"path":"영어 지문 DB/2026 고1 10월 모의고사/q21.json"},
+      {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":22,"part":22,"path":"영어 지문 DB/2026 고1 10월 모의고사/q22.json"},
+      {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":23,"part":23,"path":"영어 지문 DB/2026 고1 10월 모의고사/q23.json"},
+      {"grade":"고1","publisher":"모의고사","book":"2026 고1 10월 모의고사","question":24,"part":24,"path":"영어 지문 DB/2026 고1 10월 모의고사/q24.json"},
       {"grade":"고1","publisher":"모의고사","book":"2026 고1 9월 모의고사","question":21,"part":21,"path":"영어 지문 DB/2026 고1 9월 모의고사/q21.json"},
       {"grade":"고1","publisher":"모의고사","book":"2026 고1 9월 모의고사","question":22,"part":22,"path":"영어 지문 DB/2026 고1 9월 모의고사/q22.json"},
       {"grade":"고1","publisher":"모의고사","book":"2026 고1 9월 모의고사","question":23,"part":23,"path":"영어 지문 DB/2026 고1 9월 모의고사/q23.json"},
@@ -3457,6 +3461,7 @@
       wordPracticeSession = {
         name,
         book: book?.title || "단어장",
+        skipSpelling: book?.category === "모의고사 단어" || /^\s*[01]\s*단계\s*단어\s*$/.test(book?.title || ""),
         range: `${start}~${end}`,
         words,
         queue: words,
@@ -3658,6 +3663,7 @@
           setMessage($("#wordPracticeFeedback"), `2단계 사이클을 마쳤습니다. 틀린 ${retryWords.length}개 단어를 다시 시험합니다.`, "bad");
           return;
         }
+        if (session.skipSpelling) return finishWordPractice();
         return beginPracticeQuiz("spell", session.words);
       }
       if (session.stage === "spell") {
@@ -3667,6 +3673,7 @@
           setMessage($("#wordPracticeFeedback"), `3단계 사이클을 마쳤습니다. 틀린 ${retryWords.length}개 단어를 다시 시험합니다.`, "bad");
           return;
         }
+        if (session.skipSpelling) return finishWordPractice();
         session.soundAttempt = 1;
         return beginPracticeQuiz("sound", session.words);
       }
@@ -3677,6 +3684,7 @@
           setMessage($("#wordPracticeFeedback"), `재시험 사이클을 마쳤습니다. 다시 틀린 ${retryWords.length}개 단어를 또 시험합니다.`, "bad");
           return;
         }
+        if (session.skipSpelling) return finishWordPractice();
         session.soundAttempt = 1;
         return beginPracticeQuiz("sound", session.words);
       }
@@ -3696,7 +3704,7 @@
       const session = wordPracticeSession;
       if (!session || session.stage === "complete") return;
       session.stage = "complete";
-      const total = session.words.length * 3;
+      const total = session.words.length * (session.skipSpelling ? 1 : 3);
       const wrongCount = session.firstWrongAnswers.length;
       const correct = total - wrongCount;
       const score = Math.round((correct / total) * 100);
@@ -3714,7 +3722,7 @@
       const stored = readJson(STORAGE.wordPracticeResults, []);
       stored.unshift(result);
       writeJson(STORAGE.wordPracticeResults, stored);
-      $("#wordPracticeQuestion").innerHTML = `<h3>Word Practice 완료</h3><p class="question-main">${score}점</p><p class="question-sub">영어→한국어, 한국어→영어, 듣기까지 모두 마쳤습니다.</p>`;
+      $("#wordPracticeQuestion").innerHTML = `<h3>Word Practice 완료</h3><p class="question-main">${score}점</p><p class="question-sub">${session.skipSpelling ? "영어→한국어 뜻 연습을 모두 마쳤습니다." : "영어→한국어, 한국어→영어, 듣기까지 모두 마쳤습니다."}</p>`;
       $("#wordPracticeAnswerBox").classList.add("hidden");
       $("#wordPracticeSoundBox").classList.add("hidden");
       $("#nextWordPracticeBtn").disabled = true;
@@ -3729,7 +3737,7 @@
     function resetWordPractice() {
       wordPracticeSession = null;
       window.speechSynthesis?.cancel();
-      $("#wordPracticeQuestion").innerHTML = `<h3>단어 연습을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">세 번의 단계적 노출 후 영어→한국어, 한국어→영어, 듣기 순서로 연습합니다.</p>`;
+      $("#wordPracticeQuestion").innerHTML = `<h3>단어 연습을 시작하세요.</h3><p class="question-main">Ready</p><p class="question-sub">세 번의 단계적 노출 후 영어→한국어, 한국어→영어, 듣기 순서로 연습합니다. 모의고사 단어와 공통 0·1단계 단어는 영어 철자 입력 단계를 모두 생략하고 한국어 뜻 맞추기까지 진행합니다.</p>`;
       $("#wordPracticeAnswerBox").classList.add("hidden");
       $("#wordPracticeSoundBox").classList.add("hidden");
       $("#revealWordPracticeBtn").classList.add("hidden");
